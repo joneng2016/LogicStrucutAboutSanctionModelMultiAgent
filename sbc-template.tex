@@ -5,8 +5,8 @@
 \usepackage{graphicx,url}
 \usepackage[brazil]{babel}   
 \usepackage[latin1]{inputenc}  
-
-     
+\usepackage[options ]{algorithm2e}
+\usepackage{algorithmic}
 \sloppy
 
 \title{Estrutura conceitual do Modelo para Agentes Normativos }
@@ -14,50 +14,55 @@
 \begin{document} 
 
 
-Definição 0 
-
-Definição 0.1
+\textbf{Definição 1}
 
 Existe $E = \{e_1,...,e_n\}$, que corresponde as entidades. Existe dois tipos de entidades, Agentes representados pelo conjunto $Ag$ e Artefatos representados pelo conjunto $At$ onde ($E \equiv Ag \cup At) \wedge (ag_i \in Ag \to ag_i \not\in At) \wedge (at_i \in At \to at_i \not\in Ag)$
 
-Definição 0.2
 
-Existe relaçoes de entidade para entidade que são mapeadas por um conjunto $R$. Isso é dado por meio da seguinte relação, $isRelation(r_{k},e_{i},e_{j})$ 
+\textbf{Definição 2}
 
-Definição 0.3
+Existe relações de entidade para entidade que são mapeadas por um conjunto $R$. Isso é dado por meio da seguinte relação, $isRelation(r_{k},e_{i},e_{j})$ 
 
-$\rho_{r_i}$ papel \textit{recive} ou seja, o papel que recebe a atribuição, de um papel $\rho_{a}$, um papel atribuidor, $ R_r = \{ \rho_{r_n}, ... \rho_{r_m}\} \wedge R_a = \{ \rho_{a_n}, ... \rho_{a_k}\},   (R \equiv R_a\cup R_r) \wedge (\rho_m \in R_m \to \rho_m \not\in R_a) \wedge  (\rho_a \in R_a \to \rho_a \not\in R_m))$. 
 
-Definição 0.4
+\textbf{Definição 3}
+
+$\rho_{r_i}$ corresponde ao papel \textit{recive} ou seja, o papel que recebe a atribuição, de um papel $\rho_{a}$, um papel \textit{assigned} atribuidor, $ R_r = \{ \rho_{r_n}, ... \rho_{r_m}\} \wedge R_a = \{ \rho_{a_n}, ... \rho_{a_k}\},   (R \equiv R_a\cup R_r) \wedge (\rho_m \in R_m \to \rho_m \not\in R_a) \wedge  (\rho_a \in R_a \to \rho_a \not\in R_m))$. 
+
+
+\textbf{Definição 4}
 
 Existe um conjunto $D$ de relações deonticas. Existe $D_{permission}$ que é equivalente a $D$ e existe $D_{obligation}$ que é um subconjunto de $D_{permission}$.
 
-Definição 0.5
+
+\textbf{Definição 5}
 
 Existe um conjunto $G$ de Objetivos. Existe dois tipos de objetivos, $Ge$ e $Gd$, onde ambos são disjuntos. $Ge$ contem os objetivos referentes $\rho_{r}$, ou seja - referente a quem é delegado para alguma função. Os objetivos de $Gd$ são referentes a quem delega $\rho_a$. Agentes $\rho_a$ de $g_{d_k}$ tem a finalidade de atribuir $\rho_m$ a determinado agente $ag$. 
 
-Definição 0.6
 
-Existe um subconjunt de $Ge$ conhecido como $Gr$, são objetivos de execução que podem ser afetado por eventos aleatórios com a finalidade de ocasionar um acidente. Esses eventos aleatórios possuem uma possibilidade de acontecer. Os agentes não têm controle sobre esses eventos, contudo, têm controle sobre as possibilidades. 
+\textbf{Definição 6}
 
-Definição 1
+Existe um subconjunt de $Ge$ conhecido como $Gr$, são objetivos de execução que podem ser afetado por eventos aleatórios com a finalidade de ocasionar um acidente. Esses eventos aleatórios possuem uma possibilidade de acontecer. Os agentes não têm controle sobre esses eventos.
+
+\textbf{Definição 7}
 
 \begin{equation}
 	attribution(ag,\rho_{r_i})\wedge deonticRelation(\rho_{r},g_{e_i},d_{o_i}) \to obligation(ag,g_{e_i}) 
 \end{equation}
 
-Definição 2
+\textbf{Definição 8}
 
 \begin{equation}
   attribution(ag,\rho_{r_i})\wedge deonticRelation(\rho_{r_i},g_{e_i},d_{p_i}) \to permission(ag,g_{e_i}) 
 \end{equation}
 
-Definição 3
+\textbf{Definição 9}
+
 \begin{equation}
   obligation(ag,g_{e_i}) \to permission(ag,g_{e_i}) 
 \end{equation}
 
-Definição 4
+
+\textbf{Definição 10}
 
 Se para iniciar um determinado objetivo $ g_{e_j} $ é necessário completar outros objetivos, $ g_{e_i}, ... g_{e_k} $, então se pelo menos um destes objetivos for falso para $ isCompleted(g_x), x = i,..,k $, então $ preCondition(g_j,(g_{i},...g_{k})) $ é falso, se não, então  $ preCondition(g_j,(g_{i},...g_{k})) $ é verdadeiro.
 
@@ -67,60 +72,57 @@ Sendo que existe um conjunto $ g_{preRequisit} = \{g_{i},...g_{k}\} $, então
   (preCondition(g_j,g_{preRequisite}) \to preRequisit(g_j)) \wedge  \\ \neg (preCondition(g_j,g_{preRequisite}) \to \neg preRequisit(g_j))  
 \end{eqnarray}
 
-
-Definição 5
+\textbf{Definição 11}
 
 Sendo $cm$ conjunto de condições que devem ser mantidos o tempo inteiro para que a atividade possa acontecer,
 \begin{eqnarray}
     preRequisit(g_{e_i}) \wedge hasMaintainer(g_{e_i},cm_i) \wedge isOk(cm_i) \to canStart(g_{e_i}) 
 \end{eqnarray}
 
-Definição 6
+\textbf{Definição 12} 
 
-Se $ attribution(ag,\rho_{r}) \wedge deonticRelation(\rho_{r},g_{e_i},d_{p_i}) \wedge canStart(g_{e_i}) \wedge tryReach(g_{e_i},ag) $ é verdade, então é verdade que existe $ violation(d_{p_i},ag) $. Contudo, se $ attribution(ag,\rho_{r}) \wedge deonticRelation(\rho_{r},g_{e},d_{p_i}) \wedge canStart(g_e) \wedge tryReach(g_{e_i},ag) $ for falso, então $ violation(d_{p_i},ag) $.
+\begin{eqnarray}
+    preRequisit(g_{e_i}) \wedge hasMaintainer(g_{e_i},cm_i) \wedge \neg isOk(cm_i) \wedge  tryReach(g_{e_i},ag) \to  \\ violation(g_{e_i},ag,cm_i)    
+\end{eqnarray}
 
-Definição 7
+\textbf{Definição 13}
 
-7.1 
+Se $ attribution(ag,\rho_{r}) \wedge \neg deonticRelation(\rho_{r},g_{e_i},d_{p_i}) \wedge canStart(g_{e_i}) \wedge tryReach(g_{e_i},ag) $ é verdade, então $ violation(d_{p_i},ag) $ é verdade. Contudo, se $ attribution(ag,\rho_{r}) \wedge \neg deonticRelation(\rho_{r},g_{e},d_{p_i}) \wedge canStart(g_e) \wedge tryReach(g_{e_i},ag) $ for falso, então $ violation(d_{p_i},ag) $.
 
-Existe $c_r$, onde $c_r$ é um conjunto de relações das entidades. Cada $g_{e_i}$ possui um $c_{r_i}$ dada pela relação $hasConditionRelation(g_{e_i},c_{r_i})$. Se $ permission(ag,g_{e_i}) \wedge canStart(g_{e_i}) \wedge hasConditionRelation(g_{e_i},c_{r_i}) \wedge isRelationOf(r_j,c_{r_i}) \wedge \neg know(ag,r_j) \wedge tryReach(ag,g_{e_i})$ é verdade, então é verdade $ violation(r_j,g_{e_i},ag) $. Contudo $ violation(r_j,g_{e_i},ag) $ é falsopara a condição de $ permission(ag,g_{e_i}) \wedge canStart(g_{e_i}) \wedge hasConditionRelation(g_{e_i},c_{r_i}) \wedge isRelationOf(r_j,c_{r_i}) \wedge \neg know(ag,r_j) \wedge tryReach(ag,g_{e_i})$ ser falsa.
+\textbf{Definição 14} 
 
+Existe $c_r$, onde $c_r$ é um conjunto que mapeia as relações das entidades da pela relação $isRelationOf(r_j,c_{r_i})$. Cada $g_{e_i}$ possui um $c_{r_i}$ dada pela relação $hasConditionRelation(g_{e_i},c_{r_i})$. Se $ permission(ag,g_{e_i}) \wedge canStart(g_{e_i}) \wedge hasConditionRelation(g_{e_i},c_{r_i}) \wedge isRelationOf(r_j,c_{r_i}) \wedge \neg know(ag,r_j) \wedge tryReach(ag,g_{e_i})$ é verdade, então é verdade $ violation(r_j,g_{e_i},ag) $. Contudo $ violation(r_j,g_{e_i},ag) $ é falso para a condição de $ permission(ag,g_{e_i}) \wedge canStart(g_{e_i}) \wedge hasConditionRelation(g_{e_i},c_{r_i}) \wedge isRelationOf(r_j,c_{r_i}) \wedge \neg know(ag,r_j) \wedge tryReach(ag,g_{e_i})$ ser falsa.
 
-7.2 
+\textbf{Definição 15}
 
-Existe $c_r$, onde $c_r$ é um conjunto de relações das entidades. Cada $g_{e_i}$ possui um $c_{r_i}$ dada pela relação $hasConditionRelation(g_{e_i},c_{r_i})$. Se $ permission(ag,g_{e_i}) \wedge canStart(g_{e_i}) \wedge hasConditionRelation(g_{e_i},c_{r_i}) \wedge isRelationOf(r_j,c_{r_i}) \wedge \neg execute(ag,r_j) \wedge tryReach(ag,g_{e_i})$ é verdade, então é verdade $ violation(r_j,g_{e_i},ag) $. Contudo $ violation(r_j,g_{e_i},ag) $ é falso para a condição de $ permission(ag,g_{e_i}) \wedge canStart(g_{e_i}) \wedge hasConditionRelation(g_{e_i},c_{r_i}) \wedge isRelationOf(r_j,c_{r_i}) \wedge \neg execute(ag,r_j) \wedge tryReach(ag,g_{e_i})$ ser falsa.
+Se $ permission(ag,g_{e_i}) \wedge canStart(g_{e_i}) \wedge hasConditionRelation(g_{e_i},c_{r_i}) \wedge isRelationOf(r_j,c_{r_i}) \wedge \neg execute(ag,r_j) \wedge tryReach(ag,g_{e_i})$ é verdade, então é verdade $ violation(r_j,g_{e_i},ag) $. Contudo $ violation(r_j,g_{e_i},ag) $ é falso para a condição de $ permission(ag,g_{e_i}) \wedge canStart(g_{e_i}) \wedge hasConditionRelation(g_{e_i},c_{r_i}) \wedge isRelationOf(r_j,c_{r_i}) \wedge \neg execute(ag,r_j) \wedge tryReach(ag,g_{e_i})$ ser falsa.
 
-Definição 8
+\textbf{Definição 16}
 
 Se $ attribution(ag,\rho_{r}) \wedge deonticRelation(\rho_{r},g_{e_i},d_{o_i}) \wedge canStart(g_{e_i}) \wedge \neg tryReach(ag,g_{e_i}) $ então existe uma violação dada como $ violation(d_{o_i},ag,g_{e_i}) $. Se não $ violation(d_{o_i},ag,g_{e_i}) $ é falso.
 
-Definição 9 
+\textbf{Definição 17} 
 
-Existe um conjunto $ c_e $, condition entity, que consiste nas entidades necessárias para que um determinado objetivo possa ser alcançado. Para cada $ g_{e_{i}} $ existe uma dada relação em que $ hasConditionEntity(g_{e_i},c_{e_i}) $. Sendo assim, $ permission(ag,g_{e_i}) \wedge tryReach(ag,g_{e_i}) \wedge canStart(g_{e_i}) \wedge hasConditionEntity(g_{e_i},c_{e_i}) \wedge isEntityOf(e_k,c_{e_i}) \wedge \neg isInMomentOfGoal(e_k,g_{e_i}) \to  violation(g_{e_i},e_k,ag) $. Contudo, é verdadeiro $ \neg violation(g_{e_i},e_k,ag) $ se $ hasConditionEntity(g_{e_i},c_{e_i}) \wedge tryReach(ag,g_{e_i}) \wedge canStart(g_{e_i}) \wedge hasConditionEntity(g_{e_i},c_{e_i}) \wedge isEntityOf(e_k,c_{e_i}) \wedge \neg isInMomentOfGoal(e_k,g_{e_i}) $ é falso. A relação $isInMomentOfGoal(e_k,g_{e_i})$ indica se entidade estará disponível no momento que o agente $ag$ tenta alcançar o objetivo $g_{e_i}$.
+Existe um conjunto $ c_e $, condition entity, que mapeia as entidades necessárias $ isEntityOf(e_k,c_{e_i})$ para que um determinado objetivo possa ser alcançado. Para cada $ g_{e_{i}} $ existe uma dada relação em que $ hasConditionEntity(g_{e_i},c_{e_i}) $. Sendo assim, $ permission(ag,g_{e_i}) \wedge tryReach(ag,g_{e_i}) \wedge canStart(g_{e_i}) \wedge hasConditionEntity(g_{e_i},c_{e_i}) \wedge isEntityOf(e_k,c_{e_i}) \wedge \neg isInMomentOfGoal(e_k,g_{e_i}) \to  violation(g_{e_i},e_k,ag) $. Contudo, é verdadeiro $ \neg violation(g_{e_i},e_k,ag) $ se $ hasConditionEntity(g_{e_i},c_{e_i}) \wedge tryReach(ag,g_{e_i}) \wedge canStart(g_{e_i}) \wedge hasConditionEntity(g_{e_i},c_{e_i}) \wedge isEntityOf(e_k,c_{e_i}) \wedge \neg isInMomentOfGoal(e_k,g_{e_i}) $ é falso. A relação $isInMomentOfGoal(e_k,g_{e_i})$ indica se entidade estará disponível no momento que o agente $ag$ tenta alcançar o objetivo $g_{e_i}$.
 
-
-Definição 10
-
+\textbf{Definição 18} 
 
 \begin{equation}
 attribution(ag,\rho_a) \to obligation(ag,g_d)
 \end{equation}
 
-Definição 11
+\textbf{Definição 19}
 
 Se for verdade $ obligation(ag_i,g_d) \wedge delegate(ag_i,\rho_{r_i},ag_j) \wedge deonticRelation(\rho_{r_i},g_{e_i},d_{p}) \wedge hasConditionRelation(g_{e_i},c_{r_i}) \wedge isRelation(r_k,c_{r_i}) \wedge \neg know(ag_j,r_k) $ então ocorre uma violação em $violation(\rho_{a},g_{d},ag_{i})$. Se não,  $ \neg violation(\rho_{a},g_{d},ag_{i}) $ é verdade.
 
-Definição 12
+\textbf{Definição 20}
 
 \begin{eqnarray}
 violation(d_{p_i},ag) \to stopOperation \\
 \neg violation(d_{p_i},ag) \to \neg stopOperation 
 \end{eqnarray}
 
-
-Definição 13
-
-Definição 13.1
+\textbf{Definição 21}
 
 \begin{eqnarray}
 violation(r_j,g_{e_i},ag) \wedge isGoalRandon(g_{e_j}) \wedge hasPossibilityBadEvent(g_{e_j},p_1) \\  
@@ -129,7 +131,7 @@ violation(r_j,g_{e_i},ag) \wedge isGoalRandon(g_{e_j}) \wedge hasPossibilityBadE
 \to hasPossibilityBadEvent(g_{e_j},p_1) 
 \end{eqnarray}
 
-Definição 13.2
+\textbf{Definição 22}
 
 \begin{eqnarray}
 violation(r_j,g_{e_i},ag) \to sanction(g_{e_i},ag,risk) \to badEvent(risk,fatality,ag,g_{e_i}) \\
@@ -137,7 +139,7 @@ violation(r_j,g_{e_i},ag) \to sanction(g_{e_i},ag,risk) \to badEvent(risk,fatali
 \end{eqnarray}
 
 
-Definição 13.3
+\textbf{Definição 23}
 
 \begin{eqnarray}
 hasPossibilityBadEvent(g_{e_j},p) \wedge eventBadHappens(g_{e_j}) \wedge tryReach(ag,g_{e_j}) \\ \to badEvent(risk,fatality,ag,g_{e_j}) \\ 
@@ -145,32 +147,67 @@ hasPossibilityBadEvent(g_{e_j},p) \wedge \neg eventBadHappens(g_{e_j}) \wedge tr
 hasPossibilityBadEvent(g_{e_j},p) \wedge  eventBadHappens(g_{e_j}) \wedge \neg tryReach(ag,g_{e_j}) \\ \to \neg badEvent(risk,fatality,ag,g_{e_j}) 
 \end{eqnarray}
 
-Definição 14
+\textbf{Definição 24}
 
 \begin{eqnarray}
 violation(d_{o_i},ag,g_{e_i}) \to stopOperation \\
 \neg violation(d_{o_i},ag,g_{e_i}) \to \neg stopOperation 
 \end{eqnarray}
 
-Definição 15
+\textbf{Definição 25}
 
 \begin{eqnarray}
 	violation(g_{e_i},e_k,ag) \to sanction(g_{e_i},ag,risk) \to badEvent(risk,fatality,ag,g_{e_i}) \\
 	\neg violation(g_{e_i},e_k,ag) \to \neg sanction(g_{e_i},ag,risk) \to \neg badEvent(risk,fatality,ag,g_{e_i})
 \end{eqnarray}
 
+\textbf{Definição 26}
 
-Definição 16
+\begin{eqnarray}
+	violation(g_{e_i},ag,cm_i)  \to sanction(g_{e_i},ag,risk) \to badEvent(risk,fatality,ag,g_{e_i}) \\
+	\neg violation(g_{e_i},e_k,ag) \to \neg sanction(g_{e_i},ag,risk) \to \neg badEvent(risk,fatality,ag,g_{e_i})
+\end{eqnarray}
+
+\textbf{Definição 27}
 
 \begin{eqnarray}
 	badEvent(risk,fatality,ag,g_{e_i}) \to stopOperation \\
 	\neg badEvent(risk,fatality,ag,g_{e_i}) \to \neg stopOperation
 \end{eqnarray}
 
-
-Definição 17
+\textbf{Definição 28}
 
 Para todos os agentes que receberam uma obrigação de executar $g_{e_i}$, ao cumprir com a condição $ tryReach(g_{e_i},ag) \wedge \neg stopOperation $ então $ isCompleted(g_{e_i})$, se não, então é verdade $ failed(g_{e_i}) $
+
+
+
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.8\linewidth]{umlmodel} 
+\end{figure}
+
+\textbf{Algoritmo que implementa das Definições}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.8\linewidth]{fig1} 
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.8\linewidth]{fig2} 
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.8\linewidth]{fig3} 
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.8\linewidth]{fig4} 
+\end{figure}
 
 \end{document}
 	
