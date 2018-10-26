@@ -57,6 +57,7 @@ Sete profissionais de linha viva (profissionais que realizam manutenção em equ
 \begin{enumerate}
 	\item $Entity = \{e_1, ..., e_n\}$ - conjunto de todas as Entidades.  
 	\item $Agent = \{ag_1, ..., ag_n\}$ - conjunto dos Agentes.
+	\item $AgentGoal = agg = \{ag_1, ..., ag_n\}$ - conjunto dos Agentes que devem executar um determinado objetivo. 
 	\item $Artefact = \{at_1, ..., at_n\}$ - conjunto dos Artefatos.
 	\item $EntityGoal = eg = \{e_n,...,e_m\}$ - conjunto das Entidades que devem estar presentes para concluir um determinado objetivo $g_i$.
 	\item $Relation = \{r_1, ..., r_n\}$ - conjunto dos Relacionamentos.	
@@ -79,6 +80,7 @@ Sete profissionais de linha viva (profissionais que realizam manutenção em equ
 	\item $Entity \equiv Agent \cup Artefact$
 	\item $Agent$ e $Artefact$ são disjuntos.
 	\item $GoalRadomic \subset Goal$
+	\item $\{agg_1,...,agg_n\} \subset Agent$	
 	\item $\{gp_1,...,gp_n\} \subset Goal$
 	\item $\{cg_1,...,cg_n\} \subset Condition$
 	\item $\{eg_1,...,eg_n\} \subset Entity$		
@@ -93,199 +95,127 @@ Sete profissionais de linha viva (profissionais que realizam manutenção em equ
 	\item $hasObligation(\rho_m,g_j)$ - Quem assume o papel $\rho_m$ é obrigado a concluir o objetivo $g_j$.
 	\item $hasPermission(\rho_m,g_j)$ - Quem assume o papel $\rho_m$ tem a permissão de concluir o objetivo $g_j$.
 	\item $isReached(g_k)$ - O objetivo $g_k$ foi alcançado.
-	\item $isPreRequisite(gp_i,g)$ - Os objetivos $g$ pertencentes ao grupo $gp_i$ devem ser concluidos para que haja condição de executar g.
+	\item $stopIn(g_n,agg_m)$ - O objetivo não foi encerrado para todos os agentes que tiveram de executar. 	 				
+	\item $stopIn(g_n)$ - A atividade como um todo teve de ser finalizada em $g_n$.	 			
+	\item $isPreRequisite(gp_i,g_j)$ - Os objetivos $g$ pertencentes ao grupo $gp_i$ devem ser concluidos para que haja condição de executar g.
 	\item $hasCondition(g_i,cg_n)$ - Um objetivo do tipo $g_i$ possui certas condições $c$ que deve estar presentes e devem se manter durante toda execução deste objetivo. Essas condições $c$ devem estar conditdas em $cg_n$. 
+	\item $hasConditionInMoment(ag_m,g_j,cg_n)$ Todas as condições $cg_n$ vinculadas a um dado objetivo $g_j$ estão presentes quando um determinado agente $ag_m$ realiza esforços para alcançar esse objetivo. 
 	\item $hasEntity(g_i,eg_i)$ - Um objetivo $g_i$ tem um conjunto de entidades $eg_i$ onde todas as entidades presentes neste conjunto devem estar presentes no momento da execução desse objetivo.
 	\item $hasRelation(g_i,rg_i)$ - Um objetivo $g_i$ tem um conjunto de relacionamentos $rg_i$ onde todos esses relacionamentos devem ser feito para que este objetivo seja concluído.
-	\item $isPresent(cg_n)$ - Todas as condições pertencentes a $cg_n$ estão presentes.
+	\item $isPresent(cg_n)$ - Todas as condições conditas em $cg_n$ estão presentes durante a tentativa de alcançar o objetivo.
+	\item $isPresent(c_k)$ - Uma determinada condição $c_k$ está presente durante a tentativa de alcançar o objetivo.
+	\item $isPresent(r_k)$ - Um determinado relacionamento $r_k$ está presente durante a tentativa de alcançar o objetivo.	
+	\item $isPresent(e_k)$ - Uma determinada entidade $c_k$ está presente durante a tentativa de alcançar o objetivo.		
 	\item $tryReach(ag_i,g_j)$ - Um determinado agente $ag_i$ tenta alcançar o objetivo $g_j$.
-	\item $violationCondition(ag_i,g_j,c_k)$ - Um determinado agente $ag_i$ comete uma violação de condição no objetivo $g_j$ sobre a condição $c_k$. 
-	\item $violationNotPermission(ag_i,g_j)$ - O agente $ag_i$ comete uma violação de não permissão $g_j$ - tentativa de alcançar um objetivo mesmo sem ter permissão para isso. 
+	\item $violationNotPermission(ag_i,g_j)$ - O agente $ag_i$ comete uma violação de não permissão $g_j$ - tentativa de alcançar um objetivo mesmo sem ter permissão para isso. 	
 	\item $violationObligation(ag_i,g_j)$ - O agente $ag_i$ comete uma violação de obrigação $g_j$ - não executa o objetivo mesmo quando é obrigado a fazer isso e quando o objetivo está no momento certo de ser executado.
+	\item $violationCondition(ag_i,g_j,c_k)$ - Um determinado agente $ag_i$ comete uma violação de condição no objetivo $g_j$ sobre a condição $c_k$. 
 	\item $violationRelation(ag_i,g_j,r_k)$ - O agente $ag_i$ comete uma violação de Relacionamento no objetivo $g_j$ por não realizar o relacionamento $r_k$. 
 	\item $violationEntity(ag_i,g_j,e_k)$ - O agente $ag_i$ comete uma violação de Entidade no objetivo $g_j$ por tentar alcançar esse objetivo sem ter a entidade $e_k$ presente.  	
 	\item $hasRisk(c_k,risk_j,f_m)$ - A condição $c_k$ está associada a um risco $risk_k$ com uma certa fatalidade $f_m$. 
 	\item $hasRisk(r_k,risk_j,f_m)$ - O relacionamento $r_k$ está associado a um risco $risk_k$ com uma certa fatalidade $f_m$.
 	\item $hasRisk(e_k,risk_j,f_m)$ - A entidade $e_k$ está associada a um risco $risk_k$ com uma certa fatalidade $f_m$.
-	\item $badEvent(ag_i,risk_j,f_m)$ - Agente $ag$ sofre as consequências do risco $risk_j$ com a fatalidade $f_m$
+	\item $consequenceOfBadEvent(g_k,ag_i,risk_j,f_m)$ - Agente $ag$ sofre as consequências do risco $risk_j$ com a fatalidade $f_m$
+	\item $hasPossibility(gr_n,p_m)$ - Possibilidade $p_m$ do evento $gr_n$ gerar alguma consequência ruim. 	
+	\item $affects(r_k,gr_n,p_n)$ - Se uma relação $r_k$ não for feito, ou se essa relação for mal feita, então ela afeta negativamente algum objetivo com carater aleatório mudando a possibilidade para $p_n$ de um evento ruim acontecer. 	
+	\item $happensBadEvent(gr_n,r_m,ag_k)$ - O evento ruim de $g_r$ acontece em relação a um relacionamento necessário sobre um agente $ag_k$. 		
 \end{enumerate}
 
+\subsection{Definição das Relações de Implicabilidade}
 
-
-
-
-
-
-
-\textbf{Definição 7}
-
-\begin{equation}
-	attribution(ag,\rho_{r_i})\wedge deonticRelation(\rho_{r},g_{e_i},d_{o_i}) \to obligation(ag,g_{e_i}) 
+Todo agente que é obrigado a alcançar um determinado objetivo deve ter a permissão para realizar essa ação.
+\begin{equation}\label{rel1}
+	hasObligation(\rho_m,g_j) \to hasPermission(\rho_m,g_j)  
 \end{equation}
-
-
-\textbf{Motivo} 
-
-Se um agente posssui atribuição de um papel e se um determinado objetivo está dentro do escopo deste papel, então esse agente possui a obrigação de alcançar este objetivo.
-
-
-
-\textbf{Definição 8}
-
-\begin{equation}
-  attribution(ag,\rho_{r_i})\wedge deonticRelation(\rho_{r_i},g_{e_i},d_{p_i}) \to permission(ag,g_{e_i}) 
-\end{equation}
-
-
-
-\textbf{Motivo} 
-
-Se um agente posssui atribuição de um papel e se um determinado objetivo está dentro do escopo deste papel, então esse agente possui a permissão de alcançar este objetivo.
-
-
-\textbf{Definição 9}
-
-\begin{equation}
-  obligation(ag,g_{e_i}) \to permission(ag,g_{e_i}) 
-\end{equation}
-
-
-\textbf{Motivo} 
-
-Toda a obrigação implica em uma permissão. 
-
-
-\textbf{Definição 10}
-
-Se para iniciar um determinado objetivo $ g_{e_j} $ é necessário completar outros objetivos, $ g_{e_i}, ... g_{e_k} $, se pelo menos um destes objetivos for falso para $ isCompleted(g_x), x = i,..,k $, então $ preCondition(g_j,(g_{i},...g_{k})) $ é falso, se não, então  $ preCondition(g_j,(g_{i},...g_{k})) $ é verdadeiro.
-
-Sendo que existe um conjunto $ g_{preRequisit} = \{g_{i},...g_{k}\} $, então
-
-\begin{eqnarray}
-  (preCondition(g_j,g_{preRequisite}) \to preRequisit(g_j)) \wedge  \\ \neg (preCondition(g_j,g_{preRequisite}) \to \neg preRequisit(g_j))  
+Um agente que tenta alcançar um objetivo ao qual ele não tem permissão para fazer, então ele comete uma violação conhecida como violação da não permissão.
+\begin{eqnarray}\label{rel2}\nonumber
+	hasRole(ag_n,\rho_m) \wedge \neg hasPermission(\rho_m,g_j) \wedge tryReach(ag_m,g_j) \to \\ violationNotPermission(ag_n,g_j)
 \end{eqnarray}
-
-\textbf{Motivo} 
-
-Um objetivo pode ser executado apenas se os pre-requisitos forem alcançados. 
-
-
-\textbf{Definição 11}
-
-Sendo $cm$ conjunto de condições que devem ser mantidos o tempo inteiro para que a atividade possa acontecer,
-\begin{eqnarray}
-    preRequisit(g_{e_i}) \wedge hasMaintainer(g_{e_i},cm_i) \wedge isOk(cm_i) \to canStart(g_{e_i}) 
+Um agente que tenta alcançar um objetivo sem que pelo menos uma das condições necessárias para isso esteja presente, comete uma violação conhecida como violação de condição.
+\begin{eqnarray}\label{rel3}\nonumber
+	hasCondition(g_i,cg_n) \wedge \neg isPresent(c_k) \wedge (c_k \in cg_n) \wedge tryReach(ag_m,g_i) \to \\ 
+	violationCondition(ag_m,g_j,c_k) 
 \end{eqnarray}
-
-\textbf{Motivo} 
-
-Considerações que devem ser alcançadas e mantidas para que um determiando objetivo tenha condições de começar a ser alcançado. Essas considerações consiste em ter os seus pre-requisitos alcançados (Definição 10), e as condições temporais devem possibilitar a atividade.  
-
-
-
-\textbf{Definição 12} 
-
-\begin{eqnarray}
-    preRequisit(g_{e_i}) \wedge hasMaintainer(g_{e_i},cm_i) \wedge \neg isOk(cm_i) \wedge  tryReach(g_{e_i},ag) \to  \\ violation(g_{e_i},ag,cm_i)    
+Se todas as condições necessárias para alcançar um determinado objetivo estão presentes, então não há nenhum impedimento (pelo aspecto da condição) para o agente tentar alcançar esse objetivo.  
+\begin{eqnarray}\nonumber
+	hasCondition(g_i,cg_n) \wedge isPresent(cg_n) \wedge (c_k \in cg_n) \to \\ 
+	hasConditionInMoment(ag_m,g_i,cg_n) 
 \end{eqnarray}
-
-\textbf{Motivo} 
-
-Se o agente tentar executar um determinado objetivo mesmo que as condições    
-
-\textbf{Definição 13}
-
-Se $ attribution(ag,\rho_{r}) \wedge \neg deonticRelation(\rho_{r},g_{e_i},d_{p_i}) \wedge canStart(g_{e_i}) \wedge tryReach(g_{e_i},ag) $ é verdade, então $ violation(d_{p_i},ag) $ é verdade. Contudo, se $ attribution(ag,\rho_{r}) \wedge \neg deonticRelation(\rho_{r},g_{e},d_{p_i}) \wedge canStart(g_e) \wedge tryReach(g_{e_i},ag) $ for falso, então $ violation(d_{p_i},ag) $.
-
-\textbf{Definição 14} 
-
-Existe $c_r$, onde $c_r$ é um conjunto que mapeia as relações das entidades da pela relação $isRelationOf(r_j,c_{r_i})$. Cada $g_{e_i}$ possui um $c_{r_i}$ dada pela relação $hasConditionRelation(g_{e_i},c_{r_i})$. Se $ permission(ag,g_{e_i}) \wedge canStart(g_{e_i}) \wedge hasConditionRelation(g_{e_i},c_{r_i}) \wedge isRelationOf(r_j,c_{r_i}) \wedge \neg know(ag,r_j) \wedge tryReach(ag,g_{e_i})$ é verdade, então é verdade $ violation(r_j,g_{e_i},ag) $. Contudo $ violation(r_j,g_{e_i},ag) $ é falso para a condição de $ permission(ag,g_{e_i}) \wedge canStart(g_{e_i}) \wedge hasConditionRelation(g_{e_i},c_{r_i}) \wedge isRelationOf(r_j,c_{r_i}) \wedge \neg know(ag,r_j) \wedge tryReach(ag,g_{e_i})$ ser falsa.
-
-\textbf{Definição 15}
-
-Se $ permission(ag,g_{e_i}) \wedge canStart(g_{e_i}) \wedge hasConditionRelation(g_{e_i},c_{r_i}) \wedge isRelationOf(r_j,c_{r_i}) \wedge \neg execute(ag,r_j) \wedge tryReach(ag,g_{e_i})$ é verdade, então é verdade $ violation(r_j,g_{e_i},ag) $. Contudo $ violation(r_j,g_{e_i},ag) $ é falso para a condição de $ permission(ag,g_{e_i}) \wedge canStart(g_{e_i}) \wedge hasConditionRelation(g_{e_i},c_{r_i}) \wedge isRelationOf(r_j,c_{r_i}) \wedge \neg execute(ag,r_j) \wedge tryReach(ag,g_{e_i})$ ser falsa.
-
-\textbf{Definição 16}
-
-Se $ attribution(ag,\rho_{r}) \wedge deonticRelation(\rho_{r},g_{e_i},d_{o_i}) \wedge canStart(g_{e_i}) \wedge \neg tryReach(ag,g_{e_i}) $ então existe uma violação dada como $ violation(d_{o_i},ag,g_{e_i}) $. Se não $ violation(d_{o_i},ag,g_{e_i}) $ é falso.
-
-\textbf{Definição 17} 
-
-Existe um conjunto $ c_e $, condition entity, que mapeia as entidades necessárias $ isEntityOf(e_k,c_{e_i})$ para que um determinado objetivo possa ser alcançado. Para cada $ g_{e_{i}} $ existe uma dada relação em que $ hasConditionEntity(g_{e_i},c_{e_i}) $. Sendo assim, $ permission(ag,g_{e_i}) \wedge tryReach(ag,g_{e_i}) \wedge canStart(g_{e_i}) \wedge hasConditionEntity(g_{e_i},c_{e_i}) \wedge isEntityOf(e_k,c_{e_i}) \wedge \neg isInMomentOfGoal(e_k,g_{e_i}) \to  violation(g_{e_i},e_k,ag) $. Contudo, é verdadeiro $ \neg violation(g_{e_i},e_k,ag) $ se $ hasConditionEntity(g_{e_i},c_{e_i}) \wedge tryReach(ag,g_{e_i}) \wedge canStart(g_{e_i}) \wedge hasConditionEntity(g_{e_i},c_{e_i}) \wedge isEntityOf(e_k,c_{e_i}) \wedge \neg isInMomentOfGoal(e_k,g_{e_i}) $ é falso. A relação $isInMomentOfGoal(e_k,g_{e_i})$ indica se entidade estará disponível no momento que o agente $ag$ tenta alcançar o objetivo $g_{e_i}$.
-
-\textbf{Definição 18} 
-
-\begin{equation}
-attribution(ag,\rho_a) \to obligation(ag,g_d)
-\end{equation}
-
-\textbf{Definição 19}
-
-Se for verdade $ obligation(ag_i,g_d) \wedge delegate(ag_i,\rho_{r_i},ag_j) \wedge deonticRelation(\rho_{r_i},g_{e_i},d_{p}) \wedge hasConditionRelation(g_{e_i},c_{r_i}) \wedge isRelation(r_k,c_{r_i}) \wedge \neg know(ag_j,r_k) $ então ocorre uma violação em $violation(\rho_{a},g_{d},ag_{i})$. Se não,  $ \neg violation(\rho_{a},g_{d},ag_{i}) $ é verdade.
-
-\textbf{Definição 20}
-
-\begin{eqnarray}
-violation(d_{p_i},ag) \to stopOperation \\
-\neg violation(d_{p_i},ag) \to \neg stopOperation 
+Se um agente não executa, ou não tem condições de executar, um dado relacionamento $r_k$ necessário para concluir o objetivo, então o agente cometeu uma violação de relacionamento. 
+\begin{eqnarray}\nonumber
+	hasConditionInMoment(ag_m,g_i,cg_n)  \wedge hasRelation(g_i,rg_n)\wedge \neg isPresent(r_k)  \nonumber \\ 
+	\wedge (r_k \in rg_n) \wedge tryReach(ag_m,g_i) \to \nonumber \\ 
+	violationRelation(ag_m,g_i,r_k) 
 \end{eqnarray}
-
-\textbf{Definição 21}
-
-\begin{eqnarray}
-violation(r_j,g_{e_i},ag) \wedge isGoalRandon(g_{e_j}) \wedge hasPossibilityBadEvent(g_{e_j},p_1) \\  
-\to hasPossibilityBadEvent(g_{e_j},p_2) \wedge p_2 > p_1 \\
-\neg violation(r_j,g_{e_i},ag) \wedge isGoalRandon(g_{e_j}) \wedge hasPossibilityBadEvent(g_{e_j},p_1) \\  
-\to hasPossibilityBadEvent(g_{e_j},p_1) 
+Se ao tentar alcançar um determinado objetivo pelo menos uma das entidades necessárias para isso está ausente, então acontece um uma violação de entidade. 
+\begin{eqnarray}\nonumber
+	hasConditionInMoment(ag_m,g_i,cg_n) \wedge hasEntity(g_i,eg_n) \wedge \neg isPresent(e_k) \nonumber \\ 
+	\wedge (e_k \in eg_n) \wedge tryReach(ag_m,g_i) \to \nonumber \\ 
+	violationEntity(ag_m,g_i,e_k) 
 \end{eqnarray}
-
-\textbf{Definição 22}
-
+Dado um certo objetivo, sendo agente obrigado a concluir esse objetivo, sendo que todos os pre-requisitos desse objetivo foram adequadamente concluídos, sendo que as condições necessárias para isso estão presentes, porém o agente não tenta alcançar o objetivo, 
+ao não consegue, então acontece uma violação conhecida como violação por obrigação.
+\begin{eqnarray}\nonumber
+	hasConditionInMoment(ag_m,g_i,cg_n) \wedge hasObligation(\rho_m,g_j) \wedge hasRole(ag_n,\rho_m) \nonumber \\ 
+	\wedge isPreRequisite(gp_l,g_j) \wedge \neg tryReach(ag_m,g_i) \to \nonumber \\ 
+	violationObligation(ag_m,g_i)
+\end{eqnarray}
+Uma violação por não permissão gera a imediata interrupção da atividade no objetivo de ocorrência.
 \begin{eqnarray}
-violation(r_j,g_{e_i},ag) \to sanction(g_{e_i},ag,risk) \to badEvent(risk,fatality,ag,g_{e_i}) \\
-\neg violation(r_j,g_{e_i},ag) \to \neg sanction(g_{e_i},ag,risk) \to \neg  badEvent(risk,fatality,ag,g_{e_i})
+	violationNotPermission(ag_m,g_i) \to stopIn(g_i)
+\end{eqnarray}
+Uma violação de obrigação gera a imediata interrupção da atividade no objetivo de ocorrência.
+\begin{eqnarray}
+	violationObligation(ag_m,g_i) \to stopIn(g_i)
+\end{eqnarray}
+Uma violação de condição tem como consequêcias a ocorrência do risco (sobre o agente que cometeu a violação) relacionado a condição que não estava presente. Esse risco pode apresentar diferentes graus de fatalidade.
+\begin{eqnarray}\nonumber
+	violationCondition(ag_m,g_i,c_k)  \wedge hasRisk(c_k,risk_j,f_m) \to \\ 
+	consequenceOfBadEvent(g_i,ag_m,risk_j,f_m)
+\end{eqnarray}
+Uma violação de relacionamento tem como consequência a ocorrência do risco (sobre o agente que cometeu a violação) relacionado ao relacionamento que não foi feito. Esse risco pode apresentar diferentes graus de fatalidade.
+\begin{eqnarray}\nonumber
+	violationRelation(ag_m,g_i,r_k) \wedge hasRisk(r_k,risk_j,f_m) \to \\ 
+	consequenceOfBadEvent(g_i,ag_m,risk_j,f_m)
+\end{eqnarray}
+Uma violação de relacionamento tem como consequência o aumento da possibilidade de acontecer algo de errado em objetivos que podem ser afetados por características aleatórias. Assim sendo, esse outro objetivo tem uma nova possibilidade de dar errado que é necessariamente maior a possibilidade antiga.
+\begin{eqnarray}\nonumber
+	violationRelation(ag_m,g_i,r_k) \wedge affects(r_k,gr_n,p_n) \wedge hasPossibility(gr_n,p_m) \to \\  
+	hasPossibility(gr_n,p_n) \wedge (p_n > p_m)
+\end{eqnarray}
+Uma violação de entidade gera a interrupção imediata da atividade no objetivo de ocorrência.
+\begin{eqnarray}
+	violationEntity(ag_m,g_i,e_k) \to stopIn(g_i)
+\end{eqnarray}
+ Em um objetivo onde existe uma certa possibilidade de dar errado, essa possibilidade é vinculada aos relacionamentes que devem ser feitos para concluir este objetivo. Assim sendo, um determinado agente sofrerá as consequêcias ruins pela ocorrência do evento.
+\begin{eqnarray}\nonumber
+	happensBadEvent(gr_n,r_m) \wedge hasRisk(r_k,risk_j,f_m) \nonumber \\ 
+	\to consequenceOfBadEvent(gr_n,ag_m,risk_j,f_m)
+\end{eqnarray}
+A ocorrência de um evento ruim gera imediata interrupção das atividades.
+\begin{eqnarray}
+	consequenceOfBadEvent(g_k,ag_m,risk_j,f_m) \to stopIn(g_k)
+\end{eqnarray}
+Se o objetivo não é encerrado para todos os agentes que tinha como por permissão executa-lo, então o objetivo é alcançado. 
+\begin{eqnarray}
+	\neg stopIn(g_k,agg_n) \to isReached(g_k)
 \end{eqnarray}
 
 
-\textbf{Definição 23}
+\subsection{Justificando a Existência das Relações de Implicabilidade}
 
-\begin{eqnarray}
-hasPossibilityBadEvent(g_{e_j},p) \wedge eventBadHappens(g_{e_j}) \wedge tryReach(ag,g_{e_j}) \\ \to badEvent(risk,fatality,ag,g_{e_j}) \\ 
-hasPossibilityBadEvent(g_{e_j},p) \wedge \neg eventBadHappens(g_{e_j}) \wedge tryReach(ag,g_{e_j}) \\ \to \neg badEvent(risk,fatality,ag,g_{e_j}) \\
-hasPossibilityBadEvent(g_{e_j},p) \wedge  eventBadHappens(g_{e_j}) \wedge \neg tryReach(ag,g_{e_j}) \\ \to \neg badEvent(risk,fatality,ag,g_{e_j}) 
-\end{eqnarray}
+\subsubsection{Relação \ref{rel1}}
+A relação \ref{rel1} existe com base em estudos sobre lógica deontica (definir o estudo) onde um indivídulo só pode ser obrigado a fazer algo se esse indivídulo tiver permissão para isso. Caso contrário, há uma contradição em relação a semântica dos predicados, pois é dado como absurdo alguém ser obrigado a fazer algo sem ter permissão para isso. 
 
-\textbf{Definição 24}
+\subsubsection{Relação \ref{rel2}}
+Uma das propostas do modelo consiste representar situações onde um indivíduo faz algo que não deve ser feito. Essa constatação pode ter o vocabulário reformulado para a seguinte expressão; Um agente tenta executar um objetivo que não lhe é permitido ser feito. Assim sendo, para transformar essa sentença em uma relação de implicabilidade em termos de lógica de predicados, se faz necessário considerar qual sobre qual agente que está sendo falando, qual o papel deste agente, quais são os objetivos atrelados a este agente (se o objetivo que o agente tenta alcançar faz parte do escopo dos objetivos vinculados ao agente) e o que este agente tenta fazer em relação a este objetivo. 
 
-\begin{eqnarray}
-violation(d_{o_i},ag,g_{e_i}) \to stopOperation \\
-\neg violation(d_{o_i},ag,g_{e_i}) \to \neg stopOperation 
-\end{eqnarray}
+A tratativa de que o agente tem um papel e que tem permissão para um alcançar um certo objetivo é dado por $hasRole(ag_n,\rho_m) \wedge hasPermission(\rho_m,g_j)$. Contudo, o interesse desta expressão consiste compreender se é verdade que o agente não tem a permissão de alcançar um determinado objetivo. Ora, para isso se faz necessário negar $hasPermission(\rho_m,g_j)$. Para que se mantenha coerência no modelo, se faz necessário assumir que se não existe uma determinada expressão de permissão $hasPermission(\rho_m,g_j)$ para um dado papel, então é verdade que $\neg hasPermission(\rho_m,g_j)$. Para poder representar ponto sobre o qual o modelo propõem também se faz necessário a existência de um predicado para definir se o agente tenta alcançar um dado objetivo. Isso, pois, é um absurdo considerar que o agente cometeu uma violação sobre um objetivo que ele não tem permissão de alcançar se ele nem mesmo tentou alcançar esse objetivo. Assim sendo, a expressão deve considerar o predicado $tryReach(ag_m,g_j)$. 
 
-\textbf{Definição 25}
+\subsubsection{Relação \ref{rel3}}
+Representar condições que devem ser mantidas ao longo de toda a execução da atividade bem como as consequências de praticar uma determinada atividade dado a ausência de pelo menos uma das condições é um aspecto sobre o qual este modelo se propõem a representar. Para definir a ocorrência da vioação se faz necessário saber quais são as condições vinculadas ao objetivo. Isso é feito por meio do predicado $hasCondition(g_i,cg_n)$. Também, se faz necessário saber se a condição necessária tentar alcançar o objetivo não está presente durante a realização deste ato. Isso é feit por negar o predicado $isPresent(c_k)$. Isso, pois este predicado retorna que é verdade que a condição $c_k$ existe durante a tentativa de concluir o objetivo. Ainda sim, definir em uma única expressão o predicado $hasCondition(g_i,cg_n)$ e o predicado $isPresent(c_k)$ não é o suficiente, pois $cg_n$ é um conjunto e $c_k$ é um elemento que pode ou não pertencer ao conjunto $cg_n$. Assim sendo, isso deve ser levado em consideração por agregar a seguinte relação a expressão: $c_k \in cg_n$. 
 
-\begin{eqnarray}
-	violation(g_{e_i},e_k,ag) \to sanction(g_{e_i},ag,risk) \to badEvent(risk,fatality,ag,g_{e_i}) \\
-	\neg violation(g_{e_i},e_k,ag) \to \neg sanction(g_{e_i},ag,risk) \to \neg badEvent(risk,fatality,ag,g_{e_i})
-\end{eqnarray}
-
-\textbf{Definição 26}
-
-\begin{eqnarray}
-	violation(g_{e_i},ag,cm_i)  \to sanction(g_{e_i},ag,risk) \to badEvent(risk,fatality,ag,g_{e_i}) \\
-	\neg violation(g_{e_i},e_k,ag) \to \neg sanction(g_{e_i},ag,risk) \to \neg badEvent(risk,fatality,ag,g_{e_i})
-\end{eqnarray}
-
-\textbf{Definição 27}
-
-\begin{eqnarray}
-	badEvent(risk,fatality,ag,g_{e_i}) \to stopOperation \\
-	\neg badEvent(risk,fatality,ag,g_{e_i}) \to \neg stopOperation
-\end{eqnarray}
-
-\textbf{Definição 28}
-
-Para todos os agentes que receberam uma obrigação de executar $g_{e_i}$, ao cumprir com a condição $ tryReach(g_{e_i},ag) \wedge \neg stopOperation $ então $ isCompleted(g_{e_i})$, se não, então é verdade $ failed(g_{e_i}) $
+Assim como na relação \ref{rel2}, a relação \ref{rel3} é um absurdo se não considerar se é verdade que o agente tenta alcançar o objetivo em análise. Uma relação de implicabilidade com essa característica: $hasCondition(g_i,cg_n) \wedge \neg isPresent(c_k) \wedge (c_k \in cg_n) \to \\ violationCondition(g_j,c_k) $  desconsidera se o agente tentou executar ou não o objetivo mesmo com ausência de uma condição importante. Para isso, se faz necessário considerar o predicado $tryReach(ag_m,g_j)$ na expressão.
 
 \begin{figure}
   \centering
