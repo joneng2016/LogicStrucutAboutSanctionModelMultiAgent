@@ -16,7 +16,7 @@
 O modelo proposto tem como por finalidade representar atividades onde um grupo de pessoas  devem atuar de forma colaborativa com o propósito de resolver um problema. Esse problema pode ser dividido em etapas menores conhecidas como objetivos. Essas pessoas podem se relacionar entre sí, podem se relacionar com os artefatos presentes no meio 
 onde elas atuam. Os artefatos também possuem a capacidade de se relacionar. Cada objetivo é concluído apenas se  um ou mais relacionamentos forem realizados. A conclusão do objetivo também é função de certos agentes e artefatos que devem ser presentes. 
 
-Outra finalidade do modelo consiste em representar condições que devem ser mantidas ao longo da atividade, se essas condições forem desfeitas - a atividade deve ser encerrada de imediato, caso contrário as pessoas envolvidas nesta manutenção estarão submetidas a risco de morte. Dentro desta abordagem, alguém designado para cumprir com alguma atividade pode cometer erros. Esse modelo tem como por finalidade lidar com os seguintes tipos de erro: não executar algum ação quando essa ação deve ser executada, executar uma ação quando ela não deve ser executada, executar uma ação quando não há condições apropriadas para isso, manipular artefatos de maneira inapropriada ou inadvertida e escolher os artefatos inapropriados para cumprir com uma determinada atividade.
+Outra finalidade do modelo consiste em representar condições que devem ser mantidas ao longo da atividade, se essas condições forem desfeitas - a atividade deve ser encerrada de imediato, caso contrário as pessoas envolvidas nesta manutenção estarão submetidas a risco de morte. Dentro desta abordagem, alguém designado para cumprir com alguma atividade pode cometer erros. Esse modelo tem como por finalidade lidar com os seguintes tipos de erro: executar uma ação quando não há condições apropriadas para isso, manipular artefatos de maneira inapropriada ou inadvertida e escolher os artefatos inapropriados para cumprir com uma determinada atividade.
 
 O modelo deve ser capaz de representar as consequências desses erros. Esse modelo está preocupado em representar dois tipos de consequências, essas são: 1 - imediatas que acontece sobre o indivíduo errante, 2 - a consequência manifesta em outro objetivo sobre o mesmo ou outro indivíduo pertencente ao grupo. Essas consequências são efeitos físicos negativos que alguém vêem a sofrer. A intensidade dessas consequências variam desde uma leve lesão a morte.
 
@@ -99,7 +99,6 @@ Sete profissionais de linha viva (profissionais que realizam manutenção em equ
 	\item $stopIn(g_n)$ - A atividade como um todo teve de ser finalizada em $g_n$.	 			
 	\item $isPreRequisite(gp_i,g_j)$ - Os objetivos $g$ pertencentes ao grupo $gp_i$ devem ser concluidos para que haja condição de executar g.
 	\item $hasCondition(g_i,cg_n)$ - Um objetivo do tipo $g_i$ possui certas condições $c$ que deve estar presentes e devem se manter durante toda execução deste objetivo. Essas condições $c$ devem estar conditdas em $cg_n$. 
-	\item $hasConditionInMoment(ag_m,g_j,cg_n)$ Todas as condições $cg_n$ vinculadas a um dado objetivo $g_j$ estão presentes quando um determinado agente $ag_m$ realiza esforços para alcançar esse objetivo. 
 	\item $hasEntity(g_i,eg_i)$ - Um objetivo $g_i$ tem um conjunto de entidades $eg_i$ onde todas as entidades presentes neste conjunto devem estar presentes no momento da execução desse objetivo.
 	\item $hasRelation(g_i,rg_i)$ - Um objetivo $g_i$ tem um conjunto de relacionamentos $rg_i$ onde todos esses relacionamentos devem ser feito para que este objetivo seja concluído.
 	\item $isPresent(cg_n)$ - Todas as condições conditas em $cg_n$ estão presentes durante a tentativa de alcançar o objetivo.
@@ -107,8 +106,6 @@ Sete profissionais de linha viva (profissionais que realizam manutenção em equ
 	\item $isPresent(r_k)$ - Um determinado relacionamento $r_k$ está presente durante a tentativa de alcançar o objetivo.	
 	\item $isPresent(e_k)$ - Uma determinada entidade $c_k$ está presente durante a tentativa de alcançar o objetivo.		
 	\item $tryReach(ag_i,g_j)$ - Um determinado agente $ag_i$ tenta alcançar o objetivo $g_j$.
-	\item $violationNotPermission(ag_i,g_j)$ - O agente $ag_i$ comete uma violação de não permissão $g_j$ - tentativa de alcançar um objetivo mesmo sem ter permissão para isso. 	
-	\item $violationObligation(ag_i,g_j)$ - O agente $ag_i$ comete uma violação de obrigação $g_j$ - não executa o objetivo mesmo quando é obrigado a fazer isso e quando o objetivo está no momento certo de ser executado.
 	\item $violationCondition(ag_i,g_j,c_k)$ - Um determinado agente $ag_i$ comete uma violação de condição no objetivo $g_j$ sobre a condição $c_k$. 
 	\item $violationRelation(ag_i,g_j,r_k)$ - O agente $ag_i$ comete uma violação de Relacionamento no objetivo $g_j$ por não realizar o relacionamento $r_k$. 
 	\item $violationEntity(ag_i,g_j,e_k)$ - O agente $ag_i$ comete uma violação de Entidade no objetivo $g_j$ por tentar alcançar esse objetivo sem ter a entidade $e_k$ presente.  	
@@ -127,77 +124,68 @@ Todo agente que é obrigado a alcançar um determinado objetivo deve ter a permi
 \begin{equation}\label{rel1}
 	hasObligation(\rho_m,g_j) \to hasPermission(\rho_m,g_j)  
 \end{equation}
-Um agente que tenta alcançar um objetivo ao qual ele não tem permissão para fazer, então ele comete uma violação conhecida como violação da não permissão.
-\begin{eqnarray}\label{rel2}\nonumber
-	hasRole(ag_n,\rho_m) \wedge \neg hasPermission(\rho_m,g_j) \wedge tryReach(ag_m,g_j) \to \\ violationNotPermission(ag_n,g_j)
-\end{eqnarray}
+
 Um agente que tenta alcançar um objetivo sem que pelo menos uma das condições necessárias para isso esteja presente, comete uma violação conhecida como violação de condição.
 \begin{eqnarray}\label{rel3}\nonumber
-	hasCondition(g_i,cg_n) \wedge \neg isPresent(c_k) \wedge (c_k \in cg_n) \wedge tryReach(ag_m,g_i) \to \\ 
-	violationCondition(ag_m,g_j,c_k) 
+	hasCondition(g_i,cg_n) \wedge \neg isPresent(c_k) \wedge (c_k \in cg_n) \wedge tryReach(ag_m,g_i) \to \nonumber \\  
+	violationCondition(ag_m,g_j,c_k) \wedge \nonumber \\
+	hasCondition(g_i,cg_n) \wedge isPresent(cg_n) \wedge tryReach(ag_m,g_i) \to \nonumber \\  
+	\neg violationCondition(ag_m,g_j,c_k)  	
 \end{eqnarray}
-Se todas as condições necessárias para alcançar um determinado objetivo estão presentes, então não há nenhum impedimento (pelo aspecto da condição) para o agente tentar alcançar esse objetivo.  
-\begin{eqnarray}\nonumber
-	hasCondition(g_i,cg_n) \wedge isPresent(cg_n) \wedge (c_k \in cg_n) \to \\ 
-	hasConditionInMoment(ag_m,g_i,cg_n) 
+
+Se um agente não executa, ou não tem condições de executar, um dado relacionamento $r_k$ necessário para concluir o objetivo, então o agente cometeu uma violação de relacionamento. Contudo, se o agente alcançar o objetivo, então a não violação acontece. 
+\begin{eqnarray}\label{rel4}\nonumber
+	hasRelation(g_i,rg_n)\wedge \neg isPresent(r_k)  \nonumber \\ 
+	\wedge (r_k \in rg_n) \wedge tryReach(ag_m,g_i) \to violationRelation(ag_m,g_i,r_k) \nonumber \\
+	\wedge \nonumber
+	\\
+	hasRelation(g_i,rg_n)\wedge isPresent(rg_n)  \nonumber \\ 
+	 \wedge tryReach(ag_m,g_i) \to  \neg violationRelation(ag_m,g_i,r_k) 
 \end{eqnarray}
-Se um agente não executa, ou não tem condições de executar, um dado relacionamento $r_k$ necessário para concluir o objetivo, então o agente cometeu uma violação de relacionamento. 
-\begin{eqnarray}\nonumber
-	hasConditionInMoment(ag_m,g_i,cg_n)  \wedge hasRelation(g_i,rg_n)\wedge \neg isPresent(r_k)  \nonumber \\ 
-	\wedge (r_k \in rg_n) \wedge tryReach(ag_m,g_i) \to \nonumber \\ 
-	violationRelation(ag_m,g_i,r_k) 
+
+Se ao tentar alcançar um determinado objetivo pelo menos uma das entidades necessárias para isso está ausente, então acontece um uma violação de entidade. Contudo, se todas as entidades estiverem presente, então a vioalação não acontence. 
+\begin{eqnarray}\label{rel5}\nonumber
+	hasEntity(g_i,eg_n) \wedge \neg isPresent(e_k) 	\wedge (e_k \in eg_n) \wedge tryReach(ag_m,g_i) \to \nonumber \\ violationEntity(ag_m,g_i,e_k) \nonumber \\
+	hasEntity(g_i,eg_n) \wedge  isPresent(eg_n) \wedge tryReach(ag_m,g_i) \to \nonumber \\ \neg violationEntity(ag_m,g_i,e_k)  
 \end{eqnarray}
-Se ao tentar alcançar um determinado objetivo pelo menos uma das entidades necessárias para isso está ausente, então acontece um uma violação de entidade. 
-\begin{eqnarray}\nonumber
-	hasConditionInMoment(ag_m,g_i,cg_n) \wedge hasEntity(g_i,eg_n) \wedge \neg isPresent(e_k) \nonumber \\ 
-	\wedge (e_k \in eg_n) \wedge tryReach(ag_m,g_i) \to \nonumber \\ 
-	violationEntity(ag_m,g_i,e_k) 
-\end{eqnarray}
-Dado um certo objetivo, sendo agente obrigado a concluir esse objetivo, sendo que todos os pre-requisitos desse objetivo foram adequadamente concluídos, sendo que as condições necessárias para isso estão presentes, porém o agente não tenta alcançar o objetivo, 
-ao não consegue, então acontece uma violação conhecida como violação por obrigação.
-\begin{eqnarray}\nonumber
-	hasConditionInMoment(ag_m,g_i,cg_n) \wedge hasObligation(\rho_m,g_j) \wedge hasRole(ag_n,\rho_m) \nonumber \\ 
-	\wedge isPreRequisite(gp_l,g_j) \wedge \neg tryReach(ag_m,g_i) \to \nonumber \\ 
-	violationObligation(ag_m,g_i)
-\end{eqnarray}
-Uma violação por não permissão gera a imediata interrupção da atividade no objetivo de ocorrência.
-\begin{eqnarray}
-	violationNotPermission(ag_m,g_i) \to stopIn(g_i)
-\end{eqnarray}
-Uma violação de obrigação gera a imediata interrupção da atividade no objetivo de ocorrência.
-\begin{eqnarray}
-	violationObligation(ag_m,g_i) \to stopIn(g_i)
-\end{eqnarray}
+
+
 Uma violação de condição tem como consequêcias a ocorrência do risco (sobre o agente que cometeu a violação) relacionado a condição que não estava presente. Esse risco pode apresentar diferentes graus de fatalidade.
-\begin{eqnarray}\nonumber
+\begin{eqnarray}\label{rel9}\nonumber
 	violationCondition(ag_m,g_i,c_k)  \wedge hasRisk(c_k,risk_j,f_m) \to \\ 
 	consequenceOfBadEvent(g_i,ag_m,risk_j,f_m)
 \end{eqnarray}
+
 Uma violação de relacionamento tem como consequência a ocorrência do risco (sobre o agente que cometeu a violação) relacionado ao relacionamento que não foi feito. Esse risco pode apresentar diferentes graus de fatalidade.
-\begin{eqnarray}\nonumber
+\begin{eqnarray}\label{rel10}\nonumber
 	violationRelation(ag_m,g_i,r_k) \wedge hasRisk(r_k,risk_j,f_m) \to \\ 
 	consequenceOfBadEvent(g_i,ag_m,risk_j,f_m)
 \end{eqnarray}
+
 Uma violação de relacionamento tem como consequência o aumento da possibilidade de acontecer algo de errado em objetivos que podem ser afetados por características aleatórias. Assim sendo, esse outro objetivo tem uma nova possibilidade de dar errado que é necessariamente maior a possibilidade antiga.
-\begin{eqnarray}\nonumber
+\begin{eqnarray}\label{rel11}\nonumber
 	violationRelation(ag_m,g_i,r_k) \wedge affects(r_k,gr_n,p_n) \wedge hasPossibility(gr_n,p_m) \to \\  
 	hasPossibility(gr_n,p_n) \wedge (p_n > p_m)
 \end{eqnarray}
+
 Uma violação de entidade gera a interrupção imediata da atividade no objetivo de ocorrência.
-\begin{eqnarray}
+\begin{eqnarray}\label{re12}
 	violationEntity(ag_m,g_i,e_k) \to stopIn(g_i)
 \end{eqnarray}
- Em um objetivo onde existe uma certa possibilidade de dar errado, essa possibilidade é vinculada aos relacionamentes que devem ser feitos para concluir este objetivo. Assim sendo, um determinado agente sofrerá as consequêcias ruins pela ocorrência do evento.
-\begin{eqnarray}\nonumber
+
+Em um objetivo onde existe uma certa possibilidade de dar errado, essa possibilidade é vinculada aos relacionamentes que devem ser feitos para concluir este objetivo. Assim sendo, um determinado agente sofrerá as consequêcias ruins pela ocorrência do evento.
+\begin{eqnarray}\label{rel13}\nonumber
 	happensBadEvent(gr_n,r_m) \wedge hasRisk(r_k,risk_j,f_m) \nonumber \\ 
 	\to consequenceOfBadEvent(gr_n,ag_m,risk_j,f_m)
 \end{eqnarray}
+
 A ocorrência de um evento ruim gera imediata interrupção das atividades.
-\begin{eqnarray}
+\begin{eqnarray}\label{rel14}
 	consequenceOfBadEvent(g_k,ag_m,risk_j,f_m) \to stopIn(g_k)
 \end{eqnarray}
+
 Se o objetivo não é encerrado para todos os agentes que tinha como por permissão executa-lo, então o objetivo é alcançado. 
-\begin{eqnarray}
+\begin{eqnarray}\label{rel15}
 	\neg stopIn(g_k,agg_n) \to isReached(g_k)
 \end{eqnarray}
 
@@ -207,15 +195,33 @@ Se o objetivo não é encerrado para todos os agentes que tinha como por permiss
 \subsubsection{Relação \ref{rel1}}
 A relação \ref{rel1} existe com base em estudos sobre lógica deontica (definir o estudo) onde um indivídulo só pode ser obrigado a fazer algo se esse indivídulo tiver permissão para isso. Caso contrário, há uma contradição em relação a semântica dos predicados, pois é dado como absurdo alguém ser obrigado a fazer algo sem ter permissão para isso. 
 
-\subsubsection{Relação \ref{rel2}}
-Uma das propostas do modelo consiste representar situações onde um indivíduo faz algo que não deve ser feito. Essa constatação pode ter o vocabulário reformulado para a seguinte expressão; Um agente tenta executar um objetivo que não lhe é permitido ser feito. Assim sendo, para transformar essa sentença em uma relação de implicabilidade em termos de lógica de predicados, se faz necessário considerar qual sobre qual agente que está sendo falando, qual o papel deste agente, quais são os objetivos atrelados a este agente (se o objetivo que o agente tenta alcançar faz parte do escopo dos objetivos vinculados ao agente) e o que este agente tenta fazer em relação a este objetivo. 
-
-A tratativa de que o agente tem um papel e que tem permissão para um alcançar um certo objetivo é dado por $hasRole(ag_n,\rho_m) \wedge hasPermission(\rho_m,g_j)$. Contudo, o interesse desta expressão consiste compreender se é verdade que o agente não tem a permissão de alcançar um determinado objetivo. Ora, para isso se faz necessário negar $hasPermission(\rho_m,g_j)$. Para que se mantenha coerência no modelo, se faz necessário assumir que se não existe uma determinada expressão de permissão $hasPermission(\rho_m,g_j)$ para um dado papel, então é verdade que $\neg hasPermission(\rho_m,g_j)$. Para poder representar ponto sobre o qual o modelo propõem também se faz necessário a existência de um predicado para definir se o agente tenta alcançar um dado objetivo. Isso, pois, é um absurdo considerar que o agente cometeu uma violação sobre um objetivo que ele não tem permissão de alcançar se ele nem mesmo tentou alcançar esse objetivo. Assim sendo, a expressão deve considerar o predicado $tryReach(ag_m,g_j)$. 
 
 \subsubsection{Relação \ref{rel3}}
-Representar condições que devem ser mantidas ao longo de toda a execução da atividade bem como as consequências de praticar uma determinada atividade dado a ausência de pelo menos uma das condições é um aspecto sobre o qual este modelo se propõem a representar. Para definir a ocorrência da vioação se faz necessário saber quais são as condições vinculadas ao objetivo. Isso é feito por meio do predicado $hasCondition(g_i,cg_n)$. Também, se faz necessário saber se a condição necessária tentar alcançar o objetivo não está presente durante a realização deste ato. Isso é feit por negar o predicado $isPresent(c_k)$. Isso, pois este predicado retorna que é verdade que a condição $c_k$ existe durante a tentativa de concluir o objetivo. Ainda sim, definir em uma única expressão o predicado $hasCondition(g_i,cg_n)$ e o predicado $isPresent(c_k)$ não é o suficiente, pois $cg_n$ é um conjunto e $c_k$ é um elemento que pode ou não pertencer ao conjunto $cg_n$. Assim sendo, isso deve ser levado em consideração por agregar a seguinte relação a expressão: $c_k \in cg_n$. 
 
-Assim como na relação \ref{rel2}, a relação \ref{rel3} é um absurdo se não considerar se é verdade que o agente tenta alcançar o objetivo em análise. Uma relação de implicabilidade com essa característica: $hasCondition(g_i,cg_n) \wedge \neg isPresent(c_k) \wedge (c_k \in cg_n) \to \\ violationCondition(g_j,c_k) $  desconsidera se o agente tentou executar ou não o objetivo mesmo com ausência de uma condição importante. Para isso, se faz necessário considerar o predicado $tryReach(ag_m,g_j)$ na expressão.
+Representar condições que devem ser mantidas ao longo de toda a execução da atividade bem como as consequências de praticar uma determinada atividade dado a ausência de pelo menos uma das condições é um aspecto sobre o qual este modelo se propõem a representar. Para definir a ocorrência da vioação se faz necessário saber quais são as condições vinculadas ao objetivo, pois caso contrário não é possível identificar quais condições devem ser mantidas ao longo da tentativa de se alcançar um objetivo e, por consequência, qualquer afirmação feita sobre essas condições não possui uma sustentação lógica rigorosa. A consideração dessas relações acontece por meio predicado $hasCondition(g_i,cg_n)$. 
+
+Outro aspecto relevante consiste saber se a condição necessária para tentar alcançar o objetivo não está presente durante a tentativa. Se isso não for feito, não é possível saber se a condiçõe está presente durante a tentativa de alcançar o objetivo e qualquer afirmação derivada das condições não apresenta sustentação lófica. Isso é feito por intermédioo do predicado $isPresent(c_k)$. Ao saber que é verdade o negado de $isPresent(c_k)$, é possível saber que a condição $c_k$ não está presente. Ainda sim, definir em uma única expressão o predicado $hasCondition(g_i,cg_n)$ e o predicado $isPresent(c_k)$ não é o suficiente, pois $cg_n$ é um conjunto e $c_k$ é um elemento que pode ou não pertencer ao conjunto $cg_n$. Assim sendo, isso deve ser levado em consideração por agregar a seguinte relação a expressão: $c_k \in cg_n$. 
+
+Os predicados considerados até o momento são necessários, porém não são suficientes. Isso, pois apenas com eles não é possível definri qual é a situação do agente em relação ao objetivo. Por exemplo, é possível considerar um cenário onde pelo menos uma das condições necessárias para atingir o objetivo não está presente. Contudo, não é razoável, considerando o conceito de violação de condição empregado neste estudo, afirmar que o agente cometeu uma violação de condição sobre esse cenário sendo que não há informaçãoa sobre a situação da tentativa do agente alcançar o objetivo. Assim sendo, se o agente tentar alcançar o objetivo mesmo com pelo menos uma condição inexistente, então esse agente cometeu uma violação de condição, contudo se o agente não tento alcançar o objetivo em análise então ele não cometeu violação alguma. Então, a informação no que diz respeito ao gente é deve ser considerada nessa relação de implicabilidade e isso acontece por meio do predicado $tryReach(ag_m,g_i)$.
+
+Para definir a ausência de violação, todas das condições devem estar presentes. Para representar isso, a relação \ref{rel3} exibe uma segunda relação de implicabilidade que consdera o negado de uma violação de condição dada a presenção de todas as condições necessárias para o objetivo. 
+
+ 
+\subsubsection{Relação \ref{rel4}}
+Para levar em consideração violações sobre se o agente sabe ou não manipular algum tipo de relação, se faz necessário buscar por relações de implicabilidade que verificam as seguintes circunstâncias: relações que devem ser feitas para que um determinado objetivo possa ser atingido $hasRelagion(g_i,rg)$, se a relação em análise é uma relação que pertence a todas as relações necessárias para findar esse objetivo $r_k \in rg_g$, vericar se a relação em análise está presente quando o agente realiza a atividade $isPresent(r_k)$ e levar em consideração o ato do agente tentar executar a atividade $tryReach(ag_m,g_i)$.  A violação acontece quando, na reunião de todas essas circunstâncias, uma das relações não se faz presente $\neg isPresent(r_k)$. Para essa situação, $violagionRelation(ag_m,g_i,r_k)$ tem que ser verdadeiro. Se todas as relações $rg_n$ estão presentes, então a violação de relação não acontece e isso é formalizado por meio da segunda relação de implicabilidade presente na \rel{rel4}. 
+
+Considerando que uma violação de relacionamento acontece quando um agente tenta alcançar um objetivo sem realizar um ou mais dos relacionamentos necessários para que esse objetivo seja satisfeito com sucesso, é possível demonstrar a necessidade das circunstâncias presentes na relação de implicabilidade deste modelo por analisar o que acontece na ausência de cada uma delas. Seguindo por essa linha, supondo uma situação onde não se verifica as relações relevantes para um objetivo, logo não é possível dizer se a ausência de uma violação em específico é relevante para o objetivo em análise. Assim sendo, não é possível afirmar quando acontece uma determinada vioalação. 
+
+Supondo uma situação onde não se verifica as relaçõeas que foram concluidas durante o ato da manutenção. Neste cenário é possível saber quais relações são necessárias para alcançar um determinado objetivo, mas deste conjunto não é possível definir qual dessas relações foram alcançadas. Se não se sabe afirmar qual das relações um agente conseguiu realizar, não se sabe qual dessas relações um agente deixou de fazer. Não sabendo esta ultima, não se sabe se ocorreu uma violação dessa relação. Assim sendo, só é possível afirmar algo sobre a ocorrência de uma vioalação de relação se for possível analisar se as relações necessárias para um dado objetivo foram ou não cumpridas. 
+
+Supondo uma situação onde não se verificar se um agente tentou realizar o objetivo. Nesta situação não é possível analizar quem cometeu a violação. Além disso não é possível considerar se a presença ou a ausência das relações são relevantes ou não para alcançar o objetivo, pois não se pode localizar a ocorrência dessas relações nos momentos onde elas devem acontecer (que é quando o agente tenta alcançar o objetivo dessas relações). Além disso, desconsiderar a tentativa do agente envolve descaracterizar a ocorrência da violação uma vez que esta, por conseguinte, considera a existência de um agente durante a ocorrência de uma violação. 
+
+\subsubsection{Relação \ref{rel5}}
+
+Para verificar violações onde um agente tenta executar um determinado procedimento sem ter todas entidades (ex. ferramentas, colegas) para isso, é necessário construir uma expressão de implicabilidade que consider quais são as entidades importantes para a execução do objetivo $hasEntity(g_i,eg_n)$, considere quais as entidades que estão presentes no ambiente durante o ato da execução $isPresent(eg_n)$,$isPresent(e_k)$,$e \in eg_n$ e que considere se um agente tentou alcançar o objetivo $tryReach(ag_m,g_i,e_k)$. Para situação onde está ausente uma das entidades necessárias para concluir um dado objetivo, então acontece uma vioação de entidade. Contudo, para situação onde todas as entidades necessárias para alcançar um objetivo estão presentes durante a tentativa que o agente tem para isso, então a violação não acontence. 
+
+Se uma vioalação de entidade é definida como sendo a tentativa de um agente alcançar um determinado objetivo sem ter todas as entidades para isso, então é possível verificar e necessidade de todas as circunstâncias por analisar o que acontece na ausência delas. Supondo não ser possível verificar quais entidades são necessárias para alcançar um determinado objetivo, então não é possível afirmar quais entidades devem ser presentes durante a tentativa do agente em alcançar um determinado objetivo. Por consequência, também não é possível identificar quais entidades estão ausentes logo, neste caso é um absurdo fazer qualquer afirmação sobre presença ou ausência sobre violação por ausência de uma entidade. Supondo não ser possível afirmar se uma entidade necessária para conclusão de um determinado objetivo não está presente durante a tentativa de alcançar esse objetivo. Então, é um absurdo afirmar que aconteceu ou não aconteceu um evento no que diz respeito a ausência de uma entidade sem mesmo saber se essa entidade estava presente. Suponto não ser possível definir se um agente tentou ou não executar o objetivo. Então também não é possível saber se a entidade estava presente no momento em que deve estar presente para definir a ocorrência de uma violação, além de descaracterizar a semântica da violação de uma entidade usada por este modelo uma vez que está considerar necessariamente a existência de um agente pela ocorrência da violação. 
+
 
 \begin{figure}
   \centering
