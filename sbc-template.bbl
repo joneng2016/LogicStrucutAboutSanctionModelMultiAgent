@@ -1,0 +1,36 @@
+\begin{thebibliography}{}
+
+\bibitem[Barot et~al. 2013]{violationcamille}
+Barot, C., Lourdeaux, D., Burkhardt, J., Amokrane, K., and Lenne, D. (2013).
+\newblock {V3S:} {A} virtual environment for risk-management training based on
+  human-activity models.
+\newblock {\em Presence}, 22(1):1--19.
+
+\bibitem[Boissier 2011]{multiagentsystem}
+Boissier, O. (2011).
+\newblock From organisation oriented programming to multi-agent oriented
+  programming.
+\newblock In Kl{\"u}gl, F. and Ossowski, S., editors, {\em Multiagent System
+  Technologies}, pages 1--1, Berlin, Heidelberg. Springer Berlin Heidelberg.
+
+\bibitem[Dastani et~al. 2009]{dastaniNormativeMultiAgentProgram}
+Dastani, M., Grossi, D., Meyer, J.-J.~C., and Tinnemeier, N. (2009).
+\newblock Normative multi-agent programs and their logics.
+\newblock In Meyer, J.-J.~C. and Broersen, J., editors, {\em Knowledge
+  Representation for Agents and Multi-Agent Systems}, pages 16--31, Berlin,
+  Heidelberg. Springer Berlin Heidelberg.
+
+\bibitem[L{\'o}pez~y L{\'o}pez and Luck
+  2004]{amodelmultiagentsystemdynamicrelationship}
+L{\'o}pez~y L{\'o}pez, F. and Luck, M. (2004).
+\newblock A model of normative multi-agent systems and dynamic relationships.
+\newblock In Lindemann, G., Moldt, D., and Paolucci, M., editors, {\em
+  Regulated Agent-Based Social Systems}, pages 259--280, Berlin, Heidelberg.
+  Springer Berlin Heidelberg.
+
+\bibitem[von Wright 1969]{ontologynormative}
+von Wright, G.~H. (1969).
+\newblock {\em On The Logic and Ontology of Norms}, pages 89--107.
+\newblock Springer Netherlands, Dordrecht.
+
+\end{thebibliography}

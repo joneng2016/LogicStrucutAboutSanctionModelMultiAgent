@@ -71,6 +71,8 @@ Sete profissionais de linha viva (profissionais que realizam manutenção em equ
 	\item $Risk = \{risk_1, ..., risk_n\}$ - conjunto dos Riscos na ocorrência de Eventos Ruins.
 	\item $Possibility = \{p_1, ..., p_n\}$ - conjunto das possibilidades de Eventos Ruins. 
 	\item $Fatality = \{f_1, ..., f_n\}$ - conjunto das fatalidades que acontecem na existência de um evento ruim. 	
+	\item $agg = \{ag_n,...,ag_m\}$ - agentes que atingiram um determinado objetivo. 
+	\item $ago = \{ag_n,...,ag_m\}$ - agentes que atingiram um determinado objetivo e eram obrigados a isso. 
 \end{enumerate}
 
 
@@ -99,12 +101,10 @@ Sete profissionais de linha viva (profissionais que realizam manutenção em equ
 	\item $stopIn(g_n)$ - A atividade como um todo teve de ser finalizada em $g_n$.	 			
 	\item $isPreRequisite(gp_i,g_j)$ - Os objetivos $g$ pertencentes ao grupo $gp_i$ devem ser concluidos para que haja condição de executar g.
 	\item $hasCondition(g_i,cg_n)$ - Um objetivo do tipo $g_i$ possui certas condições $c$ que deve estar presentes e devem se manter durante toda execução deste objetivo. Essas condições $c$ devem estar conditdas em $cg_n$. 
-	\item $hasEntity(g_i,eg_i)$ - Um objetivo $g_i$ tem um conjunto de entidades $eg_i$ onde todas as entidades presentes neste conjunto devem estar presentes no momento da execução desse objetivo.
-	\item $hasRelation(g_i,rg_i)$ - Um objetivo $g_i$ tem um conjunto de relacionamentos $rg_i$ onde todos esses relacionamentos devem ser feito para que este objetivo seja concluído.
-	\item $isPresent(cg_n)$ - Todas as condições conditas em $cg_n$ estão presentes durante a tentativa de alcançar o objetivo.
-	\item $isPresent(c_k)$ - Uma determinada condição $c_k$ está presente durante a tentativa de alcançar o objetivo.
-	\item $isPresent(r_k)$ - Um determinado relacionamento $r_k$ está presente durante a tentativa de alcançar o objetivo.	
-	\item $isPresent(e_k)$ - Uma determinada entidade $c_k$ está presente durante a tentativa de alcançar o objetivo.		
+	\item $hasEntity(g_i,eg_m)$ - Um objetivo $g_i$ tem um conjunto de entidades $eg_m$ onde todas as entidades presentes neste conjunto devem estar presentes no momento da execução desse objetivo.
+	\item $hasRelation(g_i,rg_n)$ - Um objetivo $g_i$ tem um conjunto de relacionamentos $rg_n$ onde todos esses relacionamentos devem ser feito para que este objetivo seja concluído.
+	\item $hasNextGoal(g_i,g_j)$ - Define qual é o proximo objetivo que o agente deve buscar depois que o objetivo $g_i$ for alcançado.
+	\item $isPresent(X), X = cg_n,c_k,rg_k,r_k,eg_k,e_k$ - Define se $X$ está presente no instante em análise, sendo que $X$ pode ser $cg_n,c_k,rg_k,r_k,eg_k,e_k$.
 	\item $tryReach(ag_i,g_j)$ - Um determinado agente $ag_i$ tenta alcançar o objetivo $g_j$.
 	\item $violationCondition(ag_i,g_j,c_k)$ - Um determinado agente $ag_i$ comete uma violação de condição no objetivo $g_j$ sobre a condição $c_k$. 
 	\item $violationRelation(ag_i,g_j,r_k)$ - O agente $ag_i$ comete uma violação de Relacionamento no objetivo $g_j$ por não realizar o relacionamento $r_k$. 
@@ -169,13 +169,13 @@ Uma violação de relacionamento tem como consequência o aumento da possibilida
 \end{eqnarray}
 
 Uma violação de entidade gera a interrupção imediata da atividade no objetivo de ocorrência.
-\begin{eqnarray}\label{re12}
+\begin{eqnarray}\label{rel12}
 	violationEntity(ag_m,g_i,e_k) \to stopIn(g_i)
 \end{eqnarray}
 
 Em um objetivo onde existe uma certa possibilidade de dar errado, essa possibilidade é vinculada aos relacionamentes que devem ser feitos para concluir este objetivo. Assim sendo, um determinado agente sofrerá as consequêcias ruins pela ocorrência do evento.
 \begin{eqnarray}\label{rel13}\nonumber
-	happensBadEvent(gr_n,r_m) \wedge hasRisk(r_k,risk_j,f_m) \nonumber \\ 
+	happensBadEvent(gr_n,r_m) \wedge hasRisk(r_k,risk_j,f_m) \wedge tryReach(ag_m,g_i) \nonumber \\ 
 	\to consequenceOfBadEvent(gr_n,ag_m,risk_j,f_m)
 \end{eqnarray}
 
@@ -184,13 +184,26 @@ A ocorrência de um evento ruim gera imediata interrupção das atividades.
 	consequenceOfBadEvent(g_k,ag_m,risk_j,f_m) \to stopIn(g_k)
 \end{eqnarray}
 
-Se o objetivo não é encerrado para todos os agentes que tinha como por permissão executa-lo, então o objetivo é alcançado. 
+Se o objetivo não é encerrado para todos os agentes que tentam executar (onde parte desses agentes são todos aqueles que são obrigados a alcançar o objetivo), então o objetivo foi alcançado.  
 \begin{eqnarray}\label{rel15}
-	\neg stopIn(g_k,agg_n) \to isReached(g_k)
+	\neg stopIn(g_k,agg_n) \wedge (ago_n \subset agg_n) \to isReached(g_k)
 \end{eqnarray}
+
+\subsection{Definindo Conceitos de Norma, Violação e de Sanção}
+
+Sistemas multiagentes normativas não podem ser descritos sem considerar três conceitos importantes; norma, violação e sanção. 
+
+\begin{enumerate}
+	\item \textbf{Norma}: Usado para determinar o comportamento dos agentes.
+	\item \textbf{Violação}: Ocorre quando o agente realiza algo que é proibido.
+	\item \textbf{Sanção}: Consequências punitivas que acontencem ao agente ao realizar algo proibido.	
+\end{enumerate}
+
+Essas definições são usadas em diversos estudos na área de sistemas multiagentes \cite{dastaniNormativeMultiAgentProgram}, \cite{multiagentsystem}, \cite{violationcamille}, \cite{amodelmultiagentsystemdynamicrelationship} e \cite{ontologynormative}. Nesse estudo, a vioação é tratada nos predicados $violationCondition(ag_i,g_j,c_k)$, $violationRelation(ag_i,g_j,r_k)$ e $violationEntity(ag_i,g_j,e_k)$. Esses predicados levam em consideração o domínio do problema deste estudo bem como o que é tido por violação dentro do contexto acadêmico, pois são eventos que acontecem mediante violação de uma norma. As relações \ref{rel3}, \ref{rel4},\ref{rel5} não determinam apenas a violação, mas também definem qual é o comportamento normativo adequado, uma vez que deixam evidentes qual dever ser o comportamento do agente para que a violação associada seja considerada falsa. As relações \ref{rel9}, \ref{rel10} são sanções. Isso, pois definem consequências negativas aos agentes tendo em vista a ocorrência da violação. A relações de implicabilidade \ref{rel11} não é uma sanção, pois define consequências ruins para outros agentes. 
 
 
 \subsection{Justificando a Existência das Relações de Implicabilidade}
+
 
 \subsubsection{Relação \ref{rel1}}
 A relação \ref{rel1} existe com base em estudos sobre lógica deontica (definir o estudo) onde um indivídulo só pode ser obrigado a fazer algo se esse indivídulo tiver permissão para isso. Caso contrário, há uma contradição em relação a semântica dos predicados, pois é dado como absurdo alguém ser obrigado a fazer algo sem ter permissão para isso. 
@@ -208,7 +221,7 @@ Para definir a ausência de violação, todas das condições devem estar presen
 
  
 \subsubsection{Relação \ref{rel4}}
-Para levar em consideração violações sobre se o agente sabe ou não manipular algum tipo de relação, se faz necessário buscar por relações de implicabilidade que verificam as seguintes circunstâncias: relações que devem ser feitas para que um determinado objetivo possa ser atingido $hasRelagion(g_i,rg)$, se a relação em análise é uma relação que pertence a todas as relações necessárias para findar esse objetivo $r_k \in rg_g$, vericar se a relação em análise está presente quando o agente realiza a atividade $isPresent(r_k)$ e levar em consideração o ato do agente tentar executar a atividade $tryReach(ag_m,g_i)$.  A violação acontece quando, na reunião de todas essas circunstâncias, uma das relações não se faz presente $\neg isPresent(r_k)$. Para essa situação, $violagionRelation(ag_m,g_i,r_k)$ tem que ser verdadeiro. Se todas as relações $rg_n$ estão presentes, então a violação de relação não acontece e isso é formalizado por meio da segunda relação de implicabilidade presente na \rel{rel4}. 
+Para levar em consideração violações sobre se o agente sabe ou não manipular algum tipo de relação, se faz necessário buscar por relações de implicabilidade que verificam as seguintes circunstâncias: relações que devem ser feitas para que um determinado objetivo possa ser atingido $hasRelation(g_i,rg)$, se a relação em análise é uma relação que pertence a todas as relações necessárias para findar esse objetivo $r_k \in rg_g$, vericar se a relação em análise está presente quando o agente realiza a atividade $isPresent(r_k)$ e levar em consideração o ato do agente tentar executar a atividade $tryReach(ag_m,g_i)$.  A violação acontece quando, na reunião de todas essas circunstâncias, uma das relações não se faz presente $\neg isPresent(r_k)$. Para essa situação, $violagionRelation(ag_m,g_i,r_k)$ tem que ser verdadeiro. Se todas as relações $rg_n$ estão presentes, então a violação de relação não acontece e isso é formalizado por meio da segunda relação de implicabilidade presente na \ref{rel4}. 
 
 Considerando que uma violação de relacionamento acontece quando um agente tenta alcançar um objetivo sem realizar um ou mais dos relacionamentos necessários para que esse objetivo seja satisfeito com sucesso, é possível demonstrar a necessidade das circunstâncias presentes na relação de implicabilidade deste modelo por analisar o que acontece na ausência de cada uma delas. Seguindo por essa linha, supondo uma situação onde não se verifica as relações relevantes para um objetivo, logo não é possível dizer se a ausência de uma violação em específico é relevante para o objetivo em análise. Assim sendo, não é possível afirmar quando acontece uma determinada vioalação. 
 
@@ -223,9 +236,90 @@ Para verificar violações onde um agente tenta executar um determinado procedim
 Se uma vioalação de entidade é definida como sendo a tentativa de um agente alcançar um determinado objetivo sem ter todas as entidades para isso, então é possível verificar e necessidade de todas as circunstâncias por analisar o que acontece na ausência delas. Supondo não ser possível verificar quais entidades são necessárias para alcançar um determinado objetivo, então não é possível afirmar quais entidades devem ser presentes durante a tentativa do agente em alcançar um determinado objetivo. Por consequência, também não é possível identificar quais entidades estão ausentes logo, neste caso é um absurdo fazer qualquer afirmação sobre presença ou ausência sobre violação por ausência de uma entidade. Supondo não ser possível afirmar se uma entidade necessária para conclusão de um determinado objetivo não está presente durante a tentativa de alcançar esse objetivo. Então, é um absurdo afirmar que aconteceu ou não aconteceu um evento no que diz respeito a ausência de uma entidade sem mesmo saber se essa entidade estava presente. Suponto não ser possível definir se um agente tentou ou não executar o objetivo. Então também não é possível saber se a entidade estava presente no momento em que deve estar presente para definir a ocorrência de uma violação, além de descaracterizar a semântica da violação de uma entidade usada por este modelo uma vez que está considerar necessariamente a existência de um agente pela ocorrência da violação. 
 
 
+\subsubsection{Relações \ref{rel9} e \ref{rel10}}
+
+O propósito da relação \ref{rel9} consiste representar uma sanção por cometer uma violação de condição. Uma violação dessa natureza gera consequências físicas. Essas consequências são necessariamente a ocorrência dos riscos a vida por executar a atividade sem todas as condições necessárias. Assim sendo, uma relação de implicabilidade que tem como por comprometimento representar uma sanção desta natureza deve necessariamente considerar o tipo de violação (pois assim somente assim é possível identificar quais rsicos devem ser considerados) e deve considerar esses riscos. Assim sendo, o predicado $hasRisk(c_k,risk_j,f_m)$ tem como por finalidade representar as relações entre a condição faltante, a natureza do risco e o grau de fatalidade associado. O predicado $consequenceOfBadEvent(g_i,ag_m,risk_j,f_m)$ define que o evento ruim realmente aconteceu sobre esse agente. 
+
+
+A relação \ref{rel10} se equadra na mesma natureza. Contudo, em vez de considerar uma violação de condição, a relação \ref{rel10} considera violações do tipo de relacionamento. Essa relação é necessária pois visa representar as consequências negativas de não se fazer um relacionamento necessário para a manutenção. 
+
+
+\subsubsection{Relações \ref{rel11}}
+
+Uma das finalidades deste modelo consiste representar o seguinte cenário: agente A comete um erro, contudo as consequências ocorrem apenas um tempo depois sobre o agente B. Esse modelo considerou a vioalação de relacionamento como causa deste tipo de situação pois no caso em estudo foi possível identificar certas relações que se não forem feitas não geram consequencias imidiáticas para os profissionais envolvidos no meio, contudo alguém pode sair prejudicado depois. 
+
+Um ambiente hipotético onde um eletricista deve medir a condutividade de um bastão universal é uma situação que pode exemplificar a aplicação desta relação. Se o eletricista não realizar a relação entre a entidade condutivimetro com a entidade bastão universal, nenhum profissional sai prejudicado de forma imediatica. Contudo, se o bastão estiver com isolamento comprometido, o agente que for manipular a ferramenta poderá ser submetido a uma corrente elétrica elevadissima, gerando morte imediata.
+
+Os pesquisadores optaram por representar esse tipo de situação considerando uma dada aleatoriedade ao evento. Assim sendo, o modelo trata que em um dado tipo de objetivo (conhecido por objetivo randômico) tem uma certa possiblidade de acontecer um evento ruim com o profissional que tenta alcança-lo. Isso tem como por objetivo representar as possibilidades que é associado a eventos ruins vir a se tornar uma realidade durante a execução de um dada atividade. Assim sendo, um relacionamento que não foi feito aumenta as possibilidades desses eventos relacionados aos riscos acontecerem. 
+
+Para formalizar isso se faz necessário considerar o risco propriamente dito, se faz necessário quais objetivos podem ser afetados dado a ausência de um relacionamento $affects(r_k,gr_n,p_n)$, se faz necessário considerar uma certa possibilidade do objetivo dar errado independente da ação dos demais agentes, algo que é feito por meio do predicado  $hasPossibility(gr_n,p_m)$. Esse predicado acontece tanto antes bem como depois do $\to$. Contudo, depois de $\to$, a possibilidade possui um novo valor (advêm do predicado $affects(r_k,gr_n,p_n)$), onde deve ser necessariamente maior que o anterior.
+
+\subsubsection{Relações \ref{rel12}}
+
+Sem a presença das entidade necessária para concluir um determinado objetivo, não é possível concluir o objetivo. Caso contrário, essa entidade não é, portanto, necessária para cumprir com objetivo. É possível considerar um cenário onde os agentes adaptam outras entidades para sanar a entidade faltante. Contudo, esse modelo não trata esse tipo de situação com a finalidade de evitar maiores complexidades. Para uma relação de implicabilidade que tem como por finalidade representar esse tipo de situação, deve necessariamente considerar a ocorrência da violação $violationEntity(ag_m,g_i,e_k)$ e representar o encerramento da atividade, feito pelo predicado $stopIn(g_i)$.
+
+\subsubsection{Relações \ref{rel13}}
+
+A relação \ref{rel13} tem como por finalidade representar a ocorrência de um evento associado a um risco em um objetivo com possibilidades randomicas. Os eventos ruins são associados aos riscos e esses, por sua vez, são associados a relacionamentos específicos que são vinculados ao objetivo. Isso abre a necessidade de um predicado que associe esses objetivos ao risco $happensBadEvent(gr_n,r_m)$. A relação também deve considerar o risco vinculado com o relacionamento, caso contrário não é possível saber qual evento vinculado a um risco e este, por sua vez, vinculado ao relacionamento gerou uma situação ruim ao agente. Assim sendo, o predicado $hasRisk(r_k,risk_j,f_m)$ deve ser levado em consideração ao executar o procedimento de manutenção. Além disso, é necessário saber se o agente estava tentando alcançar o objetivo no instante que o evento ruim acontece, isso é feito por meio do predicado $tryReach(ag_m,g_i)$. O predicado $consequenceOfBadEvent(gr_n,ag_m,risk_j,f_m)$ demonstra que o eventou realmente aconteceu e afetou o agente de certa forma com certa intensidade. Essa relação de implicabilidade representa que um evento ruim pode acontecer a um dado agente mesmo que este não tenha cometido nada de errado. Tendo como base a relação \ref{rel11}, a possibilidade dessa situação acontecer aumenta com base no erro de outros agentes.
+
+\subsubsection{Relações \ref{rel14}}
+
+O modelo considera que os agentes não continuam a trabalhar tendo em vista que um dos colegas morreu ou ficou ferido ao executar uma dada atividade. Portanto, é necessário considerar uma relação de implicabilidade onde a ocorrência um evento ruim gera interrupção das atividades profissionais. 
+
+\subsubsection{Relações \ref{rel15}}
+
+O modelo deve considerar a condição de quando objetivo é definitivamente alcançado, caso contrário os agentes não serão capaz de cumprir com os próximos objetivos para os quais foram designados. Para construir esse critério é necessário considerar se não houve interrupção para todos os agentes que tentaram alcançar o objetivo. Isso é feito por meio do predicado $\neg stopIn(g_k,agg_n)$, em que $agg_n$. Não só isso como é necessário considerar se todos os agentes que são obrigados a alcançar o objetivo realmente tentaram fazer isso. Assim sendo, é necessário considerar um subconjunto de $agg_n$ que é $ago_n$.   
+
+\subsection{Raciocínios}
+
+\subsubsection{Raciocínio 1}
+
+Considerando que existe uma dada situação onde há uma relação para duas entidades; $relationHas(r_k,e_i,e_l)$. Supondo que essa relação está presente em uma condição que ocasiona violação de relacionamento dado por \ref{rel4}.
+
+Neste caso, é possível dar como verdade a ocorrência dos seguintes predicados e relações; $hasRelation(g_i,rg_n)$,$(r_k \in rg_n)$,$tryReach(ag_m,g_i)$. Assim sendo, é verdade que; $tryReach(ag_m,g_i) \wedge (r_k \in rg_n) \wedge hasRelation(g_i,rg_n) \wedge relationHas(r_k,e_i,e_l)$. Portanto, é possível o seguinte racicínio;
+\begin{eqnarray}\label{rac1}
+	hasRelation(g_i,rg_n) \wedge (r_k \in rg_n) \wedge  tryReach(ag_m,g_i) \to T \nonumber \\
+	relationHas(r_k,e_i,e_l) \to T \nonumber \\
+	(r_k \in rg_n) \wedge relationHas(r_k,e_i,e_l) \to T, \nonumber \\
+	relationHas(r_k,e_i,e_l) \wedge hasRelation(g_i,rg_n) \wedge (r_k \in rg_n) \wedge  tryReach(ag_m,g_i) \to T \nonumber \\
+\end{eqnarray}
+
+Para um dado relacionamento que está sendo montado por um agente na tentativa de alcançar um certo objetivo, então as entidades atreladas a esse relacionamento devem estar presentes também. Considerando isso, para toda situação que se considera a relação \ref{rel4}, também se faz necessário considerar, para cada uma das entidades, \ref{rel5}. Assumindo isso, podemos concluir o seguinte; 
+
+\begin{eqnarray}\label{rac1b}
+	(relationHas(r_k,e_i,e_l) \wedge \neg violationRelation(ag_m,g_i,r_k) \to \nonumber \\
+	\neg violationEntity(ag_m,g_i,e_i)) \nonumber \\  
+	\wedge \nonumber \\
+	(relationHas(r_k,e_i,e_l) \wedge \neg violationRelation(ag_m,g_i,r_k) \to \nonumber \\
+	\neg violationEntity(ag_m,g_i,e_l)) \nonumber \\  
+\end{eqnarray}
+
+\subsubsection{Raciocínio 2}
+
+Dado um cenário com a seguinte situação; $relationHas(r_k,e_i,e_l)$,$hasRelation(g_i,rg_n)$,$hasEntity(g_i,eg_m)$,$r_k \in rg_n$,$e_i \in eg_m$, neste caso é necessário que $e_l \in eg_m$. É possível considerar o seguinte raciocínio
+
+\begin{eqnarray}\label{raca2}
+violationEntity(ag_i,g_j,e_i) \to T \nonumber \\
+\neg isPresent(e_i) \to T  \nonumber \\ 
+\neg isPresent(e_i) \wedge relationHas(r_k,e_i,e_l) \to \neg isPresent(r_k), \nonumber \\ 
+violationRelation(ag_i,g_j,r_k) \to T \nonumber \\
+\end{eqnarray}
+
+\begin{eqnarray}\label{racb2}
+violationEntity(ag_i,g_j,e_l) \to T \nonumber \\
+\neg isPresent(e_l) \to T  \nonumber \\ 
+\neg isPresent(e_l) \wedge relationHas(r_k,e_i,e_l) \to \neg isPresent(r_k), \nonumber \\ 
+violationRelation(ag_i,g_j,r_k) \to T \nonumber \\
+\end{eqnarray}
+
+Ou seja, para esse cenário, a ocorrência de uma das violações de entidade tem como por consequência a ocorrência de violação de relacionamento. 
+
 \begin{figure}
   \centering
   \includegraphics[width=0.8\linewidth]{umlmodel} 
 \end{figure}
 
+
+\bibliographystyle{sbc}
+\bibliography{sbc-template}
 \end{document} 
