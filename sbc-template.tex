@@ -306,6 +306,25 @@ Assumindo essas condições, há o interesse em demonstrar que $ \neg isPresent(
 Demonstração; 
 Assumindo todas essas condições, e assumindo como verdade a Demonstração 1, então na tentativa do agente $ag_m$ tentar alcançar o objetivo $g_i$, é verdade que $\neg isPresent(r_k)$. Assim sendo, a relação \ref{rel10} também é verdade, logo $violationRelation(ag_m,g_i,r_k)$ é verdade. Então $\neg isPresent(e_a) \to violationRelation(ag_m,g_i,r_k)$. Para esse caso é possível concluir também que $violationEntity(ag_m,g_i,e_k) \to violationRelation(ag_m,g_i,r_k)$.
 
+\subsection{Máquina de Estados}
+
+A figura dada por \ref{uml} apresenta a estrutura do modelo em formato de diagrama de classes.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\linewidth]{umlmodel} 
+  \caption{}
+  \label{uml}
+\end{figure}
+
+A figura \ref{state} apresenta um diagrama de estados do modelo. 
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\linewidth]{DiagramaDeEstados} 
+  \caption{}
+  \label{state}
+\end{figure}
 
 \subsection{Modelando}
 
@@ -797,12 +816,6 @@ goal26 & relChaveCatracaBastaoUniversal, relXChaveCatraca, relXBastaoUniversal, 
 goal27 & relXSela, relXColar, relXBastaoGarra, relXBastaoUniversal, relXBastaoSoquete, relXCorda, relXCarretilha, relXChaveCatraca, relColarBastaoGarra, relCordaBastaoGarra, relBastaoGarraTorre, relBastaoGarraCondutor, relBastaoUniversalCarretilha, relBastaoGarraSela, relBastaoUniversalSela, relSelaColar, relTorreSela, relBastaoUniversalCorda, relBastaoGarraCorda & rg27 & eg27 & cg1 \\ \hline
 \end{tabular}
 \end{table}
-
-
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=0.8\linewidth]{umlmodel} 
-\end{figure}
 
 
 \bibliographystyle{sbc}
