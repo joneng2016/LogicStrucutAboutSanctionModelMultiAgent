@@ -4,6 +4,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx,url}
 \usepackage[brazil]{babel}   
+\usepackage[usestackEOL]{stackengine}
 \usepackage[latin1]{inputenc}  
 \usepackage{scalefnt}
 \usepackage{float}
@@ -321,7 +322,7 @@ A figura \ref{state} apresenta um diagrama de estados do modelo.
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.8\linewidth]{DiagramaDeEstados} 
+  \includegraphics[width=0.9\linewidth]{DiagramaDeEstados} 
   \caption{}
   \label{state}
 \end{figure}
@@ -330,6 +331,8 @@ A figura \ref{state} apresenta um diagrama de estados do modelo.
 
 Essa subseção tem como por finalidade especificar o estudo de caso em interesse dentro da estrutura deste modelo. 
 
+
+A tabela \ref{agents} apresenta todos os agentes que fazem parte da manutenção. Esses, por sua vez, representam os profissionais. 
 \begin{table}[H]
 \scalefont{0.8}
 \centering
@@ -344,6 +347,8 @@ agente5 & Um dos agentes participantes da manutenção \\ \hline
 agente6 & Um dos agentes participantes da manutenção \\ \hline
 agente7 & Um dos agentes participantes da manutenção \\ \hline
 \end{tabular}
+\caption{Os agentes que constituem uma manutenção}
+\label{agents}
 \end{table}
 
 
@@ -360,6 +365,8 @@ executor3 & Tem como por finalidade executar certas atividades manuais vinculada
 executor4 & Tem como por finalidade executar certas atividades manuais vinculadas a manutenção \\ \hline
 executor5 & Tem como por finalidade executar certas atividades manuais vinculadas a manutenção \\ \hline
 \end{tabular}
+\caption{Os papeis relevantes para a ocorrência da manutenção}
+\label{roles}
 \end{table}
 
 
@@ -377,6 +384,8 @@ agente5 & executor3 \\ \hline
 agente6 & executor4 \\ \hline
 agente7 & executor5 \\ \hline
 \end{tabular}
+\caption{Relação $hasRole(ag_n,\rho_m)$}
+\label{agentsroles}
 \end{table}
 
 
@@ -411,6 +420,8 @@ condutivimetro & Medidor de corrente de fulga sobre o bastão universal. \\ \hli
 parafuso & Parafusos prendem o conector condutor-Isolador e também prendem o Isolador a base \\ \hline
 conector & Estrutra que tem como por finalidade manter condutor,cabeçote do isolador em conjunto. \\ \hline
 \end{tabular}
+\caption{Definindo todos os artefatos presentes na manutenção}
+\label{artefacts}
 \end{table} 
 
 \begin{table}[H]
@@ -449,6 +460,8 @@ goal25 &  goal24 & Baixar o condutor para que a mesma apóie no novo isolador. \
 goal26 &  goal25 & Colocar os parafusos do conector que prende a barra ao novo isolador. \\ \hline
 goal27 &  goal26 & Retirar Equipamentos \\ \hline
 \end{tabular}
+\caption{Define e descreve os objetivos bem como os respectivos pré-requisitos}
+\label{goal}
 \end{table}
 
 
@@ -463,6 +476,8 @@ noVento & Não deve haver vento durante os procedimentos de manutenção. & elet
 noChuva & Não deve haver chuva durante o ato da manutenção & eletrocutado & morte \\ \hline
 sol & O dia deve estar ensolarado & eletrocutado & morte \\ \hline
 \end{tabular}
+\caption{Define as condições necessárias para que a manutenção tenha possibilidade de acontecer}
+\label{condition}
 \end{table}
 
 
@@ -502,7 +517,8 @@ relXChaveCatraca & X,chaveCatraca & nenhum & nenhum & inexistente \\ \hline
 relChaveCatracaBastaoUniversal & chaveCatraca,bastaoUniversal & nenhum & nenhum & inexistente \\ \hline
 relChaveCatracaParafuso & chaveCatraca,parafuso & eletrocutado & morte & inexistente \\ \hline
 relParafusoConector & parafuso,conector & eletrocutado & morte & inexistente \\ \hline
-relXBastaoSoquete & X,bastaoSoquete & nenhum & nenhum & inexistente \\ \hline
+relXBastaoSoquete & X,bastaoSoquete & nen
+hum & nenhum & inexistente \\ \hline
 relSoqueteParafuso & soquete,parafuso & eletrocutado & morte & inexistente \\ \hline
 relXCorda & X,corda & eletrocutado & morte & inexistente \\ \hline
 relXIsoladorVelho & X,isoladorVelho & nenhum & nenhum & inexistente \\ \hline
@@ -524,6 +540,8 @@ relCondutivimetroBastaoUniversal & condutivimetro,bastaoUniversal & nenhum & nen
 relCondutivimetroBastaoGarra & condutivimetro,bastaoGarra & nenhum & nenhum & inexistente \\ \hline
 relCondutivimetroSoquete & condutivimetro,soquete & nenhum & nenhum & inexistente \\ \hline
 \end{tabular}
+\caption{Define os relacionamentos necessários que a manutenção aconteça}
+\label{condition}
 \end{table}
 
 
@@ -589,8 +607,9 @@ relPanoCorda & relSoqueteParafuso & alto \\ \hline
 relPanoCorda & relXCorda & alto \\ \hline
 relPanoCorda & relEstropoCorda & alto \\ \hline
 relPanoCorda & relParafusoTorre & alto \\ \hline
-
 \end{tabular}
+\caption{Define o impacto que o erro em um relacionamento gera em outro relacionamento por modar a possibilidade de algo errado acontecer.}
+\label{relation1}
 \end{table}
 
 
@@ -658,6 +677,8 @@ relCondutivimetroSoquete & relXCorda & medio \\ \hline
 relCondutivimetroSoquete & relEstropoCorda & medio \\ \hline
 relCondutivimetroSoquete & relParafusoTorre & medio \\ \hline
 \end{tabular}
+\caption{Define o impacto que o erro em um relacionamento gera em outro relacionamento por modar a possibilidade de algo errado acontecer.}
+\label{relation2}
 \end{table}
 
 
@@ -779,10 +800,10 @@ executor4 & goal27 \\ \hline
 executor5 & goal27 \\ \hline
 \end{tabular}
 \end{table}
-	
+		
 \begin{table}[H]
 \centering
-\scalefont{0.4}
+\scalefont{0.6}
 \begin{tabular}{|l|p{0.8\linewidth}|l|l|l|}
 \hline
 \textbf{objetivo} & \textbf{relacionamentos} & \textbf{rg} & \textbf{eg} & \textbf{cg} \\ \hline
@@ -817,6 +838,91 @@ goal27 & relXSela, relXColar, relXBastaoGarra, relXBastaoUniversal, relXBastaoSo
 \end{tabular}
 \end{table}
 
+\begin{table}[H]
+\centering
+\scalefont{0.8}
+\begin{tabular}{|l|l|}
+\hline
+\textbf{entidades}                                                                                                    & \textbf{eg} \\ \hline
+capacete,óculos,roupagem,luvas,botas X = \{agente que tenta alcançar o objetivo\}                                        & eg0         \\ \hline
+pano,glicerina,carretilha,bastaoUniversal,corda,bastaoGarra,X = \{agente que tenta alcançar o objetivo\}               & eg1         \\ \hline
+pano,glicerina,carretilha,bastaoUniversal,corda,bastaoGarra,condutivimetroX = \{agente que tenta alcançar o objetivo\} & eg2         \\ \hline
+sela,colarX = \{agente que tenta alcançar o objetivo\}                                                                & eg3         \\ \hline
+colar,bastaoGarraX = \{agente que tenta alcançar o objetivo\}                                                          & eg4         \\ \hline
+corda,bastaoGarra,bastaoGarraTorre,condutorX = \{agente que tenta alcançar o objetivo\}                               & eg5         \\ \hline
+bastaoGarra,selaX = \{agente que tenta alcanar o objetivo\}                                                           & eg6         \\ \hline
+sela,colarX = \{agente que tenta alcançar o objetivo\}                                                                & eg7         \\ \hline
+sela,bastaoUniversal,Colar,X = \{agente que tenta alcançar o objetivo\}                                               & eg8         \\ \hline
+bastaoUniversal,carretilha,X = \{agente que tenta alcançar o objetivo\}                                               & eg9         \\ \hline
+corda,bastaoUniversal,corda,torre,X = \{agente que tenta alcançar o objetivo\}                                        & eg10        \\ \hline
+bastaoUniversal,corda,colar,selaX = \{agente que tenta alcançar o objetivo\}                                          & eg11        \\ \hline
+colar,X = \{agente que tenta alcançar o objetivo\}                                                                    & eg12        \\ \hline
+bastaoUniversal,estropo,isoladorVelhoX = \{agente que tenta alcançar o objetivo\}                                     & eg13        \\ \hline
+bastaoUniversal,corda,estropoX = \{agente que tenta alcançar o objetivo\}                                             & eg14        \\ \hline
+chaveCatraca,bastaoUniversal,prafusoX = \{agente que tenta alcançar o objetivo\}                                      & eg15        \\ \hline
+bastaoSoquete,parafuso,X = \{agente que tenta alcançar o objetivo\}                                                   & eg16        \\ \hline
+bastaoGarra,condutorcordaX = \{agente que tenta alcançar o objetivo\},                                                & eg17        \\ \hline
+colar,X = \{agente que tenta alcançar o objetivo\},                                                                   & eg18        \\ \hline
+chaveCatraca,bastaoUniversal,prafusobastaoSoquete,parafuso,torreX = \{agente que tenta alcançar o objetivo\}          & eg19        \\ \hline
+cordaX = \{agente que tenta alcançar o objetivo\}                                                                     & eg20        \\ \hline
+estropo, isoladorNovo,X = \{agente que tenta alcançar o objetivo\}                                                    & eg21        \\ \hline
+bastaoUniversal,corda,estropoX = \{agente que tenta alcançar o objetivo\}                                             & eg22        \\ \hline
+cordaX = \{agente que tenta alcançar o objetivo\}                                                                     & eg23        \\ \hline
+chaveCatraca,bastaoUniversal,prafusobastaoSoquete,parafuso,torreX = \{agente que tenta alcançar o objetivo\}          & eg24        \\ \hline
+bastaoGarra,condutorcordaX = \{agente que tenta alcançar o objetivo\},                                                & eg25        \\ \hline
+chaveCatraca,bastaoUniversal,prafusoX = \{agente que tenta alcançar o objetivo\}                                      & eg26        \\ \hline
+sela,colar,bastaoGarra,bastaoUniversal,bastaoSoquete,corda,carretilha,chaveCatraca,torre,condutor                     & eg27        \\ \hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[H]
+\scalefont{0.7}
+\begin{tabular}{|p{0.8\linewidth}|l|}
+\hline
+\textbf{relacionamentos}                                                                                                                                                                                                                                                                                                                  & \textbf{rg} \\ \hline
+relXcapacete relXoculos relXroupagem relXluva relXbotas                                                                                                                                                                                                                                                                                   & rg0         \\ \hline
+relXPano relPanoGlicerina relPanoCorda relPanoBastaoUniversal relPanoBastaoGarra relPanoSoquete                                                                                                                                                                                                                                           & rg1         \\ \hline
+relCondutivimetroCorda relCondutivimetroBastaoUniversal relCondutivimetroBastaoGarra relCondutivimetroSoquete                                                                                                                                                                                                                                & rg2         \\ \hline
+relCondutivimetro                                                                                                                                                                                                                                                                                                                         & rg3         \\ \hline
+relXBastaoGarra relColarBastaoGarra                                                                                                                                                                                                                                                                                                        & rg4         \\ \hline
+relXBastaoGarra relXCordarelCordaBastaoGarra relBastaoGarraTorre relBastaoGarraCondutor                                                                                                                                                                                                                                                      & rg5         \\ \hline
+relBastaoGarraSela relXBastaoGarra relXSela                                                                                                                                                                                                                                                                                                 & rg6         \\ \hline
+relXSela relXColar relTorreSela                                                                                                                                                                                                                                                                                                             & rg7         \\ \hline
+relBastaoUniversalColar relXBastaoUniversal                                                                                                                                                                                                                                                                                                & rg8         \\ \hline
+relXBastaoUniversal relXCarretilha relBastaoUniversalCarretilha                                                                                                                                                                                                                                                                             & rg9         \\ \hline
+relXCorda relXBastaoUniversal relBastaoUniversalCorda relBastaoUniversalTorre                                                                                                                                                                                                                                                             & rg10        \\ \hline
+relXCorda relXBastaoUniversal relXColar relBastaoUniversalColar relBastaoUniversalSela                                                                                                                                                                                                                                                    & rg11        \\ \hline
+relXColar                                                                                                                                                                                                                                                                                                                                 & rg12        \\ \hline
+relXBastaoUniversal relBastaoUniversalEstropo relEstropoIsoladorVelho                                                                                                                                                                                                                                                                     & rg13        \\ \hline
+relXBastaoUniversal relBastaoUniversalCordarelCordaEstropo relEstropoCorda                                                                                                                                                                                                                                                                & rg14        \\ \hline
+relChaveCatracaBastaoUniversal relXChaveCatraca relXBastaoUniversal relChaveCatracaParafuso                                                                                                                                                                                                                                               & rg15        \\ \hline
+relXBastaoSoquete relSoqueteParafuso                                                                                                                                                                                                                                                                                                      & rg16        \\ \hline
+relXCorda relCordaBastaoGarra relBastaoGarraCondutor                                                                                                                                                                                                                                                                                      & rg17        \\ \hline
+relXColar                                                                                                                                                                                                                                                                                                                                 & rg18        \\ \hline
+relChaveCatracaBastaoUniversal relXChaveCatraca relXBastaoUniversal relChaveCatracaParafuso relParafusoTorrerelXBastaoSoquete relSoqueteParafuso                                                                                                                                                                                           & rg19        \\ \hline
+relXCorda                                                                                                                                                                                                                                                                                                                                 & rg20        \\ \hline
+relXEstropo relEstropoIsoladorNovo                                                                                                                                                                                                                                                                                                         & rg21        \\ \hline
+relXBastaoUniversal relBastaoUniversalCorda relCordaEstropo relEstropoCorda                                                                                                                                                                                                                                                                & rg22        \\ \hline
+relXCorda                                                                                                                                                                                                                                                                                                                                 & rg23        \\ \hline
+relChaveCatracaBastaoUniversal relXChaveCatraca relXBastaoUniversal relChaveCatracaParafuso relParafusoTorrerelXBastaoSoquete relSoqueteParafuso                                                                                                                                                                                           & rg24        \\ \hline
+relXCorda relCordaBastaoGarra relBastaoGarraCondutor                                                                                                                                                                                                                                                                                      & rg25        \\ \hline
+relChaveCatracaBastaoUniversal relXChaveCatraca relXBastaoUniversal relChaveCatracaParafuso                                                                                                                                                                                                                                               & rg26        \\ \hline
+relXSela relXColarrelXBastaoGarrarelXBastaoUniversal relXBastaoSoquete relXCorda relXCarretilha relXChaveCatraca relColarBastaoGarra relCordaBastaoGarra relBastaoGarraTorre relBastaoGarraCondutor relBastaoUniversalCarretilha relBastaoGarraSela relBastaoUniversalSela relSelaColar relTorreSela relBastaoUniversalCorda relBastaoGarraCorda & rg27        \\ \hline
+\end{tabular}
+\end{table}
+
+
+
+\begin{table}[H]
+\centering
+\scalefont{0.8}
+\begin{tabular}{|l|l|}
+\hline
+\textbf{condicoes}         & \textbf{cg} \\ \hline
+umidade70,noVento,noChuva,sol & cg1         \\ \hline
+\end{tabular}
+\end{table}
 
 \bibliographystyle{sbc}
 \bibliography{sbc-template}
