@@ -20,6 +20,14 @@ Dastani, M., Grossi, D., Meyer, J.-J.~C., and Tinnemeier, N. (2009).
   Representation for Agents and Multi-Agent Systems}, pages 16--31, Berlin,
   Heidelberg. Springer Berlin Heidelberg.
 
+\bibitem[H{\"u}bner et~al. 2002]{mosieframework}
+H{\"u}bner, J.~F., Sichman, J.~S., and Boissier, O. (2002).
+\newblock A model for the structural, functional, and deontic specification of
+  organizations in multiagent systems.
+\newblock In Bittencourt, G. and Ramalho, G.~L., editors, {\em Advances in
+  Artificial Intelligence}, pages 118--128, Berlin, Heidelberg. Springer Berlin
+  Heidelberg.
+
 \bibitem[L{\'o}pez~y L{\'o}pez and Luck
   2004]{amodelmultiagentsystemdynamicrelationship}
 L{\'o}pez~y L{\'o}pez, F. and Luck, M. (2004).
