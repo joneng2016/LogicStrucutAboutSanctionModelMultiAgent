@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.11.6)  12 NOV 2018 19:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.11.6)  13 NOV 2018 19:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -733,18 +733,20 @@ T1/ptm/m/n/12 pode as-su-mir ape-nas dois va-lo-res;
 
 [4]
 Underfull \hbox (badness 10000) in paragraph at lines 207--208
-[]\OT1/ptm/m/n/12 Essas defini[][]oes s[]ao usa-das em di-ver-sos es-tu-dos na 
-[]area de sis-te-
+\OT1/ptm/m/n/12 ti-a-gen-tes [[]], [[]], [[]]
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 207--208
-\OT1/ptm/m/n/12 mas mul-ti-a-gen-tes [[]], [[]], [[]],
+\OT1/ptm/m/n/12 e [[]]. Nesse es-tudo, a vioa[][]ao []e tra-tada nos pre-di-
  []
 
 
-Underfull \hbox (badness 1496) in paragraph at lines 207--208
-\OT1/ptm/m/n/12 [[]] e [[]]. Nesse es-tudo, a vioa[][]ao []e
+Underfull \hbox (badness 10000) in paragraph at lines 207--208
+\OT1/ptm/m/n/12 ca-dos $\OML/cmm/m/it/12 violationCondition\OT1/cmr/m/n/12 (\OM
+L/cmm/m/it/12 ag[]; g[]; c[]\OT1/cmr/m/n/12 )$\OT1/ptm/m/n/12 , $\OML/cmm/m/it/
+12 violationRelation\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ag[]; g[]; r[]\OT1/cmr/m/
+n/12 )$ \OT1/ptm/m/n/12 e
  []
 
 [5] [6] [7] [8] [9] [10] <umlmodel.png, id=41, 1456.44125pt x 1117.17375pt>
@@ -965,8 +967,27 @@ File: programdastani.png Graphic file (type png)
 <use programdastani.png>
 Package pdftex.def Info: programdastani.png used on input line 1342.
 (pdftex.def)             Requested size: 341.43437pt x 89.11897pt.
- [36 <./masprogram.png>] (./sbc-template.bbl) [37 <./programdastani.png>] (./sb
-c-template.aux)
+ [36 <./masprogram.png>]
+Underfull \hbox (badness 1005) in paragraph at lines 1352--1353
+\OT1/ptm/m/n/12 gua-gem que de-li-mita com maior ri-gor o pro-blema em an[]alis
+e do que o mo-delo
+ []
+
+<ontologyv3.png, id=143, 496.85625pt x 256.70906pt>
+File: ontologyv3.png Graphic file (type png)
+ <use ontologyv3.png>
+Package pdftex.def Info: ontologyv3.png used on input line 1360.
+(pdftex.def)             Requested size: 213.39568pt x 110.25346pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [37 <./programdastani.png>]
+Underfull \hbox (badness 1297) in paragraph at lines 1396--1397
+[]\OT1/ptm/m/n/12 No que tange a quest[]oes re-fe-ren-tes a seguran[]a e viola[
+][]ao, a lin-gua-gem
+ []
+
+(./sbc-template.bbl [38 <./ontologyv3.png>]) [39] (./sbc-template.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.39996pt have occurred.
@@ -976,10 +997,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5103 strings out of 493013
- 66728 string characters out of 6135682
- 176015 words of memory out of 5000000
- 8502 multiletter control sequences out of 15000+600000
+ 5112 strings out of 493013
+ 66867 string characters out of 6135682
+ 176068 words of memory out of 5000000
+ 8510 multiletter control sequences out of 15000+600000
  38658 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,13n,29p,1546b,272s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -998,10 +1019,10 @@ exlive/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
 utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on sbc-template.pdf (37 pages, 664333 bytes).
+Output written on sbc-template.pdf (39 pages, 740386 bytes).
 PDF statistics:
- 203 PDF objects out of 1000 (max. 8388607)
- 135 compressed objects within 2 object streams
+ 211 PDF objects out of 1000 (max. 8388607)
+ 139 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

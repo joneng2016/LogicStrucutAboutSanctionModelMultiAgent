@@ -204,7 +204,7 @@ Sistemas multiagentes normativas não podem ser descritos sem considerar três c
 	\item \textbf{Sanção}: Consequências punitivas que acontencem ao agente ao realizar algo proibido.	
 \end{enumerate}
 
-Essas definições são usadas em diversos estudos na área de sistemas multiagentes \cite{dastaniNormativeMultiAgentProgram}, \cite{multiagentsystem}, \cite{violationcamille}, \cite{amodelmultiagentsystemdynamicrelationship} e \cite{ontologynormative}. Nesse estudo, a vioação é tratada nos predicados $violationCondition(ag_i,g_j,c_k)$, $violationRelation(ag_i,g_j,r_k)$ e $violationEntity(ag_i,g_j,e_k)$. Esses predicados levam em consideração o domínio do problema deste estudo bem como o que é tido por violação dentro do contexto acadêmico, pois são eventos que acontecem mediante violação de uma norma. As relações \ref{rel3}, \ref{rel4},\ref{rel5} não determinam apenas a violação, mas também definem qual é o comportamento normativo adequado, uma vez que deixam evidentes qual dever ser o comportamento do agente para que a violação associada seja considerada falsa. As relações \ref{rel9}, \ref{rel10} são sanções. Isso, pois definem consequências negativas aos agentes tendo em vista a ocorrência da violação. A relações de implicabilidade \ref{rel11} não é uma sanção, pois define consequências ruins para outros agentes. 
+Essas definições são usadas em diversos estudos na área de sistemas multiagentes \cite{dastaniNormativeMultiAgentProgram}, \cite{multiagentsystem}, \cite{amodelmultiagentsystemdynamicrelationship} e \cite{ontologynormative}. Nesse estudo, a vioação é tratada nos predicados $violationCondition(ag_i,g_j,c_k)$, $violationRelation(ag_i,g_j,r_k)$ e $violationEntity(ag_i,g_j,e_k)$. Esses predicados levam em consideração o domínio do problema deste estudo bem como o que é tido por violação dentro do contexto acadêmico, pois são eventos que acontecem mediante violação de uma norma. As relações \ref{rel3}, \ref{rel4},\ref{rel5} não determinam apenas a violação, mas também definem qual é o comportamento normativo adequado, uma vez que deixam evidentes qual dever ser o comportamento do agente para que a violação associada seja considerada falsa. As relações \ref{rel9}, \ref{rel10} são sanções. Isso, pois definem consequências negativas aos agentes tendo em vista a ocorrência da violação. A relações de implicabilidade \ref{rel11} não é uma sanção, pois define consequências ruins para outros agentes. 
 
 
 \subsection{Justificando a Existência das Relações de Implicabilidade}
@@ -1345,6 +1345,55 @@ A figura a seguir ilustra um exemplo de um programa de sistema multiagente escri
 \end{figure}
 
 
+A figura \ref{exemploprograma} apresenta um programa que contem um agente com nome \textit{passenger}. O agente pode estar ou não na plataforma e no trem, sem ou com \textit{ticket}. Se o agente entrar na plataforma ou no trem sem o \textit{ticket}, então esse agente cometeu uma violação. Para este programa, a sanção da violação que ocorre por entrar na plataforma sem o \textit{ticket} resulta em uma punição onde o agente deve pagar 10 Euros pelo ocorrido \cite{dastaniNormativeMultiAgentProgram}.
+
+O modelo presente em \cite{dastaniNormativeMultiAgentProgram} apresenta muitas similaridades ao modelo definido neste estudo sobre o ponto de vista de sanção e violação, uma vez que a raiz para os conceitos de ambos os estudos advem das mesmas origens. Contudo, o modelo \cite{dastaniNormativeMultiAgentProgram} apresenta um aspecto muito mais abrangente podendo considerar uma vastidão de mundos possíveis. Isso pois esse modelo não define conceitos como (objetivos, artefatos, riscos, possibilidades). Já no modelo deste estudo, esses conceitos e predicados são definidos.
+
+Portanto ambos os modelos podem ser usados para delimitar o estudo de caso presente neste texto, com a diferença que o modelo deste estudo apresenta uma linguagem que delimita com maior rigor o problema em análise do que o modelo \cite{dastaniNormativeMultiAgentProgram}.
+
+\subsection{\textit{V3S: A Virtual Environment for Risk-Management Training Based on Human-Activity Models}}
+
+V3S é um modelo com a finalidade de gerar ambientes para desenvolver treinamentos complexos em ambiente de realidade virtual visando atividades de risco e de emergência. O modelo é composto por três submodelos; \textit{Domain Model}, \textit{Activity Model} e \textit{Risk Model} \cite{violationcamille}. O \textit{Domain Model} é o núcleo do sistema. Todos os objetos, ações e relações são descritos por uma ontologia. A figura \ref{domainmodel} exibe a estrutura de classe desta ontologia.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.5\linewidth]{ontologyv3.png} 
+  \caption{Ontologia que descreve \textit{Domain Model} no model V3S \cite{violationcamille}}
+  \label{domainmodel}
+\end{figure}
+
+
+\textit{Activity Model} é estruturado sobre uma linguagem de descrição conhecido por \textit{ACTIVITY-DL}. Essa linguagem usa álgebra de Allen's que tem como por finalidade definir raciocínios temporais \cite{Allen}. As relações definidas por essa álgebra é dada por; 
+\begin{enumerate}
+	\item $X < Y$ onde $X$: ocorre antes de $Y$ 
+	\item $X m Y$,$Y mi X$: $X$ encontra $Y$
+	\item $X o Y$, $X oi Y$: $X$ sobrepõem a $Y$
+	\item $X s Y$, $Y si X$: $X$ começa $Y$
+	\item $X d Y$, $Y di X$: $X$ ocorre durante $Y$	  
+	\item $X f Y$, $Y fi X$: $X$ termina junto com $Y$	  	
+	\item $X = Y$ $X$ é igual a $Y$	  		
+\end{enumerate}
+
+A linguagem define construtures que são semanticamente equivalente a certos operadores da álgebra de Allen's. Esses construtores (atuantes sobre atividades) são definidos pela tabela \ref{acticonstruct}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|l|}
+\hline
+Construtor & Nome         & Relações de Allen \\ \hline
+IND        & Independent  & $A\{<,>,m,mi,o,oi,s,si,d,di,f,fi,=\}B$\\ \hline
+SEQ        & Sequential   & $A\{<,>,m,mi\}B$\\ \hline
+SEQ-ORD    & Ordered      & $A\{<,>,m\}B$\\ \hline
+PAR        & Parallel     & $A\{o,oi,s,si,d,di,f,fi,=\}B$ \\ \hline
+PAR-SIM    & Simultaneous & $A\{=\}B$\\ \hline
+PAR-START  & Start        & $A\{s,si,=\}B$\\ \hline
+PAR-END    & End          & $A\{f,fi,=\}B$ \\ \hline
+\end{tabular}
+\caption{Construtores da linguagem \textit{ACTIVITY-DL} \cite{violationcamille}}
+\label{acticonstruct}
+\end{table}
+
+No que tange a questões referentes a segurança e violação, a linguagem \textit{ACTIVITY-DL} define \textit{tags} no estudo \cite{FADIER2003759}. Essas \textit{tags} são BCTUs,BATUs. BCTUs representam situações informais entre os atores de um determinado campo, por exemplo; trabalhar com produtos químicos sem usar equipamentos de proteção individual. BATUs corresponde a práticas de risco tolerado. Existe dois tipos de BATUs, primeiro - quando realizado por obrigação ou interesse de conforto (quando os operadores acham impossível realizar a operação respeitando as instruções), segundo - ocorre durante a operação do sistema com o propósito de evitar que o sistema deixe de funcionar.    
 
 \bibliographystyle{sbc}
 \bibliography{sbc-template}

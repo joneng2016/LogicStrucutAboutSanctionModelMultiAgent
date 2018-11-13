@@ -4,45 +4,45 @@ The top-level auxiliary file: sbc-template.aux
 The style file: sbc.bst
 Database file #1: sbc-template.bib
 Warning--can't use both author and editor fields in ontologynormative
-You've used 6 entries,
+You've used 8 entries,
             1935 wiz_defined-function locations,
-            517 strings with 5155 characters,
-and the built_in function-call counts, 3183 in all, are:
-= -- 319
-> -- 131
-< -- 8
-+ -- 45
-- -- 41
-* -- 248
-:= -- 515
-add.period$ -- 22
-call.type$ -- 6
-change.case$ -- 45
-chr.to.int$ -- 6
-cite$ -- 7
-duplicate$ -- 138
-empty$ -- 228
-format.name$ -- 49
-if$ -- 671
+            537 strings with 5485 characters,
+and the built_in function-call counts, 3983 in all, are:
+= -- 399
+> -- 156
+< -- 9
++ -- 53
+- -- 49
+* -- 321
+:= -- 652
+add.period$ -- 28
+call.type$ -- 8
+change.case$ -- 59
+chr.to.int$ -- 8
+cite$ -- 9
+duplicate$ -- 166
+empty$ -- 290
+format.name$ -- 59
+if$ -- 828
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 7
-newline$ -- 33
-num.names$ -- 26
-pop$ -- 52
+missing$ -- 9
+newline$ -- 43
+num.names$ -- 32
+pop$ -- 61
 preamble$ -- 1
-purify$ -- 46
+purify$ -- 60
 quote$ -- 0
-skip$ -- 109
+skip$ -- 130
 stack$ -- 0
-substring$ -- 223
-swap$ -- 44
+substring$ -- 299
+swap$ -- 46
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 34
+type$ -- 46
 warning$ -- 1
-while$ -- 33
+while$ -- 40
 width$ -- 0
-write$ -- 89
+write$ -- 115
 (There was 1 warning)

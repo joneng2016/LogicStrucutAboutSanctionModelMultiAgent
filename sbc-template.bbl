@@ -1,5 +1,10 @@
 \begin{thebibliography}{}
 
+\bibitem[Allen 1983]{Allen}
+Allen, J.~F. (1983).
+\newblock Maintaining knowledge about temporal intervals.
+\newblock {\em Commun. ACM}, 26(11):832--843.
+
 \bibitem[Barot et~al. 2013]{violationcamille}
 Barot, C., Lourdeaux, D., Burkhardt, J., Amokrane, K., and Lenne, D. (2013).
 \newblock {V3S:} {A} virtual environment for risk-management training based on
@@ -19,6 +24,12 @@ Dastani, M., Grossi, D., Meyer, J.-J.~C., and Tinnemeier, N. (2009).
 \newblock In Meyer, J.-J.~C. and Broersen, J., editors, {\em Knowledge
   Representation for Agents and Multi-Agent Systems}, pages 16--31, Berlin,
   Heidelberg. Springer Berlin Heidelberg.
+
+\bibitem[Fadier et~al. 2003]{FADIER2003759}
+Fadier, E., Garza, C. D.~L., and Didelot, A. (2003).
+\newblock Safe design and human activity: construction of a theoretical
+  framework from an analysis of a printing sector.
+\newblock {\em Safety Science}, 41(9):759 -- 789.
 
 \bibitem[H{\"u}bner et~al. 2002]{mosieframework}
 H{\"u}bner, J.~F., Sichman, J.~S., and Boissier, O. (2002).
