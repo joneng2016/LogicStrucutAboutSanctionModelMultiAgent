@@ -133,18 +133,25 @@ Todo agente que é obrigado a alcançar um determinado objetivo deve ter a permi
 Um agente que tenta alcançar um objetivo sem que pelo menos uma das condições necessárias para isso esteja presente, comete uma violação conhecida como violação de condição.
 \begin{eqnarray}\label{rel3}\nonumber
 	hasCondition(g_i,cg_n) \wedge \neg isPresent(c_k) \wedge (c_k \in cg_n) \wedge tryReach(ag_m,g_i) \to \nonumber \\  
-	violationCondition(ag_m,g_j,c_k) 
+	violationCondition(ag_m,g_j,c_k) \wedge \nonumber \\
+	hasCondition(g_i,cg_n) \wedge isPresent(cg_n) \wedge tryReach(ag_m,g_i) \to \nonumber \\  
+	\neg violationCondition(ag_m,g_j,c_k)  	
 \end{eqnarray}
 
 Se um agente não executa, ou não tem condições de executar, um dado relacionamento $r_k$ necessário para concluir o objetivo, então o agente cometeu uma violação de relacionamento. Contudo, se o agente alcançar o objetivo, então a não violação acontece. 
 \begin{eqnarray}\label{rel4}\nonumber
 	hasRelation(g_i,rg_n)\wedge \neg isPresent(r_k)  \nonumber \\ 
-	\wedge (r_k \in rg_n) \wedge tryReach(ag_m,g_i) \to violationRelation(ag_m,g_i,r_k)
+	\wedge (r_k \in rg_n) \wedge tryReach(ag_m,g_i) \to violationRelation(ag_m,g_i,r_k) \nonumber \\
+	\wedge \nonumber
+	\\
+	hasRelation(g_i,rg_n)\wedge isPresent(rg_n)  \nonumber \\ 
+	 \wedge tryReach(ag_m,g_i) \to  \neg violationRelation(ag_m,g_i,r_k) 
 \end{eqnarray}
 
 Se ao tentar alcançar um determinado objetivo pelo menos uma das entidades necessárias para isso está ausente, então acontece um uma violação de entidade. Contudo, se todas as entidades estiverem presente, então a vioalação não acontence. 
 \begin{eqnarray}\label{rel5}\nonumber
-	hasEntity(g_i,eg_n) \wedge \neg isPresent(e_k) 	\wedge (e_k \in eg_n) \wedge tryReach(ag_m,g_i) \to \nonumber \\ violationEntity(ag_m,g_i,e_k)  
+	hasEntity(g_i,eg_n) \wedge \neg isPresent(e_k) 	\wedge (e_k \in eg_n) \wedge tryReach(ag_m,g_i) \to \nonumber \\ violationEntity(ag_m,g_i,e_k) \nonumber \\
+	hasEntity(g_i,eg_n) \wedge  isPresent(eg_n) \wedge tryReach(ag_m,g_i) \to \nonumber \\ \neg violationEntity(ag_m,g_i,e_k)  
 \end{eqnarray}
 
 
@@ -276,7 +283,7 @@ A figura dada por \ref{uml} apresenta a estrutura do modelo em formato de diagra
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=1\linewidth]{uml20} 
+  \includegraphics[width=0.8\linewidth]{umlmodel} 
   \caption{}
   \label{uml}
 \end{figure}
@@ -534,7 +541,7 @@ relXCapacete & relParafusoTorre & true \\ \hline
 relXOculos & relBastaoGarraCondutor & true \\ \hline
 relXOculos & relCordaEstropo & true \\ \hline
 relXOculos & relChaveCatracaParafuso & true \\ \hline
-relXOculos & relParafusoConector & true \\ \hline
+relXOculos & relParafusoConector & true \\ \hlinerelPanoCorda
 relXOculos & relSoqueteParafuso & true \\ \hline
 relXOculos & relXCorda & true \\ \hline
 relXOculos & relEstropoCorda & true \\ \hline
@@ -1134,7 +1141,7 @@ O raciocínio a seguir mostra o que acontece se o $agente3$ errar a forma adequa
 
 \subsubsection{Raciocínio - 5} 
 
-A finalidade dessa demonstração consiste em mostrar como um agente pode ser submetido a consequências ruins tendo em vista erros cometidos por outros profissionais. O raciocínio 1 mostra que o fato do $agente4$ não conseguir realizar o relacionamento $relPanoGlicerina$ resulta na violação $violationRelation(agente4,goal1,relPanoGlicerina)$. Essa violação, por sua vez, impacta diversas outras relações, em que $hasPossibility(relParafusoTorre,true)$ é uma delas. Assim sendo, antes do $agente4$ comenter o erro, a possibilidade da ocorrência de um evento ruim acontecer era 0, se o agente realizar a relação $relParafusoTorre$ sem cometer violação alguma. Contudo, após a ocorrência do erro cometido pelo $agent4$, existe uma possibilidade de um evento ruim acontecer na relação $relParafusoTorre$ mesmo que tudo seja feito de acordo com os conformes. Assim sendo, a lista de predicados e o raciocínio mosta o que acontece dado a seguinte situação; o possível evento ruim presente em $relParafusoTorre$ se torna uma realidade;  
+A finalidade dessa demonstração consiste em mostrar como um agente pode ser submetido a consequẽncias ruins tendo em vista erros cometidos por outros profissionais. O raciocínio 1 mostra que o fato do $agente4$ não conseguir realizar o relacionamento $relPanoGlicerina$ resulta na violação $violationRelation(agente4,goal1,relPanoGlicerina)$. Essa violação, por sua vez, impacta diversas outras relações, em que $hasPossibility(relParafusoTorre,true)$ é uma delas. Assim sendo, antes do $agente4$ comenter o erro, a possibilidade da ocorrência de um evento ruim acontecer era 0, se o agente realizar a relação $relParafusoTorre$ sem cometer violação alguma. Contudo, após a ocorrência do erro cometido pelo $agent4$, existe uma possibilidade de um evento ruim acontecer na relação $relParafusoTorre$ mesmo que tudo seja feito de acordo com os conformes. Assim sendo, a lista de predicados e o raciocínio mosta o que acontece dado a seguinte situação; o possível evento ruim presente em $relParafusoTorre$ se torna uma realidade;  
 
 \begin{enumerate}
 	\item $relParafusoTorre \in rg19$	
@@ -1315,7 +1322,7 @@ O texto \cite{dastaniNormativeMultiAgentProgram} apresenta um modelo com a final
   \label{descreveprograma}
 \end{figure}
 
-Com base no proposto por esse modelo, um programa de sistemas multiagentes é descrito por \textit{Agents} (agentes), \textit{Facts} (fatos), \textit{Effects} (efeitos), \textit(Count-as rules) (regras que determinam o adequado comportamento do agente), \textit{Sanction rules} (regras de sanção) \cite{dastaniNormativeMultiAgentProgram}. 
+Com base no proposto por esse modelo, um programa de sistemas multiagentes é descrito por \textit{Agents} (agentes), \texti{Facts} (fatos), \textit{Effects} (efeitos), \textit(Count-as rules) (regras que determinam o adequado comportamento do agente), \textit{Sanction rules} (regras de sanção) \cite{dastaniNormativeMultiAgentProgram}. 
 
 Os \textit{Agents} são definidos em termos de duas \textit{strings} e um inteiro. A primeira \textit{string} é \textit{agentName} e é usado para definir o nome do agente e a segunda \textit{string} é \textit{agentProg} e define o nome  do arquivo onde se encontra especificações do respectivo agente. O inteiro \textit{nr} é usado para definir a quantia do agente \cite{dastaniNormativeMultiAgentProgram}.
 
@@ -1387,73 +1394,6 @@ PAR-END    & End          & $A\{f,fi,=\}B$ \\ \hline
 \end{table}
 
 No que tange a questões referentes a segurança e violação, a linguagem \textit{ACTIVITY-DL} define \textit{tags} no estudo \cite{FADIER2003759}. Essas \textit{tags} são BCTUs,BATUs. BCTUs representam situações informais entre os atores de um determinado campo, por exemplo; trabalhar com produtos químicos sem usar equipamentos de proteção individual. BATUs corresponde a práticas de risco tolerado. Existe dois tipos de BATUs, primeiro - quando realizado por obrigação ou interesse de conforto (quando os operadores acham impossível realizar a operação respeitando as instruções), segundo - ocorre durante a operação do sistema com o propósito de evitar que o sistema deixe de funcionar.    
-
-\textit{Activity Model} apresenta uma categorização de pré-condições. A tabela \ref{precondition} detalhe essa categorização. 
-
-\begin{table}[]
-\begin{tabular}{|l|l|p{0.6\linewidth}|}
-\hline
-\textbf{Categoria} & \textbf{Pré-condição} & \textbf{Descrição}                                                                                                                                                                                                                                              \\ \hline
-Condições para perceber  & Nomológico            & Descreve o estado do mundo necessário para que a tarefa seja fisicamente realizável. Condições dependem diretamente das regras de ação definidas no modelo de domínio. Exemplo: Abre a porta se estiver fechada.                                                \\ \hline
-Condições para perceber  & Regulamentar          & Descreve o estudo do mundo necessário para uma boa realização da atividade de acordo com prescrito em procedimento. Exemplo: Para desconectar o tubo, a proteções devem ser desgastado.                                                                         \\ \hline
-Condições para  Examinar & Contextual            & Descreve o estado de mundo em que a atividade é relevante. Quando essa condição é falsa, então a atividade deve ser ignorada. Exemplo: Limpar o tubo é relevante apenas se o tubo estiver sujo.                                                                 \\ \hline
-Condições para  Examinar & Favorável             & Descreve o estado de mundo onde a tarefa é preferencial sobre as demais. Essas condições ajudam a escolher entre várias tarefas quando existe uma alternativa para a realização de uma tarefa decomposta. Exemplo: se o parafuso estiver enferrujado, desarmar. \\ \hline
-\end{tabular}
-\caption{As pré-condições possíveis para as atividades \cite{violationcamille}}
-\label{precondition}
-\end{table}
-
-\textit{Risk Models} é a parte do modelo que define a análise de risco. Existe duas categorias; risco de análise clássico e método de análise de confiabilidade humana. A primeira categoria permite definir uma análise quantitativa de risco, contudo falha ao definir a complexidade dos resultados frente a fatores humanos. Em contrapartida, a segunda categoria considera fatores humanos, contudo falha em definir medidas o objetivas sobre questões de segurança \cite{violationcamille}.
-
-O \textit{V3S} combina ambas situações usando a abordagem MELISSA \cite{Camus2012}\cite{violationcamille}. Essa abordagem é baseada em três pontos (1) atividades relacionadas em cenários de acidentes, (2) descrição das tarefas de representação e (3) fatores influentes em potencial nas atividaes. 
-
-O \textit{V3S} possuem representações para defini as entidades, objetos e ações assim como o modeo presente neste estudo. Contudo, existe diferenças na estrutra ontologica de ambo os modelos, pois o \textit{V3S} define tanto objetos e açõe como entidades, enquanto que o modelo proposto neste estudo apenas objetos são entidades. O \textit{V3S} não caracteriza os agentes dentro de sua estrutura ontologica, enquanto que o modelo deste estudo faz isso definindo os agentes como entidades que se relacionam com outras entidades. 
-
-No que tange a questões referentes as atividades, o \textit{V3S} realiza a descrição sequencial das mesmas por intermédio da álgebra de \textit{Allen's}, enquanto que este estudo usa uma abordagem mais simples para representar as relações entre objetivos usando apenas alguns predicados para tratar essa dinâmica. O mesmo ocorre para as pré-condições, onde o \textit{V3S} detalha os tipos de pré-condições existentes enquanto que o modelo presente neste estudo não faz isso.
-
-O \textit{V3S} realiza a tratativa de violações usando o estudo \cite{FADIER2003759}. Em contraste com isso, neste modelo os pesquisadores optaram por definir as violações por intermédio de regras (definidas por meio de relações de implicabilidade) onde define claramente quais condições resultam numa determinada violação. Com base nisso, a proposta do modelo deste texto está muito mais próximo do texto \cite{dastaniNormativeMultiAgentProgram} do que do \textit{V3S}. 
-
-O \textit{V3S} não exerce uma definição objetiva e formal das sanções. O modelo proposto neste texto também não apresenta classes ou predicados que tornam explícito as relaçõe de sanção. Contudo, esse estudo usa a abordagem acadêmica clássica (usada também no estudo \cite{dastaniNormativeMultiAgentProgram}) tratando as sanções como consequências de uma violação. O \textit{V3S} aprenta esse tipo de situação, contudo sem o formalismo de sanção. 
-
-O modelo proposto neste estudo define as violações em três categorias (condição, relações e entidades), algo que o \textit{V3S} não aborda. Isso não significa afirmar que o \textit{V3S} não pode ser usado para modelar essas violações, contudo, este modelo possui um vocabulário para resolver os problemas deste tipo de violação de forma muito mais específica quando comparado ao \textit{V3S}. 
-
-Os riscos também são tratados diferentemente em ambos os estudos. O \textit{V3S} usa uma aborddagem robusta baseada em estudos acadêmicos envolvendo segurança. O modelo deste estudo trata essa questão de forma mais simples, específica e objetiva. Isso, pois, risco é tratado com base na \textit{NR.1.7} sobre a perspectiva de mapa de riscos. 
-
-\subsubsection{NormMAS}
-
-\textit{NormMAS} é um modelo usado para definir comportamento normativo de sistemas multiagentes \cite{chang}. No que tange questões referentes ao comportamento normativo, o modelo trabalha com duas definições \cite{chang}. A primeira definição é;
-
-\textbf{Definição 1.} \textit{Um norma é definida por meio de uma tupla} $N = \langle \mu,\kappa,\chi,\tau,\rho \rangle$
-
-\begin{itemize}
-    \item $\mu \in \{obligation,prohibition\}$ representa as modalidades de norma.
-    \item $\kappa \in \{action,state\}$ representa o tipo de \textit{trigger} da condição.
-    \item $\chi$ representa o conjunto de estados em que uma norma se aplica
-    \item $\tau$ repreenta a norma da condição de \textit{trigger}
-    \item $\rho$ representa a sanção aplicava pela violação do agente.
-\end{itemize}
-
-A defição 1 pode ser compreendida sobre o seguinte exemplo; 
-
-\textit{Todos os imigrantes que possuem passaporte válido, devem ser aceitos. A falha resulta na perda de 5 créditos}. 
-
-Dentro da definição 1, o exemplo fica;
-
-\begin{eqnarray}
-    \langle obligation,action,valid(Passport),accept(Passport),loss(5)\rangle
-\end{eqnarray}
-
-\textit{NormMAS} define um \textit{Registro de ação} que é dado pela definição 2. 
-
-\textbf{Definição 2.} \textit{Um Registro de Ação é definido por meio de uma tupla} $R = \langle \gamma,\alpha,\beta \rangle$
-
-\begin{itemize}
-    \item $\gamma$ representa o agente executando uma ação;
-    \item $\alpha$ representa a ação sendo executada pelo agente $\gamma$
-    \item $\beta$ representa os estados internos do agente $\gamma$ no momento da execução.
-\end{itemize}
-
-Assim como o modelo definido neste estudo, \textit{NorMAS} formaliza o conceito de norma em conjunto com o conceito de violação e de sanção. Contudo, assim como o estudo \cite{dastaniNormativeMultiAgentProgram}, \textit{NormMAS} pode user usado para representar o caso em estudo, contudo o engenheiro de modelagem teria de elaborar diversos conceitos - como riscos, fatalidades, condições a serem mantidas durante a execução da atividade, definir como um objetivo afeta outro e relacionamentos. Em contraste com isso, o modelo presente neste estudo não apresenta a abrangência que o \textit{NormMAS} apresenta, contudo delimita com maior rigor o vocabulário a ser usado pelo engenheiro de modelagem.
 
 \bibliographystyle{sbc}
 \bibliography{sbc-template}
