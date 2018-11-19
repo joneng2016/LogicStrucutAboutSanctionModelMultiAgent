@@ -21,18 +21,21 @@
 
 \section{Objetivo}
 
-O modelo proposto tem como por finalidade representar atividades onde um grupo de pessoas  devem atuar de forma colaborativa com o propósito de resolver um problema. Esse problema pode ser dividido em etapas menores conhecidas como objetivos. Essas pessoas podem se relacionar entre sí, podem se relacionar com os artefatos presentes no meio 
-onde elas atuam. Os artefatos também possuem a capacidade de se relacionar. Cada objetivo é concluído apenas se  um ou mais relacionamentos forem realizados. A conclusão do objetivo também é função de certos agentes e artefatos que devem ser presentes. 
+O modelo proposto tem como por finalidade representar atividades onde um grupo de pessoas  devem atuar de forma colaborativa com o propósito de resolver um problema. Esse problema pode ser dividido em etapas menores conhecidas como objetivos. As pessoas podem se relacionar entre sí assim como também podem se relacionar com os artefatos dispostos ao redor. Os artefatos também podem se relacionar. 
 
-Outra finalidade do modelo consiste em representar condições que devem ser mantidas ao longo da atividade, se essas condições forem desfeitas - a atividade deve ser encerrada de imediato, caso contrário as pessoas envolvidas nesta manutenção estarão submetidas a risco de morte. Dentro desta abordagem, alguém designado para cumprir com alguma atividade pode cometer erros. Esse modelo tem como por finalidade lidar com os seguintes tipos de erro: executar uma ação quando não há condições apropriadas para isso, manipular artefatos de maneira inapropriada ou inadvertida e escolher os artefatos inapropriados para cumprir com uma determinada atividade.
+Para que o objetivo seja concluido de forma eficaz, é necessário que os profissionais envolvidos tenham acesso a certos artefatos (ferramentas e equipamentos sujeitos a manutenção). Não apenas isso, mas os profissionais devem ter a capacidade de estabelecer as relações necessárias para que o objetivo seja alcançado (ex. um dado tipo de ferramenta é capaz de se relacionar apenas com um dado tipo de parafuso).  
 
-O modelo deve ser capaz de representar as consequências desses erros. Esse modelo está preocupado em representar dois tipos de consequências, essas são: 1 - imediatas que acontece sobre o indivíduo errante, 2 - a consequência manifesta em outro objetivo sobre o mesmo ou outro indivíduo pertencente ao grupo. Essas consequências são efeitos físicos negativos que alguém vêem a sofrer. A intensidade dessas consequências variam desde uma leve lesão a morte.
+Outra finalidade do modelo consiste em representar condições que devem ser mantidas ao longo da atividade, se essas condições forem desfeitas - a atividade deve ser encerrada de imediato, caso contrário as pessoas envolvidas nesta manutenção estarão submetidas a risco de morte. Por exemplo; para realizar uma dada manutenção, a umidade relativa do ar não pode ser superior a 70 porcento. Isso, pois, se a umidade relativa do ar for superior a esse nível de leitura, então a probabilidade de acontecer uma descarga elétrica para atmosfera é elevado.  
 
-Outro aspecto deste modelo consiste representar objetivos cujo sucesso advem de certa característica aleatória presente na natureza da atividade. Essa característica aleatória consiste em um evento que possuem uma certa possibilidade de acontecer. Se esse evento acontecer, alguém sofre consequências ruins por conta disto. O modelo deve considerar relações entre erros onde as consequências se manifestam de forma indireta com eventos aleatórios.         
+O modelo proposto neste estudo deve ser capaz de mapear e avaliar as consequências dos erros que os profissionais podem cometer. Existe uma infinidade de erros e consequências que podem ser considerados em um estudo deste gênero. Assim sendo, os pesquisadores deste estudo se limitaram a alguns erros, que são: executar uma ação quando não há condições apropriadas para isso, manipular artefatos de maneira inapropriada ou inadvertida e escolher os artefatos inapropriados para cumprir com uma determinada atividade.
+
+No que diz respeito as consequêncuias dos erros, os pesquisadores se limitaram a duas situações: 1 - consequências negativas imediatas que acontece sobre o indivíduo errante, 2 - a consequência ruim que se manifesta em outro objetivo sobre o mesmo ou outro indivíduo. Essas consequências são efeitos físicos negativos que alguém vêem a sofrer. A intensidade dessas consequências variam desde uma leve lesão a morte.
+
 
 \section{Exemplo - Estudo de Caso}
 
-Sete profissionais de linha viva (profissionais que realizam manutenção em equipamentos elétricos energizados) são designados com o propósito de realizar a substituição de um isolador de pedestal. Os papéis desses desses profissionais são; 1 supervisor, 5 executores. A manutenção de ve ser executada apenas sobre as seguintes condições: céu ensolarado e umidade relativa do ar menor que 70 porcento. Todos os profissionais devem possuir os EPIS necessários: capacete, óculos de sol, roupa isolante e anti-chamas, luvas isolantes e botas isolantes. Os profissionais que entrarão no potencial deverão estar vestidos de roupa condutiva e cabo guarda. As ferramentas necessárias para resolver esse problema são: bastão garra de diametro 64 x 3600 mm, sela de diametro 65 , colar, corda de fibra sintética, carretilha, chave com catraca, bastão universal, soquete adequado, locador de pino, bastão com soquete multiangular. A substitução do isolador de pedestal pode ser escrita nos seguintes subobjetivos: 
+
+Sete profissionais de linha viva (profissionais que realizam manutenção em equipamentos elétricos energizados) são designados com o propósito de realizar a substituição de um isolador de pedestal. Os papéis desses desses profissionais são; 1 supervisor, 5 executores. A manutenção de ve ser executada apenas sobre as seguintes condições: céu ensolarado e umidade relativa do ar menor que 70 porcento. Todos os profissionais devem possuir os EPIS necessários: capacete, óculos de sol, roupa isolante e anti-chamas, luvas isolantes e botas isolantes. Os profissionais que entrarão no potencial deverão estar vestidos de roupa condutiva e cabo guarda. As ferramentas necessárias para resolver esse problema são: bastão garra de diametro 64 x 3600 mm, sela de diametro 65 , colar, corda de fibra sintética, carretilha, chave com catraca, bastão universal, soquete adequado, locador de pino, bastão com soquete multiangular. O método selecionado para esse tipo de manutenção é a distância, onde o eletricista não acessa diretamente o potencial, mas faz isso por intermédio de um bastão isolante. A substitução do isolador de pedestal pode ser escrita nos seguintes objetivos: 
 
 
 \begin{enumerate}
@@ -67,16 +70,15 @@ Sete profissionais de linha viva (profissionais que realizam manutenção em equ
 	\item $Agent = \{ag_1, ..., ag_n\}$ - conjunto dos Agentes.
 	\item $Artefact = \{at_1, ..., at_n\}$ - conjunto dos Artefatos.
 	\item $EntityGoal = eg = \{e_n,...,e_m\}$ - conjunto das Entidades que devem estar presentes para concluir um determinado objetivo $g_i$.
-	\item $Relation = \{r_1, ..., r_n\}$ - conjunto dos Relacionamentos.	
-	\item $RelationGoal = rg =\{r_n, ..., r_m\}$ - conjunto dos Relacionamentos que devem estar presentes para concluir um único objetivo $g_i$.		
-	\item $Role = \{\rho_1, ..., \rho_n\}$ - conjunto dos Papeis.	
-	\item $Goal = \{g_1, ..., g_n\}$ - conjunto dos Objetivos.
-	\item $GoalRandomic = \{gr_1,..., gr_n\}$ - conjunto dos Objetivos	Randomicos.
-	\item $GoalPrerequisit = gp = \{g_n,...,g_m\}$ - conjunto de Objetivos que são pré-requisitos para alcançar um outro objetivo.
-	\item $Condition = \{c_1, ..., c_n\}$ - conjunto das Condições que devem ser mantidas ao longo da execução de todos os objetivos.
-	\item $ConditionToGoal = cg = \{c_n, ..., c_m\}$ - conjunto de condições que devem ser mantidas para concluir um único objetivo $g_i$.
+	\item $Relation = \{r_1, ..., r_n\}$ - conjunto dos Relacionamentos entre as entidades.	
+	\item $RelationGoal = rg =\{r_n, ..., r_m\}$ - conjunto dos Relacionamentos que devem estar presentes para concluir um determinado objetivo $g_i$.		
+	\item $Role = \{\rho_1, ..., \rho_n\}$ - conjunto dos Papeis que um determinado agente pode exercer no grupo onde é um participante.	
+	\item $Goal = \{g_1, ..., g_n\}$ - conjunto dos Objetivos que devem ser alcançados pelos demais agentes.
+	\item $GoalPrerequisite = gp = \{g_n,...,g_m\}$ - conjunto de Objetivos que são pré-requisitos para alcançar um outro objetivo.
+	\item $Condition = \{c_1, ..., c_n\}$ - conjunto das Condições que devem ser mantidas ao longo da execução dos objetivos (ex. o dia deve está ensolarado para que a manutenção ocorra).
+	\item $ConditionToGoal = cg = \{c_n, ..., c_m\}$ - conjunto de condições que devem ser mantidas para concluir um determinado objetivo $g_i$.
 	\item $Risk = \{risk_1, ..., risk_n\}$ - conjunto dos Riscos na ocorrência de Eventos Ruins.
-	\item $Possibility = \{p_1, ..., p_n\}$ - conjunto das possibilidades de Eventos Ruins. 
+	\item $Possibility = \{false,true\}$ - conjunto das possibilidades de Eventos Ruins. 
 	\item $Fatality = \{f_1, ..., f_n\}$ - conjunto das fatalidades que acontecem na existência de um evento ruim. 	
 	\item $agg = \{ag_n,...,ag_m\}$ - agentes que atingiram um determinado objetivo. 
 	\item $ago = \{ag_n,...,ag_m\}$ - agentes que atingiram um determinado objetivo e eram obrigados a isso. 
@@ -99,15 +101,15 @@ Sete profissionais de linha viva (profissionais que realizam manutenção em equ
 \subsection{Definição dos Predicados}
 
 \begin{enumerate}
-	\item $relationHas(r_l,e_i,e_k)$ onde $i \neq j$ - Um determinado relacionamento $r_l$ é composto por uma entidade $e_i$ e $e_k$ onde $e_i$ não pode ser igual a $e_j$.	
-	\item $hasRole(ag_n,\rho_m)$ - Um determinado agente $ag_n$ tem um determinado papel $\rho_m$.
+	\item $relationHas(r_l,e_i,e_k)$ onde $i \neq j$ - Um relacionamento $r_l$ é composto por uma entidade $e_i$ e $e_k$ onde $e_i$ não pode ser igual a $e_j$.	
+	\item $hasRole(ag_n,\rho_m)$ - Um agente $ag_n$ tem um papel $\rho_m$.
 	\item $hasObligation(\rho_m,g_j)$ - Quem assume o papel $\rho_m$ é obrigado a concluir o objetivo $g_j$.
 	\item $hasPermission(\rho_m,g_j)$ - Quem assume o papel $\rho_m$ tem a permissão de concluir o objetivo $g_j$.
 	\item $isReached(g_k)$ - O objetivo $g_k$ foi alcançado.
-	\item $stopIn(g_n,agg_m)$ - O objetivo não foi encerrado para todos os agentes que tiveram de executar. 	 				
+	\item $stopIn(g_n,agg_m)$ - Para pelo menos um dos agentes que constituem o conjunto $agg_m$ o objetivo $g_n$ foi encerrado. 	 				
 	\item $stopIn(g_n)$ - A atividade como um todo teve de ser finalizada em $g_n$.	 			
 	\item $isPreRequisite(gp_i,g_j)$ - Os objetivos $g$ pertencentes ao grupo $gp_i$ devem ser concluidos para que haja condição de executar g.
-	\item $hasCondition(g_i,cg_n)$ - Um objetivo do tipo $g_i$ possui certas condições $c$ que deve estar presentes e devem se manter durante toda execução deste objetivo. Essas condições $c$ devem estar conditdas em $cg_n$. 
+	\item $hasCondition(g_i,cg_n)$ - Um objetivo do tipo $g_i$ possui certas condições $c$ que deve estar presentes e devem se manter durante toda execução deste objetivo. Essas condições $c$ devem estar contidas em $cg_n$. 
 	\item $hasEntity(g_i,eg_m)$ - Um objetivo $g_i$ tem um conjunto de entidades $eg_m$ onde todas as entidades presentes neste conjunto devem estar presentes no momento da execução desse objetivo.
 	\item $hasRelation(g_i,rg_n)$ - Um objetivo $g_i$ tem um conjunto de relacionamentos $rg_n$ onde todos esses relacionamentos devem ser feito para que este objetivo seja concluído.
 	\item $isPresent(X), X = cg_n,c_k,rg_k,r_k,eg_k,e_k$ - Define se $X$ está presente no instante em análise, sendo que $X$ pode ser $cg_n,c_k,rg_k,r_k,eg_k,e_k$.
@@ -119,7 +121,7 @@ Sete profissionais de linha viva (profissionais que realizam manutenção em equ
 	\item $hasRisk(r_k,risk_j,f_m)$ - O relacionamento $r_k$ está associado a um risco $risk_k$ com uma certa fatalidade $f_m$.
 	\item $consequenceOfBadEvent(g_k,ag_i,risk_j,f_m)$ - Agente $ag$ sofre as consequências do risco $risk_j$ com a fatalidade $f_m$
 	\item $hasPossibility(r_l,p_m)$ - Possibilidade $p_m$ do evento $r_l$ gerar alguma consequência ruim. A possibilidade $p_m$ pode assumir apenas dois valores; $true,false$. 	
-	\item $affects(r_k,r_n)$ - Se uma relação $r_k$ não for feito, ou se essa relação for mal feita, então ela afeta negativamente alguma outra relação $r_n$ com a possibilidade de algo errado inicialmente dado por $false$ ser mudado para $true$. 	
+	\item $affects(r_k,r_n)$ - Se uma relação $r_k$ não for feita, ou se essa relação for mal feita, então ela afeta negativamente alguma outra relação $r_n$ com a possibilidade de algo errado inicialmente dado por $false$ ser mudado para $true$. 	
 	\item $happensBadEvent(gr_n,r_m,ag_k)$ - O evento ruim de $g_r$ acontece em relação a um relacionamento necessário sobre um agente $ag_k$. 		
 \end{enumerate}
 
@@ -136,13 +138,13 @@ Um agente que tenta alcançar um objetivo sem que pelo menos uma das condições
 	violationCondition(ag_m,g_j,c_k) 
 \end{eqnarray}
 
-Se um agente não executa, ou não tem condições de executar, um dado relacionamento $r_k$ necessário para concluir o objetivo, então o agente cometeu uma violação de relacionamento. Contudo, se o agente alcançar o objetivo, então a não violação acontece. 
+Se um agente não executa, ou não tem condições de executar, um dado relacionamento $r_k$ necessário para concluir o objetivo, então o agente cometeu uma violação de relacionamento. 
 \begin{eqnarray}\label{rel4}\nonumber
-	hasRelation(g_i,rg_n)\wedge \neg isPresent(r_k)  \nonumber \\ 
-	\wedge (r_k \in rg_n) \wedge tryReach(ag_m,g_i) \to violationRelation(ag_m,g_i,r_k)
+	hasRelation(g_i,rg_n)\wedge \neg isPresent(r_k) \wedge (r_k \in rg_n) \wedge tryReach(ag_m,g_i) \to \nonumber \\
+	violationRelation(ag_m,g_i,r_k)
 \end{eqnarray}
 
-Se ao tentar alcançar um determinado objetivo pelo menos uma das entidades necessárias para isso está ausente, então acontece um uma violação de entidade. Contudo, se todas as entidades estiverem presente, então a vioalação não acontence. 
+Se ao tentar alcançar um determinado objetivo pelo menos uma das entidades necessárias para isso está ausente, então acontece um uma violação de entidade. 
 \begin{eqnarray}\label{rel5}\nonumber
 	hasEntity(g_i,eg_n) \wedge \neg isPresent(e_k) 	\wedge (e_k \in eg_n) \wedge tryReach(ag_m,g_i) \to \nonumber \\ violationEntity(ag_m,g_i,e_k)  
 \end{eqnarray}
@@ -160,7 +162,7 @@ Uma violação de relacionamento tem como consequência a ocorrência do risco (
 	consequenceOfBadEvent(g_i,ag_m,risk_j,f_m)
 \end{eqnarray}
 
-Uma violação de relacionamento tem como consequência o aumento da possibilidade de acontecer algo de errado em objetivos que podem ser afetados por características aleatórias. Assim sendo, esse outro objetivo tem uma nova possibilidade de dar errado que é necessariamente maior a possibilidade antiga.
+A ocorrência de uma violação de relacionamento em $r_k$ afeta um outro relacionamento $r_n$. A possibilidade de algo ruim acontecer em $r_n$ era inicialmente dada como $false$, contudo, com a ocorrência da violação de $r_k$, agora essa possibilidade é dada como  $true$.
 \begin{eqnarray}\label{rel11}\nonumber
 	violationRelation(ag_m,g_i,r_k) \wedge affects(r_k,r_n) \wedge hasPossibility(r_n,false) \to \\  
 	hasPossibility(r_n,true)
@@ -171,9 +173,9 @@ Uma violação de entidade gera a interrupção imediata da atividade no objetiv
 	violationEntity(ag_m,g_i,e_k) \to stopIn(g_i)
 \end{eqnarray}
 
-Em um objetivo onde existe uma certa possibilidade de dar errado, essa possibilidade é vinculada aos relacionamentes que devem ser feitos para concluir este objetivo. Assim sendo, um determinado agente sofrerá as consequêcias ruins pela ocorrência do evento.
+Se algum evento ruim acontecer sobre o relacionamento $r_k$ no momento em que o agente está tentando alcançar o objetivo $ag_m$, então esse agente será submetido as consequências do risco $risk_j$ vinculado a esse relacionamento $r_k$.
 \begin{eqnarray}\label{rel13}\nonumber
-	happensBadEvent(gr_n,r_m) \wedge hasRisk(r_k,risk_j,f_m) \wedge tryReach(ag_m,g_i) \nonumber \\ 
+	happensBadEvent(g_n,r_k) \wedge hasRisk(r_k,risk_j,f_m) \wedge tryReach(ag_m,g_i) \nonumber \\ 
 	\to consequenceOfBadEvent(gr_n,ag_m,risk_j,f_m)
 \end{eqnarray}
 
@@ -182,7 +184,7 @@ A ocorrência de um evento ruim gera imediata interrupção das atividades.
 	consequenceOfBadEvent(g_k,ag_m,risk_j,f_m) \to stopIn(g_k)
 \end{eqnarray}
 
-Se o objetivo não é encerrado para todos os agentes que tentam executar (onde parte desses agentes são todos aqueles que são obrigados a alcançar o objetivo), então o objetivo foi alcançado.  
+Se o objetivo não é encerrado para pelo menos um dos agentes que pertence a $agg_n$, ou seja agentes que tentam executar (onde parte desses agentes são todos aqueles que são obrigados a alcançar o objetivo), então o objetivo foi alcançado.  
 \begin{eqnarray}\label{rel15}
 	\neg stopIn(g_k,agg_n) \wedge (ago_n \subset agg_n) \to isReached(g_k)
 \end{eqnarray}
@@ -933,7 +935,7 @@ O raciocínio a seguir mostra o que acontece se o $agente4$ esquecer de passar o
 	\item $affects(relPanoGlicerina,relParafusoConector)$ 
 	\item $affects(relPanoGlicerina,relSoqueteParafuso)$ 
 	\item $affects(relPanoGlicerina,relParafusoTorre)$
-	\item $affects(relPanoGlicerina,relXCorda)$ 
+	\item $affects(relPanoGlicerina,relAgente4Corda)$ 
 	\item $affects(relPanoGlicerina,relEstropoCorda)$	
 \end{enumerate}
 
