@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.11.6)  19 NOV 2018 16:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.11.6)  19 NOV 2018 17:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -749,11 +749,23 @@ L/cmm/m/it/12 ag[]; g[]; c[]\OT1/cmr/m/n/12 )$\OT1/ptm/m/n/12 , $\OML/cmm/m/it/
 n/12 )$ \OT1/ptm/m/n/12 e
  []
 
-[5] [6] [7]
-Underfull \vbox (badness 5359) has occurred while \output is active []
 
- [8]
-[9] [10] <uml20.jpg, id=41, 771.88374pt x 356.33125pt>
+Underfull \hbox (badness 1137) in paragraph at lines 202--203
+\OT1/ptm/m/n/12 [[]], as rela[][]oes 2[], 3[],4[] de-fine as condi[][]oes ne-ce
+ss[]arias para que
+ []
+
+
+Underfull \hbox (badness 1803) in paragraph at lines 202--203
+\OT1/ptm/m/n/12 uma viola[][]ao ve-nha a acon-te-cer. []Ainda den-tro da abor-d
+a-gem apre-sen-tada em
+ []
+
+[5] [6] [7] [8]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9]
+[10] <uml20.jpg, id=41, 771.88374pt x 356.33125pt>
 File: uml20.jpg Graphic file (type jpg)
  <use uml20.jpg>
 Package pdftex.def Info: uml20.jpg used on input line 281.
@@ -1034,7 +1046,7 @@ exlive/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
 utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on sbc-template.pdf (41 pages, 740524 bytes).
+Output written on sbc-template.pdf (41 pages, 740086 bytes).
 PDF statistics:
  216 PDF objects out of 1000 (max. 8388607)
  143 compressed objects within 2 object streams

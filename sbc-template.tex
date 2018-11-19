@@ -156,7 +156,7 @@ Uma violação de condição tem como consequêcias a ocorrência do risco (sobr
 	consequenceOfBadEvent(g_i,ag_m,risk_j,f_m)
 \end{eqnarray}
 
-Uma violação de relacionamento tem como consequência a ocorrência do risco (sobre o agente que cometeu a violação) relacionado ao relacionamento que não foi feito. Esse risco pode apresentar diferentes graus de fatalidade.
+Uma violação de relacionamento tem como consequência a ocorrência do risco (sobre o agente que cometeu a violação) vinculada ao relacionamento que não foi feito. Esse risco pode apresentar diferentes graus de fatalidade.
 \begin{eqnarray}\label{rel10}\nonumber
 	violationRelation(ag_m,g_i,r_k) \wedge hasRisk(r_k,risk_j,f_m) \to \\ 
 	consequenceOfBadEvent(g_i,ag_m,risk_j,f_m)
@@ -175,8 +175,8 @@ Uma violação de entidade gera a interrupção imediata da atividade no objetiv
 
 Se algum evento ruim acontecer sobre o relacionamento $r_k$ no momento em que o agente está tentando alcançar o objetivo $ag_m$, então esse agente será submetido as consequências do risco $risk_j$ vinculado a esse relacionamento $r_k$.
 \begin{eqnarray}\label{rel13}\nonumber
-	happensBadEvent(g_n,r_k) \wedge hasRisk(r_k,risk_j,f_m) \wedge tryReach(ag_m,g_i) \nonumber \\ 
-	\to consequenceOfBadEvent(gr_n,ag_m,risk_j,f_m)
+	happensBadEvent(g_n,r_k) \wedge hasRisk(r_k,risk_j,f_m) \wedge tryReach(ag_m,g_n) \nonumber \\ 
+	\to consequenceOfBadEvent(g_n,ag_m,risk_j,f_m)
 \end{eqnarray}
 
 A ocorrência de um evento ruim gera imediata interrupção das atividades.
@@ -199,7 +199,7 @@ Sistemas multiagentes normativas não podem ser descritos sem considerar três c
 	\item \textbf{Sanção}: Consequências punitivas que acontencem ao agente ao realizar algo proibido.	
 \end{enumerate}
 
-Essas definições são usadas em diversos estudos na área de sistemas multiagentes \cite{dastaniNormativeMultiAgentProgram}, \cite{multiagentsystem}, \cite{amodelmultiagentsystemdynamicrelationship} e \cite{ontologynormative}. Nesse estudo, a vioação é tratada nos predicados $violationCondition(ag_i,g_j,c_k)$, $violationRelation(ag_i,g_j,r_k)$ e $violationEntity(ag_i,g_j,e_k)$. Esses predicados levam em consideração o domínio do problema deste estudo bem como o que é tido por violação dentro do contexto acadêmico, pois são eventos que acontecem mediante violação de uma norma. As relações \ref{rel3}, \ref{rel4},\ref{rel5} não determinam apenas a violação, mas também definem qual é o comportamento normativo adequado, uma vez que deixam evidentes qual dever ser o comportamento do agente para que a violação associada seja considerada falsa. As relações \ref{rel9}, \ref{rel10} são sanções. Isso, pois definem consequências negativas aos agentes tendo em vista a ocorrência da violação. A relações de implicabilidade \ref{rel11} não é uma sanção, pois define consequências ruins para outros agentes. 
+Essas definições são usadas em diversos estudos na área de sistemas multiagentes \cite{dastaniNormativeMultiAgentProgram}, \cite{multiagentsystem}, \cite{amodelmultiagentsystemdynamicrelationship} e \cite{ontologynormative}. Nesse estudo, a vioação é tratada nos predicados $violationCondition(ag_i,g_j,c_k)$, $violationRelation(ag_i,g_j,r_k)$ e $violationEntity(ag_i,g_j,e_k)$. Unsando a mesma sistemática de regras adotada em \cite{dastaniNormativeMultiAgentProgram}, as relações \ref{rel3}, \ref{rel4},\ref{rel5} define as condições necessárias para que uma violação venha a acontecer. Ãinda dentro da abordagem apresentada em \cite{dastaniNormativeMultiAgentProgram}, as relações \ref{rel9}, \ref{rel10} são sanções. Isso, pois definem consequências negativas aos agentes tendo em vista a ocorrência da violação. 
 
 
 \subsection{Justificando a Existência das Relações de Implicabilidade}
