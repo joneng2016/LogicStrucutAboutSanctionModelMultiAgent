@@ -21,9 +21,9 @@
 
 \section{Objetivo}
 
-O modelo proposto tem a finalidade representar atividades onde um grupo de pessoas devem atuar de forma colaborativa para resolver um dado problema. Essa situação pode ser dividido em etapas menores conhecidas como objetivos. As pessoas podem se relacionar entre sí assim como também podem se relacionar com os artefatos dispostos ao redor. Os artefatos também podem se relacionar. 
+O modelo proposto tem a finalidade representar atividades onde um grupo de pessoas devem atuar de forma colaborativa para resolver um dado problema. Essa situação pode ser dividido em etapas menores conhecidas como objetivos. As pessoas podem se relacionar entre sí assim como também podem se relacionar com os artefatos (ferramentas, equipamentos de proteção individual, estruturas, equipamentos sujeitos a manutenção) dispostos ao redor. Os artefatos também podem se relacionar com outros artefatos.
 
-Para que um dado objetivo seja concluido de forma eficaz, é necessário que os profissionais envolvidos tenham acesso a certos artefatos (ferramentas e equipamentos sujeitos a manutenção). Não apenas isso, mas os profissionais devem ter a capacidade de estabelecer as relações necessárias para que o objetivo seja alcançado (ex. um dado tipo de ferramenta é capaz de se relacionar apenas com um dado tipo de parafuso).  
+Para que um dado objetivo seja concluido de forma eficaz, é necessário que os profissionais envolvidos tenham acesso a certos artefatos. Não apenas isso, mas os profissionais devem ter a capacidade de estabelecer as relações necessárias para que o objetivo seja alcançado (ex. um dado tipo de ferramenta é capaz de se relacionar apenas com um dado tipo de parafuso).  
 
 Outra finalidade do modelo consiste em representar condições que devem ser mantidas ao longo da atividade. Isso, pois se essas condições forem desfeitas - a atividade deve ser encerrada de imediato, caso contrário as pessoas envolvidas nesta manutenção estarão submetidas a risco de morte. Por exemplo; para realizar uma dada manutenção, a umidade relativa do ar não pode ser superior a 70 porcento. 
 
@@ -33,7 +33,6 @@ No que diz respeito as consequêncuias dos erros, os pesquisadores se limitaram 
 
 
 \section{Exemplo - Estudo de Caso}
-
 
 Sete profissionais de linha viva (profissionais que realizam manutenção em equipamentos elétricos energizados) são designados com o propósito de realizar a substituição de um isolador de pedestal. Os papéis desses desses profissionais são; 1 supervisor, 5 executores. A manutenção deve ser executada apenas sobre as seguintes condições: céu ensolarado e umidade relativa do ar menor que 70 porcento. Todos os profissionais devem possuir os EPIS necessários: capacete, óculos de sol, roupa isolante e anti-chamas, luvas isolantes e botas isolantes. Os profissionais que entrarão no potencial deverão estar vestidos de roupa condutiva e cabo guarda. As ferramentas necessárias para resolver esse problema são: bastão garra de diametro 64 x 3600 mm, sela de diametro 65 , colar, corda de fibra sintética, carretilha, chave com catraca, bastão universal, soquete adequado, locador de pino, bastão com soquete multiangular. O método selecionado para esse tipo de manutenção é a distância, onde o eletricista não acessa diretamente o potencial, mas faz isso por intermédio de um bastão isolante. A substitução do isolador de pedestal pode ser escrita nos seguintes objetivos: 
 
@@ -175,8 +174,9 @@ Uma violação de entidade gera a interrupção imediata da atividade no objetiv
 
 Se algum evento ruim acontecer sobre o relacionamento $r_k$ no momento em que o agente está tentando alcançar o objetivo $ag_m$, então esse agente será submetido as consequências do risco $risk_j$ vinculado a esse relacionamento $r_k$.
 \begin{eqnarray}\label{rel13}\nonumber
-	happensBadEvent(g_n,r_k) \wedge hasRisk(r_k,risk_j,f_m) \wedge tryReach(ag_m,g_n) \nonumber \\ 
-	\to consequenceOfBadEvent(g_n,ag_m,risk_j,f_m)
+		hasRelation(g_i,rg_n) \wedge (g_i \subset rg_n) \nonumber \\
+	\wedge happensBadEvent(g_n,r_k) \wedge hasRisk(r_k,risk_j,f_m) \wedge tryReach(ag_m,g_i) \nonumber \\ 
+	\to consequenceOfBadEvent(g_i,ag_m,risk_j,f_m)
 \end{eqnarray}
 
 A ocorrência de um evento ruim gera imediata interrupção das atividades.
@@ -185,6 +185,7 @@ A ocorrência de um evento ruim gera imediata interrupção das atividades.
 \end{eqnarray}
 
 Se o objetivo não é encerrado para pelo menos um dos agentes que pertence a $agg_n$, ou seja agentes que tentam executar (onde parte desses agentes são todos aqueles que são obrigados a alcançar o objetivo), então o objetivo foi alcançado.  
+
 \begin{eqnarray}\label{rel15}
 	\neg stopIn(g_k,agg_n) \wedge (ago_n \subset agg_n) \to isReached(g_k)
 \end{eqnarray}
@@ -196,7 +197,7 @@ Sistemas multiagentes normativas não podem ser descritos sem considerar três c
 \begin{enumerate}
 	\item \textbf{Norma}: Usado para determinar o comportamento dos agentes.
 	\item \textbf{Violação}: Ocorre quando o agente não cumpre com uma norma.
-	\item \textbf{Sanção}: Consequências punitivas que acontencem ao agente ao realizar algo proibido.	
+	\item \textbf{Sanção}: Consequências punitivas que acontencem ao agente dada a ocorrência de uma violação.	
 \end{enumerate}
 
 Essas definições são usadas em diversos estudos na área de sistemas multiagentes \cite{dastaniNormativeMultiAgentProgram}, \cite{multiagentsystem}, \cite{amodelmultiagentsystemdynamicrelationship} e \cite{ontologynormative}. Nesse estudo, a vioação é tratada nos predicados $violationCondition(ag_i,g_j,c_k)$, $violationRelation(ag_i,g_j,r_k)$ e $violationEntity(ag_i,g_j,e_k)$. Unsando a mesma sistemática de regras adotada em \cite{dastaniNormativeMultiAgentProgram}, as relações \ref{rel3}, \ref{rel4},\ref{rel5} define as condições necessárias para que uma violação venha a acontecer. Ãinda dentro da abordagem apresentada em \cite{dastaniNormativeMultiAgentProgram}, as relações \ref{rel9}, \ref{rel10} são sanções. Isso, pois definem consequências negativas aos agentes tendo em vista a ocorrência da violação. 
@@ -207,15 +208,15 @@ Essas definições são usadas em diversos estudos na área de sistemas multiage
 
 \subsubsection{Regra \ref{rel1}}
 
-Se uma gente é obrigado a fazer algo, então esse agente deve ter a permissão para isso. Caso contrário, por um impedimento sistemico, um agente nunca conseguirá cumprir com aquilo a que ele é obrigado a fazer. Isso é definido pela regra \ref{rel1} uma obrigação implica necessariamente em uma permissão. Outros modelos adotam uma abordagem similar a essa \cite{mosieframework}. 
+Se uma gente é obrigado a fazer algo, então esse agente deve ter a permissão para isso. Caso contrário, por um impedimento sistemico, um agente nunca conseguirá cumprir com aquilo a que ele é obrigado a fazer. Essa é a finalidade da regra \ref{rel1}, onde uma obrigação implica necessariamente em uma permissão. Outros modelos adotam uma abordagem similar a essa \cite{mosieframework}. 
 
 \subsubsection{Regra \ref{rel3}}
 
-Representar condições que devem ser mantidas ao longo de toda a execução da atividade bem como as consequências de praticar uma determinada atividade dado a ausência de pelo menos uma das condições é um aspecto sobre o qual este modelo se propõem a representar. Para definir a ocorrência da vioação se faz necessário saber quais são as condições vinculadas ao objetivo, pois caso contrário não é possível identificar quais condições devem ser mantidas ao longo da tentativa de se alcançar um objetivo e, por consequência, qualquer afirmação feita sobre essas condições não possui uma sustentação lógica rigorosa. A consideração dessas relações acontece por meio predicado $hasCondition(g_i,cg_n)$. 
+Representar condições que devem ser mantidas ao longo de toda a execução da atividade bem como as consequências de praticar uma determinada atividade dado a ausência de pelo menos uma das condições é um aspecto sobre o qual este modelo se propõem a representar. Para definir a ocorrência da vioação se faz necessário saber quais são as condições vinculadas ao objetivo, pois caso contrário não é possível identificar quais condições devem ser mantidas ao longo da tentativa de se alcançar um objetivo e, por consequência, não é possível realizar qualquer afirmação feita sobre essas condições. A consideração dessas relações acontece por meio predicado $hasCondition(g_i,cg_n)$. 
 
-Outro aspecto relevante consiste saber se a condição necessária está presente na tentativa do agente alcançar um dado objetivo. Assim sendo, é ncessário a presença do predicado $isPresent(c_k)$. O negado de $isPresent(c_k)$ define que uma dada condição $c_k$ não está presente. Ainda sim, $hasCondition(g_i,cg_n)$, $isPresent(c_k)$ não são suficientes, pois $cg_n$ é um conjunto e $c_k$ é um elemento que pode ou não pertencer ao conjunto $cg_n$. Portanto, é necessário considerar se $c_k$ pertence a $cg_n$ e isso é feito através de $c_k \in cg_n$. 
+Outro aspecto relevante consiste saber se a condição necessária está presente na tentativa do agente alcançar um dado objetivo. Assim sendo, é necessário a presença do predicado $isPresent(c_k)$. O negado de $isPresent(c_k)$ define que uma dada condição $c_k$ não está presente. Ainda sim, $hasCondition(g_i,cg_n)$, $isPresent(c_k)$ não são suficientes, pois $cg_n$ é um conjunto e $c_k$ é um elemento que pode ou não pertencer ao conjunto $cg_n$. Portanto, é necessário considerar se $c_k$ pertence a $cg_n$ e isso é feito através de $c_k \in cg_n$. 
 
-Os predicados considerados até o momento são necessários, porém não são suficientes. Isso, pois apenas com eles não é possível definri qual é a situação do agente em relação ao objetivo. Por exemplo, é possível considerar um cenário onde pelo menos uma das condições necessárias para atingir o objetivo não está presente. Contudo, não é razoável, considerando o conceito de violação de condição empregado neste estudo, afirmar que o agente cometeu uma violação de condição sobre esse cenário sendo que não há informaçãoa sobre a situação da tentativa do agente alcançar o objetivo. Assim sendo, se o agente tentar alcançar o objetivo mesmo com pelo menos uma condição inexistente, então esse agente cometeu uma violação de condição, contudo se o agente não tento alcançar o objetivo em análise então ele não cometeu violação alguma. Então, a informação no que diz respeito ao gente deve ser considerada nessa relação de implicabilidade e isso acontece por meio do predicado $tryReach(ag_m,g_i)$.
+Os predicados considerados até o momento são necessários, porém não são suficientes. Isso, pois apenas com eles não é possível definri qual é a situação do agente em relação ao objetivo. Por exemplo, é possível considerar um cenário onde pelo menos uma das condições necessárias para atingir o objetivo não está presente. Contudo, não é razoável, considerando o conceito de violação de condição empregado neste estudo, afirmar que o agente cometeu uma violação de condição sobre esse cenário sendo que não há informaçãoa sobre a situação da tentativa do agente alcançar o objetivo. Assim sendo, se o agente tentar alcançar o objetivo mesmo com pelo menos uma condição inexistente, então esse agente cometeu uma violação de condição, contudo se o agente não tentou alcançar o objetivo em análise então ele não cometeu violação alguma. Então, a informação no que diz respeito ao gente deve ser considerada nessa relação de implicabilidade e isso acontece por meio do predicado $tryReach(ag_m,g_i)$.
 
 Para definir a ausência de violação, todas das condições devem estar presentes. Para representar isso, a relação \ref{rel3} exibe uma segunda relação de implicabilidade que consdera o negado de uma violação de condição dada a presenção de todas as condições necessárias para o objetivo. 
 
@@ -227,15 +228,15 @@ Considerando que uma violação de relacionamento acontece quando um agente tent
 
 Supondo uma situação onde não se verifica as relaçõeas que foram concluidas durante o ato da manutenção. Neste cenário é possível saber quais relações são necessárias para alcançar um determinado objetivo, mas deste conjunto não é possível definir qual dessas relações foram alcançadas. Se não se sabe afirmar qual das relações um agente conseguiu realizar, não se sabe qual dessas relações um agente deixou de fazer. Não sabendo esta ultima, não se sabe se ocorreu uma violação dessa relação. Assim sendo, só é possível afirmar algo sobre a ocorrência de uma vioalação de relação se for possível analisar se as relações necessárias para um dado objetivo foram ou não cumpridas. 
 
-Supondo uma situação onde não se verificar se um agente tentou realizar o objetivo. Nesta situação não é possível analizar quem cometeu a violação. Além disso não é possível considerar se a presença ou a ausência das relações são relevantes ou não para alcançar o objetivo, pois não se pode localizar a ocorrência dessas relações nos momentos onde elas devem acontecer (que é quando o agente tenta alcançar o objetivo dessas relações). Além disso, desconsiderar a tentativa do agente envolve descaracterizar a ocorrência da violação uma vez que esta, por conseguinte, considera a existência de um agente durante a ocorrência de uma violação. 
+Supondo uma situação onde não se verificar se um agente tentou realizar o objetivo. Nesta situação não é possível analizar quem cometeu a violação. Além disso não é possível considerar se a presença ou a ausência das relações são relevantes ou não para alcançar o objetivo, pois não se pode localizar a ocorrência dessas relações nos momentos onde elas devem acontecer (que é quando o agente tenta alcançar o objetivo dessas relações). 
 
 \subsubsection{Regra \ref{rel5}}
 
-Para verificar violações onde um agente tenta executar um determinado procedimento sem ter todas entidades (ex. ferramentas, colegas) para isso, é necessário construir uma expressão de implicabilidade que consider quais são as entidades importantes para a execução do objetivo $hasEntity(g_i,eg_n)$, considere quais as entidades que estão presentes no ambiente durante o ato da execução $isPresent(e_k)$,$e \in eg_n$ e que considere se um agente tentou alcançar o objetivo $tryReach(ag_m,g_i,e_k)$.
+Para verificar violações onde um agente tenta executar um determinado procedimento sem ter todas entidades (ex. ferramentas, colegas) requisitadas, é necessário construir uma expressão de implicabilidade que considera quais são as entidades importantes para a execução do objetivo $hasEntity(g_i,eg_n)$, considere quais as entidades que estão presentes no ambiente durante o ato da execução $isPresent(e_k)$,$e \in eg_n$ e que considere se um agente tentou alcançar o objetivo $tryReach(ag_m,g_i,e_k)$.
 
 Se uma violação de entidade é definida como sendo a tentativa de um agente alcançar um determinado objetivo sem ter todas as entidades para isso, então é possível verificar a necessidade de todas as circunstâncias por analisar o que acontece na ausência delas. Supondo não ser possível verificar quais entidades são necessárias para alcançar um determinado objetivo, então não é possível afirmar quais entidades devem estar presentes durante a tentativa do agente em alcançar um determinado objetivo. Por consequência, também não é possível identificar quais entidades estão ausentes logo, neste caso não é possível fazer qualquer afirmação sobre presença ou ausência sobre violação por ausência de uma entidade. 
 
-Supondo não ser possível afirmar sobre a presenção de uma entidade necessária para conclusão de um determinado objetivo. Assim sendo, também não é possível realizar qualquer afirmação sobre uma violação deste gênero. 
+Supondo não ser possível afirmar sobre a presença de uma entidade necessária para conclusão de um determinado objetivo. Assim sendo, também não é possível realizar qualquer afirmação sobre uma violação deste gênero. 
 
 Suponto não ser possível definir se um agente tentou ou não alcançar um dado objetivo. Então também não é possível saber se a entidade estava presente no momento em que deve estar presente. Como consequência disto, não é possível fazer nenhuma afirmação sobre essa violação.
 
@@ -255,7 +256,7 @@ Uma das finalidades deste modelo consiste representar o seguinte cenário: agent
 
 Por exemplo, um ambiente hipotético onde um eletricista deve medir a condutividade de um bastão universal é uma situação que pode exemplificar a aplicação desta relação. Se o eletricista não realizar a relação entre a entidade condutivimetro com a entidade bastão universal, nenhum profissional sai prejudicado de forma imediatica. Contudo, se o bastão estiver com isolamento comprometido, o agente que for manipular a ferramenta poderá ser submetido a uma corrente elétrica elevadissima gerando morte imediata.
 
-Essa condição pode ser tratada por considerar uma possibilidade $p$ sobre uma dada relaçao $r_n$. Se $p$ é $false$, então a ocorrência de um evento ruim só se torna realidade se o agente cometer alguma ação que resulte nisso. Contudo, se $p$ é $true$, então existe a possibilidade de ocorrer um evento ruim vinculado a $r_n$ mesmo que o agente execute o relacionamento com a mais alta maestria.
+Essa situação pode ser tratada por considerar uma possibilidade $p$ sobre uma dada relaçao $r_n$. Se $p$ é $false$, então a ocorrência de um evento ruim só se torna realidade se o agente cometer alguma ação que resulte nisso. Contudo, se $p$ é $true$, então existe a possibilidade de ocorrer um evento ruim vinculado a $r_n$ mesmo que o agente execute o relacionamento com a mais alta maestria.
 
 Para representar esse tipo de situação que se faz necessário a existência da regra \ref{rel11}. Neste caso, como a situação é decorrente de uma violação de relacionamento, se faz necessário usar o predicado $violationRelation(ag_m,g_i,r_k)$. Além disso, é necessário considerar quais relacionamentos são afetados por $r_k$ por isso a necessidade do predicado $affects(r_k,r_n,p)$. Por último, se faz necessário avaliar um predicado que vincula o relacionamento afetado $r_n$ com a possibilidade $p$, sendo isso feito por $hasPossibility(r_n,p)$.
 
@@ -266,17 +267,17 @@ Como a conclusão de um determinado objetivo acontece em função de certas enti
 
 \subsubsection{Regra \ref{rel13}}
 
-Dada a ocorrência de uma violação de relacionamento que resulte na regra \ref{rel11}, um dado objetivo $r_n$ passa a ter uma possibilidade da ocorrência de um evento ruim mesmo que o agente execute $r_n$ com a mais alta maestria tanto sobre a perspectiva técnica como sobre a perspectiva de segurança. Assim sendo a regra \ref{rel13} tem a finalidade de representar as situações onde, sobre essa possibilidade, um evento ruim $happensBadEvent(g_n,r_n,ag_k)$ se torna verdade. 
+Dada a ocorrência de uma violação de relacionamento que resulte na regra \ref{rel11}, um dado relacionamento  $r_n$ passa a ter uma possibilidade da ocorrência de um evento ruim mesmo que o agente execute $r_n$ com a mais alta maestria tanto sobre a perspectiva técnica como sobre a perspectiva de segurança. Assim sendo, a regra \ref{rel13} tem a finalidade de representar as situações onde, sobre essa possibilidade, um evento ruim $happensBadEvent(g_n,r_n,ag_k)$ se torna verdade. 
 
-Como o evento ruim consiste nos riscos vinculados ao relacionamento $r_n$, deve estar contido na regra necessairamente o predicado $hasRisk(r_n,risk_j,f_m)$, caso contrário não tem como saber qual risco, qual fatalidade afeta o agente $ag_k$. Dentro desta perspectiva, também é necessário saber ser o agente estava tentando executar o objetivo onde esse relacionam deve ser levado em consideração ao executar o procedimento de manutenção. Além disso, é necessário saber se o agente estava tentando alcançar o objetivo no instante que o evento ruim acontece, isso é feito por meio do predicado $tryReach(ag_m,g_i)$. O predicado $consequenceOfBadEvent(gr_n,ag_m,risk_j,f_m)$ demonstra que o eventou realmente aconteceu e afetou o agente de certa forma com certa intensidade. Essa relação de implicabilidade representa que um evento ruim pode acontecer a um dado agente mesmo que este não tenha cometido nada de errado. Tendo como base a relação \ref{rel11}, a possibilidade dessa situação acontecer aumenta com base no erro de outros agentes.
+Como o evento ruim consiste nos riscos vinculados ao relacionamento $r_n$, deve estar contido na regra necessairamente o predicado $hasRisk(r_n,risk_j,f_m)$, caso contrário não tem como saber qual risco, qual fatalidade afeta o agente $ag_k$. Dentro desta perspectiva, também é necessário saber se o agente estava tentando executar o objetivo onde o relacionamento deve ser levado em consideração ao executar o procedimento de manutenção. Além disso, é necessário saber se o agente estava tentando alcançar o objetivo no instante que o evento ruim acontece, isso é feito por meio do predicado $tryReach(ag_m,g_i)$. O predicado $consequenceOfBadEvent(g_i,ag_m,risk_j,f_m)$ demonstra que o evento realmente aconteceu e afetou o agente de certa forma com certa intensidade.
 
 \subsubsection{Regra \ref{rel14}}
 
-O modelo considera que os agentes não continuam a trabalhar tendo em vista que um dos colegas morreu ou ficou ferido ao executar uma dada atividade. Portanto, é necessário considerar uma relação de implicabilidade onde a ocorrência um evento ruim gera interrupção das atividades profissionais. 
+Na ocorrência de um assidente sério os agentes não continuam a trabalhar. Assim sendo, é necessário considerar uma relação de implicabilidade onde a ocorrência de um evento ruim gera interrupção das atividades profissionais. 
 
 \subsubsection{Regra \ref{rel15}}
 
-O modelo deve considerar a condição de quando objetivo é definitivamente alcançado, caso contrário os agentes não serão capaz de cumprir com os próximos objetivos para os quais foram designados. Para construir esse critério é necessário considerar se não houve interrupção para todos os agentes que tentaram alcançar o objetivo. Isso é feito por meio do predicado $\neg stopIn(g_k,agg_n)$, em que $agg_n$. Não só isso como é necessário considerar se todos os agentes que são obrigados a alcançar o objetivo realmente tentaram fazer isso. Assim sendo, é necessário considerar um subconjunto de $agg_n$ que é $ago_n$.   
+O modelo deve considerar a condição de quando objetivo é definitivamente alcançado, caso contrário os agentes não serão capaz de cumprir com os próximos objetivos para os quais foram designados. Para construir esse critério é necessário considerar se não houve interrupção para todos os agentes que tentaram alcançar o objetivo. Isso é feito por meio do predicado $\neg stopIn(g_k,agg_n)$, em que $agg_n$. Não só isso como é necessário considerar se todos os agentes que são obrigados a alcançar o objetivo realmente tentaram fazer isso. Assim sendo, é necessário considerar se $ago_n$ está contido em $agg_n$.   
 
 \subsection{Máquina de Estados}
 
@@ -352,7 +353,7 @@ executor5 & Tem como por finalidade executar certas atividades manuais vinculada
 agente1 & supervisor \\ \hline
 agente2 & executor1 \\ \hline
 agente3 & executor1 \\ \hline
-agente4 & executor2 \\ \hline
+agente4 & executor2 \\ \hline#
 agente5 & executor3 \\ \hline
 agente6 & executor4 \\ \hline
 agente7 & executor5 \\ \hline
@@ -398,7 +399,7 @@ conector & Estrutra que tem como por finalidade manter condutor,cabeçote do iso
 \label{artefacts}
 \end{table} 
 
-A tabela \ref{g} apresenta os objetivos dados pela coluna $objetivo$ bem com sua descrição. Essa tabela também apresenta os conjuntos $gp_i$ dado pela coluna pré-requisitos. Assim sendo, essa tabela também apresenta a relação entre os objetivos e seus respectivos pré-requisitos, ou seja, a relação $isPresentRequisite(gp_i,g_j)$.
+A tabela \ref{g} apresenta os objetivos dados pela coluna $objetivo$ bem com sua descrição. Essa tabela também apresenta os conjuntos $gp_i$ dado pela coluna pré-requisitos. Assim sendo, essa tabela também apresenta a relação entre os objetivos e seus respectivos pré-requisitos, ou seja, a relação $isPresentRequisite(gp_i,g_j)$. 
 
 \begin{table}[H]
 \scalefont{0.8}
@@ -458,8 +459,27 @@ sol & O dia deve estar ensolarado & eletrocutado & morte \\ \hline
 \end{table}
 
 
-A tabela \ref{relation} apresenta três relações onde uma delas é $relationHas(r_l,e_i,e_k)$ onde $r_l$ é definido pela coluna $relacionamento$, $e_i$ e $e_k$ pelas entidades envolvidas. A outra relação é dada por $hasRisk(r_k,risk_j,f_m)$ onde $risk_j$ é dado pela coluna risco e $f_m$ é dado pela coluna fatalidade. A terceira relação é dada por $hasPossibility(gr_n,p_m)$ 
+A tabela \ref{relation} apresenta três relações onde uma delas é $relationHas(r_l,e_i,e_k)$ onde $r_l$ é definido pela coluna $relacionamento$, $e_i$ e $e_k$ pelas entidades envolvidas. A outra relação é dada por $hasRisk(r_k,risk_j,f_m)$ onde $risk_j$ é dado pela coluna risco e $f_m$ é dado pela coluna fatalidade. A terceira relação é dada por $hasPossibility(gr_n,p_m)$. $X$ é uma variável que pode assumir os seguintes valores $agente1, agente2, agente3,agente4, agente5, agente6$ e $agente7$. Por exemplo, a primeira linha da tabela \ref{relation} é; 
 
+
+\begin{eqnarray}
+	relXCapacete | X,capacete | nenhum | nenhum | false
+\end{eqnarray}
+
+
+Substituindo o $X$ pelos valores possíveis; 
+
+
+\begin{eqnarray}
+relAgente1Capacete | Agente1 ,capacete | nenhum | nenhum | false \nonumber \\
+relAgente2Capacete | Agente2 ,capacete | nenhum | nenhum | false \nonumber \\ 
+relAgente3Capacete | Agente3 ,capacete | nenhum | nenhum | false \nonumber \\ 
+relAgente4Capacete | Agente4 ,capacete | nenhum | nenhum | false \nonumber \\
+relAgente5Capacete | Agente5 ,capacete | nenhum | nenhum | false \nonumber \\
+relAgente6Capacete | Agente6 ,capacete | nenhum | nenhum | false \nonumber \\
+relAgente7Capacete | Agente7 ,capacete | nenhum | nenhum | false\nonumber \\
+\nonumber \\
+\end{eqnarray}
 
 \begin{table}[H]
 \scalefont{0.8}
@@ -491,6 +511,20 @@ relCordaCarretilha & corda,carretilha & nenhum & nenhum & false \\ \hline
 relBastaoUniversalCarretilha & bastaoUniversal,carretilha & nenhum & nenhum & false \\ \hline
 relBastaoUniversalColar & bastaoUniversal,colar & nenhum & nenhum & false \\ \hline
 relBastaoUniversalEstopo & bastaoUniversal,estopo & nenhum & nenhum & false \\ \hline
+\end{tabular}
+\caption{Define os relacionamentos necessários que a manutenção aconteça}
+\label{relation2}
+\end{table}
+
+
+
+
+\begin{table}[H]
+\scalefont{0.8}
+\centering
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+\textbf{relacionamento} & \textbf{entidades envolvidas} & \textbf{risco} & \textbf{fatalidade} & \textbf{possibilidade} \\  \hline
 relCordaEstropo & corda,estropo & eletrocutado & morte & false \\ \hline
 relEstropoIsoladorVelho & estropo,isoladorVelho & nenhum & nenhum & false \\ \hline
 relXChaveCatraca & X,chaveCatraca & nenhum & nenhum & false \\ \hline
@@ -956,7 +990,6 @@ Com base nisso, as relações de implicabilidade resultantes são;
 
 \begin{eqnarray}\nonumber
 	violationRelation(agente4,g1,relPanoGlicerina)  \nonumber \\ 
-	\nonumber \\ 
 	\wedge affects(relPanoGlicerina,relBastaoGarraCondutor)   \nonumber \\ 
 	\wedge hasPossibility(relBastaoGarraCondutor,false) \nonumber \\  
 	\to \nonumber \\  
@@ -1163,6 +1196,8 @@ A finalidade dessa demonstração consiste em mostrar como um agente pode ser su
 
 
 \begin{eqnarray}\nonumber
+	hasRelation(g19,rg19) \nonumber
+	\wedge (relParafusoTorre \in rg19) \nonumber \\ 
 	happensBadEvent(g19,relParafusoTorre)  \nonumber \\
 	\wedge hasRisk(relParafusoTorre,eletrocutado,morte) \nonumber \\ 
 	\wedge tryReach(agente5,g19) \nonumber \\ 
@@ -1175,7 +1210,9 @@ A finalidade dessa demonstração consiste em mostrar como um agente pode ser su
 \end{eqnarray}
 
 \begin{eqnarray}\nonumber
-	happensBadEvent(g19,relParafusoTorre)  \nonumber \\
+	hasRelation(g19,rg19) \nonumber
+	\wedge (relParafusoTorre \in rg19) \nonumber \\ 
+	\wedge happensBadEvent(g19,relParafusoTorre)  \nonumber \\
 	\wedge hasRisk(relParafusoTorre,eletrocutado,morte) \nonumber \\ 
 	\wedge tryReach(agente6,g19) \nonumber \\ 
 	\to \nonumber \\ 
@@ -1187,7 +1224,9 @@ A finalidade dessa demonstração consiste em mostrar como um agente pode ser su
 \end{eqnarray}
 
 \begin{eqnarray}\nonumber
-	happensBadEvent(g19,relParafusoTorre)  \nonumber \\
+	hasRelation(g19,rg19) \nonumber
+	\wedge (relParafusoTorre \in rg19) \nonumber \\ 
+	\wedge happensBadEvent(g19,relParafusoTorre)  \nonumber \\
 	\wedge hasRisk(relParafusoTorre,eletrocutado,morte) \nonumber \\ 
 	\wedge tryReach(agente7,g19) \nonumber \\ 
 	\to \nonumber \\ 
@@ -1313,7 +1352,7 @@ O Moise trabalha uma estrutura lógica de interesse a descrição de grupos, \te
 
 \subsection{\textit{Normative Multi-Agent Programs and Their Logics}}
 
-O texto \cite{dastaniNormativeMultiAgentProgram} apresenta um modelo com a finalidade de descrever agentes normativos com a capacidade de cometer uma certa violação. O modelo define sanções para as violações. O estudo estrutura o modelo como uma linguagem de programação (usando a notação EBNF) onde os problemas de sistes multiagentes são tratados como programas escritos neste linguagem \cite{dastaniNormativeMultiAgentProgram}. Na perspectiva desta linguagem, um programa de sistemas multi-agentes é descrito como sendo; 
+O texto \cite{dastaniNormativeMultiAgentProgram} apresenta um modelo com a finalidade de descrever agentes normativos com a capacidade de cometer uma certa violação. O modelo define sanções para as violações. O estudo estrutura o modelo como uma linguagem de programação (usando a notação EBNF) onde os problemas de sistes multiagentes são tratados como programas escritos neste linguagem \cite{dastaniNormativeMultiAgentProgram}. Assim sendo, um programa de sistemas multi-agentes é descrito como sendo; 
 
 
 \begin{figure}[H]
@@ -1415,7 +1454,7 @@ Condições para  Examinar & Favorável             & Descreve o estado de mundo
 
 O \textit{V3S} combina ambas situações usando a abordagem MELISSA \cite{Camus2012}\cite{violationcamille}. Essa abordagem é baseada em três pontos (1) atividades relacionadas em cenários de acidentes, (2) descrição das tarefas de representação e (3) fatores influentes em potencial nas atividaes. 
 
-O \textit{V3S} possuem representações para defini as entidades, objetos e ações assim como o modeo presente neste estudo. Contudo, existe diferenças na estrutra ontologica de ambo os modelos, pois o \textit{V3S} define tanto objetos e açõe como entidades, enquanto que o modelo proposto neste estudo apenas objetos são entidades. O \textit{V3S} não caracteriza os agentes dentro de sua estrutura ontologica, enquanto que o modelo deste estudo faz isso definindo os agentes como entidades que se relacionam com outras entidades. 
+O \textit{V3S} possue representações para defini as entidades, objetos e ações assim como o modelo proposto neste estudo. Contudo, existe diferenças na estrutra ontologica de ambo os modelos, pois o \textit{V3S} define tanto objetos e açõe como entidades, enquanto que o modelo proposto neste estudo apenas objetos são entidades. O \textit{V3S} não caracteriza os agentes dentro de sua estrutura ontologica, enquanto que o modelo deste estudo faz isso definindo os agentes como entidades que se relacionam com outras entidades. 
 
 No que tange a questões referentes as atividades, o \textit{V3S} realiza a descrição sequencial das mesmas por intermédio da álgebra de \textit{Allen's}, enquanto que este estudo usa uma abordagem mais simples para representar as relações entre objetivos usando apenas alguns predicados para tratar essa dinâmica. O mesmo ocorre para as pré-condições, onde o \textit{V3S} detalha os tipos de pré-condições existentes enquanto que o modelo presente neste estudo não faz isso.
 
@@ -1436,7 +1475,7 @@ Os riscos também são tratados diferentemente em ambos os estudos. O \textit{V3
 \begin{itemize}
     \item $\mu \in \{obligation,prohibition\}$ representa as modalidades de norma.
     \item $\kappa \in \{action,state\}$ representa o tipo de \textit{trigger} da condição.
-    \item $\chi$ representa o conjunto de estados em que uma norma se aplica
+    \item $\chi$ representa o conjunto de estados em que uma norma se aplica.
     \item $\tau$ repreenta a norma da condição de \textit{trigger}
     \item $\rho$ representa a sanção aplicava pela violação do agente.
 \end{itemize}
