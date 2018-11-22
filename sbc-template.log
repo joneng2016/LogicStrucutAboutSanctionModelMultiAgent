@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.11.6)  21 NOV 2018 17:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.11.6)  22 NOV 2018 19:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -705,23 +705,23 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 65.
- [2]
-Underfull \hbox (badness 1515) in paragraph at lines 117--118
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 74.
+ [2] [3]
+Underfull \hbox (badness 1515) in paragraph at lines 130--131
 []$\OML/cmm/m/it/12 violationCondition\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ag[]; g
 []; c[]\OT1/cmr/m/n/12 )$ \OT1/ptm/m/n/12 - Um de-ter-mi-nado agente $\OML/cmm/
 m/it/12 ag[]$ \OT1/ptm/m/n/12 co-mete uma
  []
 
-[3]
-Underfull \hbox (badness 5756) in paragraph at lines 121--122
+
+Underfull \hbox (badness 5756) in paragraph at lines 134--135
 []$\OML/cmm/m/it/12 consequenceOfBadEvent\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 g[];
  ag[]; risk[]; f[]\OT1/cmr/m/n/12 )$ \OT1/ptm/m/n/12 - Agente $\OML/cmm/m/it/12
  ag$ \OT1/ptm/m/n/12 so-fre as con-
  []
 
 
-Underfull \hbox (badness 1112) in paragraph at lines 122--123
+Underfull \hbox (badness 1112) in paragraph at lines 135--136
 []$\OML/cmm/m/it/12 hasPossibility\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 r[]; p[]\OT
 1/cmr/m/n/12 )$ \OT1/ptm/m/n/12 - Pos-si-bi-li-dade $\OML/cmm/m/it/12 p[]$ \OT1
 /ptm/m/n/12 do evento $\OML/cmm/m/it/12 r[]$ \OT1/ptm/m/n/12 ge-rar al-guma con
@@ -729,17 +729,17 @@ Underfull \hbox (badness 1112) in paragraph at lines 122--123
  []
 
 [4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 203--204
+Underfull \hbox (badness 10000) in paragraph at lines 218--219
 \OT1/ptm/m/n/12 ti-a-gen-tes [[]], [[]], [[]]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 203--204
-\OT1/ptm/m/n/12 e [[]]. Nesse es-tudo, a vioa[][]ao []e tra-tada nos pre-di-
+Underfull \hbox (badness 10000) in paragraph at lines 218--219
+\OT1/ptm/m/n/12 e [[]]. Nesse es-tudo, a viola[][]ao []e tra-tada nos pre-di-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 203--204
+Underfull \hbox (badness 10000) in paragraph at lines 218--219
 \OT1/ptm/m/n/12 ca-dos $\OML/cmm/m/it/12 violationCondition\OT1/cmr/m/n/12 (\OM
 L/cmm/m/it/12 ag[]; g[]; c[]\OT1/cmr/m/n/12 )$\OT1/ptm/m/n/12 , $\OML/cmm/m/it/
 12 violationRelation\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ag[]; g[]; r[]\OT1/cmr/m/
@@ -747,92 +747,86 @@ n/12 )$ \OT1/ptm/m/n/12 e
  []
 
 
-Underfull \hbox (badness 1137) in paragraph at lines 203--204
-\OT1/ptm/m/n/12 [[]], as rela[][]oes 2[], 3[],4[] de-fine as condi[][]oes ne-ce
+Underfull \hbox (badness 1137) in paragraph at lines 218--219
+\OT1/ptm/m/n/12 [[]], as rela[][]oes 3[], 4[],5[] de-fine as condi[][]oes ne-ce
 ss[]arias para que
  []
 
 
-Underfull \hbox (badness 1803) in paragraph at lines 203--204
+Underfull \hbox (badness 1803) in paragraph at lines 218--219
 \OT1/ptm/m/n/12 uma viola[][]ao ve-nha a acon-te-cer. []Ainda den-tro da abor-d
 a-gem apre-sen-tada em
  []
 
-[6] [7] [8] [9] <uml20.jpg, id=38, 771.88374pt x 356.33125pt>
+[6] [7] [8] [9]
+Underfull \vbox (badness 5667) has occurred while \output is active []
+
+ [10]
+<uml20.jpg, id=43, 771.88374pt x 356.33125pt>
 File: uml20.jpg Graphic file (type jpg)
  <use uml20.jpg>
-Package pdftex.def Info: uml20.jpg used on input line 288.
+Package pdftex.def Info: uml20.jpg used on input line 303.
 (pdftex.def)             Requested size: 426.79135pt x 197.02129pt.
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 289.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 304.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 289.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 304.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [10]
-<DiagramaDeEstados.png, id=42, 846.16125pt x 1034.86626pt>
+<DiagramaDeEstados.png, id=44, 846.16125pt x 1034.86626pt>
 File: DiagramaDeEstados.png Graphic file (type png)
 
 <use DiagramaDeEstados.png>
-Package pdftex.def Info: DiagramaDeEstados.png used on input line 297.
+Package pdftex.def Info: DiagramaDeEstados.png used on input line 312.
 (pdftex.def)             Requested size: 384.1096pt x 469.75952pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [11 <./uml20.jpg>]
-LaTeX Font Info:    Calculating math sizes for size <9.60004> on input line 313
+LaTeX Font Info:    Calculating math sizes for size <9.60004> on input line 326
 .
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9.60004> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 315.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 328.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [12 <./DiagramaDeEstados.png>]
-! You can't use `macro parameter character #' in restricted horizontal mode.
-<recently read> ##
-                  
-l.356 agente4 & executor2 \\ \hline#
-                                    
-? 
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [13]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [14]
-Overfull \hbox (8.46927pt too wide) in paragraph at lines 449--457
+Overfull \hbox (8.46927pt too wide) in paragraph at lines 462--470
  [][] 
  []
 
 [15]
-Overfull \hbox (31.14453pt too wide) in paragraph at lines 525--556
+Overfull \hbox (24.08865pt too wide) in paragraph at lines 536--567
  [][] 
  []
 
 [16]
-LaTeX Font Info:    Calculating math sizes for size <7.20007> on input line 565
+LaTeX Font Info:    Calculating math sizes for size <7.20007> on input line 576
 .
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <3.60004> not available
-(Font)              size <5> substituted on input line 565.
+(Font)              size <5> substituted on input line 576.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <3.60004> not available
-(Font)              size <5> substituted on input line 565.
+(Font)              size <5> substituted on input line 576.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <3.60004> not available
-(Font)              size <5> substituted on input line 565.
+(Font)              size <5> substituted on input line 576.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.20007> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 567.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 578.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -850,34 +844,34 @@ Overfull \vbox (38.2003pt too high) has occurred while \output is active []
 
 
 [21]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 813.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 824.
 
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <9.60004> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 813.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 824.
 
-Overfull \hbox (73.16103pt too wide) in paragraph at lines 810--842
+Overfull \hbox (65.9323pt too wide) in paragraph at lines 821--853
  [][] 
  []
 
-LaTeX Font Info:    Calculating math sizes for size <8.39996> on input line 852
+LaTeX Font Info:    Calculating math sizes for size <8.39996> on input line 863
 .
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4.19998> not available
-(Font)              size <5> substituted on input line 852.
+(Font)              size <5> substituted on input line 863.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4.19998> not available
-(Font)              size <5> substituted on input line 852.
+(Font)              size <5> substituted on input line 863.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.19998> not available
-(Font)              size <5> substituted on input line 852.
+(Font)              size <5> substituted on input line 863.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8.39996> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 854.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 865.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -885,11 +879,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [23]
-<diagramaDeObjetivos.jpg, id=90, 875.27pt x 1310.8975pt>
+<diagramaDeObjetivos.jpg, id=92, 875.27pt x 1310.8975pt>
 File: diagramaDeObjetivos.jpg Graphic file (type jpg)
 
 <use diagramaDeObjetivos.jpg>
-Package pdftex.def Info: diagramaDeObjetivos.jpg used on input line 951.
+Package pdftex.def Info: diagramaDeObjetivos.jpg used on input line 962.
 (pdftex.def)             Requested size: 426.79135pt x 639.20499pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -898,160 +892,155 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [25 <./diagramaDeObjetivos.jpg>] [26] [27] [28] [29]
-Underfull \hbox (badness 3989) in paragraph at lines 1178--1179
+Underfull \hbox (badness 3989) in paragraph at lines 1189--1190
 \OT1/ptm/m/n/12 A fi-na-li-dade dessa demonstra[][]ao con-siste em mos-trar com
 o um agente pode
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1178--1179
+Underfull \hbox (badness 10000) in paragraph at lines 1189--1190
 \OT1/ptm/m/n/12 ser sub-me-tido a con-sequ[]encias ruins tendo em vista er-ros 
 co-me-ti-dos por
  []
 
 
-Underfull \hbox (badness 6188) in paragraph at lines 1178--1179
+Underfull \hbox (badness 6188) in paragraph at lines 1189--1190
 \OT1/ptm/m/n/12 ou-tros pro-fis-si-o-nais. O ra-cioc[]^^Pnio 1 mos-tra que o fa
 to do $\OML/cmm/m/it/12 agente\OT1/cmr/m/n/12 4$ \OT1/ptm/m/n/12 n[]ao
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1178--1179
+Underfull \hbox (badness 10000) in paragraph at lines 1189--1190
 \OT1/ptm/m/n/12 con-se-guir re-a-li-zar o re-la-ci-o-na-mento $\OML/cmm/m/it/12
  relPanoGlicerina$ \OT1/ptm/m/n/12 re-sulta na viola[][]ao
  []
 
 [30] [31]
-Underfull \hbox (badness 10000) in paragraph at lines 1243--1244
+Underfull \hbox (badness 10000) in paragraph at lines 1254--1255
 \OT1/ptm/m/n/12 O ob-je-tivo $\OML/cmm/m/it/12 g\OT1/cmr/m/n/12 23$ \OT1/ptm/m/
 n/12 deve ser atin-gido pe-los agen-tes com as fun[][]oes de
  []
 
-[32] [33] <figmoise.png, id=125, 504.38437pt x 422.32782pt>
+[32] [33] <figmoise.png, id=127, 504.38437pt x 422.32782pt>
 File: figmoise.png Graphic file (type png)
  <use figmoise.png>
-Package pdftex.def Info: figmoise.png used on input line 1322.
+Package pdftex.def Info: figmoise.png used on input line 1333.
 (pdftex.def)             Requested size: 341.43437pt x 285.89027pt.
 
-Underfull \hbox (badness 1406) in paragraph at lines 1334--1335
-[]\OT1/ptm/m/n/12 A Especifica[][]ao De-on-tica de-fine pre-di-ca-dos para es-t
+Underfull \hbox (badness 1406) in paragraph at lines 1345--1346
+[]\OT1/ptm/m/n/12 A Especifica[][]ao De[]ontica de-fine pre-di-ca-dos para es-t
 a-be-le-cer per-miss[]oes e
  []
 
 [34 <./figmoise.png>]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1353.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1364.
 
- <masprogram.png, id=130, 745.28438pt x 521.69907pt>
+ <masprogram.png, id=132, 745.28438pt x 521.69907pt>
 File: masprogram.png Graphic file (type png)
 
 <use masprogram.png>
-Package pdftex.def Info: masprogram.png used on input line 1360.
+Package pdftex.def Info: masprogram.png used on input line 1371.
 (pdftex.def)             Requested size: 341.43437pt x 238.99738pt.
 LaTeX Font Info:    Font shape `OT1/phv/bx/it' in size <10> not available
-(Font)              Font shape `OT1/phv/b/it' tried instead on input line 1361.
+(Font)              Font shape `OT1/phv/b/it' tried instead on input line 1372.
 
 LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <10> not available
-(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 1361.
+(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 1372.
 
  [35]
-<programdastani.png, id=136, 700.86844pt x 182.93344pt>
+<programdastani.png, id=138, 700.86844pt x 182.93344pt>
 File: programdastani.png Graphic file (type png)
 
 <use programdastani.png>
-Package pdftex.def Info: programdastani.png used on input line 1382.
+Package pdftex.def Info: programdastani.png used on input line 1393.
 (pdftex.def)             Requested size: 341.43437pt x 89.11897pt.
  [36 <./masprogram.png>]
-Underfull \hbox (badness 1005) in paragraph at lines 1392--1393
+Underfull \hbox (badness 1005) in paragraph at lines 1403--1404
 \OT1/ptm/m/n/12 gua-gem que de-li-mita com maior ri-gor o pro-blema em an[]alis
 e do que o mo-delo
  []
 
-<ontologyv3.png, id=142, 496.85625pt x 256.70906pt>
+<ontologyv3.png, id=144, 496.85625pt x 256.70906pt>
 File: ontologyv3.png Graphic file (type png)
  <use ontologyv3.png>
-Package pdftex.def Info: ontologyv3.png used on input line 1400.
+Package pdftex.def Info: ontologyv3.png used on input line 1411.
 (pdftex.def)             Requested size: 213.39568pt x 110.25346pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [37 <./programdastani.png>]
-Underfull \hbox (badness 1297) in paragraph at lines 1436--1437
+Underfull \hbox (badness 1297) in paragraph at lines 1447--1448
 []\OT1/ptm/m/n/12 No que tange a quest[]oes re-fe-ren-tes a seguran[]a e viola[
 ][]ao, a lin-gua-gem
  []
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 1440.
+               Default added (so using `tbp') on input line 1451.
 
 
-Overfull \hbox (56.57632pt too wide) in paragraph at lines 1441--1449
+Overfull \hbox (56.57632pt too wide) in paragraph at lines 1452--1460
 [][] 
  []
 
 [38 <./ontologyv3.png>]
-
-LaTeX Warning: Citation `Camus2012' on page 39 undefined on input line 1455.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1455--1456
+Underfull \hbox (badness 10000) in paragraph at lines 1466--1467
 []\OT1/ptm/m/n/12 O \OT1/ptm/m/it/12 V3S \OT1/ptm/m/n/12 com-bina am-bas situa[
 ][]oes usando a abor-da-gem ME-LISSA
+ []
+
+
+Underfull \hbox (badness 1038) in paragraph at lines 1466--1467
+\OT1/ptm/m/n/12 [[]][[]]. Essa abor-da-gem []e ba-se-ada em tr[]es pon-tos
  []
 
 
 Underfull \vbox (badness 1221) has occurred while \output is active []
 
  [39]
-
-LaTeX Warning: Citation `chang' on page 40 undefined on input line 1471.
-
-
-LaTeX Warning: Citation `chang' on page 40 undefined on input line 1471.
-
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1476.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1487.
 
-[40] (./sbc-template.bbl) [41] (./sbc-template.aux)
+
+[40] (./sbc-template.bbl [41]) [42] (./sbc-template.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.39996pt have occurred.
-
-
-LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5115 strings out of 493013
- 66889 string characters out of 6135682
- 165079 words of memory out of 5000000
- 8513 multiletter control sequences out of 15000+600000
- 38658 words of font info for 96 fonts, out of 8000000 for 9000
+ 5133 strings out of 493013
+ 67072 string characters out of 6135682
+ 165127 words of memory out of 5000000
+ 8522 multiletter control sequences out of 15000+600000
+ 41427 words of font info for 105 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,13n,29p,1231b,272s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,13n,32p,1234b,272s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
-10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
-utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on sbc-template.pdf (41 pages, 739635 bytes).
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cmextra/cmmib8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
+/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on sbc-template.pdf (42 pages, 758908 bytes).
 PDF statistics:
- 216 PDF objects out of 1000 (max. 8388607)
- 143 compressed objects within 2 object streams
+ 227 PDF objects out of 1000 (max. 8388607)
+ 151 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

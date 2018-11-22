@@ -18,6 +18,21 @@ Boissier, O. (2011).
 \newblock In Kl{\"u}gl, F. and Ossowski, S., editors, {\em Multiagent System
   Technologies}, pages 1--1, Berlin, Heidelberg. Springer Berlin Heidelberg.
 
+\bibitem[Camus et~al. 2012]{Camus2012}
+Camus, F., Lenne, D., and Plot, E. (2012).
+\newblock Designing virtual environments for risk prevention: the melissa
+  approach.
+\newblock {\em International Journal on Interactive Design and Manufacturing
+  (IJIDeM)}, 6(1):55--63.
+
+\bibitem[Chang and Meneguzzi 2016]{chang}
+Chang, S. and Meneguzzi, F. (2016).
+\newblock Simulating normative behaviour in multi-agent environments using
+  monitoring artefacts.
+\newblock In Dignum, V., Noriega, P., Sensoy, M., and Sichman, J.~S., editors,
+  {\em Coordination, Organizations, Institutions, and Norms in Agent Systems
+  XI}, pages 59--77, Cham. Springer International Publishing.
+
 \bibitem[Dastani et~al. 2009]{dastaniNormativeMultiAgentProgram}
 Dastani, M., Grossi, D., Meyer, J.-J.~C., and Tinnemeier, N. (2009).
 \newblock Normative multi-agent programs and their logics.
