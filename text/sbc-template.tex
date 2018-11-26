@@ -189,8 +189,7 @@ Uma violação de entidade gera a interrupção imediata da atividade no objetiv
 
 Se algum evento ruim acontecer sobre o relacionamento $r_k$ no momento em que o agente está tentando alcançar o objetivo $ag_m$, então esse agente será submetido as consequências do risco $risk_j$ vinculado a esse relacionamento $r_k$.
 \begin{eqnarray}\label{rel13}\nonumber
-		hidrolato(g_i,RO_n) \wedge (g_i \subset rg_n) \nonumber \\
-	\wedge happensBadEvent(g_n,r_k) \wedge hasRisk(r_k,risk_j,f_m) \wedge tryReach(ag_m,g_i) \nonumber \\ 
+	hasRelation(g_i,rg_n) \wedge (r_k \subset rg_n) \wedge hasRisk(r_k,risk_j,f_m) \wedge tryReach(ag_m,g_i) \nonumber \\ 
 	\to consequenceOfBadEvent(g_i,ag_m,risk_j,f_m)
 \end{eqnarray}
 
