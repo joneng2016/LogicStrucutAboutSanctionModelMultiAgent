@@ -6,8 +6,11 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Public\\' => array('/public'),
-    'App\\Rule\\' => array('/app/rule'),
-    'App\\Condition\\' => array('/app/condition'),
-    'App\\' => array('/app'),
+    'File\\' => array($baseDir . '/file'),
+    'App\\Rule\\' => array($baseDir . '/app/rule'),
+    'App\\Database\\' => array($baseDir . '/app/database'),
+    'App\\ConstructFile\\' => array($baseDir . '/app/constructfile'),
+    'App\\ConstructContext\\' => array($baseDir . '/app/constructcontext'),
+    'App\\Condition\\' => array($baseDir . '/app/condition'),
+    'App\\' => array($baseDir . '/app'),
 );

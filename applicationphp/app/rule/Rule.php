@@ -2,7 +2,10 @@
 
 namespace App\Rule;
 
-class
+class Rule
 {
-
+	public function teste()
+	{
+		return "hello word";
+	}
 }

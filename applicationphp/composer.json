@@ -1,10 +1,13 @@
 {
 	"autoload":{
 		"psr-4":{
-			"App\\":"/app",
-			"App\\Condition\\":"/app/condition",
-			"App\\Rule\\":"/app/rule",
-			"Public\\":"/public"
+			"App\\":"app",
+			"App\\Condition\\":"app/condition",
+			"App\\Rule\\":"app/rule",
+			"App\\Database\\":"app/database",
+			"App\\ConstructFile\\":"app/constructfile",
+			"App\\ConstructContext\\":"app/constructcontext",
+			"File\\":"file"
 		}
 	}	
 }
