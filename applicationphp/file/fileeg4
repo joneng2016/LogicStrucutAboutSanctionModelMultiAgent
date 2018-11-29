@@ -1,0 +1,5 @@
+isElementOf(colar,eg4).
+isElementOf(bastaogarra,eg4).
+isElementOf(agente2,eg4).
+isElementOf(agente3,eg4).
+isElementOf(agente4,eg4).

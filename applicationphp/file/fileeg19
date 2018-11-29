@@ -1,0 +1,11 @@
+isElementOf(chavecatraca,eg19).
+isElementOf(bastaouniversal,eg19).
+isElementOf(parafuso,eg19).
+isElementOf(bastaosoquete,eg19).
+isElementOf(parafuso,eg19).
+isElementOf(torre,eg19).
+isElementOf(agente2,eg19).
+isElementOf(agente3,eg19).
+isElementOf(agente5,eg19).
+isElementOf(agente6,eg19).
+isElementOf(agente7,eg19).

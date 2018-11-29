@@ -1,0 +1,10 @@
+isElementOf(pano,eg2).
+isElementOf(glicerina,eg2).
+isElementOf(carretilha,eg2).
+isElementOf(bastaouniversal,eg2).
+isElementOf(corda,eg2).
+isElementOf(bastaogarra,eg2).
+isElementOf(condutivimetro,eg2).
+isElementOf(agente2,eg2).
+isElementOf(agente3,eg2).
+isElementOf(agente4,eg2).

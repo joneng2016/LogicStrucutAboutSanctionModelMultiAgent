@@ -1,0 +1,6 @@
+isElementOf(corda,eg20).
+isElementOf(agente2,eg20).
+isElementOf(agente3,eg20).
+isElementOf(agente5,eg20).
+isElementOf(agente6,eg20).
+isElementOf(agente7,eg20).

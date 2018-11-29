@@ -1,0 +1,8 @@
+isElementOf(bastagarra,eg17).
+isElementOf(condutor,eg17).
+isElementOf(corda,eg17).
+isElementOf(agente2,eg17).
+isElementOf(agente3,eg17).
+isElementOf(agente5,eg17).
+isElementOf(agente6,eg17).
+isElementOf(agente7,eg17).

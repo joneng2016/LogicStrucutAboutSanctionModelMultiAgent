@@ -1,0 +1,9 @@
+isElementOf(pano,eg1).
+isElementOf(glicerina,eg1).
+isElementOf(carretilha,eg1).
+isElementOf(bastaouniversal,eg1).
+isElementOf(corda,eg1).
+isElementOf(bastaogarra,eg1).
+isElementOf(agente2,eg1).
+isElementOf(agente3,eg1).
+isElementOf(agente4,eg1).
