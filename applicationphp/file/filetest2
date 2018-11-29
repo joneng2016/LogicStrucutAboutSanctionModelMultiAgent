@@ -1,0 +1,4 @@
+isElementOf(capacete,eg0).
+isElementOf(oculos,eg0).
+isElementOf(roupagem,eg0).
+isElementOf(luva,eg0).

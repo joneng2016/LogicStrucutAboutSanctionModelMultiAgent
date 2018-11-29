@@ -7,7 +7,10 @@
 			"App\\Database\\":"app/database",
 			"App\\ConstructFile\\":"app/constructfile",
 			"App\\ConstructContext\\":"app/constructcontext",
-			"File\\":"file"
+			"File\\":"file",
+			"App\\Package\\":"app/package",
+			"App\\MountElementSet\\":"app/mountelementset",
+			"App\\ReadFile\\":"app/readfile"			
 		}
 	}	
 }

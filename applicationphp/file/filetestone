@@ -1,0 +1,11 @@
+isElementOf(capacete,eg0).
+isElementOf(oculos,eg0).
+isElementOf(roupagem,eg0).
+isElementOf(luva,eg0).
+isElementOf(agente1,eg0).
+isElementOf(agente2,eg0).
+isElementOf(agente3,eg0).
+isElementOf(agente4,eg0).
+isElementOf(agente5,eg0).
+isElementOf(agente6,eg0).
+isElementOf(agente7,eg0).

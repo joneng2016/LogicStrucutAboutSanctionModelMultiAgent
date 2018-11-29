@@ -8,6 +8,9 @@ $baseDir = dirname($vendorDir);
 return array(
     'File\\' => array($baseDir . '/file'),
     'App\\Rule\\' => array($baseDir . '/app/rule'),
+    'App\\ReadFile\\' => array($baseDir . '/app/readfile'),
+    'App\\Package\\' => array($baseDir . '/app/package'),
+    'App\\MountElementSet\\' => array($baseDir . '/app/mountelementset'),
     'App\\Database\\' => array($baseDir . '/app/database'),
     'App\\ConstructFile\\' => array($baseDir . '/app/constructfile'),
     'App\\ConstructContext\\' => array($baseDir . '/app/constructcontext'),
