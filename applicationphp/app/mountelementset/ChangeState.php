@@ -2,8 +2,8 @@
 
 namespace App\MountElementSet;
 
-use App\AbstractMount\AbstractNextState;
+use App\AbstractMount\NextState;
 
-class ChangeState extends AbstractNextState
+class ChangeState extends NextState
 {
 }

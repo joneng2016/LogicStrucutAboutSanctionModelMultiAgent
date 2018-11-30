@@ -11,6 +11,6 @@ abstract class AbstractMount
 	abstract protected function execute();
 	public function callOtherState()
 	{	
-		return (new ChangeState($this->element))->next();
+		return (new NextState($this->element))->next();
 	}
 }

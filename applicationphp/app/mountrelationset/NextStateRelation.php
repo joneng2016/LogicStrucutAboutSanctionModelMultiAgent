@@ -2,8 +2,8 @@
 
 namespace App\MountRelationSet;
 
-use App\AbstractMount\AbstractNextState;
+use App\AbstractMount\NextState;
 
-class NextStateRelation extends AbstractNextState
+class NextStateProcessFile extends NextState
 {
 }

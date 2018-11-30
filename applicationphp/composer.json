@@ -12,7 +12,8 @@
 			"App\\MountElementSet\\":"app/mountelementset",
 			"App\\ReadFile\\":"app/readfile",
 			"App\\AbstractMount\\":"app/abstractmount",
-			"App\\MountRelationSet\\":"app/mountrelationset"						
+			"App\\MountRelationSet\\":"app/mountrelationset",
+			"App\\ProcessFile\\":"app/processfile"						
 		}
 	}	
 }

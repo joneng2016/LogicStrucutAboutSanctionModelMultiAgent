@@ -2,11 +2,12 @@
 
 namespace App\AbstractMount;
 
-abstract class AbstractNextState
+class NextState
 {
 	public function __construct($element)
 	{
 		$this->element = $element;
+		return $this;
 	}
 	public function next()
 	{

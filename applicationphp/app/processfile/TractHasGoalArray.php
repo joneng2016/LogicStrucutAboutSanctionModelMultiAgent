@@ -1,8 +1,8 @@
 <?php
 
-namespace App\MountElementSet;
+namespace App\ProcessFile;
 
-class TractHasGoalArray extends AbstractMountElement
+class TractHasGoalArray extends StateProcessFile 
 {
 	public function execute()
 	{
@@ -17,8 +17,7 @@ class TractHasGoalArray extends AbstractMountElement
 			}
 		}
 		$this->package["hasGoal"] = $hasGoal; 
-		var_dump('slfkgjsldkçfç');
-//		$this->element = (new TractHasRoleArray($this->package));
+		//$this->element = (new TractHasRoleArray($this->package));
 		return $this;
 	}
 }

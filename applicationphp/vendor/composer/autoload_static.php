@@ -15,6 +15,7 @@ class ComposerStaticInitd7e2796ae34c20a51546d80b1704d3da
         array (
             'App\\Rule\\' => 9,
             'App\\ReadFile\\' => 13,
+            'App\\ProcessFile\\' => 16,
             'App\\Package\\' => 12,
             'App\\MountRelationSet\\' => 21,
             'App\\MountElementSet\\' => 20,
@@ -39,6 +40,10 @@ class ComposerStaticInitd7e2796ae34c20a51546d80b1704d3da
         'App\\ReadFile\\' => 
         array (
             0 => __DIR__ . '/../..' . '/app/readfile',
+        ),
+        'App\\ProcessFile\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app/processfile',
         ),
         'App\\Package\\' => 
         array (

@@ -9,6 +9,7 @@ return array(
     'File\\' => array($baseDir . '/file'),
     'App\\Rule\\' => array($baseDir . '/app/rule'),
     'App\\ReadFile\\' => array($baseDir . '/app/readfile'),
+    'App\\ProcessFile\\' => array($baseDir . '/app/processfile'),
     'App\\Package\\' => array($baseDir . '/app/package'),
     'App\\MountRelationSet\\' => array($baseDir . '/app/mountrelationset'),
     'App\\MountElementSet\\' => array($baseDir . '/app/mountelementset'),
