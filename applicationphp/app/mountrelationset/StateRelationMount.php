@@ -2,6 +2,8 @@
 
 namespace App\MountRelationSet;
 
-class StateRelationMount extends AbstractMount
+use App\AbstractMount\AbstractMount;
+
+abstract class StateRelationMount extends AbstractMount
 {
 }
