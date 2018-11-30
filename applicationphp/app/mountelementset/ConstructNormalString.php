@@ -19,9 +19,10 @@ class ConstructNormalString extends AbstractMountElement
 		$this->package["stringWithoutAgent"] = $string; 
 		
 		if($existAgent)
-			$this->element = new ChangeFileToArrays($this->package);
+			InstanceElement::allocation($this->element,new ChangeFileToArrays($this->package));
 		else 
-			$this->element = new WriteThisOnFileWithOutAgent($this->package);
+			InstanceElement::allocation($this->element,new WriteThisOnFileWithOutAgent($this->package));			
+		
 		return $this;
 	}
 }

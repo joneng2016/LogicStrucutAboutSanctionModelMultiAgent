@@ -10,10 +10,12 @@ return array(
     'App\\Rule\\' => array($baseDir . '/app/rule'),
     'App\\ReadFile\\' => array($baseDir . '/app/readfile'),
     'App\\Package\\' => array($baseDir . '/app/package'),
+    'App\\MountRelationSet\\' => array($baseDir . '/app/mountrelationset'),
     'App\\MountElementSet\\' => array($baseDir . '/app/mountelementset'),
     'App\\Database\\' => array($baseDir . '/app/database'),
     'App\\ConstructFile\\' => array($baseDir . '/app/constructfile'),
     'App\\ConstructContext\\' => array($baseDir . '/app/constructcontext'),
     'App\\Condition\\' => array($baseDir . '/app/condition'),
+    'App\\AbstractMount\\' => array($baseDir . '/app/abstractmount'),
     'App\\' => array($baseDir . '/app'),
 );

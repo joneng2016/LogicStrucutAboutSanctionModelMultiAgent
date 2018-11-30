@@ -19,4 +19,8 @@ class Programs
 		$package = ["elements" => $elements,"goal" => $goal, "set" => $set, "nameFile" => $namefile];
 		return (new ChangeState((new ConstructNormalString($package))))->next();
 	}
+	public function mountRelationSet()
+	{
+		echo "HELLO SET\n";
+	}
 }

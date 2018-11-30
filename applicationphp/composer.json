@@ -10,7 +10,9 @@
 			"File\\":"file",
 			"App\\Package\\":"app/package",
 			"App\\MountElementSet\\":"app/mountelementset",
-			"App\\ReadFile\\":"app/readfile"			
+			"App\\ReadFile\\":"app/readfile",
+			"App\\AbstractMount\\":"app/abstractmount",
+			"App\\MountRelationSet\\":"app/mountrelationset"						
 		}
 	}	
 }
