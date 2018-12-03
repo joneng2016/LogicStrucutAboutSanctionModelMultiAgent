@@ -17,8 +17,7 @@ class TractHasGoalArray extends AbstractMountElement
 			}
 		}
 		$this->package["hasGoal"] = $hasGoal; 
-		var_dump('slfkgjsldkçfç');
-//		$this->element = (new TractHasRoleArray($this->package));
+		$this->element = (new TractHasRoleArray($this->package));
 		return $this;
 	}
 }

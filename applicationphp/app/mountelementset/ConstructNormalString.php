@@ -2,6 +2,9 @@
 
 namespace App\MountElementSet;
 
+use App\ProcessFile\NextProcessFile;
+use App\ProcessFile\ChangeFileToArrays;
+
 class ConstructNormalString extends AbstractMountElement
 {
 	public function execute()
@@ -19,7 +22,10 @@ class ConstructNormalString extends AbstractMountElement
 		$this->package["stringWithoutAgent"] = $string; 
 		
 		if($existAgent)
-			InstanceElement::allocation($this->element,new ChangeFileToArrays($this->package));
+		{
+			$this->package = (new NextProcessFile(new ChangeFileToArrays($this->package)))->next();
+			InstanceElement::allocation($this->element,new GetAgentImportantThisGoal($this->package));
+		}
 		else 
 			InstanceElement::allocation($this->element,new WriteThisOnFileWithOutAgent($this->package));			
 		

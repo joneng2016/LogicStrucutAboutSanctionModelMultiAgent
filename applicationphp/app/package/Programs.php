@@ -6,7 +6,7 @@ use App\ConstructFile\LoadFile;
 use App\ConstructContext\MountRelBetweenElements;
 use App\MountElementSet\ChangeState;
 use App\MountElementSet\ConstructNormalString;
-use App\MountRelationSet\NextStateRelation;
+use App\MountRelationSet\NextStateProcessFile;
 use App\MountRelationSet\ChangeFileToArrays;
 class Programs
 {
@@ -23,6 +23,6 @@ class Programs
 	public function mountRelationSet($set,$goal,$relations,$namefile)
 	{
 		$package = ["relations" => $relations,"goal" => $goal, "set" => $set, "nameFile" => $namefile];		
-		return (new NextStateRelation(new ChangeFileToArrays($this->package)))->next();
+		return (new NextStateProcessFile(new ChangeFileToArrays($package)))->next();
 	}
 }

@@ -9,7 +9,7 @@ class ProgramProcessFile extends AbstractProgramExecution
 {
 	public function running()
 	{
-		$this->package = [];
-		return (new NextProcessFile(new ChangeFileToArrays($this->package)))->next();
+//		(new ProgramSetElement)->running();
+		(new ProgramSetRelation)->running();
 	}
 }

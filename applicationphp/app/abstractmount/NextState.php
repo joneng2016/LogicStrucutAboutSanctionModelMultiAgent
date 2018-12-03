@@ -11,6 +11,6 @@ class NextState
 	}
 	public function next()
 	{
-		$this->element->execute()->callOtherState();
+		return $this->element->execute()->callOtherState();
 	}
 }

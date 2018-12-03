@@ -1,13 +1,13 @@
 <?php
 
-namespace App\MountElementSet;
+namespace App\ProcessFile;
 
-class ReasoningByGoalRole extends AbstractMountElement
+class ReasoningByGoalRole extends StateProcessFile
 {
 	public function execute()
 	{
 		$agentHasGoal = [];
-		(new OutOfPackage($this->package))->getHasRole($hasRoles)->getHasGoal($hasGoals);		
+		(new OutPutOfPackageProcessFile($this->package))->getHasRole($hasRoles)->getHasGoal($hasGoals);		
 		(new FilterOfN($hasRoles))->execute($hasRolesFilter);
 		(new FilterOfN($hasGoals))->execute($hasGoalsFilter);
 
@@ -20,7 +20,11 @@ class ReasoningByGoalRole extends AbstractMountElement
 			}
 		}
 		$this->package["agentHasGoal"] = $agentHasGoal;
-		$this->element = (new GetAgentImportantThisGoal($this->package));
+		$this->element = $this->package;
 		return $this;	
+	}
+	public function callOtherState()
+	{	
+		return $this->element;
 	}
 }

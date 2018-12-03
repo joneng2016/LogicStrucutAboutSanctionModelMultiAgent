@@ -1,13 +1,13 @@
 <?php
 
-namespace App\MountElementSet;
+namespace App\ProcessFile;
 
-class TractHasRoleArray extends AbstractMountElement
+class TractHasRoleArray extends StateProcessFile
 {
 	public function execute()
 	{
-		(new OutOfPackage($this->package))->getFiles($files);
-		$hasRole = [];
+		$hasRole = [];		
+		(new OutPutOfPackageProcessFile($this->package))->getFiles($files);
 		foreach ($files as $file) 
 		{
 			if(strpos($file,"hasRole") !== false)		
@@ -19,5 +19,5 @@ class TractHasRoleArray extends AbstractMountElement
 		$this->package["hasRole"] = $hasRole;
 		$this->element = (new ReasoningByGoalRole($this->package));
 		return $this;
-	}
+	}	
 }

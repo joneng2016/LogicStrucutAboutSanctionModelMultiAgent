@@ -7,7 +7,7 @@ class TractHasGoalArray extends StateProcessFile
 	public function execute()
 	{
 		$hasGoal = [];
-		(new OutOfPackage($this->package))->getFiles($arrayFile);
+		(new OutPutOfPackageProcessFile($this->package))->getFiles($arrayFile);
 		foreach($arrayFile as $file)
 		{
 			if(strpos($file,"hasGoal") !== false)		
@@ -17,7 +17,7 @@ class TractHasGoalArray extends StateProcessFile
 			}
 		}
 		$this->package["hasGoal"] = $hasGoal; 
-		//$this->element = (new TractHasRoleArray($this->package));
+		$this->element = (new TractHasRoleArray($this->package));
 		return $this;
 	}
 }
