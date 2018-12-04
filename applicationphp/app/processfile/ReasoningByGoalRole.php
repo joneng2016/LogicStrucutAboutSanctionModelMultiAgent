@@ -20,7 +20,7 @@ class ReasoningByGoalRole extends StateProcessFile
 			}
 		}
 		$this->package["agentHasGoal"] = $agentHasGoal;
-		$this->element = $this->package;
+		$this->element = $this->package["agentHasGoal"];
 		return $this;	
 	}
 	public function callOtherState()

@@ -8,6 +8,9 @@ use App\MountElementSet\ChangeState;
 use App\MountElementSet\ConstructNormalString;
 use App\MountRelationSet\NextStateProcessFile;
 use App\MountRelationSet\ChangeFileToArrays;
+use App\AbstractMount\NextState;
+use App\MountRelationSet\FirstState;
+
 class Programs
 {
 	public static function loadfile($firstName,$secondName,$fileName)
@@ -23,6 +26,8 @@ class Programs
 	public function mountRelationSet($set,$goal,$relations,$namefile)
 	{
 		$package = ["relations" => $relations,"goal" => $goal, "set" => $set, "nameFile" => $namefile];		
-		return (new NextStateProcessFile(new ChangeFileToArrays($package)))->next();
+		return (new NextState(new FirstState($package)))->next();
 	}
 }
+
+
