@@ -15,10 +15,15 @@ class FindXOnName extends StateRelationMount
 		$withX = [];
 		foreach($relations as $relation)
 			if(strpos($relation,"X") !== false) $withX[] = $relation;
-		$this->package["withX"] = $withX;
-		$this->element = (new GetAgentsSomeGoal($this->package));
+
+        if(!empty($withX))
+        {
+ 		    $this->package["withX"] = $withX;        
+            $this->element = (new GetAgentsSomeGoal($this->package));
+        }
+        else
+           $this->element = (new MountRealRelations($this->package));
 		return $this;
 	}
 }
-
 

@@ -11,12 +11,24 @@ class MountRealRelations extends StateRelationMount
 {
 	public function execute()
 	{
-		$relationsWithOutXs = $this->package["relationsAgentsWithoutX"];
-		$relations = $this->package;
-		var_dump($relations);
-		die();
-		//$this->element = 
+
+		$relations = $this->package["relations"];    
+        $relationLast = array();
+
+        if(isset($this->package["relationsAgentsWithoutX"]))
+        {
+ 		    $relationsWithOutXs = $this->package["relationsAgentsWithoutX"];        
+            foreach($relationsWithOutXs as $relationNoX)
+               $relationLast[] = $relationNoX;
+        }
+
+        foreach($relations as $relation)
+            if(!strpos($relation,"X")) $relationLast[] = $relation;
+
+        $this->package["relationLast"] = $relationLast; 
+		$this->element = (new WriteFile($this->package));
 		return $this;
 	}
 }
+
 

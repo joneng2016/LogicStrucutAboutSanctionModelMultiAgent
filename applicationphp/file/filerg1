@@ -1,0 +1,8 @@
+isElementOf(relationagente2plano,rg1).
+isElementOf(relationagente3plano,rg1).
+isElementOf(relationagente4plano,rg1).
+isElementOf(relationplanoglicerina,rg1).
+isElementOf(relationplanocorda,rg1).
+isElementOf(relationplanobastaouniversal,rg1).
+isElementOf(relationplanobastaogarra,rg1).
+isElementOf(relationplanosoquete,rg1).
