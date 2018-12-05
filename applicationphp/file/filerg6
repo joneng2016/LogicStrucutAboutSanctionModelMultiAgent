@@ -1,0 +1,7 @@
+isElementOf(relationagente5bastaogarra,rg6).
+isElementOf(relationagente6bastaogarra,rg6).
+isElementOf(relationagente7bastaogarra,rg6).
+isElementOf(relationagente5sela,rg6).
+isElementOf(relationagente6sela,rg6).
+isElementOf(relationagente7sela,rg6).
+isElementOf(relationbastaogarrasela,rg6).

@@ -1,0 +1,10 @@
+isElementOf(relationagente4chavecatraca,rg15).
+isElementOf(relationagente5chavecatraca,rg15).
+isElementOf(relationagente6chavecatraca,rg15).
+isElementOf(relationagente7chavecatraca,rg15).
+isElementOf(relationagente4bastaouniversal,rg15).
+isElementOf(relationagente5bastaouniversal,rg15).
+isElementOf(relationagente6bastaouniversal,rg15).
+isElementOf(relationagente7bastaouniversal,rg15).
+isElementOf(relationchavecatracabastaouniversal,rg15).
+isElementOf(relationchavecatracaparafuso,rg15).

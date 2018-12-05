@@ -1,0 +1,9 @@
+isElementOf(relationagente2bastaogarra,rg5).
+isElementOf(relationagente3bastaogarra,rg5).
+isElementOf(relationagente4bastaogarra,rg5).
+isElementOf(relationagente2corda,rg5).
+isElementOf(relationagente3corda,rg5).
+isElementOf(relationagente4corda,rg5).
+isElementOf(relationcordabastaogarra,rg5).
+isElementOf(relationbastaogarratorre,rg5).
+isElementOf(relationbastaogarracondutor,rg5).

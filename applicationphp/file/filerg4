@@ -1,0 +1,4 @@
+isElementOf(relationagente2bastaogarra,rg4).
+isElementOf(relationagente3bastaogarra,rg4).
+isElementOf(relationagente4bastaogarra,rg4).
+isElementOf(relationcolarbastaogarra,rg4).

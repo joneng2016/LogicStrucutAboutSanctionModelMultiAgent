@@ -1,0 +1,8 @@
+isElementOf(relationagente5corda,rg10).
+isElementOf(relationagente6corda,rg10).
+isElementOf(relationagente7corda,rg10).
+isElementOf(relationagente5bastaouniversal,rg10).
+isElementOf(relationagente6bastaouniversal,rg10).
+isElementOf(relationagente7bastaouniversal,rg10).
+isElementOf(relationbastaouniversalcorda,rg10).
+isElementOf(relationbastaouniversaltorre,rg10).

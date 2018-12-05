@@ -1,0 +1,7 @@
+isElementOf(relationagente5bataouniversal,rg9).
+isElementOf(relationagente6bataouniversal,rg9).
+isElementOf(relationagente7bataouniversal,rg9).
+isElementOf(relationagente5carretilha,rg9).
+isElementOf(relationagente6carretilha,rg9).
+isElementOf(relationagente7carretilha,rg9).
+isElementOf(relationbastaouniversalcarretilha,rg9).

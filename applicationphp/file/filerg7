@@ -1,0 +1,7 @@
+isElementOf(relationagente5sela,rg7).
+isElementOf(relationagente6sela,rg7).
+isElementOf(relationagente7sela,rg7).
+isElementOf(relationagente5colar,rg7).
+isElementOf(relationagente6colar,rg7).
+isElementOf(relationagente7colar,rg7).
+isElementOf(relationtorresela,rg7).

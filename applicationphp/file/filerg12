@@ -1,0 +1,5 @@
+isElementOf(relationagente2colar,rg12).
+isElementOf(relationagente3colar,rg12).
+isElementOf(relationagente4colar,rg12).
+isElementOf(relationagente5colar,rg12).
+isElementOf(relationagente6colar,rg12).
