@@ -19,4 +19,9 @@ class DBConnection
 		$toExecute->execute();
 		return $toExecute->fetchAll();
 	}
+    public static function insert($nameRelation,$instances)
+    {
+        $stringSQL = "INSERT INTO relations (instances,namerelation,created_at,updated_at) VALUES (?,?,?,?)";
+        self::$dbconnection->prepare($stringSQL)->execute([$nameRelation,$instances,new \DateTime, new \DateTime]);
+    }
 }

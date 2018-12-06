@@ -1028,7 +1028,6 @@ isElementOf(sela,eg3).
 isElementOf(colar,eg3).
 isElementOf(colar,eg4).
 isElementOf(bastaogarra,eg4).
-isElementOf()
 isElementOf(capacete,eg0).
 isElementOf(oculos,eg0).
 isElementOf(roupagem,eg0).
