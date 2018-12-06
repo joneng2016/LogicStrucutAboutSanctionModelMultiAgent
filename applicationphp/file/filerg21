@@ -1,0 +1,6 @@
+isElementOf(relationagente2estopo,rg21).
+isElementOf(relationagente3estopo,rg21).
+isElementOf(relationagente5estopo,rg21).
+isElementOf(relationagente6estopo,rg21).
+isElementOf(relationagente7estopo,rg21).
+isElementOf(relationestopoisoladornovo,rg21).

@@ -27,7 +27,21 @@ class Programs
 	{
 		$package = ["relations" => $relations,"goal" => $goal, "set" => $set, "nameFile" => $namefile];		
 		return (new NextState(new FirstState($package)))->next();
-	}
+    }
+    public function mountFileERCGroup()
+    {
+        $hasEntity= "";
+        $hasRelation = "";
+        $hasCondition = "";
+        for($i = 0; $i < 28; $i++)
+        {
+            $hasEntity = $hasEntity."hasEntity(goal".$i.",eg".$i.").\n";
+            $hasRelation = $hasRelation."hasRelation(goal".$i.",rg".$i.").\n";
+            $hasCondition = $hasCondition."hasCondition(goal".$i.",cg0).\n"; 
+        }
+		(new LoadFile(__DIR__."/../../file/set"))->openFile()->write($hasEntity.$hasRelation.$hasCondition)->close();
+
+    }
 }
 
 

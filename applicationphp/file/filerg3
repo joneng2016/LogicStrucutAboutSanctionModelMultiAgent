@@ -1,1 +1,3 @@
-isElementOf(relationxcondutivimetro,rg3).
+isElementOf(relationagente2condutivimetro,rg3).
+isElementOf(relationagente3condutivimetro,rg3).
+isElementOf(relationagente4condutivimetro,rg3).

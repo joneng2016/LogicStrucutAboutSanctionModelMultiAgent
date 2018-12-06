@@ -1,0 +1,5 @@
+isElementOf(relationagente2corda,rg20).
+isElementOf(relationagente3corda,rg20).
+isElementOf(relationagente5corda,rg20).
+isElementOf(relationagente6corda,rg20).
+isElementOf(relationagente7corda,rg20).
