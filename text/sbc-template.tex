@@ -21,6 +21,20 @@
 
 \section{Objetivo}
 
+
+Esse estudo está interessado em sistemas multiagente onde os agentes trabalham de forma colaborativa na tentativa de alcançar um propósito em comum, que são capazes de acatar normas, que podem cometer violações, que são submetidos a sanções, que interagem com outros agentes, que interagem com artefatos em sua volta, que possuem papeis claros, que percorrem objetivos claramente definidos, que são submetidos a um dado risco e que, na ocorrência de um acidente, se submetem a consequências ruins. 
+
+Um agente, nesse estudo, possui competências e autonomia necessária com a finalidade de alcançar os objetivos. Um agente pode ser reativo (responde a estimulos do ambiente) ou cognitivo (apresenta estados internos, possui capaciadade de realizar raciocínios). Contudo não é de interesse dos pesquisadores deste estudo definir um modelo delineado apenas para uma categoria específica de agentes.
+
+O conceito de sistema multiagente adotado neste estudo consiste em uma série de regras que definem como os agentes se comportam dentro de uma estrutura única.
+
+Normas são instruções claras do que um agente deve fazer. Uma violação, portanto, acontece quando um agente realiza a desobediência de uma norma. Se o agente desobediente sofrer uma punição pelo que fez, então esse agente foi submetido a uma sanção. 	
+
+
+
+
+\section{Contexto Específico}
+
 O modelo proposto neste estudo tem a finalidade representar atividades onde um grupo de pessoas devem atuar de forma colaborativa para resolver um dado problema. Essa situação pode ser dividida em etapas menores conhecidas como objetivos. As pessoas podem se relacionar entre si assim como também podem se relacionar com os artefatos (ferramentas, equipamentos de proteção individual, estruturas, equipamentos sujeitos a manutenção) dispostos ao redor. Os artefatos também podem se relacionar com outros artefatos (ex. chave de fenda é um artefato, parafuso é outro artefato, chave de fenda sendo usada para desparafusar o parafuso é uma relação entre esses dois artefatos).
 
 Para que um dado objetivo seja concluído de forma eficaz, é necessário que os profissionais envolvidos tenham acesso a certos artefatos. Não apenas isso, mas os profissionais devem ter a capacidade de estabelecer as relações necessárias para que o objetivo seja alcançado.
@@ -84,7 +98,6 @@ O conjunto $\Omega_{class}$ é o conjunto que representa os conceitos usados par
 	\item $RelationGoal = rg =\{r_n, ..., r_m\}$ - conjunto dos Relacionamentos que devem estar presentes para concluir um determinado objetivo $g_i$.		
 	\item $Role = \{\rho_1, ..., \rho_n\}$ - conjunto dos Papeis que um determinado agente pode exercer no grupo onde é um participante.	
 	\item $Goal = \{g_1, ..., g_n\}$ - conjunto dos Objetivos que devem ser alcançados pelos demais agentes.
-	\item $GoalPrerequisite = gp = \{g_n,...,g_m\}$ - conjunto de Objetivos que são pré-requisitos para alcançar um outro objetivo.
 	\item $Condition = \{c_1, ..., c_n\}$ - conjunto das Condições que devem ser mantidas ao longo da execução dos objetivos (ex. o dia deve está ensolarado para que a manutenção ocorra).
 	\item $ConditionGoal = cg = \{c_n, ..., c_m\}$ - conjunto de condições que devem ser mantidas para concluir um determinado objetivo $g_i$.
 	\item $Risk = \{risk_1, ..., risk_n\}$ - conjunto dos Riscos na ocorrência de Eventos Ruins.
@@ -121,7 +134,7 @@ Os subconjuntos de $\Omega_{relation}$ são dados pelos itens da lista a seguir;
 	\item $isReached(g_k)$ - O objetivo $g_k$ foi alcançado.
 	\item $stopIn(g_n,agg_m)$ - Para pelo menos um dos agentes que constituem o conjunto $agg_m$ o objetivo $g_n$ foi encerrado. 	 				
 	\item $stopIn(g_n)$ - A atividade como um todo teve de ser finalizada em $g_n$.	 			
-	\item $isPreRequisite(gp_i,g_j)$ - Os objetivos $g$ pertencentes ao grupo $gp_i$ devem ser concluído para que haja condição de executar $g_j$.	
+	\item $nextGoal(g_i,g_j)$ - Quando o objetivo $g_i$ é alcançado, o agente deve ir para o próximo objetivo $g_j$. 	
 	\item $hasCondition(g_i,cg_n)$ - Um objetivo do tipo $g_i$ possui certas condições $c$ que deve estar presentes e devem se manter durante toda execução deste objetivo. Essas condições $c$ devem estar contidas em $cg_n$. 
 	\item $hasEntity(g_i,eg_m)$ - Um objetivo $g_i$ tem um conjunto de entidades $eg_m$ onde todas as entidades presentes neste conjunto devem estar presentes no momento da execução desse objetivo.
 	\item $hasRelation(g_i,rg_n)$ - Um objetivo $g_i$ tem um conjunto de relacionamentos $rg_n$ onde todos esses relacionamentos devem ser feito para que este objetivo seja concluído.
@@ -134,75 +147,79 @@ Os subconjuntos de $\Omega_{relation}$ são dados pelos itens da lista a seguir;
 	\item $consequenceOfBadEvent(g_k,ag_i,risk_j,f_m)$ - Agente $ag$ sofre as consequências do risco $risk_j$ com a fatalidade $f_m$
 	\item $hasPossibility(r_l,p_m)$ - Possibilidade $p_m$ do evento $r_l$ gerar alguma consequência ruim, mesmo que os profissionais desenvolvam a atividade com perfeição sobre o ponto de vista técnico e de segurança. A possibilidade $p_m$ pode assumir apenas dois valores; $true,false$, ou seja - ou essa possibilidade existe ou não existe. 	
 	\item $affects(r_k,r_n)$ - Se uma relação $r_k$ não for feita, ou se essa relação for mal feita, então ela afeta negativamente alguma outra relação $r_n$ com a possibilidade de algo errado inicialmente dado por $false$ ser mudado para $true$. 	
-	\item $happensBadEvent(gr_n,r_m,ag_k)$ - O evento ruim de $g_r$ acontece em relação a um relacionamento necessário sobre um agente $ag_k$. 		
+	\item $happensBadEvent(r_m)$ - Acontece o evento ruim em uma dada relação $r_m$.		
+	\item $lastGoal(g_i,\rho_m)$ - é o ultimo objetivo $g_i$ associado a um certo papel $\rho_m$.		
 \end{enumerate}
 
 \subsection{Definição das Regras - $\Omega_{rule}$}
 
 Cada relação de implicabilidade a seguir é uma regra do modelo que faz parte do conjunto $\Omega_{rule}$. 
 
-Todo agente que é obrigado a alcançar um determinado objetivo deve ter a permissão para realizar essa ação.
 \begin{equation}\label{rel1}
 	hasObligation(\rho_m,g_j) \to hasPermission(\rho_m,g_j)  
 \end{equation}
 
-Um agente que tenta alcançar um objetivo sem que pelo menos uma das condições necessárias para isso esteja presente, comete uma violação conhecida como violação de condição.
 \begin{eqnarray}\label{rel3}\nonumber
 	hasCondition(g_i,cg_n) \wedge \neg isPresent(c_k) \wedge (c_k \in cg_n) \wedge tryReach(ag_m,g_i) \to \nonumber \\  
 	violationCondition(ag_m,g_j,c_k) 
 \end{eqnarray}
 
-Se um agente não executa, ou não tem condições de executar, um dado relacionamento $r_k$ necessário para concluir o objetivo, então o agente cometeu uma violação de relacionamento. 
 \begin{eqnarray}\label{rel4}\nonumber
 	hasRelation(g_i,rg_n)\wedge \neg isPresent(r_k) \wedge (r_k \in rg_n) \wedge tryReach(ag_m,g_i) \to \nonumber \\
 	violationRelation(ag_m,g_i,r_k)
 \end{eqnarray}
 
-Se ao tentar alcançar um determinado objetivo pelo menos uma das entidades necessárias para isso está ausente, então acontece um uma violação de entidade. 
 \begin{eqnarray}\label{rel5}\nonumber
 	hasEntity(g_i,eg_n) \wedge \neg isPresent(e_k) 	\wedge (e_k \in eg_n) \wedge tryReach(ag_m,g_i) \to \nonumber \\ violationEntity(ag_m,g_i,e_k)  
 \end{eqnarray}
 
 
-Uma violação de condição tem como consequências a ocorrência do risco (sobre o agente que cometeu a violação) relacionado a condição que não estava presente. Esse risco pode apresentar diferentes graus de fatalidade.
 \begin{eqnarray}\label{rel9}\nonumber
 	violationCondition(ag_m,g_i,c_k)  \wedge hasRisk(c_k,risk_j,f_m) \to \\ 
 	consequenceOfBadEvent(g_i,ag_m,risk_j,f_m)
 \end{eqnarray}
 
-Uma violação de relacionamento tem como consequência a ocorrência do risco (sobre o agente que cometeu a violação) vinculada ao relacionamento que não foi feito. Esse risco pode apresentar diferentes graus de fatalidade.
 \begin{eqnarray}\label{rel10}\nonumber
 	violationRelation(ag_m,g_i,r_k) \wedge hasRisk(r_k,risk_j,f_m) \to \\ 
 	consequenceOfBadEvent(g_i,ag_m,risk_j,f_m)
 \end{eqnarray}
 
-A ocorrência de uma violação de relacionamento em $r_k$ afeta um outro relacionamento $r_n$. A possibilidade de algo ruim acontecer em $r_n$ era inicialmente dada como $false$, contudo, com a ocorrência da violação de $r_k$, agora essa possibilidade é dada como  $true$.
+
 \begin{eqnarray}\label{rel11}\nonumber
 	violationRelation(ag_m,g_i,r_k) \wedge affects(r_k,r_n) \wedge hasPossibility(r_n,false) \to \\  
 	hasPossibility(r_n,true)
 \end{eqnarray}
 
-Uma violação de entidade gera a interrupção imediata da atividade no objetivo de ocorrência.
+
 \begin{eqnarray}\label{rel12}
 	violationEntity(ag_m,g_i,e_k) \to stopIn(g_i)
 \end{eqnarray}
 
-Se algum evento ruim acontecer sobre o relacionamento $r_k$ no momento em que o agente está tentando alcançar o objetivo $ag_m$, então esse agente será submetido as consequências do risco $risk_j$ vinculado a esse relacionamento $r_k$.
+
 \begin{eqnarray}\label{rel13}\nonumber
-	hasRelation(g_i,rg_n) \wedge (r_k \subset rg_n) \wedge hasRisk(r_k,risk_j,f_m) \wedge tryReach(ag_m,g_i) \nonumber \\ 
-	\to consequenceOfBadEvent(g_i,ag_m,risk_j,f_m)
+	hasPossibility(r_k,true) \wedge  happensBadEvent(r_k) \wedge hasRelation(g_i,rg_n) \wedge (r_k \subset rg_n) \nonumber \\ 
+	\wedge hasRisk(r_k,risk_j,f_m) \wedge tryReach(ag_m,g_i) \nonumber \\ 
+	\to consequenceOfBadEvent(g_i,ag_m,risk_j,f_m) \nonumber \\
 \end{eqnarray}
 
-A ocorrência de um evento ruim gera imediata interrupção das atividades.
 \begin{eqnarray}\label{rel14}
 	consequenceOfBadEvent(g_k,ag_m,risk_j,f_m) \to stopIn(g_k)
 \end{eqnarray}
 
-Se o objetivo não é encerrado para pelo menos um dos agentes que pertence a $agg_n$, ou seja agentes que tentam executar (onde parte desses agentes são todos aqueles que são obrigados a alcançar o objetivo), então o objetivo foi alcançado.  
-
 \begin{eqnarray}\label{rel15}
 	\neg stopIn(g_k,agg_n) \wedge (ago_n \subset agg_n) \to isReached(g_k)
 \end{eqnarray}
+
+\begin{eqnarray}\label{rel16}
+	hasRole(ag_n,\rho_m) \wedge hasPermission(\rho_m,g_j) \wedge nextGoal(g_i,g_j) \wedge isReached(g_i) \nonumber \\
+	\to tryReach(ag_n,g_j) \nonumber \\
+\end{eqnarray}
+
+\begin{eqnarray}\label{rel16}
+	hasRole(ag_n,\rho_m) \wedge hasPermission(\rho_m,g_i) \wedge lastGoal(g_i,\rho_m) \wedge isReached(g_i) \nonumber \\
+	\to stopIn(g_i) \nonumber \\
+\end{eqnarray}
+
 
 \subsection{Definindo Conceitos de Norma, Violação e de Sanção}
 
