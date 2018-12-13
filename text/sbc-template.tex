@@ -21,30 +21,28 @@
 
 \section{Objetivo}
 
+Um dos interesses deste estudo reside na investigação, dentro do contexto computacional, de cenários onde os agentes cometem erros durante a execução de algum atividade. Tendo em vista esses erros, eles podem prejudicar a si mesmos como seus colegas. Assim sendo, esse estudo investiga esse cenário por meio de um modelo que incorpora normas (instruções claras que devem ser fornecidas a um agente), violação (ocorre quando um agente descumpri uma norma) e sanção (consequências decorrentes de uma violação desta norma). Não apenas isso, mas nesse cenário há a consideração de que essas questões estão atreladas aos artefatos que são usados pelos agentes. Esses artefatos são objetos passivos que estão sujeitos a influencia da ação dos agentes. Os artefatos são usados para representar objetos como ferramentas e máquinas, por exemplo. 
 
-Esse estudo está interessado em sistemas multiagente onde os agentes trabalham de forma colaborativa na tentativa de alcançar um propósito em comum, que são capazes de acatar normas, que podem cometer violações, que são submetidos a sanções, que interagem com outros agentes, que interagem com artefatos em sua volta, que possuem papeis claros, que percorrem objetivos claramente definidos, que são submetidos a um dado risco e que, na ocorrência de um acidente, se submetem a consequências ruins. 
+Os pesquisadores consideram, neste estudo, que as violações não estão relacionadas apenas aos artefatos, mas também nas relações entre todas as entidades existentes ao longo do cenário. As entidades compõem todos os elementos ativos (agentes) bem como os elementos passivos (artefatos) vinculados ao meio. Assim sendo, entidade é todo o ente que existe por si mesmo. As condições ambientais onde os agentes e os artefatos estão inseridos também são considerados neste estudo. O entendimento que se tem por condição ambiental consiste em um dado processo que existe no ambiente e que, de certa forma, pode influenciar a execução das atividades dos agentes. Como condições ambientais têm-se por exemplo os seguintes eventos; chuva, sol, vento e neve. 
 
-Um agente, nesse estudo, possui competências e autonomia necessária com a finalidade de alcançar os objetivos. Um agente pode ser reativo (responde a estimulos do ambiente) ou cognitivo (apresenta estados internos, possui capaciadade de realizar raciocínios). Contudo não é de interesse dos pesquisadores deste estudo definir um modelo delineado apenas para uma categoria específica de agentes.
+Não é do interesse deste estudo investigar condições normativas cuja caráter punitivo advém de sanções administrativas e jurídicas que ocorre no que tange a decisão de uma certa autoridade. Assim sendo, o modelo resultante deve ser capaz de representar situações onde os agentes sofrem consequências físicas negativas resultantes de uma cadeia de causalidade que foi ocasionada pelo erro de alguém (usando, para isso, o conceito de norma, violação e sanção). Dada essa circunstância, a representação tratada neste estudo deve trabalhar, em sua estrutura interna, o conceito de risco. É digno de nota que o termo risco apresenta um espectro semântico bastante amplo podendo ser usado nos mais diferentes contextos possíveis (ex. risco financeiro de um dado ativo). Por conta disto, é necessário frisar que neste texto o vocábulo risco é usado no mesmo significado atribuído pela comunidade de Engenharia de Segurança. 
 
-O conceito de sistema multiagente adotado neste estudo consiste em uma série de regras que definem como os agentes se comportam dentro de uma estrutura única.
-
-Normas são instruções claras do que um agente deve fazer. Uma violação, portanto, acontece quando um agente realiza a desobediência de uma norma. Se o agente desobediente sofrer uma punição pelo que fez, então esse agente foi submetido a uma sanção. 	
-
+As relações causais, em muitos casos, são complexas demais para serem mapeadas em seu mínimos detalhes. Por conta disso, muitos estudos realizam uma tratativa probabilística dessas relações. O modelo a que se propõem esse estudo não pretende tratar nenhuma das duas linhas. Para isso, os pesquisadores decidiram por fazer uso do conceito de possibilidade. Essa situação é usada para compreender casos onde um agente sofre consequências negativas por meio de eventos que possuem uma certa natureza aleatória. O cenário neste estudo se restringe apenas aos mundos onde esses eventos ruins (apresentam consequências ruins aos profissionais envolvidos) se tornam possíveis dado ao vacilo de algum profissional em uma atividade anterior.   
 
 
+Muitas atividades praticas são definidas em termos de objetivos. Não apenas isso, mas essa linha é muito bem verificada pela acadêmica científica e está presente em modelos de \textit{SMA} dos mais diversos, tal como o \textit{MOISE}. Assim sendo, a representação a que se propõem neste estudo orienta os agentes em termos de objetivos que devem ser atingidos. Um objetivo define um estado de mundo $S_g$. Assim sendo, se o mundo está um estado $S_a$ onde $S_a \neq S_g$, os agentes devem fazer o possível para que o estado do mundo seja $S_g$. Neste estudo, um estado mundo é dado por todos os estados de todas as entidades.
 
-\section{Contexto Específico}
+Não é possível definir um agente dentro de uma sociedade sem ao menos definir o seu papel (ou função). Por exemplo, se há o interesse em construir um modelo de \textit{SMA} que seja apropriado para descrever o cenário de um hospital, essa representação pode ser entendida como demasiadamente pobre se não levar em consideração a função do médico. Assim sendo, o modelo presente neste texto deve considerar o papel do agente. 
 
-O modelo proposto neste estudo tem a finalidade representar atividades onde um grupo de pessoas devem atuar de forma colaborativa para resolver um dado problema. Essa situação pode ser dividida em etapas menores conhecidas como objetivos. As pessoas podem se relacionar entre si assim como também podem se relacionar com os artefatos (ferramentas, equipamentos de proteção individual, estruturas, equipamentos sujeitos a manutenção) dispostos ao redor. Os artefatos também podem se relacionar com outros artefatos (ex. chave de fenda é um artefato, parafuso é outro artefato, chave de fenda sendo usada para desparafusar o parafuso é uma relação entre esses dois artefatos).
+Agentes são máquinas de estado que possuem autonomia para tomar decisões. Em termos genéricos, é possível classificar dois tipos de agentes; reativos e cognitivos. Os agentes reativos apenas reagem a estímulos do meio. A outra classe de agentes são os cognitivos, possuem estados internos e tem a capacidade de realizar raciocínios. O tipo de agente (bem como sua estrutura interna no que diz respeito a tomada de decisões) não faz parte do objeto de estudo desta pesquisa. Assim sendo, o modelo em interesse não delimita o vocabulário para estruturar a concepção do agente propriamente dito. 
 
-Para que um dado objetivo seja concluído de forma eficaz, é necessário que os profissionais envolvidos tenham acesso a certos artefatos. Não apenas isso, mas os profissionais devem ter a capacidade de estabelecer as relações necessárias para que o objetivo seja alcançado.
 
-Outra finalidade do modelo consiste em representar condições que devem ser mantidas ao longo da atividade. Isso, pois se essas condições forem desfeitas - a atividade deve ser encerrada de imediato, caso contrário as pessoas envolvidas nesta manutenção estarão submetidas a risco de morte. Por exemplo; para realizar uma dada manutenção, a umidade relativa do ar não pode ser superior a 70 porcento. 
+Neste estudo, os pesquisadores têm interesse em apresentar um vocabulário específico no que tange aos conceitos presentes nesta seção. Esse modelo, portanto, deve ser capaz de representar organizações tais como trabalhadores em uma obra, industrias, profissionais no âmbito hospitalar e estruturas deste gênero entendendo como se dá as violações em âmbitos específicos (falta de ferramentas, não conseguir executar procedimentos apropriados, executar uma atividade cujo momento não era adequado para isso). 
 
-O modelo proposto neste estudo deve ser capaz de mapear e avaliar as consequências dos erros que os profissionais podem cometer. Existe uma infinidade de erros e consequências que podem ser considerados em um estudo deste gênero. Assim sendo, os pesquisadores deste estudo se limitaram a alguns erros, que são: executar uma ação quando não há condições apropriadas para isso, manipular artefatos de maneira inapropriada ou inadvertida e escolher os artefatos inapropriados para cumprir com uma determinada atividade.
+A fim de se obter uma estrutura representacional formal com aspecto de especificidade altamente notório, este estudo faz uso da teoria dos modelos (onde os conceitos são escritos em termos de conjuntos) e lógica de predicados (usado para definir as relações entre os conceitos). Não apenas isso, há o interesse em definir regras que tem como por finalidade exprimir a transição de estados possessível de mundo. Assim sendo, essas regras, neste modelo, são definidas em termos de relações de implicabilidade que são delineadas pelas \textit{Cláusulas de Horn}.
 
-No que diz respeito as consequências dos erros, os pesquisadores se limitaram a duas situações: 1 - consequências negativas imediatas que acontecem sobre o indivíduo errante, 2 - a consequência ruim que se manifesta em objetivos diferentes daquele em que o erro foi cometido e sobre o mesmo ou outro indivíduo. Em ambos os casos essas consequências são efeitos físicos negativos que alguém passa a sofrer. A intensidade dessas consequências variam desde uma leve lesão a morte.
 
+Para o propósito aqui posto, se não há infinitas maneiras, há ao menos um numero muito variado de formas para construir um modelo com os objetivos aqui definidos. Contudo, esse texto desbrava ao menos uma das formas de se realizar isso, analisa a abordagem sobre um estudo e define uma comparação com os modelos já existentes dada pela comunidade acadêmica. A análise comparativa é estruturada em termos de; conceitos (verificar quais são similares e quais são diferentes), relações entre os conceitos, capacidade de generalização (quanto mais mundos possíveis o modelo é capaz de descrever, mais genérico o é), capacidade de especificação tendo como referência circunstâncias que correspondem ao presente neste texto introdutório e uma verificação sobre como esses critérios se dão dos modelos em relação a um dado estudo de caso aqui presente. 
 
 
 \section{Exemplo - Estudo de Caso}
@@ -173,7 +171,6 @@ Cada relação de implicabilidade a seguir é uma regra do modelo que faz parte 
 	hasEntity(g_i,eg_n) \wedge \neg isPresent(e_k) 	\wedge (e_k \in eg_n) \wedge tryReach(ag_m,g_i) \to \nonumber \\ violationEntity(ag_m,g_i,e_k)  
 \end{eqnarray}
 
-
 \begin{eqnarray}\label{rel9}\nonumber
 	violationCondition(ag_m,g_i,c_k)  \wedge hasRisk(c_k,risk_j,f_m) \to \\ 
 	consequenceOfBadEvent(g_i,ag_m,risk_j,f_m)
@@ -184,12 +181,10 @@ Cada relação de implicabilidade a seguir é uma regra do modelo que faz parte 
 	consequenceOfBadEvent(g_i,ag_m,risk_j,f_m)
 \end{eqnarray}
 
-
 \begin{eqnarray}\label{rel11}\nonumber
 	violationRelation(ag_m,g_i,r_k) \wedge affects(r_k,r_n) \wedge hasPossibility(r_n,false) \to \\  
 	hasPossibility(r_n,true)
 \end{eqnarray}
-
 
 \begin{eqnarray}\label{rel12}
 	violationEntity(ag_m,g_i,e_k) \to stopIn(g_i)
