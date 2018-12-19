@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.17)  19 DEC 2018 17:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.17)  19 DEC 2018 18:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**modelo_dissertacao.tex
-(./modelo_dissertacao.tex
+**dissertacao.tex
+(./dissertacao.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 4 language(s) loaded.
 (./normas-utf-tex.cls (./cvs-id.def)
@@ -714,8 +714,8 @@ File: pppdftex.def 2017/10/31 v0.5l Pdfpages driver for pdfTeX (AM)
 \c@AM@survey=\count120
 \AM@templatesizebox=\box55
 )
-(./modelo_dissertacao.aux)
-\openout1 = `modelo_dissertacao.aux'.
+(./dissertacao.aux)
+\openout1 = `dissertacao.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
 LaTeX Font Info:    ... okay on input line 46.
@@ -730,8 +730,7 @@ LaTeX Font Info:    ... okay on input line 46.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
 LaTeX Font Info:    ... okay on input line 46.
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 46.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 Package lastpage Info: Please have a look at the pageslts package at
@@ -917,58 +916,81 @@ Package pdftex.def Info: ata.pdf , page1 used on input line 62.
 ] [7
 
 
-] (./modelo_dissertacao.lof)
+] (./dissertacao.lof)
 \tf@lof=\write3
-\openout3 = `modelo_dissertacao.lof'.
+\openout3 = `dissertacao.lof'.
 
  [8
 
-]
-(./modelo_dissertacao.lot)
+] (./dissertacao.lot)
 \tf@lot=\write4
-\openout4 = `modelo_dissertacao.lot'.
+\openout4 = `dissertacao.lot'.
 
  [9
 
-] (./modelo_dissertacao.loquadro)
+]
+(./dissertacao.loquadro)
 \tf@loquadro=\write5
-\openout5 = `modelo_dissertacao.loquadro'.
+\openout5 = `dissertacao.loquadro'.
 
  [10
 
-]
-(./modelo_dissertacao.lsg)
+] (./dissertacao.lsg)
 \tf@lsg=\write6
-\openout6 = `modelo_dissertacao.lsg'.
+\openout6 = `dissertacao.lsg'.
 
  [11
 
-] (./modelo_dissertacao.lsb)
+] (./dissertacao.lsb)
 \tf@lsb=\write7
-\openout7 = `modelo_dissertacao.lsb'.
+\openout7 = `dissertacao.lsb'.
 
- [12
 
-]
-(./modelo_dissertacao.toc [13
+[12
+
+] (./dissertacao.toc [13
 
 
 ])
 \tf@toc=\write8
-\openout8 = `modelo_dissertacao.toc'.
+\openout8 = `dissertacao.toc'.
 
  [14]
 Cap\'{\i }tulo 1.
-[13
+(./estrutura/introducao/genintrod.tex) (./estrutura/introducao/motivacao.tex)
+(./estrutura/introducao/genobjetivos.tex)
+(./estrutura/introducao/objetivogeral.tex)
+(./estrutura/introducao/objetivoespecifico.tex) [13
 
 
 ]
 Cap\'{\i }tulo 2.
-[14
+(./estrutura/fundamentacaoteorica/agentes.tex)
+(./estrutura/fundamentacaoteorica/sma.tex)
+(./estrutura/fundamentacaoteorica/normas.tex)
+(./estrutura/fundamentacaoteorica/sancoes.tex)
+(./estrutura/fundamentacaoteorica/violacoes.tex)
+(./estrutura/fundamentacaoteorica/riscos.tex)
+(./estrutura/fundamentacaoteorica/poss.tex) [14
 
 ]
 Cap\'{\i }tulo 3.
-[15
+(./estrutura/metodologia/genmet.tex
+
+! Package inputenc Error: Unicode char ṕ (U+1E55)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ofkhgojfgpoksdogśgp[sigṕ
+                               wgs
+? 
+) (./estrutura/metodologia/analisedosmodelos.tex)
+(./estrutura/metodologia/acomprof.tex)
+(./estrutura/metodologia/construcaomodelo.tex)
+(./estrutura/metodologia/implementacao.tex) [15
 
 ]
 Cap\'{\i }tulo 4.
@@ -983,7 +1005,7 @@ Cap\'{\i }tulo 6.
 [18
 
 ]
-No file modelo_dissertacao.bbl.
+No file dissertacao.bbl.
 Apendice A.
 [19
 
@@ -999,21 +1021,21 @@ AED: lastpage setting LastPage
 | Comentario, sugestao ou critica sobre o abnTeX? Entre em contato: |
 |                  http://abntex.codigolivre.org.br                 |
 +-------------------------------------------------------------------+
-(./modelo_dissertacao.aux) ) 
+(./dissertacao.aux) ) 
 Here is how much of TeX's memory you used:
- 6904 strings out of 494903
- 99249 string characters out of 6179960
+ 6960 strings out of 494903
+ 100713 string characters out of 6179960
  177847 words of memory out of 5000000
- 9994 multiletter control sequences out of 15000+600000
+ 9996 multiletter control sequences out of 15000+600000
  40932 words of font info for 94 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 43i,18n,43p,291b,450s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base
-/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/urw/times/utmri8a.pfb>
-Output written on modelo_dissertacao.pdf (24 pages, 610738 bytes).
+ 43i,18n,43p,284b,450s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc
+}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/urw/times/utmri8a.pfb>
+Output written on dissertacao.pdf (24 pages, 611093 bytes).
 PDF statistics:
  106 PDF objects out of 1000 (max. 8388607)
  70 compressed objects within 1 object stream

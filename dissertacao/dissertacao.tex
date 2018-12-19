@@ -1,0 +1,247 @@
+\documentclass[openright]{normas-utf-tex} %openright = o capitulo comeca sempre em paginas impares
+
+\special{papersize=210mm,297mm}
+
+\usepackage[alf,abnt-emphasize=bf,bibjustif,recuo=0cm, abnt-etal-cite=2, abnt-etal-list=99]{abntcite} %configuracao correta das referencias bibliograficas.
+
+\usepackage[brazil]{babel} % pacote portugues brasileiro
+\usepackage[utf8]{inputenc} % pacote para acentuacao direta
+\usepackage{amsmath,amsfonts,amssymb} % pacote matematico
+\usepackage{graphicx} % pacote grafico
+\usepackage{times} % fonte times
+\usepackage[final]{pdfpages} % adicao da ata
+
+\instituicao{Universidade Tecnológica Federal do Paraná} % nome da instituicao
+\programa{Programa de Pós-graduação em Engenharia Elétrica e Informática Industrial} % nome do programa
+\area{Informática Industrial} % [Engenharia Biom\'edica] ou [Inform\'atica Industrial] ou [Telem\'atica]
+
+\documento{Dissertação} % [Disserta\c{c}\~ao] ou [Tese]
+\nivel{Mestrado} % [Mestrado] ou [Doutorado]
+\titulacao{Mestre} % [Mestre] ou [Doutor]
+
+\titulo{{Título em português}} % titulo do trabalho em portugues
+\title{\MakeUppercase{Title in English}} % titulo do trabalho em ingles
+
+\autor{Nome do Autor} % autor do trabalho
+\cita{SOBRENOME, Nome} % sobrenome (maiusculas), nome do autor do trabalho
+
+\palavraschave{Palavra-chave 1, Palavra-chave 2, ...} % palavras-chave do trabalho
+\keywords{Keyword 1, Keyword 2, ...} % palavras-chave do trabalho em ingles
+
+\comentario{\UTFPRdocumentodata\ apresentada ao \UTFPRprogramadata\ da \ABNTinstituicaodata\ como requisito parcial para obtenção do grau de ``\UTFPRtitulacaodata\ em Ciências'' -- Área de Concentração: \UTFPRareadata.}
+
+\orientador{Nome do Orientador} 
+\local{Curitiba} % cidade
+\data{\the\year} % ano automatico
+
+% desativa hifenizacao mantendo o texto justificado.
+% thanks to Emilio C. G. Wille
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+\sloppy
+
+%---------- Inicio do Documento ----------
+\begin{document}
+
+\capa % geracao automatica da capa
+\folhaderosto % geracao automatica da folha de rosto
+
+% Lembre-se de que a ficha catalografica eh impressa no verso da folha de rosto
+% Ficha catalografica
+\fichacatpum{T137}
+\fichacatautor{Sobrenome, Nome}
+\fichacatpgbib{\pageref{bibstart}-\pageref{bibend}}
+\fichacatpalcha{1. Teoria do controle. 2. Redes de comutaÃ§Ã£o. 3. TCP/IP (Protocolo de rede de computaÃ§Ã£o), ...}
+\fichacatpdois{CDD (22. ed.) 621.3}
+\fichacatbib{Biblioteca xxxxxx}
+\fichacat
+
+% insercao da ATA
+\includepdf{ata.pdf}
+
+% dedicatoria
+\begin{dedicatoria}
+Texto da dedicat\'oria.
+\end{dedicatoria}
+
+% agradecimentos (opcional)
+\begin{agradecimentos}
+Texto dos agradecimentos.
+\end{agradecimentos}
+
+% epigrafe (opcional)
+\begin{epigrafe}
+Texto da ep\'igrafe.
+\end{epigrafe}
+
+%resumo
+\begin{resumo}
+Texto do resumo (m\'aximo de 500 palavras).
+\end{resumo}
+
+%abstract
+\begin{abstract}
+Abstract text (maximum of 500 words).
+\end{abstract}
+
+% listas (opcionais, mas recomenda-se a partir de 5 elementos)
+\listadefiguras % geracao automatica da lista de figuras
+\listadetabelas % geracao automatica da lista de tabelas
+\listadequadros % adivinhe :)
+\listadesiglas % geracao automatica da lista de siglas
+\listadesimbolos % geracao automatica da lista de simbolos
+
+% sumario
+\sumario % geracao automatica do sumario
+
+\setcounter{page}{12}
+
+%---------- Primeiro Capitulo ----------
+\chapter{Introdução}
+
+	\input{estrutura/introducao/genintrod.tex}
+	
+	\section{Motivação}	
+	
+		\input{estrutura/introducao/motivacao.tex}
+	
+	\section{Objetivos}
+
+		\input{estrutura/introducao/genobjetivos.tex}
+
+		\subsection{Objetivo Geral}
+
+			\input{estrutura/introducao/objetivogeral.tex}
+			
+		\subsection{Objetivos Específicos}
+
+			\input{estrutura/introducao/objetivoespecifico.tex}
+
+
+%---------- Segundo Capitulo ----------
+
+\chapter{Fundamentação Teórica}
+\label{chap:fundteoric}
+
+	\section{Agentes}
+
+		\input{estrutura/fundamentacaoteorica/agentes.tex}
+
+	\section{Sociedades Multiagentes}
+
+		\input{estrutura/fundamentacaoteorica/sma.tex}
+
+	\section{Normas}
+
+		\input{estrutura/fundamentacaoteorica/normas.tex}
+
+	\section{Sanções}
+
+		\input{estrutura/fundamentacaoteorica/sancoes.tex}
+
+	\section{Violações}
+
+		\input{estrutura/fundamentacaoteorica/violacoes.tex}
+
+	\section{Riscos}
+
+		\input{estrutura/fundamentacaoteorica/riscos.tex}
+
+	\section{Possibilidades}
+
+		\input{estrutura/fundamentacaoteorica/poss.tex}
+
+\chapter{Metodologia}
+\label{chap:metod}
+
+	\input{estrutura/metodologia/genmet.tex}
+
+	\section{Análise dos Modelos}
+
+		\input{estrutura/metodologia/analisedosmodelos.tex}
+
+	\section{Acompanhamento de Profissionais em Atividade de Risco}
+
+		\input{estrutura/metodologia/acomprof.tex}
+
+	\section{Construção do Modelo}
+
+		\input{estrutura/metodologia/construcaomodelo.tex}
+
+	\section{Implementação}
+
+		\input{estrutura/metodologia/implementacao.tex}
+
+\chapter{Resultados}
+\label{chap:resul}
+
+	\input{estrutura/resultados/genresult.tex}
+	
+	\section{Estrutura Conceitual}
+
+	\input{estrutura/resultados/genresult.tex}
+
+		\subsection{Módulos}
+
+		\subsection{Conjuntos}
+
+		\subsection{Predicados}
+
+		\subsection{Regras}
+	\section{UML}
+		\subsection{Diagrama de Classes}
+
+		\subsection{Diagrama de Atividades}
+
+	\section{Caso de Estudo}
+
+	\section{Raciocínio}
+	
+	\section{Validação}
+
+\chapter{Análise Comparativa}
+	\section{MOISE+}
+		\subsection{Estrutura}
+		\subsection{Análise comparativa}
+
+	\section{Dastani}
+		\subsection{Estrutura}
+		\subsection{Análise comparativa}
+
+	\section{V3S}
+		\subsection{Estrutura}
+		\subsection{Análise comparativa}
+
+
+	\section{NormMAS}
+		\subsection{Estrutura}
+		\subsection{Análise comparativa}
+
+
+	\section{Perspectiva Genérica}
+
+
+\label{chap:anacomp}
+
+\chapter{Conclusão}
+\label{chpa:conc}
+	\section{Avaliação dos Objetivos}
+	\section{Trabalhos Futuros}
+
+%---------- Referencias ----------
+\clearpage % this is need for add +1 to pageref of bibstart used in 'ficha catalografica'.
+\label{bibstart}
+\bibliography{reflatex} % geracao automatica das referencias a partir do arquivo reflatex.bib
+\label{bibend}
+
+\apendice
+\chapter{Nome do Ap\^endice}
+
+\anexo
+\chapter{Nome do Anexo}
+
+
+\end{document}
+
