@@ -1,0 +1,61 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{1.52 }
+
+\bibitem[Abbas et al. 2015]{organiationofmultiagentsystem}
+\abntrefinfo{Abbas et al.}{ABBAS et al.}{2015}
+{ABBAS, H.; SHAHEEN, S.; AMIN, M. H. Organization of multi-agent systems: An
+  overview.
+\textbf{International Journal of Intelligent Information Systems}, 06 2015.}
+
+\bibitem[Castelfranchi 1998]{modelingsocialactionforaiagents}
+\abntrefinfo{Castelfranchi}{CASTELFRANCHI}{1998}
+{CASTELFRANCHI, C. Modelling social action for ai agents.
+\textbf{Artificial Intelligence}, v.~103, n.~1, p. 157 -- 182, 1998.
+ISSN 0004-3702.
+Artificial Intelligence 40 years later.
+Dispon{\'\i}vel em:
+  $<$http://www.sciencedirect.com/science/article/pii/S0004370298000563$>$.}
+
+\bibitem[H{\"u}bner et al. 2002]{mosieframework}
+\abntrefinfo{H{\"u}bner et al.}{H{\"U}BNER et al.}{2002}
+{H{\"U}BNER, J.~F.; SICHMAN, J.~S.; BOISSIER, O. A model for the structural,
+  functional, and deontic specification of organizations in multiagent systems.
+  In:  BITTENCOURT, G.; RAMALHO, G.~L. (Ed.). \textbf{Advances in Artificial
+  Intelligence}. Berlin, Heidelberg: Springer Berlin Heidelberg, 2002. p.
+  118--128.
+ISBN 978-3-540-36127-5.}
+
+\bibitem[Jennings e Lespérance 2000]{whatisagent}
+\abntrefinfo{Jennings e Lespérance}{JENNINGS; LESPéRANCE}{2000}
+{JENNINGS, N. R.; LESPéRANCE, Y. \textbf{Intelligent Agents VI. Agent
+  Theories, Architectures, and Languages: 6th International Workshop,
+  ATAL’99, Orlando, Florida, USA, July 15-17, 1999. Proceedings}. [S.l.:
+  s.n.], 2000.
+ISBN 978-3-540-67200-5.}
+
+\bibitem[L{\'o}pez e Luck 2004]{amodelmultiagentsystemdynamicrelationship}
+\abntrefinfo{L{\'o}pez e Luck}{L{\'O}PEZ; LUCK}{2004}
+{L{\'O}PEZ, F. L{\'o}pez~y; LUCK, M. A model of normative multi-agent systems
+  and dynamic relationships. In:  LINDEMANN, G.; MOLDT, D.; PAOLUCCI, M. (Ed.).
+  \textbf{Regulated Agent-Based Social Systems}. Berlin, Heidelberg: Springer
+  Berlin Heidelberg, 2004. p. 259--280.
+ISBN 978-3-540-25867-4.}
+
+\bibitem[Weiss 2000]{multiagentsystemmodernapproach}
+\abntrefinfo{Weiss}{WEISS}{2000}
+{WEISS, G. Multiagent systems: A modern approach to distributed artificial
+  intelligence.
+In:  \underline{\ \ \ \ \ \ \ \ }. [S.l.: s.n.], 2000. v.~1, p. --648.
+ISBN 0262731312.}
+
+\bibitem[Wooldridge 2002]{multiagentsystemwhatis}
+\abntrefinfo{Wooldridge}{WOOLDRIDGE}{2002}
+{WOOLDRIDGE, M. An introduction to multiagent systems.
+In:  \underline{\ \ \ \ \ \ \ \ }. [S.l.: s.n.], 2002. p. --348.
+ISBN 047149691X.}
+
+\end{thebibliography}

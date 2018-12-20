@@ -1,4 +1,4 @@
-\babel@toc {brazil}{}
+\select@language {brazil}
 \contentsline {chapter}{\numberline {1}\MakeUppercase {Introdu\IeC {\c c}\IeC {\~a}o}}{13}
 \contentsline {section}{\numberline {1.1}\MakeUppercase {Motiva\IeC {\c c}\IeC {\~a}o}}{13}
 \contentsline {section}{\numberline {1.2}\MakeUppercase {Objetivos}}{13}
@@ -6,12 +6,13 @@
 \contentsline {subsection}{\numberline {1.2.2}Objetivos Espec\IeC {\'\i }ficos}{13}
 \contentsline {chapter}{\numberline {2}\MakeUppercase {Fundamenta\IeC {\c c}\IeC {\~a}o Te\IeC {\'o}rica}}{14}
 \contentsline {section}{\numberline {2.1}\MakeUppercase {Agentes}}{14}
-\contentsline {section}{\numberline {2.2}\MakeUppercase {Sociedades Multiagentes}}{14}
-\contentsline {section}{\numberline {2.3}\MakeUppercase {Normas}}{14}
-\contentsline {section}{\numberline {2.4}\MakeUppercase {San\IeC {\c c}\IeC {\~o}es}}{14}
-\contentsline {section}{\numberline {2.5}\MakeUppercase {Viola\IeC {\c c}\IeC {\~o}es}}{14}
-\contentsline {section}{\numberline {2.6}\MakeUppercase {Riscos}}{14}
-\contentsline {section}{\numberline {2.7}\MakeUppercase {Possibilidades}}{14}
+\contentsline {section}{\numberline {2.2}\MakeUppercase {Artefatos}}{14}
+\contentsline {section}{\numberline {2.3}\MakeUppercase {Sistema Multiagente}}{14}
+\contentsline {section}{\numberline {2.4}\MakeUppercase {Normas}}{14}
+\contentsline {section}{\numberline {2.5}\MakeUppercase {San\IeC {\c c}\IeC {\~o}es}}{14}
+\contentsline {section}{\numberline {2.6}\MakeUppercase {Viola\IeC {\c c}\IeC {\~o}es}}{14}
+\contentsline {section}{\numberline {2.7}\MakeUppercase {Riscos}}{14}
+\contentsline {section}{\numberline {2.8}\MakeUppercase {Possibilidades}}{14}
 \contentsline {chapter}{\numberline {3}\MakeUppercase {Metodologia}}{15}
 \contentsline {section}{\numberline {3.1}\MakeUppercase {An\IeC {\'a}lise dos Modelos}}{15}
 \contentsline {section}{\numberline {3.2}\MakeUppercase {Acompanhamento de Profissionais em Atividade de Risco}}{15}
@@ -46,5 +47,6 @@
 \contentsline {chapter}{\numberline {6}\MakeUppercase {Conclus\IeC {\~a}o}}{18}
 \contentsline {section}{\numberline {6.1}\MakeUppercase {Avalia\IeC {\c c}\IeC {\~a}o dos Objetivos}}{18}
 \contentsline {section}{\numberline {6.2}\MakeUppercase {Trabalhos Futuros}}{18}
-\contentsline {chapter}{Ap\^endice{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Nome do Ap\^endice}}{19}
-\contentsline {chapter}{Anexo{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Nome do Anexo}}{20}
+\contentsline {chapter}{REFER\^ENCIAS}{19}
+\contentsline {chapter}{Ap\^endice{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Nome do Ap\^endice}}{20}
+\contentsline {chapter}{Anexo{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Nome do Anexo}}{21}
