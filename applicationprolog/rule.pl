@@ -11,8 +11,6 @@ stopIn(GOAL) :- consequenceOfBadEvent(GOAL,AGENT,RISK,FATALITY).
 isReached(GOAL) :- notStopIn(GOAL,AGENTDONETHIS),isSubSet(AGENTDONETHIS,AGENTOBLIGATIOTHIS).
 
 
-
-
 hasRole(agente1,supervisor).
 hasRole(agente2,executor1).
 hasRole(agente3,executor1).
@@ -657,8 +655,8 @@ affects(relationagente7Pano,relationagente6corda).
 affects(relationagente1Pano,relationagente7corda).
 affects(relationagente2Pano,relationagente7corda).
 affects(relationagente3Pano,relationagente7corda).
-affects(relationagente4Pano,relationagente7corda).
-affects(relationagente5Pano,relationagente7corda).
+affects(relationagente4Pano,relationagente7corda). 
+affects(relationagente5Pano,relationagente7corda). 
 affects(relationagente6Pano,relationagente7corda).
 affects(relationagente7Pano,relationagente7corda).
 affects(relationagente1Pano,relationestopocorda).

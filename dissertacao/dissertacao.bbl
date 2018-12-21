@@ -20,6 +20,24 @@ Artificial Intelligence 40 years later.
 Dispon{\'\i}vel em:
   $<$http://www.sciencedirect.com/science/article/pii/S0004370298000563$>$.}
 
+\bibitem[Dastani et al. 2009]{dastaniframework}
+\abntrefinfo{Dastani et al.}{DASTANI et al.}{2009}
+{DASTANI, M. et al. Normative multi-agent programs and their logics. In:
+  MEYER, J.-J.~C.; BROERSEN, J. (Ed.). \textbf{Knowledge Representation for
+  Agents and Multi-Agent Systems}. Berlin, Heidelberg: Springer Berlin
+  Heidelberg, 2009. p. 16--31.
+ISBN 978-3-642-05301-6.}
+
+\bibitem[Fadier et al. 2003]{safety}
+\abntrefinfo{Fadier et al.}{FADIER et al.}{2003}
+{FADIER, E.; GARZA, C. D.~L.; DIDELOT, A. Safe design and human activity:
+  construction of a theoretical framework from an analysis of a printing
+  sector.
+\textbf{Safety Science}, v.~41, n.~9, p. 759 -- 789, 2003.
+ISSN 0925-7535.
+Dispon{\'\i}vel em:
+  $<$http://www.sciencedirect.com/science/article/pii/S092575350200022X$>$.}
+
 \bibitem[H{\"u}bner et al. 2002]{mosieframework}
 \abntrefinfo{H{\"u}bner et al.}{H{\"U}BNER et al.}{2002}
 {H{\"U}BNER, J.~F.; SICHMAN, J.~S.; BOISSIER, O. A model for the structural,
@@ -37,6 +55,12 @@ ISBN 978-3-540-36127-5.}
   s.n.], 2000.
 ISBN 978-3-540-67200-5.}
 
+\bibitem[Lopez e Luck 2003]{modelingnormsforautnomousagent}
+\abntrefinfo{Lopez e Luck}{LOPEZ; LUCK}{2003}
+{LOPEZ, F.; LUCK, M. Modelling norms for autonomous agents. In:  . [S.l.:
+  s.n.], 2003. p. 238 -- 245.
+ISBN 0-7695-1915-6.}
+
 \bibitem[L{\'o}pez e Luck 2004]{amodelmultiagentsystemdynamicrelationship}
 \abntrefinfo{L{\'o}pez e Luck}{L{\'O}PEZ; LUCK}{2004}
 {L{\'O}PEZ, F. L{\'o}pez~y; LUCK, M. A model of normative multi-agent systems
@@ -44,6 +68,29 @@ ISBN 978-3-540-67200-5.}
   \textbf{Regulated Agent-Based Social Systems}. Berlin, Heidelberg: Springer
   Berlin Heidelberg, 2004. p. 259--280.
 ISBN 978-3-540-25867-4.}
+
+\bibitem[Rasmussen 1997]{riskoldschool}
+\abntrefinfo{Rasmussen}{RASMUSSEN}{1997}
+{RASMUSSEN, J. Risk management in a dynamic society: a modelling problem.
+\textbf{Safety Science}, v.~27, n.~2, p. 183 -- 213, 1997.
+ISSN 0925-7535.
+Dispon{\'\i}vel em:
+  $<$http://www.sciencedirect.com/science/article/pii/S0925753597000520$>$.}
+
+\bibitem[Ricci et al. 2006]{programingagentartefact}
+\abntrefinfo{Ricci et al.}{RICCI et al.}{2006}
+{RICCI, A.; VIROLI, M.; OMICINI, A. Programming mas with artifacts. In:
+  BORDINI, R.~H. et al. (Ed.). \textbf{Programming Multi-Agent Systems}.
+  Berlin, Heidelberg: Springer Berlin Heidelberg, 2006. p. 206--221.
+ISBN 978-3-540-32617-5.}
+
+\bibitem[Ricci et al. 2007]{cartago}
+\abntrefinfo{Ricci et al.}{RICCI et al.}{2007}
+{RICCI, A.; VIROLI, M.; OMICINI, A. Cartago: A framework for prototyping
+  artifact-based environments in mas. In:  WEYNS, D.; PARUNAK, H. V.~D.;
+  MICHEL, F. (Ed.). \textbf{Environments for Multi-Agent Systems III}. Berlin,
+  Heidelberg: Springer Berlin Heidelberg, 2007. p. 67--86.
+ISBN 978-3-540-71103-2.}
 
 \bibitem[Weiss 2000]{multiagentsystemmodernapproach}
 \abntrefinfo{Weiss}{WEISS}{2000}

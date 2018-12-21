@@ -21,7 +21,7 @@ class DBConnection
 	}
     public static function insert($nameRelation,$instances)
     {
-        $stringSQL = "INSERT INTO relations (instances,namerelation,created_at,updated_at) VALUES (?,?,?,?)";
-        self::$dbconnection->prepare($stringSQL)->execute([$nameRelation,$instances,new \DateTime, new \DateTime]);
+        $stringSQL = "INSERT INTO relations (instances,namerelation) VALUES (?,?)";
+		self::$dbconnection->prepare($stringSQL)->execute([$nameRelation,$instances]);
     }
 }
