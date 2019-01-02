@@ -130,6 +130,14 @@ ISBN 978-3-540-32617-5.}
   Heidelberg: Springer Berlin Heidelberg, 2007. p. 67--86.
 ISBN 978-3-540-71103-2.}
 
+\bibitem[Russell e Norvig 2003]{artificialinteligencemodermapproach}
+\abntrefinfo{Russell e Norvig}{RUSSELL; NORVIG}{2003}
+{RUSSELL, S.~J.; NORVIG, P. \textbf{Artificial intelligence - a modern
+  approach, 2nd Edition}. Prentice Hall, 2003.  (Prentice Hall series in
+  artificial intelligence).
+ISBN 0130803022. Dispon{\'\i}vel em:
+  $<$http://www.worldcat.org/oclc/314283679$>$.}
+
 \bibitem[Weiss 2000]{multiagentsystemmodernapproach}
 \abntrefinfo{Weiss}{WEISS}{2000}
 {WEISS, G. Multiagent systems: A modern approach to distributed artificial
@@ -142,5 +150,11 @@ ISBN 0262731312.}
 {WOOLDRIDGE, M. An introduction to multiagent systems.
 In:  \underline{\ \ \ \ \ \ \ \ }. [S.l.: s.n.], 2002. p. --348.
 ISBN 047149691X.}
+
+\bibitem[Wooldridge e Jennings 1995]{definitionagent}
+\abntrefinfo{Wooldridge e Jennings}{WOOLDRIDGE; JENNINGS}{1995}
+{WOOLDRIDGE, M.; JENNINGS, N.~R. Intelligent agents: theory and practice.
+\textbf{The Knowledge Engineering Review}, Cambridge University Press, v.~10,
+  n.~2, p. 115–152, 1995.}
 
 \end{thebibliography}
