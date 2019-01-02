@@ -1,0 +1,29 @@
+\textbf{Definição 1.} \textit{Um norma é definida por meio de uma tupla} $N = \langle \mu,\kappa,\chi,\tau,\rho \rangle$
+
+\begin{itemize}
+    \item $\mu \in \{obligation,prohibition\}$ representa as modalidades de norma.
+    \item $\kappa \in \{action,state\}$ representa o tipo de \textit{trigger} da condição.
+    \item $\chi$ representa o conjunto de estados em que uma norma se aplica.
+    \item $\tau$ representa a norma da condição de \textit{trigger}
+    \item $\rho$ representa a sanção aplicava pela violação do agente.
+\end{itemize}
+
+A defição 1 pode ser compreendida sobre o seguinte exemplo; 
+
+\textit{Todos os imigrantes que possuem passaporte válido, devem ser aceitos. A falha resulta na perda de 5 créditos}. 
+
+Dentro da definição 1, o exemplo fica;
+
+\begin{eqnarray}
+    \langle obligation,action,valid(Passport),accept(Passport),loss(5)\rangle
+\end{eqnarray}
+
+\textit{NormMAS} define um \textit{Registro de ação} que é dado pela definição 2. 
+
+\textbf{Definição 2.} \textit{Um Registro de Ação é definido por meio de uma tupla} $R = \langle \gamma,\alpha,\beta \rangle$
+
+\begin{itemize}
+    \item $\gamma$ representa o agente executando uma ação;
+    \item $\alpha$ representa a ação sendo executada pelo agente $\gamma$
+    \item $\beta$ representa os estados internos do agente $\gamma$ no momento da execução.
+\end{itemize}

@@ -1,0 +1,50 @@
+\textit{Activity Model} é estruturado sobre uma linguagem de descrição conhecido por \textit{ACTIVITY-DL}. Essa linguagem usa álgebra de Allen's que tem como por finalidade definir raciocínios temporais \cite{allenalgebric}. As relações definidas por essa álgebra é dada por; 
+\begin{enumerate}
+	\item $X < Y$ onde $X$: ocorre antes de $Y$ 
+	\item $X m Y$,$Y mi X$: $X$ encontra $Y$
+	\item $X o Y$, $X oi Y$: $X$ sobrepõem a $Y$
+	\item $X s Y$, $Y si X$: $X$ começa $Y$
+	\item $X d Y$, $Y di X$: $X$ ocorre durante $Y$	  
+	\item $X f Y$, $Y fi X$: $X$ termina junto com $Y$	  	
+	\item $X = Y$ $X$ é igual a $Y$	  		
+\end{enumerate}
+
+A linguagem define construtores que são semanticamente equivalente a certos operadores da álgebra de Allen's. Esses construtores (atuantes sobre atividades) são definidos pela tabela \ref{acticonstruct}
+
+\begin{table}
+\centering
+\begin{tabular}{|l|l|l|}
+\hline
+Construtor & Nome         & Relações de Allen \\ \hline
+IND        & Independent  & $A\{<,>,m,mi,o,oi,s,si,d,di,f,fi,=\}B$\\ \hline
+SEQ        & Sequential   & $A\{<,>,m,mi\}B$\\ \hline
+SEQ-ORD    & Ordered      & $A\{<,>,m\}B$\\ \hline
+PAR        & Parallel     & $A\{o,oi,s,si,d,di,f,fi,=\}B$ \\ \hline
+PAR-SIM    & Simultaneous & $A\{=\}B$\\ \hline
+PAR-START  & Start        & $A\{s,si,=\}B$\\ \hline
+PAR-END    & End          & $A\{f,fi,=\}B$ \\ \hline
+\end{tabular}
+\caption{Construtores da linguagem \textit{ACTIVITY-DL} \cite{v3sframework}}
+\label{acticonstruct}
+\end{table}
+
+No que tange a questões referentes a segurança e violação, a linguagem \textit{ACTIVITY-DL} define \textit{tags} no estudo \cite{safety}. Essas \textit{tags} são BCTUs,BATUs. BCTUs representam situações informais entre os atores de um determinado campo, por exemplo; trabalhar com produtos químicos sem usar equipamentos de proteção individual. BATUs corresponde a práticas de risco tolerado. Existe dois tipos de BATUs, primeiro - quando realizado por obrigação ou interesse de conforto (quando os operadores acham impossível realizar a operação respeitando as instruções), segundo - ocorre durante a operação do sistema com o propósito de evitar que o sistema deixe de funcionar.    
+
+\textit{Activity Model} apresenta uma categorização de pré-condições. A tabela \ref{precondition} detalhe essa categorização. 
+
+\begin{table}
+\begin{tabular}{|l|l|p{0.6\linewidth}|}
+\hline
+\textbf{Categoria} & \textbf{Pré-condição} & \textbf{Descrição}                                                                                                                                                                                                                                              \\ \hline
+Condições para perceber  & Nomológico            & Descreve o estado do mundo necessário para que a tarefa seja fisicamente realizável. Condições dependem diretamente das regras de ação definidas no modelo de domínio. Exemplo: Abre a porta se estiver fechada.                                                \\ \hline
+Condições para perceber  & Regulamentar          & Descreve o estudo do mundo necessário para uma boa realização da atividade de acordo com prescrito em procedimento. Exemplo: Para desconectar o tubo, a proteções devem ser desgastado.                                                                         \\ \hline
+Condições para  Examinar & Contextual            & Descreve o estado de mundo em que a atividade é relevante. Quando essa condição é falsa, então a atividade deve ser ignorada. Exemplo: Limpar o tubo é relevante apenas se o tubo estiver sujo.                                                                 \\ \hline
+Condições para  Examinar & Favorável             & Descreve o estado de mundo onde a tarefa é preferencial sobre as demais. Essas condições ajudam a escolher entre várias tarefas quando existe uma alternativa para a realização de uma tarefa decomposta. Exemplo: se o parafuso estiver enferrujado, desarmar. \\ \hline
+\end{tabular}
+\caption{As pré-condições possíveis para as atividades \cite{v3sframework}}
+\label{precondition}
+\end{table}
+
+\textit{Risk Models} é a parte do modelo que define a análise de risco. Existe duas categorias; risco de análise clássico e método de análise de confiabilidade humana. A primeira categoria permite definir uma análise quantitativa de risco, contudo falha ao definir a complexidade dos resultados frente a fatores humanos. Em contrapartida, a segunda categoria considera fatores humanos, contudo falha em definir medidas o objetivas sobre questões de segurança \cite{v3sframework}.
+
+O \textit{V3S} combina ambas situações usando a abordagem MELISSA \cite{melissaproject} \cite{v3sframework}. Essa abordagem é baseada em três pontos (1) atividades relacionadas em cenários de acidentes, (2) descrição das tarefas de representação e (3) fatores influentes em potencial nas atividades. 

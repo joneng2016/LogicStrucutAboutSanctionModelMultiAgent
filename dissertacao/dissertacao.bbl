@@ -11,6 +11,31 @@
   overview.
 \textbf{International Journal of Intelligent Information Systems}, 06 2015.}
 
+\bibitem[Allen 1983]{allenalgebric}
+\abntrefinfo{Allen}{ALLEN}{1983}
+{ALLEN, J.~F. Maintaining knowledge about temporal intervals.
+\textbf{Commun. ACM}, ACM, New York, NY, USA, v.~26, n.~11, p. 832--843, nov.
+  1983.
+ISSN 0001-0782.
+Dispon{\'\i}vel em: $<$http://doi.acm.org/10.1145/182.358434$>$.}
+
+\bibitem[Barot et al. 2013]{v3sframework}
+\abntrefinfo{Barot et al.}{BAROT et al.}{2013}
+{BAROT, C. et al. {V3S:} {A} virtual environment for risk-management training
+  based on human-activity models.
+\textbf{Presence}, v.~22, n.~1, p. 1--19, 2013.
+Dispon{\'\i}vel em:
+  $<$http://www.mitpressjournals.org/doi/abs/10.1162/PRES\_a\_00134$>$.}
+
+\bibitem[Camus et al. 2012]{melissaproject}
+\abntrefinfo{Camus et al.}{CAMUS et al.}{2012}
+{CAMUS, F.; LENNE, D.; PLOT, E. Designing virtual environments for risk
+  prevention: the melissa approach.
+\textbf{International Journal on Interactive Design and Manufacturing
+  (IJIDeM)}, v.~6, n.~1, p. 55--63, Feb 2012.
+ISSN 1955-2505.
+Dispon{\'\i}vel em: $<$https://doi.org/10.1007/s12008-011-0138-4$>$.}
+
 \bibitem[Castelfranchi 1998]{modelingsocialactionforaiagents}
 \abntrefinfo{Castelfranchi}{CASTELFRANCHI}{1998}
 {CASTELFRANCHI, C. Modelling social action for ai agents.
@@ -20,6 +45,14 @@ Artificial Intelligence 40 years later.
 Dispon{\'\i}vel em:
   $<$http://www.sciencedirect.com/science/article/pii/S0004370298000563$>$.}
 
+\bibitem[Chang e Meneguzzi 2016]{normas}
+\abntrefinfo{Chang e Meneguzzi}{CHANG; MENEGUZZI}{2016}
+{CHANG, S.; MENEGUZZI, F. Simulating normative behaviour in multi-agent
+  environments using monitoring artefacts. In:  DIGNUM, V. et al. (Ed.).
+  \textbf{Coordination, Organizations, Institutions, and Norms in Agent Systems
+  XI}. Cham: Springer International Publishing, 2016. p. 59--77.
+ISBN 978-3-319-42691-4.}
+
 \bibitem[Dastani et al. 2009]{dastaniframework}
 \abntrefinfo{Dastani et al.}{DASTANI et al.}{2009}
 {DASTANI, M. et al. Normative multi-agent programs and their logics. In:
@@ -27,6 +60,11 @@ Dispon{\'\i}vel em:
   Agents and Multi-Agent Systems}. Berlin, Heidelberg: Springer Berlin
   Heidelberg, 2009. p. 16--31.
 ISBN 978-3-642-05301-6.}
+
+\bibitem[Dubois et al. 1994]{possibilistilogic}
+\abntrefinfo{Dubois et al.}{DUBOIS et al.}{1994}
+{DUBOIS, D.; LANG, J.; PRADE, H. Possibilistic logic.
+In:  \underline{\ \ \ \ \ \ \ \ }. [S.l.: s.n.], 1994. p. 439--513.}
 
 \bibitem[Fadier et al. 2003]{safety}
 \abntrefinfo{Fadier et al.}{FADIER et al.}{2003}
