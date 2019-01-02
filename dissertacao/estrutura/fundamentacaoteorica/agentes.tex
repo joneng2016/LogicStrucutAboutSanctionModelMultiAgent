@@ -1,7 +1,5 @@
-Não existe uma definição universal para tratar o conceito de agente sendo que esse tópicose encontra em meio a debates e controvérsias. Contudo, existe um entendimento generalizado de que 
-um comportamento \textit{autonomo} é o cerne de noção que se tem por agente \cite{whatisagent}. 
-
-Apesar de existir um debate no que tange ao conceito de agentes, a construção de um modelo computacional não pode ser feito sem uma definição. Assim sendo, nesse texto um agente é
+Não existe uma definição universal para tratar o conceito de agente sendo que esse tópico se encontra em meio a debates e controvérsias. Contudo, existe um entendimento generalizado de que 
+um comportamento \textit{autonomo} é o cerne de noção que se tem por agente \cite{whatisagent}.  Apesar disso, a construção de um modelo computacional não pode ser feito sem uma definição. Assim sendo, nesse texto um agente é
  um sistema computacional que está situado em um dado ambiente e que apresenta comportamento autonomo \cite{definitionagent} \cite{whatisagent}. Não apenas isso, mas um agente faz uso
  so seu comportamento autonomo com o propósito de atingir objetivos que a ele é designado \cite{definitionagent} \cite{whatisagent}.
 
@@ -14,6 +12,33 @@ Dentro do contexto presente na definição de agentes, um ambiente apresenta as 
     \item \textit{Discreto vs Contínuo}; Um ambiente é discreto se existe um número finito de ações e percepções. 
 \end{itemize}
 
+Outro aspecto a ser considerado em um agente implica o comportamento autonomo. Uma entidade que possui essa natureza tem a capacidade agir por sí mesmo. Essa entidade não precisa de nenhuma outra entidade externa 
+(ex. ser humano) para realizar decisões \cite{whatisagent} \cite{definitionagent}.
 
-Outro aspecto a ser considerado em um agente implica o comportamento autonomo. Uma entidade que possui essa natureza tem a capacidade agir por sí mesmo. Essa entidade não precisa de nenhuma outra entidade externa (ex. como um ser humano)
-para realizar decisões \cite{whatisagent} \cite{definitionagent}. 
+Há uma série de exemplos que se enquadram dentro dessa deinição. Sistemas de controle se enquadram nesses exemplos. Um \textit{termostato} é um sistema de controle que está em um dado ambiente 
+(como um quarto ou uma sala) \cite{whatisagent}, gera dois sinais de saída (um desses sinais indica que a temperatura está baixa demais (ou alta demais dependendo da aplicação) e o outro sinal
+demonstra que a temperatura está no nível aceitável). O termostato tem o seu comportamento autonomo baseado em duas regras \cite{whatisagent}:
+
+\begin{itemize}
+    \item Se a temperatura estiver abaixo (ou acima) do nível de temperatura definido, então ligar o atuador.
+    \item Se a temperatura estiver dentro do nível estabelecido, então desligar o atuador.
+\end{itemize}
+
+Outro exemplo de agentes consiste nos programas \textit{Daemons} em sistemas \textit{UNIX}. Esses algoritmos trabalham em segundo plano e monitoram um dado ambiente de \textit{software}. Com base
+em certas regras, na ocorrência de um dado evento no ambiente, esses programas realizam uma dada atuação \cite{whatisagent}.   
+
+Os exemplos presentes neste texto são apropriados dentro do conceito de agentes. Contudo, esses exemplos não ase equandram dentro da denição de agentes inteligentes \cite{whatisagent}. Uma entidade que se enquadra
+dentro das caracterísiticas de um agente inteligente deve necessariamente respeitar a definição já apresenta e deve apresentar as seguintes propriedades; reatividade (capaz de perceber as mudanças
+que ocorrem no ambiente e responder a delas de maneira apropriada no que condiz aos objetivos do agente), pro-atividade (apresenta comportamento orientado a objetivos sendo que o agente toma as decisões
+a fim de satisfazer os objetivos em interesse) e habilidades sociais (capacidade de interagir com outros agentes (e possivelmente humanos) a fim de poder satisfazer os próprios objetivos) \cite{whatisagent} \cite{artificialinteligencemodermapproach}.
+
+Os agentes podem ser definidos em categorias. Um desses são agentes puramente reativos. Esses agentes tomam decisões considerando apenas informações que estão no instante presente. Por consequência, 
+o comportamento deles ocorre por respostas diretas ao ambiente \cite{whatisagent}. 
+
+Outra categoria de agentes são aqueles que possuem estados. Essas entidades possum uma dada estrutura de dados internar que são considerados quando agente toma uma uma certa decisão \cite{whatisagent}.
+
+Uma outra maneira de analisar os agentes se dá por meio das arquiteturas e modelos disponiveis para representar os agentes (tomada de decisão, estado interno). Para o propósito do estudo que está
+sendo apresentando neste texto, é o suficiente considerar de forma sucinta quatros dessas arquiteturas. A primeira consiste nos agentes baseados em lógica onde os agentes realizam deduções lógicas
+para tomar uma decisão \cite{logicagent}, a segunda arquitetura consiste nos agentes reativos que tomam decisões com base em um dado mapeamento de uma certa situação em uma dada ação \cite{reactiveagent}, a terceira arquitetura é \textit{BDI}
+cuja decisão ocorrem da manipulação de estruturas de dados que representam crenças, desejos e intenções do agente \cite{bdi} e a quarta arquitetura consiste em uma estrutura em camadas onde a tomada de decisão
+acontecem por intermédio de diversas camadas abstração a cerca do ambiente \cite{layeragent} \cite{whatisagent}.  

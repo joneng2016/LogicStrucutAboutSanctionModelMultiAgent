@@ -27,6 +27,11 @@ Dispon{\'\i}vel em: $<$http://doi.acm.org/10.1145/182.358434$>$.}
 Dispon{\'\i}vel em:
   $<$http://www.mitpressjournals.org/doi/abs/10.1162/PRES\_a\_00134$>$.}
 
+\bibitem[Bonasso et al. 1995]{reactiveagent}
+\abntrefinfo{Bonasso et al.}{BONASSO et al.}{1995}
+{BONASSO, R. P. et al. Experiences with an architecture for intelligent,
+  reactive agents. In:  . [S.l.: s.n.], 1995. v.~9, p. 187--202.}
+
 \bibitem[Camus et al. 2012]{melissaproject}
 \abntrefinfo{Camus et al.}{CAMUS et al.}{2012}
 {CAMUS, F.; LENNE, D.; PLOT, E. Designing virtual environments for risk
@@ -76,6 +81,12 @@ ISSN 0925-7535.
 Dispon{\'\i}vel em:
   $<$http://www.sciencedirect.com/science/article/pii/S092575350200022X$>$.}
 
+\bibitem[Genesereth e Nilsson 1987]{logicagent}
+\abntrefinfo{Genesereth e Nilsson}{GENESERETH; NILSSON}{1987}
+{GENESERETH, M.~R.; NILSSON, N.~J. \textbf{Logical Foundations of Artificial
+  Intelligence}. San Francisco, CA, USA: Morgan Kaufmann Publishers Inc., 1987.
+ISBN 0-934613-31-1.}
+
 \bibitem[H{\"u}bner et al. 2002]{mosieframework}
 \abntrefinfo{H{\"u}bner et al.}{H{\"U}BNER et al.}{2002}
 {H{\"U}BNER, J.~F.; SICHMAN, J.~S.; BOISSIER, O. A model for the structural,
@@ -106,6 +117,16 @@ ISBN 0-7695-1915-6.}
   \textbf{Regulated Agent-Based Social Systems}. Berlin, Heidelberg: Springer
   Berlin Heidelberg, 2004. p. 259--280.
 ISBN 978-3-540-25867-4.}
+
+\bibitem[Rao e Georgeff 1991]{bdi}
+\abntrefinfo{Rao e Georgeff}{RAO; GEORGEFF}{1991}
+{RAO, A.~S.; GEORGEFF, M.~P. Modeling rational agents within a
+  bdi-architecture. In:  \textbf{Proceedings of the Second International
+  Conference on Principles of Knowledge Representation and Reasoning}. San
+  Francisco, CA, USA: Morgan Kaufmann Publishers Inc., 1991.  (KR'91), p.
+  473--484.
+ISBN 1-55860-165-1. Dispon{\'\i}vel em:
+  $<$http://dl.acm.org/citation.cfm?id=3087158.3087205$>$.}
 
 \bibitem[Rasmussen 1997]{riskoldschool}
 \abntrefinfo{Rasmussen}{RASMUSSEN}{1997}
@@ -152,7 +173,13 @@ In:  \underline{\ \ \ \ \ \ \ \ }. [S.l.: s.n.], 2002. p. --348.
 ISBN 047149691X.}
 
 \bibitem[Wooldridge e Jennings 1995]{definitionagent}
-\abntrefinfo{Wooldridge e Jennings}{WOOLDRIDGE; JENNINGS}{1995}
+\abntrefinfo{Wooldridge e Jennings}{WOOLDRIDGE; JENNINGS}{1995a}
+{WOOLDRIDGE, M.; JENNINGS, N.~R. Intelligent agents: theory and practice.
+\textbf{The Knowledge Engineering Review}, Cambridge University Press, v.~10,
+  n.~2, p. 115–152, 1995.}
+
+\bibitem[Wooldridge e Jennings 1995]{layeragent}
+\abntrefinfo{Wooldridge e Jennings}{WOOLDRIDGE; JENNINGS}{1995b}
 {WOOLDRIDGE, M.; JENNINGS, N.~R. Intelligent agents: theory and practice.
 \textbf{The Knowledge Engineering Review}, Cambridge University Press, v.~10,
   n.~2, p. 115–152, 1995.}
