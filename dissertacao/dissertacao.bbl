@@ -19,6 +19,12 @@
 ISSN 0001-0782.
 Dispon{\'\i}vel em: $<$http://doi.acm.org/10.1145/182.358434$>$.}
 
+\bibitem[Ashby 1962]{selforganization}
+\abntrefinfo{Ashby}{ASHBY}{1962}
+{ASHBY, W.~R. Principles of the self-organizing system. In:  FOERSTER, H. v.;
+  ZOPF, G.~W. (Ed.). \textbf{Principles of Self-Organization: Transactions of
+  the University of Illinois Symposium}. London: Pergamon, 1962. p. 255--278.}
+
 \bibitem[Barot et al. 2013]{v3sframework}
 \abntrefinfo{Barot et al.}{BAROT et al.}{2013}
 {BAROT, C. et al. {V3S:} {A} virtual environment for risk-management training
@@ -86,6 +92,11 @@ ISSN 0925-7535.
 Dispon{\'\i}vel em:
   $<$http://www.sciencedirect.com/science/article/pii/S092575350200022X$>$.}
 
+\bibitem[Foerster 2003]{selforganizatioenvoriment}
+\abntrefinfo{Foerster}{FOERSTER}{2003}
+{FOERSTER, H. von. On self-organizing systems and their environments.
+\textbf{Self-organizing systems}, p. 31--50, 01 2003.}
+
 \bibitem[Genesereth e Nilsson 1987]{logicagent}
 \abntrefinfo{Genesereth e Nilsson}{GENESERETH; NILSSON}{1987}
 {GENESERETH, M.~R.; NILSSON, N.~J. \textbf{Logical Foundations of Artificial
@@ -109,6 +120,11 @@ ISBN 978-3-540-36127-5.}
   s.n.], 2000.
 ISBN 978-3-540-67200-5.}
 
+\bibitem[Lendaris 1964]{defintionselforganization}
+\abntrefinfo{Lendaris}{LENDARIS}{1964}
+{LENDARIS, G. On the definition of self-organizing systems.
+\textbf{Proceedings of the IEEE}, v.~52, p. 324-- 325, 04 1964.}
+
 \bibitem[Lopez e Luck 2003]{modelingnormsforautnomousagent}
 \abntrefinfo{Lopez e Luck}{LOPEZ; LUCK}{2003}
 {LOPEZ, F.; LUCK, M. Modelling norms for autonomous agents. In:  . [S.l.:
@@ -122,6 +138,24 @@ ISBN 0-7695-1915-6.}
   \textbf{Regulated Agent-Based Social Systems}. Berlin, Heidelberg: Springer
   Berlin Heidelberg, 2004. p. 259--280.
 ISBN 978-3-540-25867-4.}
+
+\bibitem[Pentland e Rueter 1994]{grammarselforganizationmodel2}
+\abntrefinfo{Pentland e Rueter}{PENTLAND; RUETER}{1994}
+{PENTLAND, B.; RUETER, H. H. Organizational routines as grammars of action.
+\textbf{Administrative Science Quarterly}, v.~39, p.~484, 09 1994.}
+
+\bibitem[Pentland 1995]{grammarselforganizationmodel}
+\abntrefinfo{Pentland}{PENTLAND}{1995}
+{PENTLAND, B.~T. Grammatical models of organizational processes.
+\textbf{Organization Science}, v.~6, n.~5, p. 541--556, 1995.}
+
+\bibitem[Prigogine e Nicolis 1985]{selforganizationdiffforce}
+\abntrefinfo{Prigogine e Nicolis}{PRIGOGINE; NICOLIS}{1985}
+{PRIGOGINE, I.; NICOLIS, G. Self-organisation in nonequilibrium systems:
+  Towards a dynamics of complexity.
+In:  \underline{\ \ \ \ \ \ \ \ }. \textbf{Bifurcation Analysis: Principles,
+  Applications and Synthesis}. Dordrecht: Springer Netherlands, 1985. p. 3--12.
+ISBN 978-94-009-6239-2.}
 
 \bibitem[Rao e Georgeff 1991]{bdi}
 \abntrefinfo{Rao e Georgeff}{RAO; GEORGEFF}{1991}
