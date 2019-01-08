@@ -47,14 +47,16 @@ Dispon{\'\i}vel em:
 ISSN 1955-2505.
 Dispon{\'\i}vel em: $<$https://doi.org/10.1007/s12008-011-0138-4$>$.}
 
-\bibitem[Castelfranchi 1998]{modelingsocialactionforaiagents}
-\abntrefinfo{Castelfranchi}{CASTELFRANCHI}{1998}
-{CASTELFRANCHI, C. Modelling social action for ai agents.
-\textbf{Artificial Intelligence}, v.~103, n.~1, p. 157 -- 182, 1998.
-ISSN 0004-3702.
-Artificial Intelligence 40 years later.
-Dispon{\'\i}vel em:
-  $<$http://www.sciencedirect.com/science/article/pii/S0004370298000563$>$.}
+\bibitem[Carron e Boissier 2001]{dynamicagenttemporalstruct}
+\abntrefinfo{Carron e Boissier}{CARRON; BOISSIER}{2001}
+{CARRON, T.; BOISSIER, O. Towards a temporal organizational structure language
+  for dynamic multi-agent systems.
+01 2001.}
+
+\bibitem[Castelfranchi 1995]{deonticOne}
+\abntrefinfo{Castelfranchi}{CASTELFRANCHI}{1995}
+{CASTELFRANCHI, C. Commitments: From individual intentions to groups and
+  organizations. In:  \textbf{ICMAS}. [S.l.: s.n.], 1995.}
 
 \bibitem[Castelfranchi et al. 2018]{relationwithagentprogram}
 \abntrefinfo{Castelfranchi et al.}{CASTELFRANCHI et al.}{2018}
@@ -82,6 +84,13 @@ ISBN 978-3-642-05301-6.}
 {DUBOIS, D.; LANG, J.; PRADE, H. Possibilistic logic.
 In:  \underline{\ \ \ \ \ \ \ \ }. [S.l.: s.n.], 1994. p. 439--513.}
 
+\bibitem[Exploring Organizational Designs with TAEMS: A Case Study of
+  Distributed Data Processing 1996]{taems01}
+\abntrefinfo{Exploring\ldots}{EXPLORING\ldots}{1996}
+{EXPLORING Organizational Designs with TAEMS: A Case Study of Distributed Data
+  Processing.
+09 1996.}
+
 \bibitem[Fadier et al. 2003]{safety}
 \abntrefinfo{Fadier et al.}{FADIER et al.}{2003}
 {FADIER, E.; GARZA, C. D.~L.; DIDELOT, A. Safe design and human activity:
@@ -92,10 +101,38 @@ ISSN 0925-7535.
 Dispon{\'\i}vel em:
   $<$http://www.sciencedirect.com/science/article/pii/S092575350200022X$>$.}
 
+\bibitem[Ferber e Gutknecht 1998]{roleone}
+\abntrefinfo{Ferber e Gutknecht}{FERBER; GUTKNECHT}{1998}
+{FERBER, J.; GUTKNECHT, O. A meta-model for the analysis and design of
+  organizations in multi-agent systems. In:  \textbf{Proceedings of the 3rd
+  International Conference on Multi Agent Systems}. Washington, DC, USA: IEEE
+  Computer Society, 1998.  (ICMAS '98), p. 128--.
+ISBN 0-8186-8500-X. Dispon{\'\i}vel em:
+  $<$http://dl.acm.org/citation.cfm?id=551984.852257$>$.}
+
 \bibitem[Foerster 2003]{selforganizatioenvoriment}
 \abntrefinfo{Foerster}{FOERSTER}{2003}
 {FOERSTER, H. von. On self-organizing systems and their environments.
 \textbf{Self-organizing systems}, p. 31--50, 01 2003.}
+
+\bibitem[Fox et al. 1996]{roletwo}
+\abntrefinfo{Fox et al.}{FOX et al.}{1996}
+{FOX, M.~S.; BARBUCEANU, M.; GRUNINGER, M. An organisation ontology for
+  enterprise modeling: Preliminary concepts for linking structure and
+  behaviour.
+\textbf{Computers in Industry}, v.~29, n.~1, p. 123 -- 134, 1996.
+ISSN 0166-3615.
+WET ICE '95.
+Dispon{\'\i}vel em:
+  $<$http://www.sciencedirect.com/science/article/pii/0166361595000798$>$.}
+
+\bibitem[Garvey e Lesser 1996]{TAEMS}
+\abntrefinfo{Garvey e Lesser}{GARVEY; LESSER}{1996}
+{GARVEY, A.; LESSER, V. Design-to-time scheduling and anytime algorithms.
+\textbf{SIGART Bull.}, ACM, New York, NY, USA, v.~7, n.~2, p. 16--19, abr.
+  1996.
+ISSN 0163-5719.
+Dispon{\'\i}vel em: $<$http://doi.acm.org/10.1145/242587.242591$>$.}
 
 \bibitem[Genesereth e Nilsson 1987]{logicagent}
 \abntrefinfo{Genesereth e Nilsson}{GENESERETH; NILSSON}{1987}
@@ -103,7 +140,7 @@ Dispon{\'\i}vel em:
   Intelligence}. San Francisco, CA, USA: Morgan Kaufmann Publishers Inc., 1987.
 ISBN 0-934613-31-1.}
 
-\bibitem[H{\"u}bner et al. 2002]{mosieframework}
+\bibitem[H{\"u}bner et al. 2002]{moiseframework}
 \abntrefinfo{H{\"u}bner et al.}{H{\"U}BNER et al.}{2002}
 {H{\"U}BNER, J.~F.; SICHMAN, J.~S.; BOISSIER, O. A model for the structural,
   functional, and deontic specification of organizations in multiagent systems.
@@ -111,6 +148,12 @@ ISBN 0-934613-31-1.}
   Intelligence}. Berlin, Heidelberg: Springer Berlin Heidelberg, 2002. p.
   118--128.
 ISBN 978-3-540-36127-5.}
+
+\bibitem[Hübner et al. 2002]{moiseframeworktwo}
+\abntrefinfo{Hübner et al.}{HüBNER et al.}{2002}
+{HüBNER, J.; SICHMAN, J.; BOISSIER, O. Moise+: Towards a structural,
+  functional, and deontic model for mas organization. In:  . [S.l.: s.n.],
+  2002. p. 501--502.}
 
 \bibitem[Jennings e Lespérance 2000]{whatisagent}
 \abntrefinfo{Jennings e Lespérance}{JENNINGS; LESPéRANCE}{2000}
@@ -198,18 +241,11 @@ ISBN 978-3-540-71103-2.}
 ISBN 0130803022. Dispon{\'\i}vel em:
   $<$http://www.worldcat.org/oclc/314283679$>$.}
 
-\bibitem[Weiss 2000]{multiagentsystemmodernapproach}
-\abntrefinfo{Weiss}{WEISS}{2000}
-{WEISS, G. Multiagent systems: A modern approach to distributed artificial
-  intelligence.
-In:  \underline{\ \ \ \ \ \ \ \ }. [S.l.: s.n.], 2000. v.~1, p. --648.
-ISBN 0262731312.}
-
-\bibitem[Wooldridge 2002]{multiagentsystemwhatis}
-\abntrefinfo{Wooldridge}{WOOLDRIDGE}{2002}
-{WOOLDRIDGE, M. An introduction to multiagent systems.
-In:  \underline{\ \ \ \ \ \ \ \ }. [S.l.: s.n.], 2002. p. --348.
-ISBN 047149691X.}
+\bibitem[So e Durfee 1996]{taems02}
+\abntrefinfo{So e Durfee}{SO; DURFEE}{1996}
+{SO, Y.-p.; DURFEE, E. An organizational self-design model for organizational
+  change.
+03 1996.}
 
 \bibitem[Wooldridge e Jennings 1995]{layeragent}
 \abntrefinfo{Wooldridge e Jennings}{WOOLDRIDGE; JENNINGS}{1995}

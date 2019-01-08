@@ -1,4 +1,4 @@
-Um sistema multiagente(SMA) organizado é aquel constituido por agentes autonomos que interagem visando um propósito em comum tendo como consequência um comportamento global \cite{mosieframework} 
+Um sistema multiagente(SMA) organizado é aquel constituido por agentes autonomos que interagem visando um propósito em comum tendo como consequência um comportamento global \cite{moiseframework} 
 \cite{organiationofmultiagentsystem}. Assim sendo, uma organização com essas características deve ser capaz de manifestar conhecimento em comum, cultura, memória, história, distribuição de atividades 
 e a capaciade de distinguir um  agente em espeçifico \cite{organiationofmultiagentsystem}. Deste fato é possível identificar o fenômeno "supra-individual" que implica em um comportamento que existe
 além dos comportamentos e atributos particulares no que diz respeito as entidades constituintes do sistemas. 
@@ -52,29 +52,31 @@ inequivocamente implica geração de incerteza o que por sua ver se manifesta co
 
 \subsection{Formalização de Conceitos Específicos para SMA}
 
-Não há necessidade de usar a ideia de objetivos, planos e papeis para criar um modelo de organização de \textit{SMA}. Isso pois existem formas de criar representações
-de \texit{SMA} sem a necessidade de usar esses conceitos \cite{organiationofmultiagentsystem}, \cite{multiagentsystemmodernapproach}. Entretanto, esses conceitos facilitam diversos processos
-de especificação, estão presentes em modelos de \textit{SMA} consolidados \cite{mosieframework} e tornam a organização de sistemas multiagentes uma representação mais fidedigna com os processos
-sociais presentes na humanidade o que é compartível com os objetivos finais deste estudo. 
+A apresentação desses conceitos será feita por intermédio de estudos relacionados ao \textit{MOISE+}. Apesar de ser um \textit{framework}, o \textit{MOISE+} trata a rigor acadêmico na ótica
+da computação clássica a tratativa dada para os conceitos em interesse a esse estudo. Assim sendo, um estudo aprofundado do modelo, bem como dos textos em referência, satisfaz com exclência 
+os fundamentos teóricos para as análises em interesse. 
 
+A constitução do \textit{MOISE+} é estrutura em três categorias de especicação, essas são; estrutural, funcional e deontica. O texto a seguir exibe com maior requize de detalhes cada uma dessas
+especificações.  
 
 A especificação estrutural acontece em três níveis, individual, social e coletivo. O nível individual trata de definir os papeis $\rho$ dos agentes. Uma possível entre os papeis acontece por 
 intermédio da hereditariedade em que se $\rho'$ é filho de $\rho$. Isso implica afirmar que $\rho'$ é uma especialização de $\rho$. Um exemplo apropriado para isso é o jogo de futebol onde 
-existe o papel jogador dado por $\rho$ e existe o papel atacante dado por $\rho'$ \cite{mosieframework}. Em termos formais, essa relação é dada pro; 
+existe o papel jogador dado por $\rho$ e existe o papel atacante dado por $\rho'$ \cite{moiseframework} \cite{roleone} \cite{roletwo} \cite{dynamicagenttemporalstruct}. Em termos formais, essa relação é dada pro; 
+
 \begin{eqnarray}\nonumber
 \rho_a \sqsubset \rho_b
 \end{eqnarray}
 
 O nível social estabelece relações de ligação dado pelo predicado $link(\rho_s,\rho_d,t)$. Existe três possíveis valores para $t$, os quais são $t = \{aut, com, acq\}$. O valor $auth$ significa 
 autoridade (neste caso $\rho_s$ exerce autoridade sobre $\rho_d$), o valor $com$ significa comunicação (neste caso $\rho_s$ pode se comunicar com $\rho_d$) e o valor $acq$ significa conhecimento 
-($\rho_s$ tem conhecimento da existência de $\rho_d$) \cite{mosieframework}. O MOISE+ define as seguintes relações de implicabilidade
+($\rho_s$ tem conhecimento da existência de $\rho_d$) \cite{moiseframework} \cite{moiseframeworktwo} \cite{dynamicagenttemporalstruct}. O MOISE+ define as seguintes relações de implicabilidade
 
 \begin{eqnarray}\nonumber
 	link(\rho_s,\rho_d,auth) \to link(\rho_s,\rho_d,com) \nonumber \\
 	link(\rho_s,\rho_d,com) \to link(\rho_s,\rho_d,acq) 
 \end{eqnarray}
 
-O modelo também determina como se dá as relações de hereditariedade para o predicado de $link$, é dado por \cite{mosieframework}; 
+O modelo também determina como se dá as relações de hereditariedade para o predicado de $link$, é dado por \cite{moiseframework} \cite{dynamicagenttemporalstruct}; 
 
 \begin{eqnarray}\nonumber
 	link(\rho_s,\rho_d,t) \wedge \rho_s' \sqsubset \rho_s' \to link(\rho_s',\rho_d,t) \nonumber \\
@@ -82,8 +84,8 @@ O modelo também determina como se dá as relações de hereditariedade para o p
 \end{eqnarray}
 
 
-O nível coletivo determina a existência de compatibilidade entre os papeis \cite{mosieframework}. Essa é uma relação reflexiva e transitiva de determina que se um papel $\rho_a$ possui a 
-capacidade de realizar um determinado objetivo, então o papel $\rho_b$ também tem essa capacidade. Em termos formais, essa relação se dá da seguinte forma \cite{mosieframework}.;
+O nível coletivo determina a existência de compatibilidade entre os papeis \cite{moiseframework}. Essa é uma relação reflexiva e transitiva de determina que se um papel $\rho_a$ possui a 
+capacidade de realizar um determinado objetivo, então o papel $\rho_b$ também tem essa capacidade. Em termos formais, essa relação se dá da seguinte forma \cite{moiseframework} \cite{deonticOne}.;
 
 \begin{eqnarray}\nonumber
 	\rho_a \bowtie \rho_b \wedge \rho_a \neq \rho_b \wedge \rho_a \sqsubset \rho' \to \rho' \bowtie \rho_b 
@@ -95,20 +97,23 @@ O nível coletivo também apresenta o conceito de grupo dado por $gt$ e constitu
 	gt = \langle R,SG,L^{intra},L^{inter},C^{intra},C^{inter},np,ng\rangle 
 \end{eqnarray}
 
-Em que $R$ é o conjunto dos papeis não abstratos, $SG$ são subgrupos que estão contidos neste grupo, $L^{intra}$ consiste dos $links$ intra-grupos, $L^{inter}$ dos links inter-grupos, $C^{intra}$ das relações de compatibilidade intra-grupos e $C^{inter}$ das relações de compatibilidade inter-grupos. O símbolo $np$ denota a cardinalidade mínima e máxima para uma dada função e o símbolo $ng$ realiza o mesmo para os subgrupos \cite{mosieframework}. 
+Em que $R$ é o conjunto dos papeis não abstratos, $SG$ são subgrupos que estão contidos neste grupo, $L^{intra}$ consiste dos $links$ intra-grupos, $L^{inter}$ dos links inter-grupos, 
+$C^{intra}$ das relações de compatibilidade intra-grupos e $C^{inter}$ das relações de compatibilidade inter-grupos. O símbolo $np$ denota a cardinalidade mínima e máxima para uma dada 
+função e o símbolo $ng$ realiza o mesmo para os subgrupos \cite{moiseframework}. 
 
 A Especificação Funcional tem como por finalidade descrever os objetivos a serem atingidos dentro de uma estrutura de árvore. A figura a seguir define como se dá esse tipo de especificação; 
 
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.8\linewidth]{figure/figmoise} 
-  \caption{Arvore de objetivos definido pelo modelo Moise \cite{mosieframework}}
+  \caption{Arvore de objetivos definido pelo modelo Moise \cite{moiseframework}}
   \label{arvoremoise}
 \end{figure}
 
 A figura \ref{arvoremoise} define três tipos de relação de subobjetivos; $sequence$ onde todos os subobjetivos devem necessariamente ser concluídos em sequência, $choice$ onde o agente tem a 
-possibilidade de escolher qual objetivo ele deseja seguir e $parallelism$ onde todos os objetivos devem ser concluídos, contudo sem uma sequência definida. Como é possível observar na figura, 
-os objetivos são agrupados em conjuntos de missões $m$. A relação a seguir define isso melhor;
+possibilidade de escolher qual objetivo ele deseja seguir e $parallelism$ onde todos os objetivos devem ser concluídos, contudo sem uma sequência definida \cite{taems01} \cite{taems02}. Esta
+parte do modelo é baseada em um \textit{framework} de distrubição de atividades denominado por \textit{TAEMS} \cite{TAEMS}.
+Como é possível observar na figura, os objetivos são agrupados em conjuntos de missões $m$ \cite{dynamicagenttemporalstruct}. A relação a seguir define isso melhor;
 
 \begin{eqnarray}\nonumber
 	m_k = \{ g_n,...,g_m\}
@@ -116,7 +121,7 @@ os objetivos são agrupados em conjuntos de missões $m$. A relação a seguir d
 
 
 A Especificação Deôntica define predicados para estabelecer permissões e obrigações entre os papeis e as missões. Toda obrigação implica necessariamente em uma permissão. A relação a seguir 
-estabelece isso; 
+estabelece isso \cite{moiseframework} \cite{deonticOne}; 
 
 \begin{eqnarray}\nonumber
 	obl(\rho,m,tc) \to per(\rho,m,tc) \\

@@ -13,6 +13,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: abnt-options.bib
 Database file #2: reflatex.bib
 Warning--I didn't find a database entry for "abnt-etal-list=99"
+Warning--I didn't find a database entry for "mosieframework"
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
@@ -24,45 +25,45 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de duvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
-You've used 33 entries,
+You've used 38 entries,
             6523 wiz_defined-function locations,
-            1394 strings with 15606 characters,
-and the built_in function-call counts, 28938 in all, are:
-= -- 2364
-> -- 991
-< -- 59
-+ -- 414
-- -- 295
-* -- 2079
-:= -- 3795
-add.period$ -- 155
-call.type$ -- 35
-change.case$ -- 350
-chr.to.int$ -- 75
-cite$ -- 30
-duplicate$ -- 1413
-empty$ -- 2229
-format.name$ -- 1467
-if$ -- 7035
+            1422 strings with 16507 characters,
+and the built_in function-call counts, 33378 in all, are:
+= -- 2759
+> -- 1173
+< -- 61
++ -- 506
+- -- 349
+* -- 2414
+:= -- 4354
+add.period$ -- 172
+call.type$ -- 40
+change.case$ -- 413
+chr.to.int$ -- 80
+cite$ -- 35
+duplicate$ -- 1609
+empty$ -- 2495
+format.name$ -- 1731
+if$ -- 8114
 int.to.chr$ -- 2
 int.to.str$ -- 2
-missing$ -- 585
-newline$ -- 171
-num.names$ -- 157
-pop$ -- 736
+missing$ -- 676
+newline$ -- 194
+num.names$ -- 177
+pop$ -- 874
 preamble$ -- 1
-purify$ -- 131
+purify$ -- 154
 quote$ -- 0
-skip$ -- 1607
+skip$ -- 1921
 stack$ -- 1
-substring$ -- 1166
-swap$ -- 765
-text.length$ -- 45
+substring$ -- 1277
+swap$ -- 852
+text.length$ -- 47
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 14
+type$ -- 25
 warning$ -- 0
-while$ -- 242
+while$ -- 269
 width$ -- 0
-write$ -- 527
-(There was 1 warning)
+write$ -- 601
+(There were 2 warnings)
