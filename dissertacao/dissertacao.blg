@@ -13,7 +13,6 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: abnt-options.bib
 Database file #2: reflatex.bib
 Warning--I didn't find a database entry for "abnt-etal-list=99"
-Warning--I didn't find a database entry for "mosieframework"
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
@@ -25,45 +24,45 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de duvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
-You've used 38 entries,
+You've used 41 entries,
             6523 wiz_defined-function locations,
-            1422 strings with 16507 characters,
-and the built_in function-call counts, 33378 in all, are:
-= -- 2759
-> -- 1173
-< -- 61
-+ -- 506
-- -- 349
-* -- 2414
-:= -- 4354
-add.period$ -- 172
-call.type$ -- 40
-change.case$ -- 413
-chr.to.int$ -- 80
-cite$ -- 35
-duplicate$ -- 1609
-empty$ -- 2495
-format.name$ -- 1731
-if$ -- 8114
+            1442 strings with 16967 characters,
+and the built_in function-call counts, 36056 in all, are:
+= -- 2957
+> -- 1272
+< -- 67
++ -- 542
+- -- 378
+* -- 2614
+:= -- 4701
+add.period$ -- 188
+call.type$ -- 43
+change.case$ -- 447
+chr.to.int$ -- 89
+cite$ -- 38
+duplicate$ -- 1747
+empty$ -- 2709
+format.name$ -- 1877
+if$ -- 8761
 int.to.chr$ -- 2
 int.to.str$ -- 2
-missing$ -- 676
-newline$ -- 194
-num.names$ -- 177
-pop$ -- 874
+missing$ -- 731
+newline$ -- 209
+num.names$ -- 193
+pop$ -- 953
 preamble$ -- 1
-purify$ -- 154
+purify$ -- 166
 quote$ -- 0
-skip$ -- 1921
+skip$ -- 2049
 stack$ -- 1
-substring$ -- 1277
-swap$ -- 852
-text.length$ -- 47
+substring$ -- 1373
+swap$ -- 924
+text.length$ -- 51
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 25
+type$ -- 27
 warning$ -- 0
-while$ -- 269
+while$ -- 292
 width$ -- 0
-write$ -- 601
-(There were 2 warnings)
+write$ -- 652
+(There was 1 warning)

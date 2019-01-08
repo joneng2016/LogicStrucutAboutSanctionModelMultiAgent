@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.11.6)  8 JAN 2019 15:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.11.6)  8 JAN 2019 18:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -717,7 +717,11 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box56
 \@float@everytoks=\toks26
 \@floatcapt=\box57
-) (./dissertacao.aux)
+) (./dissertacao.aux
+
+LaTeX Warning: Label `exemploprograma' multiply defined.
+
+)
 \openout1 = `dissertacao.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
@@ -733,8 +737,7 @@ LaTeX Font Info:    ... okay on input line 48.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
 LaTeX Font Info:    ... okay on input line 48.
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 48.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 Package lastpage Info: Please have a look at the pageslts package at
@@ -991,15 +994,32 @@ Package pdftex.def Info: figure/figmoise.png used on input line 108.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 109.
  [22] [23 <./figure/figmoise.png>])
-(./estrutura/fundamentacaoteorica/normas.tex)
+(./estrutura/fundamentacaoteorica/normas.tex
+<figure/masprogram.png, id=108, 745.28438pt x 521.69907pt>
+File: figure/masprogram.png Graphic file (type png)
+
+<use figure/masprogram.png>
+Package pdftex.def Info: figure/masprogram.png used on input line 12.
+(pdftex.def)             Requested size: 364.19667pt x 254.93425pt.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 13.
+ [24]
+<figure/programdastani.png, id=112, 700.86844pt x 182.93344pt>
+File: figure/programdastani.png Graphic file (type png)
+
+<use figure/programdastani.png>
+Package pdftex.def Info: figure/programdastani.png used on input line 31.
+(pdftex.def)             Requested size: 364.19667pt x 95.06172pt.
+ [25 <./figure/masprogram.png>])
 (./estrutura/fundamentacaoteorica/riscos.tex)
-(./estrutura/fundamentacaoteorica/poss.tex) [24] [25]
+(./estrutura/fundamentacaoteorica/poss.tex [26 <./figure/programdastani.png>])
+[27]
 Cap\'{\i }tulo 3.
 (./estrutura/metodologia/genmet.tex)
 (./estrutura/metodologia/analisedosmodelos.tex)
 (./estrutura/metodologia/acomprof.tex)
 (./estrutura/metodologia/construcaomodelo.tex)
-(./estrutura/metodologia/implementacao.tex) [26
+(./estrutura/metodologia/implementacao.tex) [28
 
 ]
 Cap\'{\i }tulo 4.
@@ -1010,7 +1030,7 @@ Cap\'{\i }tulo 4.
 (./estrutura/resultados/diagramadeatividades.tex)
 (./estrutura/resultados/casodeestudo.tex)
 (./estrutura/resultados/raciocinios.tex) (./estrutura/resultados/validacao.tex)
-[27
+[29
 
 ]
 Cap\'{\i }tulo 5.
@@ -1018,42 +1038,30 @@ Cap\'{\i }tulo 5.
 (./estrutura/analisecomparativa/genmoise.tex)
 (./estrutura/analisecomparativa/estmoise.tex)
 (./estrutura/analisecomparativa/compmoise.tex)
-(./estrutura/analisecomparativa/gendastani.tex
-<figure/masprogram.png, id=121, 745.28438pt x 521.69907pt>
-File: figure/masprogram.png Graphic file (type png)
-
-<use figure/masprogram.png>
-Package pdftex.def Info: figure/masprogram.png used on input line 5.
-(pdftex.def)             Requested size: 364.19667pt x 254.93425pt.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 6.
-) [28
+(./estrutura/analisecomparativa/gendastani.tex)
+(./estrutura/analisecomparativa/estdastani.tex
+File: figure/programdastani.png Graphic file (type png)
+ <use figure/programdastani.png>
+Package pdftex.def Info: figure/programdastani.png used on input line 5.
+(pdftex.def)             Requested size: 364.19667pt x 95.06172pt.
+) (./estrutura/analisecomparativa/compdastani.tex)
+(./estrutura/analisecomparativa/genvs3.tex [30
 
 ]
-(./estrutura/analisecomparativa/estdastani.tex [29 <./figure/masprogram.png>]
-<figure/programdastani.png, id=130, 700.86844pt x 182.93344pt>
-File: figure/programdastani.png Graphic file (type png)
-
-<use figure/programdastani.png>
-Package pdftex.def Info: figure/programdastani.png used on input line 18.
-(pdftex.def)             Requested size: 364.19667pt x 95.06172pt.
-)
-(./estrutura/analisecomparativa/compdastani.tex)
-(./estrutura/analisecomparativa/genvs3.tex
-<figure/ontologyv3.png, id=131, 496.85625pt x 256.70906pt>
+<figure/ontologyv3.png, id=135, 496.85625pt x 256.70906pt>
 File: figure/ontologyv3.png Graphic file (type png)
 
 <use figure/ontologyv3.png>
 Package pdftex.def Info: figure/ontologyv3.png used on input line 5.
 (pdftex.def)             Requested size: 227.62206pt x 117.60579pt.
- [30 <./figure/programdastani.png>])
-(./estrutura/analisecomparativa/estvs3.tex [31 <./figure/ontologyv3.png>]
+) (./estrutura/analisecomparativa/estvs3.tex
+[31 <./figure/ontologyv3.png>]
 Overfull \hbox (45.19539pt too wide) in paragraph at lines 36--44
 [][] 
  []
 
-) [32] (./estrutura/analisecomparativa/compvs3.tex)
-(./estrutura/analisecomparativa/genormas.tex)
+) (./estrutura/analisecomparativa/compvs3.tex)
+(./estrutura/analisecomparativa/genormas.tex) [32]
 (./estrutura/analisecomparativa/estnormas.tex [33])
 (./estrutura/analisecomparativa/compnormas.tex)
 (./estrutura/analisecomparativa/perspectivagenerica.tex) [34]
@@ -1080,26 +1088,30 @@ AED: lastpage setting LastPage
 | Comentario, sugestao ou critica sobre o abnTeX? Entre em contato: |
 |                  http://abntex.codigolivre.org.br                 |
 +-------------------------------------------------------------------+
-(./dissertacao.aux) ) 
+(./dissertacao.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 7312 strings out of 493013
- 108550 string characters out of 6135682
- 186518 words of memory out of 5000000
- 10456 multiletter control sequences out of 15000+600000
- 56012 words of font info for 125 fonts, out of 8000000 for 9000
+ 7328 strings out of 493013
+ 108896 string characters out of 6135682
+ 189733 words of memory out of 5000000
+ 10471 multiletter control sequences out of 15000+600000
+ 56312 words of font info for 126 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,18n,43p,787b,452s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc
-}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb
-i8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on dissertacao.pdf (44 pages, 931352 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
+w/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on dissertacao.pdf (44 pages, 934355 bytes).
 PDF statistics:
  206 PDF objects out of 1000 (max. 8388607)
  135 compressed objects within 2 object streams

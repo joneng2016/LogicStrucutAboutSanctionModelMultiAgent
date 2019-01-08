@@ -84,6 +84,12 @@ ISBN 978-3-642-05301-6.}
 {DUBOIS, D.; LANG, J.; PRADE, H. Possibilistic logic.
 In:  \underline{\ \ \ \ \ \ \ \ }. [S.l.: s.n.], 1994. p. 439--513.}
 
+\bibitem[Esteva et al. 2002]{formalizeagent}
+\abntrefinfo{Esteva et al.}{ESTEVA et al.}{2002}
+{ESTEVA, M.; PADGET, J.; SIERRA, C. Formalizing a languages for institutions
+  and norms. In:  MEYER, J.; TAMBE, M. (Ed.). \textbf{Lecture Notes Artificial
+  Intelligence}. [S.l.]: Springer-Verlag, 2002. v.~2333, p. 348--366.}
+
 \bibitem[Exploring Organizational Designs with TAEMS: A Case Study of
   Distributed Data Processing 1996]{taems01}
 \abntrefinfo{Exploring\ldots}{EXPLORING\ldots}{1996}
@@ -182,6 +188,11 @@ ISBN 0-7695-1915-6.}
   Berlin Heidelberg, 2004. p. 259--280.
 ISBN 978-3-540-25867-4.}
 
+\bibitem[Moses e Tennenholtz 1995]{formalizeagent2}
+\abntrefinfo{Moses e Tennenholtz}{MOSES; TENNENHOLTZ}{1995}
+{MOSES, Y.; TENNENHOLTZ, M. Artificial social systems.
+\textbf{Computers and Artificial Intelligence}, v.~14, 12 1995.}
+
 \bibitem[Pentland e Rueter 1994]{grammarselforganizationmodel2}
 \abntrefinfo{Pentland e Rueter}{PENTLAND; RUETER}{1994}
 {PENTLAND, B.; RUETER, H. H. Organizational routines as grammars of action.
@@ -252,5 +263,12 @@ ISBN 0130803022. Dispon{\'\i}vel em:
 {WOOLDRIDGE, M.; JENNINGS, N.~R. Intelligent agents: theory and practice.
 \textbf{The Knowledge Engineering Review}, Cambridge University Press, v.~10,
   n.~2, p. 115–152, 1995.}
+
+\bibitem[Wright 1969]{ontologynormative}
+\abntrefinfo{Wright}{WRIGHT}{1969}
+{WRIGHT, G.~H. von. On the logic and ontology of norms.
+In:  \underline{\ \ \ \ \ \ \ \ }. \textbf{Philosophical Logic}. Dordrecht:
+  Springer Netherlands, 1969. p. 89--107.
+ISBN 978-94-010-9614-0.}
 
 \end{thebibliography}
