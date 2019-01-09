@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.11.6)  8 JAN 2019 18:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.11.6)  9 JAN 2019 17:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1011,9 +1011,8 @@ File: figure/programdastani.png Graphic file (type png)
 Package pdftex.def Info: figure/programdastani.png used on input line 31.
 (pdftex.def)             Requested size: 364.19667pt x 95.06172pt.
  [25 <./figure/masprogram.png>])
-(./estrutura/fundamentacaoteorica/riscos.tex)
-(./estrutura/fundamentacaoteorica/poss.tex [26 <./figure/programdastani.png>])
-[27]
+(./estrutura/fundamentacaoteorica/riscos.tex [26 <./figure/programdastani.png>]
+) (./estrutura/fundamentacaoteorica/poss.tex) [27]
 Cap\'{\i }tulo 3.
 (./estrutura/metodologia/genmet.tex)
 (./estrutura/metodologia/analisedosmodelos.tex)
@@ -1111,7 +1110,7 @@ w/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on dissertacao.pdf (44 pages, 934355 bytes).
+Output written on dissertacao.pdf (44 pages, 936811 bytes).
 PDF statistics:
  206 PDF objects out of 1000 (max. 8388607)
  135 compressed objects within 2 object streams
