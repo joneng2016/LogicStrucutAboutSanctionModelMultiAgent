@@ -2,7 +2,7 @@ A lógica modal consiste em uma linguagem para tratar proposições que necessar
 são verdade. Por exemplo, A água sobre 1 atm e entre 0,1 ºC - 99 ºC se apresenta no estado líquido. O conceito de possibilidade é totalmente dependente do conceito de necessidade. Isso pois 
 uma proposição possível é aquela que necessariamente não é falsa \cite{modallogic}. 
 
-A lógica modal é do tipo \textbf{K} e isso significa que nela está condita simbolos $ \sim $ para não, $ \rightarrow$ para "se ... então" e $\Box$ para "Isto é necessarário para que". 
+A lógica modal é do tipo \textbf{K} e isso significa que nela está condita simbolos $ \sim $ para não, $ \rightarrow$ para "se ... então" e $\Box$ para "Isto é necessário". 
 De \textbf{K} e $\Box$, tem-se as seguintes regras;
 
 Sendo que $isTheorem(A,\textbf{K})$ representa "Se A é teorema de \textbf{K}". 
@@ -11,3 +11,65 @@ Sendo que $isTheorem(A,\textbf{K})$ representa "Se A é teorema de \textbf{K}".
 isTheorem(A,\textbf{K}) \rightarrow \Box A
 \end{equation}
 \label{ktheorema}
+
+\begin{equation} 
+ \Box (A \rightarrow B) \rightarrow (\Box A \rightarrow \Box B) 
+\end{equation}
+\label{boxdist}
+
+O operador $\Diamond$ apresenta o seguinte correspondente semântico; "Isto é possível". A relação entre $\Box$ e $\Diamond$ é dada pela regra que se segue.
+
+\begin{equation} 
+ \Diamond A = \sim\Box\sim A
+\end{equation}
+\label{dianotboxnota}
+
+As relações a seguir apresentam outras regras válidas para essa lógica;
+
+\begin{equation} 
+ \Box (A \wedge B)  \rightarrow \Box A \wedge \Box B
+\end{equation}
+\label{boxand}
+
+\begin{equation} 
+ \Box A \vee \Box B \rightarrow \Box (A \vee B)
+\end{equation}
+\label{boxaor}
+
+\begin{equation} 
+ \Box A \rightarrow A
+\end{equation}
+\label{boxtoa}
+
+\begin{equation} 
+    \Box A \rightarrow \Box\Box A
+\end{equation}
+\label{aboxbox}
+
+\begin{equation} 
+    \Diamond A \rightarrow \Box\Diamond A
+\end{equation}
+\label{diaaboxdiaa}
+
+\begin{equation} 
+    \Box\Box...\Box = \Box
+\end{equation}
+\label{alotbox}
+
+\begin{equation} 
+    \Diamond\Diamond...\Diamond = \Diamond
+\end{equation}
+\label{diamont}
+
+
+\begin{equation} 
+    A \rightarrow \Box\Diamond A
+\end{equation}
+\label{diamont}
+
+
+
+
+
+
+
