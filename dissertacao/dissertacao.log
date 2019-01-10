@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.11.6)  9 JAN 2019 17:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.11.6)  10 JAN 2019 16:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1012,13 +1012,13 @@ Package pdftex.def Info: figure/programdastani.png used on input line 31.
 (pdftex.def)             Requested size: 364.19667pt x 95.06172pt.
  [25 <./figure/masprogram.png>])
 (./estrutura/fundamentacaoteorica/riscos.tex [26 <./figure/programdastani.png>]
-) (./estrutura/fundamentacaoteorica/poss.tex) [27]
+[27]) (./estrutura/fundamentacaoteorica/poss.tex) [28]
 Cap\'{\i }tulo 3.
 (./estrutura/metodologia/genmet.tex)
 (./estrutura/metodologia/analisedosmodelos.tex)
 (./estrutura/metodologia/acomprof.tex)
 (./estrutura/metodologia/construcaomodelo.tex)
-(./estrutura/metodologia/implementacao.tex) [28
+(./estrutura/metodologia/implementacao.tex) [29
 
 ]
 Cap\'{\i }tulo 4.
@@ -1029,7 +1029,7 @@ Cap\'{\i }tulo 4.
 (./estrutura/resultados/diagramadeatividades.tex)
 (./estrutura/resultados/casodeestudo.tex)
 (./estrutura/resultados/raciocinios.tex) (./estrutura/resultados/validacao.tex)
-[29
+[30
 
 ]
 Cap\'{\i }tulo 5.
@@ -1044,43 +1044,43 @@ File: figure/programdastani.png Graphic file (type png)
 Package pdftex.def Info: figure/programdastani.png used on input line 5.
 (pdftex.def)             Requested size: 364.19667pt x 95.06172pt.
 ) (./estrutura/analisecomparativa/compdastani.tex)
-(./estrutura/analisecomparativa/genvs3.tex [30
+(./estrutura/analisecomparativa/genvs3.tex [31
 
 ]
-<figure/ontologyv3.png, id=135, 496.85625pt x 256.70906pt>
+<figure/ontologyv3.png, id=138, 496.85625pt x 256.70906pt>
 File: figure/ontologyv3.png Graphic file (type png)
 
 <use figure/ontologyv3.png>
 Package pdftex.def Info: figure/ontologyv3.png used on input line 5.
 (pdftex.def)             Requested size: 227.62206pt x 117.60579pt.
 ) (./estrutura/analisecomparativa/estvs3.tex
-[31 <./figure/ontologyv3.png>]
+[32 <./figure/ontologyv3.png>]
 Overfull \hbox (45.19539pt too wide) in paragraph at lines 36--44
 [][] 
  []
 
 ) (./estrutura/analisecomparativa/compvs3.tex)
-(./estrutura/analisecomparativa/genormas.tex) [32]
-(./estrutura/analisecomparativa/estnormas.tex [33])
+(./estrutura/analisecomparativa/genormas.tex) [33]
+(./estrutura/analisecomparativa/estnormas.tex [34])
 (./estrutura/analisecomparativa/compnormas.tex)
-(./estrutura/analisecomparativa/perspectivagenerica.tex) [34]
+(./estrutura/analisecomparativa/perspectivagenerica.tex) [35]
 Cap\'{\i }tulo 6.
 (./estrutura/conclusao/avaliacaodosobjetivos.tex)
-(./estrutura/conclusao/trabalhosfuturos.tex) [35
+(./estrutura/conclusao/trabalhosfuturos.tex) [36
 
-] (./dissertacao.bbl [36
+] (./dissertacao.bbl [37
 
 
 ]
-[37]) [38]
+[38]) [39]
 Apendice A.
-[39
+[40
 
 ]
 Anexo A.
 
 AED: lastpage setting LastPage
-[40
+[41
 
 ]
 +-------------------------------------------------------------------+
@@ -1093,11 +1093,11 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7328 strings out of 493013
- 108896 string characters out of 6135682
- 189733 words of memory out of 5000000
- 10471 multiletter control sequences out of 15000+600000
- 56312 words of font info for 126 fonts, out of 8000000 for 9000
+ 7337 strings out of 493013
+ 108990 string characters out of 6135682
+ 189723 words of memory out of 5000000
+ 10480 multiletter control sequences out of 15000+600000
+ 57326 words of font info for 128 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,18n,43p,787b,452s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
@@ -1110,10 +1110,10 @@ w/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on dissertacao.pdf (44 pages, 936811 bytes).
+Output written on dissertacao.pdf (45 pages, 940953 bytes).
 PDF statistics:
- 206 PDF objects out of 1000 (max. 8388607)
- 135 compressed objects within 2 object streams
+ 209 PDF objects out of 1000 (max. 8388607)
+ 137 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

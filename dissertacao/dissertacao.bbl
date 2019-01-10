@@ -79,11 +79,6 @@ ISBN 978-3-319-42691-4.}
   Heidelberg, 2009. p. 16--31.
 ISBN 978-3-642-05301-6.}
 
-\bibitem[Dubois et al. 1994]{possibilistilogic}
-\abntrefinfo{Dubois et al.}{DUBOIS et al.}{1994}
-{DUBOIS, D.; LANG, J.; PRADE, H. Possibilistic logic.
-In:  \underline{\ \ \ \ \ \ \ \ }. [S.l.: s.n.], 1994. p. 439--513.}
-
 \bibitem[Esteva et al. 2002]{formalizeagent}
 \abntrefinfo{Esteva et al.}{ESTEVA et al.}{2002}
 {ESTEVA, M.; PADGET, J.; SIERRA, C. Formalizing a languages for institutions
@@ -131,6 +126,12 @@ ISSN 0166-3615.
 WET ICE '95.
 Dispon{\'\i}vel em:
   $<$http://www.sciencedirect.com/science/article/pii/0166361595000798$>$.}
+
+\bibitem[Garson 2018]{modallogic}
+\abntrefinfo{Garson}{GARSON}{2018}
+{GARSON, J. Modal logic. In:  ZALTA, E.~N. (Ed.). \textbf{The Stanford
+  Encyclopedia of Philosophy}. Fall 2018. [S.l.]: Metaphysics Research Lab,
+  Stanford University, 2018.}
 
 \bibitem[Garvey e Lesser 1996]{TAEMS}
 \abntrefinfo{Garvey e Lesser}{GARVEY; LESSER}{1996}
