@@ -1,0 +1,104 @@
+A organização estrutural dos conceitos em módulos se justificativa por intermédio da grande quantidade de conceitos presentes dentro deste modelo. 
+Um desses é o módulo da entidade \textit{Entity Module} representado por $M_{Entity}$. 
+
+No mundo sobre o qual este modelo pretende representar trabalha com o fato de que tanto agentes como artefatos possuem algumas propriedades em comum, que
+é; existem, ocupam lugar no espaço, estão sujeitos ao tempo, apresentam estados e participam de processos. Essa primissa possuem os 
+seus fundamentos alicerçados em \ref{agent} e \ref{artefact} e isso será demonstrado com maior rigor no texto que se segue. Tendo em vista o ocorrência de
+certos conceitos necessários para lidar com essas questões, se fez necessário definir um módulo de entidades para agrupa-los em uma estrutura única.
+Esse módulo é composto pelos seguintes conceitos;
+
+\begin{equation} 
+M_{Entity} = \{ Entity, Agent, Artefact, EntityGoal, Agg, Ago\}
+\end{equation}\label{modent}
+
+\textbf{Entity} - O termo entidade é sujeito a profundos debates filosóficos, porém neste texto o termo é usado para referenciar uma "coisa" que pode ser identificada, como
+uma pessoa, companhia ou um evento \cite{entity}. É dado que as propriedades anteriormente mencionadas caracterizam as "coisas" que podem ser identificadas, 
+logo entidades. É digno de nota a existência de entidades que não se adequam a todas essas propriedades. Contudo, essas propriedades fazem referência ao 
+que se caracteriza por entidade respeitando o conceito padrão \cite{entity} e restringindo para o escopo deste modelo. Isso contempla tanto os agentes 
+assim como artefatos, como fica claro na relação \ref{defineentity}. O texto a seguir demonstra como essas propriedades se aplicam a agentes e a artefatos 
+(se isso ficar demonstrado, logo fica demonstrado que são entidades).
+
+\textit{Existe -} implica numa propriedade que se justifica por si mesma, pois uma vez que o objetio ocorre, então existe. Tanto agentes como artefatos, 
+existem dentro do mundo a ser representado e podem ser identificados.  
+
+\textit{Ocupa lugar no espaço, estão sujeitos ao tempo - } Como definido em \ref{agent} e \ref{artefact}, ambos são situados em ambientes. 
+Isso possibilita inferir que se faz necessário a presença de um conceito que se apresente como uma propriedade de estado para agentes e artefatos. 
+Um ambiente, no contexto onde os agentes e artefatos são usados para representar ativiades das pessoas, condiz com a relação de espaço e tempo. 
+
+\textit{Participa de Processos -} Processos podem constituir entidades bem como entidades necessariamente constituem 
+processos por intermédio a ação que aquelas manifestam nesses. No que se verifica ao primeio caso, é possível usar o ser humano como exemplo - onde
+a entidade humano é formulada por uma série de processos bio-quimicos. Sobre o segundo caso, relações climáticas explificam isso, onde a água é uma entidade
+presente em processos termodinâmicos. Essa explicação justifica o texto; \textit{Participam de Processos}.  
+
+\textit{Apresenta estados -} O fato de que artefatos bem como agentes apresentam atributos (que podem mudar e podem assumir diferentes valores no que tange aos eventos 
+externos e internos), então ambos também apresentam a concepção de estados (sendo esse termo usado diretamente em certos pontos dos textos presentens 
+tanto em \ref{agent} \ref{artefact}). 
+
+
+\begin{equation} \label{defineentity} 
+( Agent \cup Artefact ) \subset Entity
+\end{equation}
+
+\textbf{Agent} - Esse estudo adota a definição de agentes presentes no primeiro parágrado da seção \ref{agent}. Isso implica entidades autonomas, ou seja -
+que apresenta a capacidade de agir por si mesmo quando diante de condições onde isso é necessário. A seção \ref{agent}, apresenta o conceito de agentes
+inteligentes e esse mesmo conceito é adotado neste modelo. 
+
+Não é preocupação deste estudo delimitar as representações do agente bem como definir algoritmos para verificar como se da as relações de tomada 
+de decisão. Assim sendo, fica em aberto para o modelador definir como se dá os processos de tomada de decisão, estados internos e modelos de representação 
+que serão usados para definir o comportanto do agente. 
+
+\textbf{Artefact} - são entidade que existem para que os agentes possam cumprir com os seus objetivos e que apresentam interface de uso, instruções 
+de operação, funcionalidade e estrutura-comportamento. Essas entidades não são orientados a objetivos e 
+não apresentam capacidade de comunicação como definido na seção \ref{artefact}. Predicados que contemplam esses aspectos do artefato serão apresentados
+mais adiante ao decorrer do texto. 
+
+Os agentes são autonomos e orientados a objetivos sendo esses dois elementos descaracterizantes do que se defini como por artefato. Logo, apesar de agentes
+e artefatos serem entidades, não é possível existir um agente que seja artefato ou um artefato que seja agente, o que é dado por \ref{agentsartefactvoid}. 
+
+\begin{equation} \label{agentsartefactvoid}
+    Agent \cap Artefact = \emptyset
+\end{equation}
+
+
+\textbf{EntityGoal} - Condiz a subcojuntos de \textbf{Entity} que, por intermédio de um predicado que será apresentado posteriormente, se relacionam 
+com elementos do conjunto \textbf{Goal} (representam os objetivos). Assim sendo, consiste nas entidades necessárias que devem estar presentes no 
+ato da execução de um certo objetivo para que este possa ser alcançado. Para exemplificar é possível conceber o seguinte cenário; 
+
+\textbf{Exemplo da Redação:} "O Professor Aristóteles definiu uma atividade; Escrever uma redação sobre o livro Metafísica. Para isso, o aluno Alexandre o Grande deve escrever um dado texto, deve ler um livro sobre o tópico em interesse, deve pegar uma folha, deve pegar um lapis e escrever a redação".  
+
+
+Neste modelo, esse cenário pode 
+ser especificado da seguinte forma; $E = \{aristoteles, alexadre, folha, lapis, livro\}$, em termos de objetivo há três $G = \{ g_0, g_1,g_2\}$  onde $g_0$ corresponde ao ato do professor definir a atividade, $g_1$ corresponde ao ato de ler o livro e $g_2$ ao ato de escrever a redação. Então, é possível definir três subconjuntos de $E$, esses são os conjuntos \textbf{EntityGoal},
+$E_g = \{ eg_{0}, eg_{1}, eg_{2} \}$, onde $eg_{0} = \{ aristoteles \}$ $eg_{1} = \{ alexandre, livro\}$ e $eg_{2} = \{ aluno, folha, lapis \}$. Em termos de relação, que será melhor trabalhado 
+em partes futuras deste texto, considera-se que $eg_1$ se relaciona com $g_1$ e $eg_2$ com $g_2$.
+
+\textbf{Agg, Ago} - ambos corresponde ao conjunto de agentes que atingiram um determinado objetivo. Contudo, \textbf{Agg} faz referência aos gentes que 
+atingiram o objetivo sem serem obrigados a isso, e \textbf{Ago} condiz aos agentes que atingiram o objetivo sendo obrigados a isso. Em um primeiro momento
+essa diferença para ser desnecessária, mas é relevante para criação de regras que serão apresentadas futuramente. A necessidade deste conjunto pode 
+por ser demonstrada com o \textbf{Exemplo da Redação} onde antes de executar ambos os objetivos $Ago$, pois Alexandre e Aristóteles são obrigados a alcançar os objetivos. Então, é defindo por $Ago = \{ ago_0, ago_1, ago_1 \}$ onde $ago_0 = \emptyset$, $ago_1 = \emptyset$ e $ago_2 = \emptyset$. Ao atingir $g_0$ o $ago_o = \{ artistoteles\}$ $g_1$, então $ago_1 = \{ alexandre \}$, pois o aluno finalizou 
+o primeiro objetivo. Ao término de $g_2$, $ago_2 = \{ alexandre \}$. Existe predicados que relacionam $Agg$, $Ago$ com $Goal$ e serão apresentados futuramente.
+
+
+\textbf{O Módulo de Atividades} - \textit{Task Module} representado por $M_{Task}$ condiz com os conceitos relacionados aos objetivos que devem ser 
+atingidos bem como aos papeis que são assumidos pelos agentes. 
+
+\begin{equation}
+    M_{Task} = \{ Goal, GoalPreRequisite, Role \}
+\end{equation}
+
+\textbf{Goal} - faz referência aos objetivos que devem ser atingidos pelos agentes. Os fundamentos semanticos deste conjunto dos estudos presentes em 
+\ref{sma} \ref{moiseformalizesma}, mais especificamente do \textit{MOISE}. Neste modelo, um objetivo é descrito em termos de $eg$ e $rg$, que são as entidades e os relacionamentos 
+(será explicado) que devem ser ser feitos para que o objetivo possa ser dado como concluído. Com o propósito de explorar as com maior granularidade 
+as relações entre o agente e o objetivo, neste modelo o conceito de missão foi removido. Como será apresntado posteriormente, as relações deonticas 
+entre os papeis se dão com o objetivo e não com a missão. O estudo presente no \textit{MOISE} também grafos para representar objetivos-subobjetivos. Esse 
+modelo não importou a estrutura em grafos para descrever o comportamento de objetivos. 
+
+\textbf{GoalPreRequisite} - Consiste em subconjuntos de \textbf{Goal} que definem os pre-requisitos de um dado objetivo (o predicado deste relacionamento)
+será apresentado mais tarde. Para exmeplificar, considere o \textbf{Exemplo da Redação}. O conjunto de objetivos é dado por $Goal = \{ g_0, g_1, g_2 \}$
+onde que $g_0$ é o primeiro objetivo e por conta disto não apresenta nenhum pré-requisito. Já o $g_1$ só pode começar apenas se 
+$g_0$ for alcançado, e o mesmo se dá para $g_2$, portanto $GoalPreRequisite = \{ gpr_0, gpr_1 \} | gpr_0 = \{ g_0 \}, gpr_1 = \{ g_1 \}$  onde $gpr_0$ está relacionado com $g_1$ e $gpr_1$ está relacionado com $g_2$.
+
+\textbf{Role} - apresenta o papel que um agente pode adotar dentro de um \textit{SMA}. Esse conceito também é importado do \textit{MOISE} 
+\ref{moiseformalizesma} e define as relações deonticas entre os agentes e os objetivos. Para exemplificar, pode-se considerar o \textbf{Exemplo da Redação} onde existe dois agentes $Agent = \{ aristoteles, alexandre \}$, existe dois papeis $Role = \{ professor, aluno\}$. Neste caso, o agente $aristoteles$ é  
+o $professor$ e o agente $alexandre$ é o $aluno$.
+

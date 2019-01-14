@@ -71,6 +71,12 @@ Dispon{\'\i}vel em: $<$https://doi.org/10.1007/s12008-011-0138-4$>$.}
   XI}. Cham: Springer International Publishing, 2016. p. 59--77.
 ISBN 978-3-319-42691-4.}
 
+\bibitem[Chen 1976]{entity}
+\abntrefinfo{Chen}{CHEN}{1976}
+{CHEN, P.~P. shan. The entity-relationship model: Toward a unified view of
+  data.
+\textbf{ACM Transactions on Database Systems}, v.~1, p. 9--36, 1976.}
+
 \bibitem[Dastani et al. 2009]{dastaniframework}
 \abntrefinfo{Dastani et al.}{DASTANI et al.}{2009}
 {DASTANI, M. et al. Normative multi-agent programs and their logics. In:
