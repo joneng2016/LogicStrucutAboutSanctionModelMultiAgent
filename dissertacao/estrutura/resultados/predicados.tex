@@ -1,0 +1,127 @@
+O predicado $relationHas(r_l,e_i,e_k) | r_l \in Relation \wedge  e_i, e_k \in Entity$ é usado para tratar as questões de identificar a relação entre 
+duas entidades com a sua relação. Esse predicado se lê da seguinte forma: O relacinamento $r_l$ possui a entidade $e_i$ e a entidade
+$e_k$. Para demonstrar como se dá o uso desse predicado pode-se considerar o \textbf{Exemplo da Redação}. A entidade $alexandre$ apresenta 
+uma relação com $folha$ que é identificada como $relAlexandreFolha$. Portanto, com o predicado, a representação 
+fica; $relationHas(relAlexandreFolha,alexandre,folha)$
+
+O predicado $hasRole(ag_n,\rho_m) | ag_n \in Agent \wedge \rho_m \in Role$ que tem sua origem nos estudos do \textit{MOISE+} onde 
+cada agente tem uma função dentro do contexto do \textit{SMA}. Esse predicado se lê da seguinte forma: O agente $ag_n$ tem um
+papel $\rho_m$. Usando o \textbf{Exemplo da Redação} tem-se o seguinte: $hasRole(artistoteles,professor)$. 
+
+O predicado $hasObligation(\rho_m,g_j) | \rho_m \in Role, g_j \in Goal $ tem suas origens nos estudos da lógica deôntica também 
+presentes no modelo \textit{MOISE+}. Esse predicado pode ser lido da seguinte maneira: O agente que assumir o papel $\rho_m$ tem a 
+obrigação de concluir o objetivo $g_j$. No exemplo padrão deste texto (\textbf{Exemplo da Redação}), o primeiro objetivo é uma
+obrigação do professor, portanto: $hasObligation(professor,g_0)$
+
+O predicado $hasPermission(\rho_m, g_j) | \rho_m \in Role, g_j \in Goal $ também está associado aos estudos da lógica deontica
+relacinada ao \textit{MOISE+}. A leitura se dá desta maneia: O agente que $\rho_m$ tem a permissão de concluir o objetivo $g_j$.
+Usando o exemplo padrão como base, onde $professor$ tem a obrigação para executar $g_0$, então também tem permissão (isso
+será melhor explicado em uma regra que será apresentada mais tarde). Portanto; $hasPermission(professor,g_0)$.  
+
+O predicado $isReached(g_k) | g_k \in Goal $ Todos os agentes, que eram obrigados a concluir o objetivo $g_k$, concluiram. A 
+existência desse predicado se dá apenas ao fato de que em certos racicínios é necessário indentificar que um dado objetivo 
+foi atingido. 
+
+O predicado $stopIn(g_n, ag_m) | g_n \in Goal, ag_m \in Agent$ apresenta a seguinte leitura: Toda a atividade foi encerrada no
+obejtivo $g_n$ por uma ação associada ao agente $ag_m$. Para certos faciocínios se faz necessário identificar o encerramento
+das atividades como um todo e por quem isso aconteceu. Em certos casos não há a necessidade de identificar o agente $ag_m$. Para
+isso há uma outra versão deste mesmo predicado escrito da seguinte forma: $stopIn(g_n)$ e sua semantica indica que a atividade 
+foi encerrada do ojetivo $g_n$.
+
+O predicado $nextGoal(g_i,g_j) |g_i, g_j \in Goal$ possui a seguinte semantica: O objetivo $g_i$ tem um próximo o objetivo que 
+é $g_j$. Sua necessidade advêm do fato de que este modelo trabalha os mesmos conceitos presentes em \textit{MOISE+} porém sobre
+uma abordagem diferente. Em vez de usar estrutura de super-sub objetivos e definindo operadores de série e paralelo, os objetivos 
+não possuem estruturas e suas relações se dão por um objetivo apontado para o próximo. Então, para exemplificar pode-se 
+considerar uma atividade descrita por quatro objetivos, sendo que $g_0$ é pré-requisito para $g_1$ e $g_2$. Em contrapartida
+$g_3$ só começar a ser atingido depois da finalização de $g_1$ e $g_2$. Assim sendo, na linguagem proposta neste estudo, 
+esse problema é escrito da seguinte forma: $nextGoal(g_0,g_1), nextGoal(g_0,g_2), nextGoal(g_1,g_3), nextGoal(g_2,g_3)$.
+
+O predicado $hasCondition(g_i,cg_n) | g_i \in Goal, cg_n \subset GoalCondition$ é lido da seguinte forma: O objetivo $g_i$ só pode 
+ser iniciado se todas as condições presentes em $cg_n$ estiverem presentes quando o agente iniciar a tentativa de acança-lo. 
+O uso deste predicado pode ser exemplificado por meio do exemplo padrão. Tendo em vista que o objetivo $g_0$ pode começar apenas 
+se as condições $cg_1 = \{ luz, silencio \}$, então para este caso, é possível escrever o seguinte predicado: $hasCondition(g_0,cg_1)$.
+
+O predicado $hasEntity(g_i,eg_m) | g_i \in Goal, eg_m \subset EntityGoal $ é lido da seguinte forma: Para que o objetivo $g_i$ seja atingido, as entidades presentes em 
+$eg_m$ devem estar presentes. O propósito deste predicado reside na necessidade de identificar quais são as entidades que devem 
+estar presentes para que um dado objetivo possa ser executado. No \textbf{Exemplo da Redação}, um objetivo $g_2$ só pode ser 
+atingido se as entidades $eg_2 = \{ aluno, folha, lapis\}$ estiverem presentes. Para essa situação, esse predicado é escrito da 
+seguinte forma $hasEntity(g_2,eg_2)$.
+
+O predicado $hasRelation(g_i,rg_m) | g_i \in Goal \wedge rg_m \subset RelationGoal $ é lido da seguinte forma: Para que o objetivo $g_i$
+seja atingido se faz necessário a realização de todos os relacionamentos contidos em $rg_m$. Dentro do exemplo padrão, o objetivo 
+$g_2$ só pode ser atigido se os relacionamentos $rg_2$ estiverem presentes. Portando, a especificação para esse situação é escrita
+da seguinte forma: $hasRelagion(g_2,rg_2)$.
+
+O predicado $isPresent(X) | X = cg_n \vee X = c_k \vee  X = rg_k \vee X = r_k \vee X = eg_k \vee X = e_k $. Esse predicado é lido 
+da seguinte forma: $X$ está presente neste instante. Em alguns raciocínios e de impotancia verificar se um elemento ou um conjunto
+de elementos está presente durante a tentativa de um dado agente tentar executar algum objetivo.
+
+O predicado $tryReach(ag_i,g_j) | ag \in Agent \wedge g_j \in Goal $ é lido da seguinte forma: Um dado agente $ag_i$ está tentando 
+atingir o objetivo $g_j$. Para algumas situações é de crucial importancia identificar quando um agente está tentando atingir um 
+dado objetivo, fazendo-se necessário a existência de um predicado apenas para esse propósito. Para exemplificar pode-se considerar 
+o exemplo presente no quadro do professor Aristoteles com o seu aluno Alexandre. Para que o professor $Aristoteles$ possa alcançar 
+o objetivo $g_0$, ele precisa tentar fazer isso. Neste modelo, essa situação é representada da seguinte maneira: $tryReach(aristoteles,g_0)$.
+
+O predicado $ violationCondition(ag_i,g_j,c_k) $ sendo que 
+$ ag_i \in Agent \wedge g_k \in Goal \wedge c_k \in Condition \wedge c_k  \in cg_n \wedge cg_n \subset ConditionGoal $. Esse predicado
+deve ser lido da seguinte maneira: O agente $ag_i$ comente uma violação de condição no objetivo $g_j$ por tentar realizar uma determinada
+atividade em que a condição $c_k$ era essencial porém não estava presente. Os fundamentos deste predicado está vinculado com a seção \ref{normasdastani}.
+No modelo em \ref{normasdastani} para representar aspectos normativos dos agentes, a regra do tipo \textit{Count-as} apresenta 
+quais são as circunstâncias que ocasionam numa violação. Esse predicado cumpre com esse propósito para o conjunto \textbf{Conditions}. 
+Para exemplificar, no \textbf{Exemplo da Redação}, se o professor Aristoteles lecionar sem que haja luz suficiente para isso, 
+então ele cometeu uma violação de condição caracterizada da seguinte maneira: $violationCondition(aristoteles,g_0,luz)$
+
+O predicado $ violationRelation(ag_i,g_j,r_k) $ sendo que $ ag_i \in Agent \wedge g_k \in Goal \wedge c_k \in relation \wedge r_k  \in rg_n \wedge rg_n \subset RelationCondition $.
+Esse predicado possui a mesma situação presente em $ violationCondition(ag_i,g_j,c_k) $ contudo o foco diz respeito aos relacionamentos.
+A leitura se dá desta forma: O agente \textit{ag\_i} pratica uma violação de relação no objetivo $g_j$ por executar a atividade 
+sem que a relação $r_k$ esteja presente. O uso deste predicado por ser feito considerando o exemplo em análise com a adição de uma breve 
+descrição de uma situação que possa ocorrer que é o seguinte; A ponta do lápis que Alexandre tenta usar para escrever a redação está 
+quebrada. Portanto, a relação \textit{relLapisFolha} não pode ser feita. Se o agente \textit{Alexandre} alcançar o objetivo $g_2$ sem ter 
+as circunstancias necessárias para isso, então comente uma violação de relação sendo escrito da seguite forma: $violationRelation(alexandre,g_2,r_2)$.
+
+O predicado $ violationEntity(ag_i,g_j,e_k) $ sendo que $ag_i \in Agent \wedge g_j \in Goal \wedge e_k \in Entity \wedge e_k \in eg_n \wedge eg_n \subset EntityGoal $.
+Esse predicado advêm das mesmas situações dos dois predicados a cima. A leitura deste predicado se dá da seguinte forma: O agente 
+$ag_i$ cometeu uma violação por tentar alcançar o objetivo $g_j$ sem que a entidade $e_k$ esteja preesente. No exemplo padrão o uso 
+deste predicado consiste em Alexandre tentar executar $g_2$ sem ter a entidade lapis o que resulta no seguinte: $violationEntity(alexandre, g_2, lapis)$.
+
+O predicado $ hasRisk(X, risk_j, cs_k) | risk_k \in Risk \wedge cs_k \in Consequence \wedge (X = c_k \vee X = r_k $ é baseado nos estudos 
+presentes na seção \ref{risksec} e tem a finaliade de finir os riscos associados a tentar executar algum atividade sem que 
+$c_k$ ou $r_k$ esteja presente. Portanto, a leitura dete predicado é dada da seguinte forma; A ocorrência de uma violação 
+onde $X$ está envolvido ocasiona em um evento associado ao $risk_j$ com a consequência $cs_k$. Ao explicar sobre o conjunto 
+\textbf{Conequence}, foi dado um exemplo sobre um eletricista que tem o potencial de ser eletrocutado. Para esse exemplo, 
+o uso deste predicado apresenta o seguinte formado: $hasRisk(relFerramentaIsolanteBarramento, eletrocutado, morte)$ que traduz
+o ato do eletricista não efetuar o relacionamento de uma ferramenta isolante para entrar em contato com o barramento $relFerramentaIsolanteBarramento$,
+é eletrocutado e acaba se submetendo a $morte$ por conta disto.
+
+O predicado $hasPossibility(r_l) | r_l \in Relation $ tem seus fundamentos associados ao estudo da lógica modal, presente na seção \ref{logic}, no operador 
+$\Diamond$ cuja semântica denota possibilidade. Contudo, neste estudo esse termo apresenta o seguinte conceito semântico: há a possibilidade 
+de acontecer um evento ruim associado ao risco $r_l$ vinculado ao agente que está associado a essa relação mesmo que esse agente 
+não tenha cometido nenhum erro durante o procedimento. Esse predicado tem como por finalidade representar situações onde um evento 
+ruim acontece não pelo erro do profissional diretamente associado a situação, mas sim por outras cadeias causais complexas de serem identificadas e justamente por isso 
+são abstraídas por conceitos de aleatoriedades, idem possibilidades. Para 
+exemplificar pode-se considerar a situação onde um eletricista de linha viva usa um bastão isolante para acessar um barramento altamente energizado.
+Contudo, esse bastão pode estar com isolamento comprometido. Em testes que deveriam ser feitos antes do eletricista fazer uso desta ferramenta,
+esse comportamento pode ser revelado eliminado qualquer possibilidade de que os riscos venham a se tornar eventos reais, pois se o bastão estiver em bom estado
+então o eletricista não se envolverá em um acidente por esse fator, se o bastão estiver em mal estado - isso será identificado e a ferramenta 
+será adequadamente substituida. Contudo, considerando um cenário onde por negligencia de profissionais a medição não é feita, surge 
+uma possibilidade do isolamento estar comprometido. Essa situação torna verdade o seguinte predicado $hasPossibility(relBastaoBarramento)$.
+
+O predicado $affects(r_k,r_n) | \{ r_k, r_n\} \subset Relation $ trabalha em conjunto $hasPossibility(r_l)$. Esse predicado se 
+lê da seguinte forma: Se $r_k$ não foi realizado, ou se for realizado de forma inapropriada, isso afeta  $r_n$ tornando verdade 
+$hasPossibility(r_n)$. Ambos são importantes em raciocínios onde se deseja mostrar que a não execução de um dada relação 
+não gera consequências negativas imediatas a ninguém, mas resulta em consequências futuras inclusive sobre pessoas que não compartilham 
+da mesma situação. No exemplo do eltricista, a relação $relBastaoBarramento$ e afetada pela nao execução da relação $relBastaoMedidor$ 
+que define a relação entre o aparelho medidor de corrente de fulga e o bastão isolante, sendo este evento escrito da seguite maneira:
+$affects(relBastaoMedidor,relBastaoBarramento)$
+
+O predicado $consequenceOfBadEvenet(g_k, ag_i,risk_k,cs_m)$ pode ser lido da seguinte maneira; ocorreu um evento ruim no 
+objetivo $g_k$ associado ao agente $ag_i$ e associado ao risco $risk_k$ que atribuiu ao agente $ag_i$ consequências $cs_m$. Esse 
+predicado tem por finalidade trazuir semanticamente as consequências ruins sobre alguém quando ocorre o pior caso. Sobre o exemplo 
+do eletricista que acessa um barrameto de alta tensão, esse predicado é escrito da seguinte forma:
+$consequenceOfBadEvenet(g_{acessoBarramento}, eleticista,eletrocutado,morte)$. Associado a isso há o predicado $happensBadEvent(r_m)$
+cujo propósito define que um eveneto ruim aconteceu no relacionamento $r_m$.
+
+O predicaod $lastGoal(g_i,\rho_m) | g_i \in Goal, \rho_m \in Role $ apresenta um ultimo objetivo $g_i$ que deve ser alcançado 
+por agentes com determinado papel $\rho_m$, Esse predicado tem sua existência justificada em certos raciocínios, que serão demonstrados 
+mais adiante, onde esse tipo de informação é relevante.
+

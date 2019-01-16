@@ -64,11 +64,13 @@ e artefatos serem entidades, não é possível existir um agente que seja artefa
 com elementos do conjunto \textbf{Goal} (representam os objetivos). Assim sendo, consiste nas entidades necessárias que devem estar presentes no 
 ato da execução de um certo objetivo para que este possa ser alcançado. Para exemplificar é possível conceber o seguinte cenário; 
 
-\textbf{Exemplo da Redação:} "O Professor Aristóteles definiu uma atividade; Escrever uma redação sobre o livro Metafísica. Para isso, o aluno Alexandre o Grande deve escrever um dado texto, deve ler um livro sobre o tópico em interesse, deve pegar uma folha, deve pegar um lapis e escrever a redação".  
+\textbf{Exemplo da Redação:} "O Professor Aristóteles definiu uma atividade; Escrever uma redação sobre o livro Metafísica. Para isso, o aluno Alexandre o Grande deve escrever um dado texto, deve ler o livro sobre o tópico em definido, deve pegar uma folha, deve pegar um lapis e escrever a redação".  
 
 
 Neste modelo, esse cenário pode 
-ser especificado da seguinte forma; $E = \{aristoteles, alexadre, folha, lapis, livro\}$, em termos de objetivo há três $G = \{ g_0, g_1,g_2\}$  onde $g_0$ corresponde ao ato do professor definir a atividade, $g_1$ corresponde ao ato de ler o livro e $g_2$ ao ato de escrever a redação. Então, é possível definir três subconjuntos de $E$, esses são os conjuntos \textbf{EntityGoal},
+ser especificado da seguinte forma; $E = \{aristoteles, alexadre, folha, lapis, livro\}$, em termos de objetivo (esse conceito será descrito com maior detalhe no texto em diante) 
+há três $G = \{ g_0, g_1,g_2\}$  onde $g_0$ corresponde ao ato do professor definir a atividade, $g_1$ corresponde ao ato de ler o livro e $g_2$ ao ato de escrever a redação. Então, é possível 
+definir três subconjuntos de $E$, esses são os conjuntos \textbf{EntityGoal},
 $E_g = \{ eg_{0}, eg_{1}, eg_{2} \}$, onde $eg_{0} = \{ aristoteles \}$ $eg_{1} = \{ alexandre, livro\}$ e $eg_{2} = \{ aluno, folha, lapis \}$. Em termos de relação, que será melhor trabalhado 
 em partes futuras deste texto, considera-se que $eg_1$ se relaciona com $g_1$ e $eg_2$ com $g_2$.
 
@@ -89,16 +91,65 @@ atingidos bem como aos papeis que são assumidos pelos agentes.
 \textbf{Goal} - faz referência aos objetivos que devem ser atingidos pelos agentes. Os fundamentos semanticos deste conjunto dos estudos presentes em 
 \ref{sma} \ref{moiseformalizesma}, mais especificamente do \textit{MOISE}. Neste modelo, um objetivo é descrito em termos de $eg$ e $rg$, que são as entidades e os relacionamentos 
 (será explicado) que devem ser ser feitos para que o objetivo possa ser dado como concluído. Com o propósito de explorar as com maior granularidade 
-as relações entre o agente e o objetivo, neste modelo o conceito de missão foi removido. Como será apresntado posteriormente, as relações deonticas 
+as relações entre o agente e o objetivo, neste modelo o conceito de missão foi removido. Como será apresentado posteriormente, as relações deonticas 
 entre os papeis se dão com o objetivo e não com a missão. O estudo presente no \textit{MOISE} também grafos para representar objetivos-subobjetivos. Esse 
 modelo não importou a estrutura em grafos para descrever o comportamento de objetivos. 
-
-\textbf{GoalPreRequisite} - Consiste em subconjuntos de \textbf{Goal} que definem os pre-requisitos de um dado objetivo (o predicado deste relacionamento)
-será apresentado mais tarde. Para exmeplificar, considere o \textbf{Exemplo da Redação}. O conjunto de objetivos é dado por $Goal = \{ g_0, g_1, g_2 \}$
-onde que $g_0$ é o primeiro objetivo e por conta disto não apresenta nenhum pré-requisito. Já o $g_1$ só pode começar apenas se 
-$g_0$ for alcançado, e o mesmo se dá para $g_2$, portanto $GoalPreRequisite = \{ gpr_0, gpr_1 \} | gpr_0 = \{ g_0 \}, gpr_1 = \{ g_1 \}$  onde $gpr_0$ está relacionado com $g_1$ e $gpr_1$ está relacionado com $g_2$.
 
 \textbf{Role} - apresenta o papel que um agente pode adotar dentro de um \textit{SMA}. Esse conceito também é importado do \textit{MOISE} 
 \ref{moiseformalizesma} e define as relações deonticas entre os agentes e os objetivos. Para exemplificar, pode-se considerar o \textbf{Exemplo da Redação} onde existe dois agentes $Agent = \{ aristoteles, alexandre \}$, existe dois papeis $Role = \{ professor, aluno\}$. Neste caso, o agente $aristoteles$ é  
 o $professor$ e o agente $alexandre$ é o $aluno$.
 
+\textbf{O Módulo de Ambiente} - \textit{Environment Module} - consiste em conjuntos que representam relações e condições ambientes.
+Os conjuntos que descrevem esse ambiente são dados pela relação que se segue;
+
+\begin{equation}
+    M_{Environment} = \{ Relation, ReationGoal, Condition, ConditionGoal \}
+\end{equation}
+
+\textbf{Relation} - Uma entidade estabelece relações com outras entidadades ao seu redor \cite{entity}. No modelo proposto neste texto, 
+os pesquisadores optaram por definir um conjunto que representa essas relações. Os pesquisadores optaram por um conjunto para representar
+os relacionamentos entre as entidades porque isso possibilita identifica-los. Isso facilita o desenvolvimento de raciocínos. O uso 
+dos relacionamentos pode ser exemplificado por meio do \textbf{Exemplo da Redação}. Ao definir uma ativdade, o professor aristoteles
+, que é uma entidade, estabeleceu um relacionamento com o seu aluno Alexandre, representado aqui por $relAristotelesAlexandre$. 
+Para cumprir com essa tarefa o aluno teve de ler o livro - $relAlexandreLivro$, teve de pegar de pegar uma folha - $relAlexandreFolha$,
+teve de pegar um lapis $relAlexandreLapis$ e teve de escrever a redação o que implica em uma relação entre lapis e folha $relLapisFolha$. 
+Portanto, o conjunto de relacionamentos se dá da seguinte maneira;
+
+\begin{eqnarray}\label{Environment}\nonumber
+    M_{Environment} = \{ relAristotelesAlexandre, relAlexandreFolha, relAlexandreLivro, \\ \nonumber
+     relAlexandreLapis, relLapisFolha \}
+\end{eqnarray}
+
+Obiviamente, cada entidade do grupo \textit{Relation} tem uma vínculo com elementos do grupo \textit{Entity}, como por exemplo 
+$relAlexandreFolha$ apresenta um dado vinculo com as entidades $Alexandre$ e $Folha$. Há um predicado que trata disto e será
+exibido posteriormente. Assim como o conjunto $EntityGoal$, existe relacionamentos que devem estar presentes para que dados 
+objetivos possam ser atingidos, revelando - portanto - a necessidade de um conjunto para representar esse tipo de situação, 
+que neste caso é $RelationGoal$. O exemplo em análise é descrito por três objetivos. O objetivo $g_0$ corresponde ao ato 
+do professor definir a atividade. Esse objetivo não pode ser cumprido sem relacionamento $relAristotelesAlexandre$. 
+Portanto, existe $rg_0$ associado a $g_0$ onde $rg_0 = \{ relAristotelesAlexandre \}$ e que $rg_0 \subset RelationGoal$. 
+O conjunto $g_1$ está relacionado com $rg_1$ e esse, por sua vez, é composto por $\{ relAlexandreFolha\}$. O conjunto $g_2$ 
+está relacionado com $rg_2$ e os elementos correspondem a $\{ relAlexandreLapis, relLapisFolha, relAlexandreFolha\}$.
+
+\textbf{Condition} - Esse conjunto representa as condições que devem ser mantidas para que um dado objetio possa ser alcançado. 
+Em analogia a $EntityGoal$ e a $RelationGoal$, há um conjunto denominado de $ConditionGoal$ que define essas condições 
+para os objetivos. Para exemplificar o uso deste conjunto é possível considerar o \textbf{Exemplo da Redação}. Com certeza
+nenhum dos três objetivos se torna viável se não houver luz suficiente para que todos possam ver. O ambiente deve ser mantido 
+em um certo silência, do contrário não há possibilidade do professor e do aluno exercer suas atividades intelectuais. Assim sendo
+é possível definir duas entidades; $Condition = \{ luz,silencio \}$. Ambas as condições são válidas para todos os objetivos (para esse
+exemplo), portanto existe um $cg_1 = \{ luz,silencio \} | CondtionGoal = \{ cg_1 \}$, sendo que $cg_1$ estabelece relações com 
+$g_0$, $g_1$ e $g_2$.
+
+\textbf{Módulo de Risco} - \textit{Risk Module} contem conjuntos que correspondem a conceitos relacionados a temática da segurança.
+O módulo de risco é dado pela relação que se segue;
+
+\begin{equation}
+    M_{Risk} = \{ Risk, Consequence \}
+\end{equation}
+
+\textbf{Risk} - Na seção \ref{risk} o termo risco é usado para referênciar a um evento que apresenta um potencial de ocorrer e que 
+gera consequências negativas as pessoas associadas quando acontece. Para exemplificar pode-se considerar uma condição onde um eletricista 
+está trocando um disjuntor de um quatro elétrico. Nesse processo, o eletricista está sujeito ao risco de ser eletrocutado. Essas 
+consequências negativas também são representadas por um conjunto, e esse é \textbf{Consequence}. O uso deste conjunto pode ser 
+apresentada utilizando esse mesmo exemplo do eletricista, pois a consequência de se subter a um evento desses implica morte (nem sempre é assim, 
+mas para efeitos didáticos pode-se considerar que o quadro elétrico é de certa potência que a morte é certa para o profissional
+que for eletrocutado).
