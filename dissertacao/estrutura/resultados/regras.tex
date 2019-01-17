@@ -1,0 +1,159 @@
+A regra \ref{reldeonticrole} tem os fundamentos teóricos na lógica deontica e em modelos como \textit{MOISE+}. Assim sendo, todas as relações de obrigação
+implicam relações de permissão. O que essa regra determina consiste no fato de que se um agente $g_j$ é obrigado a trabalhar sobre o objetivo $g_j$, 
+então esse agente também tem a permissão de para trabalhar sobre o objetivo $g_j$ 
+
+\begin{equation}\label{reldeonticrole}
+	hasObligation(\rho_m,g_j) \to hasPermission(\rho_m,g_j)  
+\end{equation}
+
+As regras \ref{violationcondition}, \ref{violationrelation}, e \ref{violationentity} são fundamentadas em \ref{normasdastani} onde o conceito do que 
+pode ou não pode ser feito é definido em termos das regras \textit{Count-as}. Essas regras determinam quais são os elementos que resultam em violação. 
+Inspirando nesse tipo de estrutura é que os pesquisadores trataram de trabalhar as referidas regras. 
+
+A complexidade de estudo é extramente ampla, e com certeza existe mais tipos de violações do que as consideradas a seguir, contudo optou-se por estudar essas 
+violações porque são essenciais para os objetivos deste estudo. Outro questionamento que pode surgir consiste no porque definir três tipos de violações? 
+Isso reside no fato de que essas violações resultam em consequências diferentes, por conta disto em um primeiro momento os engenheiros do modelo decidiram 
+trata-las em estruturas diferentes. 
+
+A explicação das regras será feita sempre analisando o sentido semântico do predicado que é implicado e em relação aos estudos pelos quais elas se fundamentam. 
+Partindo desta permissa o entendimento da relação \ref{violationcondition} só pode ser feito na ocorrência de uma  investigação sobre quais são os elementos 
+que semanticamente correspondem ao predicado $violationCondition(ag_m,g_i,c_k)$. O primeiro ponto reside em verificar quais são as condições necessárias
+de $g_i$. Quem tem essa finalidade é o predicado $hasCondition(g_i,cg_n)$. Contudo, saber todas as condições nao são o suficiente, pois a violação 
+acontece na ausência de uma condição $c_k$ e isso deve ser verificado nesta relação de implicabilidade. Então se faz necessário considerar um predicado 
+que analisa se $c_k$ está presente no ato da manutenção e é com esse propósito que $isPresent(c_k)$ faz parte da relação. Contudo, as informações
+ficam dencontradas se $c_k$ não estiver contido em $cg_n$, por isso é de importancial fazer essa análise também. Para isso, neste estudo, os pesquisadores
+fizeram uso de um operador de conjuntos cujo simbolo é $\in$ que nessas relações tem a finalidade de verificar se $ck$ está contido em $cg_n$. Esses são
+componentes essenciais, porém não são suficientes porque não consideram a condição do agente. Isso, pois afirmar sobre a ocorrência de uma violação sobre 
+um agente sem considerar se ele esta efetivamente tentando alcançar um objetivo consiste em desconsiderar a semântica daquilo que está sendo implicado. 
+Isso é resolvido por considerar o termo  $tryReach(ag_m,g_i)$. 
+
+\begin{eqnarray}\label{violationcondition}\nonumber
+	hasCondition(g_i,cg_n) \wedge \neg isPresent(c_k) \wedge (c_k \in cg_n) \wedge tryReach(ag_m,g_i) \to \nonumber \\  
+	violationCondition(ag_m,g_i,c_k) 
+\end{eqnarray}
+
+O propósito da regra \ref{violationcondition} quando definido em termos de linguagem natural tem o propósito de exprimir o seguinte: Se um agente tentar 
+executar um dado objetivo sem que haja todas as condições ambientes necessárias para isso, entao esse agente comete uma violação de condição neste 
+respectivo objetivo. 
+
+A regra \ref{violationrelation} define as condições que resultam em uma violação de relação. O predicado $violationRelation(ag_m,g_i,r_k)$ considerada 
+que a violação se dá por um agente $ag_m$ em um objetivo $g_i$ na relação $r_k$. Portanto, para respeitar a semântica deste predicado se faz necessário 
+considerar ao menos um termo que vincule o objetivo $g_i$ com a relação $r_k$. Para esse propósito é que se considera o termo $hasRelation(g_i,rg_n)$ 
+pois define quais são as relações que devem estar presentes para que o objetivo $g_i$ possa ser alcançado. Contudo, só isso não é o suficiente, pois 
+se faz necessário analisar se $r_k$ está presente ou não e se pertence ao conjunto $rg_n$. A primeira situação é resolvida considerando o termo $isPresent(r_k)$
+e a segunda situação é resolvida verifincando se $r_k \in rg$. A semântica de $violationRelation$ só é conservada em sua inteireza se a presença do 
+agente também for analisada. Para esse propósito é que se verifica a necessidade do uso de $tryReach(ag_m,g_i)$ que deverá retornar se o agente 
+está tentando alcançar o objetivo $g_i$.   
+
+\begin{eqnarray}\label{violationrelation}\nonumber
+	hasRelation(g_i,rg_n)\wedge \neg isPresent(r_k) \wedge (r_k \in rg_n) \wedge tryReach(ag_m,g_i) \to \nonumber \\
+	violationRelation(ag_m,g_i,r_k)
+\end{eqnarray}
+
+Traduzindo a regra \ref{violationrelation} para linguagem natural obtem-se a seguinte expressão: Se um agente tentar alcançar um dado objetivo sem que todas 
+as relações necessárias para isso estejam presentes (considerando as relações sobre o domínio dele, tal como manuseio de uma dada ferramenta específica, e 
+considerando as relações que são independente dele), então esse agente comete uma violação de relação. 
+
+A regra \ref{violationentity} tem o propósito de definir quais são as condições que resultam em uma violação de entidade. O predicado $violationEntity(ag_m,g_i,e_k)$ 
+define semanticamente que uma violação de entidade corresponde em relação a um dado $ag_m$ em um $g_i$ vinculado a entidade $e_k$. Assim como nas demais
+regras de violaçao, o sentido semantico deste termo considera a necessidade de verificar a existência de uma entidade necessária para um dado objetivo, 
+por isso é essencial verificar o predicado $hasEntity(g_i,eg_n)$, verificar se $e_k \in eg_n$ e verificar se está ou não presente no momento da manutenção 
+$isPresent(e_k)$. A semantica do predicado também considera o momento em que o agente está atuando sobre o objetivo $g_i$, por isso o predicado $tryReach(ag_m,g_i)$
+também é posto na relação de implicabilidade.
+
+\begin{eqnarray}\label{violationentity}\nonumber
+	hasEntity(g_i,eg_n) \wedge \neg isPresent(e_k) 	\wedge (e_k \in eg_n) \wedge tryReach(ag_m,g_i) \to \nonumber \\ violationEntity(ag_m,g_i,e_k)  
+\end{eqnarray}
+
+Em termos de linguagem natural, \ref{violationentity} se apreseta da seguinte forma: Se um agente tentar alcançar um dado objetivo sem ter todas as entidades
+presentes para isso, então esse agente cometeu uma violação de entidade.
+
+As regras \ref{consviolationcondition} e \ref{consviolationrelation} são inspiradas nos estudos presentes na seção \ref{normasdastani} onde as consequências 
+de uma violação são definidas como sanções no que é denominado por $Sanction Rule$. A estrutura dessas regras, em \ref{normasdastani} e em \cite{dastaniframework} 
+é dada como $violation \to ... $. Contudo, este estudo leva em consideração não apenas o termo que se refere a violação, mas também as circunstâncias 
+que são consideradas juntos, que neste caso advêm do predicado $hasRisk$. Assim como em \ref{normasdastani}, o modelo deste estudo define que uma sanção 
+corresponde a uma penalidade que o agente deve pagar. Na estrutura da problemática em análise, a penalidade ocorre pelo fato do agente sofrer fisicamente 
+os efeitos dos seus erros. Esse comportamento é dado pelo predicado $consequenceOfBadEvent(g_i,ag_m,risk_j,cs_m)$ cujo correspondente semantico define 
+que o agente $ag_m$ sofre sobe o evento associado em $risk_j$, no objetivo $g_i$ a consequência $cs_m$. Se os engenheiros deste modelo considerarem 
+apenas $violationCondition(ag_m,g_i,c_k)$ para a relação \ref{consviolationcondition} e $violationRelation(ag_m,g_i,r_k)$, o correspondente semantico de 
+$consequenceOfBadEvent(g_i,ag_m,risk_j,cs_m)$ é desrespeitado, não especificando $risk_j,cs_m$. Contudo, isso é resolvido por levar em consideração 
+o predicado $hasRisk(c_k,risk_j,cs_m)$ para \ref{consviolationcondition} e o predicado $hasRisk(r_k,risk_j,cs_m)$ para \ref{consviolationrelation}. 
+
+\begin{eqnarray}\label{consviolationcondition}\nonumber
+	violationCondition(ag_m,g_i,c_k)  \wedge hasRisk(c_k,risk_j,cs_m) \to \\ 
+	consequenceOfBadEvent(g_i,ag_m,risk_j,cs_m)
+\end{eqnarray}
+
+Em termos de linguagem natural, a relação em \ref{consviolationcondition} é definida da seguinte maneira: "Uma violação de condição sobre um determinado 
+agente, em um dado objetivo ocasiona em uma consequência ruim a ele. Essa consequência ruim está associada ao risco da condição violada". 
+
+\begin{eqnarray}\label{consviolationrelation}\nonumber
+	violationRelation(ag_m,g_i,r_k) \wedge hasRisk(r_k,risk_j,cs_m) \to \\ 
+	consequenceOfBadEvent(g_i,ag_m,risk_j,cs_m)
+\end{eqnarray}
+
+A regra \ref{consviolationrelation}, quando posto em linguagem natural é definido desta forma: "Uma violação de relação sobre um determinado agente, 
+em um dado objetivo resulta em uma consequência ruim a ele. Essa consequência está atrelada ao risco da relação violada". 
+
+Neste estudo o termo \textit{risco} deve ser analisado com muito cuidado. Isso, pois, dependendo do contexto, a complexidade deste termo é praticamente 
+infinita e neste estudo a concepção deste termo se reduz a uma dos muitos possíveis usos. Neste modelo, risco é analisado como um evento que tem potencial 
+de acontecer, contudo - nas relações de implicação esse evento acontece apenas na ausência de uma dada condição ou de uma dada relação. Os pesquisadores 
+optaram por essa tratativa ao estudar ao analisar os conceitos presentes no referencial teórico em \ref{risksec} e ao analisar o caso de estudo. Assim sendo 
+um fator que resulta em acidentes de trabalho reside no fato de que os profissionais tentam executar uma dada atividade sem ter as condições apropriadas 
+para isso e é a essa circunstância sobre o qual o risco está associado. Por exemplo, para poder navegar em alto mar a fim de poder pescar, um barco 
+pesqueiro deve ter a sua disposição uma dada condição climática. Se a tripulação decidir por navegar sem a presença da condição climática apropriada, 
+então o barco está submetido ao risco de naufragar sobre as consequências de morte da tripulação inteira. Portanto é com essa semantica que as relações 
+de implicação \ref{consviolationcondition} e \ref{consviolationrelation} empregam o conceito de risco. 
+
+Obivamente, existe a possibilidade do barco poder desbravar 
+um mar sem as apropriadas condições e voltar em terra salvo. Contudo, considerar situações assim, apesar de serem interessantes, levam a um aprofundamento 
+da complexidade deste modelo. Não que isso seja uma justificativa coerente para não se fazer isso, contudo - neste estudo o interesse reside em uma 
+primeira versão que torne possível a modelagem de condições assim por meio de um vocabulário mais específico. Assim sendo, os pesquisadores decidiram 
+por simplificar essa situação e considerar que toda a ação tomada por um agente sem que as condições necessárias estejam presentes ou as relações apropriadas 
+sejam feitas resultam em penalidades associadas ao risco da ausência desses elementos.  
+
+Dentro do que condiz ao conceito de sanção que é tratado neste estudo, apenas as regras \ref{consviolationcondition} e \ref{consviolationrelation} são sanções. 
+Isso se deve ao fato de que essas regras consideram que o equivoco do agente gerou penalidades a ele mesmo. Apesar de levar em consideração predicados associados 
+a violação, as demais regras não são consideradas como regras de sanção porque elas apresentam uma condição onde o comportamento inaproprieado de um dado 
+agente A resulta em consequencias ruins a outros agentes. Como o erro do agente A não recai sobre si, é um inequívoco - dentro do escopo deste estudo - afirmar 
+que ele sofreu uma sanção por conta disto. 
+
+
+A regra \ref{violationentityaffect} é usada com o propósito de demonstrar que uma dada violação em uma certa relação afeta outras relações. Isso, pois 
+muitas vezes o ato de não executar uma dada relação não gera consequências imediatas no instante a ser considerado, contudo essas consequencias se 
+manifestam de forma mais explendida em relações futuras. Não somente isso, mas a regra \ref{violationentityaffect} também considera as co
+
+\begin{eqnarray}\label{violationentityaffect}
+	violationRelation(ag_m,g_i,r_k) \wedge affects(r_k,r_n) \to hasPossibility(r_n)
+\end{eqnarray}
+
+
+
+\begin{eqnarray}\label{rel12}
+	violationEntity(ag_m,g_i,e_k) \to stopIn(g_i)
+\end{eqnarray}
+
+
+\begin{eqnarray}\label{rel13}\nonumber
+	hasPossibility(r_k,true) \wedge  happensBadEvent(r_k) \wedge hasRelation(g_i,rg_n) \wedge (r_k \subset rg_n) \nonumber \\ 
+	\wedge hasRisk(r_k,risk_j,cs_m) \wedge tryReach(ag_m,g_i) \nonumber \\ 
+	\to consequenceOfBadEvent(g_i,ag_m,risk_j,cs_m) \nonumber \\
+\end{eqnarray}
+
+\begin{eqnarray}\label{rel14}
+	consequenceOfBadEvent(g_k,ag_m,risk_j,cs_m) \to stopIn(g_k)
+\end{eqnarray}
+
+\begin{eqnarray}\label{rel15}
+	\neg stopIn(g_k,agg_n) \wedge (ago_n \subset agg_n) \to isReached(g_k)
+\end{eqnarray}
+
+\begin{eqnarray}\label{rel16}
+	hasRole(ag_n,\rho_m) \wedge hasPermission(\rho_m,g_j) \wedge nextGoal(g_i,g_j) \wedge isReached(g_i) \nonumber \\
+	\to tryReach(ag_n,g_j) \nonumber \\
+\end{eqnarray}
+
+\begin{eqnarray}\label{rel16}
+	hasRole(ag_n,\rho_m) \wedge hasPermission(\rho_m,g_i) \wedge lastGoal(g_i,\rho_m) \wedge isReached(g_i) \nonumber \\
+	\to stopIn(g_i) \nonumber \\
+\end{eqnarray}
