@@ -56,11 +56,15 @@ O predicado $isPresent(X) | X = cg_n \vee X = c_k \vee  X = rg_k \vee X = r_k \v
 da seguinte forma: $X$ está presente neste instante. Em alguns raciocínios e de impotancia verificar se um elemento ou um conjunto
 de elementos está presente durante a tentativa de um dado agente tentar executar algum objetivo.
 
-O predicado $tryReach(ag_i,g_j) | ag \in Agent \wedge g_j \in Goal $ é lido da seguinte forma: Um dado agente $ag_i$ está tentando 
+O predicado $tryReach(ag_i,g_j) | ag_i \in Agent \wedge g_j \in Goal $ é lido da seguinte forma: Um dado agente $ag_i$ está tentando 
 atingir o objetivo $g_j$. Para algumas situações é de crucial importancia identificar quando um agente está tentando atingir um 
 dado objetivo, fazendo-se necessário a existência de um predicado apenas para esse propósito. Para exemplificar pode-se considerar 
 o exemplo presente no quadro do professor Aristoteles com o seu aluno Alexandre. Para que o professor $Aristoteles$ possa alcançar 
 o objetivo $g_0$, ele precisa tentar fazer isso. Neste modelo, essa situação é representada da seguinte maneira: $tryReach(aristoteles,g_0)$.
+Seguindo a linha desse predicado, há também o $ableTryReach(ag_i,g_j) | ag_i \in Agent \wedge g_j \in Goal$ cuja semântica expressa que o agente $ag_i$ está habilitado para tentar 
+buscar o objetivo $g_j$. Contudo, não significa que o agente fará o corresponente de $tryReach(ag_i,g_j)$. O que definirá a transição de estado:
+habilitado a alcançar um dado objetivo para o estado: tentando alcançar um dado objetivo consiste em estados internos do agente. Contudo, não é 
+do interesse deste estudo aprofundar na dinâmica do agente em si - deixando esse processo em aberto para o programdor decidir como resolverá essa questão.
 
 O predicado $ violationCondition(ag_i,g_j,c_k) $ sendo que 
 $ ag_i \in Agent \wedge g_k \in Goal \wedge c_k \in Condition \wedge c_k  \in cg_n \wedge cg_n \subset ConditionGoal $. Esse predicado
@@ -124,4 +128,3 @@ cujo propósito define que um eveneto ruim aconteceu no relacionamento $r_m$.
 O predicado $lastGoal(g_i,\rho_m) | g_i \in Goal, \rho_m \in Role $ apresenta um ultimo objetivo $g_i$ que deve ser alcançado 
 por agentes com determinado papel $\rho_m$, Esse predicado tem sua existência justificada em certos raciocínios, que serão demonstrados 
 mais adiante, onde esse tipo de informação é relevante.
-
