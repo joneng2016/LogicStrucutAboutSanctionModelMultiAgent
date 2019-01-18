@@ -1,8 +1,9 @@
-O predicado $relationHas(r_l,e_i,e_k) | r_l \in Relation \wedge  e_i, e_k \in Entity$ é usado para tratar as questões de identificar a relação entre 
+\label{predic}
+O predicado $thereIsRelation(r_l,e_i,e_k) | r_l \in Relation \wedge  e_i, e_k \in Entity$ é usado para tratar as questões de identificar a relação entre 
 duas entidades com a sua relação. Esse predicado se lê da seguinte forma: O relacinamento $r_l$ possui a entidade $e_i$ e a entidade
 $e_k$. Para demonstrar como se dá o uso desse predicado pode-se considerar o \textbf{Exemplo da Redação}. A entidade $alexandre$ apresenta 
 uma relação com $folha$ que é identificada como $relAlexandreFolha$. Portanto, com o predicado, a representação 
-fica; $relationHas(relAlexandreFolha,alexandre,folha)$
+fica; $thereIsRelation(relAlexandreFolha,alexandre,folha)$
 
 O predicado $hasRole(ag_n,\rho_m) | ag_n \in Agent \wedge \rho_m \in Role$ que tem sua origem nos estudos do \textit{MOISE+} onde 
 cada agente tem uma função dentro do contexto do \textit{SMA}. Esse predicado se lê da seguinte forma: O agente $ag_n$ tem um
@@ -97,7 +98,7 @@ o uso deste predicado apresenta o seguinte formado: $hasRisk(relFerramentaIsolan
 o ato do eletricista não efetuar o relacionamento de uma ferramenta isolante para entrar em contato com o barramento $relFerramentaIsolanteBarramento$,
 é eletrocutado e acaba se submetendo a $morte$ por conta disto.
 
-O predicado $hasPossibility(r_l) | r_l \in Relation $ tem seus fundamentos associados ao estudo da lógica modal, presente na seção \ref{logic}, no operador 
+O predicado $possibilityHappensBadEvent(r_l) | r_l \in Relation $ tem seus fundamentos associados ao estudo da lógica modal, presente na seção \ref{logic}, no operador 
 $\Diamond$ cuja semântica denota possibilidade. Contudo, neste estudo esse termo apresenta o seguinte conceito semântico: há a possibilidade 
 de acontecer um evento ruim associado ao risco $r_l$ vinculado ao agente que está associado a essa relação mesmo que esse agente 
 não tenha cometido nenhum erro durante o procedimento. Esse predicado tem como por finalidade representar situações onde um evento 
@@ -108,15 +109,15 @@ Contudo, esse bastão pode estar com isolamento comprometido. Em testes que deve
 esse comportamento pode ser revelado eliminado qualquer possibilidade de que os riscos venham a se tornar eventos reais, pois se o bastão estiver em bom estado
 então o eletricista não se envolverá em um acidente por esse fator, se o bastão estiver em mal estado - isso será identificado e a ferramenta 
 será adequadamente substituida. Contudo, considerando um cenário onde por negligencia de profissionais a medição não é feita, surge 
-uma possibilidade do isolamento estar comprometido. Essa situação torna verdade o seguinte predicado $hasPossibility(relBastaoBarramento)$.
+uma possibilidade do isolamento estar comprometido. Essa situação torna verdade o seguinte predicado $possibilityHappensBadEvent(relBastaoBarramento)$.
 
-O predicado $affects(r_k,r_n) | \{ r_k, r_n\} \subset Relation $ trabalha em conjunto $hasPossibility(r_l)$. Esse predicado se 
+O predicado $affectsOtherRelations(r_k,r_n) | \{ r_k, r_n\} \subset Relation $ trabalha em conjunto $possibilityHappensBadEvent(r_l)$. Esse predicado se 
 lê da seguinte forma: Se $r_k$ não foi realizado, ou se for realizado de forma inapropriada, isso afeta  $r_n$ tornando verdade 
-$hasPossibility(r_n)$. Ambos são importantes em raciocínios onde se deseja mostrar que a não execução de um dada relação 
+$possibilityHappensBadEvent(r_n)$. Ambos são importantes em raciocínios onde se deseja mostrar que a não execução de um dada relação 
 não gera consequências negativas imediatas a ninguém, mas resulta em consequências futuras inclusive sobre pessoas que não compartilham 
 da mesma situação. No exemplo do eltricista, a relação $relBastaoBarramento$ e afetada pela nao execução da relação $relBastaoMedidor$ 
 que define a relação entre o aparelho medidor de corrente de fulga e o bastão isolante, sendo este evento escrito da seguite maneira:
-$affects(relBastaoMedidor,relBastaoBarramento)$
+$affectsOtherRelations(relBastaoMedidor,relBastaoBarramento)$
 
 O predicado $consequenceOfBadEvenet(g_k, ag_i,risk_k,cs_m)$ pode ser lido da seguinte maneira; ocorreu um evento ruim no 
 objetivo $g_k$ associado ao agente $ag_i$ e associado ao risco $risk_k$ que atribuiu ao agente $ag_i$ consequências $cs_m$. Esse 

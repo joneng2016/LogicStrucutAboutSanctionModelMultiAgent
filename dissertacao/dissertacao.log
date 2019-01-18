@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.11.6)  17 JAN 2019 19:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.11.6)  18 JAN 2019 10:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1026,23 +1026,34 @@ Cap\'{\i }tulo 3.
 ]
 Cap\'{\i }tulo 4.
 (./estrutura/resultados/genresult.tex
-<figure/Class.png, id=138, 540.51938pt x 170.88844pt>
-File: figure/Class.png Graphic file (type png)
- <use figure/Class.png>
-Package pdftex.def Info: figure/Class.png used on input line 23.
-(pdftex.def)             Requested size: 455.24411pt x 143.93121pt.
+<figure/Module.png, id=138, 588.69937pt x 185.94469pt>
+File: figure/Module.png Graphic file (type png)
+ <use figure/Module.png>
+Package pdftex.def Info: figure/Module.png used on input line 23.
+(pdftex.def)             Requested size: 455.24411pt x 143.79352pt.
 
 [32
 
 ]) (./estrutura/resultados/genestconsul.tex)
-(./estrutura/resultados/modulos.tex [33 <./figure/Class.png>] [34] [35]
+(./estrutura/resultados/modulos.tex [33 <./figure/Module.png>] [34] [35]
 [36] [37]) (./estrutura/resultados/predicados.tex [38] [39] [40] [41] [42])
-(./estrutura/resultados/regras.tex [43] [44] [45] [46] [47] [48] [49] [50]
-[51]) (./estrutura/resultados/diagramadeclasses.tex)
-(./estrutura/resultados/diagramadeatividades.tex)
+(./estrutura/resultados/diagramadeclasses.tex
+<figure/Class.png, id=176, 532.99126pt x 341.02406pt>
+File: figure/Class.png Graphic file (type png)
+ <use figure/Class.png>
+Package pdftex.def Info: figure/Class.png used on input line 7.
+(pdftex.def)             Requested size: 455.24411pt x 291.2872pt.
+
+[43] [44 <./figure/Class.png>]) (./estrutura/resultados/regras.tex [45]
+[46] [47] [48] [49] [50]
+Overfull \hbox (16.18481pt too wide) in alignment at lines 174--179
+ [][][] []
+ []
+
+[51] [52] [53] [54]) (./estrutura/resultados/diagramadeatividades.tex)
 (./estrutura/resultados/casodeestudo.tex)
 (./estrutura/resultados/raciocinios.tex) (./estrutura/resultados/validacao.tex)
-[52] [53]
+[55]
 Cap\'{\i }tulo 5.
 (./estrutura/analisecomparativa/genanalisecomparativa.tex)
 (./estrutura/analisecomparativa/genmoise.tex)
@@ -1055,43 +1066,43 @@ File: figure/programdastani.png Graphic file (type png)
 Package pdftex.def Info: figure/programdastani.png used on input line 5.
 (pdftex.def)             Requested size: 364.19667pt x 95.06172pt.
 ) (./estrutura/analisecomparativa/compdastani.tex)
-(./estrutura/analisecomparativa/genvs3.tex [54
+(./estrutura/analisecomparativa/genvs3.tex [56
 
 ]
-<figure/ontologyv3.png, id=215, 496.85625pt x 256.70906pt>
+<figure/ontologyv3.png, id=223, 496.85625pt x 256.70906pt>
 File: figure/ontologyv3.png Graphic file (type png)
 
 <use figure/ontologyv3.png>
 Package pdftex.def Info: figure/ontologyv3.png used on input line 5.
 (pdftex.def)             Requested size: 227.62206pt x 117.60579pt.
 ) (./estrutura/analisecomparativa/estvs3.tex
-[55 <./figure/ontologyv3.png>]
+[57 <./figure/ontologyv3.png>]
 Overfull \hbox (45.19539pt too wide) in paragraph at lines 36--44
 [][] 
  []
 
 ) (./estrutura/analisecomparativa/compvs3.tex)
-(./estrutura/analisecomparativa/genormas.tex) [56]
-(./estrutura/analisecomparativa/estnormas.tex [57])
+(./estrutura/analisecomparativa/genormas.tex) [58]
+(./estrutura/analisecomparativa/estnormas.tex [59])
 (./estrutura/analisecomparativa/compnormas.tex)
-(./estrutura/analisecomparativa/perspectivagenerica.tex) [58]
+(./estrutura/analisecomparativa/perspectivagenerica.tex) [60]
 Cap\'{\i }tulo 6.
 (./estrutura/conclusao/avaliacaodosobjetivos.tex)
-(./estrutura/conclusao/trabalhosfuturos.tex) [59
+(./estrutura/conclusao/trabalhosfuturos.tex) [61
 
-] (./dissertacao.bbl [60
+] (./dissertacao.bbl [62
 
 
 ]
-[61]) [62]
+[63]) [64]
 Apendice A.
-[63
+[65
 
 ]
 Anexo A.
 
 AED: lastpage setting LastPage
-[64
+[66
 
 ]
 +-------------------------------------------------------------------+
@@ -1104,10 +1115,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7388 strings out of 493013
- 109625 string characters out of 6135682
- 190195 words of memory out of 5000000
- 10533 multiletter control sequences out of 15000+600000
+ 7395 strings out of 493013
+ 109745 string characters out of 6135682
+ 190217 words of memory out of 5000000
+ 10539 multiletter control sequences out of 15000+600000
  57326 words of font info for 128 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,18n,43p,787b,452s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1122,10 +1133,10 @@ b></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/times/utmri8a.pfb>
-Output written on dissertacao.pdf (68 pages, 1028022 bytes).
+Output written on dissertacao.pdf (70 pages, 1067599 bytes).
 PDF statistics:
- 288 PDF objects out of 1000 (max. 8388607)
- 190 compressed objects within 2 object streams
+ 296 PDF objects out of 1000 (max. 8388607)
+ 194 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

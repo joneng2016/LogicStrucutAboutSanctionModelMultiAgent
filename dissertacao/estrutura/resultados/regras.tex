@@ -129,30 +129,32 @@ que ele sofreu uma sanção por conta disto.
 A regra \ref{violationentityaffect} é usada com o propósito de demonstrar que uma dada violação em uma certa relação afeta outras relações. Isso, pois 
 muitas vezes o ato de não executar uma dada relação não gera consequências imediatas no instante a ser considerado, contudo essas consequencias se 
 manifestam em relações futuras. Não somente isso, mas a regra \ref{violationentityaffect} também considera um dado componente de 
-aleatoriedade que está atrelado com este tipo de raciocínio. O predicado $hasPossibility(r_n)$ semanticamente corresponde que existe a possibilidade 
+aleatoriedade que está atrelado com este tipo de raciocínio. O predicado $possibilityHappensBadEvent(r_n)$ semanticamente corresponde que existe a possibilidade 
 de acontecer algo errado associado ao relacionamento $r_n$. O sentido semantico deste termo é correspondido quando se verifica os elementos que 
 causam este tipo de condição - que no caso desta regra isso envolve a ocorrência de uma violação em $r_k$, sendo que esse relacionamento afeta $r_n$.
 
 
 \begin{eqnarray}\label{violationentityaffect}
-	violationRelation(ag_m,g_i,r_k) \wedge affects(r_k,r_n) \to hasPossibility(r_n)  \nonumber \\
+	violationRelation(ag_m,g_i,r_k) \wedge affectsOtherRelations(r_k,r_n) \nonumber \\
+    \to possibilityHappensBadEvent(r_n)  \nonumber \\
     ag_m \in Agent, g_i \in Goal, r_k,r_n \in Relation, 
 \end{eqnarray}
 
 O entendimento desta regra pode ser feito ao considerar um exemplo que já foi mencionado neste texto ao apresentar o correspondente semantico do predicado 
-\textit{hasPossibility} e o predicado \textit{affects}, onde um eletricista usa um bastão isolante para acessar um dado barramento. Naquela parte do texto 
+\textit{possibilityHappensBadEvent} e o predicado \textit{affectsOtherRelations}, onde um eletricista usa um bastão isolante para acessar um dado barramento. Naquela parte do texto 
 o problema é modelado por meio de duas relações $relBastaoMedidor$ que define a relação que deve ser feita entre o bastão isolante com um dado aparelho 
 medidor de correte de fulga. A outra relação é $relBastaoBarramento$ que consiste na relação entre o bastão com o barramento elétrico do quadro de energia. 
 Tendo em vista que a ausência de uma medida em $g_{medida}$ afeta a possibilidade de ocorrer algum evento grave em $relBastaoBarramento$, 
 é dado - para esse caso - como verdade o seguinte predicado $affect(relBastaoMedidor, relBastaoBarramento)$. Assim sendo, em um cenário onde a violação 
 de relacionamento em $g_{medida}$ o seguinte raciocínio pode ser feito: 
-$violationRelation(eletricista_{medidor},g_{medida},relBastaoMedidor) \wedge affect(relBastaoMedidor, relBastaoBarramento) \to hasPossibility(relBastaoBarramento)$.   
+$violationRelation(eletricista_{medidor},g_{medida},relBastaoMedidor) \wedge affect(relBastaoMedidor, relBastaoBarramento) $ \\ $\to  
+possibilityHappensBadEvent(relBastaoBarramento)$.   
 
 A regra \ref{violationentityaffect} demonstra como um agente pode ser submetido a consequências ruins sem necessariamente ser culpado por isso. Contudo, 
 essa regra denota apenas possibilidade, não demonstrando o que acontece efetivamente quando o agente é submetido ao lado não favorável da possibilidade.
 Essa situação está atrelada a \ref{paybutiamnotguilty}. Para lidar com as situações onde um agente é submetido a condições ruins, fez-se o uso do 
 predicado $consequenceOfBadEvent(g_i,ag_m,risk_j,cs_m) $. Entretanto, diferente das regras \ref{consviolationcondition}, \ref{consviolationrelation}, 
-essas consequências negativas tem seus correspondentes semanticos em outros predicados. O predicado $hasPossibility(r_k)$ é invocado com o propósito 
+essas consequências negativas tem seus correspondentes semanticos em outros predicados. O predicado $possibilityHappensBadEvent(r_k)$ é invocado com o propósito 
 de monstrar que $r_k$ apresenta a possibilidade da ocorrência de um evento ruim mesmo que o agente que esteja executando essa relação não faça nada de errado. 
 Contudo, esse predicado só denota a possibilidade, para que o sentido semântico de que a possibilidade de um evento ruim realmente acontece foi considerado 
 o uso do predicado $happensBadEvent(r_k)$. Para o contexto desta regra, a semântica deste predicado exibe o seguinte significado: "O evento ruim associado 
@@ -170,7 +172,7 @@ $tryReach(ag_m,g_i)$ também deve compor a regra.
 
 
 \begin{eqnarray}\label{paybutiamnotguilty}
-	hasPossibility(r_k) \wedge  happensBadEvent(r_k) \wedge hasRelation(g_i,rg_n) \wedge (r_k \in rg_n) \nonumber \\ 
+	possibilityHappensBadEvent(r_k) \wedge  happensBadEvent(r_k) \wedge hasRelation(g_i,rg_n) \wedge (r_k \in rg_n) \nonumber \\ 
 	\wedge hasRisk(r_k,risk_j,cs_m) \wedge tryReach(ag_m,g_i) \nonumber \\ 
 	\to consequenceOfBadEvent(g_i,ag_m,risk_j,cs_m) \nonumber \\ 
     r_k \in Relation, g_i \in Goal, rg_n \subset RelationGoal, risk_k \in Risk, cs_m \in Consequence
@@ -180,7 +182,7 @@ O exemplo em voga pode ser implementado nesta regra da seguinte forma:
 
 
 \begin{eqnarray}\nonumber
-   hasPossibility(relBastaoBarramento) \nonumber \\
+   possibilityHappensBadEvent(relBastaoBarramento) \nonumber \\
     \wedge happensBadEvent(relBastaoBarramento) \nonumber \\ 
     \wedge hasRelation(g_{acessoBarramento}) \nonumber \\  
     \wedge hasRelation(g_{acessoBarramento},rg_{acessoBarramento}) \nonumber \\  
