@@ -161,9 +161,9 @@ o uso do predicado $happensBadEvent(r_k)$. Para o contexto desta regra, a semân
 a essa relação realmente aconteceu". Nesta situação que se faz necessário adotar a outra concepção associada ao termo risco que é adotado a este modelo.
 Nesta regra, esse termo é adotado como um evento em potencial devido a incerteza associada ao evento. 
 
-Para comprender melhor essa situação, é possível voltar ao exemplo do eletricista-bastão isolante-quadro de energia. Como já citado anteriormente, o fato 
-do agente medidor não executar sua atividade, criou uma incerteza sobre a condição do isolamento do bastão. Se a medida fosse executada com sucesso 
-(partido do pressuposto de que o medidor está em condições apropriadas de funcionamento), a condição do bastão seria revelada eliminando qualquer incerteza 
+Para comprender melhor essa situação é possível voltar ao exemplo do eletricista-bastão isolante-quadro de energia. Como já citado anteriormente o fato 
+do agente medidor não executar sua atividade gera uma incerteza sobre a condição do isolamento do bastão. Se a medida for executada com sucesso 
+(partido do pressuposto de que o medidor está em condições apropriadas de funcionamento), a condição do bastão é revelada eliminando qualquer incerteza 
 a respeito disto. Contudo, como está sendo considerado um cenário onde isso não foi feito, a não execução de $relBastaoMedidor$ resultou no surgimento 
 do risco $eletrocutado$ com uma consequência de morte. Esse risco é dado como um potencial evento até que o eletricista de acesso ao barramento faz uso da 
 ferramenta. Por conta disto, se faz o uso do predicado $hasRisk(r_k,risk_j,cs_m)$. Tendo em vista que isso se dá por uma relação que está atrelada a um 
@@ -268,5 +268,5 @@ cumpriu com todos os objetivos designados a ele, então ele deve encerrar sua op
     ag_n \in Agent, \rho_m \in Role, g_i \in Goal
 \end{eqnarray}
 
-Portanto, a regra \ref{rolelastgoal} em linguagem natural é definida da seguinte maneira; Se um agente cumpriu com todos os objetivos ao qual o papel 
-ele tinha permissão de atuar, então esse agente deve encerrar suas atividades em relação ao seu papel.
+Portanto, a regra \ref{rolelastgoal} em linguagem natural é definida da seguinte maneira; Se um agente cumpriu com todos os objetivos associados a 
+permissão do papel dele, então esse agente deve encerrar suas atividades. 

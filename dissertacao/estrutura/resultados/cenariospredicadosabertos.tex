@@ -1,0 +1,121 @@
+Esse estudo apresenta duas categorias de predicados: \textit{abertos} e \textit{fechados}. Os predicados fechados são aqueles cujo usuário do modelo não possui a liberdade de definir sua
+estrutura interna por intermédio de outras regras lógicas ou por valores. Isso se dever ao fato de que esses vocábulos tem sua estrutura alicerçada nas concepções deste modelo sendo que 
+são essencias para que o sistema funcione como foi concebido para ser. Assim sendo, o modelador deve fazer uso delas apenas com o propósito de especificar os objetos de interesse. 
+Em termos práticos não existe dificuldade em identificar esses predicados, pois sua própria natureza não abre margem para que o modelador consiga escrever novos predicados e novas regras para 
+determinar o seu respectivo valor. 
+
+Esses predicados são $thereIsRelation(r_l,e_i,e_k)$, $hasRole(ag_n,\rho_m)$, $hasObligation(\rho_m,g_j)$,
+$hasPermission(\rho_m, g_j)$, $isReached(g_k)$, $stopIn(g_n, ag_m)$, $nextGoal(g_i,g_j)$, $hasCondition(g_i,cg_n)$,
+$hasEntity(g_i,eg_m)$, $hasRelation(g_i,rg_m)$, $violationCondition(ag_i,g_j,c_k) $, $ violationRelation(ag_i,g_j,r_k) $,
+$ violationEntity(ag_i,g_j,e_k) $,  $ hasRisk(X, risk_j, cs_k) $, $possibilityHappensBadEvent(r_l)$, 
+$affectsOtherRelations(r_k,r_n)$, $consequenceOfBadEvenet(g_k, ag_i,risk_k,cs_m)$  e $lastGoal(g_i,\rho_m)$. 
+
+
+Para exemplificar, pode-se considerar o predicado $thereIsRelation(r_l,e_i,e_k)$. Se existir uma entidade $A$,
+uma entidade $B$ e uma relação entre $relAB$, então esse termo é escrito desta forma: 
+$thereIsRelation(relAB,A,B)$. O valor verdade deste predicado não pode ser modificado para a criação de algum 
+cenário e nem pode determinado por outras regras. Se modelador fizer isso então estará modificando a estrutura 
+do modelo. Ou seja, esse é um predicado fechado no que tange a aspectos fundamentais aos aspectos semanticos 
+desta representação. 
+
+Por outro lados os predicados \textit{abertos} possuem um correspondente sintatico e semântico no modelo mas 
+os seus valores devem ser forçados conforme o cenário que se deseja criar ou conforme outras regras de 
+implicabilidade. A não determinação destes predicados inviabilizam que o modelo seja analisador de forma 
+procedural. Faz parte deste conjunto os seguintes termos: $isPresent(X)$,$tryReach(ag_i,g_j)$ e $happensBadEvent(r_m)$.
+
+Pode-se considerar o seguinte exemplo: Um agente $ag_a$ deve executar o objetivo $g_1$ e $g_2$, os predicados 
+a seguir implementam este modelo para o exemplo:
+
+\begin{itemize}
+    \item $nextGoal(g_1,g_2)$
+    \item $thereIsRelation(rAB,entA,entB)$
+    \item $thereIsRelation(rCE,entC,entE)$
+    \item $entA \in eg_1 ,entB \in eg_1$
+    \item $entC \in eg_2, entD \in eg_2$
+    \item $rAB \in rg_1$,
+    \item $rCE \in rg_2 $
+    \item $cond_1 \in {cg_1} $
+    \item $ hasCondition(g_1,cg_1)$
+    \item $ hasCondition(g_2,cg_2 )$
+    \item $ hasEntity(g_1,eg_1) $
+    \item $ hasEntity(g_2,eg_2) $
+    \item $ hasRelation(g_1, rg_1 )$
+    \item $ hasRelation(g_2, rg_2)$ 
+    \item $ affectsOtherRelations(rAB,rCE) $ 
+    \item $hasRisk(cg_1,risk_1,cs_1)$
+    \item $hasRisk(rCE,risk_2,cs_2)$
+    \item $hasRole(ag_a,\rho_1)$
+    \item $hasObligation(\rho_1,g_1)$
+    \item $hasObligation(\rho_1,g_2)$
+\end{itemize}
+
+Apesar de todos os predicados denotarem uma dada condição e de serem o suficientes para definir uma certa 
+representação de mundo, não é possível fazer raciocínio algum. Isso, pois não se sabe quais são as ações 
+dos agentes e não se sabe quais condições e cenários se deseja representar.  
+
+Para isso, se faz necessário definir um cenário de mundo. Por exemplo, pode-se definir o seguinte cenário; 
+$tryReach(ag_a,g_1)$, $\neg isPresent(rAB), tryReach(ag_b,g_2)$ e $ possibilityHappensBadEvent(rCE) \to $  
+$happensBadEvent(rCE)$. 
+
+Para esse caso é possível obter as 
+seguintes relações de inferência: 
+
+\begin{eqnarray}\nonumber
+	hasRelation(g_1,rg_1)\wedge \neg isPresent(rAB) \wedge (rAB \in rg_1) \wedge tryReach(ag_a,g_1) \to \nonumber \\
+	violationRelation(ag_a,g_1,rAB) 
+\end{eqnarray}
+
+\begin{eqnarray}
+	violationRelation(ag_a,g_1,rAB)  \wedge affectsOtherRelations(rAB,rCE) \nonumber \\
+    \to possibilityHappensBadEvent(rCE)  
+\end{eqnarray}
+
+
+\begin{eqnarray}
+	possibilityHappensBadEvent(rCE) \to happensBadEvent(rCE) 
+\end{eqnarray}
+
+
+
+\begin{eqnarray}\label{paybutiamnotguilty}
+	possibilityHappensBadEvent(rCE) \wedge  \nonumber \\
+    happensBadEvent(rCE) \wedge  \nonumber \\
+    hasRelation(g_2,rg_2) \wedge  \nonumber \\
+    (rCE \in rg_2) \nonumber \wedge  \nonumber \\
+    hasRisk(rCE,risk_2,cs_2) \wedge  \nonumber \\
+    tryReach(ag_a,g_2) \nonumber  \nonumber \\
+	\to consequenceOfBadEvent(g_2,ag_a,risk_2,cs_2) 
+\end{eqnarray}
+
+
+\begin{eqnarray}\label{badcons}
+	consequenceOfBadEvent(g_2,ag_a,risk_2,cs_2) \to stopIn(g_2) 
+\end{eqnarray}
+
+
+Esses racicínios e conclusões só foram possíveis porque o modelador forçou o valor de três predicados e definiu uma relação de implicação. 
+Isso acontece por conta de três motivos: 1 - Esse é um modelo de \textit{SMA}, 2 - esse modelo apresenta grau de liberdade para escolher 
+a disposição das entidades, condições e relações e 3 - não há como definir a solução de uma possibilidade. 
+
+Para o primeiro caso o predicado $tryReach(ag_i,g_j)$ é resultado de estados internos do agente. Por exemplo, o desenvolvedor pode 
+programar um agente que possui o estado de medo, então sobre certas condições ele resolve não tentar alcançar o objetivo gerando 
+valor falso para esse predicado, ou pode definir um agente que ponderá pouco ao decidir se deve ou não tentar alcançar um dado objetivo. 
+Isso pode ser feito por meio de modelos de agentes tais como: agentes lógicos, arquitetura BDI, 
+agentes reativos e agentes em camada. Se for do interesse do modelador, o mesmo pode simplesmente definir o valor verdade para o 
+predicado em certas condições. 
+
+O mesmo se aplica para o $isPresent(X)$ onde desenvolvedor pode definir um cenário que, por meio de 
+estados internos, os agentes esqueceram uma determinada ferramenta em um certo local ou, por exemplo, que o agente apresenta um 
+algoritmo para determinar qual ferramenta é a mais apropriada para uma dada condição. Assim como o moleador é livrer para 
+gerar diferentes cenários simplesmente por definir valores diferentes para $isPresent(X)$. Por exemplo, supondo que uma equiple está 
+desenvolvendo um jogo sério para avaliar profissionais de uma certa industria. Para avaliar a competencia dos trabalhadores, o 
+modelador poderá usar este predicado por adicionar o remover com base nas necessidades de avaliação.
+
+O terceiro motivo reside no fato de que o predicado $possibilityHappensBadEvent(X)$ denota apenas que existe uma possibilidade de ocorrer 
+algum determinado evento ruim  $happensBadEvent(X)$. Contudo, se esse evento ocorrerá ou não, não é 
+possível definir pois isso depende de questões estatísticas do objeto de estudo. Assim sendo, o usuário deste 
+modelo possui algumas possibilidades de ação, tais como: quando $possibilityHappensBadEvent(X)$  for verdade, 
+então definir $happensBadEvent(X)$ por meio de um número aleatório, para dadas situações onde ocorre 
+$possibilityHappensBadEvent(X)$ tratar $happensBadEvent(X)$ como verdade e para dadas situações 
+tratar $happensBadEvent(X)$ como falso ou definir verdade para $happensBadEvent(X)$ como base em algum estudo 
+probabilistico. Isso dependerá da finalidade dos modeladores. 
