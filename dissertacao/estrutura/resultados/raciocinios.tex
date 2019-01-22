@@ -1,0 +1,307 @@
+Uma vez que o modelo foi definido e que foi implementado em um estudo de caso, é possível avaliar as conclusões possíveis dado certa condição de mundo. Essa seção demonstra 
+como esse modelo cumpre o proposto por demonstrar certos raciocínios tendo em vista o caso de estudo em análise. 
+
+\subsubsection{Raciocínio - 1} 
+
+
+O raciocínio a seguir mostra o que acontece se o $agente4$ esquecer de passar o pano no bastão universal $relPanoGlicerina$ designados a ele no objetivo $g1$. 
+Todos os predicados vinculados a essa situação são;
+
+\begin{enumerate}
+	\item $hasRole(agente4,executor2)$ 
+	\item $hasObligation(executor2,g1)$
+	\item $hasRelation(g1,rg1)$ 
+	\item $relPanoCorda \in rg1$
+	\item $ x = agente4 $
+	\item $tryReach(agente4,g1)$
+	\item $affectsOtherRelations(relPanoGlicerina,relBastaoGarraCondutor)$
+	\item $affectsOtherRelations(relPanoGlicerina,relCordaEstropo)$  
+	\item $affectsOtherRelations(relPanoGlicerina,relChaveCatracaParafuso)$
+	\item $affectsOtherRelations(relPanoGlicerina,relParafusoConector)$ 
+	\item $affectsOtherRelations(relPanoGlicerina,relSoqueteParafuso)$ 
+	\item $affectsOtherRelations(relPanoGlicerina,relParafusoTorre)$
+	\item $affectsOtherRelations(relPanoGlicerina,relAgente4Corda)$ 
+	\item $affectsOtherRelations(relPanoGlicerina,relEstropoCorda)$	
+\end{enumerate}
+
+Com base nisso, as relações de implicabilidade resultantes são;
+
+\begin{eqnarray}\nonumber
+	hasRelation(g1,rg1)\wedge \neg isPresent(relPanoGlicerina)  \nonumber \\ 
+	\wedge (relPanoGlicerina\in rg_1) \wedge tryReach(agente4,g1) \nonumber \\ 
+	\to \nonumber \\ 
+	violationRelation(agente4,g1,relPanoGlicerina) \nonumber \\	
+\end{eqnarray}
+
+\begin{eqnarray}\nonumber
+	violationRelation(agente4,g1,relPanoGlicerina)  \nonumber \\ 
+	\wedge affectsOtherRelations(relPanoGlicerina,relBastaoGarraCondutor)   \nonumber \\ 
+	\to \nonumber \\  
+	possibilityHappensBadEvent(relBastaoGarraCondutor) 
+\end{eqnarray}
+
+\begin{eqnarray}\nonumber
+	violationRelation(agente4,g1,relPanoGlicerina)  \nonumber \\ 
+	\wedge affectsOtherRelations(relPanoGlicerina,relCordaEstropo)   \nonumber \\ 
+	\to \nonumber \\  
+	possibilityHappensBadEvent(relCordaEstropo) 
+\end{eqnarray}
+
+\begin{eqnarray}\nonumber
+	violationRelation(agente4,g1,relPanoGlicerina)  \nonumber \\ 
+	\wedge affectsOtherRelations(relPanoGlicerina,relParafusoConector)   \nonumber \\ 
+	\to \nonumber \\  
+	possibilityHappensBadEvent(relParafusoConector) 
+\end{eqnarray}
+
+\begin{eqnarray}\nonumber
+	violationRelation(agente4,g1,relPanoGlicerina)  \nonumber \\ 
+	\wedge affectsOtherRelations(relPanoGlicerina,relSoqueteParafuso)   \nonumber \\ 
+	\to \nonumber \\  
+	possibilityHappensBadEvent(relSoqueteParafuso) 
+\end{eqnarray}
+
+\begin{eqnarray}\nonumber
+	violationRelation(agente4,g1,relPanoGlicerina)  \nonumber \\ 
+	\wedge affectsOtherRelations(relPanoGlicerina,relParafusoTorre)   \nonumber \\ 
+	\to \nonumber \\  
+	possibilityHappensBadEvent(relParafusoTorre) 
+\end{eqnarray}
+
+\begin{eqnarray}\nonumber
+	violationRelation(agente4,g1,relPanoGlicerina)  \nonumber \\ 
+	\wedge affectsOtherRelations(relPanoGlicerina,relAgente4Corda)   \nonumber \\ 
+	\to \nonumber \\  
+	possibilityHappensBadEvent(relAgente4Corda) 
+\end{eqnarray}
+
+\begin{eqnarray}\nonumber
+	violationRelation(agente4,g1,relPanoGlicerina)  \nonumber \\ 
+	\wedge affectsOtherRelations(relPanoGlicerina,relEstropoCorda)   \nonumber \\ 
+	\to \nonumber \\  
+	possibilityHappensBadEvent(relEstropoCorda) 
+\end{eqnarray}
+
+\begin{eqnarray}\nonumber
+	violationRelation(agente4,g1,relPanoGlicerina)  \nonumber \\ 
+	\wedge affectsOtherRelations(relPanoGlicerina,relEstropoCorda)   \nonumber \\ 
+	\to \nonumber \\  
+	possibilityHappensBadEvent(relEstropoCorda) 
+\end{eqnarray}
+
+
+
+\subsubsection{Raciocínio - 2} 
+
+O raciocínio a seguir mostra o que acontece se o pano não estiver presente no local da manutenção quando os eletricistas forem alcançar o $g1$. A lista a seguir exibe todos os predicados necessários para averiguar essa condição de mundo. 
+
+
+\begin{enumerate}
+	\item $hasRole(agente2,executor1)$ 
+	\item $hasRole(agente3,executor1)$	 	
+	\item $hasRole(agente4,executor2)$	 
+	\item $hasObligation(executor1,g1)$
+	\item $hasObligation(executor2,g1)$
+	\item $tryReach(agente2,g1)$ 
+	\item $tryReach(agente3,g1)$	 	
+	\item $tryReach(agente4,g1)$	
+	\item $hasEntity(g1,eg1)$		
+	\item $pano \in eg1$
+	\item $\neg isPresent(pano)$
+\end{enumerate}
+
+\begin{eqnarray}\nonumber
+	hasEntity(g1,eg1) \nonumber \\ 
+	\wedge \neg isPresent(pano) 	\nonumber \\ 
+	\wedge (pano \in eg1) \wedge tryReach(agente2,g1) \to \nonumber \\ 
+	violationEntity(agent2,g1,pano) \nonumber \\
+\end{eqnarray}
+
+\begin{eqnarray}\nonumber
+	hasEntity(g1,eg1) \nonumber \\ 
+	\wedge \neg isPresent(pano) 	\nonumber \\ 
+	\wedge (pano \in eg1) \wedge tryReach(agente3,g1) \to \nonumber \\ 
+	violationEntity(agente3,g1,pano) \nonumber \\
+\end{eqnarray}
+
+\begin{eqnarray}\nonumber
+	hasEntity(g1,eg1) \nonumber \\ 
+	\wedge \neg isPresent(pano) 	\nonumber \\ 
+	\wedge (pano \in eg1) \wedge tryReach(agente4,g1) \to \nonumber \\ 
+	violationEntity(agente4,g1,pano) \nonumber \\
+\end{eqnarray}
+
+\begin{eqnarray}
+	violationEntity(agente4,g1,pano) \to stopIn(g1)
+\end{eqnarray}
+
+
+
+\subsubsection{Raciocínio - 3} 
+
+O raciocínio a seguir mostra o que acontece se o $agente5$ tentar alcançar o objetivo $g11$ com a umidade relativa do ar superior a setenta porcento. A lista a seguir exibe todos os predicados necessários para averiguar essa condição de mundo. 
+
+\begin{enumerate}
+	\item $hasRole(agente5,executor3)$
+	\item $hasObligation(executor3,g11)$	
+	\item $tryReach(agente5,g11)$ 
+	\item $hasCondition(g11,cg1)$
+	\item $umidade70 \in cg1$	
+	\item $\neg isPresent(umidade70)$
+	\item $hasRisk(umidade70,eletrocutado,morte)$
+\end{enumerate}
+
+\begin{eqnarray}
+	hasCondition(g11,cg1) \nonumber \\ 
+	\wedge \neg isPresent(umidade70) \nonumber \\
+	\wedge umidade70 \in cg1 \nonumber \\
+	\wedge tryReach(agente5,g11) \to \nonumber \\  
+	violationCondition(agente5,g11,umidade70) \nonumber \\
+\end{eqnarray}
+
+\begin{eqnarray} \nonumber
+	violationCondition(agente5,g11,umidade70) \nonumber \\
+	\wedge hasRisk(umidade70,eletrocutado,morte) \to \nonumber \\  
+	consequenceOfBadEvent(g11,agente5,eletrocutado,morte)
+\end{eqnarray}
+
+
+\begin{eqnarray}
+	consequenceOfBadEvent(g11,agente5,eletrocutado,morte) \to stopIn(g11)
+\end{eqnarray}
+\subsubsection{Raciocínio - 4} 
+
+O raciocínio a seguir mostra o que acontece se o $agente3$ errar a forma adequada de realizar o relacionamento $relChaveCatracaParafuso$ no objetivo $g15$. Os predicados envolvidos são;
+
+\begin{enumerate}
+	\item $hasRole(agente4,executor2)$
+	\item $hasObligation(executor4,g15)$	
+	\item $tryReach(agente4,g15)$ 
+	\item $hasRelation(g15,rg15)$
+	\item $relChaveCatracaParafuso \in rg15$	
+	\item $\neg isPresent(relChaveCatracaParafuso)$
+	\item $hasRisk(relChaveCatracaParafuso,eletrocutado,morte)$
+\end{enumerate}
+
+\begin{eqnarray}
+	hasRelation(g15,rg15) \nonumber \\
+	\wedge \neg isPresent(relChaveCatracaParafuso)  \nonumber \\ 
+	\wedge (relChaveCatracaParafuso \in rg15) \nonumber \\
+	\wedge tryReach(agente4,g15) \nonumber \\ 
+	\to \nonumber \\ 
+	violationRelation(agente4,g15,relChaveCatracaParafuso) \nonumber \\
+\end{eqnarray}
+
+\begin{eqnarray}\nonumber
+	violationRelation(agente4,g15,relChaveCatracaParafuso) \nonumber \\ 
+	 \wedge hasRisk(relChaveCatracaParafuso,eletrocutado,morte) \nonumber \\ 
+	\to \nonumber \\ 
+	consequenceOfBadEvent(g15,agente4,eletrocutado,morte)
+\end{eqnarray}
+
+\begin{eqnarray}
+	consequenceOfBadEvent(g15,agente4,eletrocutado,morte) \to stopIn(g15)
+\end{eqnarray}
+
+\subsubsection{Raciocínio - 5} 
+
+A finalidade dessa demonstração consiste em mostrar como um agente pode ser submetido a consequências ruins tendo em vista erros cometidos por outros profissionais. O raciocínio 1 mostra que o fato do $agente4$ não conseguir realizar o relacionamento $relPanoGlicerina$ resulta na violação $violationRelation(agente4,g1,relPanoGlicerina)$. Essa violação, por sua vez, impacta diversas outras relações, em que $possibilityHappensBadEvent(relParafusoTorre)$ é uma delas. Assim sendo, antes do $agente4$ cometer o erro, a possibilidade da ocorrência de um evento ruim acontecer era 0, se o agente realizar a relação $relParafusoTorre$ sem cometer violação alguma. Contudo, após a ocorrência do erro cometido pelo $agent4$, existe uma possibilidade de um evento ruim acontecer na relação $relParafusoTorre$ mesmo que tudo seja feito de acordo com os conformes. Assim sendo, a lista de predicados e o raciocínio mostra o que acontece dado a seguinte situação; o possível evento ruim presente em $relParafusoTorre$ se torna uma realidade;  
+
+\begin{enumerate}
+	\item $relParafusoTorre \in rg19$	
+	\item $hasRelation(g19,rg19)$		
+	\item $hasObligation(executor3,g19)$
+	\item $hasObligation(executor4,g19)$
+	\item $hasObligation(executor5,g19)$		
+	\item $tryReach(agente5,g19)$
+	\item $tryReach(agente6,g19)$
+	\item $tryReach(agente7,g19)$									
+	\item $hasRole(agente5,executor3)$
+	\item $hasRole(agente6,executor4)$
+	\item $hasRole(agente7,executor5)$
+	\item $hasRisk(relParafusoTorre,eletrocutado,morte)$
+	\item $possibilityHappensBadEvent(relParafusoTorre)$
+	\item $happensBadEvent(g19,relParafusoTorre)$	
+\end{enumerate}
+
+
+\begin{eqnarray}\nonumber
+    possibilityHappensBadEvent(relParafusoTorre) \nonumber \\
+    \wedge happensBadEvent(relParafusoTorre) \nonumber \\ 
+    \wedge hasRelation(g19,rg19)  \nonumber \\  
+    \wedge (relParafusoTorre \in rg19) \nonumber \\ 
+    \wedge hasRisk(relParafusoTorre,eletrocutado,morte) \nonumber \\  
+    \wedge tryReach(agente5,g19) \nonumber \\ 
+    \to consequenceOfBadEvent(g19,agente5,eletrocutado,morte) \\ \nonumber
+\end{eqnarray}
+
+\begin{eqnarray}
+	consequenceOfBadEvent(g19,agente5,eletrocutado,morte) \to stopIn(g19)
+\end{eqnarray}
+
+\begin{eqnarray}\nonumber
+   possibilityHappensBadEvent(relParafusoTorre) \nonumber \\
+    \wedge happensBadEvent(relParafusoTorre) \nonumber \\ 
+    \wedge hasRelation(g19,rg19)  \nonumber \\  
+    \wedge (relParafusoTorre \in rg19) \nonumber \\ 
+    \wedge hasRisk(relParafusoTorre,eletrocutado,morte) \nonumber \\  
+    \wedge tryReach(agente6,g19) \nonumber \\ 
+    \to consequenceOfBadEvent(g19,agente6,eletrocutado,morte) \\ \nonumber
+\end{eqnarray}
+
+\begin{eqnarray}
+	consequenceOfBadEvent(g19,agente6,eletrocutado,morte) \to stopIn(g19)
+\end{eqnarray}
+
+\begin{eqnarray}\nonumber
+   possibilityHappensBadEvent(relParafusoTorre) \nonumber \\
+    \wedge happensBadEvent(relParafusoTorre) \nonumber \\ 
+    \wedge hasRelation(g19,rg19)  \nonumber \\  
+    \wedge (relParafusoTorre \in rg19) \nonumber \\ 
+    \wedge hasRisk(relParafusoTorre,eletrocutado,morte) \nonumber \\  
+    \wedge tryReach(agente7,g19) \nonumber \\ 
+    \to consequenceOfBadEvent(g19,agente7,eletrocutado,morte) \\ \nonumber
+\end{eqnarray}
+
+\begin{eqnarray}
+	consequenceOfBadEvent(g19,agente7,eletrocutado,morte) \to stopIn(g19)
+\end{eqnarray}
+
+
+\subsubsection{Raciocínio - 6}
+
+Esse raciocínio tem a finalidade de mostrar como se dá os raciocínios para quando se faz necessário verificar se um objetivo foi atingido. 
+O objetivo $g23$ deve ser atingido pelos agentes com as funções de $executor1$,$executor2$,$executor3$ e $executor5$. 
+Isso implica dizer que os agentes; $agente2$,$agente3$,$agente4$,$agente5$ e $agente7$ devem tentar alcançar esses resultados. 
+Considerando que $agg23$ são todos os agentes que tentaram alcançar o objetivo e $ago23$ os agentes que são obrigados a fazer isso, segue o raciocínio;
+
+
+\begin{enumerate}
+	\item $agente2 \in agg23$	
+	\item $agente3 \in agg23$
+	\item $agente4 \in agg23$
+	\item $agente5 \in agg23$
+	\item $agente7 \in agg23$								
+	\item $agente2 \in ago23$	
+	\item $agente3 \in ago23$
+	\item $agente4 \in ago23$
+	\item $agente5 \in ago23$
+	\item $agente7 \in ago23$	
+	\item $ago23 \subset agg23$
+	\item $\neg stopIn(g23,agg23)$										
+\end{enumerate}
+
+\begin{eqnarray}\label{rel15}
+	\neg stopIn(g23,agg23) \wedge (ago23 \subset agg23) \to isReached(g23)
+\end{eqnarray}
+
+\subsubsection{Raciocínio - 7}
+
+O raciocínio para o caso onde $agente1$ tente alcançar o objetivo $g23$.  
+
+\begin{enumerate}
+	\item $hasRole(agente1,supervisor)$
+	\item $hasObligation(agente1,g23) \to F$										
+\end{enumerate}
+
+Isso implica em uma afirmação falsa, então esse mundo não é possível segundo o modelo implementado para este estudo de caso.

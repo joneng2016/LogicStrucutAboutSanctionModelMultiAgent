@@ -1,4 +1,5 @@
-Sete profissionais de linha viva (profissionais que realizam manutenção em equipamentos elétricos energizados) são designados com o propósito de realizar 
+O estudo de caso desta pesquisa consiste em sete profissionais de linha viva (profissionais que realizam manutenção em equipamentos elétricos energizados) 
+são designados com o propósito de realizar 
 a substituição de um isolador de pedestal. Os papeis desses desses profissionais são; 1 supervisor, 5 executores. A manutenção deve ser executada apenas 
 sobre as seguintes condições: céu ensolarado e umidade relativa do ar menor que 70 porcento. Todos os profissionais devem possuir os EPI's necessários: 
 capacete, óculos de sol, roupa isolante e antichamas, luvas isolantes e botas isolantes. Os profissionais que entram no potencial devem estar vestidos de 
@@ -68,7 +69,7 @@ executor5 & Tem como por finalidade executar certas atividades manuais vinculada
 \label{roles}
 \end{table}
 
-A tabela \ref{agentsroles} define a relação $hasRole(ag_n,\rho_m)$ onde $ag_n$ é representado pela coluna agente e $\rho_m$ é representado pela coluna papel.
+A tabela \ref{agentsroles} define o predicado $hasRole(ag_n,\rho_m)$ onde $ag_n$ é representado pela coluna agente e $\rho_m$ é representado pela coluna papel.
 
 \begin{table}[H]
 \scalefont{0.8}
@@ -136,56 +137,59 @@ conector & Estrutura que tem como por finalidade manter condutor,cabeçote do is
 \label{artefacts2}
 \end{table} 
 
-A tabela \ref{g} apresenta os objetivos dados pela coluna $objetivo$ bem com sua descrição. Essa tabela também apresenta os conjuntos $gp_i$ dado pela coluna pré-requisitos. Assim sendo, essa tabela também apresenta a relação entre os objetivos e seus respectivos pré-requisitos, ou seja, a relação $isPresentRequisite(gp_i,g_j)$. 
+A tabela \ref{g} apresenta os objetivos dados pela coluna $objetivo$ bem com sua descrição. Essa tabela também apresenta os conjuntos $gp_i$ dado pela 
+coluna pré-requisitos. Assim sendo, essa tabela também apresenta as especificações para o predicado $nextGoal(g_i,g_j)$ onde \textit{Objetivo} representa 
+$g_i$, \textit{Próximo} $g_j$ e \textit{Descrição} é referente a $g_i$.
 
 \begin{table}[H]
 \scalefont{0.8}
 \centering
 \begin{tabular}{|l|l|p{0.6\linewidth}|}
 \hline
-\textbf{objetivo} & \textbf{pré-requisito} & \textbf{Descrição} \\ \hline
-gSupervisor & g0 & Atribui objetivos aos demais agentes. \\ \hline
-g0 &  \O & Vestir os AP'Is \\ \hline
-g1 &  gSupervisor & Limpar, secar e testar ferramentas com material isolante. \\ \hline
-g2 &  g1 & Medir a corrente de fuga de ferramentas isolantes \\ \hline
-g3 &  g2 & Instalar sela com colar na estrutura \\ \hline
-g4 &  g3 & Passar o bastão garra por dentro do olhal do colar. \\ \hline
-g5 &  g4 & Amarrar o bastão garra na parte superior da estrutura com a corda, fixar no condutor \\ \hline
-g6 &  gSupervisor & Amarrar o olhal do bastão garra ao cavalo da sela atrás de uma corda. \\ \hline
-g7 &  g6 & Instalar sela com colar no outro lado da estrutura estrutura \\ \hline
-g8 &  g7 & Passar o bastão universal por dentro do olhal do colar \\ \hline
-g9 &  g8 & Pender carretilha no bastão Universal. \\ \hline
-g10 &  g9 & Amarrar o bastão universal na parte superior da estrutura com a corda; \\ \hline
-g11 &  g10 & Amarrar o olhal do bastão universal ao cavalo da sela atrás de uma corda. \\ \hline
-g12 &  g11,g5 & Rotacionar estrutura olhal garra em 45 graus. \\ \hline
-g13 &  g12 & Enforcar um estropo de Náilon no corpo do isolador velho. \\ \hline
-g14 &  g13 & Colocar a extremidade do estropo no gancho da corda de serviço. \\ \hline
-g15 &  g14 & Afrouxar os parafusos do conector que prendem a barra ao isolador. \\ \hline
-g16 &  g15 & Terminar de retirar os parafusos com o bastão com o soquete multiangular. \\ \hline
-g17 &  g16 & Elevar o condutor através da corda que une a sela ao bastão. \\ \hline
-g18 &  g17 & Apertar o colar através da porca borboleta. \\ \hline
-g19 &  g18 & Sacar parafusos da base da coluna. \\ \hline
-g20 &  g19 & Segurar firmemente a corda de serviço,baixar o isolador ao solo \\ \hline
-g21 &  g20 & Passar Estropo no Isolador Novo \\ \hline
-g22 &  g21 & Colocar a extremidade do estropo no gancho da corda de serviço. \\ \hline
-g23 &  g22 & Içar o Isolador \\ \hline
-g24 &  g23 & Colocar Parafusos na base da coluna. \\ \hline
-g25 &  g24 & Baixar o condutor para que a mesma se sustente no novo isolador. \\ \hline
-g26 &  g25 & Colocar os parafusos do conector que prende a barra ao novo isolador. \\ \hline
-g27 &  g26 & Retirar Equipamentos \\ \hline
+\textbf{Objetivo} & \textbf{Próximo} & \textbf{Descrição} \\ \hline
+gSupervisor & g1,g6 & Atribui objetivos aos demais agentes. \\ \hline
+g0 &  gSupervisor & Vestir os AP'Is \\ \hline
+g1 &  g2 & Limpar, secar e testar ferramentas com material isolante. \\ \hline
+g2 &  g3 & Medir a corrente de fuga de ferramentas isolantes \\ \hline
+g3 &  g4 & Instalar sela com colar na estrutura \\ \hline
+g4 &  g5 & Passar o bastão garra por dentro do olhal do colar. \\ \hline
+g5 &  g12 & Amarrar o bastão garra na parte superior da estrutura com a corda, fixar no condutor \\ \hline
+g6 &  g7 & Amarrar o olhal do bastão garra ao cavalo da sela atrás de uma corda. \\ \hline
+g7 &  g8 & Instalar sela com colar no outro lado da estrutura estrutura \\ \hline
+g8 &  g9 & Passar o bastão universal por dentro do olhal do colar \\ \hline
+g10 & g11 & Pender carretilha no bastão Universal. \\ \hline
+g11 & g12 & Amarrar o bastão universal na parte superior da estrutura com a corda; \\ \hline
+g12 & g10 & Amarrar o olhal do bastão universal ao cavalo da sela atrás de uma corda. \\ \hline
+g12 & g13 & Rotacionar estrutura olhal garra em 45 graus. \\ \hline
+g13 & g14 & Enforcar um estropo de Náilon no corpo do isolador velho. \\ \hline
+g14 & g15 & Colocar a extremidade do estropo no gancho da corda de serviço. \\ \hline
+g15 & g16 & Afrouxar os parafusos do conector que prendem a barra ao isolador. \\ \hline
+g16 & g17 & Terminar de retirar os parafusos com o bastão com o soquete multiangular. \\ \hline
+g17 & g18 & Elevar o condutor através da corda que une a sela ao bastão. \\ \hline
+g18 & g19 & Apertar o colar através da porca borboleta. \\ \hline
+g19 & g20 & Sacar parafusos da base da coluna. \\ \hline
+g20 & g21 & Segurar firmemente a corda de serviço,baixar o isolador ao solo \\ \hline
+g21 & g22 & Passar Estropo no Isolador Novo \\ \hline
+g22 & g23 & Colocar a extremidade do estropo no gancho da corda de serviço. \\ \hline
+g23 & g24 & Içar o Isolador \\ \hline
+g24 & g25 & Colocar Parafusos na base da coluna. \\ \hline
+g25 & g26 & Baixar o condutor para que a mesma se sustente no novo isolador. \\ \hline
+g26 & g27 & Colocar os parafusos do conector que prende a barra ao novo isolador. \\ \hline
+g27 &     & Retirar Equipamentos \\ \hline
 \end{tabular}
 \caption{Define e descreve os objetivos bem como os respectivos pré-requisitos}
 \label{g}
 \end{table}
 
-A tabela \ref{condition} apresenta $c_k$ dado pela coluna condição e pela coluna descrição. Essa tabela define a relação $hasRisk(c_k,risk_j,f_m)$ onde $risk_j$ é descrito pela coluna risco e $f_m$ é descrito pela coluna fatalidade. 
+A tabela \ref{condition} apresenta $c_k$ dado pela coluna condição e pela coluna descrição. 
+Essa tabela define $hasRisk(c_k,risk_j,cs_m)$ onde $risk_j$ é descrito pela coluna risco e $cs_m$ é descrito como consequência. 
 
 \begin{table}[H]
 \scalefont{0.8}
 \centering
 \begin{tabular}{|l|p{0.6\linewidth}|l|l|}
 \hline
-\textbf{condição} & \textbf{descrição} & \textbf{risco} & \textbf{fatalidade} \\ \hline
+\textbf{condição} & \textbf{descrição} & \textbf{risco} & \textbf{consequência} \\ \hline
 umidade70 & Umidade Relativa do Ar deve ser inferior a setenta porcento. & eletrocutado & morte \\ \hline
 noVento & Não deve haver vento durante os procedimentos de manutenção. & eletrocutado & morte \\ \hline
 noChuva & Não deve haver chuva durante o ato da manutenção & eletrocutado & morte \\ \hline
@@ -196,131 +200,154 @@ sol & O dia deve estar ensolarado & eletrocutado & morte \\ \hline
 \end{table}
 
 
-A tabela \ref{relation} apresenta três relações onde uma delas é $thereIsRelation(r_l,e_i,e_k)$ onde $r_l$ é definido pela coluna $relacionamento$, $e_i$ e $e_k$ pelas entidades envolvidas. A outra relação é dada por $hasRisk(r_k,risk_j,f_m)$ onde $risk_j$ é dado pela coluna risco e $f_m$ é dado pela coluna fatalidade. A terceira relação é dada por $hasPossibility(gr_n,p_m)$. $X$ é uma variável que pode assumir os seguintes valores $agente1, agente2, agente3,agente4, agente5, agente6$ e $agente7$. Por exemplo, a primeira linha da tabela \ref{relation} é; 
+As tabelas \ref{relationEntEnt1}, \ref{relationEntEnt2} apresentam a especificação para dois predicados onde uma deles é $thereIsRelation(r_l,e_i,e_k)$ 
+tal que $r_l$ é definido pela coluna \textit{relacionamento}, $e_i$ e $e_k$ pelas \textit{entidades envolvidas}. 
+O outro predicado é dado por $hasRisk(r_k,risk_j,cs_m)$ onde $risk_j$ é dado pela coluna risco e $cs_m$ é dado pela coluna consequência. 
+Algumas relações (instâncias do conjunto $Relation$) serão apresentadas usando o termo $X$. O objetivo disto consiste tornar as tabelas mais enxutas por intermédio de uma regra a qual é;
+A variável $X$ deve ser substituída pelo agente que tem a permissão de executar alguma ação em dado objetivo em prol a sua função. 
+Essa regra pode ser sintetizada na seguinte expressão para um agente $ag_n$ que é referenciado por $AGENT$:
 
-
-\begin{eqnarray}
-	relXCapacete | X,capacete | nenhum | nenhum | false
+\begin{eqnarray}\label{whenusex} \nonumber
+    hasRole(AGENT,\rho_m) \wedge hasPermission(\rho_m,g_i) \wedge (relXotherEntity \in rg_n)  \\ 
+    \wedge hasRelation(g_i,rg_n) \to relAGENTotherEntity 
 \end{eqnarray}
 
 
-Substituindo o $X$ pelos valores, é possível obter todas essas relações; 
-
+Para mostrar como se dá o uso desta regra pode-se considerar um relacionamento $ relXCapacete$ entre $X$ e $capacete$ (essa relação será melhor descrita nas tabelas \ref{relationEntEnt1}, \ref{relationEntEnt2}). Essa relação acontece no objetivo $g_0$
+onde o trabalhador deve colocar o capacete em sua cabeça, por conta disto se aplica a todos os agentes que representam esses profissionais. Nesta implementação, esses agentes são: $agente1$, $agente2$, $agente3$, $agente4$, $agente5$, 
+$agente6$ e $agente7$. Aplicando a regra \ref{whenusex} para esse caso, obtem-se as seguintes relações: $relAgente1Capacete$, $relAgente2Capacete$, $relAgente3Capacete$, $relAgente4Capacete$, $relAgente5Capacete$, $relAgente6Capacete$ e 
+$relAgente7Capacete$. Portanto, nas tabelas \ref{relationEntEnt1}, \ref{relationEntEnt2}, ao ler:  
 
 \begin{eqnarray}
-relAgente1Capacete | Agente1 ,capacete | nenhum | nenhum | false \nonumber \\
-relAgente2Capacete | Agente2 ,capacete | nenhum | nenhum | false \nonumber \\ 
-relAgente3Capacete | Agente3 ,capacete | nenhum | nenhum | false \nonumber \\ 
-relAgente4Capacete | Agente4 ,capacete | nenhum | nenhum | false \nonumber \\
-relAgente5Capacete | Agente5 ,capacete | nenhum | nenhum | false \nonumber \\
-relAgente6Capacete | Agente6 ,capacete | nenhum | nenhum | false \nonumber \\
-relAgente7Capacete | Agente7 ,capacete | nenhum | nenhum | false\nonumber \\
+	relXCapacete | X,capacete |
+\end{eqnarray}
+
+Para o objetivo $g_0$, essa linha é equivalente a: 
+
+\begin{eqnarray}
+relAgente1Capacete | Agente1 ,capacete | \nonumber \\
+relAgente2Capacete | Agente2 ,capacete | \nonumber \\ 
+relAgente3Capacete | Agente3 ,capacete | \nonumber \\ 
+relAgente4Capacete | Agente4 ,capacete | \nonumber \\
+relAgente5Capacete | Agente5 ,capacete | \nonumber \\
+relAgente6Capacete | Agente6 ,capacete | \nonumber \\
+relAgente7Capacete | Agente7 ,capacete | \nonumber \\
 \nonumber \\
 \end{eqnarray}
 
 \begin{table}[H]
-\scalefont{0.8}
 \centering
-\begin{tabular}{|l|l|l|l|l|}
+\scalefont{0.6}
+\begin{tabular}{|l|l|l|l|}
 \hline
-\textbf{relacionamento} & \textbf{entidades envolvidas} & \textbf{risco} & \textbf{fatalidade} & \textbf{possibilidade} \\  \hline
-relXCapacete & X,capacete & nenhum & nenhum & false \\ \hline
-relXOculos & X,oculos & nenhum & nenhum & false \\ \hline
-relXRoupagem & X,roupagem & nenhum & nenhum & false \\ \hline
-relXLuva & X,luva & nenhum & nenhum & false \\ \hline
-relXBotas & X,bota & nenhum & nenhum & false \\ \hline
-relXPano & X,pano & nenhum & nenhum & false \\ \hline
-relPanoGlicerina & pano,glicerina & nenhum & nenhum & false \\ \hline
-relPanoCorda & pano,corda & nenhum & nenhum & false \\ \hline
-relPanoBastoaUniversal & pano,bastaoUniversal & nenhum & nenhum & false \\ \hline
-relPanoSoquete & pano,soquete & nenhum & nenhum & false \\ \hline
-relPanoBastaoUniversal & pano,bastaoGarra & nenhum & nenhum & false \\ \hline
-relXSela & X,sela & nenhum & nenhum & false \\ \hline
-relXColar & X,colar & nenhum & nenhum & false \\ \hline
-relXBastaoGarra & X,bastaoGarra & nenhum & nenhum & false \\ \hline
-relTorreSela & torre,sela & nenhum & nenhum & false \\ \hline
-relSelaColar & sela,colar & nenhum & nenhum & false \\ \hline
-relColarBastaoGarra & colar,bastaoGarra & nenhum & nenhum & false \\ \hline
-relBastaoGarraCondutor & bastaoGarra,condutor & eletrocutado & morte & false \\ \hline
-relXBastaoUniversal & X,bastaoUniversal & nenhum & nenhum & false \\ \hline
-relCordaBastaoUniversal & corda,bastaoUniversal & nenhum & nenhum & false \\ \hline
-relCordaCarretilha & corda,carretilha & nenhum & nenhum & false \\ \hline
-relBastaoUniversalCarretilha & bastaoUniversal,carretilha & nenhum & nenhum & false \\ \hline
-relBastaoUniversalColar & bastaoUniversal,colar & nenhum & nenhum & false \\ \hline
-relBastaoUniversalEstopo & bastaoUniversal,estopo & nenhum & nenhum & false \\ \hline
+\textbf{relacionamento}                  & \textbf{entidades envolvidas}                & \textbf{risco}                & \textbf{consequência}              \\ \hline
+relXCapacete                             & X,capacete                                     & nenhum                          & nenhum                               \\ \hline
+relXOculos                               & X,oculos                                       & nenhum                          & nenhum                               \\ \hline
+relXRoupagem                             & X,roupagem                                     & nenhum                          & nenhum                               \\ \hline
+relXLuva                                 & X,luva                                         & nenhum                          & nenhum                               \\ \hline
+relXBotas                                & X,bota                                         & nenhum                          & nenhum                               \\ \hline
+relXPano                                 & X,pano                                         & nenhum                          & nenhum                               \\ \hline
+relPanoGlicerina                         & pano,glicerina                                 & nenhum                          & nenhum                               \\ \hline
+relPanoCorda                             & pano,corda                                     & nenhum                          & nenhum                               \\ \hline
+relPanoBastoaUniversal                   & pano,bastaoUniversal                           & nenhum                          & nenhum                               \\ \hline
+relPanoSoquete                           & pano,soquete                                   & nenhum                          & nenhum                               \\ \hline
 \end{tabular}
-\caption{Define os relacionamentos necessários que a manutenção aconteça}
-\label{relation2}
 \end{table}
-
-
-\begin{table}[H]
-\scalefont{0.8}
-\centering
-\begin{tabular}{|l|l|l|l|l|}
-\hline
-\textbf{relacionamento} & \textbf{entidades envolvidas} & \textbf{risco} & \textbf{fatalidade} & \textbf{possibilidade} \\  \hline
-relCordaEstropo & corda,estropo & eletrocutado & morte & false \\ \hline
-relEstropoIsoladorVelho & estropo,isoladorVelho & nenhum & nenhum & false \\ \hline
-relXChaveCatraca & X,chaveCatraca & nenhum & nenhum & false \\ \hline
-relChaveCatracaBastaoUniversal & chaveCatraca,bastaoUniversal & nenhum & nenhum & false \\ \hline
-relChaveCatracaParafuso & chaveCatraca,parafuso & eletrocutado & morte & false \\ \hline
-relParafusoConector & parafuso,conector & eletrocutado & morte & false \\ \hline
-relXBastaoSoquete & X,bastaoSoquete & nenhum & nenhum & false \\ \hline
-relSoqueteParafuso & soquete,parafuso & eletrocutado & morte & false \\ \hline
-relXCorda & X,corda & eletrocutado & morte & false \\ \hline
-relXIsoladorVelho & X,isoladorVelho & nenhum & nenhum & false \\ \hline
-relXIsoladorNovo & X,isoladorNovo & nenhum & nenhum & false \\ \hline
-relCordaBastaoGarra & corda,bastaoGarra & nenhum & nenhum & false \\ \hline
-relBastaoGarraSela & bastaoGarra, sela & nenhum & nenhum & false \\ \hline
-relXCarretilha & X,carretilha & nenhum & nenhum & false \\ \hline
-relBastaoUniversalCorda & bastaoUniversal,corda & nenhum & nenhum & false \\ \hline
-relBastaoUniversalTorre & bastaoUniversal,torre & nenhum & nenhum & false \\ \hline
-relEstropoCorda & estropo,corda & eletrocutado & morte & false \\ \hline
-relEstropoIsoladorNovo & estropo,isoladorNovo & nenhum & nenhum & false \\ \hline
-relBastaoUniversalSela & universal,sela & nenhum & nenhum & false \\ \hline
-relBastaoGarraTorre & bastaoGarra,torre & nenhum & nenhum & false \\ \hline
-relBastaoUniversalEstropo & bastaoUniversal,estropo & nenhum & nenhum & false \\ \hline
-relXColar & X,colar & nenhum & nenhum & false \\ \hline
-relParafusoTorre & parafuso,torre & eletrocutado & morte & false \\ \hline
-relCondutivimetroCorda & condutímetro,corda & nenhum & nenhum & false \\ \hline
-relCondutivimetroBastaoUniversal & condutímetro,bastaoUniversal & nenhum & nenhum & false \\ \hline
-relCondutivimetroBastaoGarra & condutímetro,bastaoGarra & nenhum & nenhum & false \\ \hline
-relCondutivimetroSoquete & condutímetro,soquete & nenhum & nenhum & false \\ \hline
-\end{tabular}
-\caption{Define os relacionamentos necessários que a manutenção aconteça}
-\label{relation}
-\end{table}
-
-As tabelas \ref{relation1},\ref{relation2},\ref{relation3} e \ref{relation4} apresentam a relação $affects(r_k,r_n)$ onde $r_k$ é representado pela coluna relacionamento-errado e $r_n$ é representado pela coluna relacionamento-afetado. 
-A coluna nova possibilidade de algo errado tem como por finalidade representar que a possibilidade de ocorrer algum evento ruim atrelado ao relacionamento-afetado mudou de $false$ para $true$.
+\label{relationEntEnt1}
 
 \begin{table}[H]
 \centering
 \scalefont{0.6}
-\begin{tabular}{|l|l|l|}
+\begin{tabular}{|l|l|l|l|}
 \hline
-\textbf{relacionamento-errado} & \textbf{relacionamento-afetado} & \textbf{nova possibilidade de algo errado} \\ \hline
-relXCapacete & relBastaoGarraCondutor & true \\ \hline
-relXCapacete & relCordaEstropo & true \\ \hline
-relXCapacete & relChaveCatracaParafuso & true \\ \hline
-relXCapacete & relParafusoConector & true \\ \hline
-relXCapacete & relSoqueteParafuso & true \\ \hline
-relXCapacete & relXCorda & true \\ \hline
-relXCapacete & relEstropoCorda & true \\ \hline
-relXCapacete & relParafusoTorre & true \\ \hline
-relXOculos & relBastaoGarraCondutor & true \\ \hline
-relXOculos & relCordaEstropo & true \\ \hline
-relXOculos & relChaveCatracaParafuso & true \\ \hline
-relXOculos & relParafusoConector & true \\ \hline
-relXOculos & relSoqueteParafuso & true \\ \hline
-relXOculos & relXCorda & true \\ \hline
-relXOculos & relEstropoCorda & true \\ \hline
-relXOculos & relParafusoTorre & true \\ \hline
-relXLuva & relBastaoGarraCondutor & true \\ \hline
-relXLuva & relCordaEstropo & true \\ \hline
-relXLuva & relChaveCatracaParafuso & true \\ \hline
-relXLuva & relParafusoConector & true \\ \hline
+\textbf{relacionamento}                  & \textbf{entidades envolvidas}                  & \textbf{risco}                  & \textbf{consequência}              \\ \hline
+relPanoBastaoUniversal                   & pano,bastaoGarra                               & nenhum                          & nenhum                               \\ \hline
+relXSela                                 & X,sela                                         & nenhum                          & nenhum                               \\ \hline
+relXColar                                & X,colar                                        & nenhum                          & nenhum                               \\ \hline
+relXBastaoGarra                          & X,bastaoGarra                                  & nenhum                          & nenhum                               \\ \hline
+relTorreSela                             & torre,sela                                     & nenhum                          & nenhum                               \\ \hline
+relSelaColar                             & sela,colar                                     & nenhum                          & nenhum                               \\ \hline
+relColarBastaoGarra                      & colar,bastaoGarra                              & nenhum                          & nenhum                               \\ \hline
+relBastaoGarraCondutor                   & bastaoGarra,condutor                           & eletrocutado                    & morte                                \\ \hline
+relXBastaoUniversal                      & X,bastaoUniversal                              & nenhum                          & nenhum                               \\ \hline
+relCordaBastaoUniversal                  & corda,bastaoUniversal                          & nenhum                          & nenhum                               \\ \hline
+relCordaCarretilha                       & corda,carretilha                               & nenhum                          & nenhum                               \\ \hline
+relBastaoUniversalCarretilha             & bastaoUniversal,carretilha                     & nenhum                          & nenhum                               \\ \hline
+relBastaoUniversalColar                  & bastaoUniversal,colar                          & nenhum                          & nenhum                               \\ \hline
+relBastaoUniversalEstopo                 & bastaoUniversal,estopo                         & nenhum                          & nenhum                               \\ \hline
+relCordaEstropo                          & corda,estropo                                  & eletrocutado                    & morte                                \\ \hline
+relEstropoIsoladorVelho                  & estropo,isoladorVelho                          & nenhum                          & nenhum                               \\ \hline
+relXChaveCatraca                         & X,chaveCatraca                                 & nenhum                          & nenhum                               \\ \hline
+relChaveCatracaBastaoUniversal           & chaveCatraca,bastaoUniversal                   & nenhum                          & nenhum                               \\ \hline
+relChaveCatracaParafuso                  & chaveCatraca,parafuso                          & eletrocutado                    & morte                                \\ \hline
+relParafusoConector                      & parafuso,conector                              & eletrocutado                    & morte                                \\ \hline
+relXBastaoSoquete                        & X,bastaoSoquete                                & nenhum                          & nenhum                               \\ \hline
+relSoqueteParafuso                       & soquete,parafuso                               & eletrocutpossibilidadeado       & morte                                \\ \hline
+relXCorda                                & X,corda                                        & eletrocutado                    & morte                                \\ \hline
+relXIsoladorVelho                        & X,isoladorVelho                                & nenhum                          & nenhum                               \\ \hline
+relXIsoladorNovo                         & X,isoladorNovo                                 & nenhum                          & nenhum                               \\ \hline
+relCordaBastaoGarra                      & corda,bastaoGarra                              & nenhum                          & nenhum                               \\ \hline
+relBastaoGarraSela                       & bastaoGarra, sela                              & nenhum                          & nenhum                               \\ \hline
+relXCarretilha                           & X,carretilha                                   & nenhum                          & nenhum                               \\ \hline
+relBastaoUniversalCorda                  & bastaoUniversal,corda                          & nenhum                          & nenhum                               \\ \hline
+relBastaoUniversalTorre                  & bastaoUniversal,torre                          & nenhum                          & nenhum                               \\ \hline
+relEstropoCorda                          & estropo,corda                                  & eletrocutado                    & morte                                \\ \hline
+relEstropoIsoladorNovo                   & estropo,isoladorNovo                           & nenhum                          & nenhum                               \\ \hline
+relBastaoUniversalSela                   & universal,sela                                 & nenhum                          & nenhum                               \\ \hline
+relBastaoGarraTorre                      & bastaoGarra,torre                              & nenhum                          & nenhum                               \\ \hline
+relBastaoUniversalEstropo                & bastaoUniversal,estropo                        & nenhum                          & nenhum                               \\ \hline
+relXColar                                & X,colar                                        & nenhum                          & nenhum                               \\ \hline
+relParafusoTorre                         & parafuso,torre                                 & eletrocutado                    & morte                                \\ \hline
+relCondutivimetroCorda                   & condutímetro,corda                             & nenhum                          & nenhum                               \\ \hline
+relCondutivimetroBastaoUniversal         & condutímetro,bastaoUniversal                   & nenhum                          & nenhum                               \\ \hline
+relCondutivimetroBastaoGarra             & condutímetro,bastaoGarra                       & nenhum                          & nenhum                               \\ \hline
+relCondutivimetroSoquete                 & condutímetro,soquete                           & nenhum                          & nenhum                               \\ \hline
+\end{tabular}
+\end{table}
+\label{relationEntEnt2}
+
+As tabelas \ref{relation1},\ref{relation2} e \ref{relation3} apresentam a relação $affectsOtherRelations(r_k,r_n)$ onde $r_k$ é representado pela coluna relacionamento-errado e $r_n$ é representado 
+pela coluna relacionamento-afetado. 
+
+\begin{table}[H]
+\centering
+\scalefont{0.6}
+\begin{tabular}{|l|l|}
+\hline
+\textbf{relacionamento-errado} & \textbf{relacionamento-afetado}   \\ \hline
+relXCapacete                                    & relBastaoGarraCondutor                           \\ \hline
+relXCapacete                                    & relCordaEstropo                                  \\ \hline
+relXCapacete                                    & relChaveCatracaParafuso                          \\ \hline
+relXCapacete                                    & relParafusoConector                              \\ \hline
+relXCapacete                                    & relSoqueteParafuso                               \\ \hline
+relXCapacete                                    & relXCorda                                        \\ \hline
+relXCapacete                                    & relEstropoCorda                                  \\ \hline
+relXCapacete                                    & relParafusoTorre                                 \\ \hline
+relXOculos                                      & relBastaoGarraCondutor                           \\ \hline
+relXOculos                                      & relCordaEstropo                                  \\ \hline
+relXOculos                                      & relChaveCatracaParafuso                          \\ \hline
+relXOculos                                      & relParafusoConector                              \\ \hline
+relXOculos                                      & relSoqueteParafuso                               \\ \hline
+relXOculos                                      & relXCorda                                        \\ \hline
+relXOculos                                      & relEstropoCorda                                  \\ \hline
+relXOculos                                      & relParafusoTorre                                 \\ \hline
+relXLuva                                        & relBastaoGarraCondutor                           \\ \hline
+relXLuva                                        & relCordaEstropo                                  \\ \hline
+relXLuva                                        & relChaveCatracaParafuso                          \\ \hline
+relXLuva                                        & relParafusoConector                              \\ \hline
+relXLuva                                        & relSoqueteParafuso                               \\ \hline
+relXLuva                                        & relXCorda                                        \\ \hline
+relXLuva                                        & relEstropoCorda                                  \\ \hline
+relXLuva                                        & relParafusoTorre                                 \\ \hline
+relXBotas                                       & relBastaoGarraCondutor                           \\ \hline
+relXBotas                                       & relCordaEstropo                                  \\ \hline
+relXBotas                                       & relChaveCatracaParafuso                          \\ \hline
+relXBotas                                       & relParafusoConector                              \\ \hline
+relXBotas                                       & relSoqueteParafuso                               \\ \hline
+relXBotas                                       & relXCorda                                        \\ \hline
+relXBotas                                       & relEstropoCorda                                  \\ \hline
+relXBotas                                       & relParafusoTorre                                 \\ \hline
+relXPano                                        & relBastaoGarraCondutor                           \\ \hline
 \end{tabular}
 \caption{Define o impacto que o erro em um relacionamento gera em outro relacionamento}
 \label{relation1}
@@ -331,38 +358,39 @@ relXLuva & relParafusoConector & true \\ \hline
 \scalefont{0.6}
 \begin{tabular}{|l|l|l|}
 \hline
-\textbf{relacionamento-errado} & \textbf{relacionamento-afetado} & \textbf{nova possibilidade de algo errado} \\ \hline
-relXLuva & relSoqueteParafuso & true \\ \hline
-relXLuva & relXCorda & true \\ \hline
-relXLuva & relEstropoCorda & true \\ \hline
-relXLuva & relParafusoTorre & true \\ \hline
-relXBotas & relBastaoGarraCondutor & true \\ \hline
-relXBotas & relCordaEstropo & true \\ \hline
-relXBotas & relChaveCatracaParafuso & true \\ \hline
-relXBotas & relParafusoConector & true \\ \hline
-relXBotas & relSoqueteParafuso & true \\ \hline
-relXBotas & relXCorda & true \\ \hline
-relXBotas & relEstropoCorda & true \\ \hline
-relXBotas & relParafusoTorre & true \\ \hline
-relXPano & relBastaoGarraCondutor & true \\ \hline
-relXPano & relCordaEstropo & true \\ \hline
-relXPano & relChaveCatracaParafuso & true \\ \hline
-relXPano & relParafusoConector & true \\ \hline
-relXPano & relSoqueteParafuso & true \\ \hline
-relXPano & relXCorda & true \\ \hline
-relXPano & relEstropoCorda & true \\ \hline
-relXPano & relParafusoTorre & true \\ \hline
-relPanoGlicerina & relBastaoGarraCondutor & true \\ \hline
-relPanoGlicerina & relCordaEstropo & true \\ \hline
-relPanoGlicerina & relChaveCatracaParafuso & true \\ \hline
-relPanoGlicerina & relParafusoConector & true \\ \hline
-relPanoGlicerina & relSoqueteParafuso & true \\ \hline
-relPanoGlicerina & relXCorda & true \\ \hline
-relPanoGlicerina & relEstropoCorda & true \\ \hline
-relPanoGlicerina & relParafusoTorre & true \\ \hline
-relPanoCorda & relCordaEstropo & true \\ \hline
-relPanoCorda & relXCorda & true \\ \hline
-relPanoCorda & relEstropoCorda & true \\ \hline
+\textbf{relacionamento-errado}                  & \textbf{relacionamento-afetado}                  \\ \hline
+relXPano                                        & relCordaEstropo                                  \\ \hline
+relXPano                                        & relChaveCatracaParafuso                          \\ \hline
+relXPano                                        & relParafusoConector                              \\ \hline
+relXPano                                        & relSoqueteParafuso                               \\ \hline
+relXPano                                        & relXCorda                                        \\ \hline
+relXPano                                        & relEstropoCorda                                  \\ \hline
+relXPano                                        & relParafusoTorre                                 \\ \hline
+relPanoGlicerina                                & relBastaoGarraCondutor                           \\ \hline
+relPanoGlicerina                                & relCordaEstropo                                  \\ \hline
+relPanoGlicerina                                & relChaveCatracaParafuso                          \\ \hline
+relPanoGlicerina                                & relParafusoConector                              \\ \hline
+relPanoGlicerina                                & relSoqueteParafuso                               \\ \hline
+relPanoGlicerina                                & relXCorda                                        \\ \hline
+relPanoGlicerina                                & relEstropoCorda                                  \\ \hline
+relPanoGlicerina                                & relParafusoTorre                                 \\ \hline
+relPanoCorda                                    & relCordaEstropo                                  \\ \hline
+relPanoCorda                                    & relXCorda                                        \\ \hline
+relPanoCorda                                    & relEstropoCorda                                  \\ \hline
+relPanoBastaoUniversal                          & relBastaoGarraCondutor                           \\ \hline
+relPanoBastaoUniversal                          & relChaveCatracaParafuso                          \\ \hline
+relPanoBastaoUniversal                          & relParafusoConector                              \\ \hline
+relPanoBastaoUniversal                          & relParafusoTorre                                 \\ \hline
+relPanoBastaoUniversal                          & relBastaoGarraCondutor                           \\ \hline
+relPanoSoquete                                  & relBastaoGarraCondutor                           \\ \hline
+relPanoSoquete                                  & relCordaEstropo                                  \\ \hline
+relPanoSoquete                                  & relChaveCatracaParafuso                          \\ \hline
+relPanoSoquete                                  & relParafusoConector                              \\ \hline
+relPanoSoquete                                  & relSoqueteParafuso                               \\ \hline
+relPanoSoquete                                  & relXCorda                                        \\ \hline
+relPanoSoquete                                  & relEstropoCorda                                  \\ \hline
+relPanoSoquete                                  & relParafusoTorre                                 \\ \hline
+relCondutivimetroCorda                          & relBastaoGarraCondutor                           \\ \hline
 \end{tabular}
 \caption{Define o impacto que o erro em um relacionamento gera em outro relacionamento}
 \label{relation2}
@@ -373,69 +401,40 @@ relPanoCorda & relEstropoCorda & true \\ \hline
 \scalefont{0.6}
 \begin{tabular}{|l|l|l|}
 \hline
-\textbf{relacionamento-errado} & \textbf{relacionamento-afetado} & \textbf{nova possibilidade de algo errado} \\ \hline
-relPanoBastaoUniversal & relBastaoGarraCondutor & true \\ \hline
-relPanoBastaoUniversal & relChaveCatracaParafuso & true \\ \hline
-relPanoBastaoUniversal & relParafusoConector & true \\ \hline
-relPanoBastaoUniversal & relParafusoTorre & true \\ \hline
-relPanoBastaoUniversal & relBastaoGarraCondutor & true \\ \hline
-relPanoSoquete & relBastaoGarraCondutor & true \\ \hline
-relPanoSoquete & relCordaEstropo & true \\ \hline
-relPanoSoquete & relChaveCatracaParafuso & true \\ \hline
-relPanoSoquete & relParafusoConector & true \\ \hline
-relPanoSoquete & relSoqueteParafuso & true \\ \hline
-relPanoSoquete & relXCorda & true \\ \hline
-relPanoSoquete & relEstropoCorda & true \\ \hline
-relPanoSoquete & relParafusoTorre & true \\ \hline
-relCondutivimetroCorda & relBastaoGarraCondutor & true \\ \hline
-relCondutivimetroCorda & relCordaEstropo & true \\ \hline
-relCondutivimetroCorda & relChaveCatracaParafuso & true \\ \hline
-relCondutivimetroCorda & relParafusoConector & true \\ \hline
-relCondutivimetroCorda & relSoqueteParafuso & true \\ \hline
-relCondutivimetroCorda & relXCorda & true \\ \hline
-relCondutivimetroCorda & relEstropoCorda & true \\ \hline
-relCondutivimetroCorda & relParafusoTorre & true \\ \hline
+\textbf{relacionamento-errado}                  & \textbf{relacionamento-afetado}                   \\ \hline
+relCondutivimetroCorda                          & relCordaEstropo                                  \\ \hline
+relCondutivimetroCorda                          & relChaveCatracaParafuso                          \\ \hline
+relCondutivimetroCorda                          & relParafusoConector                              \\ \hline
+relCondutivimetroCorda                          & relSoqueteParafuso                               \\ \hline
+relCondutivimetroCorda                          & relXCorda                                        \\ \hline
+relCondutivimetroCorda                          & relEstropoCorda                                  \\ \hline
+relCondutivimetroCorda                          & relParafusoTorre                                 \\ \hline
+relPanoBastaoUniversal                          & relBastaoGarraCondutor                           \\ \hline
+relPanoBastaoUniversal                          & relChaveCatracaParafuso                          \\ \hline
+relPanoBastaoUniversal                          & relParafusoConector                              \\ \hline
+relPanoBastaoUniversal                          & relParafusoTorre                                 \\ \hline
+relPanoBastaoUniversal                          & relBastaoGarraCondutor                           \\ \hline
+relPanoSoquete                                  & relBastaoGarraCondutor                           \\ \hline
+relPanoSoquete                                  & relCordaEstropo                                  \\ \hline
+relPanoSoquete                                  & relChaveCatracaParafuso                          \\ \hline
+relPanoSoquete                                  & relParafusoConector                              \\ \hline
+relPanoSoquete                                  & relSoqueteParafuso                               \\ \hline
+relPanoSoquete                                  & relXCorda                                        \\ \hline
+relPanoSoquete                                  & relEstropoCorda                                  \\ \hline
+relPanoSoquete                                  & relParafusoTorre                                 \\ \hline
+relCondutivimetroCorda                          & relBastaoGarraCondutor                           \\ \hline
+relCondutivimetroCorda                          & relCordaEstropo                                  \\ \hline
+relCondutivimetroCorda                          & relChaveCatracaParafuso                          \\ \hline
+relCondutivimetroCorda                          & relParafusoConector                              \\ \hline
+relCondutivimetroCorda                          & relSoqueteParafuso                               \\ \hline
+relCondutivimetroCorda                          & relXCorda                                        \\ \hline
+relCondutivimetroCorda                          & relEstropoCorda                                  \\ \hline
+relCondutivimetroCorda                          & relParafusoTorre                                 \\ \hline
 \end{tabular}
 \caption{Define o impacto que o erro em um relacionamento gera em outro relacionamento por mudar a possibilidade de algo errado acontecer.}
 \label{relation3}
 \end{table}
 
-
-
-\begin{table}[H]
-\centering
-\scalefont{0.6}
-\begin{tabular}{|l|l|l|}
-\hline
-\textbf{relacionamento-errado} & \textbf{relacionamento-afetado} & \textbf{nova possibilidade de algo errado} \\ \hline
-relCondutivimetroBastaoUniversal & relBastaoGarraCondutor & true \\ \hline
-relCondutivimetroBastaoUniversal & relCordaEstropo & true \\ \hline
-relCondutivimetroBastaoUniversal & relChaveCatracaParafuso & true \\ \hline
-relCondutivimetroBastaoUniversal & relParafusoConector & true \\ \hline
-relCondutivimetroBastaoUniversal & relSoqueteParafuso & true \\ \hline
-relCondutivimetroBastaoUniversal & relXCorda & true \\ \hline
-relCondutivimetroBastaoUniversal & relEstropoCorda & true \\ \hline
-relCondutivimetroBastaoUniversal & relParafusoTorre & true \\ \hline
-relCondutivimetroBastaoGarra & relBastaoGarraCondutor & true \\ \hline
-relCondutivimetroBastaoGarra & relCordaEstropo & true \\ \hline
-relCondutivimetroBastaoGarra & relChaveCatracaParafuso & true \\ \hline
-relCondutivimetroBastaoGarra & relParafusoConector & true \\ \hline
-relCondutivimetroBastaoGarra & relSoqueteParafuso & true \\ \hline
-relCondutivimetroBastaoGarra & relXCorda & true \\ \hline
-relCondutivimetroBastaoGarra & relEstropoCorda & true \\ \hline
-relCondutivimetroBastaoGarra & relParafusoTorre & true \\ \hline
-relCondutivimetroSoquete & relBastaoGarraCondutor & true \\ \hline
-relCondutivimetroSoquete & relCordaEstropo & true \\ \hline
-relCondutivimetroSoquete & relChaveCatracaParafuso & true \\ \hline
-relCondutivimetroSoquete & relParafusoConector & true \\ \hline
-relCondutivimetroSoquete & relSoqueteParafuso & true \\ \hline
-relCondutivimetroSoquete & relXCorda & true \\ \hline
-relCondutivimetroSoquete & relEstropoCorda & true \\ \hline
-relCondutivimetroSoquete & relParafusoTorre & true \\ \hline
-\end{tabular}
-\caption{Define o impacto que o erro em um relacionamento gera em outro relacionamento por mudar a possibilidade de algo errado acontecer.}
-\label{relation4}
-\end{table}
 
 As tabelas \ref{deontic1}, \ref{deontic2}, \ref{deontic3} e \ref{deontic4},  apresentam a relação $hasObligation(\rho_m,g_i)$ onde $\rho_m$ é representado pela coluna papel e $g_i$ é representado pela coluna objetivo. 
 
@@ -465,6 +464,15 @@ executor2 & g5 \\ \hline
 executor3 & g6 \\ \hline
 executor4 & g6 \\ \hline
 executor5 & g6 \\ \hline
+executor3 & g7 \\ \hline
+executor4 & g7 \\ \hline
+executor5 & g7 \\ \hline
+executor3 & g8 \\ \hline
+executor4 & g8 \\ \hline
+executor5 & g8 \\ \hline
+executor3 & g9 \\ \hline
+executor4 & g9 \\ \hline
+executor5 & g9 \\ \hline
 \end{tabular}
 \caption{Objetivos que devem ser atingidos pelo agente que assumir um dada função}
 \label{deontic1}
@@ -476,15 +484,6 @@ executor5 & g6 \\ \hline
 \begin{tabular}{|l|l|}
 \hline
 \textbf{papel} & \textbf{objetivo} \\ \hline
-executor3 & g7 \\ \hline
-executor4 & g7 \\ \hline
-executor5 & g7 \\ \hline
-executor3 & g8 \\ \hline
-executor4 & g8 \\ \hline
-executor5 & g8 \\ \hline
-executor3 & g9 \\ \hline
-executor4 & g9 \\ \hline
-executor5 & g9 \\ \hline
 executor3 & g10 \\ \hline
 executor4 & g10 \\ \hline
 executor5 & g10 \\ \hline
@@ -499,20 +498,7 @@ executor1 & g13 \\ \hline
 executor2 & g13 \\ \hline
 executor3 & g13 \\ \hline
 executor4 & g13 \\ \hline
-executor1 & g14 \\ \h\usepackage{scalefnt}
-line
-\end{tabular}
-\caption{Objetivos que devem ser atingidos pelo agente que assumir um dada função}
-\label{deontic2}
-\end{table}
-
-
-\begin{table}[H]
-\centering
-\scalefont{0.8}
-\begin{tabular}{|l|l|}
-\hline
-\textbf{role} & \textbf{g} \\ \hline
+executor1 & g14 \\ \hline
 executor2 & g14 \\ \hline
 executor3 & g14 \\ \hline
 executor4 & g14 \\ \hline
@@ -525,6 +511,18 @@ executor3 & g16 \\ \hline
 executor4 & g16 \\ \hline
 executor5 & g16 \\ \hline
 executor1 & g17 \\ \hline
+\end{tabular}
+\caption{Objetivos que devem ser atingidos pelo agente que assumir um dada função}
+\label{deontic2}
+\end{table}
+
+
+\begin{table}[H]
+\centering
+\scalefont{0.8}
+\begin{tabular}{|l|l|}
+\hline
+\textbf{role} & \textbf{g} \\ \hline
 executor3 & g17 \\ \hline
 executor4 & g17 \\ \hline
 executor5 & g17 \\ \hline
@@ -542,6 +540,15 @@ executor4 & g20 \\ \hline
 executor5 & g20 \\ \hline
 executor1 & g21 \\ \hline
 executor3 & g21 \\ \hline
+executor4 & g21 \\ \hline
+executor5 & g21 \\ \hline
+executor1 & g22 \\ \hline
+executor2 & g22 \\ \hline
+executor3 & g22 \\ \hline
+executor5 & g22 \\ \hline
+executor1 & g23 \\ \hline
+executor2 & g23 \\ \hline
+executor3 & g23 \\ \hline
 \end{tabular}
 \caption{Objetivos que devem ser atingidos pelo agente que assumir um dada função}
 \label{deontic3}
@@ -553,15 +560,6 @@ executor3 & g21 \\ \hline
 \begin{tabular}{|l|l|}
 \hline
 \textbf{role} & \textbf{g} \\ \hline
-executor4 & g21 \\ \hline
-executor5 & g21 \\ \hline
-executor1 & g22 \\ \hline
-executor2 & g22 \\ \hline
-executor3 & g22 \\ \hline
-executor5 & g22 \\ \hline
-executor1 & g23 \\ \hline
-executor2 & g23 \\ \hline
-executor3 & g23 \\ \hline
 executor5 & g23 \\ \hline
 executor1 & g24 \\ \hline
 executor2 & g24 \\ \hline
@@ -593,34 +591,34 @@ A tabela \ref{entities} apresenta as entidades que constituem os conjuntos \text
 \begin{tabular}{|l|l|}
 \hline
 \textbf{entidades}                                                                                                    & \textbf{eg} \\ \hline
-capacete,óculos,roupagem,luvas,botas X = \{agente que tenta alcançar o objetivo\}                                        & eg0         \\ \hline
-pano,glicerina,carretilha,bastaoUniversal,corda,bastaoGarra,X = \{agente que tenta alcançar o objetivo\}               & eg1         \\ \hline
-pano,glicerina,carretilha,bastaoUniversal,corda,bastaoGarra,condutímetro,X = \{agente que tenta alcançar o objetivo\} & eg2         \\ \hline
-sela,colarX = \{agente que tenta alcançar o objetivo\}                                                                & eg3         \\ \hline
-colar,bastaoGarraX = \{agente que tenta alcançar o objetivo\}                                                          & eg4         \\ \hline
-corda,bastaoGarra,bastaoGarraTorre,condutorX = \{agente que tenta alcançar o objetivo\}                               & eg5         \\ \hline
-bastaoGarra,selaX = \{agente que tenta alcançar o objetivo\}                                                           & eg6         \\ \hline
-sela,colarX = \{agente que tenta alcançar o objetivo\}                                                                & eg7         \\ \hline
-sela,bastaoUniversal,Colar,X = \{agente que tenta alcançar o objetivo\}                                               & eg8         \\ \hline
-bastaoUniversal,carretilha,X = \{agente que tenta alcançar o objetivo\}                                               & eg9         \\ \hline
-corda,bastaoUniversal,corda,torre,X = \{agente que tenta alcançar o objetivo\}                                        & eg10        \\ \hline
-bastaoUniversal,corda,colar,selaX = \{agente que tenta alcançar o objetivo\}                                          & eg11        \\ \hline
-colar,X = \{agente que tenta alcançar o objetivo\}                                                                    & eg12        \\ \hline
-bastaoUniversal,estropo,isoladorVelhoX = \{agente que tenta alcançar o objetivo\}                                     & eg13        \\ \hline
-bastaoUniversal,corda,estropoX = \{agente que tenta alcançar o objetivo\}                                             & eg14        \\ \hline
-chaveCatraca,bastaoUniversal,prafusoX = \{agente que tenta alcançar o objetivo\}                                      & eg15        \\ \hline
-bastaoSoquete,parafuso,X = \{agente que tenta alcançar o objetivo\}                                                   & eg16        \\ \hline
-bastaoGarra,condutorcordaX = \{agente que tenta alcançar o objetivo\},                                                & eg17        \\ \hline
-colar,X = \{agente que tenta alcançar o objetivo\},                                                                   & eg18        \\ \hline
-chaveCatraca,bastaoUniversal,prafusobastaoSoquete,parafuso,torreX = \{agente que tenta alcançar o objetivo\}          & eg19        \\ \hline
-cordaX = \{agente que tenta alcançar o objetivo\}                                                                     & eg20        \\ \hline
-estropo, isoladorNovo,X = \{agente que tenta alcançar o objetivo\}                                                    & eg21        \\ \hline
-bastaoUniversal,corda,estropoX = \{agente que tenta alcançar o objetivo\}                                             & eg22        \\ \hline
-cordaX = \{agente que tenta alcançar o objetivo\}                                                                     & eg23        \\ \hline
-chaveCatraca,bastaoUniversal,prafusobastaoSoquete,parafuso,torreX = \{agente que tenta alcançar o objetivo\}          & eg24        \\ \hline
-bastaoGarra,condutorcordaX = \{agente que tenta alcançar o objetivo\},                                                & eg25        \\ \hline
-chaveCatraca,bastaoUniversal,prafusoX = \{agente que tenta alcançar o objetivo\}                                      & eg26        \\ \hline
-sela,colar,bastaoGarra,bastaoUniversal,bastaoSoquete,corda,carretilha,chaveCatraca,torre,condutor                     & eg27        \\ \hline
+capacete,óculos,roupagem,luvas,botas X = \{agentes em relação aos objetivos\}                                      & eg0         \\ \hline
+pano,glicerina,carretilha,bastaoUniversal,corda,bastaoGarra,X = \{agentes em relação aos objetivos\}               & eg1         \\ \hline
+pano,glicerina,carretilha,bastaoUniversal,corda,bastaoGarra,condutímetro,X = \{agentes em relação aos objetivos\}  & eg2         \\ \hline
+sela,colarX = \{agentes em relação aos objetivos\}                                                                 & eg3         \\ \hline
+colar,bastaoGarraX = \{agentes em relação aos objetivos\}                                                          & eg4         \\ \hline
+corda,bastaoGarra,bastaoGarraTorre,condutorX = \{agentes em relação aos objetivos\}                                & eg5         \\ \hline
+bastaoGarra,selaX = \{agentes em relação aos objetivos\}                                                           & eg6         \\ \hline
+sela,colarX = \{agentes em relação aos objetivos\}                                                                & eg7         \\ \hline
+sela,bastaoUniversal,Colar,X = \{agentes em relação aos objetivos\}                                               & eg8         \\ \hline
+bastaoUniversal,carretilha,X = \{agentes em relação aos objetivos\}                                               & eg9         \\ \hline
+corda,bastaoUniversal,corda,torre,X = \{agentes em relação aos objetivos\}                                        & eg10        \\ \hline
+bastaoUniversal,corda,colar,selaX = \{agente que tenta alcançar o objetivo\}                                      & eg11        \\ \hline
+colar,X = \{agentes em relação aos objetivos\}                                                                    & eg12        \\ \hline
+bastaoUniversal,estropo,isoladorVelhoX = \{agentes em relação aos objetivos\}                                     & eg13        \\ \hline
+bastaoUniversal,corda,estropoX = \{agentes em relação aos objetivos\}                                             & eg14        \\ \hline
+chaveCatraca,bastaoUniversal,prafusoX = \{agentes em relação aos objetivos\}                                      & eg15        \\ \hline
+bastaoSoquete,parafuso,X = \{agentes em relação aos objetivos\}                                                   & eg16        \\ \hline
+bastaoGarra,condutorcordaX = \{agentes em relação aos objetivos\},                                                & eg17        \\ \hline
+colar,X = \{agentes em relação aos objetivos\},                                                                   & eg18        \\ \hline
+chaveCatraca,bastaoUniversal,prafusobastaoSoquete,parafuso,torreX = \{agentes em relação aos objetivos\}          & eg19        \\ \hline
+cordaX = \{agentes em relação aos objetivos\}                                                                     & eg20        \\ \hline
+estropo, isoladorNovo,X = \{agentes em relação aos objetivos\}                                                    & eg21        \\ \hline
+bastaoUniversal,corda,estropoX = \{agentes em relação aos objetivos\}                                             & eg22        \\ \hline
+cordaX = \{agentes em relação aos objetivos\}                                                                     & eg23        \\ \hline
+chaveCatraca,bastaoUniversal,prafusobastaoSoquete,parafuso,torreX = \{agentes em relação aos objetivos\}          & eg24        \\ \hline
+bastaoGarra,condutorcordaX = \{agentes em relação aos objetivos\},                                                & eg25        \\ \hline
+chaveCatraca,bastaoUniversal,prafusoX = \{agentes em relação aos objetivos\}                                      & eg26        \\ \hline
+sela,colar,bastaoGarra,bastaoUniversal,bastaoSoquete,corda,carretilha,chaveCatraca,torre,condutor                 & eg27        \\ \hline
 \end{tabular}
 \caption{Entidades que formam os conjuntos $eg_n$. Cada conjunto destes estão relacionados com um objetivo e determinam as entidades necessárias para que o mesmo tenha codição de ser alcançado.}
 \label{entities}
@@ -646,18 +644,6 @@ relBastaoUniversalColar relXBastaoUniversal                                     
 relXBastaoUniversal relXCarretilha relBastaoUniversalCarretilha                                                                                                                                                                                                                                                                             & rg9         \\ \hline
 relXCorda relXBastaoUniversal relBastaoUniversalCorda relBastaoUniversalTorre                                                                                                                                                                                                                                                             & rg10        \\ \hline
 relXCorda relXBastaoUniversal relXColar relBastaoUniversalColar relBastaoUniversalSela                                                                                                                                                                                                                                                    & rg11        \\ \hline
-\end{tabular}
-\caption{Relacionamentos que formam os conjuntos $rg_n$. Cada conjunto $rg_n$ está relacionado com um objetivo A relação entre $rg_n$ e $goal_m$ determina os relacionaentos necessários para que um dado objetivo tenha condição de ser atingido.}
-\label{relationsgroup1}
-\end{table}
-
-
-\begin{table}[H]
-\centering
-\scalefont{0.7}
-\begin{tabular}{|p{0.8\linewidth}|l|}
-\hline
-\textbf{relacionamentos}                                                                                                                                                                                                                                                                                                                  & \textbf{rg} \\ \hline
 relXColar                                                                                                                                                                                                                                                                                                                                 & rg12        \\ \hline
 relXBastaoUniversal relBastaoUniversalEstropo relEstropoIsoladorVelho                                                                                                                                                                                                                                                                     & rg13        \\ \hline
 relXBastaoUniversal relBastaoUniversalCordarelCordaEstropo relEstropoCorda                                                                                                                                                                                                                                                                & rg14        \\ \hline
@@ -670,10 +656,22 @@ relXCorda                                                                       
 relXEstropo relEstropoIsoladorNovo                                                                                                                                                                                                                                                                                                         & rg21        \\ \hline
 relXBastaoUniversal relBastaoUniversalCorda relCordaEstropo relEstropoCorda                                                                                                                                                                                                                                                                & rg22        \\ \hline
 relXCorda                                                                                                                                                                                                                                                                                                                                 & rg23        \\ \hline
+\end{tabular}
+\caption{Relacionamentos que formam os conjuntos $rg_n$. Cada conjunto $rg_n$ está relacionado com um objetivo A relação entre $rg_n$ e $goal_m$ determina os relacionaentos necessários para que um dado objetivo tenha condição de ser atingido.}
+\label{relationsgroup1}
+\end{table}
+
+
+\begin{table}[H]
+\centering
+\scalefont{0.7}
+\begin{tabular}{|p{0.8\linewidth}|l|}
+\hline
+\textbf{relacionamentos}                                                                                                                                                                                                                                                                                                                  & \textbf{rg} \\ \hline
 relChaveCatracaBastaoUniversal relXChaveCatraca relXBastaoUniversal relChaveCatracaParafuso relParafusoTorrerelXBastaoSoquete relSoqueteParafuso                                                                                                                                                                                           & rg24        \\ \hline
 relXCorda relCordaBastaoGarra relBastaoGarraCondutor                                                                                                                                                                                                                                                                                      & rg25        \\ \hline
 relChaveCatracaBastaoUniversal relXChaveCatraca relXBastaoUniversal relChaveCatracaParafuso                                                                                                                                                                                                                                               & rg26        \\ \hline
-relXSela relXColarrelXBastaoGarrarelXBastaoUniversal relXBastaoSoquete relXCorda relXCarretilha relXChaveCatraca relColarBastaoGarra relCordaBastaoGarra relBastaoGarraTorre relBastaoGarraCondutor relBastaoUniversalCarretilha relBastaoGarraSela relBastaoUniversalSela relSelaColar relTorreSela relBastaoUniversalCorda relBastaoGarraCorda & rg27        \\ \hline
+relXSela relXColarrelXBastaoGarrarelXBastaoUniversal relXBastaoSoquete relXCorda relXCarretilha relXChaveCatraca relColarBastaoGarra relCordaBastaoGarra relBastaoGarraTorre relBastaoGarraCondutor relBastaoUniversalCarretilha relBastaoGarraSela relBastaoUniversalSela relSelaColar relTorreSela relBastaoUniversalCorda relBastaoGarraCorda & rg27  \\ \hline
 \end{tabular}
 \caption{Relacionamentos que formam os conjuntos $rg_n$. Cada conjunto $rg_n$ está relacionado com um objetivo A relação entre $rg_n$ e $goal_m$ determina os relacionaentos necessários para que um dado objetivo tenha condição de ser atingido.}
 \label{relationsgroup2}
@@ -697,9 +695,8 @@ umidade70,noVento,noChuva,sol & cg1         \\ \hline
 \end{table}
 
 
-A tabela \ref{goalsrelationsentity} define as relações $hasRelation(g_i,rg_n)$ onde a coluna objetivo é representada por $g_i$, $hasEntity(g_i,eg_m)$, $hasCondition(g_i,cg_n)$.  
+A tabela \ref{goalsrelationsentity} define o predicado $hasRelation(g_i,rg_n)$ onde a coluna objetivo é representada por $g_i$, define o predicado  $hasEntity(g_i,eg_m)$ e o predicado $hasCondition(g_i,cg_n)$.  
 
-		
 \begin{table}[H]
 \centering
 \scalefont{0.6}
@@ -713,7 +710,18 @@ goal2 & rg2 & eg2 & cg1 \\ \hline
 goal3 & rg3 & eg3 & cg1 \\ \hline
 goal4 & rg4 & eg4 & cg1 \\ \hline
 goal5 & rg5 & eg5 & cg1 \\ \hline
-goal6 & rg6 & eg6 & cg1 \\ \hline
+goal6 & rg6 & eg6 & cg1 \\ \hline		
+\end{tabular}
+\caption{Define a relação entre os objetivos, conjuntos $rg_n$, $eg_n$ e $cg_n$ }
+\label{goalsrelationsentity}
+\end{table}
+
+\begin{table}[H]
+\centering
+\scalefont{0.6}
+\begin{tabular}{|l|l|l|l|}
+\hline
+\textbf{objetivo}  & \textbf{rg} & \textbf{eg} & \textbf{cg} \\ \hline
 goal7 & rg7 & eg7 & cg1 \\ \hline
 goal8 & rg8 & eg8 & cg1 \\ \hline
 goal9 & rg9 & eg9 & cg1 \\ \hline

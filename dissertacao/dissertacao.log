@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.11.6)  21 JAN 2019 19:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.11.6)  22 JAN 2019 18:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -719,6 +719,15 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@floatcapt=\box57
 )
 (/usr/share/texlive/texmf-dist/tex/latex/carlisle/scalefnt.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+\c@ALC@unique=\count122
+\c@ALC@line=\count123
+\c@ALC@rem=\count124
+\c@ALC@depth=\count125
+\ALC@tlm=\skip58
+\algorithmicindent=\skip59
+)
 (./dissertacao.aux
 
 LaTeX Warning: Label `diamont' multiply defined.
@@ -730,7 +739,7 @@ LaTeX Warning: Label `paybutiamnotguilty' multiply defined.
 LaTeX Warning: Label `badcons' multiply defined.
 
 
-LaTeX Warning: Label `relation2' multiply defined.
+LaTeX Warning: Label `goalsrelationsentity' multiply defined.
 
 
 LaTeX Warning: Label `exemploprograma' multiply defined.
@@ -763,16 +772,16 @@ Package caption Info: End \AtBeginDocument code.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count122
+\scratchcounter=\count126
 \scratchdimen=\dimen135
 \scratchbox=\box58
-\nofMPsegments=\count123
-\nofMParguments=\count124
+\nofMPsegments=\count127
+\nofMParguments=\count128
 \everyMPshowfont=\toks27
-\MPscratchCnt=\count125
+\MPscratchCnt=\count129
 \MPscratchDim=\dimen136
-\MPnumerator=\count126
-\makeMPintoPDFobject=\count127
+\MPnumerator=\count130
+\makeMPintoPDFobject=\count131
 \everyMPtoPDFconversion=\toks28
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
@@ -1075,63 +1084,52 @@ t line 29.
 
 ) [57] (./estrutura/resultados/cenariospredicadosabertos.tex [58] [59] [60])
 (./estrutura/resultados/casodeestudo.tex [61] [62]
-LaTeX Font Info:    Calculating math sizes for size <9.60004> on input line 37.
+LaTeX Font Info:    Calculating math sizes for size <9.60004> on input line 38.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9.60004> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 37.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.10406> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 37.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5.76007> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 37.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
  [63] [64] [65]
 Overfull \vbox (34.13483pt too high) has occurred while \output is active []
 
 
-[66] [67] [68] [69]
-LaTeX Font Info:    Calculating math sizes for size <7.20007> on input line 301
-.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.20007> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 301.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5.32808> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 301.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <4.32008> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 301.
- [70] [71] [72] [73]
-! Undefined control sequence.
-<recently read> \h 
-                   
-l.502 executor1 & g14 \\ \h
-                           \usepackage{scalefnt}
-? 
-
-! LaTeX Error: Can be used only in preamble.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.502 executor1 & g14 \\ \h\usepackage
-                                      {scalefnt}
-? 
-[74] [75] [76]
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <9.60004> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 596.
-
-Overfull \hbox (37.47954pt too wide) in paragraph at lines 593--625
+[66]
+Overfull \hbox (10.42258pt too wide) in paragraph at lines 190--198
  [][] 
  []
 
-[77]
-LaTeX Font Info:    Calculating math sizes for size <8.39996> on input line 634
+[67]
+LaTeX Font Info:    Calculating math sizes for size <7.20007> on input line 241
+.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.20007> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 241.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5.32808> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 241.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <4.32008> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 241.
+ [68] [69] [70] [71] [72] [73] [74] [75]
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <9.60004> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 594.
+
+Overfull \hbox (25.489pt too wide) in paragraph at lines 591--623
+ [][] 
+ []
+
+[76]
+LaTeX Font Info:    Calculating math sizes for size <8.39996> on input line 632
 .
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8.39996> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 634.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 632.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6.21602> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 634.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 632.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5.04002> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 634.
- [78] [79]) [80] (./estrutura/resultados/raciocinios.tex)
-(./estrutura/resultados/validacao.tex) [81]
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 632.
+ [77] [78]) [79] (./estrutura/resultados/raciocinios.tex [80] [81] [82]
+[83] [84] [85] [86] [87] [88] [89]) (./estrutura/resultados/validacao.tex)
+[90]
 Cap\'{\i }tulo 5.
 (./estrutura/analisecomparativa/genanalisecomparativa.tex)
 (./estrutura/analisecomparativa/genmoise.tex)
@@ -1144,43 +1142,43 @@ File: figure/programdastani.png Graphic file (type png)
 Package pdftex.def Info: figure/programdastani.png used on input line 5.
 (pdftex.def)             Requested size: 364.19667pt x 95.06172pt.
 ) (./estrutura/analisecomparativa/compdastani.tex)
-(./estrutura/analisecomparativa/genvs3.tex [82
+(./estrutura/analisecomparativa/genvs3.tex [91
 
 ]
-<figure/ontologyv3.png, id=308, 496.85625pt x 256.70906pt>
+<figure/ontologyv3.png, id=336, 496.85625pt x 256.70906pt>
 File: figure/ontologyv3.png Graphic file (type png)
 
 <use figure/ontologyv3.png>
 Package pdftex.def Info: figure/ontologyv3.png used on input line 5.
 (pdftex.def)             Requested size: 227.62206pt x 117.60579pt.
 ) (./estrutura/analisecomparativa/estvs3.tex
-[83 <./figure/ontologyv3.png>]
+[92 <./figure/ontologyv3.png>]
 Overfull \hbox (45.19539pt too wide) in paragraph at lines 36--44
 [][] 
  []
 
 ) (./estrutura/analisecomparativa/compvs3.tex)
-(./estrutura/analisecomparativa/genormas.tex) [84]
-(./estrutura/analisecomparativa/estnormas.tex [85])
+(./estrutura/analisecomparativa/genormas.tex) [93]
+(./estrutura/analisecomparativa/estnormas.tex [94])
 (./estrutura/analisecomparativa/compnormas.tex)
-(./estrutura/analisecomparativa/perspectivagenerica.tex) [86]
+(./estrutura/analisecomparativa/perspectivagenerica.tex) [95]
 Cap\'{\i }tulo 6.
 (./estrutura/conclusao/avaliacaodosobjetivos.tex)
-(./estrutura/conclusao/trabalhosfuturos.tex) [87
+(./estrutura/conclusao/trabalhosfuturos.tex) [96
 
-] (./dissertacao.bbl [88
+] (./dissertacao.bbl [97
 
 
 ]
-[89]) [90]
+[98]) [99]
 Apendice A.
-[91
+[100
 
 ]
 Anexo A.
 
 AED: lastpage setting LastPage
-[92
+[101
 
 ]
 +-------------------------------------------------------------------+
@@ -1196,13 +1194,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7546 strings out of 493013
- 112515 string characters out of 6135682
- 198560 words of memory out of 5000000
- 10673 multiletter control sequences out of 15000+600000
+ 7655 strings out of 493013
+ 113904 string characters out of 6135682
+ 199753 words of memory out of 5000000
+ 10778 multiletter control sequences out of 15000+600000
  94492 words of font info for 212 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,18n,43p,787b,452s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,18n,43p,1133b,448s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/
@@ -1214,10 +1212,10 @@ b></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/times/utmri8a.pfb>
-Output written on dissertacao.pdf (96 pages, 1173676 bytes).
+Output written on dissertacao.pdf (105 pages, 1185983 bytes).
 PDF statistics:
- 382 PDF objects out of 1000 (max. 8388607)
- 251 compressed objects within 3 object streams
+ 411 PDF objects out of 1000 (max. 8388607)
+ 271 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
