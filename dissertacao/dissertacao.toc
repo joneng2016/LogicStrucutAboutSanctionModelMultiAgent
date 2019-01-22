@@ -37,20 +37,9 @@
 \contentsline {subsubsection}{\numberline {4.3.0.6}Racioc\IeC {\'\i }nio - 6}{89}
 \contentsline {subsubsection}{\numberline {4.3.0.7}Racioc\IeC {\'\i }nio - 7}{90}
 \contentsline {section}{\numberline {4.4}\MakeUppercase {Valida\IeC {\c c}\IeC {\~a}o}}{90}
-\contentsline {chapter}{\numberline {5}\MakeUppercase {An\IeC {\'a}lise Comparativa}}{91}
-\contentsline {section}{\numberline {5.1}\MakeUppercase {MOISE+}}{91}
-\contentsline {subsection}{\numberline {5.1.1}Estrutura}{91}
-\contentsline {subsection}{\numberline {5.1.2}An\IeC {\'a}lise comparativa}{91}
-\contentsline {section}{\numberline {5.2}\MakeUppercase {Dastani}}{91}
-\contentsline {subsection}{\numberline {5.2.1}Estrutura}{91}
-\contentsline {subsection}{\numberline {5.2.2}An\IeC {\'a}lise comparativa}{92}
-\contentsline {section}{\numberline {5.3}\MakeUppercase {V3S}}{92}
-\contentsline {subsection}{\numberline {5.3.1}Estrutura}{92}
-\contentsline {subsection}{\numberline {5.3.2}An\IeC {\'a}lise comparativa}{94}
-\contentsline {section}{\numberline {5.4}\MakeUppercase {NormMAS}}{94}
-\contentsline {subsection}{\numberline {5.4.1}Estrutura}{94}
-\contentsline {subsection}{\numberline {5.4.2}An\IeC {\'a}lise comparativa}{95}
-\contentsline {section}{\numberline {5.5}\MakeUppercase {Perspectiva Gen\IeC {\'e}rica}}{95}
+\contentsline {chapter}{\numberline {5}\MakeUppercase {Discuss\IeC {\~a}o}}{92}
+\contentsline {section}{\numberline {5.1}\MakeUppercase {Analise Comparativa}}{92}
+\contentsline {section}{\numberline {5.2}\MakeUppercase {An\IeC {\'a}lise dos Resultados e da Compara\IeC {\c c}\IeC {\~a}o}}{95}
 \contentsline {chapter}{\numberline {6}\MakeUppercase {Conclus\IeC {\~a}o}}{96}
 \contentsline {section}{\numberline {6.1}\MakeUppercase {Avalia\IeC {\c c}\IeC {\~a}o dos Objetivos}}{96}
 \contentsline {section}{\numberline {6.2}\MakeUppercase {Trabalhos Futuros}}{96}
