@@ -39,7 +39,8 @@
 \contentsline {section}{\numberline {4.4}\MakeUppercase {Valida\IeC {\c c}\IeC {\~a}o}}{90}
 \contentsline {chapter}{\numberline {5}\MakeUppercase {Discuss\IeC {\~a}o}}{92}
 \contentsline {section}{\numberline {5.1}\MakeUppercase {Analise Comparativa}}{92}
-\contentsline {section}{\numberline {5.2}\MakeUppercase {An\IeC {\'a}lise dos Resultados e da Compara\IeC {\c c}\IeC {\~a}o}}{95}
+\contentsline {section}{\numberline {5.2}\MakeUppercase {Consist\IeC {\^e}ncia dos Resultados}}{95}
+\contentsline {section}{\numberline {5.3}\MakeUppercase {Aplica\IeC {\c c}\IeC {\~o}es}}{95}
 \contentsline {chapter}{\numberline {6}\MakeUppercase {Conclus\IeC {\~a}o}}{96}
 \contentsline {section}{\numberline {6.1}\MakeUppercase {Avalia\IeC {\c c}\IeC {\~a}o dos Objetivos}}{96}
 \contentsline {section}{\numberline {6.2}\MakeUppercase {Trabalhos Futuros}}{96}
