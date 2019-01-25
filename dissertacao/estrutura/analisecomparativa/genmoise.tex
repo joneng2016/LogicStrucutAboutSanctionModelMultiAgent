@@ -1,7 +1,100 @@
-Um dos modelos que não pode ser desconsiderado quando se trata de análise de \textit{SMA} é \textit{MOISE+}. Ambos os modelos apresentam o mesmo conceito
-de agente. Isso, pois o texto de referência para \textit{MOISE+}, \cite{moiseframework} define que um dado agente deve possuir um papel $\rho$. Neste 
-aspecto ambos se diferenciam na trativa feita ao agente, pois em boa parte da estrutura do \textit{MOISE} isso se dá por meio do papel que o agente 
-tem dentro da \textit{SMA}  e em contraste com isso o modelo proposto neste trabalho faz essa referência pelo propópio agente. 
+\subsection{Modelo MOISE+   }
 
-O modelo deste estudo apresenta o conceito de artefato, o que não é considerado pelo \textit{MOISE+} propriamente dito. Contudo, muitos estudos resolvem
-essa questão por usar o \textit{MOISE+} em conjunto com \textit{CArTaGo}. A
+A estrutura deste modelo está presente na fundamentação teórica na seção \ref{sma} e é com base nisso que se pode afirmar a identificação dos seguintes 
+conceitos: papel, grupos, objetivos, missões. 
+
+Tanto o \textit{MOISE+} como a proposta deste estudo apresentam o mesmo conceito de papel que consiste na função do agente dentro de uma \textit{SMA}. 
+Contudo, a concepção por trás das relações com os demais conceitos é feita de forma diferente em cada modelo. No \textit{MOISE+} um papel se relaciona
+com outro papel por meio do predicado \textit{link} identificado níveis de autoridade. Isso não foi abordado neste modelo porque não era do interesse 
+do domínio de estudo verificar como se dá as relações de autoridade entre os agentes uma vez que a natureza das violações e sanções em interesse podem 
+ser escritas sem esse termo. O mesmo se dá com o operador que corresponde a compatibilidade. Existe a possibilidade de descutir um caso onde a ocorrência 
+de uma violação da natureza delimitada neste estudo se dá por conta de problemas no que diz respeito as concepções de autoridade (subordinado é orientado 
+a fazer algo de forma inapropriada). Contudo, os pesquisadores deste estudo entendem que mesmo esses casos podem ser descritos pelo vocabulário em proposta,
+talvez não com a mesma expressividade. Isso se dá pelo fato de que a ocorrência de uma violação está associada ao objetivo em sí e não a função do 
+profissional. Por exemplo, considere a seguinte situação; Um agente A é supervisor de um agente B e aquele orienta este a fazer algo inapropriado sendo que 
+este venha a sofrer consequências ruins por conta disso. Esse problema pode ser modelado da seguinte maneira;
+
+\begin{enumerate}
+	\item $hasRole(agenteA,supervisor)$ 
+	\item $hasRole(agenteB,subordinado)$
+    \item $tryReach(agenteA,g_{instrucao})$
+    \item $tryReach(agenteB,g_{instrucao})$
+    \item $tryReach(agenteB,g_{execucao})$
+	\item $hasObligation(supervisor,g_{instrucao})$
+	\item $hasObligation(subordinado,g_{instrucao})$
+	\item $hasObligation(subordinado,g_{execucao})$
+	\item $nextGoal(g_{instrucao},g_{execucao})$	
+    \item $thereIsRelation(r_{passa-informacao},agenteA,agenteB)$
+    \item $r_{passa-informacao} \in rg_{instrucao}$
+    \item $r_{executar} \in rg_{execucao}$    
+    \item $hasRelation(g_{instrucao},rg_{instrucao})$
+    \item $hasRelation(g_{execuao},rg_{execuao})$
+    \item $happensBadEvent(r_{executar})$
+    \item $hasRisk(r_{executar}, cair, cs_{pernaQuebrada})$
+    \item $affectsOtherRelations(r_{passa-informacao},r_{executar})$
+\end{enumerate}
+
+Os raciocínios, portanto, são: 
+
+
+\begin{eqnarray}\label{refutmoisea}\nonumber
+	hasRelation(g_{instrucao},rg_{instrucao}) \wedge \neg isPresent(r_{passa-informacao}) \\ \nonumber 
+    \wedge (r_{passa-informacao} \in rg_{instrucao}) \\ \nonumber
+    \wedge tryReach(agenteA,g_{instrucao}) \to \nonumber \\
+	violationRelation(agenteA,g_{instrucao},rg_{instrucao})
+\end{eqnarray}
+
+
+\begin{eqnarray}\label{refutmoiseb}
+	violationRelation(agenteA,g_{instrucao},rg_{instrucao}) \wedge  \nonumber \\
+    affectsOtherRelations(r_{passa-informacao},r_{executar}) \nonumber \\
+    \to possibilityHappensBadEvent(r_{executar}) 
+\end{eqnarray}
+
+\begin{eqnarray}\label{refutmoisec}
+	possibilityHappensBadEvent(r_{executar}) \wedge  \nonumber \\ 
+    happensBadEvent(r_{executar}) \wedge \nonumber \\ 
+    hasRelation(g_{execuao},rg_{execuao}) \wedge \nonumber \\
+    (r_{executar} \in rg_{execucao}) \nonumber \\ 
+	\wedge hasRisk(r_{executar}, cair, cs_{pernaQuebrada}) \wedge \nonumber \\ 
+    tryReach(agenteB,g_{execucao}) \nonumber \\ 
+	\to consequenceOfBadEvent(g_{execucao},agenteB,cair,cs_{pernaQuebrada}) \nonumber \\ 
+\end{eqnarray}
+
+Portanto, as relações \ref{refutmoisea}, \ref{refutmoiseb} e \ref{refutmoisec} (o raciocínio que mostra $g_{instrucao}$ ser concluído não foi mostrado) 
+demonstram que é possível verificar uma caso de violação por autoridade sem considerar as relações entre os papeis. Uma possível contestação a esse 
+raciocínio reside no predicado $isPresent$ pois neste cenário $r_{passa-informacao}$ esteve presente na execução de $g_{instrucao}$. Contudo, esse predicado 
+faz referência não somente as relações que não estão presentes bem como as relações que foram mal realizadas (não atingiram o propósito). 
+
+O conceito de grupo está presente no \textit{MOISE+} mas não na proposta deste modelo. Isso recai na mesma condição do que se pretende demonstrar com o 
+raciocínio \ref{refutmoisec} sendo que esse conceito não é necessário para os propósitos finais deste estudo. 
+
+Os fundamentois conceituais apresentados em ambos os modelos no que tange a objetivos são os mesmos, que consiste em critérios que devem ser atingidos 
+pelos agentes. Contudo, o \textit{MOISE+} lida com essa questão por tratar os objetivos em uma estrutura de grafos definido sub e super objetivos. Ainda 
+nessa linha, o \textit{MOISE+} trabalha operadores que relacionam super, subobjetivos que são; sequencial, paralelo e escolha. Apesar de ser uma ideia 
+interessante, os pesquisadores entenderam que escrever os objetivos em termos do predicado $nextGoal$ é abrangente, é simples e resolve o problema sendo este 
+cenário ideal para uma primeira versão do modelo em proposta. Contudo, é de grande interesse investigar situações onde a abordagem adotada pelos pesquisadores 
+não funciona a fim de ter de usar a estrutura em árvore presente no \textit{MOISE+} e verificar como isso se dá no que tange aos demais elementos do modelo 
+proposto por eles.
+
+O conceito de \textit{missão} está presente no \textit{MOISE+} mas não no modelo proposto neste estudo. Isso se dá porque a ideia de missão diminui 
+a granularidade da relação entre o agente com os seus objetivos. Consequentemente, a verificação de um evento em um dado objetivo necessita mais etapas 
+de raciocínio. Por exemplo, se existe uma situação onde um dado agente com papel $\rho_a$ tem uma missão onde $ hasObligation(\rho_a,m_1) $ em que 
+$ m_1 = \{ ... , g_a, ...\}$ para que se possa verificar um dado evento que ocorre em $ g_a $, o raciocinador deverá antes consultar $ hasObligation(\rho_a,m
+_1) $. Tendo em vista a granularidade das violações e sanções sobre os objetivos, os pesquisadores entederam ser aproprieado criar relacões diretas 
+entre o papel $ \rho_a $ com o objetivo $g_1 $ isso elimina a quantidade de predicados que deve ser considerado nas relações de implicação. Se a linha 
+adotada fosse a mesma do \textit{MOISE+}, então seria necessário considerar o seguinte termo $ g_i \in m_a $ e uma relação como \ref{rolenextgoal} 
+teria de ser escrita da seguinte forma: 
+
+\begin{eqnarray}\label{constmoise01}
+	hasRole(ag_n,\rho_m) \wedge hasPermission(\rho_m,m_a) \wedge (g_i \in m_a) \wedge nextGoal(g_i,g_j) \wedge isReached(g_i) \nonumber \\
+	\to ableTryReach(ag_i,g_j) \nonumber \\
+    ag_i, ag_n \in Agent, \rho_m \in Role, g_j \in Goal, g_i \in Goal, m_a \in Mission
+\end{eqnarray}
+
+O \textit{MOISE+} não aborda os conceitos relacionados a norma, violação, sanção e possibilidades presentes na proposta deste estudo. Uma possível 
+contestação dessa afirmação reside no fato de que \textit{MOISE+} contem as relaçoes deonticas que terminam permissões e obrigações aos agentes. Contudo,  
+assim como na proposta deste estudo, essas relações são usadas para "dizer" ao agente o que ele deve fazer. De certa forma, é uma norma - mas que 
+verifica apenas a execução do objetivo em si e não estabele relações violação ou sanção. Então, frente ao \textit{MOISE+} a inovação presente 
+neste estudo reside no fato de que existe um vocabulário criado para especificar relações de violação, sanção e possibilidades em problemas 
+onde agentes devem atuar de forma colaborativa para cumprir com um dado propósito. 
