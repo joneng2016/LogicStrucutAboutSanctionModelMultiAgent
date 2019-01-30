@@ -27,3 +27,24 @@ Dentro da definição 1, o exemplo fica;
     \item $\alpha$ representa a ação sendo executada pelo agente $\gamma$
     \item $\beta$ representa os estados internos do agente $\gamma$ no momento da execução.
 \end{itemize}
+
+Para demonstrar como se dá o uso dessa definição pode-se considerar a seguinte sentença;
+
+\textit{O oficial John aprovou passaport 3225. O passaporte 3225 é definido como validado.}
+
+Nessa sentença, $John$ é o agente dado por $\gamma$, o ato de aprovar o passaporte é o $\gamma$ que pode ser definido pelo predicado por 
+$approve(3225)$ e o estado de ser validado por ser dado pelo predicado $valid(3225)$.  
+
+Usando a \textbf{Definição 2}, isso poder ser especificado da seguinte maneira; 
+
+\begin{eqnarray}
+    \langle John, approve(3225), valid(3225)\rangle
+\end{eqnarray}
+
+O \textit{NormMAS} trabalha com os mesmos conceitos de normas e sanções. Em relação a \textit{Definição 1}, é possível observar conceitos de obrigação, proibição dado por $ \mu $ e 
+conceitos de sanção dado por $\rho$. Isso se assemelha muito as regras \ref{violationcondition}, \ref{violationrelation}, \ref{violationentity}, \ref{consviolationcondition} e 
+\ref{consviolationrelation} que definem uma dada proibição (pois essas regras trabalham sobre o que não deve ser feito) e uma dada sanção (que define uma punição).
+
+No que tange a estrutura dos modelos, o \textit{NormMAS} é mais simples e mais genérico com o foco em definir vocabulário para tratar qualquer tipo de comportamento normativo. Em 
+contraste com isso, o modelo proposto nesse estudo é mais complexo, pois contem uma quantidade de conceitos muito maior, e é mais específico em relação a representar ação de pessoas,
+que devem trabalhar em grupo (exercendo atividades que apresentam riscos a elas) a fim de atingir um dado objetivo. 
