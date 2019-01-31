@@ -114,7 +114,8 @@ bastaoUniversal & Bastão isolante que permite o acoplamento de múltiplas ferra
 \end{table} 
 
 \begin{table}[H]
-\scalefont{0.8}
+\scalefont{0.8}goal0 & rg0 & eg0 & cg1 \\ \hline
+
 \centering
 \begin{tabular}{|l|p{0.8\linewidth}|}
 \hline
@@ -137,9 +138,8 @@ conector & Estrutura que tem como por finalidade manter condutor,cabeçote do is
 \label{artefacts2}
 \end{table} 
 
-A tabela \ref{g} apresenta os objetivos dados pela coluna $objetivo$ bem com sua descrição. Essa tabela também apresenta os conjuntos $gp_i$ dado pela 
-coluna pré-requisitos. Assim sendo, essa tabela também apresenta as especificações para o predicado $nextGoal(g_i,g_j)$ onde \textit{Objetivo} representa 
-$g_i$, \textit{Próximo} $g_j$ e \textit{Descrição} é referente a $g_i$.
+A tabela \ref{g} apresenta os objetivos dados pela coluna $objetivo$ bem com sua descrição. Essa tabela também apresenta as especificações para o predicado $nextGoal(g_i,g_j)$ 
+onde \textit{Objetivo} representa $g_i$, \textit{Próximo} $g_j$ e \textit{Descrição} é referente a $g_i$.
 
 \begin{table}[H]
 \scalefont{0.8}
@@ -252,8 +252,10 @@ relPanoCorda                             & pano,corda                           
 relPanoBastoaUniversal                   & pano,bastaoUniversal                           & nenhum                          & nenhum                               \\ \hline
 relPanoSoquete                           & pano,soquete                                   & nenhum                          & nenhum                               \\ \hline
 \end{tabular}
-\end{table}
+\caption{?}
 \label{relationEntEnt1}
+\end{table}
+
 
 \begin{table}[H]
 \centering
@@ -303,8 +305,9 @@ relCondutivimetroBastaoUniversal         & condutímetro,bastaoUniversal        
 relCondutivimetroBastaoGarra             & condutímetro,bastaoGarra                       & nenhum                          & nenhum                               \\ \hline
 relCondutivimetroSoquete                 & condutímetro,soquete                           & nenhum                          & nenhum                               \\ \hline
 \end{tabular}
-\end{table}
+\caption{?}
 \label{relationEntEnt2}
+\end{table}
 
 As tabelas \ref{relation1},\ref{relation2} e \ref{relation3} apresentam a relação $affectsOtherRelations(r_k,r_n)$ onde $r_k$ é representado pela coluna relacionamento-errado e $r_n$ é representado 
 pela coluna relacionamento-afetado. 
@@ -695,7 +698,7 @@ umidade70,noVento,noChuva,sol & cg1         \\ \hline
 \end{table}
 
 
-A tabela \ref{goalsrelationsentity} define o predicado $hasRelation(g_i,rg_n)$ onde a coluna objetivo é representada por $g_i$, define o predicado  $hasEntity(g_i,eg_m)$ e o predicado $hasCondition(g_i,cg_n)$.  
+As tabelas \ref{goalsrelationsentity1} e \ref{goalsrelationsentity2} definem o predicado $hasRelation(g_i,rg_n)$ onde a coluna objetivo é representada por $g_i$, define o predicado  $hasEntity(g_i,eg_m)$ e o predicado $hasCondition(g_i,cg_n)$.  
 
 \begin{table}[H]
 \centering
@@ -703,7 +706,6 @@ A tabela \ref{goalsrelationsentity} define o predicado $hasRelation(g_i,rg_n)$ o
 \begin{tabular}{|l|l|l|l|}
 \hline
 \textbf{objetivo}  & \textbf{rg} & \textbf{eg} & \textbf{cg} \\ \hline
-goal0 & rg0 & eg0 & cg1 \\ \hline
 goal0 & rg0 & eg0 & cg1 \\ \hline
 goal1 & rg1 & eg1 & cg1 \\ \hline
 goal2 & rg2 & eg2 & cg1 \\ \hline
@@ -713,7 +715,7 @@ goal5 & rg5 & eg5 & cg1 \\ \hline
 goal6 & rg6 & eg6 & cg1 \\ \hline		
 \end{tabular}
 \caption{Define a relação entre os objetivos, conjuntos $rg_n$, $eg_n$ e $cg_n$ }
-\label{goalsrelationsentity}
+\label{goalsrelationsentity1}
 \end{table}
 
 \begin{table}[H]
@@ -745,5 +747,5 @@ goal26 & rg26 & eg26 & cg1 \\ \hline
 goal27 & rg27 & eg27 & cg1 \\ \hline
 \end{tabular}
 \caption{Define a relação entre os objetivos, conjuntos $rg_n$, $eg_n$ e $cg_n$ }
-\label{goalsrelationsentity}
+\label{goalsrelationsentity2}
 \end{table}
