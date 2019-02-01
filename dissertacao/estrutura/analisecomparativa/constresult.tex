@@ -94,3 +94,48 @@ mas não as entidades suficientes. Contudo, após a realização da modelagem so
 com as demais é um cenário absurdo. Isso, pois se a entidade não estabelecer relação alguma com as demais, então essa entidade é desnecessária e - perante as outras - não existe. O modelo 
 como está não apresenta nenhuma condição absurda, contudo torna certa parte da especificação um processo redundante. Para as próximas versões, é possível pensar na eliminação do predicado 
 $ hasEntity(g_n,eg_m) $ e de $ \{ e_i , ... , e_k \} \in eg_m $
+
+Os racicínos feitos sobre o modelo são de crucial importância para definir a eficácia desse projeto pois é com base nisso que se torna possível avaliar o quão 
+efeitivo vem a ser essa repesentação. O Raciocínio 1, dado pela subsubseção \ref{raciocinio1} apresentou o problema com bastante expressividade. Tendo em vista o fato de que a Glicerina 
+é um composto químico relevante para manter o isolamento da parte não condutiva do bastão unviersal, esquecer de realizar isso gera um potencial aciente para ser eletrocutado em todas 
+as outras situações onde o bastão será usado (a não ser nas situações onde o bastão universão não será usado em condutores energizados). Tanto os predicados como as regras que estão
+atreladas ao violação de relação e suas respectivas consequências representaram essa condição com sucesso. Nesse caso não aconteceu nenhuma sanção sobre o agente 4, portanto nem toda 
+violação de relação gera necessariamente uma sançao. O predicado $possibilityHappensBadEvent$ conseguiu trazer com exito a sensação de possibilidade que existe em fenômeno desse gênero. 
+
+Quando os pesquisadores estavam concebendo esse modelo, consideraram a possibilidade de trabalhar problemas do Raciocínio 1 por meio do conceito de \textit{Probabilidade}. Isso é interessante 
+porque um predicado que consegue expressar momentos estatísticos com excelência apresenta possibilidades de aplicações extremamente elevados. Contudo, trabalhar com probabilidade resulta 
+em diversas complicações de modelagem. Uma dessas complicações consiste no desenvolvimento de técnicas que podem indicar com rigor científico qual é a probabilidade de um acidente acontecer. 
+Contudo, isso não é o suficiente pois essa probabilidade é condicionada a ocorrência de uma dada relação. O raciocínio 1, por exemplo, demonstra que a não execução de $relPanoGlicerina$ resulta 
+na possibilidade de ocorrer um acidente em $relBastaoGarraGondutor$. Se os pesquisadores estiverem trabalhando com o conceito de probabilidade, então é necessário desenvolver técnicas que 
+verificam a probabilidade de acontecer algo ruim na relação $relBastaoGarraGondutor$ para o caso da relação $relPanoGlicerina$ não for efetivada com sucesso. Contudo, se se a não execução de uma 
+outra relação também afeta $relBastaoGarraGondutor$, então também se faz necessário encontrar essa outra probabilidade. Além de aumentar a complexidade desse modelo, abre diversas indagações 
+no que tange de como fazer isso o que pode ser um potencial campo de investigação científica. Com a finalidade de viabilizar uma primeira versão do modelo, os pesquisadores optaram por 
+usar o conceito de possibilidade em vez de probabilidade. Apesar de diminuir a expressividade do modelo no que tange a questões que existe um componente sobre aleatoriedade, isso simplifica 
+o processo de especificação, facilita o desenvolvimento de raciocínios e evita que o modelo seja estruturado sobre proposições falsas (por exemplo, definir uma probabilidade para uma condição 
+de mundo onde isso não está claro). 
+
+O vocubário definido neste modelo foi apropriado para representar a condição de mundo presente no Racicínio 2 que está exposto na subsubseção \ref{raciocinio2}. 
+Em uma situação onde não há um pano para poder limpar todas as ferramentas, a manutenção é interrompida e essa situação ficou claramente representada por 
+esse raciocínio onde a geração da violação de entidades corresponde a finalização da manutenção. Há a possibilidade de exisitir um cenário onde os 
+profissionais criam algum tipo de técnica alternativa para poder transpassar a falta de algum artefato, inclusive se esse não apresentar grande complexidade 
+estrutural como é o caso de um pano. Contudo, os pesquisadores decidiram por não incorporar esse tipo de situação no modelo por conta de complexidades que 
+isso pode trazer a estrutura da representação. Manter o modelo assim permite representar os cenários mais prováveis, tendo vista que a ausência de diversos 
+tipos de artefatos muitas vezes não permite a continuidade da atividade.    
+
+A execução de uma manutenção em linha viva deve seguir a risca as condições ambientais adequadas para essa finalidade. Uma dessas condições é a umidade 
+relativa do ar que deve estar necessariamente inferior a setenta porcento. O raciocínio \ref{raciocinio3} demonstra esse tipo de situação onde um agente 
+tenta executar uma dada atividade com a umidade relativa dor ar em níveis inapropriados para isso ocasionando o surgimento de uma violação de condição 
+gerando uma sanção no agente que corresponde a ser eletrocutado e, consequentemente, morto. É interessante observar que nem toda violação de condição, 
+no mundo real, resulta necessariamente em uma sanção ao violador. A umidade relativa do ar recai nessa situação, pois pode ser que o profissional cometa
+essa violação sem se envolver em um acidade. Isso pode ser resolvido por construir regras tratando condições em relação ao predicado $possibilityHappensBadEvent$.
+Contudo, a desobediência de condições ambientes normalmente resultam em acidentes. Portanto, essa condição - apesar de não tratar todos os cenários possíveis, 
+trata um bom do número dos mesmos. Além disso, essa representação é conservadora no que tange ao evento propriamente dito, pois considerar sempre o pior 
+cenário possível.
+
+A chave catraca é usada pelo profissional de linha viva para remover um prafuso que está preso ao conector. Uma execução inapropriada dessa relação resulta 
+na ocorrência do eletricista ser eletrocutado e morto. Há diversas formas de como isso pode acontecer sendo que uma delas consiste no profissional se 
+posicionar de forma inapropriada para realizar essa relação e, por consequência, esbarrar tanto com o corpo quanto com a ferramenta em alguma condutor 
+de forma inapropriada. Portanto é de crucial importância que o profissional realize a execução com excelência. Esse comportamento é descrito pelo 
+Raciocínio dado na subsubseção \ref{raciocinio4}. Assim como na situação relacionada condição, a realidade dos fatos pode produzir cenários possíveis "nesse caso" que não são 
+adequadamento representados por esse modelo. Um possível cenário para essa situação consiste no fato do profissional simplesmente não conseguir executar 
+a relação, sem que isso resulte em algum acidente. Contudo, a situação descrita pelo modelo apresenta o pior cenário possível. 
