@@ -21,7 +21,6 @@ Todos os predicados vinculados a essa situação são;
 	\item $affectsOtherRelations(relPanoGlicerina,relChaveCatracaParafuso)$
 	\item $affectsOtherRelations(relPanoGlicerina,relParafusoConector)$ 
 	\item $affectsOtherRelations(relPanoGlicerina,relSoqueteParafuso)$ 
-	\item $affectsOtherRelations(relPanoGlicerina,relParafusoTorre)$
 	\item $affectsOtherRelations(relPanoGlicerina,relAgente4Corda)$ 
 	\item $affectsOtherRelations(relPanoGlicerina,relEstropoCorda)$	
 \end{enumerate}
@@ -61,13 +60,6 @@ Com base nisso, as relações de implicabilidade resultantes são;
 	\wedge affectsOtherRelations(relPanoGlicerina,relSoqueteParafuso)   \nonumber \\ 
 	\to \nonumber \\  
 	possibilityHappensBadEvent(relSoqueteParafuso) 
-\end{eqnarray}
-
-\begin{eqnarray}\nonumber
-	violationRelation(agente4,g1,relPanoGlicerina)  \nonumber \\ 
-	\wedge affectsOtherRelations(relPanoGlicerina,relParafusoTorre)   \nonumber \\ 
-	\to \nonumber \\  
-	possibilityHappensBadEvent(relParafusoTorre) 
 \end{eqnarray}
 
 \begin{eqnarray}\nonumber
@@ -206,11 +198,18 @@ O raciocínio a seguir mostra o que acontece se o $agente3$ errar a forma adequa
 \end{eqnarray}
 
 \subsubsection{Raciocínio - 5} 
-
-A finalidade dessa demonstração consiste em mostrar como um agente pode ser submetido a consequências ruins tendo em vista erros cometidos por outros profissionais. O raciocínio 1 mostra que o fato do $agente4$ não conseguir realizar o relacionamento $relPanoGlicerina$ resulta na violação $violationRelation(agente4,g1,relPanoGlicerina)$. Essa violação, por sua vez, impacta diversas outras relações, em que $possibilityHappensBadEvent(relParafusoTorre)$ é uma delas. Assim sendo, antes do $agente4$ cometer o erro, a possibilidade da ocorrência de um evento ruim acontecer era 0, se o agente realizar a relação $relParafusoTorre$ sem cometer violação alguma. Contudo, após a ocorrência do erro cometido pelo $agent4$, existe uma possibilidade de um evento ruim acontecer na relação $relParafusoTorre$ mesmo que tudo seja feito de acordo com os conformes. Assim sendo, a lista de predicados e o raciocínio mostra o que acontece dado a seguinte situação; o possível evento ruim presente em $relParafusoTorre$ se torna uma realidade;  
+\label{raciocinio5}
+A finalidade dessa demonstração consiste em mostrar como um agente pode ser submetido a consequências ruins tendo em vista erros cometidos por outros 
+profissionais. O raciocínio 1 mostra que o fato do $agente4$ não conseguir realizar o relacionamento $relPanoGlicerina$ resulta na violação 
+$violationRelation(agente4,g1,relPanoGlicerina)$. Essa violação, por sua vez, impacta diversas outras relações, em que 
+$possibilityHappensBadEvent(relParafusoConector)$ é uma delas. Assim sendo, antes do $agente4$ cometer o erro, a possibilidade da ocorrência de um evento 
+ruim acontecer era 0, se o agente realizar a relação $relParafusoConector$ sem cometer violação alguma. Contudo, após a ocorrência do erro cometido 
+pelo $agent4$, existe uma possibilidade de um evento ruim acontecer na relação $relParafusoConector$ mesmo que tudo seja feito de acordo com os conformes. 
+Assim sendo, a lista de predicados e o raciocínio mostra o que acontece dado a seguinte situação; o possível evento ruim presente em $relParafusoConector$ 
+se torna uma realidade;  
 
 \begin{enumerate}
-	\item $relParafusoTorre \in rg19$	
+	\item $relParafusoConector \in rg19$	
 	\item $hasRelation(g19,rg19)$		
 	\item $hasObligation(executor3,g19)$
 	\item $hasObligation(executor4,g19)$
@@ -221,18 +220,18 @@ A finalidade dessa demonstração consiste em mostrar como um agente pode ser su
 	\item $hasRole(agente5,executor3)$
 	\item $hasRole(agente6,executor4)$
 	\item $hasRole(agente7,executor5)$
-	\item $hasRisk(relParafusoTorre,eletrocutado,morte)$
-	\item $possibilityHappensBadEvent(relParafusoTorre)$
-	\item $happensBadEvent(g19,relParafusoTorre)$	
+	\item $hasRisk(relParafusoConector,eletrocutado,morte)$
+	\item $possibilityHappensBadEvent(relParafusoConector)$
+	\item $happensBadEvent(g19,relParafusoConector)$	
 \end{enumerate}
 
 
 \begin{eqnarray}\nonumber
-    possibilityHappensBadEvent(relParafusoTorre) \nonumber \\
-    \wedge happensBadEvent(relParafusoTorre) \nonumber \\ 
+    possibilityHappensBadEvent(relParafusoConector) \nonumber \\
+    \wedge happensBadEvent(relParafusoConector) \nonumber \\ 
     \wedge hasRelation(g19,rg19)  \nonumber \\  
-    \wedge (relParafusoTorre \in rg19) \nonumber \\ 
-    \wedge hasRisk(relParafusoTorre,eletrocutado,morte) \nonumber \\  
+    \wedge (relParafusoConector \in rg19) \nonumber \\ 
+    \wedge hasRisk(relParafusoConector,eletrocutado,morte) \nonumber \\  
     \wedge tryReach(agente5,g19) \nonumber \\ 
     \to consequenceOfBadEvent(g19,agente5,eletrocutado,morte) \\ \nonumber
 \end{eqnarray}
@@ -242,11 +241,11 @@ A finalidade dessa demonstração consiste em mostrar como um agente pode ser su
 \end{eqnarray}
 
 \begin{eqnarray}\nonumber
-   possibilityHappensBadEvent(relParafusoTorre) \nonumber \\
-    \wedge happensBadEvent(relParafusoTorre) \nonumber \\ 
+   possibilityHappensBadEvent(relParafusoConector) \nonumber \\
+    \wedge happensBadEvent(relParafusoConector) \nonumber \\ 
     \wedge hasRelation(g19,rg19)  \nonumber \\  
-    \wedge (relParafusoTorre \in rg19) \nonumber \\ 
-    \wedge hasRisk(relParafusoTorre,eletrocutado,morte) \nonumber \\  
+    \wedge (relParafusoConector \in rg19) \nonumber \\ 
+    \wedge hasRisk(relParafusoConector,eletrocutado,morte) \nonumber \\  
     \wedge tryReach(agente6,g19) \nonumber \\ 
     \to consequenceOfBadEvent(g19,agente6,eletrocutado,morte) \\ \nonumber
 \end{eqnarray}
@@ -256,11 +255,11 @@ A finalidade dessa demonstração consiste em mostrar como um agente pode ser su
 \end{eqnarray}
 
 \begin{eqnarray}\nonumber
-   possibilityHappensBadEvent(relParafusoTorre) \nonumber \\
-    \wedge happensBadEvent(relParafusoTorre) \nonumber \\ 
+   possibilityHappensBadEvent(relParafusoConector) \nonumber \\
+    \wedge happensBadEvent(relParafusoConector) \nonumber \\ 
     \wedge hasRelation(g19,rg19)  \nonumber \\  
-    \wedge (relParafusoTorre \in rg19) \nonumber \\ 
-    \wedge hasRisk(relParafusoTorre,eletrocutado,morte) \nonumber \\  
+    \wedge (relParafusoConector \in rg19) \nonumber \\ 
+    \wedge hasRisk(relParafusoConector,eletrocutado,morte) \nonumber \\  
     \wedge tryReach(agente7,g19) \nonumber \\ 
     \to consequenceOfBadEvent(g19,agente7,eletrocutado,morte) \\ \nonumber
 \end{eqnarray}
@@ -271,7 +270,7 @@ A finalidade dessa demonstração consiste em mostrar como um agente pode ser su
 
 
 \subsubsection{Raciocínio - 6}
-
+\label{raciocinio6}
 Esse raciocínio tem a finalidade de mostrar como se dá os raciocínios para quando se faz necessário verificar se um objetivo foi atingido. 
 O objetivo $g23$ deve ser atingido pelos agentes com as funções de $executor1$,$executor2$,$executor3$ e $executor5$. 
 Isso implica dizer que os agentes; $agente2$,$agente3$,$agente4$,$agente5$ e $agente7$ devem tentar alcançar esses resultados. 
@@ -298,7 +297,7 @@ Considerando que $agg23$ são todos os agentes que tentaram alcançar o objetivo
 \end{eqnarray}
 
 \subsubsection{Raciocínio - 7}
-
+\label{raciocinio7}
 O raciocínio para o caso onde $agente1$ tente alcançar o objetivo $g23$.  
 
 \begin{enumerate}

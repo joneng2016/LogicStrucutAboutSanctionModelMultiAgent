@@ -34,21 +34,21 @@
 \contentsline {subsubsection}{\numberline {4.3.0.3}Racioc\IeC {\'\i }nio - 3}{84}
 \contentsline {subsubsection}{\numberline {4.3.0.4}Racioc\IeC {\'\i }nio - 4}{85}
 \contentsline {subsubsection}{\numberline {4.3.0.5}Racioc\IeC {\'\i }nio - 5}{86}
-\contentsline {subsubsection}{\numberline {4.3.0.6}Racioc\IeC {\'\i }nio - 6}{89}
-\contentsline {subsubsection}{\numberline {4.3.0.7}Racioc\IeC {\'\i }nio - 7}{90}
+\contentsline {subsubsection}{\numberline {4.3.0.6}Racioc\IeC {\'\i }nio - 6}{88}
+\contentsline {subsubsection}{\numberline {4.3.0.7}Racioc\IeC {\'\i }nio - 7}{89}
 \contentsline {section}{\numberline {4.4}\MakeUppercase {Valida\IeC {\c c}\IeC {\~a}o}}{90}
-\contentsline {chapter}{\numberline {5}\MakeUppercase {Discuss\IeC {\~a}o}}{92}
-\contentsline {section}{\numberline {5.1}\MakeUppercase {Analise Comparativa}}{92}
-\contentsline {subsection}{\numberline {5.1.1}Modelo MOISE+ }{92}
-\contentsline {section}{\numberline {5.2}\MakeUppercase {Modelo para Agentes Normativos de \textit {Dastani}}}{96}
-\contentsline {section}{\numberline {5.3}\MakeUppercase {Modelo V3S}}{97}
-\contentsline {section}{\numberline {5.4}\MakeUppercase {Modelo NormMAS}}{104}
-\contentsline {subsection}{\numberline {5.4.1}Compara\IeC {\c c}\IeC {\~a}o Gen\IeC {\'e}rica das Normas}{105}
-\contentsline {section}{\numberline {5.5}\MakeUppercase {Consist\IeC {\^e}ncia dos Resultados}}{107}
-\contentsline {section}{\numberline {5.6}\MakeUppercase {Aplica\IeC {\c c}\IeC {\~o}es}}{113}
-\contentsline {chapter}{\numberline {6}\MakeUppercase {Conclus\IeC {\~a}o}}{114}
-\contentsline {section}{\numberline {6.1}\MakeUppercase {Avalia\IeC {\c c}\IeC {\~a}o dos Objetivos}}{114}
-\contentsline {section}{\numberline {6.2}\MakeUppercase {Trabalhos Futuros}}{114}
-\contentsline {chapter}{REFER\^ENCIAS}{115}
-\contentsline {chapter}{Ap\^endice{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Nome do Ap\^endice}}{118}
-\contentsline {chapter}{Anexo{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Nome do Anexo}}{119}
+\contentsline {chapter}{\numberline {5}\MakeUppercase {Discuss\IeC {\~a}o}}{91}
+\contentsline {section}{\numberline {5.1}\MakeUppercase {Analise Comparativa}}{91}
+\contentsline {subsection}{\numberline {5.1.1}Modelo MOISE+ }{91}
+\contentsline {section}{\numberline {5.2}\MakeUppercase {Modelo para Agentes Normativos de \textit {Dastani}}}{95}
+\contentsline {section}{\numberline {5.3}\MakeUppercase {Modelo V3S}}{96}
+\contentsline {section}{\numberline {5.4}\MakeUppercase {Modelo NormMAS}}{103}
+\contentsline {subsection}{\numberline {5.4.1}Compara\IeC {\c c}\IeC {\~a}o Gen\IeC {\'e}rica das Normas}{104}
+\contentsline {section}{\numberline {5.5}\MakeUppercase {Consist\IeC {\^e}ncia dos Resultados}}{106}
+\contentsline {section}{\numberline {5.6}\MakeUppercase {Aplica\IeC {\c c}\IeC {\~o}es}}{114}
+\contentsline {chapter}{\numberline {6}\MakeUppercase {Conclus\IeC {\~a}o}}{115}
+\contentsline {section}{\numberline {6.1}\MakeUppercase {Avalia\IeC {\c c}\IeC {\~a}o dos Objetivos}}{115}
+\contentsline {section}{\numberline {6.2}\MakeUppercase {Trabalhos Futuros}}{115}
+\contentsline {chapter}{REFER\^ENCIAS}{116}
+\contentsline {chapter}{Ap\^endice{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Nome do Ap\^endice}}{119}
+\contentsline {chapter}{Anexo{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Nome do Anexo}}{120}

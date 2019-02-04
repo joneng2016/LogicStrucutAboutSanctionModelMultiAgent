@@ -1,5 +1,6 @@
-A discussão dos resultados que estão expostos nas sub-seções \ref{mods}, \ref{predic}, \ref{regras} foi feita na própria apresentação dos mesmos. Isso se deve a natureza desses resultados 
-uma vez que não é possível realizar a exposição deles sem discutir os fundamentos conceituais que justifiquem a existência dos mesmos. 
+A discussão dos resultados que estão expostos nas sub-seções \ref{mods}, \ref{predic}, \ref{regras} foi feita na própria apresentação dos mesmos. 
+Isso se deve a natureza desses resultados uma vez que não é possível realizar a exposição deles sem discutir os fundamentos conceituais que 
+justifiquem a existência dos mesmos. 
 
 O mesmo não se aplica no texto presente em \ref{studycase} e em \ref{rac} onde os resultados estão apenas expostos mas não foram discutidos. O texto a seguir fará uma discussão desses elementos 
 apresentando as principais dificuldades que foram encontradas na realização desse estudo. 
@@ -139,3 +140,38 @@ de forma inapropriada. Portanto é de crucial importância que o profissional re
 Raciocínio dado na subsubseção \ref{raciocinio4}. Assim como na situação relacionada condição, a realidade dos fatos pode produzir cenários possíveis "nesse caso" que não são 
 adequadamento representados por esse modelo. Um possível cenário para essa situação consiste no fato do profissional simplesmente não conseguir executar 
 a relação, sem que isso resulte em algum acidente. Contudo, a situação descrita pelo modelo apresenta o pior cenário possível. 
+
+Em um acidente pessoas que não são responsáveis pelos atos cometidos podem sofrer duras consequências por conta disso. Essa situação está demonstrada no 
+raciocínio 5 presente na subsubseção \ref{raciocinio5}.Nessa situação, não passar glicerina no pano pode gerar um acidente ao montar a relação parafuso 
+conector porque o bastão isolante a ser usado nesse  processo não estará em condições operacionais seguras, uma vez que a superfície dessa ferramenta pode 
+contar algum tipo de impureza que corrobore com aumento de corrente de fulga em níveis suficientemente altos para matar alguém. O raciocínio 1 apresentou
+com excelência essa influência que a falta do uso de glicerina tem sobre a possibilidade de ocorrer algo errado no momento onde um profissional 
+removerá o parafuso usando o bastão. Os pesquisadores entendem, portanto que todos os predicados usados para representar essa situção foram necessários 
+sendo que a ausência de um ou de outro descaracteriza completamente essa representação. Nessa condição, se faz necessário saber com qual objetivo 
+$relParafusoConector$ está atrelado e isso é feito por intermédio do $\in$ e de $hasRelation(g_n,rg_m)$. Além disso, não é possível efetuar nenhum 
+tipo de raciocínio sobre essa condição sem levar em consideração se os agentes tentam alcançar esse objetivo, e isso é feito por meio do predicado 
+$tryReach(agent_n,g_m)$. O fato de ocorrer um acidente ser independente do agente que está executando o objetivo é muito bem representado pelos predicados 
+$possibilityHappensBadEvent$ e $happensBadEvent$. Pela regra \ref{paybutiamnotguilty}, essa reunião de fatores em conjunto com os riscos associados 
+ao evento dão como verdade para o predicado $consequenceOfBadEven$ gerando a morte do profissional e a interrupção da manutenção. O que é interessante nessa parte da representação consiste no fato de que até mesmo a possibilidade do acidente não acontecer 
+é algo a ser computado nesse raciocínio. Portanto, de todo o modelo, os pesquisadores entendem que essa é a parte que é representada com maior precisão. 
+
+A presença do raciocínio 6 dado em \ref{raciocinio6} demonstrou que o modelo é capaz de interpretar quando um objetivo $g23$ foi atingido. Em 
+conjunto com o predicado $ableTryReach(ag_i,g_j)$, com a programação dos estados internos do agente e com a regra \ref{rolenextgoal} é possível 
+verificar uma relação de continuidade para a representação. Nessa situação o agente sempre saberá quais objetivos foram finalizados, saberá 
+quais são os próximos objetivos, deverá ter a capacidade de decisão sobre qual objetivo ele deverá tentar alcançar 
+(dando como verdade $tryRach(ag_n,g_m)$) e deverá ter a capacidade de executar o objetivo. 
+
+O raciocínio 7 dado por \ref{raciocinio7} apresenta como o modelo se comporta quando é feito uma consulta que não corresponde a realidade. A resultado 
+objetivo foi o que os pesquisadores experavam. 
+
+Os pesquisadores observam que os problemas que possuem as mesmas características que as presentes no caso de estudo são representados de forma apropriada
+pelos predicados e regras presentes nesse texto desde que o interesse consista verificar como se dá situações atreladas a cenários de acidentes. Contudo, 
+muitos raciocínios não foram capazes de apresentar considerações no que tange a todos os cenários possíveis ao qual esses estavam relacionados. Inclusive, 
+mesmo que os pesquisadores conseguissem demonstrar que os sete raciocínios apresentam capacidade de representar todos os cenários, ainda sim não seria 
+possível demonstrar que isso é válido ao aplicar essa representação em outro caso de estudo. Contudo, o modelo foi capaz de apresentar situações factíveis 
+de acontecerem no mundo real. 
+
+Os pesquisadores não podem afirmar que as situações apresentadas sempre são as mais convervadoras possíveis (até porque 
+o ato de como se dá a modelagem é algo que influência isso), contudo para esse caso em específico os cenários resultantes sempre foram os piores que 
+podem acontecer dentro de um cenário de manutenção com essas características. 
+
