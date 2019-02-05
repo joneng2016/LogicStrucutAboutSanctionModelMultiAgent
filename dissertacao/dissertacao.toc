@@ -1,54 +1,54 @@
 \babel@toc {brazil}{}
 \contentsline {chapter}{\numberline {1}\MakeUppercase {Introdu\IeC {\c c}\IeC {\~a}o}}{13}
-\contentsline {section}{\numberline {1.1}\MakeUppercase {Motiva\IeC {\c c}\IeC {\~a}o}}{13}
-\contentsline {section}{\numberline {1.2}\MakeUppercase {Relev\IeC {\^a}ncia}}{13}
-\contentsline {section}{\numberline {1.3}\MakeUppercase {Objetivos}}{13}
-\contentsline {subsection}{\numberline {1.3.1}Objetivo Geral}{13}
-\contentsline {subsection}{\numberline {1.3.2}Objetivos Espec\IeC {\'\i }ficos}{13}
-\contentsline {chapter}{\numberline {2}\MakeUppercase {Fundamenta\IeC {\c c}\IeC {\~a}o Te\IeC {\'o}rica}}{14}
-\contentsline {section}{\numberline {2.1}\MakeUppercase {Agentes}}{14}
-\contentsline {section}{\numberline {2.2}\MakeUppercase {Artefatos}}{17}
-\contentsline {section}{\numberline {2.3}\MakeUppercase {Sistema Multiagente}}{19}
-\contentsline {subsection}{\numberline {2.3.1}Conceitos Gerais de uma Organiza\IeC {\c c}\IeC {\~a}o de Sistemas Multiagentes}{19}
-\contentsline {subsection}{\numberline {2.3.2}Formaliza\IeC {\c c}\IeC {\~a}o de Conceitos Espec\IeC {\'\i }ficos para SMA}{21}
-\contentsline {section}{\numberline {2.4}\MakeUppercase {Normas}}{24}
-\contentsline {section}{\numberline {2.5}\MakeUppercase {Riscos}}{26}
-\contentsline {section}{\numberline {2.6}\MakeUppercase {L\IeC {\'o}gica Modal}}{28}
-\contentsline {chapter}{\numberline {3}\MakeUppercase {Metodologia}}{31}
-\contentsline {section}{\numberline {3.1}\MakeUppercase {An\IeC {\'a}lise dos Modelos}}{31}
-\contentsline {section}{\numberline {3.2}\MakeUppercase {Acompanhamento de Profissionais em Atividade de Risco}}{31}
-\contentsline {section}{\numberline {3.3}\MakeUppercase {Constru\IeC {\c c}\IeC {\~a}o do Modelo}}{31}
-\contentsline {section}{\numberline {3.4}\MakeUppercase {Implementa\IeC {\c c}\IeC {\~a}o}}{31}
-\contentsline {chapter}{\numberline {4}\MakeUppercase {Resultados}}{32}
-\contentsline {section}{\numberline {4.1}\MakeUppercase {Estrutura Conceitual}}{33}
-\contentsline {subsection}{\numberline {4.1.1}M\IeC {\'o}dulos}{33}
-\contentsline {subsection}{\numberline {4.1.2}Predicados}{39}
-\contentsline {subsection}{\numberline {4.1.3}Diagrama de Classes}{43}
-\contentsline {subsection}{\numberline {4.1.4}Regras}{45}
-\contentsline {subsection}{\numberline {4.1.5}Diagrama de Atividades}{55}
-\contentsline {subsection}{\numberline {4.1.6}Predicados Abertos e Fechados}{58}
-\contentsline {section}{\numberline {4.2}\MakeUppercase {Caso de Estudo}}{62}
-\contentsline {section}{\numberline {4.3}\MakeUppercase {Racioc\IeC {\'\i }nio}}{80}
-\contentsline {subsubsection}{\numberline {4.3.0.1}Racioc\IeC {\'\i }nio - 1}{80}
-\contentsline {subsubsection}{\numberline {4.3.0.2}Racioc\IeC {\'\i }nio - 2}{83}
-\contentsline {subsubsection}{\numberline {4.3.0.3}Racioc\IeC {\'\i }nio - 3}{84}
-\contentsline {subsubsection}{\numberline {4.3.0.4}Racioc\IeC {\'\i }nio - 4}{85}
-\contentsline {subsubsection}{\numberline {4.3.0.5}Racioc\IeC {\'\i }nio - 5}{86}
-\contentsline {subsubsection}{\numberline {4.3.0.6}Racioc\IeC {\'\i }nio - 6}{88}
-\contentsline {subsubsection}{\numberline {4.3.0.7}Racioc\IeC {\'\i }nio - 7}{89}
-\contentsline {section}{\numberline {4.4}\MakeUppercase {Valida\IeC {\c c}\IeC {\~a}o}}{90}
-\contentsline {chapter}{\numberline {5}\MakeUppercase {Discuss\IeC {\~a}o}}{91}
-\contentsline {section}{\numberline {5.1}\MakeUppercase {Analise Comparativa}}{91}
-\contentsline {subsection}{\numberline {5.1.1}Modelo MOISE+ }{91}
-\contentsline {section}{\numberline {5.2}\MakeUppercase {Modelo para Agentes Normativos de \textit {Dastani}}}{95}
-\contentsline {section}{\numberline {5.3}\MakeUppercase {Modelo V3S}}{96}
-\contentsline {section}{\numberline {5.4}\MakeUppercase {Modelo NormMAS}}{103}
-\contentsline {subsection}{\numberline {5.4.1}Compara\IeC {\c c}\IeC {\~a}o Gen\IeC {\'e}rica das Normas}{104}
-\contentsline {section}{\numberline {5.5}\MakeUppercase {Consist\IeC {\^e}ncia dos Resultados}}{106}
-\contentsline {section}{\numberline {5.6}\MakeUppercase {Aplica\IeC {\c c}\IeC {\~o}es}}{114}
-\contentsline {chapter}{\numberline {6}\MakeUppercase {Conclus\IeC {\~a}o}}{115}
-\contentsline {section}{\numberline {6.1}\MakeUppercase {Avalia\IeC {\c c}\IeC {\~a}o dos Objetivos}}{115}
-\contentsline {section}{\numberline {6.2}\MakeUppercase {Trabalhos Futuros}}{115}
-\contentsline {chapter}{REFER\^ENCIAS}{116}
-\contentsline {chapter}{Ap\^endice{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Nome do Ap\^endice}}{119}
-\contentsline {chapter}{Anexo{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Nome do Anexo}}{120}
+\contentsline {section}{\numberline {1.1}\MakeUppercase {Motiva\IeC {\c c}\IeC {\~a}o}}{14}
+\contentsline {section}{\numberline {1.2}\MakeUppercase {Relev\IeC {\^a}ncia}}{14}
+\contentsline {section}{\numberline {1.3}\MakeUppercase {Objetivos}}{14}
+\contentsline {subsection}{\numberline {1.3.1}Objetivo Geral}{14}
+\contentsline {subsection}{\numberline {1.3.2}Objetivos Espec\IeC {\'\i }ficos}{14}
+\contentsline {chapter}{\numberline {2}\MakeUppercase {Fundamenta\IeC {\c c}\IeC {\~a}o Te\IeC {\'o}rica}}{15}
+\contentsline {section}{\numberline {2.1}\MakeUppercase {Agentes}}{15}
+\contentsline {section}{\numberline {2.2}\MakeUppercase {Artefatos}}{18}
+\contentsline {section}{\numberline {2.3}\MakeUppercase {Sistema Multiagente}}{20}
+\contentsline {subsection}{\numberline {2.3.1}Conceitos Gerais de uma Organiza\IeC {\c c}\IeC {\~a}o de Sistemas Multiagentes}{20}
+\contentsline {subsection}{\numberline {2.3.2}Formaliza\IeC {\c c}\IeC {\~a}o de Conceitos Espec\IeC {\'\i }ficos para SMA}{22}
+\contentsline {section}{\numberline {2.4}\MakeUppercase {Normas}}{25}
+\contentsline {section}{\numberline {2.5}\MakeUppercase {Riscos}}{27}
+\contentsline {section}{\numberline {2.6}\MakeUppercase {L\IeC {\'o}gica Modal}}{29}
+\contentsline {chapter}{\numberline {3}\MakeUppercase {Metodologia}}{32}
+\contentsline {section}{\numberline {3.1}\MakeUppercase {An\IeC {\'a}lise dos Modelos}}{32}
+\contentsline {section}{\numberline {3.2}\MakeUppercase {Acompanhamento de Profissionais em Atividade de Risco}}{32}
+\contentsline {section}{\numberline {3.3}\MakeUppercase {Constru\IeC {\c c}\IeC {\~a}o do Modelo}}{32}
+\contentsline {section}{\numberline {3.4}\MakeUppercase {Implementa\IeC {\c c}\IeC {\~a}o}}{32}
+\contentsline {chapter}{\numberline {4}\MakeUppercase {Resultados}}{33}
+\contentsline {section}{\numberline {4.1}\MakeUppercase {Estrutura Conceitual}}{34}
+\contentsline {subsection}{\numberline {4.1.1}M\IeC {\'o}dulos}{34}
+\contentsline {subsection}{\numberline {4.1.2}Predicados}{40}
+\contentsline {subsection}{\numberline {4.1.3}Diagrama de Classes}{44}
+\contentsline {subsection}{\numberline {4.1.4}Regras}{46}
+\contentsline {subsection}{\numberline {4.1.5}Diagrama de Atividades}{56}
+\contentsline {subsection}{\numberline {4.1.6}Predicados Abertos e Fechados}{59}
+\contentsline {section}{\numberline {4.2}\MakeUppercase {Caso de Estudo}}{63}
+\contentsline {section}{\numberline {4.3}\MakeUppercase {Racioc\IeC {\'\i }nio}}{81}
+\contentsline {subsubsection}{\numberline {4.3.0.1}Racioc\IeC {\'\i }nio - 1}{81}
+\contentsline {subsubsection}{\numberline {4.3.0.2}Racioc\IeC {\'\i }nio - 2}{84}
+\contentsline {subsubsection}{\numberline {4.3.0.3}Racioc\IeC {\'\i }nio - 3}{85}
+\contentsline {subsubsection}{\numberline {4.3.0.4}Racioc\IeC {\'\i }nio - 4}{86}
+\contentsline {subsubsection}{\numberline {4.3.0.5}Racioc\IeC {\'\i }nio - 5}{87}
+\contentsline {subsubsection}{\numberline {4.3.0.6}Racioc\IeC {\'\i }nio - 6}{89}
+\contentsline {subsubsection}{\numberline {4.3.0.7}Racioc\IeC {\'\i }nio - 7}{90}
+\contentsline {section}{\numberline {4.4}\MakeUppercase {Valida\IeC {\c c}\IeC {\~a}o}}{91}
+\contentsline {chapter}{\numberline {5}\MakeUppercase {Discuss\IeC {\~a}o}}{92}
+\contentsline {section}{\numberline {5.1}\MakeUppercase {Analise Comparativa}}{92}
+\contentsline {subsection}{\numberline {5.1.1}Modelo MOISE+ }{92}
+\contentsline {section}{\numberline {5.2}\MakeUppercase {Modelo para Agentes Normativos de \textit {Dastani}}}{96}
+\contentsline {section}{\numberline {5.3}\MakeUppercase {Modelo V3S}}{97}
+\contentsline {section}{\numberline {5.4}\MakeUppercase {Modelo NormMAS}}{104}
+\contentsline {subsection}{\numberline {5.4.1}Compara\IeC {\c c}\IeC {\~a}o Gen\IeC {\'e}rica das Normas}{105}
+\contentsline {section}{\numberline {5.5}\MakeUppercase {Consist\IeC {\^e}ncia dos Resultados}}{107}
+\contentsline {section}{\numberline {5.6}\MakeUppercase {Aplica\IeC {\c c}\IeC {\~o}es}}{115}
+\contentsline {chapter}{\numberline {6}\MakeUppercase {Conclus\IeC {\~a}o}}{117}
+\contentsline {section}{\numberline {6.1}\MakeUppercase {Avalia\IeC {\c c}\IeC {\~a}o dos Objetivos}}{117}
+\contentsline {section}{\numberline {6.2}\MakeUppercase {Trabalhos Futuros}}{117}
+\contentsline {chapter}{REFER\^ENCIAS}{118}
+\contentsline {chapter}{Ap\^endice{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Nome do Ap\^endice}}{121}
+\contentsline {chapter}{Anexo{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Nome do Anexo}}{122}
