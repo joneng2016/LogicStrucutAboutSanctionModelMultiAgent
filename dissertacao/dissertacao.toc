@@ -1,4 +1,4 @@
-\babel@toc {brazil}{}
+\select@language {brazil}
 \contentsline {chapter}{\numberline {1}\MakeUppercase {Introdu\IeC {\c c}\IeC {\~a}o}}{13}
 \contentsline {section}{\numberline {1.1}\MakeUppercase {Motiva\IeC {\c c}\IeC {\~a}o}}{13}
 \contentsline {section}{\numberline {1.2}\MakeUppercase {Relev\IeC {\^a}ncia}}{14}

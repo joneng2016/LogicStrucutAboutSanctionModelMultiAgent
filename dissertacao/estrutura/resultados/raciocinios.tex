@@ -199,13 +199,8 @@ O raciocínio a seguir mostra o que acontece se o $agente3$ errar a forma adequa
 
 \subsubsection{Raciocínio - 5} 
 \label{raciocinio5}
-A finalidade dessa demonstração consiste em mostrar como um agente pode ser submetido a consequências ruins tendo em vista erros cometidos por outros 
-profissionais. O raciocínio 1 mostra que o fato do $agente4$ não conseguir realizar o relacionamento $relPanoGlicerina$ resulta na violação 
-$violationRelation(agente4,g1,relPanoGlicerina)$. Essa violação, por sua vez, impacta diversas outras relações, em que 
-$possibilityHappensBadEvent(relParafusoConector)$ é uma delas. Assim sendo, antes do $agente4$ cometer o erro, a possibilidade da ocorrência de um evento 
-ruim acontecer era 0, se o agente realizar a relação $relParafusoConector$ sem cometer violação alguma. Contudo, após a ocorrência do erro cometido 
-pelo $agent4$, existe uma possibilidade de um evento ruim acontecer na relação $relParafusoConector$ mesmo que tudo seja feito de acordo com os conformes. 
-Assim sendo, a lista de predicados e o raciocínio mostra o que acontece dado a seguinte situação; o possível evento ruim presente em $relParafusoConector$ 
+A finalidade dessa demonstração consiste em mostrar como um agente pode ser submetido a consequências ruins tendo em vista erros cometidos por outros profissionais. O raciocínio 1 mostra que o fato do $agente4$ não conseguir realizar o relacionamento $relPanoGlicerina$ resulta na violação $violationRelation(agente4,g1,relPanoGlicerina)$. Essa violação, por sua vez, impacta diversas outras relações, em que 
+$possibilityHappensBadEvent(relParafusoConector)$ é uma delas. Assim sendo, antes do $agente4$ cometer o erro, a possibilidade da ocorrência de um evento ruim acontecer era 0, se o agente realizar a relação $relParafusoConector$ sem cometer violação alguma. Contudo, após a ocorrência do erro cometido pelo $agent4$, existe uma possibilidade de um evento ruim acontecer na relação $relParafusoConector$ mesmo que tudo seja feito de acordo com os conformes. Assim sendo, a lista de predicados e o raciocínio mostra o que acontece dado a seguinte situação; o possível evento ruim presente em $relParafusoConector$ 
 se torna uma realidade;  
 
 \begin{enumerate}
@@ -271,10 +266,7 @@ se torna uma realidade;
 
 \subsubsection{Raciocínio - 6}
 \label{raciocinio6}
-Esse raciocínio tem a finalidade de mostrar como se dá os raciocínios para quando se faz necessário verificar se um objetivo foi atingido. 
-O objetivo $g23$ deve ser atingido pelos agentes com as funções de $executor1$,$executor2$,$executor3$ e $executor5$. 
-Isso implica dizer que os agentes; $agente2$,$agente3$,$agente4$,$agente5$ e $agente7$ devem tentar alcançar esses resultados. 
-Considerando que $agg23$ são todos os agentes que tentaram alcançar o objetivo e $ago23$ os agentes que são obrigados a fazer isso, segue o raciocínio;
+Esse raciocínio tem a finalidade de mostrar como se dá os raciocínios para quando se faz necessário verificar se um objetivo foi atingido. O objetivo $g23$ deve ser atingido pelos agentes com as funções de $executor1$,$executor2$,$executor3$ e $executor5$. Isso implica dizer que os agentes; $agente2$,$agente3$,$agente4$,$agente5$ e $agente7$ devem tentar alcançar esses resultados. Considerando que $agg23$ são todos os agentes que tentaram alcançar o objetivo e $ago23$ os agentes que são obrigados a fazer isso, segue o raciocínio;
 
 
 \begin{enumerate}
@@ -305,4 +297,4 @@ O raciocínio para o caso onde $agente1$ tente alcançar o objetivo $g23$.
 	\item $hasObligation(agente1,g23) \to F$										
 \end{enumerate}
 
-Isso implica em uma afirmação falsa, então esse mundo não é possível segundo o modelo implementado para este estudo de caso.
+Isso implica uma afirmação falsa, então esse mundo não é possível segundo o modelo implementado para este estudo de caso.

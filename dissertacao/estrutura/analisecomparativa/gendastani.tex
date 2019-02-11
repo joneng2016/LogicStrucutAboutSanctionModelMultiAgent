@@ -1,36 +1,16 @@
 \section{Modelo para Agentes Normativos de \textit{Dastani}}
 
-A estrutura deste modelo está presente em \ref{normasdastani} e por conta disso é possível concluir a existência dos seguintes conceitos: Agentes,
-Fatos, Efeitos, \textit{Count-as Rules} que nesse texto será renomeado como Regras Padrões e Regras de Sanção. Por não ter um nome específico, o
-modelo será referido sempre como modelo \textit{Dastani}. 
+A estrutura deste modelo está presente em \ref{normasdastani} e por conta disso é possível concluir a existência dos seguintes conceitos: Agentes, Fatos, Efeitos, \textit{Count-as Rules} que nesse texto será renomeado como Regras Padrões e Regras de Sanção. Por não ter um nome específico, o modelo será referido sempre como modelo \textit{Dastani}. 
 
-A questão dos Agentes é algo compartilhado por ambos os modelos. Contudo, no modelo deste estudo o conceito de agente é tratado em termos mais 
-"específicos" do que aquele presente no modelo \textit{Dastani}. Essa afirmação é feita com base na quantidade de predicados que delimitam a ação 
-de um agente em contraste há símbolos (notação \textit{EBNF}) naquela representação de \textit{Dastani}. 
+A questão dos Agentes é algo compartilhado por ambos os modelos. Contudo, no modelo deste estudo o conceito de agente é tratado em termos mais "específicos" do que aquele presente no modelo \textit{Dastani}. Essa afirmação é feita com base na quantidade de predicados que delimitam a ação de um agente em contraste há símbolos (notação \textit{EBNF}) naquela representação de \textit{Dastani}. 
 
-O conceito de Fatos está presente neste modelo, mas não sobre a mesma perspectiva. Isso, pois em \textit{Dastani} esse termo é usado para referenciar 
-qualquer tipo de fato que o modelador estiver interessado conceber. Contudo, neste estudo o grau de liberdade é reduzido apenas alguns fatos que são; 
-condições, relações, riscos e consequências.
+O conceito de Fatos está presente neste modelo, mas não sobre a mesma perspectiva. Isso, pois em \textit{Dastani} esse termo é usado para referenciar qualquer tipo de fato que o modelador estiver interessado conceber. Contudo, neste estudo o grau de liberdade é reduzido apenas alguns fatos que são; condições, relações, riscos e consequências.
 
-O conceito de Eventos não está presente neste modelo. Isso se deve ao fato de que neste modelo não existe nem mesmo uma única estrutura que possa ser 
-considerada como semanticamente equivalente ao Evento. Tendo em vista o fato de que um Evento consiste numa mudança de estados dos Fatos, existe a possibilidade
-de considerar uma certa semalhança com os predicados. Contudo, um predicado apenas delimita se uma relação é Verdade. O mesmo acontece no que diz respeito 
-as relações de implicação, pois apesar de delimitarem como corre a transição de estados do sistema como um todo, não existe segurança suficiente 
-para afirmar que isso corresponde a concepção de Eventos. Deve haver predicados e relações de implicação específicos na tratativa dos "Fatos" para que 
-exista algo semanticamente equivalente ao conceito de Eventos dentro do modelo proposto neste estudo. Como não há, logo não há Eventos. 
+O conceito de Eventos não está presente neste modelo. Isso se deve ao fato de que neste modelo não existe nem mesmo uma única estrutura que possa ser considerada como semanticamente equivalente ao Evento. Tendo em vista o fato de que um Evento consiste numa mudança de estados dos Fatos, existe a possibilidade de considerar uma certa semelhança com os predicados. Contudo, um predicado apenas delimita se uma relação é Verdade. O mesmo acontece no que diz respeito as relações de implicação, pois apesar de delimitarem como corre a transição de estados do sistema como um todo, não existe segurança suficiente para afirmar que isso corresponde a concepção de Eventos. Deve haver predicados e relações de implicação específicos na tratativa dos "Fatos" para que exista algo semanticamente equivalente ao conceito de Eventos dentro do modelo proposto neste estudo. Como não há, logo não há Eventos. 
 
-O conceito de Regras Padrões está presente em ambos modelos (não com o mesmo nome). Isso, porque esse conceito define o que resulta em uma violação que é 
-exatamente o que é feito nas regras \ref{violationcondition}, \ref{violationrelation} e \ref{violationentity}.
+O conceito de Regras Padrões está presente em ambos modelos (não com o mesmo nome). Isso, porque esse conceito define o que resulta em uma violação que é exatamente o que é feito nas regras \ref{violationcondition}, \ref{violationrelation} e \ref{violationentity}.
 
-O mesmo acontece para o conceito de Regras de Sanção, cuja finalidade implica definir as consequências de uma violação que é algo presente em 
-\ref{consviolationcondition} e \ref{consviolationrelation}. A regra \ref{consvioent} não é considerada como uma regra de sanção porque 
-não delimita consequências negativas ao agente em sí, diferente das outras duas. 
+O mesmo acontece para o conceito de Regras de Sanção, cuja finalidade implica definir as consequências de uma violação que é algo presente em \ref{consviolationcondition} e \ref{consviolationrelation}. A regra \ref{consvioent} não é considerada como uma regra de sanção porque não delimita consequências negativas ao agente em si, diferente das outras duas. 
 
-Uma diferença pontual entre ambos modelos reside no fato de que a proposta desse estudo apresenta um vocabulário muito mais especifico para delimitar 
-uma dada condição e para tipos específicos de violações do que o modelo \textit{Dastani}. Por conta disto, nesse estudo é possível encontrar conceitos 
-como objetivo, papel, entidades, artefatos, risco, condição e consequência. Outro aspecto que deve ser levado em consideração consiste na análise de 
-violações que não ocasiona em sanções, mas sim em possibilidades de prejudicar um outro agente que não possui responsabilidade na violação. Talvez 
-seja possível delimitar uma situação assim usando o vocabulário do modelo \textit{Dastani}, porém o modelo proposto neste estudo delimita uma estrutura 
-específica para essa finalidade. Isso, pois - em \textit{Dastani} o engenheiro teria de elaborar diversos conceitos que neste modelo estão prontos 
-para o uso. Assim sendo, a inovação deste modelo consiste em um vocabulário com menor grau de liberdade para tratar de problemas de violação, sanção 
+Uma diferença pontual entre ambos modelos reside no fato de que a proposta desse estudo apresenta um vocabulário muito mais especifico para delimitar uma dada condição e para tipos específicos de violações do que o modelo \textit{Dastani}. Por conta disto, nesse estudo é possível encontrar conceitos como objetivo, papel, entidades, artefatos, risco, condição e consequência. Outro aspecto que deve ser levado em consideração consiste na análise de violações que não ocasiona em sanções, mas sim em possibilidades de prejudicar um outro agente que não possui responsabilidade na violação. Talvez seja possível delimitar uma situação assim usando o vocabulário do modelo \textit{Dastani}, porém o modelo proposto neste estudo delimita uma estrutura específica para essa finalidade. Isso, pois - em \textit{Dastani} o engenheiro teria de elaborar diversos conceitos que neste modelo estão prontos para o uso. Assim sendo, a inovação deste modelo consiste em um vocabulário com menor grau de liberdade para tratar de problemas de violação, sanção 
 e possibilidades em casos onde agentes executam atividades com potencial risco de consequências negativas a integridade física deles. 

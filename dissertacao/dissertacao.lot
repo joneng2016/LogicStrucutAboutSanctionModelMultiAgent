@@ -1,4 +1,4 @@
-\babel@toc {brazil}{}
+\select@language {brazil}
 \contentsline {table}{\numberline {1}{\ignorespaces Os agentes que constituem uma manuten\IeC {\c c}\IeC {\~a}o\relax }}{67}
 \contentsline {table}{\numberline {2}{\ignorespaces Os papeis relevantes para a ocorr\IeC {\^e}ncia da manuten\IeC {\c c}\IeC {\~a}o\relax }}{67}
 \contentsline {table}{\numberline {3}{\ignorespaces Rela\IeC {\c c}\IeC {\~a}o $hasRole(ag_n,\rho _m)$\relax }}{68}
@@ -16,8 +16,8 @@
 \contentsline {table}{\numberline {15}{\ignorespaces Objetivos que devem ser atingidos pelo agente que assumir um dada fun\IeC {\c c}\IeC {\~a}o\relax }}{79}
 \contentsline {table}{\numberline {16}{\ignorespaces Objetivos que devem ser atingidos pelo agente que assumir um dada fun\IeC {\c c}\IeC {\~a}o\relax }}{80}
 \contentsline {table}{\numberline {17}{\ignorespaces Entidades que formam os conjuntos $eg_n$. Cada conjunto destes est\IeC {\~a}o relacionados com um objetivo e determinam as entidades necess\IeC {\'a}rias para que o mesmo tenha codi\IeC {\c c}\IeC {\~a}o de ser alcan\IeC {\c c}ado.\relax }}{81}
-\contentsline {table}{\numberline {18}{\ignorespaces Relacionamentos que formam os conjuntos $rg_n$. Cada conjunto $rg_n$ est\IeC {\'a} relacionado com um objetivo A rela\IeC {\c c}\IeC {\~a}o entre $rg_n$ e $goal_m$ determina os relacionaentos necess\IeC {\'a}rios para que um dado objetivo tenha condi\IeC {\c c}\IeC {\~a}o de ser atingido.\relax }}{82}
-\contentsline {table}{\numberline {19}{\ignorespaces Relacionamentos que formam os conjuntos $rg_n$. Cada conjunto $rg_n$ est\IeC {\'a} relacionado com um objetivo A rela\IeC {\c c}\IeC {\~a}o entre $rg_n$ e $goal_m$ determina os relacionaentos necess\IeC {\'a}rios para que um dado objetivo tenha condi\IeC {\c c}\IeC {\~a}o de ser atingido.\relax }}{83}
+\contentsline {table}{\numberline {18}{\ignorespaces Relacionamentos que formam os conjuntos $rg_n$. Cada conjunto $rg_n$ est\IeC {\'a} relacionado com um objetivo A rela\IeC {\c c}\IeC {\~a}o entre $rg_n$ e $goal_m$ determina os relacionamentos necess\IeC {\'a}rios para que um dado objetivo tenha condi\IeC {\c c}\IeC {\~a}o de ser atingido.\relax }}{82}
+\contentsline {table}{\numberline {19}{\ignorespaces Relacionamentos que formam os conjuntos $rg_n$. Cada conjunto $rg_n$ est\IeC {\'a} relacionado com um objetivo A rela\IeC {\c c}\IeC {\~a}o entre $rg_n$ e $goal_m$ determina os relacionamentos necess\IeC {\'a}rios para que um dado objetivo tenha condi\IeC {\c c}\IeC {\~a}o de ser atingido.\relax }}{83}
 \contentsline {table}{\numberline {20}{\ignorespaces Todas as condi\IeC {\c c}\IeC {\~o}es que constituem o conjunto $cg_n$. Este conjunto est\IeC {\'a} relacionando com um ou mais objetivos e determina quais s\IeC {\~a}o as condi\IeC {\c c}\IeC {\~o}es que devem ser mantidas para que o agente tenha uma situa\IeC {\c c}\IeC {\~a}o razo\IeC {\'a}vel para tentar alcan\IeC {\c c}ar um certo objetivo\relax }}{83}
 \contentsline {table}{\numberline {21}{\ignorespaces Define a rela\IeC {\c c}\IeC {\~a}o entre os objetivos, conjuntos $rg_n$, $eg_n$ e $cg_n$ \relax }}{83}
 \contentsline {table}{\numberline {22}{\ignorespaces Define a rela\IeC {\c c}\IeC {\~a}o entre os objetivos, conjuntos $rg_n$, $eg_n$ e $cg_n$ \relax }}{84}
