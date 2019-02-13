@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.1.25)  13 FEB 2019 11:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.1.25)  13 FEB 2019 13:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1137,16 +1137,7 @@ Overfull \hbox (45.19539pt too wide) in paragraph at lines 38--46
 [][] 
  []
 
-[101]
-
-LaTeX Warning: Reference `v3sframework' on page 102 undefined on input line 51.
-
-
-
-LaTeX Warning: Reference `melissaproject' on page 102 undefined on input line 5
-3.
-
-[102]
+[101] [102]
 <figure/bowtie.png, id=376, 673.76718pt x 443.40656pt>
 File: figure/bowtie.png Graphic file (type png)
 <use figure/bowtie.png>
@@ -1184,20 +1175,17 @@ AED: lastpage setting LastPage
 +-------------------------------------------------------------------+
 (./dissertacao.aux)
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7720 strings out of 492982
- 115034 string characters out of 6134896
+ 7718 strings out of 492982
+ 115004 string characters out of 6134896
  201270 words of memory out of 5000000
- 10867 multiletter control sequences out of 15000+600000
+ 10865 multiletter control sequences out of 15000+600000
  94236 words of font info for 211 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,18n,43p,2015b,423s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,18n,43p,2012b,423s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/
@@ -1208,7 +1196,7 @@ usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/times/utmri8a.pfb>
-Output written on dissertacao.pdf (130 pages, 1360143 bytes).
+Output written on dissertacao.pdf (130 pages, 1359918 bytes).
 PDF statistics:
  490 PDF objects out of 1000 (max. 8388607)
  323 compressed objects within 4 object streams
