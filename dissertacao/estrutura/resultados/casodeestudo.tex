@@ -1,5 +1,4 @@
-O estudo de caso desta pesquisa consiste em sete profissionais de linha viva (profissionais que realizam manutenção em equipamentos elétricos energizados) são designados com o propósito de realizar 
-a substituição de um isolador de pedestal. Os papeis desses desses profissionais são; 1 supervisor, 5 executores. A manutenção deve ser executada apenas sobre as seguintes condições: céu ensolarado e umidade relativa do ar menor que 70 porcento. Todos os profissionais devem possuir os EPI's necessários: capacete, óculos de sol, roupa isolante e antichamas, luvas isolantes e botas isolantes. Os profissionais que entram no potencial devem estar vestidos de roupa condutiva e cabo guarda. As ferramentas necessárias para resolver esse problema são: bastão garra de diâmetro 64 x 3600 mm, sela de diâmetro 65 , 
+O estudo de caso desta pesquisa consiste em sete profissionais de linha viva (profissionais que realizam manutenção em equipamentos elétricos energizados) são designados com o propósito de realizar a substituição de um isolador de pedestal. Os papeis desses desses profissionais são; um supervisor e seis executores. A manutenção deve ser executada apenas sobre as seguintes condições: céu ensolarado e umidade relativa do ar menor que 70 porcento. Todos os profissionais devem possuir os EPI's necessários: capacete, óculos de sol, roupa isolante e antichamas, luvas isolantes e botas isolantes. Os profissionais que entram no potencial devem estar vestidos de roupa condutiva e cabo guarda. As ferramentas necessárias para resolver esse problema são: bastão garra de diâmetro 64 x 3600 mm, sela de diâmetro 65 , 
 colar, corda de fibra sintética, carretilha, chave com catraca, bastão universal, soquete adequado, locador de pino e bastão com soquete multiangular. O método selecionado para esse tipo de manutenção é a distância onde o eletricista não acessa diretamente o potencial, mas faz isso por intermédio de um bastão isolante. A substituição do isolador 
 de pedestal pode ser escrita nos seguintes objetivos: 
 
@@ -84,7 +83,7 @@ agente7 & executor5 \\ \hline
 \label{agentsroles}
 \end{table}
 
-A tabela \ref{artefacts1} e \ref{artefacts2} apresentam todos artefatos que fazem parte da descrição deste estudo de caso.
+A tabela \ref{artefacts} apresenta todos artefatos que fazem parte da descrição deste estudo de caso.
 
 \begin{table}[H]
 \scalefont{0.8}
@@ -103,17 +102,6 @@ colar & Estrutura que fica fixa na sela, bastão isolante é travado no colar. \
 corda & Corda Isolante. \\ \hline
 carretilha & Carretilha que, em conjunto com a corda, é usada para mover material na vertical. \\ \hline
 bastaoUniversal & Bastão isolante que permite o acoplamento de múltiplas ferramentas. \\ \hline
-\end{tabular}
-\caption{Definindo todos os artefatos presentes na manutenção}
-\label{artefacts1}
-\end{table} 
-
-\begin{table}[H]
-\scalefont{0.8}  
-\centering
-\begin{tabular}{|l|p{0.8\linewidth}|}
-\hline
-\textbf{artefato} & \textbf{descrição} \\ \hline
 soquete & Usado na manipulação de parafusos. \\ \hline
 locador & Usado como pino direcional em alinhamento de furo de parafusos, auxiliado na inserção de pinos e parafusos. \\ \hline
 bastaoGarra & Bastão Universal que possui uma garra. \\ \hline
@@ -129,10 +117,10 @@ parafuso & Parafusos prendem o conector condutor-Isolador e também prendem o Is
 conector & Estrutura que tem como por finalidade manter condutor,cabeçote do isolador em conjunto. \\ \hline
 \end{tabular}
 \caption{Definindo todos os artefatos presentes na manutenção}
-\label{artefacts2}
+\label{artefacts}
 \end{table} 
 
-A tabela \ref{g} apresenta os objetivos dados pela coluna $objetivo$ bem com sua descrição. Essa tabela também apresenta as especificações para o predicado $nextGoal(g_i,g_j)$ onde \textit{Objetivo} representa $g_i$, \textit{Próximo} $g_j$ e \textit{Descrição} é referente a $g_i$.
+As etapas da atividade anteriormente postas foram analisadas em conjunto com engenheiros da área e foram estruturadas com base nos objetivos expostos na tabela \ref{g}. Essa tabela também apresenta as especificações para o predicado $nextGoal(g_i,g_j)$ onde \textit{Objetivo} representa $g_i$, \textit{Próximo} $g_j$ e \textit{Descrição} é referente a $g_i$.
 
 \begin{table}[H]
 \scalefont{0.8}
@@ -152,7 +140,6 @@ g7 &  g8 & Instalar sela com colar no outro lado da estrutura estrutura \\ \hlin
 g8 &  g9 & Passar o bastão universal por dentro do olhal do colar \\ \hline
 g10 & g11 & Pender carretilha no bastão Universal. \\ \hline
 g11 & g12 & Amarrar o bastão universal na parte superior da estrutura com a corda; \\ \hline
-g12 & g10 & Amarrar o olhal do bastão universal ao cavalo da sela atrás de uma corda. \\ \hline
 g12 & g13 & Rotacionar estrutura olhal garra em 45 graus. \\ \hline
 g13 & g14 & Enforcar um estropo de Náilon no corpo do isolador velho. \\ \hline
 g14 & g15 & Colocar a extremidade do estropo no gancho da corda de serviço. \\ \hline
@@ -194,7 +181,7 @@ sol & O dia deve estar ensolarado & eletrocutado & morte \\ \hline
 
 As tabelas \ref{relationEntEnt1}, \ref{relationEntEnt2} apresentam a especificação para dois predicados onde uma deles é $thereIsRelation(r_l,e_i,e_k)$ 
 tal que $r_l$ é definido pela coluna \textit{relacionamento}, $e_i$ e $e_k$ pelas \textit{entidades envolvidas}. 
-O outro predicado é dado por $hasRisk(r_k,risk_j,cs_m)$ onde $risk_j$ é dado pela coluna risco e $cs_m$ é dado pela coluna consequência. 
+O outro predicado é dado por $hasRisk(r_k,risk_j,cs_m)$ onde $risk_j$ é dado pela coluna risco e $cs_m$ é dado pela coluna $consequencia$. 
 Algumas relações (instâncias do conjunto $Relation$) serão apresentadas usando o termo $X$. O objetivo disto consiste tornar as tabelas mais enxutas por intermédio de uma regra a qual é;
 A variável $X$ deve ser substituída pelo agente que tem a permissão de executar alguma ação em dado objetivo em prol a sua função. 
 Essa regra pode ser sintetizada na seguinte expressão para um agente $ag_n$ que é referenciado por $AGENT$:
@@ -241,7 +228,7 @@ relPanoCorda                             & pano,corda                           
 relPanoBastoaUniversal                   & pano,bastaoUniversal                           & nenhum                          & nenhum                               \\ \hline
 relPanoSoquete                           & pano,soquete                                   & nenhum                          & nenhum                               \\ \hline
 \end{tabular}
-\caption{?}
+\caption{Descrição das entidades em função das relações}
 \label{relationEntEnt1}
 \end{table}
 
@@ -294,7 +281,7 @@ relCondutivimetroBastaoUniversal         & condutímetro,bastaoUniversal        
 relCondutivimetroBastaoGarra             & condutímetro,bastaoGarra                       & nenhum                          & nenhum                               \\ \hline
 relCondutivimetroSoquete                 & condutímetro,soquete                           & nenhum                          & nenhum                               \\ \hline
 \end{tabular}
-\caption{?}
+\caption{Descrição das entidades em função das relações}
 \label{relationEntEnt2}
 \end{table}
 
