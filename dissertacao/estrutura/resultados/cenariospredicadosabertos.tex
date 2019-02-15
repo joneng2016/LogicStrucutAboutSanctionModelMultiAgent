@@ -43,32 +43,32 @@ Para isso, se faz necessário definir um cenário de mundo. Por exemplo, pode-se
 Para esse caso é possível obter as seguintes relações de inferência: 
 
 \begin{eqnarray}
-	hasRelation(g_1,rg_1)\wedge \neg isPresent(rAB) \wedge (rAB \in rg_1) \wedge tryReach(ag_a,g_1) \to \nonumber \\
-	violationRelation(ag_a,g_1,rAB) 
+    hasRelation(g_1,rg_1)\wedge \neg isPresent(rAB) \wedge (rAB \in rg_1) \wedge tryReach(ag_a,g_1) \to \nonumber \\
+    violationRelation(ag_a,g_1,rAB) 
 \end{eqnarray}
 
 \begin{eqnarray}
-	violationRelation(ag_a,g_1,rAB)  \wedge affectsOtherRelations(rAB,rCE) \nonumber \\
+    violationRelation(ag_a,g_1,rAB)  \wedge affectsOtherRelations(rAB,rCE) \nonumber \\
     \to possibilityHappensBadEvent(rCE)  
 \end{eqnarray}
 
 \begin{eqnarray}
-	possibilityHappensBadEvent(rCE) \to happensBadEvent(rCE) 
+    possibilityHappensBadEvent(rCE) \to happensBadEvent(rCE) 
 \end{eqnarray}
 
 \begin{eqnarray}\label{paybutiamnotguilty}
-	possibilityHappensBadEvent(rCE) \wedge  \nonumber \\
+    possibilityHappensBadEvent(rCE) \wedge  \nonumber \\
     happensBadEvent(rCE) \wedge  \nonumber \\
     hasRelation(g_2,rg_2) \wedge  \nonumber \\
     (rCE \in rg_2) \nonumber \wedge  \nonumber \\
     hasRisk(rCE,risk_2,cs_2) \wedge  \nonumber \\
     tryReach(ag_a,g_2) \nonumber  \nonumber \\
-	\to consequenceOfBadEvent(g_2,ag_a,risk_2,cs_2) 
+    \to consequenceOfBadEvent(g_2,ag_a,risk_2,cs_2) 
 \end{eqnarray}
 
 
 \begin{eqnarray}\label{badcons}
-	consequenceOfBadEvent(g_2,ag_a,risk_2,cs_2) \to stopIn(g_2) 
+    consequenceOfBadEvent(g_2,ag_a,risk_2,cs_2) \to stopIn(g_2) 
 \end{eqnarray}
 
 
