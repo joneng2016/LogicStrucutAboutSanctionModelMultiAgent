@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.1.25)  13 FEB 2019 13:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.1.25)  15 FEB 2019 09:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1030,11 +1030,8 @@ Package pdftex.def Info: figure/programdastani.png  used on input line 21.
 tex [32] [33])
 [34]
 Cap\'{\i }tulo 3.
-(./estrutura/metodologia/genmet.tex)
-(./estrutura/metodologia/analisedosmodelos.tex)
-(./estrutura/metodologia/acomprof.tex)
-(./estrutura/metodologia/construcaomodelo.tex)
-(./estrutura/metodologia/implementacao.tex) [35
+(./estrutura/metodologia/genmet.tex) (./estrutura/metodologia/requisitos.tex)
+[35
 
 ]
 Cap\'{\i }tulo 4.
@@ -1179,10 +1176,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7718 strings out of 492982
- 115004 string characters out of 6134896
- 201270 words of memory out of 5000000
- 10865 multiletter control sequences out of 15000+600000
+ 7714 strings out of 492982
+ 114802 string characters out of 6134896
+ 201315 words of memory out of 5000000
+ 10870 multiletter control sequences out of 15000+600000
  94236 words of font info for 211 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,18n,43p,2012b,423s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1196,7 +1193,7 @@ usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/times/utmri8a.pfb>
-Output written on dissertacao.pdf (130 pages, 1359918 bytes).
+Output written on dissertacao.pdf (130 pages, 1361720 bytes).
 PDF statistics:
  490 PDF objects out of 1000 (max. 8388607)
  323 compressed objects within 4 object streams
