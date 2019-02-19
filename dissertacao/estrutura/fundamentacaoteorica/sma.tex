@@ -38,7 +38,7 @@ A constituição do \textit{MOISE+} é estruturada em três categorias de especi
 
 A especificação estrutural acontece em três níveis, individual, social e coletivo. O nível individual trata de definir os papéis $\rho$ dos agentes. Uma relação que se dá entre dois papéis é as hereditariedade em que se $\rho'$ é filho de $\rho$. Isso implica afirmar que $\rho'$ é uma especialização de $\rho$. Um exemplo apropriado para isso é o jogo de futebol onde existe o papel jogador dado por $\rho$ e existe o papel atacante dado por $\rho'$ \cite{moiseframework} \cite{roleone} \cite{roletwo} \cite{dynamicagenttemporalstruct}. Em termos formais, essa relação é dada pro; 
 
-\begin{eqnarray}\nonumber
+\begin{eqnarray}
 \rho_a \sqsubset \rho_b
 \end{eqnarray}
 
@@ -60,13 +60,13 @@ O modelo também determina como se dá as relações de hereditariedade para o p
 
 O nível coletivo determina a existência de compatibilidade entre os papéis \cite{moiseframework}. Essa é uma relação reflexiva e o seu conceito se dá através da seguinte proposição; Se papel $\rho_a$ possui a capacidade de realizar um determinado objetivo, então o papel $\rho_b$ também tem essa capacidade. Em termos formais, essa relação se dá da seguinte forma \cite{moiseframework} \cite{deonticOne}.;
 
-\begin{eqnarray}\nonumber
+\begin{eqnarray}
 	\rho_a \bowtie \rho_b \wedge \rho_a \neq \rho_b \wedge \rho_a \sqsubset \rho' \to \rho' \bowtie \rho_b 
 \end{eqnarray}
 
 O nível coletivo também apresenta o conceito de grupo dado por $gt$ o qual é constituído por;
 
-\begin{eqnarray}\nonumber
+\begin{eqnarray}
 	gt = \langle R,SG,L^{intra},L^{inter},C^{intra},C^{inter},np,ng\rangle 
 \end{eqnarray}
 
@@ -79,7 +79,7 @@ A Especificação Funcional tem como por finalidade descrever os objetivos a ser
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.8\linewidth]{figure/figmoise} 
-  \caption{Arvore de objetivos definido pelo modelo Moise \cite{moiseframework}}
+  \caption{Arvore de objetivos definido pelo modelo MOISE+ \cite{moiseframework}}
   \label{arvoremoise}
 \end{figure}
 
@@ -88,7 +88,7 @@ possibilidade de escolher qual objetivo ele deseja seguir e $parallelism$ onde t
 parte do modelo é baseada em um \textit{framework} de distribuição de atividades denominado por \textit{TAEMS} \cite{TAEMS}.
 Como é possível observar na figura, os objetivos são agrupados em conjuntos de missões $m$ \cite{dynamicagenttemporalstruct}. A relação a seguir define isso melhor;
 
-\begin{eqnarray}\nonumber
+\begin{eqnarray}
 	m_k = \{ g_n,...,g_m\}
 \end{eqnarray}
 
