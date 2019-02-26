@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2016/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: dissertacao.aux
 The style file: abnt-alf.bst
@@ -24,45 +24,45 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de duvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
-You've used 44 entries,
+You've used 43 entries,
             6523 wiz_defined-function locations,
-            1464 strings with 17553 characters,
-and the built_in function-call counts, 37953 in all, are:
-= -- 3075
-> -- 1323
-< -- 74
-+ -- 559
-- -- 394
-* -- 2746
-:= -- 4972
-add.period$ -- 200
-call.type$ -- 46
-change.case$ -- 470
-chr.to.int$ -- 104
-cite$ -- 41
-duplicate$ -- 1864
-empty$ -- 2874
-format.name$ -- 1953
-if$ -- 9200
+            1458 strings with 17434 characters,
+and the built_in function-call counts, 37291 in all, are:
+= -- 3025
+> -- 1307
+< -- 73
++ -- 554
+- -- 389
+* -- 2706
+:= -- 4880
+add.period$ -- 195
+call.type$ -- 45
+change.case$ -- 463
+chr.to.int$ -- 100
+cite$ -- 40
+duplicate$ -- 1824
+empty$ -- 2812
+format.name$ -- 1930
+if$ -- 9039
 int.to.chr$ -- 2
 int.to.str$ -- 2
-missing$ -- 786
-newline$ -- 223
-num.names$ -- 209
-pop$ -- 1011
+missing$ -- 766
+newline$ -- 218
+num.names$ -- 204
+pop$ -- 989
 preamble$ -- 1
-purify$ -- 175
+purify$ -- 172
 quote$ -- 0
-skip$ -- 2147
+skip$ -- 2112
 stack$ -- 1
-substring$ -- 1428
-swap$ -- 978
+substring$ -- 1410
+swap$ -- 959
 text.length$ -- 54
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 27
 warning$ -- 0
-while$ -- 313
+while$ -- 307
 width$ -- 0
-write$ -- 701
+write$ -- 685
 (There was 1 warning)

@@ -1,0 +1,4 @@
+\begin{eqnarray}
+    hasRisk(X, risk_j, cs_k) | risk_k \in Risk \wedge nonumber 
+ cs_k \in Consequence \wedge (X = c_k ee X = r_k)
+end{eqnarray}
