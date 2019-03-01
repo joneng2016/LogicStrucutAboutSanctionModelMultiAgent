@@ -1,4 +1,4 @@
-\select@language {brazil}
+\babel@toc {brazil}{}
 \contentsline {chapter}{\numberline {1}\MakeUppercase {Introdu\IeC {\c c}\IeC {\~a}o}}{13}
 \contentsline {section}{\numberline {1.1}\MakeUppercase {Motiva\IeC {\c c}\IeC {\~a}o}}{13}
 \contentsline {section}{\numberline {1.2}\MakeUppercase {Relev\IeC {\^a}ncia}}{14}
@@ -38,15 +38,17 @@
 \contentsline {chapter}{\numberline {5}\MakeUppercase {Discuss\IeC {\~a}o}}{95}
 \contentsline {section}{\numberline {5.1}\MakeUppercase {An\IeC {\'a}lise Comparativa}}{95}
 \contentsline {subsection}{\numberline {5.1.1}Modelo MOISE+}{95}
-\contentsline {section}{\numberline {5.2}\MakeUppercase {Modelo para Agentes Normativos de \textit {Dastani}}}{96}
-\contentsline {section}{\numberline {5.3}\MakeUppercase {Modelo V3S}}{97}
-\contentsline {section}{\numberline {5.4}\MakeUppercase {Modelo NormMAS}}{104}
-\contentsline {subsection}{\numberline {5.4.1}Compara\IeC {\c c}\IeC {\~a}o Gen\IeC {\'e}rica entre os Modelos}{105}
-\contentsline {section}{\numberline {5.5}\MakeUppercase {Consist\IeC {\^e}ncia dos Resultados}}{107}
-\contentsline {section}{\numberline {5.6}\MakeUppercase {Aplica\IeC {\c c}\IeC {\~o}es}}{115}
-\contentsline {chapter}{\numberline {6}\MakeUppercase {Conclus\IeC {\~a}o}}{118}
-\contentsline {section}{\numberline {6.1}\MakeUppercase {Avalia\IeC {\c c}\IeC {\~a}o dos Objetivos}}{118}
-\contentsline {section}{\numberline {6.2}\MakeUppercase {Trabalhos Futuros}}{118}
-\contentsline {chapter}{REFER\^ENCIAS}{119}
-\contentsline {chapter}{Ap\^endice{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Nome do Ap\^endice}}{122}
-\contentsline {chapter}{Anexo{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Nome do Anexo}}{123}
+\contentsline {subsection}{\numberline {5.1.2}Modelo para Agentes Normativos de \textit {Dastani}}{96}
+\contentsline {subsection}{\numberline {5.1.3}Modelo V3S}{97}
+\contentsline {subsection}{\numberline {5.1.4}Modelo NormMAS}{102}
+\contentsline {subsection}{\numberline {5.1.5}Compara\IeC {\c c}\IeC {\~a}o Gen\IeC {\'e}rica entre os Modelos}{104}
+\contentsline {section}{\numberline {5.2}\MakeUppercase {Discuss\IeC {\~a}o do Modelo Conceitual}}{106}
+\contentsline {subsection}{\numberline {5.2.1}Considera\IeC {\c c}\IeC {\~o}es sobre Crit\IeC {\'e}rios Metodol\IeC {\'o}gicos ao Caso de Estudo}{106}
+\contentsline {subsection}{\numberline {5.2.2}Considera\IeC {\c c}\IeC {\~o}es sobre Crit\IeC {\'e}rios Metodol\IeC {\'o}gicos ao Racioc\IeC {\'\i }nios}{110}
+\contentsline {subsection}{\numberline {5.2.3}Considera\IeC {\c c}\IeC {\~o}es sobre Crit\IeC {\'e}rios Metodol\IeC {\'o}gicos ao Formalismo de Linguagem}{113}
+\contentsline {chapter}{\numberline {6}\MakeUppercase {Conclus\IeC {\~a}o}}{115}
+\contentsline {section}{\numberline {6.1}\MakeUppercase {Avalia\IeC {\c c}\IeC {\~a}o dos Objetivos}}{115}
+\contentsline {section}{\numberline {6.2}\MakeUppercase {Trabalhos Futuros}}{115}
+\contentsline {chapter}{REFER\^ENCIAS}{116}
+\contentsline {chapter}{Ap\^endice{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Nome do Ap\^endice}}{119}
+\contentsline {chapter}{Anexo{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Nome do Anexo}}{120}

@@ -1,4 +1,4 @@
-\select@language {brazil}
+\babel@toc {brazil}{}
 \contentsline {table}{\numberline {1}{\ignorespaces Os agentes que constituem uma manuten\IeC {\c c}\IeC {\~a}o\relax }}{66}
 \contentsline {table}{\numberline {2}{\ignorespaces Os papeis relevantes para a ocorr\IeC {\^e}ncia da manuten\IeC {\c c}\IeC {\~a}o\relax }}{66}
 \contentsline {table}{\numberline {3}{\ignorespaces Rela\IeC {\c c}\IeC {\~a}o $hasRole(ag_n,\rho _m)$\relax }}{67}
@@ -22,4 +22,4 @@
 \contentsline {table}{\numberline {21}{\ignorespaces Define a rela\IeC {\c c}\IeC {\~a}o entre os objetivos, conjuntos $rg_n$, $eg_n$ e $cg_n$ \relax }}{84}
 \contentsline {table}{\numberline {22}{\ignorespaces Construtores da linguagem \textit {ACTIVITY-DL} \cite {v3sframework}\relax }}{98}
 \contentsline {table}{\numberline {23}{\ignorespaces As pr\IeC {\'e}-condi\IeC {\c c}\IeC {\~o}es poss\IeC {\'\i }veis para as atividades \cite {v3sframework}\relax }}{99}
-\contentsline {table}{\numberline {24}{\ignorespaces An\IeC {\'a}lise comparativa sobre a expressividade desses modelos no que tange aos objetivos deste estudo. A sigla P.E.R significa Possibilidade de Algo Errado, a sigla C.A consiste em Condi\IeC {\c c}\IeC {\~o}es Ambientes, a sigla I.AG.AR significa Intera\IeC {\c c}\IeC {\~a}o entre Agente e Artefato e a sigla D.C.A significa Descri\IeC {\c c}\IeC {\~a}o de Cen\IeC {\'a}rio de Acidente\relax }}{106}
+\contentsline {table}{\numberline {24}{\ignorespaces An\IeC {\'a}lise comparativa sobre a expressividade desses modelos no que tange aos objetivos deste estudo. A sigla P.E.R significa Possibilidade de Algo Errado, a sigla C.A consiste em Condi\IeC {\c c}\IeC {\~o}es Ambientes, a sigla I.AG.AR significa Intera\IeC {\c c}\IeC {\~a}o entre Agente e Artefato e a sigla D.C.A significa Descri\IeC {\c c}\IeC {\~a}o de Cen\IeC {\'a}rio de Acidente\relax }}{105}
