@@ -2,44 +2,32 @@
 
 Tendo como base as análises feitas nas seções anteriores, é possível chegar na tabela \ref{comparemodel} que apresenta uma análise comparativa dos arcabouços no que tange a expressividade do modelo computacional proposto nesse texto. Por expressividade se entende capacidade de expressar, representar o objeto de interesse. Para essa análise 
 foi feita a seguinte escala; nenhuma expressividade $\prec$ pouco expressivo $\prec$ expressivo $\prec$ muito expressivo $\prec$ altamente expressivo. O termo nenhuma expressividade 
-não indica que é impossível definir a estrutura em observação dentro do modelo em voga, mas sim que o engenheiro de modelagem terá de criar uma estrutura conceitual grande e complexa 
-além do que o modelo já fornece para permitir que essa estrutura seja representada. Sobre o mesmo aspecto reside pouco expressivo, contudo o modelo - neste caso - possui algumas 
-estruturas pré-definidas que diminuem o esforço da especificação. O termo expressivo deixa claro que o modelo permite especificar o objeto de interesse sem que o engenheiro 
-tenha de criar muitos atributos para o domínio de interesse. O termo muito expressivo define que o modelo apresenta diversos conceitos específicos para representar o objeto em interesse, 
-contudo ainda há margem para que o engenheiro de conhecimento tenha que criar um ou outro atributo. O termo altamente expressivo define o caso onde o modelo especifica o objetivo 
-de interesse muito bem fazendo com que o engenheiro de conhecimento não tenha que definir nenhum critério conceitual a mais (ou terá de montar poucas definições).   
+não indica que é impossível definir a estrutura em observação dentro do modelo em voga, mas sim que o engenheiro de modelagem terá de criar uma estrutura conceitual grande e complexa além do que o modelo já fornece para permitir que essa estrutura seja representada. Sobre o mesmo aspecto reside pouco expressivo, contudo o modelo - neste caso - possui algumas estruturas pré-definidas que diminuem o esforço da especificação. O termo expressivo deixa claro que o modelo permite especificar o objeto de interesse sem que o engenheiro tenha de criar muitos atributos para o domínio de interesse. O termo muito expressivo define que o modelo apresenta diversos conceitos específicos para representar o objeto em interesse, contudo ainda há margem para que o engenheiro de conhecimento tenha que criar um ou outro atributo. O termo altamente expressivo define o caso onde o modelo especifica o objetivo de interesse muito bem fazendo com que o engenheiro de conhecimento não tenha que definir nenhum critério conceitual a mais (ou terá de montar poucas definições).   
 
 \begin{table}[H]
+    \centering
     \scalefont{0.6}
     \begin{tabular}{|l|l|l|l|l|l|}
         \hline
-        \textbf{Critérios} & \textbf{MOISE+}        & \textbf{DASTANI}     & \textbf{V3S}         & \textbf{NORMMAS}     \\ \hline
-        \textbf{Agente}    & pouco expressivo       & pouco expressivo     & muito expressivo     & pouco expressivo     \\ \hline
-        \textbf{SMA}       & altamente expressivo   & pouco expressivo     & expressivo           & pouco expressivo     \\ \hline
-        \textbf{Artefato}  & nenhuma expressividade & pouco expressivo     & expressivo           & pouco expressivo     \\ \hline
-        \textbf{Norma}     & nenhuma expressividade & altamente expressivo & pouco expressivo     & altamente expressivo \\ \hline
-        \textbf{Violação}  & nenhuma expressividade & altamente expressivo & pouco expressivo     & altamente expressivo \\ \hline
-        \textbf{Sanção}    & nenhuma expressividade & altamente expressivo & pouco expressivo     & altamente expressivo \\ \hline
-        \textbf{Risco}     & nenhuma expressividade & pouco expressivo     & altamente expressivo & pouco expressivo     \\ \hline
-        \textbf{P.O.A.E}   & nenhuma expressividade & pouco expressivo     & pouco expressivo     & pouco expressivo     \\ \hline
-        \textbf{Objetivos} & muito expressivo       & pouco expressivo     & muito expressivo     & pouco expressivo     \\ \hline
-        \textbf{C.A}       & nenhuma expressividade & pouco expressivo     & pouco expressivo     & pouco expressivo     \\ \hline
-        \textbf{I.AG.AR}   & nenhuma expressividade & pouco expressivo     & pouco expressivo     & pouco expressivo     \\ \hline
-        \textbf{D.C.A}     & nenhuma expressividade & pouco expressivo     & altamente expressivo & pouco expressivo     \\ \hline
+        \textbf{Critérios} & \textbf{MOISE+}        & \textbf{DASTANI}     & \textbf{V3S}         & \textbf{NORMMAS}     & \textbf{Cartago}      \\ \hline
+        \textbf{Agente}    & pouco expressivo       & pouco expressivo     & muito expressivo     & pouco expressivo     & expressivo            \\ \hline
+        \textbf{SMA}       & altamente expressivo   & pouco expressivo     & expressivo           & pouco expressivo     & pouco expressivo      \\ \hline
+        \textbf{Artefato}  & nenhuma expressividade & pouco expressivo     & expressivo           & pouco expressivo     & altamente expressivo  \\ \hline
+        \textbf{Norma}     & nenhuma expressividade & altamente expressivo & pouco expressivo     & altamente expressivo & pouco expressivo      \\ \hline
+        \textbf{Violação}  & nenhuma expressividade & altamente expressivo & pouco expressivo     & altamente expressivo & pouco expressivo      \\ \hline
+        \textbf{Sanção}    & nenhuma expressividade & altamente expressivo & pouco expressivo     & altamente expressivo & pouco expressivo      \\ \hline
+        \textbf{Risco}     & nenhuma expressividade & pouco expressivo     & altamente expressivo & pouco expressivo     & pouco expressivo      \\ \hline
+        \textbf{P.O.A.E}   & nenhuma expressividade & pouco expressivo     & pouco expressivo     & pouco expressivo     & pouco expressivo      \\ \hline
+        \textbf{Objetivos} & muito expressivo       & pouco expressivo     & muito expressivo     & pouco expressivo     & pouco expressivo      \\ \hline
+        \textbf{C.A}       & nenhuma expressividade & pouco expressivo     & pouco expressivo     & pouco expressivo     & pouco expressivo      \\ \hline
+        \textbf{I.AG.AR}   & nenhuma expressividade & pouco expressivo     & pouco expressivo     & pouco expressivo     & pouco expressivo      \\ \hline
+        \textbf{D.C.A}     & nenhuma expressividade & pouco expressivo     & altamente expressivo & pouco expressivo     & pouco expressivo      \\ \hline
     \end{tabular}
     \caption{Análise comparativa sobre a expressividade desses modelos no que tange aos objetivos deste estudo. A sigla P.E.R significa Possibilidade de Algo Errado, a sigla C.A consiste em 
     Condições Ambientes, a sigla I.AG.AR significa Interação entre Agente e Artefato e a sigla D.C.A significa Descrição de Cenário de Acidente}
     \label{comparemodel}
 \end{table}
 
-O critério \textbf{Agente} condiz numa representação dos estados internos que um agente pode ter. O critério \textbf{SMA} condiz na presença de elementos que são necessário para
-especificar um \textit{Sistema Multiagente}. O critério \textbf{Artefato} condiz com elementos que correspondem a definição presente na seção \ref{artefact}. O critérios de 
-\textbf{Norma} corresponde a regras que devem ser acatadas pelos agentes. \textbf{Violação} define o que corresponde o não cumprimento de uma dada regra. \textbf{Sanção} implica 
-penalidade que está sobre o agente. \textbf{Risco} consiste no evento ruim que tem um dado potencial de ocorrer sobre o agente. \textbf{P.O.A.E} significa Possibilidade de Ocorrer 
-algo Errado e corresponde a expressar condições onde existe potencial de acontecer algo inapropriado sobre o agente mesmo que esse realize sua função com excelência.  \textbf{Objetivos} 
-implica alvos que devem ser atingidos pelos agentes. \textbf{C.A} consiste em condições ambientes que interagem com a atividade executada pelos agentes. \textbf{I.AG.AR} representa 
-as interações entre agentes e artefatos. \textbf{D.C.A} - Descrição de Cenários de Acidentes, consiste na capacidade de desenvolver raciocínios a fim de representar cenários de acidentes.
+O critério \textbf{Agente} condiz numa representação dos estados internos que um agente pode ter. O critério \textbf{SMA} condiz na presença de elementos que são necessário para especificar um \textit{Sistema Multiagente}. O critério \textbf{Artefato} condiz com elementos que correspondem a definição presente na seção \ref{artefact}. O critérios de \textbf{Norma} corresponde a regras que devem ser acatadas pelos agentes. \textbf{Violação} define o que corresponde o não cumprimento de uma dada regra. \textbf{Sanção} implica penalidade que está sobre o agente. \textbf{Risco} consiste no evento ruim que tem um dado potencial de ocorrer sobre o agente. \textbf{P.O.A.E} significa Possibilidade de Ocorrer algo Errado e corresponde a expressar condições onde existe potencial de acontecer algo inapropriado sobre o agente mesmo que esse realize sua função com excelência.  \textbf{Objetivos} implica alvos que devem ser atingidos pelos agentes. \textbf{C.A} consiste em condições ambientes que interagem com a atividade executada pelos agentes. \textbf{I.AG.AR} representa as interações entre agentes e artefatos. \textbf{D.C.A} - Descrição de Cenários de Acidentes, consiste na capacidade de desenvolver raciocínios a fim de representar cenários de acidentes.
 
-As sub-seções anteriores em conjunto com a tabela \ref{comparemodel} permite concluir que esse trabalho é inovador no que tange a ter um vocabulário específico para representar cenários 
-de risco e de acidentes (tanto sobre o responsável pelo acidente bem como a vitima) de atividades manuais usando, para isso, o conceito de sistema multiagente normativo. Esse 
-vocabulário apresenta limitações cujas quais serão debatidas na próxima seção. 
+As sub-seções anteriores em conjunto com a tabela \ref{comparemodel} permite concluir que esse trabalho é inovador no que tange a ter um vocabulário específico para representar cenários de risco e de acidentes (tanto sobre o responsável pelo acidente bem como a vitima) de atividades manuais usando, para isso, o conceito de sistema multiagente normativo. Esse vocabulário apresenta limitações cujas quais serão debatidas na próxima seção. 

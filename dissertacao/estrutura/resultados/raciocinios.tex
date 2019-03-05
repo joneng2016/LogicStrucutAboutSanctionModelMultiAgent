@@ -2,7 +2,7 @@
 
 Uma vez que o modelo foi definido e que foi implementado em um estudo de caso, é possível avaliar as conclusões possíveis dado certa condição de mundo. Essa seção demonstra como esse modelo cumpre o proposto por demonstrar certos raciocínios tendo em vista o caso de estudo em análise. 
 
-\subsubsection{Raciocínio - 1} 
+\subsection{Raciocínio - 1} 
 \label{raciocinio1}
 
 O raciocínio a seguir mostra o que acontece se o $agente4$ esquecer de passar glicerina no pano, dado pela relação $relPanoGlicerina$, designados a ele no objetivo $g1$. 
@@ -84,7 +84,7 @@ Com base nisso, as relações de implicabilidade resultantes são;
 
 
 
-\subsubsection{Raciocínio - 2} 
+\subsection{Raciocínio - 2} 
 \label{raciocinio2}
 O raciocínio a seguir mostra o que acontece se o pano não estiver presente no local da manutenção quando os eletricistas alcançarem o $g1$. A lista a seguir exibe todos os predicados necessários para averiguar essa condição de mundo. 
 
@@ -130,7 +130,7 @@ O raciocínio a seguir mostra o que acontece se o pano não estiver presente no 
 
 
 
-\subsubsection{Raciocínio - 3} 
+\subsection{Raciocínio - 3} 
 \label{raciocinio3}
 
 O raciocínio a seguir mostra o que acontece se o $agente5$ tentar alcançar o objetivo $g11$ com a umidade relativa do ar superior a setenta porcento. A lista a seguir exibe todos os predicados necessários para averiguar essa condição de mundo. 
@@ -163,7 +163,7 @@ O raciocínio a seguir mostra o que acontece se o $agente5$ tentar alcançar o o
 \begin{eqnarray}
 	consequenceOfBadEvent(g11,agente5,eletrocutado,morte) \to stopIn(g11)
 \end{eqnarray}
-\subsubsection{Raciocínio - 4} 
+\subsection{Raciocínio - 4} 
 \label{raciocinio4}
 O raciocínio a seguir mostra o que acontece se o $agente3$ errar a forma adequada de realizar o relacionamento $relChaveCatracaParafuso$ no objetivo $g15$. Os predicados envolvidos são;
 
@@ -197,7 +197,7 @@ O raciocínio a seguir mostra o que acontece se o $agente3$ errar a forma adequa
 	consequenceOfBadEvent(g15,agente4,eletrocutado,morte) \to stopIn(g15)
 \end{eqnarray}
 
-\subsubsection{Raciocínio - 5} 
+\subsection{Raciocínio - 5} 
 \label{raciocinio5}
 A finalidade dessa demonstração consiste em mostrar como um agente pode ser submetido a consequências ruins tendo em vista erros cometidos por outros profissionais. O raciocínio 1 mostra que o fato do $agente4$ não conseguir realizar o relacionamento $relPanoGlicerina$ resulta na violação $violationRelation(agente4,g1,relPanoGlicerina)$. Essa violação, por sua vez, impacta diversas outras relações, em que $possibilityHappensBadEvent(relParafusoConector)$ é uma delas. Assim sendo, antes do $agente4$ cometer o erro, a possibilidade da ocorrência de um evento ruim acontecer era 0, se o agente realizar a relação $relParafusoConector$ sem cometer violação alguma. Contudo, após a ocorrência do erro cometido pelo $agente4$, existe uma possibilidade de um evento ruim acontecer na relação $relParafusoConector$ mesmo que tudo seja feito de acordo com os conformes. Assim sendo, a lista de predicados e o raciocínio mostra o que acontece dado a seguinte situação; o possível evento ruim presente em $relParafusoConector$ se torna uma realidade;  
 
@@ -262,7 +262,7 @@ A finalidade dessa demonstração consiste em mostrar como um agente pode ser su
 \end{eqnarray}
 
 
-\subsubsection{Raciocínio - 6}
+\subsection{Raciocínio - 6}
 \label{raciocinio6}
 Esse raciocínio tem a finalidade de mostrar como se dá os raciocínios para quando se faz necessário verificar se um objetivo foi atingido. O objetivo $g23$ deve ser atingido pelos agentes com as funções de $executor1$,$executor2$,$executor3$ e $executor5$. Isso implica dizer que os agentes; $agente2$,$agente3$,$agente4$,$agente5$ e $agente7$ devem tentar alcançar esses resultados. Considerando que $agg23$ são todos os agentes que tentaram alcançar o objetivo e $ago23$ os agentes que são obrigados a fazer isso, segue o raciocínio;
 
@@ -286,7 +286,7 @@ Esse raciocínio tem a finalidade de mostrar como se dá os raciocínios para qu
 	\neg stopIn(g23,agg23) \wedge (ago23 \subset agg23) \to isReached(g23)
 \end{eqnarray}
 
-\subsubsection{Raciocínio - 7}
+\subsection{Raciocínio - 7}
 \label{raciocinio7}
 O raciocínio para o caso onde $agente1$ tente alcançar o objetivo $g23$.  
 

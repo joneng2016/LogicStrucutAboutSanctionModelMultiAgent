@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.3.1)  1 MAR 2019 10:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.17)  5 MAR 2019 18:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **dissertacao.tex
 (./dissertacao.tex
 LaTeX2e <2017-04-15>
-Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+Babel <3.18> and hyphenation patterns for 4 language(s) loaded.
 (./normas-utf-tex.cls (./cvs-id.def)
 Document Class: normas-utf-tex 2011/06/19 v2.0
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
@@ -723,15 +723,13 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@floatcapt=\box57
 )
 (/usr/share/texlive/texmf-dist/tex/latex/carlisle/scalefnt.sty)
-(/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty
-Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
-\c@ALC@unique=\count122
-\c@ALC@line=\count123
-\c@ALC@rem=\count124
-\c@ALC@depth=\count125
-\ALC@tlm=\skip58
-\algorithmicindent=\skip59
-)
+
+! LaTeX Error: File `algorithmic.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
 (./dissertacao.aux
 
 LaTeX Warning: Label `diamont' multiply defined.
@@ -773,16 +771,16 @@ Package caption Info: End \AtBeginDocument code.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count126
+\scratchcounter=\count122
 \scratchdimen=\dimen135
 \scratchbox=\box58
-\nofMPsegments=\count127
-\nofMParguments=\count128
+\nofMPsegments=\count123
+\nofMParguments=\count124
 \everyMPshowfont=\toks27
-\MPscratchCnt=\count129
+\MPscratchCnt=\count125
 \MPscratchDim=\dimen136
-\MPnumerator=\count130
-\makeMPintoPDFobject=\count131
+\MPnumerator=\count126
+\makeMPintoPDFobject=\count127
 \everyMPtoPDFconversion=\toks28
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -981,15 +979,11 @@ Package pdftex.def Info: ata.pdf , page1 used on input line 65.
 
  [15]
 Cap\'{\i }tulo 1.
-(./estrutura/introducao/genintrod.tex
-
-LaTeX Warning: Reference `goals' on page 13 undefined on input line 5.
-
-) (./estrutura/introducao/motivacao.tex [13
+(./estrutura/introducao/genintrod.tex) (./estrutura/introducao/motivacao.tex
+[13
 
 
-])
-(./estrutura/introducao/relevancia.tex)
+]) (./estrutura/introducao/relevancia.tex)
 (./estrutura/introducao/objetivogeral.tex) [14]
 Cap\'{\i }tulo 2.
 (./estrutura/fundamentacaoteorica/genfunteorica.tex)
@@ -1039,39 +1033,38 @@ Cap\'{\i }tulo 3.
 (./estrutura/metodologia/realizacoesinferenca.tex)
 (./estrutura/metodologia/exploracaoarcaboucopossivel.tex) [34] [35]
 Cap\'{\i }tulo 4.
-(./estrutura/resultados/genresult.tex
+(./estrutura/resultados/genresult.tex) (./estrutura/resultados/genestconsul.tex
+) (./estrutura/resultados/modulos.tex
 <figure/Module.png, id=153, 588.69937pt x 185.94469pt>
 File: figure/Module.png Graphic file (type png)
 <use figure/Module.png>
-Package pdftex.def Info: figure/Module.png  used on input line 6.
+Package pdftex.def Info: figure/Module.png  used on input line 5.
 (pdftex.def)             Requested size: 455.24411pt x 143.79352pt.
-) (./estrutura/resultados/genestconsul.tex) (./estrutura/resultados/modulos.tex
  [36
 
- <./figure/Module.png>] [37] [38]
-[39] [40]) (./estrutura/resultados/predicados.tex [41] [42] [43] [44] [45])
-(./estrutura/resultados/diagramadeclasses.tex
-<figure/Class.png, id=189, 532.99126pt x 341.02406pt>
+] [37 <./figure/Module.png>] [38]
+[39] [40] [41]) (./estrutura/resultados/predicados.tex [42] [43] [44] [45])
+(./estrutura/resultados/diagramadeclasses.tex [46]
+<figure/Class.png, id=192, 532.99126pt x 341.02406pt>
 File: figure/Class.png Graphic file (type png)
 <use figure/Class.png>
 Package pdftex.def Info: figure/Class.png  used on input line 5.
 (pdftex.def)             Requested size: 455.24411pt x 291.2872pt.
- [46] [47 <./figure/Class.png>])
-(./estrutura/resultados/regras.tex [48] [49] [50] [51] [52] [53]
+ [47 <./figure/Class.png>])
+(./estrutura/resultados/regras.tex [48] [49] [50] [51] [52] [53] [54]
 Overfull \hbox (16.18481pt too wide) in alignment at lines 84--89
  [][][] []
  []
 
-[54] [55] [56] [57]) (./estrutura/resultados/diagramadeatividades.tex
+[55] [56] [57]) (./estrutura/resultados/diagramadeatividades.tex
 <figure/DiagramaDeAtividade.png, id=229, 791.95876pt x 1034.86626pt>
 File: figure/DiagramaDeAtividade.png Graphic file (type png)
 <use figure/DiagramaDeAtividade.png>
 Package pdftex.def Info: figure/DiagramaDeAtividade.png  used on input line 11.
 
 (pdftex.def)             Requested size: 455.24411pt x 594.88557pt.
- [58]
-[59 <./figure/DiagramaDeAtividade.png>]) [60]
-(./estrutura/resultados/cenariospredicadosabertos.tex [61] [62] [63]) [64]
+ [58] [59 <./figure/DiagramaDeAtividade.png>]) [60]
+(./estrutura/resultados/cenariospredicadosabertos.tex [61] [62] [63] [64])
 (./estrutura/resultados/casodeestudo.tex [65]
 LaTeX Font Info:    Calculating math sizes for size <9.60004> on input line 31.
 
@@ -1150,26 +1143,28 @@ Package pdftex.def Info: figure/bowtie.png  used on input line 56.
  [100 <./figure/bowtie.png>] [101])
 (./estrutura/analisecomparativa/genormas.tex)
 (./estrutura/analisecomparativa/estnormas.tex [102]) [103]
-(./estrutura/analisecomparativa/compnormas.tex [104])
-(./estrutura/analisecomparativa/constresult.tex [105] [106] [107] [108]
-[109] [110] [111] [112] [113]) [114]
+(./estrutura/analisecomparativa/estcartago.tex)
+(./estrutura/analisecomparativa/compnormas.tex [104]) [105]
+(./estrutura/analisecomparativa/constresult.tex [106] [107] [108] [109]
+[110] [111] [112] [113]) [114]
 Cap\'{\i }tulo 6.
-(./estrutura/conclusao/avaliacaodosobjetivos.tex)
-(./estrutura/conclusao/trabalhosfuturos.tex) [115
+(./estrutura/conclusao/genconclusao.tex)
+(./estrutura/conclusao/avaliacaodosobjetivos.tex) [115
 
-] (./dissertacao.bbl [116
+]
+(./estrutura/conclusao/trabalhosfuturos.tex) [116] (./dissertacao.bbl [117
 
 
 ]
-[117]) [118]
+[118]) [119]
 Apendice A.
-[119
+[120
 
 ]
 Anexo A.
 
 AED: lastpage setting LastPage
-[120
+[121
 
 ]
 +-------------------------------------------------------------------+
@@ -1185,13 +1180,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7704 strings out of 492982
- 114705 string characters out of 6134897
- 201094 words of memory out of 5000000
- 10860 multiletter control sequences out of 15000+600000
+ 7610 strings out of 494903
+ 113653 string characters out of 6179960
+ 194106 words of memory out of 5000000
+ 10519 multiletter control sequences out of 15000+600000
  94236 words of font info for 211 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 43i,18n,43p,2535b,423s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 16 hyphenation exceptions out of 8191
+ 43i,18n,43p,2535b,427s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/
@@ -1202,10 +1197,10 @@ usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/times/utmri8a.pfb>
-Output written on dissertacao.pdf (125 pages, 1342222 bytes).
+Output written on dissertacao.pdf (126 pages, 1347376 bytes).
 PDF statistics:
- 474 PDF objects out of 1000 (max. 8388607)
- 312 compressed objects within 4 object streams
+ 477 PDF objects out of 1000 (max. 8388607)
+ 314 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
