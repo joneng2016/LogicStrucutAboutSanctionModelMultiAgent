@@ -100,166 +100,84 @@ Abstract text (maximum of 500 words).
 \sumario % geracao automatica do sumario
 
 \setcounter{page}{12}
-
-%---------- Primeiro Capitulo ----------
 \chapter{Introdução}
-
 	\input{estrutura/introducao/genintrod.tex}
-	
-	\section{Motivação}	
-		\label{motivation}
+	\section{Motivação}	\label{motivation}
 		\input{estrutura/introducao/motivacao.tex}
-	
-	\section{Relevância}
-		\label{relevance}
+	\section{Relevância} \label{relevance}
 		\input{estrutura/introducao/relevancia.tex}
-
-	\section{Objetivos}
+	\section{Objetivos} \label{goals}
 		\input{estrutura/introducao/objetivogeral.tex}
-
-
-%---------- Segundo Capitulo ----------
-
 \chapter{Fundamentação Teórica}
 \label{chap:fundteoric}
-
 	\input{estrutura/fundamentacaoteorica/genfunteorica.tex}
-
 	\section{Agentes} \label{agent}
- 
 		\input{estrutura/fundamentacaoteorica/agentes.tex}
-
 	\section{Artefatos} \label{artefact}
-
 		\input{estrutura/fundamentacaoteorica/artefatos.tex}
- 
 	\section{Sistema Multiagente} \label{sma}
-
 		\input{estrutura/fundamentacaoteorica/sma.tex}
-
 	\section{Normas} \label{normasdastani}
 		\input{estrutura/fundamentacaoteorica/normas.tex}
-
-
 	\section{Riscos} \label{risksec}
-
 		\input{estrutura/fundamentacaoteorica/riscos.tex}		
-
 	\section{Lógica Modal} \label{logic}
-
 		\input{estrutura/fundamentacaoteorica/poss.tex}
-
-
 \chapter{Metodologia}
 \label{chap:metod}
-
 	\input{estrutura/metodologia/genmet.tex}
-
     \section{Revisão Exploratória e Análise de Campo} 
-    
         \input{estrutura/metodologia/analisecampo.tex}  
-    
     \section{Formalização de um Modelo Conceitual} 
-    
         \input{estrutura/metodologia/conceitualizacao.tex} 
- 
-    \section{Realização de Inferências} 
-    
+    \section{Realização de Inferências}    
         \input{estrutura/metodologia/realizacoesinferenca.tex}
-
     \section{Explorar os Arcabouços Possíveis} 
-    
         \input{estrutura/metodologia/exploracaoarcaboucopossivel.tex}
-
-
 \chapter{Resultados}
 \label{chap:resul}
-
 	\input{estrutura/resultados/genresult.tex}
-	
-	\section{Estrutura Conceitual}
-
-	\input{estrutura/resultados/genestconsul.tex}
-
-		\subsection{Módulos} 
-			\label{mods}			
+	\section{Estrutura Conceitual} \label{estconceitual}
+		\input{estrutura/resultados/genestconsul.tex}
+		\subsection{Módulos} \label{mods}			
 			\input{estrutura/resultados/modulos.tex}
-		
-		\subsection{Predicados} 
-			\label{predic}
+		\subsection{Predicados}\label{predic}
 			\input{estrutura/resultados/predicados.tex}
-			
 		\subsection{Diagrama de Classes}
 			\input{estrutura/resultados/diagramadeclasses.tex}
-
-
-		\subsection{Regras}
-			\label{regras}
+		\subsection{Regras} \label{regras}
 			\input{estrutura/resultados/regras.tex}
-
 		\subsection{Diagrama de Atividades} \label{umldiagram}
-		
 			\input{estrutura/resultados/diagramadeatividades.tex}
-
 		\subsection{Predicados Abertos e Fechados} \label{cenarios}
-		
 			\input{estrutura/resultados/cenariospredicadosabertos.tex}
-
-
 	\section{Caso de Estudo} \label{studycase}
-
 			\input{estrutura/resultados/casodeestudo.tex}
-
 	\section{Raciocínio} \label{rac}
-
 			\input{estrutura/resultados/raciocinios.tex}
-	
 	\section{Validação} \label{validation}
-
-			\input{estrutura/resultados/validacao.tex}
-
+		\input{estrutura/resultados/validacao.tex}
 \chapter{Discussão}
-
 	\input{estrutura/analisecomparativa/generaldiscuss.tex}
-
 	\section{Análise Comparativa}\label{analisecomparativa}
-
-		\label{analisecomparativa}
-
 		\input{estrutura/resultados/generalanalisecomparativa.tex}
-		
-		\input{estrutura/analisecomparativa/genmoise.tex}
-		
+		\input{estrutura/analisecomparativa/genmoise.tex}	
 		\input{estrutura/analisecomparativa/gendastani.tex}
-	
 		\input{estrutura/analisecomparativa/genvs3.tex}
-	
 		\input{estrutura/analisecomparativa/estvs3.tex}
-	
-		\input{estrutura/analisecomparativa/genormas.tex}
-		
+		\input{estrutura/analisecomparativa/genormas.tex}		
 		\input{estrutura/analisecomparativa/estnormas.tex}
-		
+		\input{estrutura/analisecomparativa/estcartago.tex}
 		\input{estrutura/analisecomparativa/compnormas.tex}
-		
-
 	\section{Discussão do Modelo Conceitual}\label{constresult}
-
 		\input{estrutura/analisecomparativa/constresult.tex}
-
-
-
 \label{chap:anacomp}
-
 \chapter{Conclusão}
 \label{chpa:conc}
-	
-	\section{Avaliação dos Objetivos}
-
+	\input{estrutura/conclusao/genconclusao.tex}
+	\section{Avaliação do Objetivo}
 		\input{estrutura/conclusao/avaliacaodosobjetivos.tex}
-
 	\section{Trabalhos Futuros}
-
 		\input{estrutura/conclusao/trabalhosfuturos.tex}
 
 \clearpage % this is need for add +1 to pageref of bibstart used in 'ficha catalografica'.
