@@ -5,7 +5,7 @@ uma dada entidade não é adequadamente representada por nenhuma dessas duas cat
 
 Assim sendo, artefatos são entidades que não se enquadram em  \textit{goal-governed}, não se enquadram em \textit{goal-oriented}, são explicitamente projetados com o propósito de serem explorados pelos agentes para que possam alcançar seus objetivos individuais e sociais \cite{programingagentartefact} \cite{cartago}. 
 
-Para ilustrar usando como referência a sociedade humana; se agentes (entidades autônomas) estão para seres humanos então artefatos são as ferramentas (não autônomas) que são usadas para uma determinada finalidade (ex. um marceneiro (agente), usa um martelo (artefato) para pregar um prego (artefato)) \cite{programingagentartefact}.
+Para ilustrar usando como referência a sociedade humana; se agentes (entidades autônomas) estão para seres humanos então artefatos estão para as ferramentas (não autônomas) que são usadas com uma determinada finalidade (ex. um marceneiro, agente, usa um martelo (artefato) para pregar um prego (artefato)) \cite{programingagentartefact}.
 
 Uma outra distinção entre agentes e artefatos se torna claramente explícita quando verificada sobre o ponto de vista conceitual e filosófico. Isso, pois agentes apresentam a capacidade de se comunicar com outros agentes, em contraste com isso artefatos não apresentam essa condição \cite{programingagentartefact}.
 
@@ -13,7 +13,11 @@ Existem quatro elementos que podem ser usados para caracterizar um artefato \cit
 
 A \textit{interface de uso} consiste no conjunto de operações que podem ser invocadas pelo agente a fim explorar as suas funcionalidades \cite{programingagentartefact}. A \textit{instruções de operação} consiste na descrição de como fazer o uso das funcionalidades do artefato. Isso implica protocolos de uso das operações que devem ser invocadas pelo agente \cite{programingagentartefact}. A \textit{Funcionalidade} do artefato consiste no propósito definido pelo programador do sistema \cite{programingagentartefact}. A \textit{estrutura-comportamento} consiste nos aspectos internos do artefato, que é como o artefato é implementado a fim de providenciar as suas funcionalidades \cite{programingagentartefact}.    
 
-Cartago (\textit{Common "Artefacts for Agents" Open Framework}) é um framework usado para especificar as relações entre agentes e artefatos. Tendo em vista o fato de ser um dos principais \textit{frameworks} na descrição das interações entre agentes e artefatos, não é possível falar no tema de artefatos em \textit{SMA} sem ao menos comentar a estrutura conceitual presente no Cartago. Esse modelo é composto de três blocos, que são; \textit{agent bodies} , \textit{artefact} e \textit{workspace} \cite{cartago}.
+Existe arcabouços para especificar artefatos. Um desses recebe o nome de \textit{Cartago} e será descrito com maior riqueza de detlahes na subeseção que se segue.
+ 
+ \subsection{Cartago}
+
+Cartago (\textit{Common "Artefacts for Agents" Open Framework}) é um arcabouço usado para especificar as relações entre agentes e artefatos. Tendo em vista o fato de ser um dos principais \textit{frameworks} na descrição das interações entre agentes e artefatos, não é possível falar no tema de artefatos em \textit{SMA} sem ao menos comentar a estrutura conceitual presente no Cartago. Esse modelo é composto de três blocos, que são; \textit{agent bodies} , \textit{artefact} e \textit{workspace} \cite{cartago}.
 
  \textit{Agent bodies} é  o que possibilita a inteligência do agente se relacionar com o ambiente. Para cada agente criado, há um \textit{agent bodies} construído. Um \textit{agent bodies} possui \textit{effectors} (efetores) que tem o propósito de executar ações sobre o ambiente de trabalho e possui sensores (captam sinais do ambiente em sua volta). A relação completa entre agente-\textit{agent bodies}-artefato, no Cartago, é dada da seguinte forma; eventos observáveis são gerados pelos artefatos, sensores (componentes presentes no \textit{agent bodies}) são sensibilizados, essa informação é transmitida para a inteligência do  agente (esta, por sua vez, realiza os raciocínios e toma as  decisões necessárias), o agente comunica ao \textit{agent bodies} a ação que deve ser feita ao 
  meio e, por último, através do \textit{effectors} uma dada ação é produzida no ambiente de trabalho. 
