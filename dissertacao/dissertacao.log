@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.17)  6 MAR 2019 12:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.3.1)  7 MAR 2019 07:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **dissertacao.tex
 (./dissertacao.tex
 LaTeX2e <2017-04-15>
-Babel <3.18> and hyphenation patterns for 4 language(s) loaded.
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (./normas-utf-tex.cls (./cvs-id.def)
 Document Class: normas-utf-tex 2011/06/19 v2.0
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
@@ -723,13 +723,15 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@floatcapt=\box57
 )
 (/usr/share/texlive/texmf-dist/tex/latex/carlisle/scalefnt.sty)
-
-! LaTeX Error: File `algorithmic.sty' not found.
-
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: sty)
-
-Enter file name: 
+(/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+\c@ALC@unique=\count122
+\c@ALC@line=\count123
+\c@ALC@rem=\count124
+\c@ALC@depth=\count125
+\ALC@tlm=\skip58
+\algorithmicindent=\skip59
+)
 (./dissertacao.aux
 
 LaTeX Warning: Label `diamont' multiply defined.
@@ -768,16 +770,16 @@ Package caption Info: End \AtBeginDocument code.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count122
+\scratchcounter=\count126
 \scratchdimen=\dimen135
 \scratchbox=\box58
-\nofMPsegments=\count123
-\nofMParguments=\count124
+\nofMPsegments=\count127
+\nofMParguments=\count128
 \everyMPshowfont=\toks27
-\MPscratchCnt=\count125
+\MPscratchCnt=\count129
 \MPscratchDim=\dimen136
-\MPnumerator=\count126
-\makeMPintoPDFobject=\count127
+\MPnumerator=\count130
+\makeMPintoPDFobject=\count131
 \everyMPtoPDFconversion=\toks28
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1177,13 +1179,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7610 strings out of 494903
- 113653 string characters out of 6179960
- 194106 words of memory out of 5000000
- 10519 multiletter control sequences out of 15000+600000
+ 7712 strings out of 492982
+ 114922 string characters out of 6134897
+ 201134 words of memory out of 5000000
+ 10862 multiletter control sequences out of 15000+600000
  94236 words of font info for 211 fonts, out of 8000000 for 9000
- 16 hyphenation exceptions out of 8191
- 43i,18n,43p,2535b,427s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 1141 hyphenation exceptions out of 8191
+ 43i,18n,43p,2535b,423s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/
@@ -1194,7 +1196,7 @@ usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/times/utmri8a.pfb>
-Output written on dissertacao.pdf (126 pages, 1347385 bytes).
+Output written on dissertacao.pdf (126 pages, 1347369 bytes).
 PDF statistics:
  477 PDF objects out of 1000 (max. 8388607)
  314 compressed objects within 4 object streams
