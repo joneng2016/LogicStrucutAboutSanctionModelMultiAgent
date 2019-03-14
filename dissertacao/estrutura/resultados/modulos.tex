@@ -48,7 +48,7 @@ não apresentam capacidade de comunicação como definido na seção \ref{artefa
 Os agentes são autônomos e orientados a objetivos sendo esses dois elementos descaracterizantes do que se defini como por artefato. Logo, apesar de agentes e artefatos serem entidades, não é possível existir um agente que seja artefato ou um artefato que seja agente, o que é dado por \ref{agentsartefactvoid}. 
 
 \begin{equation} \label{agentsartefactvoid}
-    Agent \cap Artefact = \emptyset
+    Agent \cap Artefact = \{ \emptyset \}
 \end{equation}
 
 
@@ -77,7 +77,7 @@ em partes futuras deste texto, considera-se que $eg_0$ se relaciona com $g_0$, $
 \textbf{O Módulo de Ambiente} - \textit{Environment Module} - consiste em conjuntos que representam relações e condições ambientes, esses são;
 
 \begin{equation}
-    M_{Environment} = \{ Relation, ReationGoal, Condition, ConditionGoal \}
+    M_{Environment} = \{ Relation, Condition, Circumstance, ReationGoal, ConditionGoal \}
 \end{equation}
 
 \textbf{Relation} - Uma entidade estabelece relações com outras entidades ao seu redor \cite{entity}. No modelo proposto neste texto, 
@@ -96,6 +96,13 @@ Obviamente, cada entidade do grupo \textit{Relation} tem uma vínculo com elemen
 \textbf{Condition} - Esse conjunto representa as condições que devem ser mantidas para que um dado objetivo possa ser alcançado. Em analogia a $EntityGoal$ e a $RelationGoal$, há um conjunto denominado de $ConditionGoal$ que define essas condições para os objetivos. Para exemplificar o uso deste conjunto é possível considerar o \textbf{Exemplo da Redação}. Com certeza nenhum dos três objetivos se tornam viáveis se não houver luz suficiente para que todos possam ver. O ambiente deve ser mantido em um certo silêncio, do contrário não há possibilidade do professor e do aluno exercer suas atividades intelectuais. Assim sendo é possível definir duas entidades; $Condition = \{ luz,silencio \}$. Ambas as condições são válidas para todos os objetivos (para esse
 exemplo), portanto existe um $cg_1 = \{ luz,silencio \} | CondtionGoal = \{ cg_1 \}$, sendo que $cg_1$ estabelece relações com 
 $g_0$, $g_1$ e $g_2$.
+
+Certos relacionamentos, que serão apresentados com maior riqueza de detalhes mais adiante, exigem definir uma certa abstração entre \textbf{Condition} e \textbf{Relation}. Assim sendo, os pesquisadores assumem a existência de um conjunto \textbf{Circumstance} que é dado pela seguinte relação; 
+
+\begin{equation}
+    Circumstance = \{ Relation, Condition \} |  Relation \cap Condition = \{ \emptyset \}
+\end{equation}
+
 
 \textbf{Módulo de Risco} - \textit{Risk Module} contem conjuntos que correspondem a conceitos relacionados a temática da segurança.
 O módulo de risco é dado pela relação que se segue;

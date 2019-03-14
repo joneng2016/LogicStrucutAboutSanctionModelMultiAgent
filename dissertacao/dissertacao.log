@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=pdflatex 2018.11.6)  13 MAR 2019 11:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.3.1)  14 MAR 2019 10:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **dissertacao.tex
 (./dissertacao.tex
-LaTeX2e <2017/01/01> patch level 3
-Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (./normas-utf-tex.cls (./cvs-id.def)
 Document Class: normas-utf-tex 2011/06/19 v2.0
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
@@ -35,7 +35,7 @@ LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Cskip=\skip43
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
-Package: multicol 2016/04/07 v1.8p multicolumn formatting (FMi)
+Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
 \c@tracingmulticols=\count83
 \mult@box=\box26
 \multicol@leftmargin=\dimen104
@@ -239,15 +239,21 @@ LaTeX Info: Redefining \cite on input line 493.
 \ABCItoken=\toks15
 )
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2016/04/23 3.9r The Babel package
+Package: babel 2018/02/14 3.18 The Babel package
 
+(/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2018/02/14 3.18 Babel switching mechanism
+)
 (/usr/share/texlive/texmf-dist/tex/generic/babel-portuges/portuges.ldf
 Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2016/04/23 3.9r Babel common definitions
+File: babel.def 2018/02/14 3.18 Babel common definitions
 \babel@savecnt=\count106
 \U@D=\dimen121
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@dirlevel=\count107
 )
 \l@brazil = a dialect from \language\l@portuges 
 Package babel Info: Making " an active character on input line 145.
@@ -571,7 +577,7 @@ Now handling font encoding U ...
    defining Unicode char U+2423 (decimal 9251)
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2016/11/05 v2.16a AMS math features
+Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip55
 
 For additional information on amsmath, use the `?' option.
@@ -590,13 +596,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count107
+\inf@bad=\count108
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count108
-\leftroot@=\count109
+\uproot@=\count109
+\leftroot@=\count110
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count110
-\DOTSCASE@=\count111
+\classnum@=\count111
+\DOTSCASE@=\count112
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
@@ -605,15 +611,15 @@ LaTeX Info: Redefining \cdots on input line 596.
 \big@size=\dimen124
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count112
-\c@MaxMatrixCols=\count113
+\macc@depth=\count113
+\c@MaxMatrixCols=\count114
 \dotsspace@=\muskip10
-\c@parentequation=\count114
-\dspbrk@lvl=\count115
+\c@parentequation=\count115
+\dspbrk@lvl=\count116
 \tag@help=\toks19
-\row@=\count116
-\column@=\count117
-\maxfields@=\count118
+\row@=\count117
+\column@=\count118
+\maxfields@=\count119
 \andhelp@=\toks20
 \eqnshift@=\dimen125
 \alignsep@=\dimen126
@@ -639,10 +645,10 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2016/10/09 v1.0u Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
@@ -653,15 +659,7 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)
-\Gread@gobject=\count119
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen131
 \Gin@req@width=\dimen132
@@ -670,7 +668,7 @@ Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
-Package: pdfpages 2017/01/14 v0.5h Insert pages of external PDF documents (AM)
+Package: pdfpages 2017/10/31 v0.5l Insert pages of external PDF documents (AM)
 
 (/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
@@ -678,8 +676,14 @@ Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/atbegshi.sty
 Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
@@ -702,7 +706,7 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 \AM@pageheight=\dimen134
 
 (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
-File: pppdftex.def 2017/01/14 v0.5h Pdfpages driver for pdfTeX (AM)
+File: pppdftex.def 2017/10/31 v0.5l Pdfpages driver for pdfTeX (AM)
 )
 \AM@pagebox=\box54
 \AM@global@opts=\toks23
@@ -777,20 +781,7 @@ Package caption Info: End \AtBeginDocument code.
 \MPnumerator=\count130
 \makeMPintoPDFobject=\count131
 \everyMPtoPDFconversion=\toks28
-) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
@@ -807,15 +798,28 @@ Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )))
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 38.
 Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 
@@ -887,38 +891,36 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 62.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 62.
- [1] <ata.pdf, id=14, 614.295pt x 845.1575pt>
+ [1]
+<ata.pdf, id=14, 614.295pt x 845.1575pt>
 File: ata.pdf Graphic file (type pdf)
- <use ata.pdf>
-Package pdftex.def Info: ata.pdf used on input line 65.
+<use ata.pdf>
+Package pdftex.def Info: ata.pdf  used on input line 65.
 (pdftex.def)             Requested size: 614.29349pt x 845.15544pt.
 File: ata.pdf Graphic file (type pdf)
- <use ata.pdf>
-Package pdftex.def Info: ata.pdf used on input line 65.
+<use ata.pdf>
+Package pdftex.def Info: ata.pdf  used on input line 65.
 (pdftex.def)             Requested size: 614.29349pt x 845.15544pt.
-
 <ata.pdf, id=17, page=1, 614.295pt x 845.1575pt>
 File: ata.pdf Graphic file (type pdf)
- <use ata.pdf, page 1>
-Package pdftex.def Info: ata.pdf, page1 used on input line 65.
+<use ata.pdf, page 1>
+Package pdftex.def Info: ata.pdf , page1 used on input line 65.
 (pdftex.def)             Requested size: 614.29349pt x 845.15544pt.
 File: ata.pdf Graphic file (type pdf)
-
 <use ata.pdf, page 1>
-Package pdftex.def Info: ata.pdf, page1 used on input line 65.
+Package pdftex.def Info: ata.pdf , page1 used on input line 65.
 (pdftex.def)             Requested size: 597.78697pt x 822.4455pt.
 File: ata.pdf Graphic file (type pdf)
- <use ata.pdf, page 1>
-Package pdftex.def Info: ata.pdf, page1 used on input line 65.
-(pdftex.def)             Requested size: 597.78697pt x 822.4455pt.
-File: ata.pdf Graphic file (type pdf)
- <use ata.pdf, page 1>
-Package pdftex.def Info: ata.pdf, page1 used on input line 65.
-(pdftex.def)             Requested size: 597.78697pt x 822.4455pt.
-File: ata.pdf Graphic file (type pdf)
-
 <use ata.pdf, page 1>
-Package pdftex.def Info: ata.pdf, page1 used on input line 65.
+Package pdftex.def Info: ata.pdf , page1 used on input line 65.
+(pdftex.def)             Requested size: 597.78697pt x 822.4455pt.
+File: ata.pdf Graphic file (type pdf)
+<use ata.pdf, page 1>
+Package pdftex.def Info: ata.pdf , page1 used on input line 65.
+(pdftex.def)             Requested size: 597.78697pt x 822.4455pt.
+File: ata.pdf Graphic file (type pdf)
+<use ata.pdf, page 1>
+Package pdftex.def Info: ata.pdf , page1 used on input line 65.
 (pdftex.def)             Requested size: 597.78697pt x 822.4455pt.
  [2 <./ata.pdf>] [3
 
@@ -939,10 +941,10 @@ Package pdftex.def Info: ata.pdf, page1 used on input line 65.
 \tf@lof=\write3
 \openout3 = `dissertacao.lof'.
 
+ [8
 
-[8
-
-] (./dissertacao.lot)
+]
+(./dissertacao.lot)
 \tf@lot=\write4
 \openout4 = `dissertacao.lot'.
 
@@ -954,12 +956,12 @@ Package pdftex.def Info: ata.pdf, page1 used on input line 65.
 
  [11
 
-]
-(./dissertacao.lsg)
+] (./dissertacao.lsg)
 \tf@lsg=\write6
 \openout6 = `dissertacao.lsg'.
 
- [12
+
+[12
 
 ] (./dissertacao.lsb)
 \tf@lsb=\write7
@@ -974,8 +976,7 @@ Package pdftex.def Info: ata.pdf, page1 used on input line 65.
 \tf@toc=\write8
 \openout8 = `dissertacao.toc'.
 
-
-[15]
+ [15]
 Cap\'{\i }tulo 1.
 (./estrutura/introducao/genintrod.tex) (./estrutura/introducao/motivacao.tex)
 [13
@@ -1000,32 +1001,29 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 (./estrutura/fundamentacaoteorica/sma.tex [20] [21] [22] [23]
 <figure/figmoise.png, id=107, 504.38437pt x 422.32782pt>
 File: figure/figmoise.png Graphic file (type png)
-
 <use figure/figmoise.png>
-Package pdftex.def Info: figure/figmoise.png used on input line 79.
+Package pdftex.def Info: figure/figmoise.png  used on input line 79.
 (pdftex.def)             Requested size: 364.19667pt x 304.94576pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 80.
- [24 <./figure/figmoise.png>])
-(./estrutura/fundamentacaoteorica/normas.tex [25]
+ [24 <./figure/figmoise.png>]) (./estrutura/fundamentacaoteorica/normas.tex [25
+]
 <figure/masprogram.png, id=116, 745.28438pt x 521.69907pt>
 File: figure/masprogram.png Graphic file (type png)
-
 <use figure/masprogram.png>
-Package pdftex.def Info: figure/masprogram.png used on input line 7.
+Package pdftex.def Info: figure/masprogram.png  used on input line 7.
 (pdftex.def)             Requested size: 364.19667pt x 254.93425pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10.95> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 8.
-
 <figure/programdastani.png, id=117, 700.86844pt x 182.93344pt>
 File: figure/programdastani.png Graphic file (type png)
-
 <use figure/programdastani.png>
-Package pdftex.def Info: figure/programdastani.png used on input line 21.
+Package pdftex.def Info: figure/programdastani.png  used on input line 21.
 (pdftex.def)             Requested size: 364.19667pt x 95.06172pt.
- [26 <./figure/masprogram.png>])
-(./estrutura/fundamentacaoteorica/riscos.tex [27 <./figure/programdastani.png>]
-[28]) (./estrutura/fundamentacaoteorica/poss.tex [29] [30]) [31]
+ [26 <./figure/masprogram.png>]) (./estrutura/fundamentacaoteorica/riscos.tex [
+27 <./figure/programdastani.png>] [28]) (./estrutura/fundamentacaoteorica/poss.
+tex [29] [30])
+[31]
 Cap\'{\i }tulo 3.
 (./estrutura/metodologia/genmet.tex) (./estrutura/metodologia/analisecampo.tex)
 [32
@@ -1036,25 +1034,23 @@ Cap\'{\i }tulo 3.
 Cap\'{\i }tulo 4.
 (./estrutura/resultados/genresult.tex) (./estrutura/resultados/genestconsul.tex
 ) (./estrutura/resultados/modulos.tex
-<figure/Module.png, id=153, 588.69937pt x 185.94469pt>
+<figure/Module.png, id=153, 537.50812pt x 174.6525pt>
 File: figure/Module.png Graphic file (type png)
- <use figure/Module.png>
-Package pdftex.def Info: figure/Module.png used on input line 5.
-(pdftex.def)             Requested size: 455.24411pt x 143.79352pt.
+<use figure/Module.png>
+Package pdftex.def Info: figure/Module.png  used on input line 5.
+(pdftex.def)             Requested size: 455.24411pt x 147.92232pt.
+ [36
 
-[36
-
-] [37 <./figure/Module.png>] [38] [39] [40] [41])
-(./estrutura/resultados/predicados.tex [42] [43] [44] [45])
-(./estrutura/resultados/diagramadeclasses.tex [46]
-<figure/Class.png, id=192, 532.99126pt x 341.02406pt>
+] [37 <./figure/Module.png>] [38]
+[39] [40] [41]) (./estrutura/resultados/predicados.tex [42] [43] [44] [45])
+[46] (./estrutura/resultados/diagramadeclasses.tex
+<figure/Class.png, id=192, 539.76656pt x 398.99063pt>
 File: figure/Class.png Graphic file (type png)
- <use figure/Class.png>
-Package pdftex.def Info: figure/Class.png used on input line 5.
-(pdftex.def)             Requested size: 455.24411pt x 291.2872pt.
-
-[47 <./figure/Class.png>]) (./estrutura/resultados/regras.tex [48] [49]
-[50] [51] [52] [53] [54]
+<use figure/Class.png>
+Package pdftex.def Info: figure/Class.png  used on input line 5.
+(pdftex.def)             Requested size: 455.24411pt x 336.51967pt.
+ [47 <./figure/Class.png>])
+(./estrutura/resultados/regras.tex [48] [49] [50] [51] [52] [53] [54]
 Overfull \hbox (16.18481pt too wide) in alignment at lines 84--89
  [][][] []
  []
@@ -1062,13 +1058,13 @@ Overfull \hbox (16.18481pt too wide) in alignment at lines 84--89
 [55] [56] [57]) (./estrutura/resultados/diagramadeatividades.tex
 <figure/DiagramaDeAtividade.png, id=229, 791.95876pt x 1034.86626pt>
 File: figure/DiagramaDeAtividade.png Graphic file (type png)
-
 <use figure/DiagramaDeAtividade.png>
-Package pdftex.def Info: figure/DiagramaDeAtividade.png used on input line 11.
+Package pdftex.def Info: figure/DiagramaDeAtividade.png  used on input line 11.
+
 (pdftex.def)             Requested size: 455.24411pt x 594.88557pt.
- [58] [59 <./figure/DiagramaDeAtividade.png>]) [60] (./estrutura/resultados/cen
-ariospredicadosabertos.tex [61] [62]
-[63] [64]) (./estrutura/resultados/casodeestudo.tex [65]
+ [58] [59 <./figure/DiagramaDeAtividade.png>]) [60]
+(./estrutura/resultados/cenariospredicadosabertos.tex [61] [62] [63] [64])
+(./estrutura/resultados/casodeestudo.tex [65]
 LaTeX Font Info:    Calculating math sizes for size <9.60004> on input line 31.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9.60004> not available
@@ -1077,8 +1073,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.10406> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 31.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5.76007> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 31.
- [66] [67] [68]
-[69] [70]
+ [66] [67] [68] [69] [70]
 Overfull \hbox (10.42258pt too wide) in paragraph at lines 168--176
  [][] 
  []
@@ -1098,21 +1093,21 @@ Overfull \vbox (6.99138pt too high) has occurred while \output is active []
 
 [73] [74] [75] [76] [77] [78] [79]
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <9.60004> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 564.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 566.
 
-Overfull \hbox (25.489pt too wide) in paragraph at lines 561--593
+Overfull \hbox (25.489pt too wide) in paragraph at lines 563--595
  [][] 
  []
 
 [80]
-LaTeX Font Info:    Calculating math sizes for size <8.39996> on input line 602
+LaTeX Font Info:    Calculating math sizes for size <8.39996> on input line 604
 .
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8.39996> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 602.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 604.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6.21602> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 602.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 604.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5.04002> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 602.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 604.
  [81] [82]) [83] (./estrutura/resultados/raciocinios.tex [84] [85] [86]
 [87] [88] [89] [90] [91] [92]) (./estrutura/resultados/validacao.tex [93])
 [94]
@@ -1129,21 +1124,20 @@ LaTeX Warning: Reference `application' on page 95 undefined on input line 2.
 (./estrutura/analisecomparativa/genvs3.tex
 <figure/ontologyv3.png, id=355, 496.85625pt x 256.70906pt>
 File: figure/ontologyv3.png Graphic file (type png)
-
 <use figure/ontologyv3.png>
-Package pdftex.def Info: figure/ontologyv3.png used on input line 8.
+Package pdftex.def Info: figure/ontologyv3.png  used on input line 8.
 (pdftex.def)             Requested size: 227.62206pt x 117.60579pt.
-) (./estrutura/analisecomparativa/estvs3.tex
-[97 <./figure/ontologyv3.png>]
+)
+(./estrutura/analisecomparativa/estvs3.tex [97 <./figure/ontologyv3.png>]
 Overfull \hbox (45.19539pt too wide) in paragraph at lines 36--44
 [][] 
  []
 
-[98] [99] <figure/bowtie.png, id=367, 673.76718pt x 443.40656pt>
+[98] [99]
+<figure/bowtie.png, id=367, 673.76718pt x 443.40656pt>
 File: figure/bowtie.png Graphic file (type png)
-
 <use figure/bowtie.png>
-Package pdftex.def Info: figure/bowtie.png used on input line 56.
+Package pdftex.def Info: figure/bowtie.png  used on input line 56.
 (pdftex.def)             Requested size: 227.62206pt x 149.79549pt.
  [100 <./figure/bowtie.png>] [101])
 (./estrutura/analisecomparativa/genormas.tex)
@@ -1185,13 +1179,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7671 strings out of 493013
- 114066 string characters out of 6135682
- 201127 words of memory out of 5000000
- 10804 multiletter control sequences out of 15000+600000
+ 7712 strings out of 492982
+ 114922 string characters out of 6134897
+ 201134 words of memory out of 5000000
+ 10862 multiletter control sequences out of 15000+600000
  94236 words of font info for 211 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,18n,43p,2535b,424s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,18n,43p,2535b,423s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/
@@ -1202,7 +1196,7 @@ usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/times/utmri8a.pfb>
-Output written on dissertacao.pdf (126 pages, 1346441 bytes).
+Output written on dissertacao.pdf (126 pages, 1349958 bytes).
 PDF statistics:
  477 PDF objects out of 1000 (max. 8388607)
  314 compressed objects within 4 object streams
