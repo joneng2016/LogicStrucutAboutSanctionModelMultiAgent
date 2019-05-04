@@ -29,21 +29,21 @@ A regra \ref{relationViol} define as condições que resultam em uma violação 
 
 Traduzindo a regra \ref{relationViol} para linguagem natural obtêm-se a seguinte expressão: Se um agente tentar alcançar um dado objetivo sem que todas as relações necessárias para isso estejam presentes (considerando as relações sobre o domínio dele, tal como manuseio de uma dada ferramenta específica, e considerando as relações que são independente dele), então esse agente comete uma violação de relação. 
 
-A regra \ref{entityViol} tem o propósito de definir quais são as condições que resultam em uma violação de entidade. O predicado $entityViol(ag_m,g_i,e_k)$ define semanticamente que uma violação de entidade corresponde em relação a um dado $ag_m$ em um $g_i$ vinculado a entidade $e_k$. Assim como nas demais regras de violação, o sentido deste termo considera a necessidade de verificar a existência de uma entidade necessária para um dado objetivo, por isso é essencial verificar o predicado $requiresEntity(g_i,eg_n)$, verificar se $e_k \in eg_n$ e verificar se $e_k$ está ou não presente no momento da manutenção $isPresent(e_k)$. A semântica do predicado também considera o momento em que o agente está atuando sobre o objetivo $g_i$, por isso o predicado $starts(ag_m,g_i)$ também é posto na relação de implicabilidade.
+A regra \ref{entityViol} tem o propósito de definir quais são as condições que resultam em uma violação de entidade. Como em outras situações, para cumprir com esse propósito e necessário que os fatores implicantes sejam correspondente com $entityViol(ag_m,g_i,e_k)$. Para cumprir com essa finalidade, se faz necessário considerar o predicado $requiresEntity(g_i,eg_n)$ (para avaliar as entidades que devem estar presentes a fim de cumprir com o objetivo $g_i$), $isPresent(e_k)$ (para verificar se a entidade $e_k$ está ou não presente no momento da execução) e $starts(ag_m,g_i)$ (para avaliar se $ag_m$ começou a tentar alcançar o objetivo $g_i$). A semântica do predicado também considera o momento em que o agente está atuando sobre o objetivo $g_i$, por isso o predicado $starts(ag_m,g_i)$ também é posto na relação de implicabilidade.
 
 \begin{eqnarray}\label{entityViol}\nonumber
-	requiresEntity(g_i,eg_n) \wedge \neg isPresent(e_k) 	\wedge (e_k \in eg_n) \wedge starts(ag_m,g_i) \to \nonumber \\ 
+	requiresEntity(g_i,eg_n) \wedge \neg isPresent(e_k) \wedge starts(ag_m,g_i) \to \nonumber \\ 
     entityViol(ag_m,g_i,e_k)  \nonumber \\  
-    g_i \in Goal, eg_n \subset EntityGoal, e_k \in Entity, ag_m \in Agent
+    g_i \in Goal, e_k \in Entity, ag_m \in Agent
 \end{eqnarray}
 
 Em termos de linguagem natural, \ref{entityViol} se apresenta da seguinte forma: Se um agente tentar alcançar um dado objetivo sem ter todas as entidades presentes para isso, então esse agente cometeu uma violação de entidade.
 
-As regras \ref{consconditionViol} e \ref{consrelationViol} são inspiradas nos estudos presentes na seção \ref{normasdastani} onde as consequências de uma violação são definidas como sanções no que é denominado por $Sanction Rule$. A estrutura dessas regras, em \ref{normasdastani} e em \cite{dastaniframework} é dada como $violation \to ... $. Contudo, este estudo leva em consideração não apenas o termo que se refere a violação, mas também as circunstâncias que são consideradas juntos, que neste caso advêm do predicado $hasRisk$. Assim como em \ref{normasdastani}, o modelo deste estudo define que uma sanção corresponde a uma penalidade que o agente deve pagar. Na estrutura da problemática em análise, a penalidade ocorre pelo fato do agente sofrer fisicamente os efeitos dos seus erros. Esse comportamento é dado pelo predicado $possOfNegConseqForEvent(g_i,ag_m,risk_j,cs_m)$ cujo correspondente semântico define que o agente $ag_m$ sofre sobe o evento associado em $risk_j$, no objetivo $g_i$ a consequência $cs_m$. Se os engenheiros deste modelo considerarem apenas $conditionViol(ag_m,g_i,c_k)$ para a relação \ref{consconditionViol} e $relationViol(ag_m,g_i,r_k)$, o correspondente semântico de $possOfNegConseqForEvent(g_i,ag_m,risk_j,cs_m)$ é desrespeitado, não especificando $risk_j,cs_m$. Contudo, isso é resolvido por levar em consideração o predicado $hasRisk(c_k,risk_j,cs_m)$ para \ref{consconditionViol} e o predicado $hasRisk(r_k,risk_j,cs_m)$ para \ref{consrelationViol}. 
+As regras \ref{consconditionViol} e \ref{consrelationViol} são inspiradas nos estudos presentes na seção \ref{normasdastani} onde as consequências de uma violação são definidas como sanções no que é denominado por $Sanction Rule$. A estrutura dessas regras, em \ref{normasdastani} e em \cite{dastaniframework} é dada como $violation \to ... $. Contudo, este estudo leva em consideração não apenas o termo que se refere a violação, mas também as circunstâncias que são consideradas juntos, que neste caso advêm do predicado $hasRisk$. Assim como em \ref{normasdastani}, o modelo deste estudo define que uma sanção corresponde a uma penalidade que o agente deve pagar. Na estrutura da problemática em análise, a penalidade ocorre pelo fato do agente sofrer fisicamente os efeitos dos seus erros. Esse comportamento é dado pelo predicado $negConseqFor(g_i,ag_m,risk_j,cs_m)$ cujo correspondente semântico define que o agente $ag_m$ sofre sobe o evento associado em $risk_j$, no objetivo $g_i$ a consequência $cs_m$. Se os engenheiros deste modelo considerarem apenas $conditionViol(ag_m,g_i,c_k)$ para a relação \ref{consconditionViol} e $relationViol(ag_m,g_i,r_k)$, o correspondente semântico de $negConseqFor(g_i,ag_m,risk_j,cs_m)$ é desrespeitado, não especificando $risk_j,cs_m$. Contudo, isso é resolvido por levar em consideração o predicado $hasRisk(c_k,risk_j,cs_m)$ para \ref{consconditionViol} e o predicado $hasRisk(r_k,risk_j,cs_m)$ para \ref{consrelationViol}. 
 
 \begin{eqnarray}\label{consconditionViol}\nonumber
 	conditionViol(ag_m,g_i,c_k)  \wedge hasRisk(c_k,risk_j,cs_m) \to \nonumber \\ 
-	possOfNegConseqForEvent(g_i,ag_m,risk_j,cs_m) \nonumber \\ 
+	negConseqFor(g_i,ag_m,risk_j,cs_m) \nonumber \\ 
     ag_m \in Agent, g_i \in Goal, c_k \in Condition, risk_k \in Risk, cs_m \in Consequence
 \end{eqnarray}
 
@@ -51,14 +51,13 @@ Em termos de linguagem natural, a relação em \ref{consconditionViol} é defini
 
 \begin{eqnarray}\label{consrelationViol}\nonumber
 	relationViol(ag_m,g_i,r_k) \wedge hasRisk(r_k,risk_j,cs_m) \to \\ 
-	possOfNegConseqForEvent(g_i,ag_m,risk_j,cs_m) \nonumber \\ 
+	negConseqFor(g_i,ag_m,risk_j,cs_m) \nonumber \\ 
     ag_m \in Agent, g_i \in Goal, r_k \in Relation, risk_k \in Risk, cs_m \in Consequence 
 \end{eqnarray}
 
 A regra \ref{consrelationViol}, quando posto em linguagem natural é definido desta forma: "Uma violação de relação sobre um determinado agente, em um dado objetivo resulta em uma consequência ruim a ele. Essa consequência está atrelada ao risco da relação violada". 
 
-Neste estudo o termo \textit{risco} deve ser analisado com muito cuidado. Isso, pois, dependendo do contexto, a complexidade deste termo é praticamente infinita e neste estudo a concepção deste termo se reduz a dois dos muitos possíveis usos. Neste modelo, risco é analisado como um evento que tem potencial de acontecer, contudo - nas relações de implicação um dos usos do termo risco advêm de considera-lo como evento que acontece apenas na ausência de uma dada condição ou de uma dada relação. Os pesquisadores optaram por essa tratativa ao estudar os conceitos presentes no referencial teórico em \ref{risksec} e ao analisar o caso de estudo (que será apresentado mais tarde). Com base nestes estudos verificou-se que acidentes acontecem porque profissionais tentam executar uma dada atividade sem ter as condições apropriadas 
-para isso e é a essa circunstância sobre o qual o risco está associado (em \cite{safety}, isso é explicado visando a melhoria da eficiência e da produção). Por exemplo, para poder navegar em alto mar a fim de poder pescar, um barco pesqueiro deve ter a sua disposição uma dada condição climática. Se a tripulação decidir por navegar sem a presença da condição climática apropriada, então o barco está submetido ao risco de naufragar sobre as consequências de morte da tripulação inteira. Portanto é com essa semântica que as relações de implicação \ref{consconditionViol} e \ref{consrelationViol} empregam o conceito de risco. 
+Neste estudo o termo \textit{risco} deve ser analisado com muito cuidado. Isso, pois, dependendo do contexto, a complexidade deste termo é praticamente infinita e neste estudo a concepção deste termo se reduz a dois dos muitos possíveis usos. Neste modelo, risco é analisado como um evento que tem potencial de acontecer, contudo - nas relações de implicação um dos usos do termo risco advêm de considera-lo como evento que acontece apenas na ausência de uma dada condição ou de uma dada relação. Os pesquisadores optaram por essa tratativa ao estudar os conceitos presentes no referencial teórico em \ref{risksec} e ao analisar o caso de estudo (que será apresentado mais tarde). Com base nestes estudos verificou-se que acidentes acontecem porque profissionais tentam executar uma dada atividade sem ter as condições apropriadas para isso e é a essa circunstância sobre o qual o risco está associado (em \cite{safety}, isso é explicado visando a melhoria da eficiência e da produção). Por exemplo, para poder navegar em alto mar a fim de poder pescar, um barco pesqueiro deve ter a sua disposição uma dada condição climática. Se a tripulação decidir por navegar sem a presença da condição climática apropriada, então o barco está submetido ao risco de naufragar sobre as consequências de morte da tripulação inteira. Portanto é com essa semântica que as relações de implicação \ref{consconditionViol} e \ref{consrelationViol} empregam o conceito de risco. 
 
 Obviamente, existe a possibilidade do barco poder desbravar um mar sem as apropriadas condições e voltar em terra salvo. Contudo, considerar situações assim, apesar de serem interessantes, levam a um aprofundamento da complexidade deste modelo. Não que isso seja uma justificativa coerente para não se fazer isso, contudo - neste estudo o interesse reside em uma primeira versão que torne possível a modelagem de condições assim por meio de um vocabulário mais específico. Assim sendo, os pesquisadores decidiram por simplificar essa situação e considerar que toda a ação tomada por um agente sem que as condições necessárias estejam presentes ou as relações apropriadas sejam feitas resultam em penalidades associadas ao risco da ausência desses elementos.  
 
@@ -78,14 +77,14 @@ O entendimento desta regra pode ser feito ao considerar um exemplo que já foi m
 
 A regra \ref{entityViolaffect} demonstra como um agente pode ser submetido a consequências ruins sem necessariamente ser culpado por isso. Contudo, essa regra denota apenas possibilidade, não demonstrando o que acontece efetivamente quando o agente é submetido ao lado não favorável da possibilidade. Essa situação está atrelada a \ref{paybutiamnotguilty}. Para lidar com as situações onde um agente é submetido a condições ruins, fez-se o uso do predicado $possOfNegConseqForEvent(g_i,ag_m,risk_j,cs_m) $. Entretanto, diferente das regras \ref{consconditionViol}, \ref{consrelationViol}, essas consequências negativas tem seus correspondentes semânticos em outros predicados. O predicado $possOfNegConseqFor(r_k)$ é invocado com o propósito demonstrar que $r_k$ apresenta a possibilidade da ocorrência de um evento ruim mesmo que o agente que esteja executando essa relação não faça nada de errado. Contudo, esse predicado só denota a possibilidade. Para que o sentido semântico de que a possibilidade de um evento ruim realmente acontece foi considerado o uso do predicado $happensBadEvent(r_k)$. Para o contexto desta regra, a semântica deste predicado exibe o seguinte significado: "O evento ruim associado a essa relação realmente aconteceu". Nesta situação que se faz necessário adotar a outra concepção associada ao termo risco que é adotado a este modelo. Nesta regra, esse termo é adotado como um evento em potencial devido a incerteza associada ao evento. 
 
-Para compreender melhor essa situação é possível voltar ao exemplo do eletricista-bastão isolante-quadro de energia. Como já citado anteriormente o fato do agente medidor não executar sua atividade gera uma incerteza sobre a condição do isolamento do bastão. Se a medida for executada com sucesso (partido do pressuposto de que o medidor está em condições apropriadas de funcionamento), a condição do bastão é revelada eliminando qualquer incerteza a respeito disto. Contudo, como está sendo considerado um cenário onde isso não foi feito, a não execução de $relBastaoMedidor$ resultou no surgimento do risco $eletrocutado$ com uma consequência de morte. Esse risco é dado como um potencial evento até que o eletricista de acesso ao barramento faz uso da ferramenta. Por conta disto, se faz o uso do predicado $hasRisk(r_k,risk_j,cs_m)$. Tendo em vista que isso se dá por uma relação que está atrelada a um objetivo, se faz necessário considerar $hasRelation(g_i,rg_n) \wedge (r_k \in rg_n)$. Para verificar a ação do agente nesta situação, o predicado $starts(ag_m,g_i)$ também deve compor a regra.
+Para compreender melhor essa situação é possível voltar ao exemplo do eletricista-bastão isolante-quadro de energia. Como já citado anteriormente o fato do agente medidor não executar sua atividade gera uma incerteza sobre a condição do isolamento do bastão. Se a medida for executada com sucesso (partido do pressuposto de que o medidor está em condições apropriadas de funcionamento), a condição do bastão é revelada eliminando qualquer incerteza a respeito disto. Contudo, como está sendo considerado um cenário onde isso não foi feito, a não execução de $relBastaoMedidor$ resultou no surgimento do risco $eletrocutado$ com uma consequência de morte. Esse risco é dado como um potencial evento até que o eletricista de acesso ao barramento faz uso da ferramenta. Por conta disto, se faz o uso do predicado $hasRisk(r_k,risk_j,cs_m)$. Tendo em vista que isso se dá por uma relação que está atrelada a um objetivo, se faz necessário considerar $requiresCirc(g_i,r_k) \wedge (r_k \in rg_n) $ e  $instanceOfRel(r_k)$ . Para verificar a ação do agente nesta situação, o predicado $starts(ag_m,g_i)$ também deve compor a regra.
 
 
 \begin{eqnarray}\label{paybutiamnotguilty}
-	possOfNegConseqFor(r_k) \wedge  happensBadEvent(r_k) \wedge hasRelation(g_i,rg_n) \wedge (r_k \in rg_n) \nonumber \\ 
-	\wedge hasRisk(r_k,risk_j,cs_m) \wedge starts(ag_m,g_i) \nonumber \\ 
-	\to possOfNegConseqForEvent(g_i,ag_m,risk_j,cs_m) \nonumber \\ 
-    r_k \in Relation, g_i \in Goal, rg_n \subset RelationGoal, risk_k \in Risk, cs_m \in Consequence
+	possOfNegConseqFor(r_k) \wedge  happensNegConseqFor(r_k) \wedge requiresCirc(g_i,r_k) \nonumber \\ 
+	\wedge instanceOfRel(r_k) \wedge hasRisk(r_k,risk_j,cs_m) \wedge starts(ag_m,g_i) \nonumber \\ 
+	\to negConseqFor(g_i,ag_m,risk_j,cs_m) \nonumber \\ 
+    r_k \in Relation, g_i \in Goal, risk_k \in Risk, cs_m \in Consequence
 \end{eqnarray}
 
 O exemplo em voga pode ser implementado nesta regra da seguinte forma: 
@@ -93,12 +92,12 @@ O exemplo em voga pode ser implementado nesta regra da seguinte forma:
 
 \begin{eqnarray}\nonumber
    possOfNegConseqFor(relBastaoBarramento) \nonumber \\
-    \wedge happensBadEvent(relBastaoBarramento) \nonumber \\ 
-    \wedge hasRelation(g_{acessoBarramento},rg_{acessoBarramento}) \nonumber \\  
-    \wedge (relBastaoBarramento \in rg_{acessoBarramento}) \nonumber \\ 
+    \wedge happensNegConseqFor(relBastaoBarramento) \nonumber \\ 
+    \wedge requiresCirc(g_{acessoBarramento},relBastaoBarramento) \nonumber \\  
+    \wedge instanceOfRel(relBastaoBarramento) \nonumber \\ 
     \wedge hasRisk(relBastaoBarramento,eletrocutado,morte) \nonumber \\  
     \wedge starts(eletricista_{executor},g_{acessoBarramento}) \nonumber \\ 
-    \to possOfNegConseqForEvent(g_{acessoBarramento},eletricistaExecutor,eletrocutado,morte) \\ \nonumber
+    \to negConseqFor(g_{acessoBarramento},eletricistaExecutor,eletrocutado,morte) \\ \nonumber
 \end{eqnarray}
 
 O exemplo se traduz na situação onde um bastão apresenta uma possibilidade de estar com o seu isolamento comprometido e isso resulta em um risco de eletrocutar o profissional que usa-lo resultando na morte dele. Contudo, o momento da ferramenta ser usada e ao fazer isso o eletricista morre eletrocutado por que esse bastão pertencia as ferramentas cujo isolamento estava deteriorado. 
@@ -115,16 +114,16 @@ Em termos de linguagem natural, a regra \ref{consvioent} é definida da seguinte
 A regra \ref{badcons} advêm do pressuposto de que na ocorrência de uma calamidade onde um profissional sai extremamente ferido ou morto (ocorrência do acidente), os demais envolvidos na manutenção não continuam por executar os procedimentos. 
  
  \begin{eqnarray}\label{badcons}
-	possOfNegConseqForEvent(g_k,ag_m,risk_j,cs_m) \to stopped(g_k) \nonumber \\ 
+	negConseqFor(g_k,ag_m,risk_j,cs_m) \to stopped(g_k) \nonumber \\ 
     g_k \in Goal, risk_j \in Risk, cs_m \in Consequence
 \end{eqnarray}
 
 Essa regra, no escopo da linguagem natural, pode ser lida desta forma: Se acontecer um evento ruim onde um profissional sai morto ou gravemente ferido, então a manutenção é encerrada no objetivo onde a fatalidade aconteceu. Não há como afirmar que as regras  \ref{consvioent} e \ref{badcons} se aplicam para todo tipo de situação em qualquer procedimento. Operações militares, por exemplo, não se enquadram em situações assim. Isso, pois a morte de um soldado ferido não impede que o resto do batalhão continue em conflito. Contudo, os pesquisadores deste estudo entendem que o pressuposto dessas duas regras englobam diversos cenários que implica no interesse deste estudo, tais como; cenário industrial, subestação, usinas de produção de energia, certas atividades hospitalares e entre outras da mesma natureza.  
 
-A regra \ref{wenStop} define o critério para quando um dado objetivo é considerado como atingido. O primeiro predicado, $stopped(g_k,ago_n)$ no contexto desta regra define que todos os agentes que tinham permissão para alcançar $g_k$ fizeram isso sem a ocorrência de alguma interrupção (ou seja, não houve nenhum evento onde alguém saiu ferido, morto ou onde alguma dada ferramenta tenha sido esquecida). O termo $(ago_n \subset agg_n)$ denota que os agentes que são obrigados a concluir esse objetivo devem estar contidos em $agg_n$. Se isso não for considerado, a regra \ref{reldeonticrole} entra em contradição com a \ref{wenStop}, pois caso contrário haveria a possibilidade de um objetivo ser considerado como concluído quando agentes que são obrigados a concluir não o fizeram. 
+A regra \ref{wenStop} define o critério para quando um dado objetivo é considerado como atingido. O primeiro predicado, $stopped(g_k,ago_n)$ no contexto desta regra define que todos os agentes que tinham permissão para alcançar $g_k$ fizeram isso sem a ocorrência de alguma interrupção (ou seja, não houve nenhum evento onde alguém saiu ferido, morto ou onde alguma dada ferramenta tenha sido esquecida).  
 
 \begin{eqnarray}\label{wenStop}
-	\neg stopped(g_k,agg_n) \wedge (ago_n \subset agg_n) \to isReached(g_k) \nonumber \\ 
+	\neg stopped(g_k,agg_n) \to reached(g_k) \nonumber \\ 
     g_k \in Goal, agg_n \in Agg, ago_n \in Ago 
 \end{eqnarray}
 
@@ -133,7 +132,7 @@ A linguagem natural essa expressão é dada da seguinte forma: Se todos os agent
 A regra \ref{rolenextgoal} apresenta a condição adequada para quando um agente está habilitado para atingir novos objetivos. Para isso, ele deve possuir um papel onde existe uma permissão para que ele possa atingir o próximo objetivo. Isso é traduzido por $ adoptsRole(ag_n,\rho_m) \wedge hasPermission(\rho_m,g_j) $. Não apenas isso, mas o objetivo atual do agente deve ter sido atingido $ isReached(g_i) $ e o objetivo em interesse deve estar associado como predicado $nextGoal(g_i,g_j)$. O termo $enabledToStart(ag_i,g_j)$ corresponde semanticamente apenas que o agente está habilitado para buscar novos objetivos mas não significa que isso implicará em $starts(ag_i,g_j)$ pois o que decide esses processos de transição consiste em aspectos que não correspondem a esse modelo. Essa dinâmica é discutida mais tarde na seção de \textit{Predicados Abertos}.
 
 \begin{eqnarray}\label{rolenextgoal}
-	adoptsRole(ag_n,\rho_m) \wedge hasPermission(\rho_m,g_j) \wedge nextGoal(g_i,g_j) \wedge isReached(g_i) \nonumber \\
+	adoptsRole(ag_n,\rho_m) \wedge hasPermission(\rho_m,g_j) \wedge nextGoal(g_i,g_j) \wedge reached(g_i) \nonumber \\
 	\to enabledToStart(ag_i,g_j) \nonumber \\
     ag_i, ag_n \in Agent, \rho_m \in Role, g_j \in Goal, g_i \in Goal
 \end{eqnarray}
@@ -144,7 +143,7 @@ A regra \ref{rolelastgoal} apresenta a condição de parada do agente em relaç�
 cumpriu com todos os objetivos designados a ele, então ele deve encerrar sua operação. A verificação do papel é dado por $adoptsRole(ag_n,\rho_m) \wedge hasPermission(\rho_m,g_i)$, a análise semântica sobre o último objetivo associado a um dado papel é dado por $lastGoal(g_i,\rho_m)$ e a verificação se aquele último objetivo foi atingido é dado por $isReached(g_i)$. 
 
 \begin{eqnarray}\label{rolelastgoal}
-	adoptsRole(ag_n,\rho_m) \wedge hasPermission(\rho_m,g_i) \wedge lastGoal(g_i,\rho_m) \wedge isReached(g_i) \nonumber \\
+	adoptsRole(ag_n,\rho_m) \wedge hasPermission(\rho_m,g_i) \wedge lastGoal(g_i,\rho_m) \wedge reached(g_i) \nonumber \\
 	\to stopped(g_i) \nonumber \\
     ag_n \in Agent, \rho_m \in Role, g_i \in Goal
 \end{eqnarray}
