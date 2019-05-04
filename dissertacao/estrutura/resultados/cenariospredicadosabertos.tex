@@ -13,17 +13,25 @@ Esse estudo apresenta duas categorias de predicados: \textit{controle} e \textit
     \item $conditionViol(ag_i,g_j,c_k)$
     \item $relationViol(ag_i,g_j,r_k)$
     \item $entityViol(ag_i,g_j,e_k)$
-    \item $hasRisk(circ, risk_j, cs_k)$
+    \item $hasRisk(circ_i, risk_j, cs_k)$
     \item $possOfNegConseqFor(r_l)$
     \item $affectsRels(r_k,r_n)$
-    \item $happensNegConseqFor(g_k, ag_i,risk_k,cs_m)$
     \item $negConseqFor(g_k, ag_i,risk_k,cs_m)$
-    \item $lastGoal(g_i,\rho_m)$ 
+    \item $lastGoal(g_i,\rho_m)$
+    \item $instanceOfRel(circ_i)$
+    \item $instanceOfCond(circ_i)$
+    \item $enabledToStart(ag_i,g_j)$ 
 \end{itemize}
 
 Para exemplificar, pode-se considerar o predicado $possEntityRel(r_l,e_i,e_k)$. Se existir uma entidade $A$, uma entidade $B$ e uma relação entre $relAB$, então esse termo é escrito desta forma: $possEntityRel(relAB,A,B)$. O valor verdade deste predicado não pode ser modificado para a criação de algum cenário e nem pode ser determinado por outras regras. Se modelador fizer isso então estará modificando a estrutura do modelo. Ou seja, esse é um predicado de estrutura no que tange a aspectos fundamentais aos aspectos semânticos desta representação. 
 
-Por outro lados os predicados \textit{de controle} possuem um correspondente sintático e semântico no modelo mas os seus valores devem ser forçados conforme o cenário que se deseja criar ou conforme outras regras de implicabilidade. A não determinação destes predicados inviabilizam que o modelo seja analisado de forma procedural. Faz parte deste conjunto os seguintes termos: $isPresent(X)$,$starts(ag_i,g_j)$ e $happensNegConseqForEvent(r_m)$.
+Por outro lados os predicados \textit{de controle} possuem um correspondente sintático e semântico no modelo mas os seus valores devem ser forçados conforme o cenário que se deseja criar ou conforme outras regras de implicabilidade que não fazem parte da estrutura deste modelo. A não determinação dos valores destes predicados inviabilizam que o modelo seja analisado de forma procedural. Portanto, a aplicabilidade deste modelo em um dado contexto a fim de fazer uma averiguação procedural dos fatos só pode ser feita por determinar os valores Verdade para esses predicados. Faz parte deste conjunto os seguintes termos: 
+
+\begin{itemize}
+    \item $isPresent(X)$
+    \item $starts(ag_i,g_j)$
+    \item $happensNegConseqFor(r_k)$
+\end{itemize}
 
 Pode-se considerar o seguinte exemplo: Um agente $ag_a$ deve executar o objetivo $g_1$ e $g_2$, os predicados a seguir implementam este modelo para o exemplo:
 

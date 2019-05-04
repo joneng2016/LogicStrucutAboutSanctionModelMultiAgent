@@ -1,25 +1,25 @@
 \babel@toc {brazil}{}
-\contentsline {table}{\numberline {1}{\ignorespaces Os agentes que constituem uma manuten\IeC {\c c}\IeC {\~a}o\relax }}{67}
-\contentsline {table}{\numberline {2}{\ignorespaces Os papeis relevantes para a ocorr\IeC {\^e}ncia da manuten\IeC {\c c}\IeC {\~a}o\relax }}{67}
-\contentsline {table}{\numberline {3}{\ignorespaces Rela\IeC {\c c}\IeC {\~a}o $adoptsRole(ag_n,\rho _m)$\relax }}{68}
-\contentsline {table}{\numberline {4}{\ignorespaces Definindo todos os artefatos presentes na manuten\IeC {\c c}\IeC {\~a}o\relax }}{69}
-\contentsline {table}{\numberline {5}{\ignorespaces Define e descreve os objetivos bem como os respectivos pr\IeC {\'e}-requisitos\relax }}{71}
-\contentsline {table}{\numberline {6}{\ignorespaces Define as condi\IeC {\c c}\IeC {\~o}es necess\IeC {\'a}rias para que a manuten\IeC {\c c}\IeC {\~a}o tenha possibilidade de acontecer\relax }}{72}
-\contentsline {table}{\numberline {7}{\ignorespaces Descri\IeC {\c c}\IeC {\~a}o das entidades em fun\IeC {\c c}\IeC {\~a}o das rela\IeC {\c c}\IeC {\~o}es\relax }}{73}
-\contentsline {table}{\numberline {8}{\ignorespaces Descri\IeC {\c c}\IeC {\~a}o das entidades em fun\IeC {\c c}\IeC {\~a}o das rela\IeC {\c c}\IeC {\~o}es\relax }}{74}
-\contentsline {table}{\numberline {9}{\ignorespaces Define o impacto que o erro em um relacionamento gera em outro relacionamento\relax }}{75}
-\contentsline {table}{\numberline {10}{\ignorespaces Define o impacto que o erro em um relacionamento gera em outro relacionamento\relax }}{76}
-\contentsline {table}{\numberline {11}{\ignorespaces Define o impacto que o erro em um relacionamento gera em outro relacionamento por mudar a possibilidade de algo errado acontecer.\relax }}{77}
-\contentsline {table}{\numberline {12}{\ignorespaces Objetivos que devem ser atingidos pelo agente que assumir um dada fun\IeC {\c c}\IeC {\~a}o\relax }}{78}
-\contentsline {table}{\numberline {13}{\ignorespaces Objetivos que devem ser atingidos pelo agente que assumir um dada fun\IeC {\c c}\IeC {\~a}o\relax }}{79}
-\contentsline {table}{\numberline {14}{\ignorespaces Objetivos que devem ser atingidos pelo agente que assumir um dada fun\IeC {\c c}\IeC {\~a}o\relax }}{80}
-\contentsline {table}{\numberline {15}{\ignorespaces Objetivos que devem ser atingidos pelo agente que assumir um dada fun\IeC {\c c}\IeC {\~a}o\relax }}{81}
-\contentsline {table}{\numberline {16}{\ignorespaces Entidades que formam os conjuntos $eg_n$. Cada conjunto destes est\IeC {\~a}o relacionados com um objetivo e determinam as entidades necess\IeC {\'a}rias para que o mesmo tenha codi\IeC {\c c}\IeC {\~a}o de ser alcan\IeC {\c c}ado.\relax }}{82}
-\contentsline {table}{\numberline {17}{\ignorespaces Relacionamentos que formam os conjuntos $rg_n$. Cada conjunto $rg_n$ est\IeC {\'a} relacionado com um objetivo A rela\IeC {\c c}\IeC {\~a}o entre $rg_n$ e $goal_m$ determina os relacionamentos necess\IeC {\'a}rios para que um dado objetivo tenha condi\IeC {\c c}\IeC {\~a}o de ser atingido.\relax }}{83}
-\contentsline {table}{\numberline {18}{\ignorespaces Relacionamentos que formam os conjuntos $rg_n$. Cada conjunto $rg_n$ est\IeC {\'a} relacionado com um objetivo A rela\IeC {\c c}\IeC {\~a}o entre $rg_n$ e $goal_m$ determina os relacionamentos necess\IeC {\'a}rios para que um dado objetivo tenha condi\IeC {\c c}\IeC {\~a}o de ser atingido.\relax }}{84}
-\contentsline {table}{\numberline {19}{\ignorespaces Todas as condi\IeC {\c c}\IeC {\~o}es que constituem o conjunto $cg_n$. Este conjunto est\IeC {\'a} relacionando com um ou mais objetivos e determina quais s\IeC {\~a}o as condi\IeC {\c c}\IeC {\~o}es que devem ser mantidas para que o agente tenha uma situa\IeC {\c c}\IeC {\~a}o razo\IeC {\'a}vel para tentar alcan\IeC {\c c}ar um certo objetivo\relax }}{84}
-\contentsline {table}{\numberline {20}{\ignorespaces Define a rela\IeC {\c c}\IeC {\~a}o entre os objetivos, conjuntos $rg_n$, $eg_n$ e $cg_n$ \relax }}{84}
-\contentsline {table}{\numberline {21}{\ignorespaces Define a rela\IeC {\c c}\IeC {\~a}o entre os objetivos, conjuntos $rg_n$, $eg_n$ e $cg_n$ \relax }}{85}
-\contentsline {table}{\numberline {22}{\ignorespaces Construtores da linguagem \textit {ACTIVITY-DL} \cite {v3sframework}\relax }}{99}
-\contentsline {table}{\numberline {23}{\ignorespaces As pr\IeC {\'e}-condi\IeC {\c c}\IeC {\~o}es poss\IeC {\'\i }veis para as atividades \cite {v3sframework}\relax }}{100}
-\contentsline {table}{\numberline {24}{\ignorespaces An\IeC {\'a}lise comparativa sobre a expressividade desses modelos no que tange aos objetivos deste estudo. A sigla P.E.R significa Possibilidade de Algo Errado, a sigla C.A consiste em Condi\IeC {\c c}\IeC {\~o}es Ambientes, a sigla I.AG.AR significa Intera\IeC {\c c}\IeC {\~a}o entre Agente e Artefato e a sigla D.C.A significa Descri\IeC {\c c}\IeC {\~a}o de Cen\IeC {\'a}rio de Acidente\relax }}{106}
+\contentsline {table}{\numberline {1}{\ignorespaces Os agentes que constituem uma manuten\IeC {\c c}\IeC {\~a}o\relax }}{68}
+\contentsline {table}{\numberline {2}{\ignorespaces Os papeis relevantes para a ocorr\IeC {\^e}ncia da manuten\IeC {\c c}\IeC {\~a}o\relax }}{68}
+\contentsline {table}{\numberline {3}{\ignorespaces Rela\IeC {\c c}\IeC {\~a}o $adoptsRole(ag_n,\rho _m)$\relax }}{69}
+\contentsline {table}{\numberline {4}{\ignorespaces Definindo todos os artefatos presentes na manuten\IeC {\c c}\IeC {\~a}o\relax }}{70}
+\contentsline {table}{\numberline {5}{\ignorespaces Define e descreve os objetivos bem como os respectivos pr\IeC {\'e}-requisitos\relax }}{72}
+\contentsline {table}{\numberline {6}{\ignorespaces Define as condi\IeC {\c c}\IeC {\~o}es necess\IeC {\'a}rias para que a manuten\IeC {\c c}\IeC {\~a}o tenha possibilidade de acontecer\relax }}{73}
+\contentsline {table}{\numberline {7}{\ignorespaces Descri\IeC {\c c}\IeC {\~a}o das entidades em fun\IeC {\c c}\IeC {\~a}o das rela\IeC {\c c}\IeC {\~o}es\relax }}{74}
+\contentsline {table}{\numberline {8}{\ignorespaces Descri\IeC {\c c}\IeC {\~a}o das entidades em fun\IeC {\c c}\IeC {\~a}o das rela\IeC {\c c}\IeC {\~o}es\relax }}{75}
+\contentsline {table}{\numberline {9}{\ignorespaces Define o impacto que o erro em um relacionamento gera em outro relacionamento\relax }}{76}
+\contentsline {table}{\numberline {10}{\ignorespaces Define o impacto que o erro em um relacionamento gera em outro relacionamento\relax }}{77}
+\contentsline {table}{\numberline {11}{\ignorespaces Define o impacto que o erro em um relacionamento gera em outro relacionamento por mudar a possibilidade de algo errado acontecer.\relax }}{78}
+\contentsline {table}{\numberline {12}{\ignorespaces Objetivos que devem ser atingidos pelo agente que assumir um dada fun\IeC {\c c}\IeC {\~a}o\relax }}{79}
+\contentsline {table}{\numberline {13}{\ignorespaces Objetivos que devem ser atingidos pelo agente que assumir um dada fun\IeC {\c c}\IeC {\~a}o\relax }}{80}
+\contentsline {table}{\numberline {14}{\ignorespaces Objetivos que devem ser atingidos pelo agente que assumir um dada fun\IeC {\c c}\IeC {\~a}o\relax }}{81}
+\contentsline {table}{\numberline {15}{\ignorespaces Objetivos que devem ser atingidos pelo agente que assumir um dada fun\IeC {\c c}\IeC {\~a}o\relax }}{82}
+\contentsline {table}{\numberline {16}{\ignorespaces Entidades que formam os conjuntos $eg_n$. Cada conjunto destes est\IeC {\~a}o relacionados com um objetivo e determinam as entidades necess\IeC {\'a}rias para que o mesmo tenha codi\IeC {\c c}\IeC {\~a}o de ser alcan\IeC {\c c}ado.\relax }}{83}
+\contentsline {table}{\numberline {17}{\ignorespaces Relacionamentos que formam os conjuntos $rg_n$. Cada conjunto $rg_n$ est\IeC {\'a} relacionado com um objetivo A rela\IeC {\c c}\IeC {\~a}o entre $rg_n$ e $goal_m$ determina os relacionamentos necess\IeC {\'a}rios para que um dado objetivo tenha condi\IeC {\c c}\IeC {\~a}o de ser atingido.\relax }}{84}
+\contentsline {table}{\numberline {18}{\ignorespaces Relacionamentos que formam os conjuntos $rg_n$. Cada conjunto $rg_n$ est\IeC {\'a} relacionado com um objetivo A rela\IeC {\c c}\IeC {\~a}o entre $rg_n$ e $goal_m$ determina os relacionamentos necess\IeC {\'a}rios para que um dado objetivo tenha condi\IeC {\c c}\IeC {\~a}o de ser atingido.\relax }}{85}
+\contentsline {table}{\numberline {19}{\ignorespaces Todas as condi\IeC {\c c}\IeC {\~o}es que constituem o conjunto $cg_n$. Este conjunto est\IeC {\'a} relacionando com um ou mais objetivos e determina quais s\IeC {\~a}o as condi\IeC {\c c}\IeC {\~o}es que devem ser mantidas para que o agente tenha uma situa\IeC {\c c}\IeC {\~a}o razo\IeC {\'a}vel para tentar alcan\IeC {\c c}ar um certo objetivo\relax }}{85}
+\contentsline {table}{\numberline {20}{\ignorespaces Define a rela\IeC {\c c}\IeC {\~a}o entre os objetivos, conjuntos $rg_n$, $eg_n$ e $cg_n$ \relax }}{85}
+\contentsline {table}{\numberline {21}{\ignorespaces Define a rela\IeC {\c c}\IeC {\~a}o entre os objetivos, conjuntos $rg_n$, $eg_n$ e $cg_n$ \relax }}{86}
+\contentsline {table}{\numberline {22}{\ignorespaces Construtores da linguagem \textit {ACTIVITY-DL} \cite {v3sframework}\relax }}{100}
+\contentsline {table}{\numberline {23}{\ignorespaces As pr\IeC {\'e}-condi\IeC {\c c}\IeC {\~o}es poss\IeC {\'\i }veis para as atividades \cite {v3sframework}\relax }}{101}
+\contentsline {table}{\numberline {24}{\ignorespaces An\IeC {\'a}lise comparativa sobre a expressividade desses modelos no que tange aos objetivos deste estudo. A sigla P.E.R significa Possibilidade de Algo Errado, a sigla C.A consiste em Condi\IeC {\c c}\IeC {\~o}es Ambientes, a sigla I.AG.AR significa Intera\IeC {\c c}\IeC {\~a}o entre Agente e Artefato e a sigla D.C.A significa Descri\IeC {\c c}\IeC {\~a}o de Cen\IeC {\'a}rio de Acidente\relax }}{107}
