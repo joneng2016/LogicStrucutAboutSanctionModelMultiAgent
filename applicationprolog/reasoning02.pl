@@ -11,9 +11,9 @@ stopIn(GOAL) :- consequenceOfBadEvent(GOAL,AGENT,RISK,FATALITY).
 isReached(GOAL) :- notStopIn(GOAL,AGENTDONETHIS),isSubSet(AGENTDONETHIS,AGENTOBLIGATIOTHIS).
 
 
-hasRole(agente2,executor1).
-hasRole(agente3,executor1).
-hasRole(agente4,executor2).
+adoptsRole(agente2,executor1).
+adoptsRole(agente3,executor1).
+adoptsRole(agente4,executor2).
 hasObligation(executor1,goal1).
 hasObligation(executor2,goal1).
 tryReach(agente2,goal1).

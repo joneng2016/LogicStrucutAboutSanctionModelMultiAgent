@@ -11,13 +11,13 @@ stopIn(GOAL) :- consequenceOfBadEvent(GOAL,AGENT,RISK,FATALITY).
 isReached(GOAL) :- notStopIn(GOAL,AGENTDONETHIS),isSubSet(AGENTDONETHIS,AGENTOBLIGATIOTHIS).
 
 
-hasRole(agente1,supervisor).
-hasRole(agente2,executor1).
-hasRole(agente3,executor1).
-hasRole(agente4,executor2).
-hasRole(agente5,executor3).
-hasRole(agente6,executor4).
-hasRole(agente7,executor5).
+adoptsRole(agente1,supervisor).
+adoptsRole(agente2,executor1).
+adoptsRole(agente3,executor1).
+adoptsRole(agente4,executor2).
+adoptsRole(agente5,executor3).
+adoptsRole(agente6,executor4).
+adoptsRole(agente7,executor5).
 
 hasRisk(umidadesetenta,eletrocutado,morte).
 hasRisk(novento,eletrocutado,morte).

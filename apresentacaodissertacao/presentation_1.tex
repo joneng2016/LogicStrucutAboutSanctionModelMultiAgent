@@ -290,7 +290,7 @@ Universidade Tecnológica Federal do Paraná \\ % Your institution for the title
 		thereIsRelation(r_l,e_i,e_k) | r_l \in Relation \wedge  e_i, e_k \in Entity
 	\end{equation}
 	\begin{equation}	
-		hasRole(ag_n,\rho_m) | ag_n \in Agent \wedge \rho_m \in Role 	
+		adoptsRole(ag_n,\rho_m) | ag_n \in Agent \wedge \rho_m \in Role 	
 	\end{equation}
 	\begin{equation}	
 		hasObligation(\rho_m,g_j) | \rho_m \in Role, g_j \in Goal 
@@ -454,13 +454,13 @@ Universidade Tecnológica Federal do Paraná \\ % Your institution for the title
 \begin{frame}
 	\frametitle{Resultados - Regras}
 	\begin{eqnarray}\label{rolenextgoal}
-		hasRole(ag_n,\rho_m) \wedge hasPermission(\rho_m,g_j) \wedge nextGoal(g_i,g_j) \nonumber \\
+		adoptsRole(ag_n,\rho_m) \wedge hasPermission(\rho_m,g_j) \wedge nextGoal(g_i,g_j) \nonumber \\
 		\wedge isReached(g_i) \nonumber \\
 		\to ableTryReach(ag_i,g_j) \nonumber \\
 	    ag_i, ag_n \in Agent, \rho_m \in Role, g_j \in Goal, g_i \in Goal
 	\end{eqnarray}
 	\begin{eqnarray}\label{rolelastgoal}
-		hasRole(ag_n,\rho_m) \wedge hasPermission(\rho_m,g_i) \wedge \nonumber \\
+		adoptsRole(ag_n,\rho_m) \wedge hasPermission(\rho_m,g_i) \wedge \nonumber \\
 		lastGoal(g_i,\rho_m) \wedge isReached(g_i) \nonumber \\
 		\to stopIn(g_i) \nonumber \\
 	    ag_n \in Agent, \rho_m \in Role, g_i \in Goal
@@ -469,7 +469,7 @@ Universidade Tecnológica Federal do Paraná \\ % Your institution for the title
 \begin{frame}
 	\frametitle{Resultados - Tipos de Predicados}
 	\begin{itemize}
-		\item Fechados: $thereIsRelation(r_l,e_i,e_k)$, $hasRole(ag_n,\rho_m)$, $hasObligation(\rho_m,g_j)$,
+		\item Fechados: $thereIsRelation(r_l,e_i,e_k)$, $adoptsRole(ag_n,\rho_m)$, $hasObligation(\rho_m,g_j)$,
 		$hasPermission(\rho_m, g_j)$, $isReached(g_k)$, $stopIn(g_n, ag_m)$, $nextGoal(g_i,g_j)$, $hasCondition(g_i,cg_n)$,
 		$hasEntity(g_i,eg_m)$, $hasRelation(g_i,rg_m)$, $violationCondition(ag_i,g_j,c_k) $, $ violationRelation(ag_i,g_j,r_k) $,
 		$ violationEntity(ag_i,g_j,e_k) $,  $ hasRisk(X, risk_j, cs_k) $, $possibilityHappensBadEvent(r_l)$, $ableTryReach(ag_i,g_j)$ 
@@ -491,7 +491,7 @@ Universidade Tecnológica Federal do Paraná \\ % Your institution for the title
 \begin{frame}
 	\frametitle{Resultados - Raciocínio 1}
 	\begin{enumerate}
-		\item $hasRole(agente4,executor2)$ 
+		\item $adoptsRole(agente4,executor2)$ 
 		\item $hasObligation(executor2,g1)$
 		\item $hasRelation(g1,rg1)$ 
 		\item $relPanoCorda \in rg1$
@@ -524,9 +524,9 @@ Universidade Tecnológica Federal do Paraná \\ % Your institution for the title
 \begin{frame}
 	\frametitle{Resultados - Raciocínio 2}
 	\begin{enumerate}
-		\item $hasRole(agente2,executor1)$ 
-		\item $hasRole(agente3,executor1)$	 	
-		\item $hasRole(agente4,executor2)$	 
+		\item $adoptsRole(agente2,executor1)$ 
+		\item $adoptsRole(agente3,executor1)$	 	
+		\item $adoptsRole(agente4,executor2)$	 
 		\item $hasObligation(executor1,g1)$
 		\item $hasObligation(executor2,g1)$
 		\item $tryReach(agente2,g1)$ 
@@ -571,7 +571,7 @@ Universidade Tecnológica Federal do Paraná \\ % Your institution for the title
 \begin{frame}
 	\frametitle{Resultados - Raciocínio 3}
 	\begin{enumerate}
-		\item $hasRole(agente5,executor3)$
+		\item $adoptsRole(agente5,executor3)$
 		\item $hasObligation(executor3,g11)$	
 		\item $tryReach(agente5,g11)$ 
 		\item $hasCondition(g11,cg1)$
@@ -605,7 +605,7 @@ Universidade Tecnológica Federal do Paraná \\ % Your institution for the title
 \begin{frame}
 	\frametitle{Resultados - Raciocínio 4}
 	\begin{enumerate}
-		\item $hasRole(agente4,executor2)$
+		\item $adoptsRole(agente4,executor2)$
 		\item $hasObligation(executor4,g15)$	
 		\item $tryReach(agente4,g15)$ 
 		\item $hasRelation(g15,rg15)$
@@ -647,9 +647,9 @@ Universidade Tecnológica Federal do Paraná \\ % Your institution for the title
 		\item $tryReach(agente5,g19)$
 		\item $tryReach(agente6,g19)$
 		\item $tryReach(agente7,g19)$									
-		\item $hasRole(agente5,executor3)$
-		\item $hasRole(agente6,executor4)$
-		\item $hasRole(agente7,executor5)$
+		\item $adoptsRole(agente5,executor3)$
+		\item $adoptsRole(agente6,executor4)$
+		\item $adoptsRole(agente7,executor5)$
 		\item $hasRisk(relParafusoConector,eletrocutado,morte)$
 		\item $possibilityHappensBadEvent(relParafusoConector)$
 		\item $happensBadEvent(g19,relParafusoConector)$	

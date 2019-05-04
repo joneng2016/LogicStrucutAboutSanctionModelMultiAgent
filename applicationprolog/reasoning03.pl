@@ -11,7 +11,7 @@ consequenceOfBadEvent(GOAL,AGENT,RISK,FATALITY) :- hasRelation(GOAL,RELATIONSET)
 isReached(GOAL) :- notStopIn(GOAL,AGENTDONETHIS),isSubSet(AGENTDONETHIS,AGENTOBLIGATIOTHIS).
 
 
-hasRole(agente5,executor3).
+adoptsRole(agente5,executor3).
 hasObligation(executor3,goal11).
 tryReach(agente5,goal11).
 hasCondition(goal11,cg1).

@@ -100,7 +100,7 @@ Sete profissionais de linha viva (profissionais que realizam manutenção em equ
 
 \begin{enumerate}
 	\item $relationHas(r_l,e_i,e_k)$ onde $i \neq j$ - Um determinado relacionamento $r_l$ é composto por uma entidade $e_i$ e $e_k$ onde $e_i$ não pode ser igual a $e_j$.	
-	\item $hasRole(ag_n,\rho_m)$ - Um determinado agente $ag_n$ tem um determinado papel $\rho_m$.
+	\item $adoptsRole(ag_n,\rho_m)$ - Um determinado agente $ag_n$ tem um determinado papel $\rho_m$.
 	\item $hasObligation(\rho_m,g_j)$ - Quem assume o papel $\rho_m$ é obrigado a concluir o objetivo $g_j$.
 	\item $hasPermission(\rho_m,g_j)$ - Quem assume o papel $\rho_m$ tem a permissão de concluir o objetivo $g_j$.
 	\item $isReached(g_k)$ - O objetivo $g_k$ foi alcançado.
@@ -296,7 +296,7 @@ Essa subseção tem como por finalidade especificar o estudo de caso em interess
 
 
 
-A tabela \ref{agents} apresenta todos os agentes que fazem parte da manutenção. A tabela \ref{roles} apresenta todas as funções que deverão ser exercidas pelos agentes. A tabela \ref{agentsroles} define a relação $hasRole(ag_n,\rho_m)$ onde $ag_n$ é representado pela coluna agente e $\rho_m$ é representado pela coluna papel.
+A tabela \ref{agents} apresenta todos os agentes que fazem parte da manutenção. A tabela \ref{roles} apresenta todas as funções que deverão ser exercidas pelos agentes. A tabela \ref{agentsroles} define a relação $adoptsRole(ag_n,\rho_m)$ onde $ag_n$ é representado pela coluna agente e $\rho_m$ é representado pela coluna papel.
 
 \begin{table}[H]
 \scalefont{0.8}
@@ -349,7 +349,7 @@ agente5 & executor3 \\ \hline
 agente6 & executor4 \\ \hline
 agente7 & executor5 \\ \hline
 \end{tabular}
-\caption{Relação $hasRole(ag_n,\rho_m)$}
+\caption{Relação $adoptsRole(ag_n,\rho_m)$}
 \label{agentsroles}
 \end{table}
 
@@ -921,7 +921,7 @@ Uma vez que o modelo foi definido e que foi implementado em um estudo de caso, �
 O raciocínio a seguir mostra o que acontece se o $agente4$ esquecer de passar o pano no bastão universal $relPanoGlicerina$ designados a ele no objetivo $goal1$. Todos os possíveis predicados vinculados a essa situação são;
 
 \begin{enumerate}
-	\item $hasRole(agente4,executor2)$ 
+	\item $adoptsRole(agente4,executor2)$ 
 	\item $hasObligation(executor2,g1)$
 	\item $hasRelation(g1,rg1)$ 
 	\item $relPanoCorda \in rg1$
@@ -1026,9 +1026,9 @@ O raciocínio a seguir mostra o que acontece se o pano não estiver presente no 
 
 
 \begin{enumerate}
-	\item $hasRole(agente2,executor1)$ 
-	\item $hasRole(agente3,executor1)$	 	
-	\item $hasRole(agente4,executor2)$	 
+	\item $adoptsRole(agente2,executor1)$ 
+	\item $adoptsRole(agente3,executor1)$	 	
+	\item $adoptsRole(agente4,executor2)$	 
 	\item $hasObligation(executor1,g1)$
 	\item $hasObligation(executor2,g1)$
 	\item $tryReach(agente2,goal1)$ 
@@ -1071,7 +1071,7 @@ O raciocínio a seguir mostra o que acontece se o pano não estiver presente no 
 O raciocínio a seguir mostra o que acontece se o $agente5$ tentar alcançar o objetivo $goal11$ com a umidade relativa do ar superior a setenta porcento. A lista a seguir exibe todos os predicados necessários para averiguar essa condião de mundo. 
 
 \begin{enumerate}
-	\item $hasRole(agente5,executor3)$
+	\item $adoptsRole(agente5,executor3)$
 	\item $hasObligation(executor3,goal11)$	
 	\item $tryReach(agente5,goal11)$ 
 	\item $hasCondition(g11,cg1)$
@@ -1103,7 +1103,7 @@ O raciocínio a seguir mostra o que acontece se o $agente5$ tentar alcançar o o
 O raciocínio a seguir mostra o que acontece se o $agente3$ errar a forma adequada de realizar o relacionamento $relChaveCatracaParafuso$ no objetivo $goal15$. Os predicados envolvidos são;
 
 \begin{enumerate}
-	\item $hasRole(agente4,executor2)$
+	\item $adoptsRole(agente4,executor2)$
 	\item $hasObligation(executor4,goal15)$	
 	\item $tryReach(agente4,g15)$ 
 	\item $hasRelation(g15,rg15)$
@@ -1145,9 +1145,9 @@ A finalidade dessa demonstração consiste em mostrar como um agente pode ser su
 	\item $tryReach(agente5,g19)$
 	\item $tryReach(agente6,g19)$
 	\item $tryReach(agente7,g19)$									
-	\item $hasRole(agente5,executor3)$
-	\item $hasRole(agente6,executor4)$
-	\item $hasRole(agente7,executor5)$
+	\item $adoptsRole(agente5,executor3)$
+	\item $adoptsRole(agente6,executor4)$
+	\item $adoptsRole(agente7,executor5)$
 	\item $hasRisk(relParafusoTorre,eletrocutado,morte)$
 	\item $hasPossibility(relParafusoTorre,true)$
 	\item $happensBadEvent(g19,relParafusoTorre)$	
@@ -1220,7 +1220,7 @@ O objetivo $g23$ deve ser atingido pelos agentes com as funções de $executor1$
 O raciocínio para o caso onde $agente1$ tente alcançar o objetivo $g23$.  
 
 \begin{enumerate}
-	\item $hasRole(agente1,supervisor)$
+	\item $adoptsRole(agente1,supervisor)$
 	\item $hasObligation(agente1,g23) \to F$										
 \end{enumerate}
 
