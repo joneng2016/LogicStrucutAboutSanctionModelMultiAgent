@@ -178,7 +178,7 @@ sol & O dia deve estar ensolarado & eletrocutado & morte \\ \hline
 \end{table}
 
 
-As tabelas \ref{relationEntEnt1}, \ref{relationEntEnt2} apresentam a especificação para dois predicados onde uma deles é $thereIsRelation(r_l,e_i,e_k)$ 
+As tabelas \ref{relationEntEnt1}, \ref{relationEntEnt2} apresentam a especificação para dois predicados onde uma deles é $possEntityRel(r_l,e_i,e_k)$ 
 tal que $r_l$ é definido pela coluna \textit{relacionamento}, $e_i$ e $e_k$ pelas \textit{entidades envolvidas}. 
 O outro predicado é dado por $hasRisk(r_k,risk_j,cs_m)$ onde $risk_j$ é dado pela coluna risco e $cs_m$ é dado pela coluna $consequencia$. 
 Algumas relações (instâncias do conjunto $Relation$) serão apresentadas usando o termo $X$. O objetivo disto consiste tornar as tabelas mais enxutas por intermédio de uma regra a qual é;
@@ -666,7 +666,7 @@ umidade70,noVento,noChuva,sol & cg1         \\ \hline
 \end{table}
 
 
-As tabelas \ref{goalsrelationsentity1} e \ref{goalsrelationsentity2} definem o predicado $hasRelation(g_i,rg_n)$ onde a coluna objetivo é representada por $g_i$, define o predicado  $hasEntity(g_i,eg_m)$ e o predicado $hasCondition(g_i,cg_n)$.  
+As tabelas \ref{goalsrelationsentity1} e \ref{goalsrelationsentity2} definem o predicado $hasRelation(g_i,rg_n)$ onde a coluna objetivo é representada por $g_i$, define o predicado  $requiresEntity(g_i,eg_m)$ e o predicado $requiresCirc(g_i,cg_n)$.  
 
 \begin{table}[H]
 \centering

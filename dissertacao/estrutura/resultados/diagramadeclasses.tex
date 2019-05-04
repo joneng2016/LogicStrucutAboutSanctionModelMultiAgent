@@ -13,10 +13,10 @@ As relações \textit{hasObligation}, \textit{hasPermission} se dão por meio de
 
 Em \textit{UML} e relação de conjunto-subconjunto entre $Circumstance$ com $Relation$ e com $Condition$ é definida por meio de classes que possuem esses mesmos nomes. No \textit{UML}, as clases $Relation$ e $Condition$ são extensões da classe $Circumstance$. Dado essa situação, é possível representar a relação \textit{hasRisk} que ocorre entre $Circumstance$, $Relation$ e $Risk$ e isso é feito por meio do ternário entre essas classes. 
 
-Um objetivo não pode ser definido sem saber quais são as entidades $Entity$, relações $Relation$ e consequências $Consequence$ necessários para que seja alcançado. Por isso os predicados $hasCondition$,$hasEntity$ e $hasRelation$ estabelecem composição forte de suas respectivas classes com $Goal$. Como um objetivo pode apontar para diversas instâncias dessas classes, os pesquisadores optaram - para cada uma das relações - trabalhar com a cardinalidade 
+Um objetivo não pode ser definido sem saber quais são as entidades $Entity$, relações $Relation$ e consequências $Consequence$ necessários para que seja alcançado. Por isso os predicados $requiresCirc$,$requiresEntity$ e $hasRelation$ estabelecem composição forte de suas respectivas classes com $Goal$. Como um objetivo pode apontar para diversas instâncias dessas classes, os pesquisadores optaram - para cada uma das relações - trabalhar com a cardinalidade 
 $1 - 1 .. *$.
 
-No modelo proposto $Relation$ deve estar relacionada com duas entidades. Por esse motivo o predicado $thereIsRelation$ faz composição forte com $Entity$ e a sua cardinalidade é dada $1 - 2$. 
+No modelo proposto $Relation$ deve estar relacionada com duas entidades. Por esse motivo o predicado $possEntityRel$ faz composição forte com $Entity$ e a sua cardinalidade é dada $1 - 2$. 
 
 A classe $Goal$ possui uma relação consigo mesma dada por $nextGoal$. Essa é uma agregação fraca, pois do contrários seria impossível haver uma única instância desta classe. Isso se deve ao fato de que a primeira instância necessitaria de uma instância de $Goal$ para existir. Contudo, como não há um elemento de $Goal$ antes do primeiro elemento de $Goal$, logo esse primeiro elemento não pode existir. Um objetivo poder ter como próximo um ou mais objetivos, justificando a ocorrência da cardinalidade $1 .. n$. 
 

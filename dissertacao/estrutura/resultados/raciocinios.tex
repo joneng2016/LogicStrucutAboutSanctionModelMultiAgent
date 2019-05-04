@@ -98,27 +98,27 @@ O raciocínio a seguir mostra o que acontece se o pano não estiver presente no 
 	\item $tryReach(agente2,g1)$ 
 	\item $tryReach(agente3,g1)$	 	
 	\item $tryReach(agente4,g1)$	
-	\item $hasEntity(g1,eg1)$		
+	\item $requiresEntity(g1,eg1)$		
 	\item $pano \in eg1$
 	\item $\neg isPresent(pano)$
 \end{enumerate}
 
 \begin{eqnarray}\nonumber
-	hasEntity(g1,eg1) \nonumber \\ 
+	requiresEntity(g1,eg1) \nonumber \\ 
 	\wedge \neg isPresent(pano) 	\nonumber \\ 
 	\wedge (pano \in eg1) \wedge tryReach(agente2,g1) \to \nonumber \\ 
 	violationEntity(agent2,g1,pano) \nonumber \\
 \end{eqnarray}
 
 \begin{eqnarray}\nonumber
-	hasEntity(g1,eg1) \nonumber \\ 
+	requiresEntity(g1,eg1) \nonumber \\ 
 	\wedge \neg isPresent(pano) 	\nonumber \\ 
 	\wedge (pano \in eg1) \wedge tryReach(agente3,g1) \to \nonumber \\ 
 	violationEntity(agente3,g1,pano) \nonumber \\
 \end{eqnarray}
 
 \begin{eqnarray}\nonumber
-	hasEntity(g1,eg1) \nonumber \\ 
+	requiresEntity(g1,eg1) \nonumber \\ 
 	\wedge \neg isPresent(pano) 	\nonumber \\ 
 	\wedge (pano \in eg1) \wedge tryReach(agente4,g1) \to \nonumber \\ 
 	violationEntity(agente4,g1,pano) \nonumber \\
@@ -139,14 +139,14 @@ O raciocínio a seguir mostra o que acontece se o $agente5$ tentar alcançar o o
 	\item $adoptsRole(agente5,executor3)$
 	\item $hasObligation(executor3,g11)$	
 	\item $tryReach(agente5,g11)$ 
-	\item $hasCondition(g11,cg1)$
+	\item $requiresCirc(g11,cg1)$
 	\item $umidade70 \in cg1$	
 	\item $\neg isPresent(umidade70)$
 	\item $hasRisk(umidade70,eletrocutado,morte)$
 \end{enumerate}
 
 \begin{eqnarray}
-	hasCondition(g11,cg1) \nonumber \\ 
+	requiresCirc(g11,cg1) \nonumber \\ 
 	\wedge \neg isPresent(umidade70) \nonumber \\
 	\wedge umidade70 \in cg1 \nonumber \\
 	\wedge tryReach(agente5,g11) \to \nonumber \\  
