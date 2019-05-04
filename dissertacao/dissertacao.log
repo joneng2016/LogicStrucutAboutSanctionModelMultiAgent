@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.17)  4 MAY 2019 12:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.17)  4 MAY 2019 14:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1064,7 +1064,7 @@ Package pdftex.def Info: figure/DiagramaDeAtividade.png  used on input line 11.
 (pdftex.def)             Requested size: 455.24411pt x 594.88557pt.
  [58]
 [59 <./figure/DiagramaDeAtividade.png>]) [60]
-(./estrutura/resultados/cenariospredicadosabertos.tex [61] [62] [63]) [64]
+(./estrutura/resultados/cenariospredicadosabertos.tex [61] [62] [63] [64])
 (./estrutura/resultados/casodeestudo.tex [65]
 LaTeX Font Info:    Calculating math sizes for size <9.60004> on input line 31.
 
@@ -1074,12 +1074,12 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.10406> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 31.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5.76007> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 31.
- [66] [67] [68] [69] [70]
+ [66] [67] [68] [69] [70] [71]
 Overfull \hbox (10.42258pt too wide) in paragraph at lines 168--176
  [][] 
  []
 
-[71]
+[72]
 LaTeX Font Info:    Calculating math sizes for size <7.20007> on input line 216
 .
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.20007> not available
@@ -1088,11 +1088,11 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5.32808> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 216.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <4.32008> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 216.
- [72]
+ [73]
 Overfull \vbox (6.99138pt too high) has occurred while \output is active []
 
 
-[73] [74] [75] [76] [77] [78] [79]
+[74] [75] [76] [77] [78] [79] [80]
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <9.60004> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 565.
 
@@ -1100,7 +1100,7 @@ Overfull \hbox (25.489pt too wide) in paragraph at lines 562--594
  [][] 
  []
 
-[80]
+[81]
 LaTeX Font Info:    Calculating math sizes for size <8.39996> on input line 603
 .
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8.39996> not available
@@ -1109,62 +1109,62 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6.21602> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 603.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5.04002> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 603.
- [81] [82]) [83] (./estrutura/resultados/raciocinios.tex [84] [85] [86]
-[87] [88] [89] [90] [91] [92]) (./estrutura/resultados/validacao.tex [93])
-[94]
+ [82] [83]) [84] (./estrutura/resultados/raciocinios.tex [85] [86] [87]
+[88] [89] [90] [91] [92] [93]) (./estrutura/resultados/validacao.tex [94])
+[95]
 Cap\'{\i }tulo 5.
 (./estrutura/analisecomparativa/generaldiscuss.tex
 
-LaTeX Warning: Reference `application' on page 95 undefined on input line 2.
+LaTeX Warning: Reference `application' on page 96 undefined on input line 2.
 
 ) (./estrutura/resultados/generalanalisecomparativa.tex)
-(./estrutura/analisecomparativa/genmoise.tex [95
+(./estrutura/analisecomparativa/genmoise.tex [96
 
 ])
-(./estrutura/analisecomparativa/gendastani.tex [96])
+(./estrutura/analisecomparativa/gendastani.tex [97])
 (./estrutura/analisecomparativa/genvs3.tex
-<figure/ontologyv3.png, id=355, 496.85625pt x 256.70906pt>
+<figure/ontologyv3.png, id=358, 496.85625pt x 256.70906pt>
 File: figure/ontologyv3.png Graphic file (type png)
 <use figure/ontologyv3.png>
 Package pdftex.def Info: figure/ontologyv3.png  used on input line 8.
 (pdftex.def)             Requested size: 227.62206pt x 117.60579pt.
 )
-(./estrutura/analisecomparativa/estvs3.tex [97 <./figure/ontologyv3.png>]
+(./estrutura/analisecomparativa/estvs3.tex [98 <./figure/ontologyv3.png>]
 Overfull \hbox (45.19539pt too wide) in paragraph at lines 36--44
 [][] 
  []
 
-[98] [99]
-<figure/bowtie.png, id=367, 673.76718pt x 443.40656pt>
+[99] [100]
+<figure/bowtie.png, id=370, 673.76718pt x 443.40656pt>
 File: figure/bowtie.png Graphic file (type png)
 <use figure/bowtie.png>
 Package pdftex.def Info: figure/bowtie.png  used on input line 56.
 (pdftex.def)             Requested size: 227.62206pt x 149.79549pt.
- [100 <./figure/bowtie.png>] [101])
+ [101 <./figure/bowtie.png>] [102])
 (./estrutura/analisecomparativa/genormas.tex)
-(./estrutura/analisecomparativa/estnormas.tex [102])
-(./estrutura/analisecomparativa/estcartago.tex [103])
-(./estrutura/analisecomparativa/compnormas.tex [104])
-(./estrutura/analisecomparativa/constresult.tex [105] [106] [107] [108]
-[109] [110] [111] [112]) [113] [114]
+(./estrutura/analisecomparativa/estnormas.tex [103])
+(./estrutura/analisecomparativa/estcartago.tex [104])
+(./estrutura/analisecomparativa/compnormas.tex [105])
+(./estrutura/analisecomparativa/constresult.tex [106] [107] [108] [109]
+[110] [111] [112] [113]) [114] [115]
 Cap\'{\i }tulo 6.
 (./estrutura/conclusao/genconclusao.tex)
-(./estrutura/conclusao/avaliacaodosobjetivos.tex) [115
+(./estrutura/conclusao/avaliacaodosobjetivos.tex) [116
 
 ]
-(./estrutura/conclusao/trabalhosfuturos.tex) [116] (./dissertacao.bbl [117
+(./estrutura/conclusao/trabalhosfuturos.tex) [117] (./dissertacao.bbl [118
 
 
 ]
-[118]) [119]
+[119]) [120]
 Apendice A.
-[120
+[121
 
 ]
 Anexo A.
 
 AED: lastpage setting LastPage
-[121
+[122
 
 ]
 +-------------------------------------------------------------------+
@@ -1182,7 +1182,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  7610 strings out of 494903
  113623 string characters out of 6179960
- 194104 words of memory out of 5000000
+ 194105 words of memory out of 5000000
  10519 multiletter control sequences out of 15000+600000
  94236 words of font info for 211 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
@@ -1197,10 +1197,10 @@ usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/times/utmri8a.pfb>
-Output written on dissertacao.pdf (126 pages, 1349290 bytes).
+Output written on dissertacao.pdf (127 pages, 1349850 bytes).
 PDF statistics:
- 477 PDF objects out of 1000 (max. 8388607)
- 314 compressed objects within 4 object streams
+ 481 PDF objects out of 1000 (max. 8388607)
+ 317 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
