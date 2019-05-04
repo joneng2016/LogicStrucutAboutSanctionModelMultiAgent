@@ -9,7 +9,7 @@ O raciocínio a seguir mostra o que acontece se o $agente4$ esquecer de passar g
 Todos os predicados vinculados a essa situação são;
 
 \begin{enumerate}
-	\item $hasRole(agente4,executor2)$ 
+	\item $adoptsRole(agente4,executor2)$ 
 	\item $hasObligation(executor2,g1)$
 	\item $hasRelation(g1,rg1)$ 
 	\item $relPanoCorda \in rg1$
@@ -90,9 +90,9 @@ O raciocínio a seguir mostra o que acontece se o pano não estiver presente no 
 
 
 \begin{enumerate}
-	\item $hasRole(agente2,executor1)$ 
-	\item $hasRole(agente3,executor1)$	 	
-	\item $hasRole(agente4,executor2)$	 
+	\item $adoptsRole(agente2,executor1)$ 
+	\item $adoptsRole(agente3,executor1)$	 	
+	\item $adoptsRole(agente4,executor2)$	 
 	\item $hasObligation(executor1,g1)$
 	\item $hasObligation(executor2,g1)$
 	\item $tryReach(agente2,g1)$ 
@@ -136,7 +136,7 @@ O raciocínio a seguir mostra o que acontece se o pano não estiver presente no 
 O raciocínio a seguir mostra o que acontece se o $agente5$ tentar alcançar o objetivo $g11$ com a umidade relativa do ar superior a setenta porcento. A lista a seguir exibe todos os predicados necessários para averiguar essa condição de mundo. 
 
 \begin{enumerate}
-	\item $hasRole(agente5,executor3)$
+	\item $adoptsRole(agente5,executor3)$
 	\item $hasObligation(executor3,g11)$	
 	\item $tryReach(agente5,g11)$ 
 	\item $hasCondition(g11,cg1)$
@@ -168,7 +168,7 @@ O raciocínio a seguir mostra o que acontece se o $agente5$ tentar alcançar o o
 O raciocínio a seguir mostra o que acontece se o $agente3$ errar a forma adequada de realizar o relacionamento $relChaveCatracaParafuso$ no objetivo $g15$. Os predicados envolvidos são;
 
 \begin{enumerate}
-	\item $hasRole(agente4,executor2)$
+	\item $adoptsRole(agente4,executor2)$
 	\item $hasObligation(executor4,g15)$	
 	\item $tryReach(agente4,g15)$ 
 	\item $hasRelation(g15,rg15)$
@@ -210,9 +210,9 @@ A finalidade dessa demonstração consiste em mostrar como um agente pode ser su
 	\item $tryReach(agente5,g19)$
 	\item $tryReach(agente6,g19)$
 	\item $tryReach(agente7,g19)$									
-	\item $hasRole(agente5,executor3)$
-	\item $hasRole(agente6,executor4)$
-	\item $hasRole(agente7,executor5)$
+	\item $adoptsRole(agente5,executor3)$
+	\item $adoptsRole(agente6,executor4)$
+	\item $adoptsRole(agente7,executor5)$
 	\item $hasRisk(relParafusoConector,eletrocutado,morte)$
 	\item $possibilityHappensBadEvent(relParafusoConector)$
 	\item $happensBadEvent(g19,relParafusoConector)$	
@@ -291,7 +291,7 @@ Esse raciocínio tem a finalidade de mostrar como se dá os raciocínios para qu
 O raciocínio para o caso onde $agente1$ tente alcançar o objetivo $g23$.  
 
 \begin{enumerate}
-	\item $hasRole(agente1,supervisor)$
+	\item $adoptsRole(agente1,supervisor)$
 	\item $hasObligation(agente1,g23) \to F$										
 \end{enumerate}
 

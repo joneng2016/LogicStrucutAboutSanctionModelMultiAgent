@@ -1,6 +1,6 @@
 Esse estudo apresenta duas categorias de predicados: \textit{abertos} e \textit{fechados}. Os predicados fechados são aqueles cujo usuário do modelo não possui a liberdade de definir sua estrutura interna por intermédio de outras regras lógicas ou por valores. Isso se dever ao fato de que esses vocábulos tem sua estrutura alicerçada nas concepções deste modelo sendo que são essenciais para que o modelo funcione como foi concebido para ser. Assim sendo, o modelador deve fazer uso delas apenas com o propósito de especificar os objetos de interesse. Em termos práticos não existe dificuldade em identificar esses predicados, pois sua própria natureza não abre margem para que o modelador consiga escrever novos predicados e novas regras para determinar o seu respectivo valor. 
 
-Esses predicados são $thereIsRelation(r_l,e_i,e_k)$, $hasRole(ag_n,\rho_m)$, $hasObligation(\rho_m,g_j)$,
+Esses predicados são $thereIsRelation(r_l,e_i,e_k)$, $adoptsRole(ag_n,\rho_m)$, $hasObligation(\rho_m,g_j)$,
 $hasPermission(\rho_m, g_j)$, $isReached(g_k)$, $stopIn(g_n, ag_m)$, $nextGoal(g_i,g_j)$, $hasCondition(g_i,cg_n)$,
 $hasEntity(g_i,eg_m)$, $hasRelation(g_i,rg_m)$, $violationCondition(ag_i,g_j,c_k) $, $ violationRelation(ag_i,g_j,r_k) $,
 $ violationEntity(ag_i,g_j,e_k) $,  $ hasRisk(X, risk_j, cs_k) $, $possibilityHappensBadEvent(r_l)$, 
@@ -31,7 +31,7 @@ Pode-se considerar o seguinte exemplo: Um agente $ag_a$ deve executar o objetivo
     \item $ affectsOtherRelations(rAB,rCE) $ 
     \item $hasRisk(cg_1,risk_1,cs_1)$
     \item $hasRisk(rCE,risk_2,cs_2)$
-    \item $hasRole(ag_a,\rho_1)$
+    \item $adoptsRole(ag_a,\rho_1)$
     \item $hasObligation(\rho_1,g_1)$
     \item $hasObligation(\rho_1,g_2)$
 \end{itemize}

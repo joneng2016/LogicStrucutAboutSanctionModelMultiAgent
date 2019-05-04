@@ -1,7 +1,7 @@
 \babel@toc {brazil}{}
 \contentsline {table}{\numberline {1}{\ignorespaces Os agentes que constituem uma manuten\IeC {\c c}\IeC {\~a}o\relax }}{66}
 \contentsline {table}{\numberline {2}{\ignorespaces Os papeis relevantes para a ocorr\IeC {\^e}ncia da manuten\IeC {\c c}\IeC {\~a}o\relax }}{66}
-\contentsline {table}{\numberline {3}{\ignorespaces Rela\IeC {\c c}\IeC {\~a}o $hasRole(ag_n,\rho _m)$\relax }}{67}
+\contentsline {table}{\numberline {3}{\ignorespaces Rela\IeC {\c c}\IeC {\~a}o $adoptsRole(ag_n,\rho _m)$\relax }}{67}
 \contentsline {table}{\numberline {4}{\ignorespaces Definindo todos os artefatos presentes na manuten\IeC {\c c}\IeC {\~a}o\relax }}{68}
 \contentsline {table}{\numberline {5}{\ignorespaces Define e descreve os objetivos bem como os respectivos pr\IeC {\'e}-requisitos\relax }}{70}
 \contentsline {table}{\numberline {6}{\ignorespaces Define as condi\IeC {\c c}\IeC {\~o}es necess\IeC {\'a}rias para que a manuten\IeC {\c c}\IeC {\~a}o tenha possibilidade de acontecer\relax }}{71}

@@ -62,7 +62,7 @@ executor5 & Tem como por finalidade executar certas atividades manuais vinculada
 \label{roles}
 \end{table}
 
-A tabela \ref{agentsroles} define o predicado $hasRole(ag_n,\rho_m)$ onde $ag_n$ é representado pela coluna agente e $\rho_m$ é representado pela coluna papel.
+A tabela \ref{agentsroles} define o predicado $adoptsRole(ag_n,\rho_m)$ onde $ag_n$ é representado pela coluna agente e $\rho_m$ é representado pela coluna papel.
 
 \begin{table}[H]
 \scalefont{0.8}
@@ -78,7 +78,7 @@ agente5 & executor3 \\ \hline
 agente6 & executor4 \\ \hline
 agente7 & executor5 \\ \hline
 \end{tabular}
-\caption{Relação $hasRole(ag_n,\rho_m)$}
+\caption{Relação $adoptsRole(ag_n,\rho_m)$}
 \label{agentsroles}
 \end{table}
 
@@ -186,7 +186,7 @@ A variável $X$ deve ser substituída pelo agente que tem a permissão de execut
 Essa regra pode ser sintetizada na seguinte expressão para um agente $ag_n$ que é referenciado por $AGENT$:
 
 \begin{eqnarray}\label{whenusex} \nonumber
-    hasRole(AGENT,\rho_m) \wedge hasPermission(\rho_m,g_i) \wedge (relXotherEntity \in rg_n)  \\ 
+    adoptsRole(AGENT,\rho_m) \wedge hasPermission(\rho_m,g_i) \wedge (relXotherEntity \in rg_n)  \\ 
     \wedge hasRelation(g_i,rg_n) \to relAGENTotherEntity 
 \end{eqnarray}
 
