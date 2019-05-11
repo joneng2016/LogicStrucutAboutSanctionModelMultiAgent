@@ -1,12 +1,76 @@
-\subsection{Modelo para Agentes Normativos de \textit{Dastani}}
+\subsection{Modelo DASTANI+}
 
-O predicado $possEntityRel(r_l,e_i,e_k)$ pode, em partes, ser especificado pelo modelo do \textit{Dastani}. Isso pode ser feito por trabalhar as artefatos, condições e relações como \textit{Facts}. Os agentes não podem entrar como \textit{Facts} porque existe uma categoria no modelo específico apenas para tratar esse tipo de entidade. Os pesquisadores entendem que esse predicado não pode ser representado na estrutura do \textit{Dastani} porque não existe correspondente semântico para isso. Uma primeira tentativa reside em considera-lo como pertencente ao conjunto \textit{Effects}. Contudo, esse conjunto é destinado a elementos que denotam característica 
-de transição de estado o que não é a finalidade não somente deste como de todos os outros predicados do modelo conceitual. Assim sendo, a transição de estados em  \textit{Dastani} é o que corresponde, em partes, as regras na representação conceitual deste estudo. 
+As tables a seguir exibiem uma comparação entre o \textit{DASTANI+} e o modelo proposto neste estudo.
 
-Os pesquisadores entendem que esse aracabouço não é formalizado para condicionar a idéia de objetivos e papeis ($\rho$). Assim sendo, todos os predicados que denotam o conceito de $objetivo$ em sua respectiva estrutura devem ser reformulados. Uma possibilidade de fazer isso reside em pensar todos os \textit{Facts} e \textit{Effects} a retratar as mesmas cadeias de causalidade que são traduzidas pelos objetivos. Os pesquisadores entendem que isso é possível, porem geram um aumento expressivo em termos de complexidade de representação. 
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|p{0.3\linewidth}|p{0.3\linewidth}|}
+\hline			
+\textbf{Atributos}
+& 
+\textbf{DASTANI}
+& 
+\textbf{Modelo deste Estudo} 
+\\ \hline
+Finalidade
+&
+Modelo de \textit{SMA} que leva em consideração questões atreladas a normas, sanções e violações. 
+&
+Representar cenários de Acidentes 
+\\ \hline
+Agentes
+&
+Não define os estados mentais do agente
+&
+Não define os estados mentais do agente
+\\ \hline
+Generalização
+&
+Trata de cenários onde se tem o interesse de representar agentes, normas, violações e sanções. 
+&
+Trata de cenários específicos para acidentes onde se deseja verificar culpados. 
+\\ \hline
+\end{tabular}
+\end{table}
 
-Dada as considerações da reformulação dos objetivos, é possível identificar correspondentes diretos dos $<i-liretals>$  e $<b-liretals>$ (que respectivamente depresentam violações e consequências) aos predicados que denotam violações bem como a parte dos predicados que apresentam as consequências. 
 
-Algumas consequências das violações apresentam grandes complexidade de especificação em termos de \textit{Dastani}. Essas consequências são todas atreladas a $possibilityHappensBadEvenet(r_l)$ e $affectOtherRelations(r_k,r_n)$ pois esse arcabouço não é preparado para considerar as sucessões de eventos que trazem a ocorrência de aleatoriedades, logo possibilidades. 
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|p{0.3\linewidth}|p{0.3\linewidth}|}
+\hline			
+\textbf{Atributos}
+& 
+\textbf{DASTANI}
+& 
+\textbf{Modelo deste Estudo} 
+\\ \hline
+Representação de Objetivos
+& 
+Não possui estrutura para representar objetivos
+&
+Possui uma estrutura simples para representar objetivos. Essa estrutura considera apenas questões de pré-requisitos. 
+\\ \hline
+Normas 
+&
+Presença de regras que permite expressar violações e sanções para os mais diversos casos possíveis. 
+&
+Presença de regras que permite expressar violações e sanções para cenários de acientes.
+\\ \hline
+Estrutura da Linguagem
+& 
+Usa linguagem EBNF 
+&
+Teoria de Conjuntos e Lógica de Predicados 
+\\ \hline
+Raciocínios
+& 
+Permite representar raciocínios que considera agentes comentendo ou não violações e tendo que lidar com as respectivas sanções. Esses raciocínios levam em consideração conceitos como eventos, ações (estados que geram a transição de eventos) e efetios (considerações generalizadas dos eventos e ações)
+&
+Possui regras de inferências que possibilitam reproduzir cenários de acidentes entre os agentes. Não apenas isso, mas faz parte da estrutura dessas regras questões atreladas a normas, violações e sanções. Esses raciocínios também representam cenários onde agentes sofrem consequências negativas mesmo não sendo responsáveis causas dos acidentes e fazem isso por levar em consideração questões possibilísticas e influências entre relações.
+\\ \hline
+\end{tabular}
+\end{table}
 
-Em termos de regras, considerando a problemática envolvendo os objetivos, é possível constatar que o \textit{Dastani} apresenta estrutura suficiente para representar as relações de inferência denotadas pelas regras \ref{conditionViol}, \ref{relationViol}, \ref{entityViol} como \textit{Count-As Rules}. Isso pois no modelo conceitual essas regras definem as condições que ocasionam uma violação e o mesmo acontece com as \textit{Count-As Rules}. As regras presentes em \ref{consconditionViol} e em \ref{consrelationViol} podem ser representadas por \text{Sanction Rules} pois em ambas condições ocorre uma definição das consequências de uma violação. 
+
+
+

@@ -40,6 +40,59 @@ Usando a \textbf{Definição 2}, isso poder ser especificado da seguinte maneira
     \langle John, approve(3225), valid(3225)\rangle
 \end{eqnarray}
 
-O \textit{NormMAS} trabalha com os mesmos conceitos de normas e sanções presentes em \cite{dastaniframework}. Em relação a \textit{Definição 1}, é possível observar conceitos de obrigação, proibição dado por $ \mu $ e conceitos de sanção dado por $\rho$. Isso se assemelha muito as regras \ref{conditionViol}, \ref{relationViol}, \ref{entityViol}, \ref{consconditionViol} e \ref{consrelationViol} que definem uma dada proibição (pois essas regras trabalham sobre o que não deve ser feito) e uma dada sanção (que define uma punição).
+As tables a seguir exibem uma comparação entre o \textit{NORRMAS} e o modelo proposto neste estudo.
 
-No que tange a estrutura dos modelos, o \textit{NormMAS} é mais simples e mais genérico com o foco em definir vocabulário para tratar qualquer tipo de comportamento normativo. Tendo em vista as estrutura das duas tuplas de \textit{NormMAS}, é possível concluir que esse modelo é interessante para especificar os conceitos e relações contidas nas regras \ref{conditionViol}, \ref{relationViol}, \ref{entityViol}, \ref{consconditionViol} e \ref{consrelationViol}. Isso, pois tanto no modelo conceitual bem como no \textit{NormMAS} é possível encontrar conceitos que tratam o que ocasiona uma violação e como decorre uma sanção. Contudo, o \textit{NormMAS} não retrata toda narrativa de objetivos, papeis e relações de obrigação e permissão. Não que não seja possível representar esses elementos nesse arcabouço, mas é um processo muito mais complicado.  
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|p{0.3\linewidth}|p{0.3\linewidth}|}
+\hline          
+\textbf{Atributos}
+& 
+\textbf{NORMMAS}
+& 
+\textbf{Modelo deste Estudo} 
+\\ \hline
+Finalidade
+&
+Representar agentes considerando questões atreladas a Normas, Sanções e Violações
+&
+Representar cenários de Acidentes 
+\\ \hline
+Generalização
+&
+Trata de cenários onde se tem o interesse de representar agentes, normas, violações e sanções. 
+&
+Trata de cenários específicos para acidentes onde se deseja verificar culpados. 
+\\ \hline
+Agentes
+&
+Não define os estados mentais do agente
+&
+Não define os estados mentais do agente
+\\ \hline
+Representação de Objetivos
+& 
+Não possui estrutura para representar objetivos
+&
+Possui uma estrutura simples para representar objetivos. Essa estrutura considera apenas questões de pré-requisitos. 
+\\ \hline
+Normas 
+&
+Presença de tuplas que permite expressar proibições e sanções para os mais diversos casos possíveis. 
+&
+Presença de regras que permite expressar violações e sanções para cenários de acientes.
+\\ \hline
+Generalização
+&
+Trata de cenários onde se tem o interesse de representar agentes, normas, violações e sanções. 
+&
+Trata de cenários específicos para acidentes onde se deseja verificar culpados.
+\\ \hline
+Estrutura da Linguagem
+& 
+Lógica de Primeira Ordem (definições dos conceitos em termos de Tuplas)
+&
+Teoria de Conjuntos e Lógica de Predicados  
+\\ \hline
+\end{tabular}
+\end{table}

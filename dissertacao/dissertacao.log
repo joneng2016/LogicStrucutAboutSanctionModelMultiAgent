@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.17)  11 MAY 2019 13:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.17)  11 MAY 2019 18:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1123,69 +1123,117 @@ Overfull \hbox (39.84071pt too wide) in paragraph at lines 653--685
 ) [85] (./estrutura/resultados/raciocinios.tex [86] [87] [88] [89] [90]
 [91] [92] [93] [94]) (./estrutura/resultados/validacao.tex [95]) [96]
 Cap\'{\i }tulo 5.
-(./estrutura/analisecomparativa/generaldiscuss.tex
+(./estrutura/analisecomparativa/generaldiscuss.tex)
+(./estrutura/resultados/generalanalisecomparativa.tex)
+(./estrutura/analisecomparativa/genmoise.tex
 
-LaTeX Warning: Reference `application' on page 97 undefined on input line 2.
+! Package inputenc Error: Unicode char ̂ (U+302)
+(inputenc)                not set up for use with LaTeX.
 
-) (./estrutura/resultados/generalanalisecomparativa.tex)
-(./estrutura/analisecomparativa/genmoise.tex [97
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 Possui regras de inferê
+                              ncias que possibilitam reproduzir cenários d...
 
-])
-(./estrutura/analisecomparativa/gendastani.tex [98])
-(./estrutura/analisecomparativa/genvs3.tex
-<figure/ontologyv3.png, id=360, 496.85625pt x 256.70906pt>
+? 
+
+! Package inputenc Error: Unicode char ́ (U+301)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 ...̂ncias que possibilitam reproduzir cená
+                                                  rios de acidentes entre os...
+
+? 
+[97
+
+]) (./estrutura/analisecomparativa/gendastani.tex [98]
+
+! Package inputenc Error: Unicode char ̂ (U+302)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.69 Possui regras de inferê
+                              ncias que possibilitam reproduzir cenários d...
+
+? 
+
+! Package inputenc Error: Unicode char ́ (U+301)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.69 ...̂ncias que possibilitam reproduzir cená
+                                                  rios de acidentes entre os...
+
+? 
+[99]) (./estrutura/analisecomparativa/genvs3.tex [100]
+<figure/ontologyv3.png, id=367, 496.85625pt x 256.70906pt>
 File: figure/ontologyv3.png Graphic file (type png)
 <use figure/ontologyv3.png>
 Package pdftex.def Info: figure/ontologyv3.png  used on input line 8.
 (pdftex.def)             Requested size: 227.62206pt x 117.60579pt.
 )
-(./estrutura/analisecomparativa/estvs3.tex [99 <./figure/ontologyv3.png>]
+(./estrutura/analisecomparativa/estvs3.tex [101 <./figure/ontologyv3.png>]
 Overfull \hbox (45.19539pt too wide) in paragraph at lines 36--44
 [][] 
  []
 
-[100] [101]
-<figure/bowtie.png, id=372, 673.76718pt x 443.40656pt>
+[102]
+<figure/bowtie.png, id=375, 673.76718pt x 443.40656pt>
 File: figure/bowtie.png Graphic file (type png)
 <use figure/bowtie.png>
 Package pdftex.def Info: figure/bowtie.png  used on input line 56.
 (pdftex.def)             Requested size: 227.62206pt x 149.79549pt.
- [102 <./figure/bowtie.png>] [103])
-(./estrutura/analisecomparativa/genormas.tex)
-(./estrutura/analisecomparativa/estnormas.tex [104])
-(./estrutura/analisecomparativa/estcartago.tex [105])
-(./estrutura/analisecomparativa/compnormas.tex [106])
-(./estrutura/analisecomparativa/constresult.tex [107] [108] [109] [110]
+ [103 <./figure/bowtie.png>] [104]
+Overfull \hbox (48.90298pt too wide) in paragraph at lines 110--143
+ [][] 
+ []
 
-LaTeX Warning: Reference `conditions' on page 111 undefined on input line 27.
+) (./estrutura/analisecomparativa/genormas.tex [105])
+(./estrutura/analisecomparativa/estnormas.tex [106])
+(./estrutura/analisecomparativa/compnormas.tex [107] [108] [109])
+(./estrutura/analisecomparativa/constresult.tex [110] [111] [112]
+
+LaTeX Warning: Reference `conditions' on page 113 undefined on input line 27.
 
 
-LaTeX Warning: Reference `goalsrelationsentity1' on page 111 undefined on input
+LaTeX Warning: Reference `goalsrelationsentity1' on page 113 undefined on input
  line 27.
 
 
-LaTeX Warning: Reference `goalsrelationsentity2' on page 111 undefined on input
+LaTeX Warning: Reference `goalsrelationsentity2' on page 113 undefined on input
  line 27.
 
-[111] [112] [113] [114]) [115]
+[113] [114] [115] [116]) [117]
 Cap\'{\i }tulo 6.
 (./estrutura/conclusao/genconclusao.tex)
-(./estrutura/conclusao/avaliacaodosobjetivos.tex) [116
+(./estrutura/conclusao/avaliacaodosobjetivos.tex) [118
 
 ]
-(./estrutura/conclusao/trabalhosfuturos.tex) [117] (./dissertacao.bbl [118
+(./estrutura/conclusao/trabalhosfuturos.tex) [119] (./dissertacao.bbl [120
 
 
 ]
-[119]) [120]
+[121]) [122]
 Apendice A.
-[121
+[123
 
 ]
 Anexo A.
 
 AED: lastpage setting LastPage
-[122
+[124
 
 ]
 +-------------------------------------------------------------------+
@@ -1201,10 +1249,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7621 strings out of 494903
- 113799 string characters out of 6179960
- 194135 words of memory out of 5000000
- 10523 multiletter control sequences out of 15000+600000
+ 7619 strings out of 494903
+ 113698 string characters out of 6179960
+ 194136 words of memory out of 5000000
+ 10524 multiletter control sequences out of 15000+600000
  97964 words of font info for 217 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  43i,18n,43p,2542b,427s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1218,10 +1266,10 @@ usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/times/utmri8a.pfb>
-Output written on dissertacao.pdf (126 pages, 1363987 bytes).
+Output written on dissertacao.pdf (128 pages, 1362345 bytes).
 PDF statistics:
- 479 PDF objects out of 1000 (max. 8388607)
- 314 compressed objects within 4 object streams
+ 486 PDF objects out of 1000 (max. 8388607)
+ 319 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
  66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
