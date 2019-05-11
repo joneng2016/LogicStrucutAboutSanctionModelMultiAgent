@@ -54,13 +54,3 @@ possível demonstrar que isso é válido ao aplicar essa representação em outr
 de acontecerem no mundo real. 
 
 Os pesquisadores não podem afirmar que as situações apresentadas sempre são as mais conservadoras possíveis (até porque o ato de como se dá a modelagem é algo que influência isso), contudo para esse caso em específico os cenários resultantes sempre foram os piores que podem acontecer dentro de um cenário de manutenção com essas características. 
-
-\subsection{Considerações sobre Critérios Metodológicos ao Formalismo de Linguagem}
-
-Os pesquisadores entendem que o formalismo usado foi adequado para representar os conceitos, relações e regras. Contudo, é digno de nota observar que uma abordage alternativa a essa consiste em escrever o modelo conceitual através de operadores em vez de predicados. 
-
-Inicialmente os pesquisadores optaram pelo uso de predicados porque era necessário fazer uso de uma linguage que permita expressar as relações em termos de verdadeiro ou falso. Os operadores não permitem fazer esse tipo de avaliação de forma tão expressiva como é o caso dos predicados, porém permitem formalizar o modelo conceitual em uma estrutura algébrica mais compacta e objetiva. 
-
-Por exemplo, o predicado $possEntityRel(e_i,e_j,r_k)$, em termos de operadores, pode ser escrito da seguinte forma $e_i TIR e_j  = x | x =\{r_{ij},  FALSE \} $ onde o operador $TIR$ retorna $ x = r_{ij} $ se essa relação realmente existe e $ x = FALSE $ se essa relação não existe.  
-
-Um outro exemplo é o predicado $nextGoal(g_i,g_j)$ que pode ser tratado com base no seguinte operador $ NEXT g_i = x | x = \{ \{ g_k, ... g_j \}, FALSE \}$ onde o operador $NEXT$ retorna os próximos objetivos de $g_i$ ou retorna falso para situação onde não há $g$ futuro.    
