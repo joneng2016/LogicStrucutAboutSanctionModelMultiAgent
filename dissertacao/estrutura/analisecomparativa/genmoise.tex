@@ -1,11 +1,73 @@
 \subsection{Modelo MOISE+}
 
-A relação entre duas entidades é algo que se faz parte no levantamento conceitual desse modelo e é formalizado por meio do predicado $thereIsRelation(r_l,e_i,e_k)$. O \textit{MOISE+} não apresenta estruturas para formalizar essa relação de maneira tão genérica como é tratada por esse predicado, até porque tanto o conceito de entidade como o conceito de relação entre duas entidades nem mesmo existem nesse arcabouço. Contudo é possível dizer que esse predicado é abordado de forma específica na consideração dos $link's$ entre dois agentes bem como da natureza do mesmo. Isso também se dá com o operador \textit{compatibilidade}. 
+As tables a seguir exibiem uma comparação entre o \textit{MOISE+} e o modelo proposto neste estudo.
 
-Os predicados $hasRole(ag_n,\rho_m)$, $hasObligation(\rho_m,g_k)$ e $hasPermission(\rho_m,g_k)$ por serem inspirados na estrutura conceitual do próprio \textit{MOISE+} denotam que podem ser especificados por esse \textit{arcabouços}. Contudo, o \textit{MOISE+} trabalha a relação deônticas entre $\rho$ com um conjunto $m$ que representa missões que devem ser atingidas pelos agentes. Essas missões são \textit{containers} de objetivos.
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|p{0.3\linewidth}|p{0.3\linewidth}|}
+\hline			
+\textbf{Atributos}
+& 
+\textbf{MOISE+}  
+& 
+\textbf{Modelo deste Estudo} 
+\\ \hline
+Finalidade  	
+& 
+Representar uma SMA 
+& 
+Representar cenários de Acidentes 
+\\ \hline
+Agentes     	
+& 
+Não representar os processos mentais do agente 
+& 
+Não representar os processos mentais do agente 
+\\ \hline
+Representação de Objetivos   	
+& 
+Baseado em uma Teoria Robusta para administração de tarefas, possui uma complexa sintaxe para representar objetivos  
+&  
+Possui uma estrutura simples para representar objetivos que avalia apenas questões de pré-requisitos. 
+\\ \hline
+Raciocínios		
+& 
+Possui relações de inferência atreladas a questões deônticas e a tipos de comunicações que os agentes podem fazer 
+& 
+Possui regras de inferências que possibilitam reproduzir cenários de acidentes entre os agentes. Não apenas isso, mas faz parte da estrutura dessas regras questões atreladas a normas, violações e sanções. Esses raciocínios também representam cenários onde agentes sofrem consequências negativas mesmo não sendo responsáveis causas dos acidentes e fazem isso por levar em consideração questões possibilísticas e influências entre relações. 
+\\ \hline
+\end{tabular}
+\end{table}
 
-O conceito que é tradizo pelo predicado $nextGoal(g_i,g_k)$ podem ser tratados pelo \textit{MOISE+} por intermédio da árvore de objetivos que averigua paralelismo e sequencialismo. O \textit{MOISE+} aprofunda a dinâmica desse problema por considerar estruturas subordinação entre objetivos. 
 
-O \textit{MOIISE+} não apresenta condições, em sua estrutura, para especificar o que está levantado nos demais predicados dese modelo computacional. 
 
-Em termos de regras o \textit{MOISE+} é capaz de especificar apenas a regra \ref{reldeonticrole} e isso pode ser feito por meio da relação presente em \ref{deonticRuleMoise}. No que tange as demais regras não foi possível encontrar estruturas conceituais que apresentam capacidade de lidar com as mesmas dentro deste \textit{Arcabouço}.  
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|p{0.3\linewidth}|p{0.3\linewidth}|}
+\hline			
+\textbf{Atributos}
+& 
+\textbf{MOISE+}  
+& 
+\textbf{Modelo deste Estudo} 
+\\ \hline		 
+Normas    
+& 
+Faz uso de lógica deôntica para definir o papel do agente em relação ao objetivo 
+& 
+Faz uso de lógica deôntica para definir o papel do agente em relação ao objetivo contudo também explora outras estruturas lógicas para determinar violações (quando o agente descumpri com o seu respectivo dever) e sanções (penalização por conta de uma dada violação).  
+\\ \hline
+SMA        		
+& 
+Presença de conceitos como Agentes, Papéis, Objetivos, Missões e Grupos bem como presença de  operadores (compatibilidade, herança)  
+& 
+Presença de conceitos como Papéis, Agentes e Objetivos. 
+\\ \hline
+Estrutura da Linguagem
+& 
+Lógica de Primeira Ordem 
+&
+Teoria de Conjuntos e Lógica de Predicados
+\\ \hline
+\end{tabular}
+\end{table}

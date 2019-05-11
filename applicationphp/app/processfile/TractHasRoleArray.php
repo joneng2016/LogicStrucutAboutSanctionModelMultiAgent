@@ -2,21 +2,21 @@
 
 namespace App\ProcessFile;
 
-class TractHasRoleArray extends StateProcessFile
+class TractadoptsRoleArray extends StateProcessFile
 {
 	public function execute()
 	{
-		$hasRole = [];		
+		$adoptsRole = [];		
 		(new OutPutOfPackageProcessFile($this->package))->getFiles($files);
 		foreach ($files as $file) 
 		{
-			if(strpos($file,"hasRole") !== false)		
+			if(strpos($file,"adoptsRole") !== false)		
 			{
-				(new GetElementOfHasRole($file))->execute()->get($newFile);
-				$hasRole[] = [$newFile[0],$newFile[1]];
+				(new GetElementOfadoptsRole($file))->execute()->get($newFile);
+				$adoptsRole[] = [$newFile[0],$newFile[1]];
 			}
 		}
-		$this->package["hasRole"] = $hasRole;
+		$this->package["adoptsRole"] = $adoptsRole;
 		$this->element = (new ReasoningByGoalRole($this->package));
 		return $this;
 	}	

@@ -65,14 +65,79 @@ O \textit{V3S} tem como por finalidade providenciar um modelo que seja coerente,
 
 \textit{HERA}, por intermédio de regras baseadas em modelos pedagógicos, fornece o respaldo ao instrutor. Esse retorno é feito por intermédio dos seguintes critérios pedagógicos; escala de modificação - amplia determinadas partes de um objeto com a finalidade de melhorar a visualização, reificação - verificar como o aprendiz lida com determinados conceitos e abstrações em termos concretos, restrições nos limites das ações do aprendiz que consiste em envio de mensagem ao agente quando ele comete sérios erros e superposição de informações se o aprendiz cometer e argumentar sobre as consequências das ações. \textit{HERA} é integrado ao módulo de reconhecimento que tem como por finalidade usar técnicas que permitem redefinir as relações de atividades usando a linguagem \textit{ACTIVITY-DL} se parametrizando nas açõe,s erros e violações. Essa parte do \textit{V3S} é capaz de distinguir entre os tipos de erros, que são: 1 - erros relacionados a atividades, 2 - erros relacionados ao ato de cumprir com o objetivo, 3 - erros de \textit{BATU}, 4 - erros de função e 5 - erros de ponto de vista.
 
-De todos os modelos verificados neste estudo, o \textit{V3S} é o maior e o mais complexo. Isso não tira um potencial para análise comparativa sendo que o primeiro aspecto a ser verificado consiste numa análise sobre \textit{Domain Model} que define uma ontologia para representar todos os objetos, relações e ações.
+As tables a seguir exibiem uma comparação entre o \textit{VS3} e o modelo proposto neste estudo.
 
-Um dos termos presentes no \textit{V3S} é o \textit{V3S-Entity}. Esse vocábulo pode ser comparado, em partes, com o conjunto $ Entity $. A explicação disso se deve ao fato de que o \textit{V3S-Entity} possui uma relação denominada de \textit{is a} com a classe \textit{V3S-Object}. A relação \textit{is a} denota semanticamente que todo o elemento pertencente a \textit{V3S-Object} também é um elemento \textit{V3S-Entity} o que, na representação proposta neste estudo denota uma relação de herança "em termos de UML" ou uma relação de subconjunto $ \subset $. A figura presente em \ref{domainmodel} denota que o termo \textit{Valve} é um \textit{V3S-Object}. O termo \textit{Valve} que em português significa Válvula é algo que, para o modelo conceitual proposto nesse estudo, só pode ser definida como um artefato da classe $Artefact$. Logo, a relação $Artefact \subset Entity $ é equivalente a \textit{V3S-Object is a V3S-Entity}.
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|p{0.3\linewidth}|p{0.3\linewidth}|}
+\hline			
+\textbf{Atributos}
+& 
+\textbf{VS3}
+& 
+\textbf{Modelo deste Estudo} 
+\\ \hline
+Finalidade
+&
+Representar cenários de Acidentes a fim de simula-los com propósito de treinamento profissional 
+&
+Representar cenários de Acidentes 
+\\ \hline
+Artefatos-Objetos
+&
+Representa objetos através da classe (da ontologia atrelada ao módulo \textit{Domain Model}) \textit{V3S-Object}
+&
+Representa objetos através do conjunto \textit{Artefact}
+\\ \hline
+Relações entre Entidades
+&
+Representa as relações entre objetos através da classe (da ontologia atrelada ao módulo \textit{Domain Model}) \textit{V3S-Action} através de relacionamentos com a classe \textit{V3S-Object}
+&
+Representa as relações entre as entidades através do predicado $possEntityRel(r_l,e_i,e_k)$
+\\ \hline
+Representação dos Objetivos
+& 
+Faz uso do modelo \textit{ACTIVITY-DL} - Permite expressar os seguintes racicínios; tarefas independentes, tarefas sequenciais, tarefas que se iniciam mediante a uma solicitação (pedido ou ordem), tarefas paralelas, tarefas  simultâneas, tarefas que se iniciam no mesmo instante e tarefas que são encerradas no mesmo instante)
+&
+Possui uma estrutura simples para representar objetivos que avalia apenas questões de pré-requisitos.
+\\ \hline
+\end{tabular}
+\end{table}
 
-Os termos \textit{V3S-Object} $Artefact$ podem ser dados como semanticamente semelhantes (apesar de terem relações diferentes). Contudo o mesmo não pode ser feito para $Entity$ e \textit{V3S-Entity}, apesar do raciocínio presente no paragrafo anterior. Isso se deve ao fato de que \textit{V3S-Entity} não abrange os Agentes do modelo como é o caso de $Entity$. Outro ponto consiste na relação \textit{is a} entre \textit{V3S-Entity} com \textit{V3S-Action}. Antes se faz necessário verificar com qual termologia aquela expressão se assemelha no modelo proposto neste estudo. Para isso se faz necessário analisar a figura \ref{domainmodel} que apresenta \textit{Connect-On} como sendo um \textit{V3S-Action}, logo \textit{V3S-Entity}. É interessante observar que \textit{Connect-On} se relaciona tanto com o objeto \textit{Loading-Arm} bem como com objeto \textit{Valve}. Com base nisso, \textit{V3S-Action} pode ser usado para especificar os elementos de $Relation$. 
 
-O segundo ponto a ser comparado reside sobre o modelo \textit{Activity Models} que basicamente consiste no uso da linguagem \textit{ACTIVITY-DL}. O que existe de equivalente a isso na representação proposta neste estudo são os objetivos descrito por $goal$ e o predicado $nextGoal(g_i,g_j)$ o que permite expressar raciocínios de eventos que podem acontecer tanto em série como em paralelo. Tendo em vista o fato de que \textit{ACTIVITY-DL} permite expressar os seguintes racicínios; tarefas independentes, tarefas sequenciais, tarefas que se iniciam mediante a uma solicitação (pedido ou ordem), tarefas paralelas, tarefas  simultâneas, tarefas que se iniciam no mesmo instante e tarefas que são encerradas no mesmo instante, é possível concluir que essa linguagem é mais que o suficiente para considerar todos os elementos atrelados a relações de objetivos levantados pelo modelo conceitual proposto nesse estudo.  
-
-O \textit{V3S} aprofunda as análises de segurança em \textit{Risk Model}. Essa parte do \textit{V3S} podem ser comparadas com as consequências que os riscos ocasionam sobre os agentes. Isso, pois muitos conceitos considerados nas regras \ref{violationcondition}, \ref{violationrelation}, \ref{violationentity}, \ref{consviolationcondition} e \ref{consviolationrelation} tal como; riscos, consequências podem ser tratados pelo \textit{MELISSA}. Contudo, o \textit{V3S} não trata essas estruturas por meio de violações e sanções. 
-
-Um ponto interessante do \textit{Risk Model} consiste em uma representação MASVERP  de agente \textit{BDI} com o foco em Risco (ver em \ref{agent}), pois \textit{V3S} permite especificar os estados internos do agente a fim de representar a condição emocional sobre a qual uma certo profissional é submetido. 
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|p{0.3\linewidth}|p{0.3\linewidth}|}
+\hline			
+\textbf{Atributos}
+& 
+\textbf{VS3}
+& 
+\textbf{Modelo deste Estudo} 
+\\ \hline
+Riscos e Acidentes
+&
+Modelo \textit{MELISSA} (BATU E BCTU)
+&
+Uso de Normas, Violações, Sanções e Lógica Possibilistica aplicadas a contextos específicos por meio das regras \ref{conditionViol}, \ref{relationViol}, \ref{entityViol}, \ref{consconditionViol} e \ref{consrelationViol}
+\\ \hline 
+Agentes     	
+& 
+Uso do framework MASVERP 
+& 
+Não representar os processos mentais do agente 
+\\ \hline 
+Estrutura da Linguagem
+& 
+Diferentes formalismos da computação tais como; Ontologias, Lógica de Primeira Ordem, Algoritmos e entre outros
+&
+Teoria de Conjuntos e Lógica de Predicados
+\\ \hline 
+Estruturas para Avaliação e Treinamento
+& 
+HERA
+&
+Não Consta
+\\ \hline
+\end{tabular}
+\end{table}
