@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.17)  25 MAY 2019 16:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.17)  1 JUN 2019 14:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1069,24 +1069,7 @@ Package pdftex.def Info: figure/DiagramaDeAtividade.png  used on input line 11.
  [58] [59 <./figure/DiagramaDeAtividade.png>]) [60] (./estrutura/resultados/cen
 ariospredicadosabertos.tex [61] [62] [63] [64]) [65] (./estrutura/resultados/in
 trodutorycase.tex [66]
-[67]
-
-LaTeX Warning: Command \~ invalid in math mode on input line 66.
-
-! Please use \mathaccent for accents in math mode.
-\add@accent ...@spacefactor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.66 	\item $gRetornarChã
-                          o \to$ Retornar ao chão.
-? 
-! You can't use `\spacefactor' in math mode.
-\add@accent ...}\accent #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.66 	\item $gRetornarChã
-                          o \to$ Retornar ao chão.
-? 
-Missing character: There is no � in font zptmcm7v!
-[68] [69]
+[67] [68] [69]
 Overfull \hbox (18.05742pt too wide) in paragraph at lines 138--139
 []$\OML/ztmcm/m/it/12 requiresCirc\OT1/ztmcm/m/n/12 (\OML/ztmcm/m/it/12 gNovaBo
 cal; rFerLampNova\OT1/ztmcm/m/n/12 )\OML/ztmcm/m/it/12 ; requiresCirc\OT1/ztmcm
@@ -1118,42 +1101,42 @@ Overfull \hbox (10.42258pt too wide) in paragraph at lines 174--182
  []
 
 [80]
-LaTeX Font Info:    Calculating math sizes for size <7.20007> on input line 225
+LaTeX Font Info:    Calculating math sizes for size <7.20007> on input line 224
 .
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.20007> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 225.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 224.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5.32808> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 225.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 224.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <4.32008> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 225.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 224.
  [81]
 Overfull \vbox (6.99138pt too high) has occurred while \output is active []
 
 
 [82] [83] [84] [85] [86] [87] [88] [89]
-LaTeX Font Info:    Calculating math sizes for size <8.39996> on input line 591
+LaTeX Font Info:    Calculating math sizes for size <8.39996> on input line 590
 .
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8.39996> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 591.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 590.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6.21602> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 591.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 590.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5.04002> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 591.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 590.
 
-Overfull \hbox (38.99736pt too wide) in paragraph at lines 591--614
+Overfull \hbox (38.99736pt too wide) in paragraph at lines 590--613
  [][] 
  []
 
 [90]
-Overfull \hbox (38.99736pt too wide) in paragraph at lines 623--640
+Overfull \hbox (38.99736pt too wide) in paragraph at lines 622--639
  [][] 
  []
 
 [91]
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <9.60004> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 656.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 655.
 
-Overfull \hbox (39.84071pt too wide) in paragraph at lines 653--685
+Overfull \hbox (39.84071pt too wide) in paragraph at lines 652--684
  [][] 
  []
 
@@ -1162,115 +1145,67 @@ Overfull \hbox (39.84071pt too wide) in paragraph at lines 653--685
 Cap\'{\i }tulo 5.
 (./estrutura/analisecomparativa/generaldiscuss.tex)
 (./estrutura/resultados/generalanalisecomparativa.tex)
-(./estrutura/analisecomparativa/genmoise.tex
+(./estrutura/analisecomparativa/genmoise.tex [104
 
-! Package inputenc Error: Unicode char ̂ (U+302)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.37 Possui regras de inferê
-                              ncias que possibilitam reproduzir cenários d...
-
-? 
-
-! Package inputenc Error: Unicode char ́ (U+301)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.37 ...̂ncias que possibilitam reproduzir cená
-                                                  rios de acidentes entre os...
-
-? 
-[104
-
-]) (./estrutura/analisecomparativa/gendastani.tex [105]
-
-! Package inputenc Error: Unicode char ̂ (U+302)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.69 Possui regras de inferê
-                              ncias que possibilitam reproduzir cenários d...
-
-? 
-
-! Package inputenc Error: Unicode char ́ (U+301)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.69 ...̂ncias que possibilitam reproduzir cená
-                                                  rios de acidentes entre os...
-
-? 
-[106]) (./estrutura/analisecomparativa/genvs3.tex [107]
-<figure/ontologyv3.png, id=389, 496.85625pt x 256.70906pt>
+])
+(./estrutura/analisecomparativa/gendastani.tex [105] [106] [107])
+(./estrutura/analisecomparativa/genvs3.tex [108]
+<figure/ontologyv3.png, id=392, 496.85625pt x 256.70906pt>
 File: figure/ontologyv3.png Graphic file (type png)
 <use figure/ontologyv3.png>
 Package pdftex.def Info: figure/ontologyv3.png  used on input line 8.
 (pdftex.def)             Requested size: 227.62206pt x 117.60579pt.
 )
-(./estrutura/analisecomparativa/estvs3.tex [108 <./figure/ontologyv3.png>]
-Overfull \hbox (45.19539pt too wide) in paragraph at lines 36--44
+(./estrutura/analisecomparativa/estvs3.tex [109 <./figure/ontologyv3.png>]
+Overfull \hbox (45.19539pt too wide) in paragraph at lines 35--43
 [][] 
  []
 
-[109]
-<figure/bowtie.png, id=397, 673.76718pt x 443.40656pt>
+[110]
+<figure/bowtie.png, id=400, 673.76718pt x 443.40656pt>
 File: figure/bowtie.png Graphic file (type png)
 <use figure/bowtie.png>
-Package pdftex.def Info: figure/bowtie.png  used on input line 56.
+Package pdftex.def Info: figure/bowtie.png  used on input line 55.
 (pdftex.def)             Requested size: 227.62206pt x 149.79549pt.
- [110 <./figure/bowtie.png>] [111]
-Overfull \hbox (48.90298pt too wide) in paragraph at lines 110--143
+ [111 <./figure/bowtie.png>] [112]
+Overfull \hbox (48.90298pt too wide) in paragraph at lines 109--142
  [][] 
  []
 
-) (./estrutura/analisecomparativa/genormas.tex [112])
-(./estrutura/analisecomparativa/estnormas.tex [113])
-(./estrutura/analisecomparativa/compnormas.tex [114] [115] [116])
-(./estrutura/analisecomparativa/constresult.tex [117] [118] [119]
+) (./estrutura/analisecomparativa/genormas.tex [113])
+(./estrutura/analisecomparativa/estnormas.tex [114])
+(./estrutura/analisecomparativa/compnormas.tex [115] [116] [117])
+(./estrutura/analisecomparativa/constresult.tex [118] [119] [120]
 
-LaTeX Warning: Reference `conditions' on page 120 undefined on input line 27.
+LaTeX Warning: Reference `conditions' on page 121 undefined on input line 27.
 
 
-LaTeX Warning: Reference `goalsrelationsentity1' on page 120 undefined on input
+LaTeX Warning: Reference `goalsrelationsentity1' on page 121 undefined on input
  line 27.
 
 
-LaTeX Warning: Reference `goalsrelationsentity2' on page 120 undefined on input
+LaTeX Warning: Reference `goalsrelationsentity2' on page 121 undefined on input
  line 27.
 
-[120] [121] [122] [123]) [124]
+[121] [122] [123] [124]) [125]
 Cap\'{\i }tulo 6.
 (./estrutura/conclusao/genconclusao.tex)
-(./estrutura/conclusao/avaliacaodosobjetivos.tex) [125
+(./estrutura/conclusao/avaliacaodosobjetivos.tex) [126
 
 ]
-(./estrutura/conclusao/trabalhosfuturos.tex) [126] (./dissertacao.bbl [127
+(./estrutura/conclusao/trabalhosfuturos.tex) [127] (./dissertacao.bbl [128
 
 
 ]
-[128]) [129]
+[129]) [130]
 Apendice A.
-[130
+[131
 
 ]
 Anexo A.
 
 AED: lastpage setting LastPage
-[131
+[132
 
 ]
 +-------------------------------------------------------------------+
@@ -1286,10 +1221,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7625 strings out of 494903
- 113866 string characters out of 6179960
+ 7623 strings out of 494903
+ 113856 string characters out of 6179960
  194171 words of memory out of 5000000
- 10527 multiletter control sequences out of 15000+600000
+ 10525 multiletter control sequences out of 15000+600000
  97964 words of font info for 217 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  43i,18n,43p,2542b,427s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1303,10 +1238,10 @@ usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/times/utmri8a.pfb>
-Output written on dissertacao.pdf (135 pages, 1371573 bytes).
+Output written on dissertacao.pdf (136 pages, 1372250 bytes).
 PDF statistics:
- 508 PDF objects out of 1000 (max. 8388607)
- 334 compressed objects within 4 object streams
+ 511 PDF objects out of 1000 (max. 8388607)
+ 336 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
  66 words of extra memory for PDF output out of 10000 (max. 10000000)
 

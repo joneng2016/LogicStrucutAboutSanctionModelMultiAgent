@@ -1,12 +1,12 @@
 A clareza ao leitor na tarefa de mostrar o uso do modelo conceitual para especificar um caso de estudo real é extremamente prejudicada tendo em vista a quantidade de elementos presentes no modelo. Com base nisso, os autores desse texto entendem que antes de apresentar a aplicação do modelo em um caso de estudo, se faz necessário avaliar como se dá a aplicação deste modelo para um caso fictício mais simples. 
 
-Para isso pode-se considerar o seguinte cenário: Dois funcionários (Fernando e Bruno) são escalados para realizar a troca de uma dada lâmpada. Então, esses profissionais necessitam dos seguintes objetos: escada, lâmpada e bocal. Essa troca deve ser feita sobre as seguintes condições: piso seco, ambiente iluminado e o disjuntor da respectiva lâmpada deve estar devidamente desligado. Os riscos associado a esse trabalho são os seguintes: queda da escada (com a consequência de fratura), queda da lâmpada (com a consequência de ferir algum profissionai que esteja debaixo deste objeto) e ser eletrocutado (com a consequência de ferimentos sérios). A lista a seguir trás o sequenciamento das atividades nas quais esse processo ocorre:
+Para isso pode-se considerar o seguinte cenário: Dois funcionários (Fernando e Bruno) são escalados para realizar a troca de uma lâmpada. Então, esses profissionais necessitam dos seguintes objetos: escada, lâmpada e bocal. Essa troca deve ser feita sob as seguintes condições: piso seco, ambiente iluminado e o disjuntor da respectiva lâmpada deve estar devidamente desligado. Os riscos associado a esse trabalho são os seguintes: queda da escada (com a consequência de fratura), queda da lâmpada (com a consequência de ferir algum profissionai que esteja debaixo deste objeto) e ser eletrocutado (com a consequência de ferimentos sérios). A lista a seguir trás o sequenciamento das atividades nas quais esse processo ocorre:
 
 \begin{enumerate}
-	\item Tanto Fernando como Bruno devem posicionar a escada logo a baixio do lâmpada. 
+	\item Tanto Fernando como , devem posicionar a escada logo a baixio da lâmpada. 
 	\item Fernando deve subir na escada em direção da lâmpada enquando Bruno a segura. 
-	\item Quando Fernando estiver posicionado sobre a lâmpada, então ele deve remove-la e entrega-la a Bruno. 
-	\item Bruno deve posicionar a lampada antiga em uma caixa. Após isso, deve entregar a lâmpada nova a Fernando.
+	\item Quando Fernando estiver posicionado sob a lâmpada, então ele deve removê-la e entregá-la a Bruno. 
+	\item Bruno deve posicionar a lâmpada antiga em uma caixa. Após isso, deve entregar a lâmpada nova a Fernando.
 	\item Fernando, então, deve colocar a lâmpada nova no respectivo local. 
 	\item Fernando, enquanto Bruno segura as escadas, deve retornar ao chão. 
 \end{enumerate}
@@ -27,25 +27,25 @@ Os demais elementos são artefatos e dentro do contexto deste estudo se enquadra
 	Artefact = \{ escada, lampadaAntiga, lampadaNova, bocal \} \nonumber
 \end{eqnarray}
 
-As condições necessárias para que um dado objetivo possa ser alcançado são representadas desta maneira: 
+As condições necessárias para que um objetivo possa ser alcançado são representadas desta maneira: 
 
 \begin{eqnarray}
 	Condition = \{ ambIlumin, disjDesl, chaoSeco \} \nonumber
 \end{eqnarray}
 
-Onde $ambIlumin =$ Ambiente Iluminado, $disjDesl = $ disjuntor da lâmapada desligado e $chaoSeco = $ chão seco. No que tange ao papel dos funcionários, eles serão considerados $func1$ e $func2$ porque são funcionários com objetivos diferentes. 
+En que $ambIlumin =$ Ambiente Iluminado, $disjDesl = $ disjuntor da lâmapada desligado e $chaoSeco = $ chão seco. No que tange ao papel dos funcionários, eles serão considerados $func1$ e $func2$ porque são funcionários com objetivos diferentes. 
 
 \begin{eqnarray}
 	Role = \{ func1,func2 \}
 \end{eqnarray}
 
-Os Riscos são rpresentados da seguinte forma: 
+Os Riscos são representados da seguinte forma: 
 
 \begin{eqnarray}
 	Risk = \{ quedaEscada, quedaLampada, eletrocutado \}
 \end{eqnarray}
 
-Onde $quedaEscada =$ queda da Escada, $quedaLampada =$ queda da Lampada e $eletrocutado =$ eletrocutado. As consequências sobre as quais esses profissionais são submetidos caso aconteça um acidente associado a esses riscos são;
+Onde $quedaEscada =$ queda da Escada, $quedaLampada =$ queda da Lâmpada e $eletrocutado =$ eletrocutado. As consequências sob as quais esses profissionais são submetidos caso aconteça um acidente associado a esses riscos são;
 
 \begin{eqnarray}
 	Consequence = \{fratura,ferQL, ferEletr\}
@@ -56,28 +56,28 @@ Em que $fratura =$ fratura, $ferQL =$ ferimento causado pela Queda da Lâmpada e
 Os objetivos podem ser representados da seguinte maneira; 
 
 \begin{enumerate}
-	\item $gBL \to $ Posicionar a escada embaixo da lâmapada.
-	\item $gSubir \to $ Subir a escada embaixo da lâmapada;
+	\item $gBL \to $ Posicionar a escada embaixo da lâmpada.
+	\item $gSubir \to $ Subir a escada embaixo da lâmpada;
 	\item $gSegura \to $ Segurar a escada. 
 	\item $gRemover \to $ Remover a lâmpada antiga.
 	\item $gCaixa \to $ Guardar a lâmpada antiga dentro da caixa.
 	\item $gNova \to $ Entregar lâmpada nova
 	\item $gNovaBocal \to$ Colocar a lâmpada no respectivo bocal.
-	\item $gRetornarChão \to$ Retornar ao chão.
+	\item $gRetornarChao \to$ Retornar ao chão.
 \end{enumerate}
 
 No que tange as relações entre as entidades, pode-se considerar o seguinte: 
 
 \begin{enumerate}
-	\item $rFerEsc \to$ relação do Fernando ter de tocar na Escada para movimentar-la. 
-	\item $rBrunEsc \to$ relação do Bruno ter de tocar na Escada para movimentar-la ou para mante-la em sua respectiva posição.
-	\item $rSubirFerEsc \to$ relação do Fernando subir pela Escada
+	\item $rFerEsc \to$ relação do Fernando, ter de tocar na Escada para movimentá-la. 
+	\item $rBrunEsc \to$ relação do Bruno, ter de tocar na Escada para movimentá-la ou para mantê-la em sua respectiva posição.
+	\item $rSubirFerEsc \to$ relação do Fernando, subir pela Escada.
 	\item $rFerLampAnt \to$ relação do Fernando tocar na Lâmpada Antiga. 
 	\item $rBrunLampAnt \to$ relação do Bruno tocar na Lâmpada Antiga.
 	\item $rBrunLampNova \to$ relação do Bruno tocar na Lâmpada Nova.
 	\item $rFerLampNova \to$ relação do Fernando tocar na Lâmpada Nova.
 	\item $rLampNovaBocal \to$  relação de posicionar a Lâmpada Nova no Bocal. 	
-	\item $rDescFerEsc \to$ relação entre Fernando e Escada onde Aquele está descendo por Este.
+	\item $rDescFerEsc \to$ relação entre Fernando e Escada onde Aquele está descendo por Esta.
 \end{enumerate}
 
 
@@ -94,7 +94,7 @@ Uma vez definido as entidades das classes, é possível especificar os predicado
 	\item $possEntityRel(rLampNovaBocal,lampadaNova,bocal)$
 \end{enumerate}
 
-A lista a seguir defie o predicado $adoptsRole(ag_n,\rho_m)$;
+A lista a seguir define o predicado $adoptsRole(ag_n,\rho_m)$;
 
 \begin{enumerate}
 	\item $adoptsRole(fernando,func1)$
@@ -154,33 +154,33 @@ A lista a seguir exibe a especificação do predicado $requiresEntity(goal_i,e_j
 A lista a seguir exibe a especificação do predicado $hasRisk(crts,risk_j,cs_k)$
 
 \begin{enumerate}
-	\item $hasRisk(ambIlumin,quedaEscada,fratura)$ - O profissional que executa alguma atividade em um ambiente mal iluminado pode cair da escada por não ter uma clara visão de como se mover. 
-	\item $hasRisk(ambIlumin,quedaLampada,ferQL)$ - O profissional que executa alguma atividade em um ambiente mal iluminado pode errar a adequada posição da lâmpada fazendo com que esse objeto entre em queda livre ferindo os profissionais embaixo.
+	\item $hasRisk(ambIlumin,quedaEscada,fratura)$ - O profissional que executa alguma atividade, como por exemplo subir numa escada em um ambiente mal iluminado, pode cair da escada por não ter uma clara visão de como se mover. 
+	\item $hasRisk(ambIlumin,quedaLampada,ferQL)$ - O profissional que executa alguma atividade, como colocar uma lâmpada, em um ambiente mal iluminado pode errar a adequada posição da mesma fazendo com que esse objeto entre em queda livre ferindo os profissionais embaixo.
 	\item $hasRisk(disjDesl, eletrocudado, ferEletr)$ - O profissional que executa a troca de lâmpada sem que o disjuntor esteja desligado, está se submentendo ao risco de ser eletrocutado tendo ferimentos por eletricidade.
-	\item $hasRisk(chaoSeco,quedaEscada,fratura)$ - O profissional que sobe em uma escada com chão molhado acaba se submentendo ao risco escorregando e se fraturando por conta de uma queda.
-	\item $hasRisk(rSubirFerEsc,quedaEscada,fratura)$ - Se o Fernando errar ao subir pela escada, ele pode cair e se lesionar. 
-	\item $hasRisk(rDescFerEsc,quedaEscada,fratura)$ - Se o Fernando errar ao descer pela escada, ele pode cair e se lesionar. 		
+	\item $hasRisk(chaoSeco,quedaEscada,fratura)$ - O profissional que sobe em uma escada com chão molhado acaba se submentendo ao risco de escorregar e fraturar-se por conta de uma queda.
+	\item $hasRisk(rSubirFerEsc,quedaEscada,fratura)$ - Se o Fernando subir de maneira errada pela escada, ele pode cair e se lesionar. 
+	\item $hasRisk(rDescFerEsc,quedaEscada,fratura)$ - Se o Fernando descer de maneira errada pela escada, ele pode cair e se lesionar. 		
 \end{enumerate}
 
 A lista a seguir exibe a especificação do predicado $affectsRels(r_k,r_n)$:
 
 \begin{enumerate}
-	\item $affectsRels(rFerEsc,rSubirFerEsc)$ - Se Fernando posicionar a escada de forma inapropriada, por mais que isso não gere consequências imediatas naquele instante, o agente que estiver atrelado a $rSubirFerEsc$ sofre uma queda vindo a se lecionar por conta disso. 
-	\item $affectsRels(rBrunEsc,rSubirFerEsc)$ - Se Bruno posicionar a escada de forma inapropriada, por mais que isso não gere consequências imediatas naquele instante, o agente que estiver atrelado a $rSubirFerEsc$ sofre uma queda vindo a se lecionar por conta disso. 
-	\item $affectsRels(rFerEsc,rDescFerEsc)$ - Se Fernando posicionar a escada de forma inapropriada, por mais que isso não gere consequências imediatas naquele instante, o agente que estiver atrelado a $rDescFerEsc$ sofre uma queda vindo a se lecionar por conta disso. 
-	\item $affectsRels(rBrunEsc,rDescFerEsc)$ - Se Bruno posicionar a escada de forma inapropriada, por mais que isso não gere consequências imediatas naquele instante, o agente que estiver atrelado a $rDescFerEsc$ sofre uma queda vindo a se lecionar por conta disso. 
+	\item $affectsRels(rFerEsc,rSubirFerEsc)$ - Se Fernando posicionar a escada de forma inapropriada, por mais que isso não gere consequências imediatas naquele instante, o agente que estiver atrelado a $rSubirFerEsc$ pode sofre uma queda vindo a se lesionar por conta disso. 
+	\item $affectsRels(rBrunEsc,rSubirFerEsc)$ - Se Bruno posicionar a escada de forma inapropriada, por mais que isso não gere consequências imediatas naquele instante, o agente que estiver atrelado a $rSubirFerEsc$ pode sofre uma queda vindo a se lesionar por conta disso. 
+	\item $affectsRels(rFerEsc,rDescFerEsc)$ - Se Fernando posicionar a escada de forma inapropriada, por mais que isso não gere consequências imediatas naquele instante, o agente que estiver atrelado a $rDescFerEsc$ pode sofre uma queda vindo a se lesionar por conta disso. 
+	\item $affectsRels(rBrunEsc,rDescFerEsc)$ - Se Bruno posicionar a escada de forma inapropriada, por mais que isso não gere consequências imediatas naquele instante, o agente que estiver atrelado a $rDescFerEsc$ pode sofre uma queda vindo a se lesionar por conta disso. 
 \end{enumerate}
 
 \subsection{Raciocínios}
 
 Uma vez especificado os elementos básicos desse cenário nos moldes do modelo em análise nesse estudo, é possível aplicar as regras para avaliar o que acontece em cenários específicos. 
 
-Um cenário específico que é possível considerar consiste avaliar o que acontece, segundo esse modelo, quando Fernando realiza a substituição do da lâmpada antiga sem que o disjuntor esteja devidamente desligado. Para esse tipo de situação, os predicados a serem considerados são esses;
+Um cenário específico que é possível considerar, consiste em avaliar o que acontece, segundo esse modelo, quando Fernando realiza a substituição da lâmpada antiga sem que o disjuntor esteja devidamente desligado. Para esse tipo de situação, os predicados a serem considerados são esses;
 
 \begin{enumerate}
-	\item $requiresCirc(gRemover,disjDesl)$ - Esse predicado tem que ser considerado porque associada ao objetivo $gRemover$ a condição de $disjDesl$.
+	\item $requiresCirc(gRemover,disjDesl)$ - Esse predicado tem que ser considerado porque está associado ao objetivo $gRemover$ a condição de $disjDesl$.
 	\item $\neg isPresent(disjDesl)$ - Esse predicado tem que ser considerado porque mostra que a condição $disjDesl$ não está presente quando o respectivo agente tenta alcançar o objetivo.
-	\item $instanceOfCond(disjDesl)$ - Esse predicado é relevante porque se faz necessário avaliar se $disjDesl$ é de fato uma condição, tendo em vista o fato de que a natureza desta violação consiste em uma violação de condição.
+	\item $instanceOfCond(disjDesl)$ - Esse predicado é relevante porque se faz necessário avaliar se $disjDesl$ é de fato uma condição, tendo em vista que a natureza desta violação consiste em uma violação de condição.
 	\item $starts(fernando,gRemover)$ - Esse predicado é necessário porque denota que o agente fernando realmente começou a executar o objetivo $gRemove$.
 	\item $hasRisk(disjDesl, eletrocudado, ferEletr)$ - Esse predicado é necessário porque relaciona a condição $disjDesl$ com o risco do profissional ser $eletrocutado$ e com as consequências $ferEletr$.
 \end{enumerate}
@@ -201,4 +201,4 @@ Uma vez feito o levantamento dos predicados necessários, pode-se considerar as 
 	negConseqFor(gRemover,fernando,eletrocudado,ferEletr) \nonumber \\ 
 \end{eqnarray}	
 
-Por esse raciocínio, é possível observar que se o agente executar o procedimento de manutenção sem que a condição desligar disjuntor estiver presente, então esse agente (Fernando) será eletrocutado e terá ferimentos por conta disso. 
+Por esse raciocínio, é possível observar que se o agente executar o procedimento de manutenção sem que a condição, desligar disjuntor, estiver presente, então esse agente (Fernando) será eletrocutado e terá ferimentos por conta disso. 

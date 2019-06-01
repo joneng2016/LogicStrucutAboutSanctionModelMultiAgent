@@ -1,4 +1,4 @@
-O estudo de caso desta pesquisa consiste em sete profissionais de linha viva (profissionais que realizam manutenção em equipamentos elétricos energizados) são designados com o propósito de realizar a substituição de um isolador de pedestal. Os papeis desses desses profissionais são; um supervisor e seis executores. A manutenção deve ser executada apenas sobre as seguintes condições: céu ensolarado e umidade relativa do ar menor que 70 porcento. Todos os profissionais devem possuir os EPI's necessários: capacete, óculos de sol, roupa isolante e antichamas, luvas isolantes e botas isolantes. Os profissionais que entram no potencial devem estar vestidos de roupa condutiva e cabo guarda. As ferramentas necessárias para resolver esse problema são: bastão garra de diâmetro 64 x 3600 mm, sela de diâmetro 65, colar, corda de fibra sintética, carretilha, chave com catraca, bastão universal, soquete adequado, locador de pino e bastão com soquete multiangular. O método selecionado para esse tipo de manutenção é a distância onde o eletricista não acessa diretamente o potencial, mas faz isso por intermédio de um bastão isolante. A substituição do isolador 
+O estudo de caso desta pesquisa consiste em sete profissionais de linha viva (profissionais que realizam manutenção em equipamentos elétricos energizados) são designados com o propósito de realizar a substituição de um isolador de pedestal. Os papéis desses profissionais são: um supervisor e seis executores. A manutenção deve ser executada apenas sob as seguintes condições: céu ensolarado e umidade relativa do ar menor que 70 por cento. Todos os profissionais devem possuir os EPI's necessários: capacete, óculos de sol, roupa isolante e antichamas, luvas isolantes e botas isolantes. Os profissionais que entram no potencial devem estar vestidos com roupa condutiva e cabo guarda. As ferramentas necessárias para resolver esse problema são: bastão garra de diâmetro 64 x 3600 mm, sela de diâmetro 65, colar, corda de fibra sintética, carretilha, chave com catraca, bastão universal, soquete adequado, locador de pino e bastão com soquete multiangular. O método selecionado para esse tipo de manutenção é a distância onde o eletricista não acessa diretamente o potencial, mas faz isso por intermédio de um bastão isolante. A substituição do isolador 
 de pedestal pode ser escrita nos seguintes objetivos: 
 
 \begin{enumerate}
@@ -24,7 +24,7 @@ de pedestal pode ser escrita nos seguintes objetivos:
 	\item Retirar Equipamentos
 \end{enumerate}
 
-\subsection{Especificação dos Agentes e seus Papeis}
+\subsection{Especificação dos Agentes e seus Papéis}
 
 A tabela \ref{agents} apresenta todos os agentes que fazem parte da manutenção. 
 \begin{table}[H]
@@ -60,7 +60,7 @@ executor3 & Tem como por finalidade executar certas atividades manuais vinculada
 executor4 & Tem como por finalidade executar certas atividades manuais vinculadas a manutenção \\ \hline
 executor5 & Tem como por finalidade executar certas atividades manuais vinculadas a manutenção \\ \hline
 \end{tabular}
-\caption{Os papeis relevantes para a ocorrência da manutenção}
+\caption{Os papéis relevantes para a ocorrência da manutenção}
 \label{roles}
 \end{table}
 
@@ -132,7 +132,7 @@ As etapas da atividade anteriormente postas foram analisadas em conjunto com eng
 \hline
 \textbf{Objetivo} & \textbf{Próximo} & \textbf{Descrição} \\ \hline
 gSupervisor & g1,g6 & Atribui objetivos aos demais agentes. \\ \hline
-g0 &  gSupervisor & Vestir os AP'Is \\ \hline
+g0 &  gSupervisor & Vestir os EP'Is \\ \hline
 g1 &  g2 & Limpar, secar e testar ferramentas com material isolante. \\ \hline
 g2 &  g3 & Medir a corrente de fuga de ferramentas isolantes \\ \hline
 g3 &  g4 & Instalar sela com colar na estrutura \\ \hline
@@ -184,12 +184,11 @@ sol & O dia deve estar ensolarado & eletrocutado & morte \\ \hline
 \end{table}
 
 
-As tabelas \ref{relationEntEnt1}, \ref{relationEntEnt2} apresentam a especificação para dois predicados onde uma deles é $possEntityRel(r_l,e_i,e_k)$ 
-tal que $r_l$ é definido pela coluna \textit{relacionamento}, $e_i$ e $e_k$ pelas \textit{entidades envolvidas}. 
+As tabelas \ref{relationEntEnt1}, \ref{relationEntEnt2} apresentam a especificação para dois predicados onde um deles é $possEntityRel(r_l,e_i,e_k)$ tal que $r_l$ é definido pela coluna \textit{relacionamento}, $e_i$ e $e_k$ pelas \textit{entidades envolvidas}. 
 O outro predicado é dado por $hasRisk(r_k,risk_j,cs_m)$ onde $risk_j$ é dado pela coluna risco e $cs_m$ é dado pela coluna consequencia. 
-Algumas relações (instâncias do conjunto $Relation$) serão apresentadas usando o termo $X$. O objetivo disto consiste tornar as tabelas mais enxutas por intermédio de uma regra a qual é; 
+Algumas relações (instâncias do conjunto $Relation$) serão apresentadas usando o termo $X$. O objetivo disto consiste em tornar as tabelas mais enxutas por intermédio de uma regra a qual é; 
 
-A variável $X$ deve ser substituída pelo agente que tem a permissão de executar alguma ação em dado objetivo em prol a sua função. 
+A variável $X$ deve ser substituída pelo agente que tem a permissão de executar alguma ação em certo objetivo em prol a sua função. 
 Essa regra pode ser sintetizada na seguinte expressão para um agente $ag_n$ que é referenciado por $AGENT$:
 
 \begin{eqnarray}\label{whenusex} \nonumber
@@ -567,9 +566,9 @@ executor5 & g27 \\ \hline
 
 \subsection{Relacionamentos das Entidades, Relações e Condições com Objetivos}
 
-As próximas tabelas tem como por finalidade apresentar como se dá essa especificação para os seguintes predicados: $requiresCirc(goal_n, circ_m)$,$requiresEntity(goal_n, ent_m)$. Contudo, existe uma série de circunstâncias $circ \in Circumstance$ que apontam para o mesmo objetivo $g \in Goal$. Para tornar a apresentação desses resultados mais simples, os pesquisadores optaram por agrupar todas as circunstâncias que se relacionam na mesma célula na coluna esquerda. A coluna direita contem o respectivo objetivo com o qual essas circunstâncias se relacionam.
+As próximas tabelas têm como por finalidade apresentar como se dá essa especificação para os seguintes predicados: $requiresCirc(goal_n, circ_m)$,$requiresEntity(goal_n, ent_m)$. Contudo, existe uma série de circunstâncias $circ \in Circumstance$ que apontam para o mesmo objetivo $g \in Goal$. Para tornar a apresentação desses resultados mais simples, os pesquisadores optaram por agrupar todas as circunstâncias que se relacionam na mesma célula na coluna esquerda. A coluna direita contém o respectivo objetivo com o qual essas circunstâncias se relacionam.
 
-Por exemplo, suponha que em uma dada situação, um objetivo g1 necessita a presença das circunstâncias $circ_a$,$circ_b$ e $circ_c$. De acordo com o modelo, essa situação é resolvida da seguinte maneira: $requiresCirc(g1,circ_a)$, $requiresCirc(g1,circ_b)$ e $requireCirc(g_1,circ_c)$. Porém, para economizar linha em tabelas, os pesquisadores optam por representar esse cenário assim:
+Por exemplo, suponha que em uma determinada situação, um objetivo g1 necessita a presença das circunstâncias $circ_a$,$circ_b$ e $circ_c$. De acordo com o modelo, essa situação é resolvida da seguinte maneira: $requiresCirc(g1,circ_a)$, $requiresCirc(g1,circ_b)$ e $requireCirc(g_1,circ_c)$. Porém, para economizar linha em tabelas, os pesquisadores optam por representar esse cenário assim:
 
 \begin{table}[H]
 \centering
