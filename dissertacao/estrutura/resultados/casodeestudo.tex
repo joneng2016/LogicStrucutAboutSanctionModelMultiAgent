@@ -185,15 +185,15 @@ sol & O dia deve estar ensolarado & eletrocutado & morte \\ \hline
 
 
 As tabelas \ref{relationEntEnt1}, \ref{relationEntEnt2} apresentam a especificação para dois predicados onde um deles é $possEntityRel(r_l,e_i,e_k)$ tal que $r_l$ é definido pela coluna \textit{relacionamento}, $e_i$ e $e_k$ pelas \textit{entidades envolvidas}. 
-O outro predicado é dado por $hasRisk(r_k,risk_j,cs_m)$ onde $risk_j$ é dado pela coluna risco e $cs_m$ é dado pela coluna consequencia. 
+O outro predicado é dado por $hasRisk(r_k,risk_j,cs_m)$ onde $risk_j$ é dado pela coluna risco e $cs_m$ é dado pela coluna consequência. 
 Algumas relações (instâncias do conjunto $Relation$) serão apresentadas usando o termo $X$. O objetivo disto consiste em tornar as tabelas mais enxutas por intermédio de uma regra a qual é; 
 
 A variável $X$ deve ser substituída pelo agente que tem a permissão de executar alguma ação em certo objetivo em prol a sua função. 
 Essa regra pode ser sintetizada na seguinte expressão para um agente $ag_n$ que é referenciado por $AGENT$:
 
 \begin{eqnarray}\label{whenusex} \nonumber
-    adoptsRole(AGENT,\rho_m) \wedge hasPermission(\rho_m,g_i) \wedge (relXotherEntity \in rg_n)  \\ 
-    \wedge hasRelation(g_i,rg_n) \to relAGENTotherEntity 
+    adoptsRole(AGENT,\rho_m) \wedge hasPermission(\rho_m,g_i) \wedge  requiresEntity(g_i, otherEntity) \\ 
+    \to requiresCirc(g_1, relAGENTotherEntity)  
 \end{eqnarray}
 
 
@@ -216,7 +216,7 @@ relAgente7Capacete | Agente7 ,capacete | \nonumber \\
 \nonumber \\
 \end{eqnarray}
 
-É digno de nota observar que a regra \ref{whenusex} não faz parte da estrutura do modelo. A sua existêcia se deve única e exclusivamente neste estudo de caso a fim de simplificar e otimizar o grande volume de informações repetitivas.
+É digno de nota observar que a regra \ref{whenusex} não faz parte da estrutura do modelo. A sua existência se deve única e exclusivamente neste estudo de caso a fim de simplificar e otimizar o grande volume de informações repetitivas.
 
 \begin{table}[H]
 \centering
@@ -589,7 +589,7 @@ A coluna \textit{Circunstância} apresenta todas as circunstâncias atreladas ao
 \scalefont{0.7}
 \begin{tabular}{|p{0.8\linewidth}|l|l|}
 \hline
-\textbf{Relacionamentos}																									& \textbf{Tipo de Instância}          & \textbf{Objetivp} \\ \hline
+\textbf{Relacionamentos}																									& \textbf{Tipo de Instância}          & \textbf{Objetivo} \\ \hline
 relXcapacete relXoculos relXroupagem relXluva relXbotas                                                                                                                                                                                                                                                                    & instanceOfRel              		 & g0         \\ \hline
 relXPano relPanoGlicerina relPanoCorda relPanoBastaoUniversal relPanoBastaoGarra relPanoSoquete                             & instanceOfRel                       & g1         \\ \hline
 umidade70,noVento,noChuva,sol 																								& instanceOfCond					  & g1        \\ \hline
@@ -640,11 +640,7 @@ relXSela relXColarrelXBastaoGarrarelXBastaoUniversal relXBastaoSoquete relXCorda
 \label{relationsgroup2}
 \end{table}
 
-
-A tabela \ref{entities} apresenta os dados em relação ao predicado $requiresEntity(goal_i, e_j)$ e segue o mesmo padrão apresentado pelo exemplo na tabela \ref{tableexemplgroupdataone}. Contudo, tendo em vista o fato de que está implicito no conceito do predicado $requiresEntity(goal_i, e_j)$ a natureza da instância atrelada ao segundo argumento (ou seja, não há dúvida que $e_j$ é uma entidade e está contida em $Entity$), a tabela \ref{entities} não apresenta coluna \textit{Tipo de Instância}.
-
-
-
+A tabela \ref{entitygoals} apresenta os dados em relação ao predicado $requiresEntity(goal_i, e_j)$ e segue o mesmo padrão apresentado pelo exemplo na tabela \ref{tableexemplgroupdataone}. Contudo, tendo em vista o fato de que está implicito no conceito do predicado $requiresEntity(goal_i, e_j)$ a natureza da instância atrelada ao segundo argumento (ou seja, não há dúvida que $e_j$ é uma entidade e está contida em $Entity$), a tabela \ref{entitygoals} não apresenta coluna \textit{Tipo de Instância}.
 
 \begin{table}[H]
 \centering
@@ -682,5 +678,5 @@ chaveCatraca,bastaoUniversal,prafusoX = \{agentes em relação aos objetivos\}  
 sela,colar,bastaoGarra,bastaoUniversal,bastaoSoquete,corda,carretilha,chaveCatraca,torre,condutor                  & g27        \\ \hline
 \end{tabular}
 \caption{Especificação do estudo de caso atrelado ao predicado $requiresEntity(goal_i, e_j)$}
-\label{entities}
+\label{entitygoals}
 \end{table}
