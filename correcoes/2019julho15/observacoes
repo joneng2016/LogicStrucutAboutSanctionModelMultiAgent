@@ -1,4 +1,4 @@
-[OBJETIVO - CAPA] - tentar montar uma avaliação sem o especialista, o que poderia ser? Uma forma de avaliar consiste verificar 	os raciocínios produzidos pelo modelo e averiguar se estão correspondentes com a realidade, ou seja - o esperado. Para cada raciocínio possível se faz necessário fazer as seguintes indagações: 
+[OBJETIVO - CAPA] tentar montar uma avaliação sem o especialista, o que poderia ser? Uma forma de avaliar consiste verificar 	os raciocínios produzidos pelo modelo e averiguar se estão correspondentes com a realidade, ou seja - o esperado. Para cada raciocínio possível se faz necessário fazer as seguintes indagações: 
 1 - O raciocínio apresenta algo que é um absurdo (ou que não aconteceria no contexto que está sendo averiguado) para a realidade a qual se propõem a reprentar?
 2 - O raciocínio corresponde a todos os cenários possíveis sobre o que está sendo representado? 
 3 - A verificaçao da realidade para um determinado cenário a ser representado da seguinte forma: 
@@ -16,7 +16,7 @@ Desse ponto de vista, a sequência de atividades se organiza da seguinte forma:
 [PÁGINA 56] -> uma das regras é representada como sendo um algorítmo, verificar com o Tacla se isso está correto, ou mudar isso?
 [EQUAÇÃO 42] -> resolver problema 
 [4.1 - LISTA/ITEM 1] Aplicar correção
-[PÁGINA 68] - NOTA VERDE DA LISTA 2 
+[PÁGINA 68] NOTA VERDE DA LISTA 2 
 Se mudar o número de agentes, estas relações devem ser mudadas? 
     Sim, a relação deve ser mudada.
 Por exemplo, se eu tiver dois auxiliares para segurar a escada eu tenho que modelar o fato de que bruno1 e bruno2 se relacionam com a escada?
@@ -37,7 +37,7 @@ Na minha opinião, isto deveria ser feito de forma genérica: um agente qualquer
 [PÁGINA 106] Aplicar as correções.
 [PÁGINA 107] O que seria policalesco?
 [PÁGINA 108] Aplicar correções
-[PÁGINA 110] Criar uma tabel que apresente quais daqueles construtores podem ser representados no meu modelo? 
+[PÁGINA 110] Criar uma tabela que apresente quais daqueles construtores podem ser representados no meu modelo? 
 [PÁGINA 110] Indagar sobre a posição das comparações
 [PÁGINA 111] Aplicar correções
 [PÁGINA 117] Se dá por conta da visão que foi dada ao meu modelo, porque ele não seria um modelo concorrente aos demais, mas sim 			  uma etapa pré para ser especificado pelos demais.			

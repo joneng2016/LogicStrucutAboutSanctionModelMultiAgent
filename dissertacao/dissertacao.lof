@@ -1,10 +1,10 @@
 \babel@toc {brazil}{}
-\contentsline {figure}{\numberline {1}{\ignorespaces Arvore de objetivos definido pelo modelo MOISE+ \cite {moiseframework}\relax }}{24}
-\contentsline {figure}{\numberline {2}{\ignorespaces Linguagem para descrever um programa de multiagentes normativos com a possibilidade de viola\IeC {\c c}\IeC {\~o}es e san\IeC {\c c}\IeC {\~o}es na nota\IeC {\c c}\IeC {\~a}o EBNF segundo o texto \cite {dastaniframework}. Nesta nota\IeC {\c c}\IeC {\~a}o, $<ident>$ \IeC {\'e} usado para denotar uma \textit {string} e $<int>$ inteiros. Os termos $<b-prop>$ e $<i-prop>$ s\IeC {\~a}o usados para designar dois tipos de conjuntos de proposi\IeC {\c c}\IeC {\~o}es que s\IeC {\~a}o disjuntos entre si\relax }}{26}
-\contentsline {figure}{\numberline {3}{\ignorespaces Um programa descrito na linguagem proposta neste estudo onde um agente representa um passageiro em uma esta\IeC {\c c}\IeC {\~a}o de trem que pode entrar com ou sem um \textit {ticket} na plataforma e no trem \cite {dastaniframework}.\relax }}{27}
-\contentsline {figure}{\numberline {4}{\ignorespaces A estrutura geral das classes do modelo\relax }}{37}
-\contentsline {figure}{\numberline {5}{\ignorespaces Diagrama de classes do Modelo \relax }}{46}
-\contentsline {figure}{\numberline {6}{\ignorespaces Condi\IeC {\c c}\IeC {\~a}o para definir se um dado objetivo foi atingido ou n\IeC {\~a}o\relax }}{56}
-\contentsline {figure}{\numberline {7}{\ignorespaces Diagrama de atividades do modelo\relax }}{59}
-\contentsline {figure}{\numberline {8}{\ignorespaces Ontologia que descreve \textit {Domain Model} no modelo V3S \cite {v3sframework}\relax }}{109}
-\contentsline {figure}{\numberline {9}{\ignorespaces Gr\IeC {\'a}fico de BowTie do texto \cite {melissaproject}\relax }}{111}
+\contentsline {figure}{\numberline {1}{\ignorespaces Arvore de objetivos definido pelo modelo MOISE+ \cite {moiseframework}\relax }}{25}
+\contentsline {figure}{\numberline {2}{\ignorespaces Linguagem para descrever um programa de multiagentes normativos com a possibilidade de viola\IeC {\c c}\IeC {\~o}es e san\IeC {\c c}\IeC {\~o}es na nota\IeC {\c c}\IeC {\~a}o EBNF segundo o texto \cite {dastaniframework}. Nesta nota\IeC {\c c}\IeC {\~a}o, $<ident>$ \IeC {\'e} usado para denotar uma \textit {string} e $<int>$ inteiros. Os termos $<b-prop>$ e $<i-prop>$ s\IeC {\~a}o usados para designar dois tipos de conjuntos de proposi\IeC {\c c}\IeC {\~o}es que s\IeC {\~a}o disjuntos entre si\relax }}{27}
+\contentsline {figure}{\numberline {3}{\ignorespaces Um programa descrito na linguagem proposta neste estudo onde um agente representa um passageiro em uma esta\IeC {\c c}\IeC {\~a}o de trem que pode entrar com ou sem um \textit {ticket} na plataforma e no trem \cite {dastaniframework}.\relax }}{28}
+\contentsline {figure}{\numberline {4}{\ignorespaces A estrutura geral das classes do modelo\relax }}{39}
+\contentsline {figure}{\numberline {5}{\ignorespaces Diagrama de classes do Modelo \relax }}{48}
+\contentsline {figure}{\numberline {6}{\ignorespaces Condi\IeC {\c c}\IeC {\~a}o para definir se um dado objetivo foi atingido ou n\IeC {\~a}o\relax }}{58}
+\contentsline {figure}{\numberline {7}{\ignorespaces Diagrama de atividades do modelo\relax }}{61}
+\contentsline {figure}{\numberline {8}{\ignorespaces Ontologia que descreve \textit {Domain Model} no modelo V3S \cite {v3sframework}\relax }}{111}
+\contentsline {figure}{\numberline {9}{\ignorespaces Gr\IeC {\'a}fico de BowTie do texto \cite {melissaproject}\relax }}{113}

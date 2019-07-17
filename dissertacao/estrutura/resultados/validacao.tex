@@ -1,4 +1,4 @@
-Isso se deu por escrever tanto as regras como as especificações dos predicados expostas em \textit{Caso de Estudo} nesta linguagem de programação. A seguir há um exemplo da regra \ref{reldeonticrole} escrita em Prolog.
+O estudo de caso especificado pelo modelo conceitual proposto nesse estudo foi implementadom em Prolog. A seguir segue um exemplo de como a regra \ref{reldeonticrole} é escrita em Prolog.
 
 hasPermission(RHO,GOAL) :- hasObligation(RHO,GOAL).
 
@@ -6,4 +6,4 @@ A seguir há um exemplo da especificação $adoptsRole(agente1,supervisor)$ impl
 
 adoptsRole(agente1,supervisor).
 
-A validação dos raciocínios em \ref{racs} é feita por meio "queries" ao sistema. Em Prolog isso é feito por escrever a especificação do implicador ($implicador \to implicado$) e por meio do algoritmo de \textit{Backtracking}, é possível encontrar todos os predicados que são verdade. Por exemplo, para validar o Raciocínio 3 se faz necessário fazer as seguintes "queries": $? - stopped(g1)$, $? - entityViol(agente4,g1,pano)$, $? - entityViol(agente3,g1,pano)$, $? - entityViol(agent2,g1,pano)$. Se o programa retorna como verdade todos os predicados implicadores que se espera pela verificação analítica, então é razoável concluir que os raciocínios foram validados. Os sete raciocínios aqui expostos apresentaram o mesmo resultado na implementação em Prolog. Isso permitiu concluir que as regras foram usadas adequadamente para analisar como o sistema raciocina o estudo de caso. 
+As \textit{queries}, em \textit{Prolog}, são feitas por escrever a especificação do implicador ($implicador \to implicado$). Através do algoritmo \textit{Backtracking}, é possível encontrar todos os predicados que são verdade. Por exemplo, para avaliar o Raciocínio 3 se faz necessário fazer as seguintes "queries": $? - stopped(g1)$, $? - entityViol(agente4,g1,pano)$, $? - entityViol(agente3,g1,pano)$, $? - entityViol(agent2,g1,pano)$. 
