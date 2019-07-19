@@ -22,7 +22,7 @@
 \contentsline {chapter}{\numberline {4}\MakeUppercase {Resultados}}{37}
 \contentsline {section}{\numberline {4.1}\MakeUppercase {Revis\IeC {\~a}o Explorat\IeC {\'o}ria e An\IeC {\'a}lise de Campo}}{37}
 \contentsline {section}{\numberline {4.2}\MakeUppercase {Estrutura Conceitual}}{38}
-\contentsline {subsection}{\numberline {4.2.1}M\IeC {\'o}dulos}{38}
+\contentsline {subsection}{\numberline {4.2.1}M\IeC {\'o}dulos}{39}
 \contentsline {subsection}{\numberline {4.2.2}Predicados}{43}
 \contentsline {subsection}{\numberline {4.2.3}Diagrama de Classes}{47}
 \contentsline {subsection}{\numberline {4.2.4}Regras}{49}
@@ -49,7 +49,7 @@
 \contentsline {chapter}{\numberline {5}\MakeUppercase {Discuss\IeC {\~a}o}}{106}
 \contentsline {section}{\numberline {5.1}\MakeUppercase {An\IeC {\'a}lise Comparativa}}{106}
 \contentsline {subsection}{\numberline {5.1.1}Modelo MOISE+}{106}
-\contentsline {subsection}{\numberline {5.1.2}Modelo DASTANI+}{108}
+\contentsline {subsection}{\numberline {5.1.2}Modelo DASTANI}{108}
 \contentsline {subsection}{\numberline {5.1.3}Modelo V3S}{110}
 \contentsline {subsection}{\numberline {5.1.4}Modelo NormMAS}{116}
 \contentsline {subsection}{\numberline {5.1.5}Compara\IeC {\c c}\IeC {\~a}o Gen\IeC {\'e}rica entre os Modelos}{118}
