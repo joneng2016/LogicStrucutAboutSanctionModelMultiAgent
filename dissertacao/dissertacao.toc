@@ -55,11 +55,11 @@
 \contentsline {subsection}{\numberline {6.1.4}Modelo NormMAS}{116}
 \contentsline {subsection}{\numberline {6.1.5}Compara\IeC {\c c}\IeC {\~a}o Gen\IeC {\'e}rica entre os Modelos}{118}
 \contentsline {section}{\numberline {6.2}\MakeUppercase {Discuss\IeC {\~a}o do Modelo Conceitual}}{120}
-\contentsline {subsection}{\numberline {6.2.1}Considera\IeC {\c c}\IeC {\~o}es sobre Crit\IeC {\'e}rios Metodol\IeC {\'o}gicos ao Caso de Estudo}{120}
-\contentsline {subsection}{\numberline {6.2.2}Considera\IeC {\c c}\IeC {\~o}es sobre Crit\IeC {\'e}rios Metodol\IeC {\'o}gicos ao Racioc\IeC {\'\i }nios}{123}
-\contentsline {chapter}{\numberline {7}\MakeUppercase {Conclus\IeC {\~a}o}}{127}
-\contentsline {section}{\numberline {7.1}\MakeUppercase {Avalia\IeC {\c c}\IeC {\~a}o do Objetivo}}{127}
-\contentsline {section}{\numberline {7.2}\MakeUppercase {Trabalhos Futuros}}{128}
-\contentsline {chapter}{REFER\^ENCIAS}{129}
-\contentsline {chapter}{Ap\^endice{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Nome do Ap\^endice}}{132}
-\contentsline {chapter}{Anexo{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Nome do Anexo}}{133}
+\contentsline {subsection}{\numberline {6.2.1}Considera\IeC {\c c}\IeC {\~o}es sobre Crit\IeC {\'e}rios Metodol\IeC {\'o}gicos ao estudo de caso}{120}
+\contentsline {subsection}{\numberline {6.2.2}Considera\IeC {\c c}\IeC {\~o}es sobre Crit\IeC {\'e}rios Metodol\IeC {\'o}gicos ao Racioc\IeC {\'\i }nios}{124}
+\contentsline {chapter}{\numberline {7}\MakeUppercase {Conclus\IeC {\~a}o}}{128}
+\contentsline {section}{\numberline {7.1}\MakeUppercase {Avalia\IeC {\c c}\IeC {\~a}o do Objetivo}}{128}
+\contentsline {section}{\numberline {7.2}\MakeUppercase {Trabalhos Futuros}}{129}
+\contentsline {chapter}{REFER\^ENCIAS}{130}
+\contentsline {chapter}{Ap\^endice{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Nome do Ap\^endice}}{133}
+\contentsline {chapter}{Anexo{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Nome do Anexo}}{134}
