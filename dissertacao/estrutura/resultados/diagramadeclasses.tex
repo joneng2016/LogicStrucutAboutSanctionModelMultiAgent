@@ -1,4 +1,4 @@
-Diferente da figura \ref{module}, o foco da figura \ref{classdiagrama} consiste em apresentar como se dá a estrutura de classes e dos relacionamentos. Ambas situações poderiam ser representadas em uma única figura, contudo os autores decidiram por seccionar em duas, a fim de tornar o processo mais didático. Por esse mesmo motivo não está apresentado neste \textit{UML} todas as classes e propriedades.  
+Diferente da figura \ref{module}, o foco da figura \ref{classdiagrama} consiste em apresentar como se dá a estrutura de classes e dos relacionamentos. Ambas situações poderiam ser representadas em uma única figura, contudo o autor decidiu por seccionar em duas, a fim de tornar o processo mais didático. Por esse mesmo motivo não está apresentado neste \textit{UML} todas as classes e propriedades.  
 
 \begin{figure}[H]
   \centering
@@ -13,7 +13,7 @@ As relações \textit{hasObligation}, \textit{hasPermission} se dão por meio de
 
 Em \textit{UML} questão de conjunto-subconjunto entre $Circumstance$ com $Relation$ e com $Condition$ é definida por meio de classes que possuem esses mesmos nomes. No \textit{UML}, as classes $Relation$ e $Condition$ são extensões da classe $Circumstance$. Dado essa situação, é possível representar a relação \textit{hasRisk} que ocorre entre $Circumstance$, $Relation$ e $Risk$ e isso é feito por meio do ternário entre essas classes. 
 
-Um objetivo não pode ser definido sem saber quais são as entidades $Entity$, relações $Relation$ e consequências $Consequence$ necessárias para que tal objetivo seja alcançado. Por isso os predicados $requiresCirc$ e $requiresEntity$ estabelecem composição forte de suas respectivas classes com $Goal$. Como um objetivo pode apontar para diversas instâncias dessas classes, os autores optaram - para cada uma das relações - trabalhar com a cardinalidade 
+Um objetivo não pode ser definido sem saber quais são as entidades $Entity$, relações $Relation$ e consequências $Consequence$ necessárias para que tal objetivo seja alcançado. Por isso os predicados $requiresCirc$ e $requiresEntity$ estabelecem composição forte de suas respectivas classes com $Goal$. Como um objetivo pode apontar para diversas instâncias dessas classes, o autor optou - para cada uma das relações - trabalhar com a cardinalidade 
 $1 - 1 .. *$.
 
 No modelo proposto $Relation$ deve estar relacionada com duas entidades. Por esse motivo o predicado $possEntityRel$ faz composição forte com $Entity$ e a sua cardinalidade é dada $1 - 2$. 
