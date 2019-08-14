@@ -18,6 +18,12 @@
 \contentsline {table}{\numberline {17}{\ignorespaces Especifica\IeC {\c c}\IeC {\~a}o do predicado $requiresCirc(circ_n,g_m)$, do predicado $instanceOfRel(circ_n)$ e do predicado $instanceOfCond(circ_n)$\relax }}{93}
 \contentsline {table}{\numberline {18}{\ignorespaces Especifica\IeC {\c c}\IeC {\~a}o do predicado $requiresCirc(goal_i,circ_j)$, do predicado $instanceOfRel(circ_n)$ e do predicado $instanceOfCond(circ_n)$\relax }}{94}
 \contentsline {table}{\numberline {19}{\ignorespaces Especifica\IeC {\c c}\IeC {\~a}o do estudo de caso atrelado ao predicado $requiresEntity(goal_i, e_j)$\relax }}{95}
-\contentsline {table}{\numberline {20}{\ignorespaces Construtores da linguagem \textit {ACTIVITY-DL} \cite {v3sframework}\relax }}{112}
-\contentsline {table}{\numberline {21}{\ignorespaces As pr\IeC {\'e}-condi\IeC {\c c}\IeC {\~o}es poss\IeC {\'\i }veis para as atividades \cite {v3sframework}\relax }}{112}
-\contentsline {table}{\numberline {22}{\ignorespaces An\IeC {\'a}lise comparativa sobre a expressividade desses modelos no que tange aos objetivos deste estudo. A sigla P.E.R significa Possibilidade de Algo Errado, a sigla C.A consiste em Condi\IeC {\c c}\IeC {\~o}es Ambientes, a sigla I.AG.AR significa Intera\IeC {\c c}\IeC {\~a}o entre Agente e Artefato e a sigla D.C.A significa Descri\IeC {\c c}\IeC {\~a}o de Cen\IeC {\'a}rio de Acidente\relax }}{119}
+\contentsline {table}{\numberline {20}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre o \textit {MOISE+} e o modelo proposto neste estudo\relax }}{107}
+\contentsline {table}{\numberline {21}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre o \textit {MOISE+} e o modelo proposto neste estudo\relax }}{108}
+\contentsline {table}{\numberline {22}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre o \textit {DASTANI+} e o modelo proposto neste estudo\relax }}{109}
+\contentsline {table}{\numberline {23}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre o \textit {DASTANI+} e o modelo proposto neste estudo\relax }}{110}
+\contentsline {table}{\numberline {24}{\ignorespaces Construtores da linguagem \textit {ACTIVITY-DL} \cite {v3sframework}\relax }}{112}
+\contentsline {table}{\numberline {25}{\ignorespaces As pr\IeC {\'e}-condi\IeC {\c c}\IeC {\~o}es poss\IeC {\'\i }veis para as atividades \cite {v3sframework}\relax }}{112}
+\contentsline {table}{\numberline {26}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o ente o modelo VS3 e o modelo proposto neste estudo\relax }}{115}
+\contentsline {table}{\numberline {27}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o ente o modelo VS3 e o modelo proposto neste estudo\relax }}{115}
+\contentsline {table}{\numberline {28}{\ignorespaces An\IeC {\'a}lise comparativa sobre a expressividade desses modelos no que tange aos objetivos deste estudo. A sigla P.E.R significa Possibilidade de Algo Errado, a sigla C.A consiste em Condi\IeC {\c c}\IeC {\~o}es Ambientes, a sigla I.AG.AR significa Intera\IeC {\c c}\IeC {\~a}o entre Agente e Artefato e a sigla D.C.A significa Descri\IeC {\c c}\IeC {\~a}o de Cen\IeC {\'a}rio de Acidente\relax }}{119}
