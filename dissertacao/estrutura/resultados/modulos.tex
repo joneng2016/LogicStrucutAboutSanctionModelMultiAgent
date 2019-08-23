@@ -49,7 +49,7 @@ Os agentes são autônomos e orientados à objetivos sendo esses dois elementos 
     Agent \cap Artefact = \{ \emptyset \}
 \end{equation}
 
-Para tornar a apresenação de certos conceitos algo um tanto mais didático, os autores desenvolveram um exemplo entitulado por: \textbf{Exemplo da Redação}, que é o seguinte cenário: "O Professor Aristóteles definiu uma atividade; Escrever uma redação sobre o livro Metafísica. Para isso, o aluno Alexandre o Grande deve escrever um dado texto, deve ler o livro sobre o tópico em definido, deve pegar uma folha, deve pegar um lápis e escrever a redação".  
+Para tornar a apresenação de certos conceitos algo um tanto mais didático, o autor desenvolveu um exemplo entitulado por: \textbf{Exemplo da Redação}, que é o seguinte cenário: "O Professor Aristóteles definiu uma atividade; Escrever uma redação sobre o livro Metafísica. Para isso, o aluno Alexandre o Grande deve escrever um dado texto, deve ler o livro sobre o tópico em definido, deve pegar uma folha, deve pegar um lápis e escrever a redação".  
 
 
 \textbf{O Módulo de Atividades} - \textit{Task Module} representado por $M_{Task}$ condiz com os conceitos relacionados aos objetivos que devem ser atingidos bem como aos papéis que são assumidos pelos agentes.
@@ -68,7 +68,7 @@ Para tornar a apresenação de certos conceitos algo um tanto mais didático, os
     M_{Environment} = \{  Circumstance  \}
 \end{equation}
 
-\textbf{Relation} - Uma entidade estabelece relações com outras entidades ao seu redor \cite{entity}. No modelo proposto neste texto. Os autores optaram por um conjunto para representar os relacionamentos entre as entidades que possibilite identifica-los. Isso facilita o desenvolvimento de raciocínios. O uso 
+\textbf{Relation} - Uma entidade estabelece relações com outras entidades ao seu redor \cite{entity}. No modelo proposto neste texto. O autor optou por um conjunto para representar os relacionamentos entre as entidades que possibilite identifica-los. Isso facilita o desenvolvimento de raciocínios. O uso 
 dos relacionamentos podem ser exemplificado por meio do \textbf{Exemplo da Redação}. Ao definir uma atividade, o professor Aristóteles
 , que é uma entidade, estabeleceu uma relação com o seu aluno Alexandre, representado aqui por $relAristotelesAlexandre$. Para cumprir essa tarefa o aluno precisou ler o livro - $relAlexandreLivro$, pegar uma folha - $relAlexandreFolha$,  pegar um lápis $relAlexandreLapis$ e escrever a redação, o que implica em uma relação entre lápis e folha $relLapisFolha$. Portanto, o conjunto de relacionamentos se dá da seguinte maneira;
 
@@ -77,7 +77,7 @@ dos relacionamentos podem ser exemplificado por meio do \textbf{Exemplo da Reda�
      relAlexandreLapis, relLapisFolha \}
 \end{eqnarray}
 
-Obviamente, cada entidade do grupo \textbf{Relation} tem um vínculo com elementos do grupo \textit{Entity}, como por exemplo $relAlexandreFolha$ apresenta um vínculo com as entidades $Alexandre$ e $Folha$. Há uma predicado que trata disto e será exibido posteriormente. \textbf{Condition} - Esse conjunto representa as condições que devem ser mantidas para que um objetivo possa ser alcançado. Tendo em vista certas relações de predicado, que serão apresentados com maior riqueza de detalhes mais adiante, se faz necessário definir abstração de alto nível entre \textbf{Condition} e \textbf{Relation}. Assim sendo, os autores assumem a existência de um conjunto \textbf{Circumstance} que é dado pela seguinte relação; 
+Obviamente, cada entidade do grupo \textbf{Relation} tem um vínculo com elementos do grupo \textit{Entity}, como por exemplo $relAlexandreFolha$ apresenta um vínculo com as entidades $Alexandre$ e $Folha$. Há uma predicado que trata disto e será exibido posteriormente. \textbf{Condition} - Esse conjunto representa as condições que devem ser mantidas para que um objetivo possa ser alcançado. Tendo em vista certas relações de predicado, que serão apresentados com maior riqueza de detalhes mais adiante, se faz necessário definir abstração de alto nível entre \textbf{Condition} e \textbf{Relation}. Assim sendo, o autor assume a existência de um conjunto \textbf{Circumstance} que é dado pela seguinte relação; 
 
 \begin{equation}
     Circumstance = \{ Relation, Condition \} |  Relation \cap Condition = \{ \emptyset \}

@@ -33,6 +33,15 @@ Dispon{\'\i}vel em: $<$http://doi.acm.org/10.1145/182.358434$>$.}
 Dispon{\'\i}vel em:
   $<$http://www.mitpressjournals.org/doi/abs/10.1162/PRES\_a\_00134$>$.}
 
+\bibitem[Barrett e Weld 1994]{planning}
+\abntrefinfo{Barrett e Weld}{BARRETT; WELD}{1994}
+{BARRETT, A.; WELD, D.~S. Partial-order planning: Evaluating possible
+  efficiency gains.
+\textbf{Artificial Intelligence}, v.~67, n.~1, p. 71 -- 112, 1994.
+ISSN 0004-3702.
+Dispon{\'\i}vel em:
+  $<$http://www.sciencedirect.com/science/article/pii/0004370294900124$>$.}
+
 \bibitem[Bonasso et al. 1995]{reactiveagent}
 \abntrefinfo{Bonasso et al.}{BONASSO et al.}{1995}
 {BONASSO, R. P. et al. Experiences with an architecture for intelligent,
@@ -159,6 +168,12 @@ Dispon{\'\i}vel em: $<$http://doi.acm.org/10.1145/242587.242591$>$.}
   Intelligence}. San Francisco, CA, USA: Morgan Kaufmann Publishers Inc., 1987.
 ISBN 0-934613-31-1.}
 
+\bibitem[Gruber et al. 2018]{Gruber2018UsingGE}
+\abntrefinfo{Gruber et al.}{GRUBER et al.}{2018}
+{GRUBER, Y.~A. et al. Using game engines in lightning shielding: The
+  application of the rolling spheres method on virtual as-built power
+  substations. In:  . [S.l.: s.n.], 2018.}
+
 \bibitem[H{\"u}bner et al. 2002]{moiseframework}
 \abntrefinfo{H{\"u}bner et al.}{H{\"U}BNER et al.}{2002}
 {H{\"U}BNER, J.~F.; SICHMAN, J.~S.; BOISSIER, O. A model for the structural,
@@ -257,6 +272,11 @@ ISBN 978-3-540-32617-5.}
   Heidelberg: Springer Berlin Heidelberg, 2007. p. 67--86.
 ISBN 978-3-540-71103-2.}
 
+\bibitem[Rosendo et al. 2011]{programa}
+\abntrefinfo{Rosendo et al.}{ROSENDO et al.}{2011}
+{ROSENDO, M. et al. Towards the development of a 3d serious game for training
+  in power network maintenance. In:  . [S.l.: s.n.], 2011. p. 16 -- 23.}
+
 \bibitem[Russell e Norvig 2003]{artificialinteligencemodermapproach}
 \abntrefinfo{Russell e Norvig}{RUSSELL; NORVIG}{2003}
 {RUSSELL, S.~J.; NORVIG, P. \textbf{Artificial intelligence - a modern
@@ -264,6 +284,13 @@ ISBN 978-3-540-71103-2.}
   artificial intelligence).
 ISBN 0130803022. Dispon{\'\i}vel em:
   $<$http://www.worldcat.org/oclc/314283679$>$.}
+
+\bibitem[Samara et al. 2018]{wesaac}
+\abntrefinfo{Samara et al.}{SAMARA et al.}{2018}
+{SAMARA, J.~M. et al. Um modelo de multiagentes normativos para descrição de
+  personagens de jogos sérios. In:  \textbf{Knowledge Representation for
+  Agents and Multi-Agent Systems}. [S.l.]: XII Workshop-Escola de Sistemas de
+  Agentes, seus Ambientes e Aplicações, 2018. p. 49--60.}
 
 \bibitem[So e Durfee 1996]{taems02}
 \abntrefinfo{So e Durfee}{SO; DURFEE}{1996}

@@ -1,4 +1,4 @@
-A clareza ao leitor na tarefa de mostrar o uso do modelo conceitual para especificar um estudo de caso real é extremamente prejudicada tendo em vista a quantidade de elementos presentes no modelo. Com base nisso, os autores desse texto entendem que antes de apresentar a aplicação do modelo em um estudo de caso, se faz necessário avaliar como se dá a aplicação deste modelo para um caso fictício mais simples. 
+A clareza ao leitor na tarefa de mostrar o uso do modelo conceitual para especificar um estudo de caso real é extremamente prejudicada tendo em vista a quantidade de elementos presentes no modelo. Com base nisso, o autor desse texto entendeu que antes de apresentar a aplicação do modelo em um estudo de caso, se faz necessário avaliar como se dá a aplicação deste modelo para um caso fictício mais simples. 
 
 Para isso pode-se considerar o seguinte cenário: Dois funcionários (Fernando e Bruno) são escalados para realizar a troca de uma lâmpada. Então, esses profissionais necessitam dos seguintes objetos: escada, lâmpada e bocal. Essa troca deve ser feita sob as seguintes condições: piso seco, ambiente iluminado e o disjuntor da respectiva lâmpada deve estar devidamente desligado. Os riscos associado a esse trabalho são os seguintes: queda da escada (com a consequência de fratura), queda da lâmpada (com a consequência de ferir algum profissionais que esteja debaixo deste objeto) e ser eletrocutado (com a consequência de ferimentos sérios). A lista a seguir trás o sequenciamento das atividades nas quais esse processo ocorre:
 
@@ -117,8 +117,6 @@ A lista a seguir define o predicado $hasObligation(\rho_m,g_n)$.
 
 A lista a seguir exibe a especificação do predicado $nextGoal(g_i,g_j)$. 
 
-FAZER O DIAGRAMA
- 
 \begin{enumerate}
 	\item $nextGoal(gBL,gSubir)$
 	\item $nextGoal(gSubir,gRemover)$
@@ -203,4 +201,4 @@ Uma vez feito o levantamento dos predicados necessários, pode-se considerar as 
 	negConseqFor(gRemover,fernando,eletrocutado,ferEletr) \nonumber \\ 
 \end{eqnarray}	
 
-Por esse raciocínio, é possível observar que se o agente executar o procedimento de manutenção sem que a condição, desligar disjuntor, estiver presente, então esse agente (Fernando) será eletrocutado e terá ferimentos por conta disso. 
+Por esse raciocínio, é possível observar que se o agente executar o procedimento de manutenção sem que a condição, desligar disjuntor, esteja presente, então esse agente (Fernando) será eletrocutado e terá ferimentos por conta disso. 
