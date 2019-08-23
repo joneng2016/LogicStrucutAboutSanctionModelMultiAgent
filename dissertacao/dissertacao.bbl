@@ -168,6 +168,12 @@ Dispon{\'\i}vel em: $<$http://doi.acm.org/10.1145/242587.242591$>$.}
   Intelligence}. San Francisco, CA, USA: Morgan Kaufmann Publishers Inc., 1987.
 ISBN 0-934613-31-1.}
 
+\bibitem[Gruber et al. 2018]{Gruber2018UsingGE}
+\abntrefinfo{Gruber et al.}{GRUBER et al.}{2018}
+{GRUBER, Y.~A. et al. Using game engines in lightning shielding: The
+  application of the rolling spheres method on virtual as-built power
+  substations. In:  . [S.l.: s.n.], 2018.}
+
 \bibitem[H{\"u}bner et al. 2002]{moiseframework}
 \abntrefinfo{H{\"u}bner et al.}{H{\"U}BNER et al.}{2002}
 {H{\"U}BNER, J.~F.; SICHMAN, J.~S.; BOISSIER, O. A model for the structural,
@@ -265,6 +271,11 @@ ISBN 978-3-540-32617-5.}
   MICHEL, F. (Ed.). \textbf{Environments for Multi-Agent Systems III}. Berlin,
   Heidelberg: Springer Berlin Heidelberg, 2007. p. 67--86.
 ISBN 978-3-540-71103-2.}
+
+\bibitem[Rosendo et al. 2011]{programa}
+\abntrefinfo{Rosendo et al.}{ROSENDO et al.}{2011}
+{ROSENDO, M. et al. Towards the development of a 3d serious game for training
+  in power network maintenance. In:  . [S.l.: s.n.], 2011. p. 16 -- 23.}
 
 \bibitem[Russell e Norvig 2003]{artificialinteligencemodermapproach}
 \abntrefinfo{Russell e Norvig}{RUSSELL; NORVIG}{2003}

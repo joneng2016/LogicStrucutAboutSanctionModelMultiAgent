@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.17)  21 AUG 2019 08:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.17)  23 AUG 2019 07:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1222,10 +1222,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7669 strings out of 494903
- 114768 string characters out of 6179960
- 194517 words of memory out of 5000000
- 10554 multiletter control sequences out of 15000+600000
+ 7679 strings out of 494903
+ 114967 string characters out of 6179960
+ 194640 words of memory out of 5000000
+ 10564 multiletter control sequences out of 15000+600000
  97964 words of font info for 217 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  43i,18n,43p,2130b,427s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1239,7 +1239,7 @@ usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/times/utmri8a.pfb>
-Output written on dissertacao.pdf (150 pages, 1407062 bytes).
+Output written on dissertacao.pdf (150 pages, 1407435 bytes).
 PDF statistics:
  553 PDF objects out of 1000 (max. 8388607)
  367 compressed objects within 4 object streams
