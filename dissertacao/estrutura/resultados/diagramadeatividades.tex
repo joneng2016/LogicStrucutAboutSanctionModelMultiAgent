@@ -1,4 +1,4 @@
-A figura \ref{atividiagram} apresenta a aplicação das regras em termos de diagrama de atividades. Essa figura deve ser entendida como uma proposta de orientação das regras registradas na subseção \ref{regras}. Há outras maneiras de organizar essas regras em diferentes diagramas de atividades, sendo que a apresentada neste texto é apenas uma dessas. Isso se deve ao fato de que esse estudo pretendo fornecer um modelo e não um algoritmo. 
+As figuras \ref{atividiagram1}, \ref{atividiagram2} e \ref{atividiagram3} (o diagrama foi quebrado em três figuras distintas com o propósito de melhorar a qualidade da resolução)  apresentam a aplicação das regras em termos de diagrama de atividades. Essas figuras deve ser entendidas como uma proposta de orientação das regras registradas na subseção \ref{regras}. Há outras maneiras de organizar essas regras em diferentes diagramas de atividades, sendo que a apresentada neste texto é apenas uma dessas. Isso se deve ao fato de que esse estudo pretendo fornecer um modelo e não um algoritmo. 
 
 O primeiro termo desta figura corresponde a "carregar todos os agentes". Esse elemento é indiferente à estrutura das regras do modelo. A existência desta atividade no diagrama se dá por finalidades de implementação, uma vez que para uma máquina poder processar todos as atividades, primeiramente se faz necessário que informações sobre os agentes sejam carregadas na memória. As atividades "selecione um dos agentes", "carregar os objetivos", "há objetivos que não foram alcançados" e "o agente escolhe por tentar alcançar o objetivo" fazem referência as regras \ref{rolenextgoal} e \ref{reldeonticrole}. Aquela analisa qual é a próxima regra que esta em condições de serem atingidas pelo agente e esta verifica a permissão do agente no que tange a possibilidade de poder adotar o objetivo. 
 
@@ -8,10 +8,26 @@ O ponto de decisão "todas as entidades necessárias para esse objetivo estão p
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=1\linewidth]{figure/DiagramaDeAtividade.png} 
-  \caption{Diagrama de atividades do modelo}
-  \label{atividiagram}
+  \includegraphics[width=1.1\linewidth]{figure/diag1.jpg} 
+  \caption{Diagrama de atividades do modelo (1)}
+  \label{atividiagram1}
 \end{figure}
+
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1.1\linewidth]{figure/diag2.jpg} 
+  \caption{Diagrama de atividades do modelo (2)}
+  \label{atividiagram2}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1.1\linewidth]{figure/diag3.jpg} 
+  \caption{Diagrama de atividades do modelo (3)}
+  \label{atividiagram3}
+\end{figure}
+
 
 O ponto de decisão "todas as relações para esse objetivo estão presentes" e "violação de relação" representam a regra \ref{relationViol}. Isso se deve ao fato de que essas atividades avaliam se uma das relações necessárias para cumprir com o objetivo não está presente, resultando em uma violação de relacionamento. 
 
