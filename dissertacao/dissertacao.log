@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.17)  29 SEP 2019 21:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.17)  2 OCT 2019 00:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -905,7 +905,32 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
 
 
 ]
-(./estrutura/resumo/abstract.tex) [6
+(./estrutura/resumo/abstract.tex
+
+! Package inputenc Error: Unicode char ​ (U+200B)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ... to address this situation. The area of ​
+                                                  ​study of this research ...
+
+? 
+
+! Package inputenc Error: Unicode char ​ (U+200B)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 ... address this situation. The area of ​​
+                                                  study of this research is ...
+
+? 
+) [6
 
 
 ] (./dissertacao.lof)
@@ -914,14 +939,14 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
 
  [7
 
-]
-(./dissertacao.lot)
+] (./dissertacao.lot)
 \tf@lot=\write4
 \openout4 = `dissertacao.lot'.
 
  [8
 
-] (./dissertacao.toc [9
+] (./dissertacao.toc
+[9
 
 
 ])
@@ -1046,11 +1071,8 @@ Overfull \hbox (45.52718pt too wide) in paragraph at lines 26--27
  [][] 
  []
 
-[61 <./figure/diag1.jpg> <./figure/diag2.jpg>] [62 <./figure/diag3.jpg>]
-
-LaTeX Warning: Reference `atividiagram' on page 63 undefined on input line 42.
-
-) (./estrutura/resultados/cenariospredicadosabertos.tex [63] [64] [65] [66]
+[61 <./figure/diag1.jpg> <./figure/diag2.jpg>] [62 <./figure/diag3.jpg>])
+(./estrutura/resultados/cenariospredicadosabertos.tex [63] [64] [65] [66]
 [67]) (./estrutura/resultados/introdutorycase.tex [68] [69] [70] [71] [72]
 Overfull \hbox (18.05742pt too wide) in paragraph at lines 138--139
 []$\OML/ztmcm/m/it/12 requiresCirc\OT1/ztmcm/m/n/12 (\OML/ztmcm/m/it/12 gNovaBo
@@ -1189,15 +1211,12 @@ AED: lastpage setting LastPage
 +-------------------------------------------------------------------+
 (./dissertacao.aux)
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
  7677 strings out of 494903
- 114977 string characters out of 6179960
+ 114969 string characters out of 6179960
  194734 words of memory out of 5000000
  10565 multiletter control sequences out of 15000+600000
  97964 words of font info for 217 fonts, out of 8000000 for 9000
@@ -1213,7 +1232,7 @@ usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/times/utmri8a.pfb>
-Output written on dissertacao.pdf (147 pages, 880462 bytes).
+Output written on dissertacao.pdf (147 pages, 881384 bytes).
 PDF statistics:
  537 PDF objects out of 1000 (max. 8388607)
  358 compressed objects within 4 object streams
