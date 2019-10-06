@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.17)  2 OCT 2019 00:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.17)  6 OCT 2019 20:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -914,8 +914,8 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1 ... to address this situation. The area of ​
-                                                  ​study of this research ...
+l.1 ...n a maintenance activity in the area of ​
+                                                  ​electricity transmissio...
 
 ? 
 
@@ -926,8 +926,8 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1 ... address this situation. The area of ​​
-                                                  study of this research is ...
+l.1 ... maintenance activity in the area of ​​
+                                                  electricity transmission a...
 
 ? 
 ) [6
@@ -1192,19 +1192,19 @@ Cap\'{\i }tulo 7.
 (./estrutura/conclusao/avaliacaodosobjetivos.tex [129
 
 ] [130])
-(./estrutura/conclusao/conclusaogeral.tex)
-(./estrutura/conclusao/trabalhosfuturos.tex [131]) [132] (./dissertacao.bbl
-[133
+(./estrutura/conclusao/conclusaogeral.tex) [131]
+(./estrutura/conclusao/trabalhosfuturos.tex) [132] [133] (./dissertacao.bbl
+[134
 
 
-] [134] [135]) [136]
+] [135] [136]) [137]
 Apendice A.
-(./estrutura/apendice/entrevista.tex [137
+(./estrutura/apendice/entrevista.tex [138
 
-] [138] [139] [140] [141] [142]
-[143] [144] [145] [146]) 
+] [139] [140] [141] [142] [143]
+[144] [145] [146] [147]) 
 AED: lastpage setting LastPage
-[147]
+[148]
 +-------------------------------------------------------------------+
 | Comentario, sugestao ou critica sobre o abnTeX? Entre em contato: |
 |                  http://abntex.codigolivre.org.br                 |
@@ -1217,7 +1217,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  7677 strings out of 494903
  114969 string characters out of 6179960
- 194734 words of memory out of 5000000
+ 194816 words of memory out of 5000000
  10565 multiletter control sequences out of 15000+600000
  97964 words of font info for 217 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
@@ -1232,10 +1232,10 @@ usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/times/utmri8a.pfb>
-Output written on dissertacao.pdf (147 pages, 881384 bytes).
+Output written on dissertacao.pdf (148 pages, 883636 bytes).
 PDF statistics:
- 537 PDF objects out of 1000 (max. 8388607)
- 358 compressed objects within 4 object streams
+ 540 PDF objects out of 1000 (max. 8388607)
+ 360 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
  56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
