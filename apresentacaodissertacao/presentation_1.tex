@@ -84,7 +84,7 @@
 %	TITLE PAGE
 %----------------------------------------------------------------------------------------
 
-\title{Proposta de um Modelo para Representar Cenários de Acidentes Usando Conceitos de Normas, Sanções e Violações} % The short title appears at the bottom of every slide, the full title is only on the title page
+\title{Um Modelo Conceitual para Cenários de Acidentes em Atividades de Manutenção} % The short title appears at the bottom of every slide, the full title is only on the title page
 
 \author{Jonathan M. Samara \\ Orientador Prof. Dr. Cesar A. Tacla} % Your name
 \institute[UTFPR] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
@@ -103,64 +103,26 @@ Universidade Tecnológica Federal do Paraná \\ % Your institution for the title
 \begin{frame}
 \frametitle{Introdução} % Table of contents slide, comment this block out to remove it
 	\begin{itemize}
-			\item Muitas pessoas são submetidas a atividades que apresentam algum risco. 
-			\item Exemplos de serviços assim; elétrica, petroquímica, telecomunicações, transportes. 
-			\item Existe uma série de possíveis causas em um acidente. 
-			\item A computação pode contribuir com esse tipo de problema. 
-			\item Criar representações para tratar esse problema. 			
+			\item \textbf{Motivação}: Averiguar modelos que possam ser aplicados a sistemas multiagentes, criar um modelo conceitual sobre um dado estudo de caso e compreender a relação deste com aqueles. 
+			\item \textbf{Relevância}: Apresentar um modelo conceitual que defina em termos de classes e relacionamentos uma estrutura lógico-descritiva de fatores ambientais e organizacionais.    
 	\end{itemize}
 \end{frame}
 
-\begin{frame}
-\frametitle{Introdução - Motivação} % Table of contents slide, comment this block out to remove it
-	\begin{itemize}
-			\item Uma maneira de representar cenários assim está relacionado com sistemas multiagentes normativos. 
-			\item Dentro deste tipo de atenge é possível observar os conceitos de; norma, violação e sanção.
-			\item Portanto, entender como usar agentes normativos para criar representações específicas a problemas envolvendo trabalho, acidente e risco é uma motivação para esse estudo. 
-			\item Realizar a análise dos raciocínios que podem ser construído é outra motivação. 			
-	\end{itemize}
-\end{frame}
-
-\begin{frame}
-\frametitle{Introdução - Relevância} % Table of contents slide, comment this block out to remove it
-	\begin{itemize}
-			\item Contribuição para três campos; Representação Computacional, Sistemas Multiagentes e Segurança.
-			\item Representação Computacional e Sistemas Multiagentes.
-			\begin{itemize}
-				\item Existem modelos para representar Sistemas Multiagentes, porém não apresentam características específicas (conceitos, predicados, regras) para tratar cenários de acidentes. 
-				\item Existem modelos para representar SMA Normativos, mas apresentam aspectos altamente genéricos, não tendo características específicas (conceitos, predicados e regras) para tratar cenários de acidentes e riscos.
-				\item Existem modelos para representar cenários de acidentes (am ambiente de trabalho) usando \textit{SMA}, contudo são complexos. Além disso, esses modelos não focam no erro dos agentes bem como as consequências dos mesmos sobre os demais colegas.  
-			\end{itemize}			 
-	\end{itemize}
-\end{frame}
-
-\begin{frame}
-\frametitle{Introdução - Relevância} % Table of contents slide, comment this block out to remove it
-	\begin{itemize}
-			\item Segurança
-			\begin{itemize}
-				\item O interesse da pesquisa é computacional. 
-				\item O modelo aqui proposto trata de conceitos relacionados a riscos e situações inesperadas.
-				\item Portanto, apesar do interesse ser principalmente computacional, há um diálogo com o campo da Segurança. 
-			\end{itemize}			 
-	\end{itemize}
-\end{frame}
 
 \begin{frame}
 \frametitle{Introdução - Objetivo Geral} % Table of contents slide, comment this block out to remove it
 	\begin{itemize}
-		\item Conceber uma representação que tenha maior expressividade (quando comparado com os demais modelos) ao representar o seguinte cenário; "Agentes trabalham de forma colaborativa para atingir um dado objetivo geral. Esses agentes podem cometer erros submetendo a si mesmos bem como a outros a acidentes ocasionando grandes danos a integridade física do(s) acidentado(s). Não apenas isso, mas essa representação deverá ser capaz de considerar as relações existentes entre as entidades (agentes, artefatos tais como ferramentas), condições ambientais com as violações, sanções e acidentes. Questões envolvendo caráter possibilístico dos acidentes frente a ação dos agentes também deverão ser verificadas nessa representação."  
+		\item Sintetizar, construir e avaliar, por intermédio de observações, de análises de documentos técnicos, de análises de modelos computacionais e de entrevista com profissionais da área, um modelo conceitual que define os conceitos e as relações para representar os cenários de ambientes de atividades, bem como os respectivos acidentes que neles podem acontecer, em que a validação ocorre por verificar se os raciocínios (para um dado estudo de caso do setor de energia elétrica) resultantes desse modelo são correspondentes com a realidade a fim de levantar um entendimento formal do problema para a comunidade acadêmica no que tange a que tipo de representação computacional é mais apropriada para determinado contexto. 
 	\end{itemize}
 \end{frame}
 
 \begin{frame}
 \frametitle{Introdução - Objetivos Específicos}
 	\begin{enumerate}
-		\item Representar um SMA. 
-		\item Representar normas, violações e sanções sendo que as violações são erros cometidos pelos agentes e as sanções estão relacionadas com os acidentes e suas respectivas consequências.
-		\item Representar situações onde um agente é submetido a um evento ruim (integridade física do agente é negativamente afetada de alguma maneira) mesmo que ele não tenha cometido erro algum. 
-		\item Representar como se dá as relações entre as entidades, condições ambientes e conjunto coma s violações e sanções. 
-		\item Representar as possibilidades da ocorrência de um evento atrelado a um dado risco. 
+    	\item Identificar os aspectos relevantes que devem fazer parte da estrutura do modelo em relação aos 	riscos e consequências (acidentes) para os atores e atividades, que sejam relevantes na prática da 	atividade de manutenção, em caso de falha na operação. 
+    	\item Construir um modelo conceitual que seja implementável computacionalmente e que produza as 	inferências que tratem aspectos relevantes ao problema.
+    	\item Avaliar o modelo por aplicá-lo a um dado estudo de caso a fim de averiguar se os raciocínios 	produzidos nessa situação estão de acordo com a realidade.  
+    	\item Analisar modelos computacionais em relação ao modelo conceitual desse estudo a fim de ter um 	levantamento formal do estado do problema. 
 	\end{enumerate}
 \end{frame}
 
@@ -206,277 +168,145 @@ Universidade Tecnológica Federal do Paraná \\ % Your institution for the title
 \end{frame}
 
 \begin{frame}
-	\frametitle{Metodologia - Levantamento de Requisitos}
+	\frametitle{Metodologia}
 	\begin{itemize}
-		\item Os requisitos são derivados de uma análise dos Objetivos Específicos desse estudo.
-		\item Apresentam as seguintes características; 
-		\begin{itemize}
-			\item São estáticos (uma vez formulado o problema, não mudam com o decorrer do desenvolvimento da representação);
-			\item São articulados em um vocabulário compreensível para o autor desta dissertação. 			
-		\end{itemize}
-	\end{itemize}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Metodologia - Conceitualização}
-	\begin{itemize}
-		\item Investigação de modelos que podem ser aplicados a essa situação.
-		\item Verificação dos conceitos em interesse dentro desses modelos. 
-		\item O autor isolou os conceitos e suas relações nesses modelos. 
-		\item Os conceitos ão adaptados ao cenário que se deseja representar.
-		\item A estrutura resultante é escrita no seguinte formalismo; Teoria de Conjuntos para representar os conceitos e lógica de predicados para representar as relações. 
-		\item UML também é usado para essa mesmo propósito. 
-		\item Uma vez feito isso, o autor elabora regras para determinar a transição as transições de estado.
+		\item \textbf{Revisão Exploratória e Análise de Campo}: Estudo de Manuais Técnicos, conversas com profissionais da área, entrevista com Engenheiro de Manutenção, acompanhamento de um procedimento de manutenção em liha viva, criação de textos descrevendo os cenários, participação em Workshops e revisão bibliográfica exploratória.
+		\item \textbf{Formalização de um Modelo Conceitual}: Verificar conceitos e seus respectivos relacionamentos. Após isso, escrever essa estrutura em termos de Conjuntos e Relações. Uma ver identificado isso, descrever regras que definem a transitividade do modelo. 
+		\item \textbf{Explorar os Arcabouços Possíveis}: Verificar correspondência com outros arcabouços da área de multiagentes e acidentes de trabalho.
+		\item \textbf{Aplicação em Estudo de Caso}: Aplicação do modelo conceitual em um dado estudo descaso a fim de verificar a correspondência com a realidade.
 	\end{itemize} 
 \end{frame}
 
+
 \begin{frame}
-	\frametitle{Metodologia - Análise do Estudo de Caso}
-	\begin{itemize}
-		\item Manutenção em Linha Viva. 
-		\item Estudo de manuais técnicos. 
-		\item Entrevista com o Engenheiro de Manutenção de Linha Viva. 
-		\item Acompanhamento de um procedimento de Manutenção. 
-		\item É feito um Modelo Baseado em Cenários que consiste na descrição da atividade em linguagem natural. Esse modelo foi verificado por profissionais da área. 
-		\item Desse houve o processo de especificação nos conjuntos e predicados definidos anteriormente. 
-	\end{itemize} 
+	\frametitle{Resultados - Revisão Exploratória e Análise de Campo}
+	\begin{enumerate}
+		\item Os trabalhadores que executam os procedimentos.
+		\item Os diferentes papéis (ou funções) desses trabalhadores.
+		\item As ferramentas usadas pelos profissionais.
+		\item Os equipamentos que são submetidos a manutenção.
+		\item As interações entre todo tipo de entidade tais como trabalhadores, ferramentas e equipamentos.
+		\item As etapas das tarefas que devem ser finalizadas. 
+		\item As relações entre todas as entidades e interações com as tarefas
+		\item Averiguar a incerteza presente em certos processos e equipamentos que podem gerar acidentes.
+		\item Análise das Medidas que são tomadas pelos profissionais para lidar com essas incertezas.
+		\item Análise de Cenários onde Profissionais tomam medidas em desacordo com a segurança.
+		\item Análise dos riscos gerados a todos.
+		\item Análise da possibilidade de algum acidente ocorrer.
+	\end{enumerate}
 \end{frame}
 
 \begin{frame}
-	\frametitle{Metodologia - Validação}
-	\begin{itemize}
-		\item Uma vez com a manutenção especificada, o autor gera raciocínios para traduzir diferentes cenários de trabalho (com o propósito de provar a hipótese desse estudo). 
-		\item A validação desses raciocínios se dá em análise com o modelo de cenários, pois isso permite verificar se esses raciocínios correspondem com a realidade. 
-	\end{itemize} 
-\end{frame}
-
-\begin{frame}
-	\frametitle{Resultados}
-	\begin{figure}[H]
-	  \centering
-	  \includegraphics[width=1\linewidth]{figure/Module.png} 
-	  \caption{A estrutura geral das classes do modelo}
-	  \label{module}
-	\end{figure} 
+	\frametitle{Resultados - Revisão Exploratória e Análise de Campo}
+ 	\begin{enumerate}
+		\item MOISE+
+		\item Modelo de Agentes Normativos de Dastani
+		\item V3S 
+		\item NormMAS
+	\end{enumerate}
 \end{frame}
 
 \begin{frame}
 	\frametitle{Resultados - Estrutural Conceitual - Módulos}
- 	\begin{equation} 
-		M_{Entity} = \{ Entity, Agent, Artefact, EntityGoal, Agg, Ago\}
-	\end{equation}\label{modent}
-
-	\begin{equation} \label{defineentity} 
-		( Agent \cup Artefact ) \subset Entity
-	\end{equation}
-
-	\begin{equation} \label{agentsartefactvoid}
-    	Agent \cap Artefact = \emptyset
-	\end{equation}
-
-	\begin{equation}
-    	M_{Task} = \{ Goal, GoalPreRequisite, Role \}
-	\end{equation}
-
-	\begin{equation}
-	    M_{Environment} = \{ Relation, ReationGoal, Condition, ConditionGoal \}
-	\end{equation}
-
-\end{frame}
-
-\begin{frame}
-	\frametitle{Resultados - Estrutural Conceitual - Predicados}
-	\begin{equation}
-		thereIsRelation(r_l,e_i,e_k) | r_l \in Relation \wedge  e_i, e_k \in Entity
-	\end{equation}
-	\begin{equation}	
-		adoptsRole(ag_n,\rho_m) | ag_n \in Agent \wedge \rho_m \in Role 	
-	\end{equation}
-	\begin{equation}	
-		hasObligation(\rho_m,g_j) | \rho_m \in Role, g_j \in Goal 
-	\end{equation}		
-	\begin{equation}	
-		hasPermission(\rho_m, g_j) | \rho_m \in Role, g_j \in Goal
-	\end{equation}
-	\begin{equation}		
-		isReached(g_k) | g_k \in Goal 
-	\end{equation}
-\end{frame}
-\begin{frame}
-	\frametitle{Resultados - Estrutural Conceitual - Predicados}
-	\begin{equation}			
-		stopIn(g_n, ag_m) | g_n \in Goal, ag_m \in Agent
-	\end{equation}
-	\begin{equation}			
-		nextGoal(g_i,g_j) |g_i, g_j \in Goal
-	\end{equation}
-	\begin{equation}				
-		hasCondition(g_i,cg_n) | g_i \in Goal, cg_n \subset GoalCondition
-	\end{equation}
-	\begin{equation}				
-		hasEntity(g_i,eg_m) | g_i \in Goal, eg_m \subset EntityGoal 
-	\end{equation}
-	
-	\begin{equation}				
-		hasRelation(g_i,rg_m) | g_i \in Goal \wedge rg_m \subset RelationGoal 
-	\end{equation}
-\end{frame}
-\begin{frame}
-	\frametitle{Resultados - Estrutural Conceitual - Predicados}
-	\begin{eqnarray}
-	    violationEntity(ag_i,g_j,e_k) |   ag_i \in Agent \wedge g_j \in Goal \wedge \\ \nonumber 
-		e_k \in Entity  
-	\end{eqnarray}
-	\begin{eqnarray}
-	    violationRelation(ag_i,g_j,r_k) | ag_i \in Agent \wedge g_k \in Goal \wedge \\ \nonumber 
-		r_k \in relation 
-	\end{eqnarray}
-	\begin{eqnarray}
-	    violationCondition(ag_i,g_j,c_k) | ag_i \in Agent \wedge g_k \in Goal \wedge \\ \nonumber 
-		c_k \in Condition 
-	\end{eqnarray}
-	\begin{eqnarray}
-	    hasRisk(X, risk_j, cs_k) | risk_k \in Risk \wedge cs_k \in Consequence  \\ \nonumber 
-	 	\wedge (X = c_k \vee X = r_k)
-	\end{eqnarray}
-\end{frame}
-\begin{frame}
-	\frametitle{Resultados - Estrutural Conceitual - Predicados}
-	\begin{eqnarray}				
-		isPresent(X) | X = cg_n \vee X = c_k \vee X = rg_k \vee X = r_k  \\ \nonumber
-		\vee X = eg_k \vee X = e_k
-	\end{eqnarray}
-	\begin{equation}				
-		tryReach(ag_i,g_j) | ag_i \in Agent \wedge g_j \in Goal 	
-	\end{equation}
-	\begin{equation}
-	    possibilityHappensBadEvent(r_l) | r_l \in Relation
-	\end{equation}
-	\begin{equation}
-	    affectsOtherRelations(r_k,r_n) | \{ r_k, r_n\} \subset Relation
-	\end{equation}
-	\begin{equation}
-	    lastGoal(g_i,\rho_m) | g_i \in Goal, \rho_m \in Role
-	\end{equation}
-	\begin{equation}
-		ableTryReach(ag_i,g_j) | ag_i \in Agent, g_j \in Goal,
-	\end{equation}		
-\end{frame}
-\begin{frame}
-	\frametitle{Resultados - Estrutural Conceitual - UML}
 	\begin{figure}[H]
-	  \centering
-	  \includegraphics[width=1\linewidth]{figure/Class.png} 
-	  \caption{Diagrama de classes do Modelo }
-	  \label{classdiagrama}
+  		\centering
+  			\includegraphics[width=1\linewidth]{../dissertacao/figure/Module.jpeg} 
+  		\caption{A estrutura geral das classes do modelo}
+  		\label{module}
 	\end{figure}
 \end{frame}
+
 \begin{frame}
-	\frametitle{Resultados - Regras}
-	\begin{eqnarray}\label{reldeonticrole}
-		hasObligation(\rho_m,g_j) \to hasPermission(\rho_m,g_j), \nonumber \\
-	    \rho_m \in Role \wedge g_j \in Goal
-	\end{eqnarray}
-	\begin{eqnarray}\label{violationcondition}\nonumber
-		hasCondition(g_i,cg_n) \wedge \neg isPresent(c_k) \wedge (c_k \in cg_n) \\
-		\wedge tryReach(ag_m,g_i) \to \nonumber \\  
-		violationCondition(ag_m,g_i,c_k) \nonumber \\  
-	    g_i \in Goal, cg_n \subset ConditionGoal, c_k \in Condition, ag_m \in Agent
-	\end{eqnarray}
+	\frametitle{Resultados - Estrutural Conceitual - Predicados}
+	\begin{figure}[H]
+  		\centering
+  		\includegraphics[width=0.8\linewidth]{../dissertacao/figure/Class.jpeg} 
+  		\caption{Diagrama de classes do Modelo}
+  		\label{classdiagrama}
+	\end{figure}
 \end{frame}
+
 \begin{frame}
 	\frametitle{Resultados - Regras}
 	\begin{eqnarray}\label{violationrelation}\nonumber
-		hasRelation(g_i,rg_n)\wedge \neg isPresent(r_k) \wedge (r_k \in rg_n) \\ \nonumber
-		\wedge tryReach(ag_m,g_i) \to \nonumber \\
-		violationRelation(ag_m,g_i,r_k) \nonumber \\  
-	    g_i \in Goal, rg_n \subset RelationGoal, r_k \in Relation, ag_m \in Agent
+		hasObligation(\rho_m,g_j) \to hasPermission(\rho_m,g_j), \nonumber \\
+    	\rho_m \in Role \wedge g_j \in Goal
 	\end{eqnarray}
 	\begin{eqnarray}\label{violationentity}\nonumber
-		hasEntity(g_i,eg_n) \wedge \neg isPresent(e_k) 	\wedge (e_k \in eg_n) \\
-		\wedge tryReach(ag_m,g_i) \to \nonumber \\ 
-	    violationEntity(ag_m,g_i,e_k)  \nonumber \\  
-	    g_i \in Goal, eg_n \subset EntityGoal, e_k \in Entity, ag_m \in Agent
+		requiresCirc(g_i,c_k) \wedge \neg isPresent(c_k) \wedge  instanceOfCond(c_k) \nonumber \\ 
+		\wedge  starts(ag_m,g_i)  \to conditionViol(ag_m,g_i,c_k) \nonumber \\  
+    	g_i \in Goal, c_k \in Condition, ag_m \in Agent
+	\end{eqnarray}
+	\begin{eqnarray}\label{relationViol}\nonumber
+		requiresCirc(g_i,r_k)\wedge \neg isPresent(r_k) \wedge instanceOfRel(r_k) \nonumber \\ 
+		\wedge starts(ag_m,g_i) \to relationViol(ag_m,g_i,r_k) \nonumber \\  
+    	g_i \in Goal, r_k \in Relation, ag_m \in Agent
+	\end{eqnarray}
+	\begin{eqnarray}\label{entityViol}\nonumber
+		requiresEntity(g_i,eg_n) \wedge \neg isPresent(e_k) \wedge starts(ag_m,g_i) \to \nonumber \\ 
+	    entityViol(ag_m,g_i,e_k)  \nonumber \\  
+	    g_i \in Goal, e_k \in Entity, ag_m \in Agent
 	\end{eqnarray}
 \end{frame}
 \begin{frame}
 	\frametitle{Resultados - Regras}
-	\begin{eqnarray}\label{consviolationcondition}\nonumber
-		violationCondition(ag_m,g_i,c_k)  \wedge  \nonumber \\ 
-		hasRisk(c_k,risk_j,cs_m) \to \nonumber \\ 
-		consequenceOfBadEvent(g_i,ag_m,risk_j,cs_m) \nonumber \\ 
-	    ag_m \in Agent, g_i \in Goal, c_k \in Condition, \nonumber \\ 
-	    risk_k \in Risk, cs_m \in Consequence \nonumber \\
+	\begin{eqnarray}\label{consconditionViol}\nonumber
+		conditionViol(ag_m,g_i,c_k)  \wedge hasRisk(c_k,risk_j,cs_m) \to \nonumber \\ 
+		negConseqFor(g_i,ag_m,risk_j,cs_m) \nonumber \\ 
+    	ag_m \in Agent, g_i \in Goal, c_k \in Condition, risk_k \in Risk, cs_m \in Consequence
 	\end{eqnarray}
-	\begin{eqnarray}\label{consviolationrelation}\nonumber
-		violationRelation(ag_m,g_i,r_k) \nonumber \\
-		\wedge hasRisk(r_k,risk_j,cs_m) \to \\ 
-		consequenceOfBadEvent(g_i,ag_m,risk_j,cs_m) \nonumber \\ 
-	    ag_m \in Agent, g_i \in Goal, r_k \in Relation, \nonumber \\
-	    risk_k \in Risk, cs_m \in Consequence 
+	\begin{eqnarray}\label{consrelationViol}\nonumber
+		relationViol(ag_m,g_i,r_k) \wedge hasRisk(r_k,risk_j,cs_m) \to \nonumber \\ 
+		negConseqFor(g_i,ag_m,risk_j,cs_m) \nonumber \\ 
+	    ag_m \in Agent, g_i \in Goal, r_k \in Relation, risk_k \in Risk, cs_m \in Consequence 
 	\end{eqnarray}
-\end{frame}
-\begin{frame}
-	\frametitle{Resultados - Regras}
-	\begin{eqnarray}\label{violationentityaffect}
-		violationRelation(ag_m,g_i,r_k) \wedge affectsOtherRelations(r_k,r_n) \nonumber \\
-	    \to possibilityHappensBadEvent(r_n)  \nonumber \\
+	\begin{eqnarray}\label{entityViolaffect}
+		relationViol(ag_m,g_i,r_k) \wedge affectsRels(r_k,r_n) \to possOfNegConseqFor(r_n)  \nonumber \\
 	    ag_m \in Agent, g_i \in Goal, r_k,r_n \in Relation, 
-	\end{eqnarray}	
+	\end{eqnarray}
+	\begin{eqnarray}\label{consvioent}
+		entityViol(ag_m,g_i,e_k) \to stopped(g_i) \nonumber \\  
+    	ag_m \in Agent, g_i \in Goal, e_k \in Entity \\ \nonumber
+	\end{eqnarray}
 \end{frame}
+
 \begin{frame}
 	\frametitle{Resultados - Regras}
 	\begin{eqnarray}\label{paybutiamnotguilty}
-		possibilityHappensBadEvent(r_k) \wedge  happensBadEvent(r_k) \wedge \nonumber \\
-		hasRelation(g_i,rg_n) \wedge \nonumber \\
-		(r_k \in rg_n) \nonumber \\ 
-		\wedge hasRisk(r_k,risk_j,cs_m) \wedge tryReach(ag_m,g_i) \nonumber \\ 
-		\to consequenceOfBadEvent(g_i,ag_m,risk_j,cs_m) \nonumber \\ 
-	    r_k \in Relation, g_i \in Goal, rg_n \subset RelationGoal, \nonumber \\
-	     risk_k \in Risk, cs_m \in Consequence
+		possOfNegConseqFor(r_k) \wedge  happensNegConseqFor(r_k) \wedge \nonumber \\
+		requiresCirc(g_i,r_k) \wedge instanceOfRel(r_k) \wedge \nonumber \\ 
+		hasRisk(r_k,risk_j,cs_m) \wedge starts(ag_m,g_i) \nonumber \\ 
+		\to negConseqFor(g_i,ag_m,risk_j,cs_m) \nonumber \\ 
+	    r_k \in Relation, g_i \in Goal, risk_k \in Risk, cs_m \in Consequence
 	\end{eqnarray}
-\end{frame}
-\begin{frame}
-	\frametitle{Resultados - Regras}
-	\begin{eqnarray}\label{consvioent}
-		violationEntity(ag_m,g_i,e_k) \to stopIn(g_i) \nonumber \\  
-	    ag_m \in Agent, g_i \in Goal, e_k \in Entity \\ \nonumber
-	\end{eqnarray}
-	\begin{eqnarray}\label{badcons}
-		consequenceOfBadEvent(g_k,ag_m,risk_j,cs_m) \to stopIn(g_k) \nonumber \\ 
+	 \begin{eqnarray}\label{badcons}
+		negConseqFor(g_k,ag_m,risk_j,cs_m) \to stopped(g_k) \nonumber \\ 
 	    g_k \in Goal, risk_j \in Risk, cs_m \in Consequence
-	\end{eqnarray}
-	\begin{eqnarray}\label{wenStop}
-		\neg stopIn(g_k,agg_n) \wedge (ago_n \subset agg_n) \to isReached(g_k) \nonumber \\ 
-	    g_k \in Goal, agg_n \in Agg, ago_n \in Ago 
-	\end{eqnarray}
+	\end{eqnarray}	
 \end{frame}
+
 \begin{frame}
 	\frametitle{Resultados - Regras}
 	\begin{eqnarray}\label{rolenextgoal}
 		adoptsRole(ag_n,\rho_m) \wedge hasPermission(\rho_m,g_j) \wedge nextGoal(g_i,g_j) \nonumber \\
-		\wedge isReached(g_i) \nonumber \\
-		\to ableTryReach(ag_i,g_j) \nonumber \\
-	    ag_i, ag_n \in Agent, \rho_m \in Role, g_j \in Goal, g_i \in Goal
+	 	\wedge reached(g_i) \to enabledToStart(ag_i,g_j) \nonumber \\
+    	ag_i, ag_n \in Agent, \rho_m \in Role, g_j \in Goal, g_i \in Goal
 	\end{eqnarray}
 	\begin{eqnarray}\label{rolelastgoal}
-		adoptsRole(ag_n,\rho_m) \wedge hasPermission(\rho_m,g_i) \wedge \nonumber \\
-		lastGoal(g_i,\rho_m) \wedge isReached(g_i) \nonumber \\
-		\to stopIn(g_i) \nonumber \\
-	    ag_n \in Agent, \rho_m \in Role, g_i \in Goal
+		adoptsRole(ag_n,\rho_m) \wedge hasPermission(\rho_m,g_i) \wedge lastGoal(g_i,\rho_m) \nonumber \\
+		\wedge reached(g_i) \to stopped(g_i) \nonumber \\
+		ag_n \in Agent, \rho_m \in Role, g_i \in Goal
 	\end{eqnarray}
 \end{frame}
 \begin{frame}
-	\frametitle{Resultados - Tipos de Predicados}
-	\begin{itemize}
-		\item Fechados: $thereIsRelation(r_l,e_i,e_k)$, $adoptsRole(ag_n,\rho_m)$, $hasObligation(\rho_m,g_j)$,
-		$hasPermission(\rho_m, g_j)$, $isReached(g_k)$, $stopIn(g_n, ag_m)$, $nextGoal(g_i,g_j)$, $hasCondition(g_i,cg_n)$,
-		$hasEntity(g_i,eg_m)$, $hasRelation(g_i,rg_m)$, $violationCondition(ag_i,g_j,c_k) $, $ violationRelation(ag_i,g_j,r_k) $,
-		$ violationEntity(ag_i,g_j,e_k) $,  $ hasRisk(X, risk_j, cs_k) $, $possibilityHappensBadEvent(r_l)$, $ableTryReach(ag_i,g_j)$ 
-		$affectsOtherRelations(r_k,r_n)$, $consequenceOfBadEvenet(g_k, ag_i,risk_k,cs_m)$  e $lastGoal(g_i,\rho_m)$.
-		\item Abertos: $isPresent(X)$,$tryReach(ag_i,g_j)$ e $happensBadEvent(r_m)$.
-	\end{itemize}
+	\frametitle{Resultados - Regras}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.6\linewidth]{../dissertacao/figure/algrule6.png} 
+		\caption{Condição para definir se um dado objetivo foi atingido ou não} \label{wenStop}  
+	\end{figure}
 \end{frame}
+
 \begin{frame}
 	\frametitle{Resultados - Caso de Estudo}
 	\begin{itemize}
@@ -493,33 +323,36 @@ Universidade Tecnológica Federal do Paraná \\ % Your institution for the title
 	\begin{enumerate}
 		\item $adoptsRole(agente4,executor2)$ 
 		\item $hasObligation(executor2,g1)$
-		\item $hasRelation(g1,rg1)$ 
+		\item $requiresCirc(g1,relPanoGlicerina)$
+		\item $instanceOfRel(relPanoGlicerina)$ 
 		\item $relPanoCorda \in rg1$
 		\item $ x = agente4 $
-		\item $tryReach(agente4,g1)$
-		\item $affectsOtherRelations(relPanoGlicerina,relBastaoGarraCondutor)$
-		\item $affectsOtherRelations(relPanoGlicerina,relCordaEstropo)$  
-		\item $affectsOtherRelations(relPanoGlicerina,relChaveCatracaParafuso)$
-		\item $affectsOtherRelations(relPanoGlicerina,relParafusoConector)$ 
-		\item $affectsOtherRelations(relPanoGlicerina,relSoqueteParafuso)$ 
-		\item $affectsOtherRelations(relPanoGlicerina,relAgente4Corda)$ 
-		\item $affectsOtherRelations(relPanoGlicerina,relEstropoCorda)$	
+		\item $starts(agente4,g1)$
+		\item $affectsRels(relPanoGlicerina,relBastaoGarraCondutor)$
+		\item $affectsRels(relPanoGlicerina,relCordaEstropo)$  
+		\item $affectsRels(relPanoGlicerina,relChaveCatracaParafuso)$
+		\item $affectsRels(relPanoGlicerina,relParafusoConector)$ 
+		\item $affectsRels(relPanoGlicerina,relSoqueteParafuso)$ 
+		\item $affectsRels(relPanoGlicerina,relAgente4Corda)$ 
+		\item $affectsRels(relPanoGlicerina,relEstropoCorda)$	
 	\end{enumerate}
 \end{frame}
 \begin{frame}
 	\frametitle{Resultados - Raciocínio 1}
 	\begin{eqnarray}\nonumber
-		hasRelation(g1,rg1)\wedge \neg isPresent(relPanoGlicerina)  \nonumber \\ 
-		\wedge (relPanoGlicerina\in rg_1) \wedge tryReach(agente4,g1) \nonumber \\ 
-		\to \nonumber \\ 
-		violationRelation(agente4,g1,relPanoGlicerina) \nonumber \\	
+		requiresCirc(g1,relPanoGlicerina) \wedge \nonumber \\  
+		\neg isPresent(relPanoGlicerina) \wedge \nonumber \\   
+		instanceOfRel(relPanoGlicerina) \wedge \nonumber \\   
+		starts(agente4,g1) \to \nonumber \\
+		relationViol(agente4,g1,relPanoGlicerina) \nonumber \\  
 	\end{eqnarray}
-	\begin{eqnarray}\nonumber
-		violationRelation(agente4,g1,relPanoGlicerina)  \nonumber \\ 
-		\wedge affectsOtherRelations(relPanoGlicerina,relBastaoGarraCondutor)   \nonumber \\ 
-		\to \nonumber \\  
-		possibilityHappensBadEvent(relBastaoGarraCondutor) 
+	\begin{eqnarray} \nonumber
+		relationViol(agente4,g1,relPanoGlicerina) \nonumber \\
+		\wedge affectsRels(relPanoGlicerina,relEstropoCorda) \nonumber \\
+    	\to possOfNegConseqFor(relEstropoCorda) \nonumber \\
 	\end{eqnarray}
+
+	O mesmo ocorre para as demais relações.
 \end{frame}
 \begin{frame}
 	\frametitle{Resultados - Raciocínio 2}
@@ -529,42 +362,30 @@ Universidade Tecnológica Federal do Paraná \\ % Your institution for the title
 		\item $adoptsRole(agente4,executor2)$	 
 		\item $hasObligation(executor1,g1)$
 		\item $hasObligation(executor2,g1)$
-		\item $tryReach(agente2,g1)$ 
-		\item $tryReach(agente3,g1)$	 	
-		\item $tryReach(agente4,g1)$	
-		\item $hasEntity(g1,eg1)$		
-		\item $pano \in eg1$
+		\item $starts(agente2,g1)$ 
+		\item $starts(agente3,g1)$	 	
+		\item $starts(agente4,g1)$	
+		\item $requiresEntity(g1,pano)$		
 		\item $\neg isPresent(pano)$
 	\end{enumerate}
 \end{frame}
 \begin{frame}
 	\frametitle{Resultados - Raciocínio 2}
 	\begin{eqnarray}\nonumber
-		hasEntity(g1,eg1) \nonumber \\ 
-		\wedge \neg isPresent(pano) 	\nonumber \\ 
-		\wedge (pano \in eg1) \wedge tryReach(agente2,g1) \to \nonumber \\ 
-		violationEntity(agent2,g1,pano) \nonumber \\
+		requiresEntity(g1,pano) \wedge \neg isPresent(pano) \wedge starts(agente2,g1)  \nonumber \\ 
+		\to entityViol(agente2,g1,pano) \nonumber \\ 	    
 	\end{eqnarray}
 
 	\begin{eqnarray}\nonumber
-		hasEntity(g1,eg1) \nonumber \\ 
-		\wedge \neg isPresent(pano) 	\nonumber \\ 
-		\wedge (pano \in eg1) \wedge tryReach(agente3,g1) \to \nonumber \\ 
-		violationEntity(agente3,g1,pano) \nonumber \\
+		requiresEntity(g1,pano) \wedge \neg isPresent(pano) \wedge starts(agente3,g1) \nonumber \\ 
+	    \to entityViol(agente3,g1,pano) \nonumber \\
 	\end{eqnarray}
-
-\end{frame}
-\begin{frame}
-	\frametitle{Resultados - Raciocínio 2}
 	\begin{eqnarray}\nonumber
-		hasEntity(g1,eg1) \nonumber \\ 
-		\wedge \neg isPresent(pano) 	\nonumber \\ 
-		\wedge (pano \in eg1) \wedge tryReach(agente4,g1) \to \nonumber \\ 
-		violationEntity(agente4,g1,pano) \nonumber \\
+		requiresEntity(g1,pano) \wedge \neg isPresent(pano) \wedge starts(agente4,g1) \nonumber \\ 
+	    \to entityViol(agente4,g1,pano)  \nonumber \\	
 	\end{eqnarray}
-
 	\begin{eqnarray}
-		violationEntity(agente4,g1,pano) \to stopIn(g1)
+		entityViol(agente4,g1,pano) \to stopped(g1)
 	\end{eqnarray}
 \end{frame}
 
@@ -573,9 +394,9 @@ Universidade Tecnológica Federal do Paraná \\ % Your institution for the title
 	\begin{enumerate}
 		\item $adoptsRole(agente5,executor3)$
 		\item $hasObligation(executor3,g11)$	
-		\item $tryReach(agente5,g11)$ 
-		\item $hasCondition(g11,cg1)$
-		\item $umidade70 \in cg1$	
+		\item $starts(agente5,g11)$ 
+		\item $requiresCirc(g11,umidade70)$
+		\item $isIstanceOfCond(umidade70)$
 		\item $\neg isPresent(umidade70)$
 		\item $hasRisk(umidade70,eletrocutado,morte)$
 	\end{enumerate}
@@ -583,23 +404,19 @@ Universidade Tecnológica Federal do Paraná \\ % Your institution for the title
 
 \begin{frame}
 	\frametitle{Resultados - Raciocínio 3}
-	\begin{eqnarray}
-		hasCondition(g11,cg1) \nonumber \\ 
-		\wedge \neg isPresent(umidade70) \nonumber \\
-		\wedge umidade70 \in cg1 \nonumber \\
-		\wedge tryReach(agente5,g11) \to \nonumber \\  
-		violationCondition(agente5,g11,umidade70) 
+	\begin{eqnarray}\nonumber
+		requiresCirc(g11,umidade70) \wedge \neg isPresent(umidade70) \\ \nonumber
+		\wedge instanceOfCond(umidade70) \wedge starts(agente5,g11)  \to \\ \nonumber   
+		conditionViol(agente5,g11,umidade70) \nonumber \\	
 	\end{eqnarray}
-
 	\begin{eqnarray} \nonumber
-		violationCondition(agente5,g11,umidade70) \nonumber \\
-		\wedge hasRisk(umidade70,eletrocutado,morte) \to \nonumber \\  
-		consequenceOfBadEvent(g11,agente5,eletrocutado,morte)
+		conditionViol(agente5,g11,umidade70) \wedge hasRisk(umidade70,eletrocutado,morte) \nonumber \\ 
+		\to negConseqFor(g11,agente5,eletrocutado,morte) \nonumber \\ 	
+	\end{eqnarray}
+	\begin{eqnarray}
+		negConseqFor(g11,agente5,eletrocutado,morte) \to stopped(g11)
 	\end{eqnarray}
 
-	\begin{eqnarray}
-		consequenceOfBadEvent(g11,agente5,eletrocutado,morte) \\ \nonumber \to stopIn(g11) \nonumber
-	\end{eqnarray}	
 \end{frame}
 
 \begin{frame}
@@ -607,9 +424,9 @@ Universidade Tecnológica Federal do Paraná \\ % Your institution for the title
 	\begin{enumerate}
 		\item $adoptsRole(agente4,executor2)$
 		\item $hasObligation(executor4,g15)$	
-		\item $tryReach(agente4,g15)$ 
-		\item $hasRelation(g15,rg15)$
-		\item $relChaveCatracaParafuso \in rg15$	
+		\item $starts(agente4,g15)$ 
+		\item $requiresCirc(g15,relChaveCatracaParafuso)$
+		\item $isInstanceOfRel(relChaveCatracaParafuso)$	
 		\item $\neg isPresent(relChaveCatracaParafuso)$
 		\item $hasRisk(relChaveCatracaParafuso,eletrocutado,morte)$
 	\end{enumerate}
@@ -617,88 +434,92 @@ Universidade Tecnológica Federal do Paraná \\ % Your institution for the title
 
 \begin{frame}
 	\frametitle{Resultados - Raciocínio 4}
-	\begin{eqnarray}
-		hasRelation(g15,rg15) \wedge \neg isPresent(relChaveCatracaParafuso)  \nonumber \\ 
-		\wedge (relChaveCatracaParafuso \in rg15) \nonumber \\
-		\wedge tryReach(agente4,g15) \nonumber \\ 
-		\to \nonumber \\ 
-		violationRelation(agente4,g15,relChaveCatracaParafuso) \nonumber \\
+	\begin{eqnarray} \nonumber
+		requiresCirc(g15,relChaveCatracaParafuso)\wedge  \nonumber \\
+		\neg isPresent(relChaveCatracaParafuso) \wedge \nonumber \\
+		instanceOfRel(relChaveCatracaParafuso) \wedge starts(agente4,g15) \to \nonumber \\
+		relationViol(agente4,g15,relChaveCatracaParafuso)
 	\end{eqnarray}
 	\begin{eqnarray}\nonumber
-		violationRelation(agente4,g15,relChaveCatracaParafuso) \nonumber \\ 
-		 \wedge hasRisk(relChaveCatracaParafuso,eletrocutado,morte) \nonumber \\ 
-		\to \nonumber \\ 
-		consequenceOfBadEvent(g15,agente4,eletrocutado,morte)
-	\end{eqnarray}
+		relationViol(agente4,g15,relChaveCatracaParafuso) \nonumber \\ 
+		 \wedge hasRisk(relChaveCatracaParafuso,eletrocutado,morte) \to \nonumber \\ 
+		negConseqFor(g15,agente4,eletrocutado,morte)
+	\end{eqnarray}	
 	\begin{eqnarray}
-		consequenceOfBadEvent(g15,agente4,eletrocutado,morte) \nonumber \\ 
-		\to stopIn(g15)
+		negConseqFor(g15,agente4,eletrocutado,morte) \to stopped(g15)
 	\end{eqnarray}
 \end{frame}
 
 \begin{frame}
 	\frametitle{Resultados - Raciocínio 5}
 	\begin{enumerate}
-		\item $relParafusoConector \in rg19$	
-		\item $hasRelation(g19,rg19)$		
+		\item $requiresCirc(g19,relParafusoConector)$		
 		\item $hasObligation(executor3,g19)$
 		\item $hasObligation(executor4,g19)$
 		\item $hasObligation(executor5,g19)$		
-		\item $tryReach(agente5,g19)$
-		\item $tryReach(agente6,g19)$
-		\item $tryReach(agente7,g19)$									
+		\item $starts(agente5,g19)$
+		\item $starts(agente6,g19)$
+		\item $starts(agente7,g19)$									
 		\item $adoptsRole(agente5,executor3)$
 		\item $adoptsRole(agente6,executor4)$
 		\item $adoptsRole(agente7,executor5)$
 		\item $hasRisk(relParafusoConector,eletrocutado,morte)$
-		\item $possibilityHappensBadEvent(relParafusoConector)$
-		\item $happensBadEvent(g19,relParafusoConector)$	
+		\item $possOfNegConseqFor(relParafusoConector)$
+		\item $happensNegConseqFor(g19,relParafusoConector)$	
 	\end{enumerate}
 \end{frame}
 
 \begin{frame}
 	\frametitle{Resultados - Raciocínio 5}
 	\begin{eqnarray}\nonumber
-	    possibilityHappensBadEvent(relParafusoConector) \nonumber \\
-	    \wedge happensBadEvent(relParafusoConector) \nonumber \\ 
-	    \wedge hasRelation(g19,rg19)  \nonumber \\  
-	    \wedge (relParafusoConector \in rg19) \nonumber \\ 
+	   possOfNegConseqFor(relParafusoConector) \nonumber \\
+	    \wedge happensNegConseqFor(relParafusoConector) \nonumber \\ 
+	    \wedge requiresCirc(g19,relParafusoConector) \nonumber \\  
+	    \wedge instanceOfRel(relParafusoConector) \nonumber \\ 
 	    \wedge hasRisk(relParafusoConector,eletrocutado,morte) \nonumber \\  
-	    \wedge tryReach(agente5,g19) \nonumber \\ 
-	    \to consequenceOfBadEvent(g19,agente5,eletrocutado,morte) \\ \nonumber
-	\end{eqnarray}
+	    \wedge starts(agente5,g19) \nonumber \\ 
+	    \to negConseqFor(g19,agente5,eletrocutado,morte) \\ \nonumber    
+	\end{eqnarray}	
 	\begin{eqnarray}
-		consequenceOfBadEvent(g19,agente5,eletrocutado,morte) \nonumber \\ 
-		\to stopIn(g19)
+		negConseqFor(g19,agente5,eletrocutado,morte) \to stopped(g19)
 	\end{eqnarray}
+	O mesmo para o agente6 e agente7.
 \end{frame}
 
 \begin{frame}
 	\frametitle{Resultados - Raciocínio 6}
 	\begin{enumerate}
-		\item $agente2 \in agg23$	
-		\item $agente3 \in agg23$
-		\item $agente4 \in agg23$
-		\item $agente5 \in agg23$
-		\item $agente7 \in agg23$								
-		\item $agente2 \in ago23$	
-		\item $agente3 \in ago23$
-		\item $agente4 \in ago23$
-		\item $agente5 \in ago23$
-		\item $agente7 \in ago23$	
-		\item $ago23 \subset agg23$
-		\item $\neg stopIn(g23,agg23)$										
+		\item $stopped(agente2) \to F$	
+		\item $stopped(agente3) \to F$
+		\item $stopped(agente4) \to F$
+		\item $stopped(agente5) \to F$
+		\item $stopped(agente7) \to F$
+		\item $hasObligation(executor1,g23)$	
+		\item $hasObligation(executor2,g23)$	
+		\item $hasObligation(executor3,g23)$		
+		\item $adoptsRole(agente2,executor1)$
+		\item $adoptsRole(agente3,executor1)$
+		\item $adoptsRole(agente4,executor2)$
+		\item $adoptsRole(agente5,executor3)$
+		\item $adoptsRole(agente7,executor5)$
 	\end{enumerate}
-	\begin{eqnarray}\label{rel15}
-		\neg stopIn(g23,agg23) \wedge (ago23 \subset agg23) \to isReached(g23)
-	\end{eqnarray}
+\end{frame}
+\begin{frame}
+	\frametitle{Resultados - Raciocínio 6}
+	\begin{itemize}
+		\item $ag_{array} = \{ agente2,agente3,agente4,agente5,agente7 \}$
+		\item $stopped(goal,Agente) \to F$ para todos os agentes		
+		\item $allAgentObligate(ag_{array},goal) \to T$
+		\item $ifNotStopped(ag_{array},goal) \to T$
+		\item $reached(goal) \to T$
+	\end{itemize}
 \end{frame}
 \begin{frame}
 	\frametitle{Discussão - Critérios de Comparação}
 	\begin{itemize}
 		\item \textbf{Agente} condiz numa representação dos estados internos que um agente pode ter
 		\item O critério \textbf{SMA} condiz na presença de elementos que são necessário para especificar um \textit{Sistema Multiagente}
-		\item O critério \textbf{Artefato} condiz com elementos que correspondem ao tratado na Fundamntação Teórica.
+		\item O critério \textbf{Artefato} condiz com elementos que correspondem ao tratado na Fundamentação Teórica.
 		\item \textbf{Norma} corresponde a regras que devem ser acatadas pelos agentes 
 		\item \textbf{Violação} define o que corresponde o não cumprimento de uma dada regra
 		\item \textbf{Sanção} implica penalidade que está sobre o agente.
@@ -718,170 +539,59 @@ Universidade Tecnológica Federal do Paraná \\ % Your institution for the title
 \begin{frame}
 	\frametitle{Discussão - Expressividade}
 	\begin{itemize}
-			\item nenhuma expressividade - o engenheiro de modelagem terá de criar uma estrutura conceitual grande e complexa. 
-			\item pouco expressivo - possui algumas estruturas pré-definidas que diminuem o esforço da especificação. 
+			\item nenhuma - o engenheiro de modelagem terá de criar uma estrutura conceitual grande e complexa. 
+			\item pouco - possui algumas estruturas pré-definidas que diminuem o esforço da especificação. 
 			\item expressivo - o modelo permite especificar o objeto de interesse sem que o engenheiro tenha de criar muitos atributos para o domínio de interesse.
 			\item muito expressivo - o modelo apresenta diversos conceitos específicos para representar o objeto em interesse
 			\item altamente expressivo - o modelo especifica o objetivo de interesse muito bem fazendo com que o engenheiro de conhecimento não tenha que definir nenhum critério conceitual a mais.
 	\end{itemize}
 \end{frame}
 \begin{frame}
-	\frametitle{Discussão - Análise Comparativa - MOISE+}
+	\frametitle{Discussão - Análise Comparativa}
 	\begin{table}[H]
-	    \begin{tabular}{|l|l|l|l|l|l|}
-	        \textbf{Critérios} 	&	 \textbf{MOISE+}        	&	 \textbf{MODELO DESTE ESTUDO} \\ \hline
-	        \textbf{Agente}    	&	 pouco expressivo       	&	 pouco expressivo             \\ \hline
-	        \textbf{SMA}       	&	 altamente expressivo   	&	 expressivo                   \\ \hline
-	        \textbf{Artefato}  	&	 nenhuma expressividade 	&	 expressivo                   \\ \hline
-	        \textbf{Norma}     	&	 nenhuma expressividade 	&	 altamente expressivo         \\ \hline
-	        \textbf{Violação}  	&	 nenhuma expressividade 	&	 altamente expressivo         \\ \hline
-	        \textbf{Sanção}    	&	 nenhuma expressividade 	&	 altamente expressivo         \\ \hline
-	        \textbf{Risco}     	&	 nenhuma expressividade 	&	 muito expressivo             \\ \hline
-	        \textbf{P.O.A.E}   	&	 nenhuma expressividade 	&	 altamente expressivo         \\ \hline
-	        \textbf{Objetivos} 	&	 muito expressivo       	&	 expressivo             \\ \hline
-	        \textbf{C.A}       	&	 nenhuma expressividade 	&	 muito expressivo             \\ \hline
-	        \textbf{I.AG.AR}   	&	 nenhuma expressividade 	&	 muito expressivo             \\ \hline
-	        \textbf{D.C.A}     	&	 nenhuma expressividade 	&	 muito expressivo             \\ \hline
-	    \end{tabular}
-	\end{table}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Discussão - Análise Comparativa - DASTANI}
-	\begin{table}[H]
-	    \begin{tabular}{|l|l|l|l|l|l|}
-	            \textbf{Critérios} 	&	 \textbf{DASTANI}     	&	 \textbf{MODELO DESTE ESTUDO} \\ \hline
-		        \textbf{Agente}    	&	 pouco expressivo     	&	 pouco expressivo             \\ \hline
-		        \textbf{SMA}       	&	 pouco expressivo     	&	 expressivo                   \\ \hline
-		        \textbf{Artefato}  	&	 pouco expressivo     	&	 expressivo                   \\ \hline
-		        \textbf{Norma}     	&	 altamente expressivo 	&	 altamente expressivo         \\ \hline
-		        \textbf{Violação}  	&	 altamente expressivo 	&	 altamente expressivo         \\ \hline
-		        \textbf{Sanção}    	&	 altamente expressivo 	&	 altamente expressivo         \\ \hline
-		        \textbf{Risco}     	&	 pouco expressivo     	&	 muito expressivo             \\ \hline
-		        \textbf{P.O.A.E}   	&	 pouco expressivo     	&	 altamente expressivo         \\ \hline
-		        \textbf{Objetivos} 	&	 pouco expressivo     	&	 expressivo             	  \\ \hline
-		        \textbf{C.A}       	&	 pouco expressivo     	&	 muito expressivo             \\ \hline
-		        \textbf{I.AG.AR}   	&	 pouco expressivo     	&	 muito expressivo             \\ \hline
-		        \textbf{D.C.A}     	&	 pouco expressivo     	&	 muito expressivo             \\ \hline
-	    \end{tabular}
-	\end{table}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Discussão - Análise Comparativa - NORMMAS}
-	\textbf{Definição 1.} \textit{Um norma é definida por meio de uma tupla} $N = \langle \mu,\kappa,\chi,\tau,\rho \rangle$
-
-	\begin{itemize}
-	    \item $\mu \in \{obligation,prohibition\}$ representa as modalidades de norma.
-	    \item $\kappa \in \{action,state\}$ representa o tipo de \textit{trigger} da condição.
-	    \item $\chi$ representa o conjunto de estados em que uma norma se aplica.
-	    \item $\tau$ representa a norma da condição de \textit{trigger}
-	    \item $\rho$ representa a sanção aplicava pela violação do agente.
-	\end{itemize}
-
-	A definição 1 pode ser compreendida sobre o seguinte exemplo; 
-
-	\textit{Todos os imigrantes que possuem passaporte válido, devem ser aceitos. A falha resulta na perda de 5 créditos}. 
-
-	Dentro da definição 1, o exemplo fica;
-	\begin{eqnarray}
-	    \langle obligation,action,valid(Passport),accept(Passport),loss(5)\rangle
-	\end{eqnarray}
-
-	\begin{eqnarray}
-	    \langle obligation,action,valid(Passport),accept(Passport),loss(5)\rangle
-	\end{eqnarray}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Discussão - Análise Comparativa - NORMMAS}
-\textbf{Definição 2.} \textit{Um Registro de Ação é definido por meio de uma tupla} $R = \langle \gamma,\alpha,\beta \rangle$
-	\begin{itemize}
-	    \item $\gamma$ representa o agente executando uma ação;
-	    \item $\alpha$ representa a ação sendo executada pelo agente $\gamma$
-	    \item $\beta$ representa os estados internos do agente $\gamma$ no momento da execução.
-	\end{itemize}
-
-	Para demonstrar como se dá o uso dessa definição pode-se considerar a seguinte sentença;
-
-	\textit{O oficial John aprovou passaport 3225. O passaporte 3225 é definido como validado.}
-
-	Nessa sentença, $John$ é o agente dado por $\gamma$, o ato de aprovar o passaporte é o $\gamma$ que pode ser definido pelo predicado por $approve(3225)$ e o estado de ser validado por ser dado pelo predicado $valid(3225)$.  
-
-	Usando a \textbf{Definição 2}, isso poder ser especificado da seguinte maneira; 
-	\begin{eqnarray}
-	    \langle John, approve(3225), valid(3225)\rangle
-	\end{eqnarray}
-\end{frame}
-
-
-\begin{frame}
-	\frametitle{Discussão - Análise Comparativa - NORMMAS}
-	\begin{table}[H]
-	    \begin{tabular}{|l|l|l|l|l|l|}
-	        \textbf{Critérios} 	&	 \textbf{NORMMAS}     	&	 \textbf{MODELO DESTE ESTUDO} \\ \hline
-	        \textbf{Agente}    	&	 pouco expressivo     	&	 pouco expressivo             \\ \hline
-	        \textbf{SMA}       	&	 pouco expressivo     	&	 expressivo                   \\ \hline
-	        \textbf{Artefato}  	&	 pouco expressivo     	&	 expressivo                   \\ \hline
-	        \textbf{Norma}     	&	 altamente expressivo 	&	 altamente expressivo         \\ \hline
-	        \textbf{Violação}  	&	 altamente expressivo 	&	 altamente expressivo         \\ \hline
-	        \textbf{Sanção}    	&	 altamente expressivo 	&	 altamente expressivo         \\ \hline
-	        \textbf{Risco}     	&	 pouco expressivo     	&	 muito expressivo             \\ \hline
-	        \textbf{P.O.A.E}   	&	 pouco expressivo     	&	 altamente expressivo         \\ \hline
-	        \textbf{Objetivos} 	&	 pouco expressivo     	&	 expressivo             	  \\ \hline
-	        \textbf{C.A}       	&	 pouco expressivo     	&	 muito expressivo             \\ \hline
-	        \textbf{I.AG.AR}   	&	 pouco expressivo     	&	 muito expressivo             \\ \hline
-	        \textbf{D.C.A}     	&	 pouco expressivo     	&	 muito expressivo             \\ \hline
-	    \end{tabular}
-	\end{table}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Discussão - Análise Comparativa - V3S}
-	\begin{itemize}
-		\item V3S é um modelo com a finalidade de gerar ambientes para desenvolver treinamentos complexos em ambiente de realidade virtual visando atividades de risco e de emergência.
-		\item \textit{Domain Model}, \textit{Activity Model} e \textit{Risk Model}
-	\end{itemize}
-	\begin{figure}[H]
-	  \centering
-	  \includegraphics[width=0.4\linewidth]{figure/ontologyv3.png} 
-	  \caption{Ontologia que descreve \textit{Domain Model} no model V3S \cite{v3sframework}}
-	  \label{domainmodel}
-	\end{figure}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Discussão - Análise Comparativa - V3S}
-	\begin{itemize}
-		\item Activity Mode; Possui uma linguagem para descrever atividades denominada por; álgebra de Allen's
-		\item \textit{ACTIVITY-DL} incorpora os conceitos de BCTUs e BATUs
-		\item Risck Model: Faz uso do projeto MELISSA (combinação entre análise quantitativa com análise qualitativa).
-		\item MELISSA representa os cenário de acidente por meio do gráfico \textit{Bowtie}
-		\item \textit{V3S} trabalha com o conceito de personagens virtuais que são representados usando \textit{framework} MASVERP.
-		\item \textit{HERA}, por intermédio de regras baseadas em modelos pedagógicos, fornece o respaldo ao instrutor.
-	\end{itemize}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Discussão - Análise Comparativa - V3S}
-	\begin{table}[H]
-	    \begin{tabular}{|l|l|l|l|l|l|}
-        \textbf{Critérios} 	&	 \textbf{V3S}         	&	 \textbf{MODELO DESTE ESTUDO} \\ \hline
-        \textbf{Agente}    	&	 muito expressivo     	&	 pouco expressivo             \\ \hline
-        \textbf{SMA}       	&	 expressivo           	&	 expressivo                   \\ \hline
-        \textbf{Artefato}  	&	 expressivo           	&	 expressivo                   \\ \hline
-        \textbf{Norma}     	&	 pouco expressivo     	&	 altamente expressivo         \\ \hline
-        \textbf{Violação}  	&	 pouco expressivo     	&	 altamente expressivo         \\ \hline
-        \textbf{Sanção}    	&	 pouco expressivo     	&	 altamente expressivo         \\ \hline
-        \textbf{Risco}     	&	 altamente expressivo 	&	 muito expressivo             \\ \hline
-        \textbf{P.O.A.E}   	&	 pouco expressivo     	&	 altamente expressivo         \\ \hline
-        \textbf{Objetivos} 	&	 muito expressivo       &	 expressivo             	  \\ \hline
-        \textbf{C.A}       	&	 pouco expressivo     	&	 muito expressivo             \\ \hline
-        \textbf{I.AG.AR}   	&	 pouco expressivo     	&	 muito expressivo             \\ \hline
-        \textbf{D.C.A}     	&	 altamente expressivo 	&	 muito expressivo             \\ \hline
+	    \centering
+	    \begin{tabular}{|l|l|l|l|l|}
+	        \hline
+	        \textbf{Critérios} & \textbf{MOISE+}        & \textbf{DASTANI}	\\ \hline
+	        \textbf{Agente}    & pouco                  & pouco             \\ \hline
+	        \textbf{SMA}       & altamente              & pouco             \\ \hline
+	        \textbf{Artefato}  & nenhuma                & pouco             \\ \hline
+	        \textbf{Norma}     & nenhuma                & altamente			\\ \hline
+	        \textbf{Violação}  & nenhuma                & altamente         \\ \hline
+	        \textbf{Sanção}    & nenhuma                & altamente         \\ \hline
+	        \textbf{Risco}     & nenhuma                & pouco             \\ \hline
+	        \textbf{P.O.A.E}   & nenhuma                & pouco             \\ \hline
+	        \textbf{Objetivos} & muito                  & pouco             \\ \hline
+	        \textbf{C.A}       & nenhuma                & pouco             \\ \hline
+	        \textbf{I.AG.AR}   & nenhuma                & pouco             \\ \hline
+	        \textbf{D.C.A}     & nenhuma                & pouco				\\ \hline
 	    \end{tabular}
 	\end{table}	
 \end{frame}
+
+\begin{frame}
+	\frametitle{Discussão - Análise Comparativa}
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{|l|l|l|l|l|}
+			\hline
+			\textbf{Critérios}     & \textbf{V3S}         & \textbf{NORMMAS}          \\ \hline
+			\textbf{Agente}        & muito                & pouco                     \\ \hline
+			\textbf{SMA}           & expressivo           & pouco                     \\ \hline
+			\textbf{Artefato}      & expressivo           & pouco                     \\ \hline
+			\textbf{Norma}         & pouco                & altamente                 \\ \hline
+			\textbf{Violação}      & pouco                & altamente                 \\ \hline
+			\textbf{Sanção}        & pouco                & altamente                 \\ \hline
+			\textbf{Risco}         & altamente            & pouco                     \\ \hline
+			\textbf{P.O.A.E}       & pouco                & pouco                     \\ \hline
+			\textbf{Objetivos}     & muito                & pouco                     \\ \hline
+			\textbf{C.A}           & pouco                & pouco                     \\ \hline
+			\textbf{I.AG.AR}       & pouco                & pouco                    \\ \hline
+			\textbf{D.C.A}         & altamente            & pouco					\\ \hline
+		\end{tabular}
+	\end{table}
+\end{frame}
+
 
 \begin{frame}
 	\frametitle{Discussão - Consistência dos Resultados - Caso de Estudo}
@@ -906,60 +616,67 @@ Universidade Tecnológica Federal do Paraná \\ % Your institution for the title
 
 
 \begin{frame}
-	\frametitle{Discussão - Consistência dos Resultados - Conceitos}
+	\frametitle{Discussão - Considerações sobre Critérios Metodológicos ao Estudo de Caso}
 	\begin{itemize}
-		\item "Papel" foi adequado para especificar a função dos agentes.
-		\item "Artefact" foi adequado para especificar todas as ferramentas e equipamentos.
-		\item Sem "Condition" seria impossível determinar como o meio interfere na manutenção.
-		\item A modelagem trabalhou apenas sobre o risco de ser eletrocutado com uma única consequência que é de morte. Apesar de na prática não ser a única, é a principal e gera maior preocupação. Além disso, essa questão não corrobora negativamente paras demonstrações.
-		\item O mapeamento de todas realações que podem ser concebidas entre as entidades (sempre duas) foi interessante porque permitiu descrever a manutençao com muita riqueza de detalhes. Contudo o processo também foi custoso, pois exige muito tempo e esforço em mapear cada relação.  
+		\item Organização dos Objetivos pode ser modificada pelos profissionais durante a execução das Atividades.
+		\begin{itemize}
+			\item \textbf{Soluções}: Gerar um modelo para cada cenário, considerar todas as relações possíveis para $nextGoal(g_i,g_j)$ e Usar u algoritmo de \textit{Partial Order Planning}
+		\end{itemize}
+		\item Não foram considerados todos os riscos para o estudo de casos, assim como as possíveis consequências. Contudo, os riscos e consequências definidos no estudo de caso são os mais prováveis de ocorrer.
+		\item $possEntityRel(r_l,e_i,e_k)$ - Permitiu a elaboração de diversos raciocínios, contudo tornou a estrutura do modelo altamente complexa.
+		\item $affectsRels(r_k,r_n)$ - Apresenta alto grau de abstração ao modelo. Contudo, simplifica o processo de modelagem.
+		\item $requiresCirc(circ_n,g_m)$, $requiresEntity(goal_i, e_j)$, $instanceOfRel(circ_n)$ e $instanceOfCond(circ_n)$ - descrição rigorosa sobre procedimento custoso. 
 	\end{itemize}
 \end{frame}
 
 \begin{frame}
-	\frametitle{Discussão - Consistência dos Resultados - Conceitos}
+	\frametitle{Discussão - Considerações sobre Critérios Metodológicos ao Raciocínios}
 	\begin{itemize}
-		\item $affectsOtherRelations(r_k,r_n)$ - abstraiu muito as relações de causalidade, contudo permitiu conceber um modelo que considera esse tipo de situação.
-		\item Esse estudo mostrou que permitir a especificação do predicado $hasEntity(g_i,eg_j)$ e do predicado $hasRelation(g_i,rg_j)$ pode levar o modelador a contradições;
-		\item Ex; um objetivo $g_1$ é constituído por $e_1,e_2,e_3$ e é formado pelas relações $thereIsRelation(r_{12},e_1,e_2)$ e $thereIsRelation(r_{23},e_2,e_3)$, $rg_1 = \{ r_{12},r_{23} \}$ e $ eg_1 = \{ e_1, e_2 \} $, $ hasEntity(g_1,eg_1) $ e $ hasRelation(g_1, rg_1) $ $rg_{23}$. 
-		\item Esse problema pode ser resolvido por desconsiderar o predicado $hasEntity(g_n,eg_m)$ tendo em vista que um simples raciocínio usando $hasRelation(g_n,rg_m)$, $r_k \in rg_m$ e $thereIsRelation(r_k, e_a,e_b)$.
+		\item 1 e 5 - Descreve a situação onde o erro cometido por um agente gera consequências negativas em outro momento da execução sobre um outro agente. Apesar do alto grau de abstração que $possOfNegConseqFor$ trás a ambos raciocínios, esse predicado torna o modelo mais simples. 
+		\item 2 - Descreve exatamente o cenário onde a ausência gera a interrupção de uma dada atividade. Um cenário que não é considerado por esse raciocínio se da na condição dos profissionais adaptarem alguma ferramenta na ausência da ferramenta padrão.
 	\end{itemize}
 \end{frame}
 
 \begin{frame}
-	\frametitle{Discussão - Consistência dos Resultados - Raciocínios}
+	\frametitle{Discussão - Considerações sobre Critérios Metodológicos ao Raciocínios}
 	\begin{itemize}
-		\item O Raciocínio 1 foi realmente apropriado para descrever como se dá na prática quando alguém esquece de executar uma relação. Por conta disso o autor dessa dissertação entendeu que esse raciocínio é um fator relevante para cumprir em partes com os objetivos 2 (pois considerar o erro do agente) em partes com objetivo  3 e 5 (pois é essencial para compreender quais são as relações com possibilidade de acidentes). 
-		\item O Raciocínio 2 corresponde a realidade onde a ausência de um pano realmente impede o prosseguimento da manutenção. Contudo, cenário que não foi explorado por esse modelo consiste na adaptação de objetos como ferramentas. Apesar disso, o raciocínio foi eficaz em representar o cenário realistico e conservador. Portanto esse raciocínio cumpre com os objetivos 2 (pois considera norma, violação e sanção) e cumpre, em partes, com objetivo 4.
+		\item 3 - Descreve a situação onde um agente morre por cometer uma dada violação de condição. O cenário que esse raciocínio não considera se deve ao fato de que nem toda violação de condição resulta em consequências negativos. Uma forma de corrigir isso consiste em conceber regras com $possOfNegConseqFor$.
+		\item 4 - Descreve a seguinte situação: Um profissional usa a chave catraca de forma inapropriada ocasionando a sua morte. Um possível cenário que não é considerado por essa modelagem reside na do profissional simplesmente não conseguir executar a relação, sem que isso resulte em algum acidente.
+		\item 6 - Demonstra que o modelo é capaz de interpretar quando um objetivo é encerrado e qual deve ser o próximo passo do agente. 
+		\item 7 - Apresenta como o modelo se comporta quando é feito uma consulta que não corresponde a realidade. 
 	\end{itemize}
 \end{frame}
 
-
 \begin{frame}
-	\frametitle{Discussão - Consistência dos Resultados - Raciocínios}
+	\frametitle{Conclusão - Reflexão sobre Objetivo}
 	\begin{itemize} 
-		\item O Racicínio 3 exibe um cenário de mundo real, uma vez que não respeito as condições ambientais pode acarregar consequências trágicas. Contudo, não aborda a possibilidade do profissional cometer esse tipo de violação e não sofrer as penalidades. Uma maneira de corrigir isso consiste considerar o uso do predicado $possibilityHappensBadEvent(r_l)$. Por outro lado, dessa maneira o modelo retrata sempre o pior cenário. Por conta disso, esse raciocínio cumpre com objetivo 4;
-		\item O raciocínio 4 retrata um cenário factual do profissional manipular a ferramenta de forma inaproprieada. Porém, assim como no raciocínio 3, não considera a possibilidade do agente cometer algum equívoco sem se ferir gravemente. Ainda sim, retrata um cenário factível e conservador. Tendo em vista isso, esse raciocínio cumpre com objetivo 2 e em partes com objetivo 4. 
+		\item Foi feito estudo de documentos técnicos, foi feito entrevista com Engenheiro de Manutenção, foi feito acompanhamento de documentos técnicos, houve acompanhamento de procedimentos de manutenção em linha viva.
+		\item Foi concebido um modelo conceitual.
+		\item O modelo conceitual foi aplicado em um estudo de caso. Isso possibilitou formular raciocínios e verificar quais cenários foram representados apropriadamente e quais cenários não foram representados adequadamente.
+		\item Houve uma análise da comparativa entre modelos computacionais balizado pelo modelo conceitual definido nesse estudo.
+		\item Logo, o Objetivo Geral e os Objetivos Específicos foram atingidos.    
 	\end{itemize}
 \end{frame}
-
-\begin{frame}
-	\frametitle{Discussão - Consistência dos Resultados - Raciocínios}
-	\begin{itemize} 
-		\item O raciocínio 5 descreve um cenário onde, por um erro ocorrido no raciocínio 1, outros profissionais sofrem consequências negativas. Esse raciocínio corresponde a realidade dos fatos para essa especificação. Em conjunto com o raciocínio 1, cumpre com os objetivos 3 e 5.
-		\item Todos os raciocínios consideram elementos de uma SMA, cumprindo con o objetivo 1.  
-	\end{itemize}
-\end{frame}
-
 
 \begin{frame}
 	\frametitle{Conclusão}
-	\begin{itemize} 
-		\item Foi possível chegar em um modelo que está de acordo com os objetivos dessa pesquisa e que aborda essa problemática de forma diferente dos modelos atuais.
-		\item O cenário foi especificado com sucesso e todos os raciocínios representaram cenários reais. Contudo não foram suficientes para representar todos os cenários possíveis.
-		\item Criar estruturas dentro dessa representação que possam tratar desses outros cenários. 
-		\item Trabalhar com a idéia de probabilidade em vez de possibilidade.   
+	\begin{itemize}
+		\item \textit{MOISE+} é mais apropriado para representar os seguintes conceitos: \textit{Agente, SMA, objetivos};
+		\item \textit{Dastani} é mais apropriado para representar os seguintes conceitos \textit{Normas, Violações, Sanções};
+		\item \textit{V3S} é mais apropriado para representar \textit{SMA, Artefato, Riscos e contém estruturas otimizadas para descrever dinamicamente os cenários de acidentes}
+		\item \textit{NORMMAS} é mais apropriado para representar os seguintes conceitos \textit{Normas, Violações, Sanções};
+		\item No que tange ao contraste do modelo conceitual proposto nesse estudo em relação aos arcabouços verificados nesse texto, o autor conclui que aquele unifica em uma única estrutura concepções que são tratadas de formas isoladas aos demais modelos computacionais.
 	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Conclusão}
+	\begin{enumerate}
+		\item Em vez de trabalhar conceitos de possibilidade, sintetizar um modelo estatístico probabilístico na estrutura conceitual proposta neste estudo.
+		\item Investigar novas estruturas conceituais para tratar cenários onde os agentes buscam técnicas alternativas para resolver um determinado problema. 
+		\item Investigar novas estruturas conceituais onde uma violação pode ou não gerar uma sanção para as condições ambientes (ou seja, em vez de tratar a possibilidade sobre um relacionamento futuro, tratar a possibilidade sobre um relacionamento presente).
+		\item Investigar novas estruturas conceituais que considerem a violação de relacionamento em termos de possibilidades e não de um efeito direto no que tange a uma dada causa.   
+	\end{enumerate}
 \end{frame}
 
 
