@@ -103,7 +103,7 @@ Universidade Tecnológica Federal do Paraná \\ % Your institution for the title
 \begin{frame}
 \frametitle{Introdução} % Table of contents slide, comment this block out to remove it
 	\begin{itemize}
-			\item \textbf{Motivação}: Averiguar modelos que possam ser aplicados a sistemas multiagentes, criar um modelo conceitual sobre um dado estudo de caso e compreender a relação deste com aqueles. 
+			\item \textbf{Motivação}: Averiguar e desenvolver modelos com base em sistemas multiagentes para aplicar em cenários de acidentes. 
 			\item \textbf{Relevância}: Apresentar um modelo conceitual que defina em termos de classes e relacionamentos uma estrutura lógico-descritiva de fatores ambientais e organizacionais.    
 	\end{itemize}
 \end{frame}
@@ -112,7 +112,9 @@ Universidade Tecnológica Federal do Paraná \\ % Your institution for the title
 \begin{frame}
 \frametitle{Introdução - Objetivo Geral} % Table of contents slide, comment this block out to remove it
 	\begin{itemize}
-		\item Sintetizar, construir e avaliar, por intermédio de observações, de análises de documentos técnicos, de análises de modelos computacionais e de entrevista com profissionais da área, um modelo conceitual que define os conceitos e as relações para representar os cenários de ambientes de atividades, bem como os respectivos acidentes que neles podem acontecer, em que a validação ocorre por verificar se os raciocínios (para um dado estudo de caso do setor de energia elétrica) resultantes desse modelo são correspondentes com a realidade a fim de levantar um entendimento formal do problema para a comunidade acadêmica no que tange a que tipo de representação computacional é mais apropriada para determinado contexto. 
+		\item Sintetizar, construir e avaliar, por intermédio de observações, de análises de documentos técnicos, de análises de modelos computacionais e de entrevista com profissionais da área, um modelo conceitual.
+		\item Definir os conceitos e as relações para representar os cenários de ambientes de atividades, bem como os respectivos acidentes que neles podem acontecer.
+		\item Validar o processo por verificar se os raciocínios (para um dado estudo de caso do setor de energia elétrica) resultantes desse modelo são correspondentes com a realidade a fim de levantar um entendimento formal do problema para a comunidade acadêmica no que tange a que tipo de representação computacional é mais apropriada para determinado contexto. 
 	\end{itemize}
 \end{frame}
 
@@ -150,12 +152,11 @@ Universidade Tecnológica Federal do Paraná \\ % Your institution for the title
 
 \begin{frame}
 	\frametitle{Fundamentação Teórica - Normas}
-	\begin{figure}[H]
-	  \centering
-	  \includegraphics[width=0.5\linewidth]{figure/masprogram.png} 
-	  \caption{Linguagem para descrever um programa de multiagentes normativos com a possibilidade de violações e sanções na notação EBNF segundo o texto \cite{dastaniframework}. Nesta notação, $<ident>$ é usado para denotar uma \textit{string} e $<int>$ inteiros. Os termos $<b-prop>$ e $<i-prop>$ são usados para designar dois tipos de conjuntos de proposições que são disjuntos entre si}
-	  \label{descreveprograma}
-	\end{figure}
+	\begin{itemize}
+		\item Há diversas tratativas para o termo norma.
+		\item Esse estudo trabalha o conceito de Sistemas Normativos sobre a ótica do modelo de Dastani.
+		\item O aspecto normativo do sistema é tratado por considerar os eventos que resultam em uma violação e quais são as sanções decorrentes disso.
+	\end{itemize}
 \end{frame}
 
 
@@ -169,42 +170,94 @@ Universidade Tecnológica Federal do Paraná \\ % Your institution for the title
 
 \begin{frame}
 	\frametitle{Metodologia}
-	\begin{itemize}
-		\item \textbf{Revisão Exploratória e Análise de Campo}: Estudo de Manuais Técnicos, conversas com profissionais da área, entrevista com Engenheiro de Manutenção, acompanhamento de um procedimento de manutenção em liha viva, criação de textos descrevendo os cenários, participação em Workshops e revisão bibliográfica exploratória.
-		\item \textbf{Formalização de um Modelo Conceitual}: Verificar conceitos e seus respectivos relacionamentos. Após isso, escrever essa estrutura em termos de Conjuntos e Relações. Uma ver identificado isso, descrever regras que definem a transitividade do modelo. 
-		\item \textbf{Explorar os Arcabouços Possíveis}: Verificar correspondência com outros arcabouços da área de multiagentes e acidentes de trabalho.
-		\item \textbf{Aplicação em Estudo de Caso}: Aplicação do modelo conceitual em um dado estudo descaso a fim de verificar a correspondência com a realidade.
-	\end{itemize} 
+	\begin{minipage}[t]{0.48\linewidth}
+		\begin{enumerate}
+			\item \textbf{Revisão Exploratória e Análise de Campo}
+			\begin{itemize}
+				\item {\footnotesize Estudo de Manuais Técnicos}
+				\item {\footnotesize Conversas com profissionais da área}
+				\item {\footnotesize Conversas com Engenheiro de Manutenção}
+				\item {\footnotesize Criação de Textos Descrevendo Cenários}
+				\item {\footnotesize Participação de Workshops}
+				\item {\footnotesize Revisão Bibliográfica}
+			\end{itemize} 				
+			\item \textbf{Formalização de um Modelo Conceitual}
+			\begin{itemize}
+				\item {\footnotesize Identificar Padrões}
+				\item {\footnotesize Formalizar em termos de Conceitos e Relações}
+			\end{itemize}			 
+		\end{enumerate}
+	\end{minipage}\hfill
+	\begin{minipage}[t]{0.48\linewidth}
+		\begin{enumerate}
+			\item \textbf{Explorar os Arcabouços Possíveis}
+			\begin{itemize}
+				\item {\footnotesize Avaliar correspondência com outros Arcabouços}
+   			\end{itemize}			 
+			\item \textbf{Aplicação em Estudo de Caso}
+			\begin{itemize}
+				\item {\footnotesize Modelar um dado estudo de caso no modelo obtido}
+				\item {\footnotesize Analisar os raciocínios decorrentes frente a realidade}
+   			\end{itemize}			 
+		\end{enumerate}
+	\end{minipage}	 
 \end{frame}
 
 
 \begin{frame}
 	\frametitle{Resultados - Revisão Exploratória e Análise de Campo}
-	\begin{enumerate}
-		\item Os trabalhadores que executam os procedimentos.
-		\item Os diferentes papéis (ou funções) desses trabalhadores.
-		\item As ferramentas usadas pelos profissionais.
-		\item Os equipamentos que são submetidos a manutenção.
-		\item As interações entre todo tipo de entidade tais como trabalhadores, ferramentas e equipamentos.
-		\item As etapas das tarefas que devem ser finalizadas. 
-		\item As relações entre todas as entidades e interações com as tarefas
-		\item Averiguar a incerteza presente em certos processos e equipamentos que podem gerar acidentes.
-		\item Análise das Medidas que são tomadas pelos profissionais para lidar com essas incertezas.
-		\item Análise de Cenários onde Profissionais tomam medidas em desacordo com a segurança.
-		\item Análise dos riscos gerados a todos.
-		\item Análise da possibilidade de algum acidente ocorrer.
-	\end{enumerate}
+	\begin{minipage}[t]{0.48\linewidth}
+		\begin{enumerate}
+			\item {\footnotesize Os trabalhadores que executam os procedimentos.}
+			\item {\footnotesize Os diferentes papéis (ou funções) desses trabalhadores.}
+			\item {\footnotesize As ferramentas usadas pelos profissionais.}
+			\item {\footnotesize Os equipamentos que são submetidos a manutenção.}
+			\item {\footnotesize As interações entre todo tipo de entidade tais como trabalhadores, ferramentas e equipamentos.}
+			\item {\footnotesize As etapas das tarefas que devem ser finalizadas.}
+			\item {\footnotesize As relações entre todas as entidades e interações com as tarefas.} 			
+		\end{enumerate}
+	\end{minipage}\hfill
+	\begin{minipage}[t]{0.48\linewidth}
+		\begin{enumerate}
+			\item {\footnotesize Averiguar a incerteza presente em certos processos e equipamentos que podem gerar acidentes.}
+			\item {\footnotesize Análise das Medidas que são tomadas pelos profissionais para lidar com essas incertezas.}
+			\item {\footnotesize Análise de Cenários onde Profissionais tomam medidas em desacordo com a segurança.}
+			\item {\footnotesize Análise dos riscos gerados a todos.}
+			\item {\footnotesize Análise da possibilidade de algum acidente ocorrer.}
+		\end{enumerate}
+	\end{minipage}
 \end{frame}
 
 \begin{frame}
 	\frametitle{Resultados - Revisão Exploratória e Análise de Campo}
  	\begin{enumerate}
 		\item MOISE+
+		\begin{itemize}
+		 	\item HüBNER, J.; SICHMAN, J.; BOISSIER, O. Moise+: Towards a structural, functional, and deontic model for mas organization. In: . [S.l.: s.n.], 2002. p. 501–502., 
+			\item HÜBNER, J. F.; SICHMAN, J. S.; BOISSIER, O. A model for the structural, functional, and deontic specification of organizations in multiagent systems. In: BITTENCOURT, G.; RAMALHO, G. L. (Ed.). Advances in Artificial Intelligence. Berlin, Heidelberg: Springer Berlin Heidelberg, 2002. p. 118–128. ISBN 978-3-540-36127-5.
+		\end{itemize}
 		\item Modelo de Agentes Normativos de Dastani
-		\item V3S 
-		\item NormMAS
+		\begin{itemize}
+			\item DASTANI, M. et al. Normative multi-agent programs and their logics. In: MEYER, J.-J. C.; BROERSEN, J. (Ed.). Knowledge Representation for Agents and Multi-Agent Systems. Berlin, Heidelberg: Springer Berlin Heidelberg, 2009. p. 16–31. ISBN 978-3-642-05301-6.
+		\end{itemize}
 	\end{enumerate}
 \end{frame}
+
+\begin{frame}
+	\frametitle{Resultados - Revisão Exploratória e Análise de Campo}
+ 	\begin{enumerate}
+		\item V3S
+		\begin{itemize}
+			\item BAROT, C. et al. V3S: A virtual environment for risk-management training based on human-activity models. Presence, v. 22, n. 1, p. 1–19, 2013.
+		\end{itemize}
+		\item NormMAS
+		\begin{itemize}
+			\item CHANG, S.; MENEGUZZI, F. Simulating normative behaviour in multi-agent environments using monitoring artefacts. In: DIGNUM, V. et al. (Ed.). Coordination, Organizations, Institutions, and Norms in Agent Systems XI. Cham: Springer International Publishing, 2016. p. 59–77. ISBN 978-3-319-42691-4.
+		\end{itemize}
+
+	\end{enumerate}
+\end{frame}
+
 
 \begin{frame}
 	\frametitle{Resultados - Estrutural Conceitual - Módulos}
@@ -325,8 +378,7 @@ Universidade Tecnológica Federal do Paraná \\ % Your institution for the title
 		\item $hasObligation(executor2,g1)$
 		\item $requiresCirc(g1,relPanoGlicerina)$
 		\item $instanceOfRel(relPanoGlicerina)$ 
-		\item $relPanoCorda \in rg1$
-		\item $ x = agente4 $
+		\item $\neg isPresent(relPanoGlicerina)$
 		\item $starts(agente4,g1)$
 		\item $affectsRels(relPanoGlicerina,relBastaoGarraCondutor)$
 		\item $affectsRels(relPanoGlicerina,relCordaEstropo)$  
@@ -410,7 +462,8 @@ Universidade Tecnológica Federal do Paraná \\ % Your institution for the title
 		conditionViol(agente5,g11,umidade70) \nonumber \\	
 	\end{eqnarray}
 	\begin{eqnarray} \nonumber
-		conditionViol(agente5,g11,umidade70) \wedge hasRisk(umidade70,eletrocutado,morte) \nonumber \\ 
+		conditionViol(agente5,g11,umidade70) \wedge \nonumber \\
+		hasRisk(umidade70,eletrocutado,morte) \nonumber \\ 
 		\to negConseqFor(g11,agente5,eletrocutado,morte) \nonumber \\ 	
 	\end{eqnarray}
 	\begin{eqnarray}
@@ -518,12 +571,12 @@ Universidade Tecnológica Federal do Paraná \\ % Your institution for the title
 	\frametitle{Discussão - Critérios de Comparação}
 	\begin{itemize}
 		\item \textbf{Agente} condiz numa representação dos estados internos que um agente pode ter
-		\item O critério \textbf{SMA} condiz na presença de elementos que são necessário para especificar um \textit{Sistema Multiagente}
+		\item O critério \textbf{SMA} condiz na presença de elementos que são necessários para especificar um \textit{Sistema Multiagente}
 		\item O critério \textbf{Artefato} condiz com elementos que correspondem ao tratado na Fundamentação Teórica.
 		\item \textbf{Norma} corresponde a regras que devem ser acatadas pelos agentes 
 		\item \textbf{Violação} define o que corresponde o não cumprimento de uma dada regra
-		\item \textbf{Sanção} implica penalidade que está sobre o agente.
-		\item \textbf{Risco} consiste no evento ruim que tem um dado potencial de ocorrer sobre o agente
+		\item \textbf{Sanção} implica penalidade sobre o agente.
+		\item \textbf{Risco} implica o evento ruim que tem um dado potencial de ocorrer sobre o agente
 	\end{itemize}
 \end{frame}
 \begin{frame}
@@ -539,11 +592,11 @@ Universidade Tecnológica Federal do Paraná \\ % Your institution for the title
 \begin{frame}
 	\frametitle{Discussão - Expressividade}
 	\begin{itemize}
-			\item nenhuma - o engenheiro de modelagem terá de criar uma estrutura conceitual grande e complexa. 
-			\item pouco - possui algumas estruturas pré-definidas que diminuem o esforço da especificação. 
-			\item expressivo - o modelo permite especificar o objeto de interesse sem que o engenheiro tenha de criar muitos atributos para o domínio de interesse.
-			\item muito expressivo - o modelo apresenta diversos conceitos específicos para representar o objeto em interesse
-			\item altamente expressivo - o modelo especifica o objetivo de interesse muito bem fazendo com que o engenheiro de conhecimento não tenha que definir nenhum critério conceitual a mais.
+			\item \textbf{nenhuma} - o engenheiro de modelagem terá de criar uma estrutura conceitual grande e complexa. 
+			\item \textbf{pouco} - possui algumas estruturas pré-definidas que diminuem o esforço da especificação. 
+			\item \textbf{expressivo} - o modelo permite especificar o objeto de interesse sem que o engenheiro tenha de criar muitos atributos para o domínio de interesse.
+			\item \textbf{muito expressivo} - o modelo apresenta diversos conceitos específicos para representar o objeto em interesse
+			\item \textbf{altamente expressivo} - o modelo especifica o objetivo de interesse muito bem fazendo com que o engenheiro de conhecimento não tenha que definir nenhum critério conceitual a mais.
 	\end{itemize}
 \end{frame}
 \begin{frame}
@@ -552,44 +605,21 @@ Universidade Tecnológica Federal do Paraná \\ % Your institution for the title
 	    \centering
 	    \begin{tabular}{|l|l|l|l|l|}
 	        \hline
-	        \textbf{Critérios} & \textbf{MOISE+}        & \textbf{DASTANI}	\\ \hline
-	        \textbf{Agente}    & pouco                  & pouco             \\ \hline
-	        \textbf{SMA}       & altamente              & pouco             \\ \hline
-	        \textbf{Artefato}  & nenhuma                & pouco             \\ \hline
-	        \textbf{Norma}     & nenhuma                & altamente			\\ \hline
-	        \textbf{Violação}  & nenhuma                & altamente         \\ \hline
-	        \textbf{Sanção}    & nenhuma                & altamente         \\ \hline
-	        \textbf{Risco}     & nenhuma                & pouco             \\ \hline
-	        \textbf{P.O.A.E}   & nenhuma                & pouco             \\ \hline
-	        \textbf{Objetivos} & muito                  & pouco             \\ \hline
-	        \textbf{C.A}       & nenhuma                & pouco             \\ \hline
-	        \textbf{I.AG.AR}   & nenhuma                & pouco             \\ \hline
-	        \textbf{D.C.A}     & nenhuma                & pouco				\\ \hline
+	        \textbf{Critérios} & \textbf{MOISE+}        & \textbf{DASTANI}	& \textbf{V3S}	& \textbf{NORMMAS}	\\ \hline	
+	        \textbf{Agente}    & pouco                  & pouco   			& muito                & pouco     \\ \hline         							
+	        \textbf{SMA}       & altamente              & pouco             & expressivo           & pouco       \\ \hline							
+	        \textbf{Artefato}  & nenhuma                & pouco             & expressivo           & pouco       \\ \hline							
+	        \textbf{Norma}     & nenhuma                & altamente		    & pouco                & altamente   \\ \hline								
+	        \textbf{Violação}  & nenhuma                & altamente         & pouco                & altamente   \\ \hline							
+	        \textbf{Sanção}    & nenhuma                & altamente         & pouco                & altamente   \\ \hline							
+	        \textbf{Risco}     & nenhuma                & pouco             & altamente            & pouco       \\ \hline							
+	        \textbf{P.O.A.E}   & nenhuma                & pouco             & pouco                & pouco       \\ \hline							
+	        \textbf{Objetivos} & muito                  & pouco             & muito                & pouco       \\ \hline 							
+	        \textbf{C.A}       & nenhuma                & pouco             & pouco                & pouco       \\ \hline 							
+	        \textbf{I.AG.AR}   & nenhuma                & pouco             & pouco                & pouco       \\ \hline							
+	        \textbf{D.C.A}     & nenhuma                & pouco				& altamente            & pouco		\\ \hline							
 	    \end{tabular}
 	\end{table}	
-\end{frame}
-
-\begin{frame}
-	\frametitle{Discussão - Análise Comparativa}
-	\begin{table}[H]
-		\centering
-		\begin{tabular}{|l|l|l|l|l|}
-			\hline
-			\textbf{Critérios}     & \textbf{V3S}         & \textbf{NORMMAS}          \\ \hline
-			\textbf{Agente}        & muito                & pouco                     \\ \hline
-			\textbf{SMA}           & expressivo           & pouco                     \\ \hline
-			\textbf{Artefato}      & expressivo           & pouco                     \\ \hline
-			\textbf{Norma}         & pouco                & altamente                 \\ \hline
-			\textbf{Violação}      & pouco                & altamente                 \\ \hline
-			\textbf{Sanção}        & pouco                & altamente                 \\ \hline
-			\textbf{Risco}         & altamente            & pouco                     \\ \hline
-			\textbf{P.O.A.E}       & pouco                & pouco                     \\ \hline
-			\textbf{Objetivos}     & muito                & pouco                     \\ \hline
-			\textbf{C.A}           & pouco                & pouco                     \\ \hline
-			\textbf{I.AG.AR}       & pouco                & pouco                    \\ \hline
-			\textbf{D.C.A}         & altamente            & pouco					\\ \hline
-		\end{tabular}
-	\end{table}
 \end{frame}
 
 
@@ -598,54 +628,32 @@ Universidade Tecnológica Federal do Paraná \\ % Your institution for the title
 	\begin{itemize}
 		\item  O caso em análise cumpre com os interesses da pesquisa pois apresenta um cenário onde profissionais usam ferramentas para trabalhar de forma colaborativa a fim de atingir um determinado objetivo
 		\item Os profissionais são expostos a um dado risco e podem sofrer acidentes que advêm tanto de responsabilidade própria bem como responsabilidade do outro.
-		\item A compreensão da atividade propriamente dita não foi uma tarefa fácil e exigiu grande esforço do autor
 		\item O caso de estudo em análise é um cenário que é totalmente possível de ser factual, contudo existe diversas outras possibilidades de organizar a mesma manutenção.
 	\end{itemize}
 \end{frame}
 
-
-\begin{frame}
-	\frametitle{Discussão - Consistência dos Resultados - Caso de Estudo}
-	\begin{itemize}
-		\item A primeira fase consistiu em descrever a manutenção em termos de objetivos que as vezes são organizados em série e as vezes em paralelo
-		\item Um ponto  complicado de se verificar nesse estudo se deve ao fato de que os profissionais não precisam executar os objetivos na estrutura em que o modelo foi apresentado.
-		\item Há um número finito e relativamente pequeno sobre como esses objetivos podem ser organizados e isso ameniza a falta de previsibilidade de como a manutenção será realizada.
-		\item Solução para essa questão; 1 - Engenheiro de Manutenção organiza os objetivos de todas formas possíveis, 2 - Definir todas as relações possíveis que o predicado $nextGoal(g_i,g_j)$ permite em uma única estrutura.
-	\end{itemize}
-\end{frame}
-
-
 \begin{frame}
 	\frametitle{Discussão - Considerações sobre Critérios Metodológicos ao Estudo de Caso}
 	\begin{itemize}
-		\item Organização dos Objetivos pode ser modificada pelos profissionais durante a execução das Atividades.
-		\begin{itemize}
-			\item \textbf{Soluções}: Gerar um modelo para cada cenário, considerar todas as relações possíveis para $nextGoal(g_i,g_j)$ e Usar u algoritmo de \textit{Partial Order Planning}
-		\end{itemize}
-		\item Não foram considerados todos os riscos para o estudo de casos, assim como as possíveis consequências. Contudo, os riscos e consequências definidos no estudo de caso são os mais prováveis de ocorrer.
-		\item $possEntityRel(r_l,e_i,e_k)$ - Permitiu a elaboração de diversos raciocínios, contudo tornou a estrutura do modelo altamente complexa.
-		\item $affectsRels(r_k,r_n)$ - Apresenta alto grau de abstração ao modelo. Contudo, simplifica o processo de modelagem.
-		\item $requiresCirc(circ_n,g_m)$, $requiresEntity(goal_i, e_j)$, $instanceOfRel(circ_n)$ e $instanceOfCond(circ_n)$ - descrição rigorosa sobre procedimento custoso. 
+		\item Organização dos Objetivos pode ser modificada pelos profissionais durante a execução das Atividades.		
+		\item Não se considera todos os ricos, mas os mais prováveis.
+		\item $affectsRels(r_k,r_n)$ - simplifica o processo de modelagem.
+		\item $possEntityRel(r_l,e_i,e_k)$ - granulidade do modelo.
+		\item $requiresCirc(circ_n,g_m)$, $requiresEntity(goal_i, e_j)$, $instanceOfRel(circ_n)$ e $instanceOfCond(circ_n)$ - granulidade do modelo. 
 	\end{itemize}
 \end{frame}
 
 \begin{frame}
 	\frametitle{Discussão - Considerações sobre Critérios Metodológicos ao Raciocínios}
 	\begin{itemize}
-		\item 1 e 5 - Descreve a situação onde o erro cometido por um agente gera consequências negativas em outro momento da execução sobre um outro agente. Apesar do alto grau de abstração que $possOfNegConseqFor$ trás a ambos raciocínios, esse predicado torna o modelo mais simples. 
-		\item 2 - Descreve exatamente o cenário onde a ausência gera a interrupção de uma dada atividade. Um cenário que não é considerado por esse raciocínio se da na condição dos profissionais adaptarem alguma ferramenta na ausência da ferramenta padrão.
+		\item Raciocínio 1 e 5  - Cenário de violação de relação sem sanção.  
+		\item Raciocínio 2 - Violação de Entidade 
+		\item Raciocínio 3 - Violação de Condição
+		\item Raciocínio 4 - Violação de Relação com Sanção
+		\item Raciocínio 6 - Atingiu o objetivo
 	\end{itemize}
 \end{frame}
 
-\begin{frame}
-	\frametitle{Discussão - Considerações sobre Critérios Metodológicos ao Raciocínios}
-	\begin{itemize}
-		\item 3 - Descreve a situação onde um agente morre por cometer uma dada violação de condição. O cenário que esse raciocínio não considera se deve ao fato de que nem toda violação de condição resulta em consequências negativos. Uma forma de corrigir isso consiste em conceber regras com $possOfNegConseqFor$.
-		\item 4 - Descreve a seguinte situação: Um profissional usa a chave catraca de forma inapropriada ocasionando a sua morte. Um possível cenário que não é considerado por essa modelagem reside na do profissional simplesmente não conseguir executar a relação, sem que isso resulte em algum acidente.
-		\item 6 - Demonstra que o modelo é capaz de interpretar quando um objetivo é encerrado e qual deve ser o próximo passo do agente. 
-		\item 7 - Apresenta como o modelo se comporta quando é feito uma consulta que não corresponde a realidade. 
-	\end{itemize}
-\end{frame}
 
 \begin{frame}
 	\frametitle{Conclusão - Reflexão sobre Objetivo}
