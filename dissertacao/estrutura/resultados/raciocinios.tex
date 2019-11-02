@@ -6,15 +6,13 @@ Uma vez que o modelo foi definido e que foi implementado em um estudo de caso, �
 \label{raciocinio1}
 
 O raciocínio a seguir mostra o que acontece se o $agente4$ esquecer de passar glicerina no pano, especificado pela relação $relPanoGlicerina$, designados a ele no objetivo $g1$. 
-Todos os predicados vinculados a essa situação são;
+Todos os predicados vinculados a essa situação são:
 
 \begin{enumerate}
 	\item $adoptsRole(agente4,executor2)$ 
 	\item $hasObligation(executor2,g1)$
 	\item $requiresCirc(g1,relPanoGlicerina)$
 	\item $instanceOfRel(relPanoGlicerina)$ 
-	\item $relPanoCorda \in rg1$
-	\item $ x = agente4 $
 	\item $starts(agente4,g1)$
 	\item $affectsRels(relPanoGlicerina,relBastaoGarraCondutor)$
 	\item $affectsRels(relPanoGlicerina,relCordaEstropo)$  
@@ -25,7 +23,7 @@ Todos os predicados vinculados a essa situação são;
 	\item $affectsRels(relPanoGlicerina,relEstropoCorda)$	
 \end{enumerate}
 
-Com base nisso, as relações de implicabilidade resultantes são;
+Com base nisso, as relações de implicabilidade resultantes são:
 
 \begin{eqnarray}\nonumber
 	requiresCirc(g1,relPanoGlicerina) \wedge \nonumber \\  
@@ -153,7 +151,7 @@ O raciocínio a seguir mostra o que acontece se o $agente5$ tentar alcançar o o
 
 \subsection{Raciocínio - 4} 
 \label{raciocinio4}
-O raciocínio a seguir mostra o que acontece se o $agente3$ errar a forma adequada de realizar o relacionamento $relChaveCatracaParafuso$ no objetivo $g15$. Os predicados envolvidos são;
+O raciocínio a seguir mostra o que acontece se o $agente3$ errar a forma adequada de realizar o relacionamento $relChaveCatracaParafuso$ no objetivo $g15$. Os predicados envolvidos são:
 
 \begin{enumerate}
 	\item $adoptsRole(agente4,executor2)$
@@ -186,7 +184,7 @@ O raciocínio a seguir mostra o que acontece se o $agente3$ errar a forma adequa
 
 \subsection{Raciocínio - 5} 
 \label{raciocinio5}
-A finalidade dessa demonstração consiste em mostrar como um agente pode ser submetido a consequências ruins tendo em vista os erros cometidos por outros profissionais. O raciocínio 1 mostra que o fato do $agente4$ não conseguir realizar o relacionamento $relPanoGlicerina$ resulta na violação $relationViol(agente4,g1,relPanoGlicerina)$. Essa violação, por sua vez, impacta diversas outras relações, em que $possOfNegConseqFor(relParafusoConector)$ é uma delas. Assim sendo, antes do $agente4$ cometer o erro, a possibilidade da ocorrência de um evento ruim acontecer era 0, se o agente realizar a relação $relParafusoConector$ sem cometer violação alguma. Contudo, após a ocorrência do erro cometido pelo $agente4$, existe uma possibilidade de um evento ruim acontecer na relação $relParafusoConector$ mesmo que tudo seja feito de acordo com os conformes. Assim sendo, a lista de predicados e o raciocínio mostra o que acontece dado a seguinte situação; o possível evento ruim presente em $relParafusoConector$ se torna uma realidade;  
+A finalidade dessa demonstração consiste em mostrar como um agente pode ser submetido a consequências ruins tendo em vista os erros cometidos por outros profissionais. O raciocínio 1 mostra que o fato do $agente4$ não conseguir realizar o relacionamento $relPanoGlicerina$ resulta na violação $relationViol(agente4,g1,relPanoGlicerina)$. Essa violação, por sua vez, impacta diversas outras relações, em que $possOfNegConseqFor(relParafusoConector)$ é uma delas. Assim sendo, antes do $agente4$ cometer o erro, a possibilidade da ocorrência de um evento ruim acontecer era 0, se o agente realizar a relação $relParafusoConector$ sem cometer violação alguma. Contudo, após a ocorrência do erro cometido pelo $agente4$, existe uma possibilidade de um evento ruim acontecer na relação $relParafusoConector$ mesmo que tudo seja feito de acordo com os conformes. Assim sendo, a lista de predicados e o raciocínio mostra o que acontece dado a seguinte situação: o possível evento ruim presente em $relParafusoConector$ se torna uma realidade:  
 
 \begin{enumerate}	
 	\item $requiresCirc(g19,relParafusoConector)$		
@@ -201,7 +199,7 @@ A finalidade dessa demonstração consiste em mostrar como um agente pode ser su
 	\item $adoptsRole(agente7,executor5)$
 	\item $hasRisk(relParafusoConector,eletrocutado,morte)$
 	\item $possOfNegConseqFor(relParafusoConector)$
-	\item $happensNegConseqFor(g19,relParafusoConector)$	
+	\item $happensNegConseqFor(relParafusoConector)$	
 \end{enumerate}
 
 
@@ -253,11 +251,11 @@ A finalidade dessa demonstração consiste em mostrar como um agente pode ser su
 Esse raciocínio tem a finalidade de mostrar como se dá os raciocínios para quando se faz necessário verificar se um objetivo foi atingido. O objetivo $g23$ deve ser atingido pelos agentes com as funções de $executor1$,$executor2$,$executor3$ e $executor5$. 
 
 \begin{enumerate}
-	\item $stopped(agente2) \to F$	
-	\item $stopped(agente3) \to F$
-	\item $stopped(agente4) \to F$
-	\item $stopped(agente5) \to F$
-	\item $stopped(agente7) \to F$
+	\item $stopped(agente2,g23) \to F$	
+	\item $stopped(agente3,g23) \to F$
+	\item $stopped(agente4,g23) \to F$
+	\item $stopped(agente5,g23) \to F$
+	\item $stopped(agente7,g23) \to F$
 	\item $hasObligation(executor1,g23)$	
 	\item $hasObligation(executor2,g23)$	
 	\item $hasObligation(executor3,g23)$		

@@ -7,3 +7,5 @@ A seguir há um exemplo da especificação $adoptsRole(agente1,supervisor)$ impl
 adoptsRole(agente1,supervisor).
 
 As \textit{queries}, em \textit{Prolog}, são feitas por escrever a especificação do implicador ($implicador \to implicado$). Através do algoritmo \textit{Backtracking}, é possível encontrar todos os predicados que são verdade. Por exemplo, para avaliar o Raciocínio 3 se faz necessário fazer as seguintes "queries": $? - stopped(g1)$, $? - entityViol(agente4,g1,pano)$, $? - entityViol(agente3,g1,pano)$, $? - entityViol(agent2,g1,pano)$. 
+
+O apêndice \ref{program} apresenta a implementação das regras e dos raciocínios em Prolog e, no caso do algoritmo, em JavaScript.

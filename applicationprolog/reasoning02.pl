@@ -1,24 +1,35 @@
 hasPermission(RHO,GOAL) :- hasObligation(RHO,GOAL).
-violationCondition(AGENT,GOAL,CONDITION):- hasCondition(GOAL,CONDITIONSET),notIsPresent(CONDITION),isElementOf(CONDITION,CONDTIONSET),tryReach(AGENT,GOAL).
-violationRelation(AGENT,GOAL,RELATION):- hasRelation(GOAL,RELATIONSET),notIsPresent(RELATION),isElementOf(RELATION,RELATIONSET),tryReach(AGENT,GOAL).
-violationEntity(AGENT,GOAL,ENTITY) :- hasEntity(GOAL,ENTITYSET),notIsPresent(ENTITY),isElementOf(ENTITY,ENTITYSUBSET),tryReach(AGENT,GOAL).
-consequenceOfBadEvent(GOAL,AGENT,RISK,FATALITY) :- violationCondition(AGENT,GOAL,CONDITION),hasRisk(CONDITION,RISK,FATALITY).
-consequenceOfBadEvent(GOAL,AGENT,RISK,FATALITY) :- violationRelation(AGENT,GOAL,RISK),hasRisk(CONDITION,RISK,FATALITY).
-hasPossibility(OTHERRELATION) :- violationRelation(AGENT,GOAL,RISK),affects(RELATION,OTHERRELATION),notHasPossibility(OTHERRELATION).
-stopIn(GOAL):-violationEntity(AGENT,GOAL,ENTITY).
-consequenceOfBadEvent(GOAL,AGENT,RISK,FATALITY) :- hasRelation(GOAL,RELATIONSET),isElementOf(RELATION,RELATIONSET),hasRisk(RELATION,RISK,FATALITY),tryReach(AGENT,GOAL).
-stopIn(GOAL) :- consequenceOfBadEvent(GOAL,AGENT,RISK,FATALITY).
-isReached(GOAL) :- notStopIn(GOAL,AGENTDONETHIS),isSubSet(AGENTDONETHIS,AGENTOBLIGATIOTHIS).
+
+conditionViol(AGENT,GOAL,CONDITION):- requiresCirc(GOAL,CONDITION),notIsPresent(CONDITION),instanceOfCond(CONDITION),starts(AGENT,GOAL).
+
+relationViol(AGENT,GOAL,RELATION):- requiresCirc(GOAL,RELATION),notIsPresent(RELATION),instanceOfRel(RELATION),starts(AGENT,GOAL).
+
+entityViol(AGENT,GOAL,ENTITY) :- requiresEntity(GOAL,ENTITY),notIsPresent(ENTITY),starts(AGENT,GOAL).
+
+negConseqFor(GOAL,AGENT,RISK,CONSEQUENCE) :- conditionViol(AGENT,GOAL,CONDITION),hasRisk(CONDITION,RISK,CONSEQUENCE).
+
+negConseqFor(GOAL,AGENT,RISK,CONSEQUENCE) :- relationViol(AGENT,GOAL,RELATION),hasRisk(RELATION,RISK,CONSEQUENCE).
+
+possOfNegConseqFor(OTHERRELATION) :- relationViol(AGENT,GOAL,RISK),affectsRels(RELATION,OTHERRELATION).
+
+negConseqFor(GOAL,AGENT,RISK,CONSEQUENCE) :- possOfNegConseqFor(OTHERRELATION),happensNegConseqFor(OTHERRELATION),requiresCirc(GOAL,OTHERRELATION),notIsPresent(OTHERRELATION),isInstanceOfRel(OTHERRELATION),hasRisk(OTHERRELATION,RISK,CONSEQUENCE),starts(AGENT,GOAL).
+
+stopped(GOAL):-entityViol(AGENT,GOAL,ENTITY).
+
+stopped(GOAL) :- negConseqFor(GOAL,AGENT,RISK,CONSEQUENCE).
+
+enabledToStart(AGENT,GOAL) :- adoptsRole(AGENT,RHO),hasPermission(RHO, GOAL),nextGoal(GOAL,NEXTGOAL),reached(GOAL).
+
+stopped(GOAL) :- adoptsRole(AGENT,RHO),hasPermission(RHO, GOAL),lastGoal(GOAL,NEXTGOAL),reached(GOAL).
 
 
-adoptsRole(agente2,executor1).
-adoptsRole(agente3,executor1).
-adoptsRole(agente4,executor2).
-hasObligation(executor1,goal1).
-hasObligation(executor2,goal1).
-tryReach(agente2,goal1).
-tryReach(agente3,goal1).
-tryReach(agente4,goal1).
-hasEntity(goal1,eg1).
-isElementOf(pano,eg1).
+adoptsRole(agente2,executor1). 
+adoptsRole(agente3,executor1).	 	
+adoptsRole(agente4,executor2).	 
+hasObligation(executor1,g1).
+hasObligation(executor2,g1).
+starts(agente2,g1). 
+starts(agente3,g1).	 	
+starts(agente4,g1).
+requiresEntity(g1,pano).		
 notIsPresent(pano).

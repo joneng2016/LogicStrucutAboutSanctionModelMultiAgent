@@ -1,28 +1,29 @@
 hasPermission(RHO,GOAL) :- hasObligation(RHO,GOAL).
-violationRelation(AGENT,GOAL,RELATION):- hasRelation(GOAL,RELATIONSET),notIsPresent(RELATION),isElementOf(RELATION,RELATIONSET),tryReach(AGENT,GOAL).
-violationCondition(AGENT,GOAL,CONDITION):- hasCondition(GOAL,CONDITIONSET),notIsPresent(CONDITION),isElementOf(CONDITION,CONDTIONSET),tryReach(AGENT,GOAL).
-violationEntity(AGENT,GOAL,ENTITY) :- hasEntity(GOAL,ENTITYSET),notIsPresent(ENTITY),isElementOf(ENTITY,ENTITYSUBSET),tryReach(AGENT,GOAL).
-consequenceOfBadEvent(GOAL,AGENT,RISK,FATALITY) :- violationRelation(AGENT,GOAL,RISK),hasRisk(CONDITION,RISK,FATALITY).
-consequenceOfBadEvent(GOAL,AGENT,RISK,FATALITY) :- violationCondition(AGENT,GOAL,CONDITION),hasRisk(CONDITION,RISK,FATALITY).
-hasPossibility(OTHERRELATION) :- violationRelation(AGENT,GOAL,RISK),affects(RELATION,OTHERRELATION),notHasPossibility(OTHERRELATION).
-stopIn(GOAL) :- consequenceOfBadEvent(GOAL,AGENT,RISK,FATALITY).
-stopIn(GOAL):-violationEntity(AGENT,GOAL,ENTITY).
-consequenceOfBadEvent(GOAL,AGENT,RISK,FATALITY) :- hasRelation(GOAL,RELATIONSET),isElementOf(RELATION,RELATIONSET),hasRisk(RELATION,RISK,FATALITY),tryReach(AGENT,GOAL).
-isReached(GOAL) :- notStopIn(GOAL,AGENTDONETHIS),isSubSet(AGENTDONETHIS,AGENTOBLIGATIOTHIS).
-notIsPresent(ARG) :- \+ isPresent(ARG).
 
-hasCondition(goal15,cg1).
-isElementOf(umidade70,cg1).
-isElementOf(noVento,cg1).
-isElementOf(noChuva,cg1).
-isElementOf(sol,cg1).
-isPresent(umidade70).
-isPresent(noVento).
-isPresent(noChuva).
-isPresent(sol).
+conditionViol(AGENT,GOAL,CONDITION):- requiresCirc(GOAL,CONDITION),notIsPresent(CONDITION),instanceOfCond(CONDITION),starts(AGENT,GOAL).
 
-tryReach(agente4,goal15).
-hasRelation(goal15,rg15).
-isElementOf(relationchavecatracaparafuso,rg15).
-notIsPresent(relationchavecatracaparafuso).
-hasRisk(relationchavecatracaparafuso,eletrocutado,morte).
+relationViol(AGENT,GOAL,RELATION):- requiresCirc(GOAL,RELATION),notIsPresent(RELATION),instanceOfRel(RELATION),starts(AGENT,GOAL).
+
+entityViol(AGENT,GOAL,ENTITY) :- requiresEntity(GOAL,ENTITY),notIsPresent(ENTITY),starts(AGENT,GOAL).
+
+negConseqFor(GOAL,AGENT,RISK,CONSEQUENCE) :- relationViol(AGENT,GOAL,RELATION),hasRisk(RELATION,RISK,CONSEQUENCE).
+
+possOfNegConseqFor(OTHERRELATION) :- relationViol(AGENT,GOAL,RISK),affectsRels(RELATION,OTHERRELATION).
+
+negConseqFor(GOAL,AGENT,RISK,CONSEQUENCE) :- possOfNegConseqFor(OTHERRELATION),happensNegConseqFor(OTHERRELATION),requiresCirc(GOAL,OTHERRELATION),notIsPresent(OTHERRELATION),isInstanceOfRel(OTHERRELATION),hasRisk(OTHERRELATION,RISK,CONSEQUENCE),starts(AGENT,GOAL).
+
+stopped(GOAL):-entityViol(AGENT,GOAL,ENTITY).
+
+stopped(GOAL) :- negConseqFor(GOAL,AGENT,RISK,CONSEQUENCE).
+
+enabledToStart(AGENT,GOAL) :- adoptsRole(AGENT,RHO),hasPermission(RHO, GOAL),nextGoal(GOAL,NEXTGOAL),reached(GOAL).
+
+stopped(GOAL) :- adoptsRole(AGENT,RHO),hasPermission(RHO, GOAL),lastGoal(GOAL,NEXTGOAL),reached(GOAL).
+
+adoptsRole(agente4,executor2).
+hasObligation(executor4,g15).	
+starts(agente4,g15).
+requiresCirc(g15,relChaveCatracaParafuso).
+instanceOfRel(relChaveCatracaParafuso).	
+notIsPresent(relChaveCatracaParafuso).
+hasRisk(relChaveCatracaParafuso,eletrocutado,morte).

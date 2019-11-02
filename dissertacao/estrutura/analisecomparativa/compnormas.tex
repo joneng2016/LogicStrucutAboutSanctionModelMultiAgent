@@ -1,7 +1,66 @@
+\subsection{NORMMAS}
+
+As tabelas a seguir exibem uma comparação entre o \textit{NORMMAS} e o modelo proposto neste estudo.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|p{0.3\linewidth}|p{0.3\linewidth}|}
+\hline          
+\textbf{Atributos}
+& 
+\textbf{NORMMAS}
+& 
+\textbf{Modelo deste Estudo} 
+\\ \hline
+Finalidade
+&
+Representar agentes considerando questões atreladas a Normas, Sanções e Violações
+&
+Representar cenários de Acidentes 
+\\ \hline
+Generalização
+&
+Trata de cenários onde se tem o interesse de representar agentes, normas, violações e sanções. 
+&
+Trata de cenários específicos para acidentes onde se deseja as causas do acidente. 
+\\ \hline
+Agentes
+&
+Não define os estados mentais do agente
+&
+Não define os estados mentais do agente
+\\ \hline
+Representação de Objetivos
+& 
+Não possui estrutura para representar objetivos
+&
+Possui uma estrutura simples para representar objetivos. Essa estrutura considera apenas questões de pré-requisitos. 
+\\ \hline
+Normas 
+&
+Presença de tuplas que permite expressar proibições e sanções para os mais diversos casos possíveis. 
+&
+Presença de regras que permite expressar violações e sanções para cenários de acidentes.
+\\ \hline
+Generalização
+&
+Trata de cenários onde se tem o interesse de representar agentes, normas, violações e sanções. 
+&
+Trata de cenários específicos para acidentes onde se desejeva verificar as causas do acidente.
+\\ \hline
+Estrutura da Linguagem
+& 
+Lógica de Primeira Ordem (definições dos conceitos em termos de Tuplas)
+&
+Teoria de Conjuntos e Lógica de Predicados  
+\\ \hline
+\end{tabular}
+\end{table}
+
 \subsection{Comparação Genérica entre os Modelos}
 
 Tendo como base as análises feitas nas seções anteriores, é possível chegar na tabela \ref{comparemodel} que apresenta uma análise comparativa dos arcabouços no que tange a expressividade do modelo computacional proposto nesse texto. Por expressividade, se entende capacidade de expressar, representar o objeto de interesse. Para essa análise 
-foi feita a seguinte escala; nenhuma expressividade $\prec$ pouco expressivo $\prec$ expressivo $\prec$ muito expressivo $\prec$ altamente expressivo. O termo nenhuma expressividade não indica que é impossível definir a estrutura em observação dentro do modelo em voga, mas sim que o engenheiro de modelagem terá que criar uma estrutura conceitual ad hoc. Sobre o mesmo aspecto reside pouco expressivo, contudo o modelo - neste caso - possui algumas estruturas pré-definidas que diminuem o esforço da especificação. O termo expressivo deixa claro que o modelo permite especificar o objeto de interesse sem que o engenheiro tenha de criar muitos atributos para o domínio de interesse. O termo muito expressivo define que o modelo apresenta diversos conceitos específicos para representar o objeto em interesse, contudo ainda há margem para que o modelador tenha que criar um ou mais atributos. O termo altamente expressivo define o caso onde o modelo especifica o objetivo de interesse muito bem fazendo com que o modelador não precise definir nenhum critério conceitual a mais (ou terá que montar poucas definições).   
+foi feita a seguinte escala: nenhuma expressividade $\prec$ pouco expressivo $\prec$ expressivo $\prec$ muito expressivo $\prec$ altamente expressivo. O termo nenhuma expressividade não indica que é impossível definir a estrutura em observação dentro do modelo em voga, mas sim que o engenheiro de modelagem terá que criar uma estrutura conceitual ad hoc. Sobre o mesmo aspecto reside pouco expressivo, contudo o modelo - neste caso - possui algumas estruturas pré-definidas que diminuem o esforço da especificação. O termo expressivo deixa claro que o modelo permite especificar o objeto de interesse sem que o engenheiro tenha de criar muitos atributos para o domínio de interesse. O termo muito expressivo define que o modelo apresenta diversos conceitos específicos para representar o objeto em interesse, contudo ainda há margem para que o modelador tenha que criar um ou mais atributos. O termo altamente expressivo define o caso onde o modelo especifica o objetivo de interesse muito bem fazendo com que o modelador não precise definir nenhum critério conceitual a mais (ou terá que montar poucas definições).   
 
 \begin{table}[H]
     \centering

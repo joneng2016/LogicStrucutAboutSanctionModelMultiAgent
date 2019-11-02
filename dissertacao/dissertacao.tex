@@ -13,6 +13,7 @@
 \usepackage{float}
 \usepackage{scalefnt}
 \usepackage{algorithmic}% http://ctan.org/pkg/algorithms
+\usepackage{longtable}
 
 \instituicao{Universidade Tecnológica Federal do Paraná} % nome da instituicao
 \programa{Programa de Pós-graduação em Engenharia Elétrica e Informática Industrial} % nome do programa
@@ -150,9 +151,15 @@ Quando a sabedoria entrar no seu coração e o conhecimento se tornar agradável
 	\section{Normas} \label{normasdastani}
 		\input{estrutura/fundamentacaoteorica/normas.tex}
 	\section{Riscos} \label{risksec}
-		\input{estrutura/fundamentacaoteorica/riscos.tex}		
+		\input{estrutura/fundamentacaoteorica/riscos.tex}
 	\section{Lógica Modal} \label{logic}
 		\input{estrutura/fundamentacaoteorica/poss.tex}
+	\section{Demais Modelos}
+		\input{estrutura/fundamentacaoteorica/demaismodelos.tex}
+		\input{estrutura/analisecomparativa/genvs3.tex} 		
+		\input{estrutura/analisecomparativa/genormas.tex}		
+		\input{estrutura/analisecomparativa/estnormas.tex}
+	
 \chapter{Metodologia}
 \label{chap:metod}
 	\input{estrutura/metodologia/genmet.tex}
@@ -164,6 +171,7 @@ Quando a sabedoria entrar no seu coração e o conhecimento se tornar agradável
         \input{estrutura/metodologia/exploracaoarcaboucopossivel.tex}                 
     \section{Aplicação em Estudo de Caso}    
         \input{estrutura/metodologia/realizacoesinferenca.tex}\label{inferencias}
+
 \chapter{Resultados}
 \label{chap:resul}
 	\input{estrutura/resultados/genresult.tex}
@@ -185,6 +193,7 @@ Quando a sabedoria entrar no seu coração e o conhecimento se tornar agradável
 			\input{estrutura/resultados/cenariospredicadosabertos.tex}
 	\section{Caso Introdutório} \label{introdutorycase}
 			\input{estrutura/resultados/introdutorycase.tex}
+
 \chapter{Estudo de Caso} \label{casestudy}
 \label{studycase}
 	\input{estrutura/resultados/casodeestudo.tex}
@@ -199,10 +208,7 @@ Quando a sabedoria entrar no seu coração e o conhecimento se tornar agradável
 		\input{estrutura/resultados/generalanalisecomparativa.tex}
 		\input{estrutura/analisecomparativa/genmoise.tex}	
 		\input{estrutura/analisecomparativa/gendastani.tex}
-		\input{estrutura/analisecomparativa/genvs3.tex}
 		\input{estrutura/analisecomparativa/estvs3.tex}
-		\input{estrutura/analisecomparativa/genormas.tex}		
-		\input{estrutura/analisecomparativa/estnormas.tex}
 		\input{estrutura/analisecomparativa/compnormas.tex}
 	\section{Discussão do Modelo Conceitual}\label{constresult}
 		\input{estrutura/analisecomparativa/constresult.tex}
@@ -226,5 +232,10 @@ Quando a sabedoria entrar no seu coração e o conhecimento se tornar agradável
 \chapter{Perguntas da Entrevista}
 \label{pergent}
 \input{estrutura/apendice/entrevista.tex}
+
+\chapter{Programa}
+\label{program}
+\input{estrutura/apendice/programa.tex}
+
 
 \end{document}
