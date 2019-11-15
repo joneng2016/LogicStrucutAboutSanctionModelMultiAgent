@@ -40,7 +40,7 @@
 \contentsline {subsection}{\numberline {5.1.1}Especifica\IeC {\c c}\IeC {\~a}o dos Agentes e seus Pap\IeC {\'e}is}{83}
 \contentsline {subsection}{\numberline {5.1.2}Especifica\IeC {\c c}\IeC {\~a}o das Ferramentas e Objetivos}{84}
 \contentsline {subsection}{\numberline {5.1.3}Especifica\IeC {\c c}\IeC {\~a}o das Condi\IeC {\c c}\IeC {\~o}es e Rela\IeC {\c c}\IeC {\~o}es}{88}
-\contentsline {subsection}{\numberline {5.1.4}Rela\IeC {\c c}\IeC {\~a}o entre Objetivos e Pap\IeC {\'e}is}{93}
+\contentsline {subsection}{\numberline {5.1.4}Rela\IeC {\c c}\IeC {\~a}o entre Objetivos e Pap\IeC {\'e}is}{94}
 \contentsline {subsection}{\numberline {5.1.5}Relacionamentos das Entidades, Rela\IeC {\c c}\IeC {\~o}es e Condi\IeC {\c c}\IeC {\~o}es com Objetivos}{97}
 \contentsline {section}{\numberline {5.2}\MakeUppercase {Racioc\IeC {\'\i }nio}}{102}
 \contentsline {subsection}{\numberline {5.2.1}Racioc\IeC {\'\i }nio - 1}{102}
@@ -54,7 +54,7 @@
 \contentsline {chapter}{\numberline {6}\MakeUppercase {Discuss\IeC {\~a}o}}{112}
 \contentsline {section}{\numberline {6.1}\MakeUppercase {An\IeC {\'a}lise Comparativa}}{112}
 \contentsline {subsection}{\numberline {6.1.1}Modelo MOISE+}{112}
-\contentsline {subsection}{\numberline {6.1.2}Modelo DASTANI}{114}
+\contentsline {subsection}{\numberline {6.1.2}Modelo DASTANI}{115}
 \contentsline {section}{\numberline {6.2}\MakeUppercase {Compara\IeC {\c c}\IeC {\~a}o entre VS3 e o modelo proposto neste estudo}}{116}
 \contentsline {subsection}{\numberline {6.2.1}NORMMAS}{118}
 \contentsline {subsection}{\numberline {6.2.2}Compara\IeC {\c c}\IeC {\~a}o Gen\IeC {\'e}rica entre os Modelos}{119}
