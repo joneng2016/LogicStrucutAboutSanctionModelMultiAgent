@@ -11,7 +11,7 @@ Para isso pode-se considerar o seguinte cenário: dois funcionários (Fernando e
 	\item Fernando, enquanto Bruno segura as escadas, deve retornar ao chão. 
 \end{enumerate}
 
-A subseção a seguir exibe esse estudo de caso aplicado a esse modelo. 
+A Subseção a seguir exibe esse estudo de caso aplicado a esse modelo. 
 
 \subsection{Aplicação do Modelo}
 
@@ -81,7 +81,7 @@ No que tange as relações entre as entidades, pode-se considerar o seguinte:
 \end{enumerate}
 
 
-Uma vez definido as entidades das classes, é possível especificar os predicados. A lista a seguir especifica o predicado $possEntityRel(r_l,e_i,e_k)$:
+Uma vez definidos as entidades das classes, é possível especificar os predicados. A lista a seguir especifica o predicado $possEntityRel(r_l,e_i,e_k)$:
 
 \begin{enumerate}
 	\item $possEntityRel(rFerEsc,fernando,escada)$
@@ -154,21 +154,21 @@ A lista a seguir exibe a especificação do predicado $requiresEntity(goal_i,e_j
 A lista a seguir exibe a especificação do predicado $hasRisk(crts,risk_j,cs_k)$
 
 \begin{enumerate}
-	\item $hasRisk(ambIlumin,quedaEscada,fratura)$ - O profissional que executa alguma atividade, como por exemplo subir numa escada em um ambiente mal iluminado, pode cair da escada por não ter uma clara visão de como se mover. 
-	\item $hasRisk(ambIlumin,quedaLampada,ferQL)$ - O profissional que executa alguma atividade, como colocar uma lâmpada, em um ambiente mal iluminado pode errar a adequada posição da mesma fazendo com que esse objeto entre em queda livre ferindo os profissionais embaixo.
-	\item $hasRisk(disjDesl, eletrocutado, ferEletr)$ - O profissional que executa a troca de lâmpada sem que o disjuntor esteja desligado, está se submentendo ao risco de ser eletrocutado tendo ferimentos por eletricidade.
-	\item $hasRisk(chaoSeco,quedaEscada,fratura)$ - O profissional que sobe em uma escada com chão molhado acaba se submentendo ao risco de escorregar e fraturar-se por conta de uma queda.
-	\item $hasRisk(rSubirFerEsc,quedaEscada,fratura)$ - Se o Fernando subir de maneira errada pela escada, ele pode cair e se lesionar. 
-	\item $hasRisk(rDescFerEsc,quedaEscada,fratura)$ - Se o Fernando descer de maneira errada pela escada, ele pode cair e se lesionar. 		
+	\item $hasRisk(ambIlumin,quedaEscada,fratura)$ - o profissional que executa alguma atividade, como por exemplo subir numa escada em um ambiente mal iluminado, pode cair da escada por não ter uma clara visão de como se mover. 
+	\item $hasRisk(ambIlumin,quedaLampada,ferQL)$ - o profissional que executa alguma atividade, como colocar uma lâmpada, em um ambiente mal iluminado pode errar a adequada posição da mesma fazendo com que esse objeto entre em queda livre ferindo os profissionais embaixo.
+	\item $hasRisk(disjDesl, eletrocutado, ferEletr)$ - o profissional que executa a troca de lâmpada sem que o disjuntor esteja desligado, está se submentendo ao risco de ser eletrocutado tendo ferimentos por eletricidade.
+	\item $hasRisk(chaoSeco,quedaEscada,fratura)$ - o profissional que sobe em uma escada com chão molhado acaba se submentendo ao risco de escorregar e fraturar-se por conta de uma queda.
+	\item $hasRisk(rSubirFerEsc,quedaEscada,fratura)$ - se o Fernando subir de maneira errada pela escada, ele pode cair e se lesionar. 
+	\item $hasRisk(rDescFerEsc,quedaEscada,fratura)$ - se o Fernando descer de maneira errada pela escada, ele pode cair e se lesionar. 		
 \end{enumerate}
 
 A lista a seguir exibe a especificação do predicado $affectsRels(r_k,r_n)$:
 
 \begin{enumerate}
-	\item $affectsRels(rFerEsc,rSubirFerEsc)$ - Se Fernando posicionar a escada de forma inapropriada, por mais que isso não gere consequências imediatas naquele instante, o agente que estiver atrelado a $rSubirFerEsc$ pode sofre uma queda vindo a se lesionar por conta disso. 
-	\item $affectsRels(rBrunEsc,rSubirFerEsc)$ - Se Bruno posicionar a escada de forma inapropriada, por mais que isso não gere consequências imediatas naquele instante, o agente que estiver atrelado a $rSubirFerEsc$ pode sofre uma queda vindo a se lesionar por conta disso. 
-	\item $affectsRels(rFerEsc,rDescFerEsc)$ - Se Fernando posicionar a escada de forma inapropriada, por mais que isso não gere consequências imediatas naquele instante, o agente que estiver atrelado a $rDescFerEsc$ pode sofre uma queda vindo a se lesionar por conta disso. 
-	\item $affectsRels(rBrunEsc,rDescFerEsc)$ - Se Bruno posicionar a escada de forma inapropriada, por mais que isso não gere consequências imediatas naquele instante, o agente que estiver atrelado a $rDescFerEsc$ pode sofre uma queda vindo a se lesionar por conta disso. 
+	\item $affectsRels(rFerEsc,rSubirFerEsc)$ - se Fernando posicionar a escada de forma inapropriada, por mais que isso não gere consequências imediatas naquele instante, o agente que estiver atrelado a $rSubirFerEsc$ pode sofre uma queda vindo a se lesionar por conta disso. 
+	\item $affectsRels(rBrunEsc,rSubirFerEsc)$ - se Bruno posicionar a escada de forma inapropriada, por mais que isso não gere consequências imediatas naquele instante, o agente que estiver atrelado a $rSubirFerEsc$ pode sofre uma queda vindo a se lesionar por conta disso. 
+	\item $affectsRels(rFerEsc,rDescFerEsc)$ - se Fernando posicionar a escada de forma inapropriada, por mais que isso não gere consequências imediatas naquele instante, o agente que estiver atrelado a $rDescFerEsc$ pode sofre uma queda vindo a se lesionar por conta disso. 
+	\item $affectsRels(rBrunEsc,rDescFerEsc)$ - se Bruno posicionar a escada de forma inapropriada, por mais que isso não gere consequências imediatas naquele instante, o agente que estiver atrelado a $rDescFerEsc$ pode sofre uma queda vindo a se lesionar por conta disso. 
 \end{enumerate}
 
 \subsection{Raciocínios}
