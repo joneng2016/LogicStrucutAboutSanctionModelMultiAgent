@@ -47,7 +47,7 @@ As regras \ref{consconditionViol} e \ref{consrelationViol} são inspiradas nos e
     ag_m \in Agent, g_i \in Goal, c_k \in Condition, risk_k \in Risk, cs_m \in Consequence
 \end{eqnarray}
 
-Em termos de linguagem natural, a relação em \ref{consconditionViol} é definida da seguinte maneira: "uma violação de condição de um determinado agente, em um dado objetivo ocasiona em uma consequência ruim a ele. Essa consequência ruim está associada ao risco da condição violada". 
+Em termos de linguagem natural, a relação em \ref{consconditionViol} é definida da seguinte maneira: ``uma violação de condição de um determinado agente, em um dado objetivo ocasiona em uma consequência ruim a ele. Essa consequência ruim está associada ao risco da condição violada''. 
 
 \begin{eqnarray}\label{consrelationViol}\nonumber
 	relationViol(ag_m,g_i,r_k) \wedge hasRisk(r_k,risk_j,cs_m) \to \\ 
@@ -55,7 +55,7 @@ Em termos de linguagem natural, a relação em \ref{consconditionViol} é defini
     ag_m \in Agent, g_i \in Goal, r_k \in Relation, risk_k \in Risk, cs_m \in Consequence 
 \end{eqnarray}
 
-A regra \ref{consrelationViol}, quando posta em linguagem natural é definida desta forma: "uma violação de relação de um determinado agente, em um dado objetivo resulta em uma consequência ruim a ele. Essa consequência está atrelada ao risco da relação violada". 
+A regra \ref{consrelationViol}, quando posta em linguagem natural é definida desta forma: ``uma violação de relação de um determinado agente, em um dado objetivo resulta em uma consequência ruim a ele. Essa consequência está atrelada ao risco da relação violada''. 
 
 Neste estudo o termo \textit{risco} deve ser analisado com muito cuidado, pois, dependendo do contexto, a complexidade deste termo é praticamente infinita e neste estudo a concepção deste termo se reduz a dois dos muitos possíveis usos. Neste modelo, risco é analisado como um evento que tem potencial de acontecer. Contudo, nas relações de implicação um dos usos do termo risco advém de considerá-lo como evento que acontece apenas na ausência de uma dada condição ou de uma dada relação. Optou-se por essa tratativa ao estudar os conceitos presentes no referencial teórico na Seção \ref{risksec} e ao analisar o estudo de caso (que será apresentado mais tarde). Com base nestes estudos, verificou-se que acidentes acontecem porque profissionais tentam executar uma certa atividade sem ter as condições apropriadas para isso e é à essa circunstância sobre a qual o risco está associado (em \cite{safety}, isso é explicado visando a melhoria da eficiência e da produção). Por exemplo, para poder navegar em alto mar a fim de poder pescar, um barco pesqueiro deve ter a sua disposição uma determinada condição climática. Se a tripulação decidir por navegar sem a presença da condição climática apropriada, então o barco está submetido ao risco de naufragar sob as consequências de morte da tripulação inteira. Portanto é com essa semântica que as relações de implicação \ref{consconditionViol} e \ref{consrelationViol} empregam o conceito de risco. 
 

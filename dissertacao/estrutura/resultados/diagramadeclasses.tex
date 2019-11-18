@@ -2,7 +2,7 @@ Diferente da Figura \ref{module}, o foco da Figura \ref{classdiagrama} consiste 
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=1\linewidth]{figure/Class.jpeg} 
+  \includegraphics[width=1\linewidth]{figure/Class.jpg} 
   \caption{Diagrama de classes do Modelo }
   \label{classdiagrama}
 \end{figure}
@@ -16,7 +16,7 @@ Em \textit{UML} a questão de conjunto-subconjunto entre $Circumstance$ com $Rel
 Um objetivo não pode ser definido sem saber quais são as entidades $Entity$, relações $Relation$ e consequências $Consequence$ necessárias para que tal objetivo seja alcançado. Por isso os predicados $requiresCirc$ e $requiresEntity$ estabelecem composição forte de suas respectivas classes com $Goal$. Como um objetivo pode apontar para diversas instâncias dessas classes, o autor optou - para cada uma das relações - trabalhar com a cardinalidade 
 $1 - 1 .. *$.
 
-No modelo proposto $Relation$ deve estar relacionada com duas entidades. Por esse motivo o predicado $possEntityRel$ faz composição forte com $Entity$ e a sua cardinalidade é dada $1 - n$. 
+No modelo proposto $Relation$ deve estar relacionada com duas entidades. Tendo em vista o fato de que não é possível definir uma relação sem pelo menos uma entidade, então associação $possEntityRel$ entre ambas as classes se caracateriza por uma composição forte de cardinalidade $1 - 1 .. *$. 
 
 A classe $Goal$ possui uma relação consigo mesma dada por $nextGoal$. Essa é uma agregação fraca, pois do contrários seria impossível haver uma única instância desta classe. Isso se deve ao fato de que a primeira instância necessitaria de uma instância de $Goal$ para existir. Contudo, como não há um elemento de $Goal$ antes do primeiro elemento de $Goal$, logo esse primeiro elemento não pode existir. Um objetivo poder ter como próximo um ou mais objetivos, justificando a ocorrência da cardinalidade $1 .. n$. 
 

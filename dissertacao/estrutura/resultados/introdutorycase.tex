@@ -178,11 +178,11 @@ Uma vez especificado os elementos básicos desse cenário nos moldes do modelo e
 Um cenário específico consiste em avaliar o que acontece, segundo esse modelo, quando Fernando realiza a substituição da lâmpada antiga sem que o disjuntor esteja devidamente desligado. Para esse tipo de situação, os predicados a serem considerados são esses:
 
 \begin{enumerate}
-	\item $requiresCirc(gRemover,disjDesl)$ - Esse predicado tem que ser considerado porque está associado ao objetivo $gRemover$ a condição de $disjDesl$.
-	\item $\neg isPresent(disjDesl)$ - Esse predicado tem que ser considerado porque mostra que a condição $disjDesl$ não está presente quando o respectivo agente tenta alcançar o objetivo.
-	\item $instanceOfCond(disjDesl)$ - Esse predicado é relevante porque se faz necessário avaliar se $disjDesl$ é de fato uma condição, tendo em vista que a natureza desta violação consiste em uma violação de condição.
-	\item $starts(fernando,gRemover)$ - Esse predicado é necessário porque denota que o agente fernando realmente começou a executar o objetivo $gRemove$.
-	\item $hasRisk(disjDesl, eletrocuado, ferEletr)$ - Esse predicado é necessário porque relaciona a condição $disjDesl$ com o risco do profissional ser $eletrocutado$ e com as consequências $ferEletr$.
+	\item $requiresCirc(gRemover,disjDesl)$ - esse predicado tem que ser considerado porque está associado ao objetivo $gRemover$ a condição de $disjDesl$.
+	\item $\neg isPresent(disjDesl)$ - esse predicado tem que ser considerado porque mostra que a condição $disjDesl$ não está presente quando o respectivo agente tenta alcançar o objetivo.
+	\item $instanceOfCond(disjDesl)$ - esse predicado é relevante porque se faz necessário avaliar se $disjDesl$ é de fato uma condição, tendo em vista que a natureza desta violação consiste em uma violação de condição.
+	\item $starts(fernando,gRemover)$ - esse predicado é necessário porque denota que o agente fernando realmente começou a executar o objetivo $gRemove$.
+	\item $hasRisk(disjDesl, eletrocuado, ferEletr)$ - esse predicado é necessário porque relaciona a condição $disjDesl$ com o risco do profissional ser $eletrocutado$ e com as consequências $ferEletr$.
 \end{enumerate}
 
 Uma vez feito o levantamento dos predicados necessários, pode-se considerar as regras do modelo. Neste caso, as regras que avaliam esse tipo de situação são \ref{conditionViol} e \ref{consconditionViol}:
