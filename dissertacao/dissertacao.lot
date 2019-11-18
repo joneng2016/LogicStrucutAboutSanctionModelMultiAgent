@@ -1,29 +1,19 @@
 \babel@toc {brazil}{}
 \contentsline {table}{\numberline {1}{\ignorespaces Construtores da linguagem \textit {ACTIVITY-DL} \cite {v3sframework}\relax }}{33}
 \contentsline {table}{\numberline {2}{\ignorespaces As pr\IeC {\'e}-condi\IeC {\c c}\IeC {\~o}es poss\IeC {\'\i }veis para as atividades \cite {v3sframework}\relax }}{34}
-\contentsline {table}{\numberline {3}{\ignorespaces Os agentes que constituem uma manuten\IeC {\c c}\IeC {\~a}o\relax }}{83}
-\contentsline {table}{\numberline {4}{\ignorespaces Os pap\IeC {\'e}is relevantes para a ocorr\IeC {\^e}ncia da manuten\IeC {\c c}\IeC {\~a}o\relax }}{84}
-\contentsline {table}{\numberline {5}{\ignorespaces Rela\IeC {\c c}\IeC {\~a}o $adoptsRole(ag_n,\rho _m)$\relax }}{84}
-\contentsline {table}{\numberline {6}{\ignorespaces Definindo todos os artefatos presentes na manuten\IeC {\c c}\IeC {\~a}o\relax }}{85}
-\contentsline {table}{\numberline {7}{\ignorespaces Define e descreve os objetivos bem como os respectivos pr\IeC {\'e}-requisitos\relax }}{87}
-\contentsline {table}{\numberline {8}{\ignorespaces Define as condi\IeC {\c c}\IeC {\~o}es necess\IeC {\'a}rias para que a manuten\IeC {\c c}\IeC {\~a}o tenha possibilidade de acontecer\relax }}{88}
-\contentsline {table}{\numberline {9}{\ignorespaces Descri\IeC {\c c}\IeC {\~a}o das entidades em fun\IeC {\c c}\IeC {\~a}o das rela\IeC {\c c}\IeC {\~o}es\relax }}{89}
-\contentsline {table}{\numberline {10}{\ignorespaces Descri\IeC {\c c}\IeC {\~a}o das entidades em fun\IeC {\c c}\IeC {\~a}o das rela\IeC {\c c}\IeC {\~o}es\relax }}{90}
-\contentsline {table}{\numberline {11}{\ignorespaces Define o impacto que o erro em um relacionamento gera em outro relacionamento\relax }}{91}
-\contentsline {table}{\numberline {12}{\ignorespaces Define o impacto que o erro em um relacionamento gera em outro relacionamento\relax }}{92}
-\contentsline {table}{\numberline {13}{\ignorespaces Define o impacto que o erro em um relacionamento gera em outro relacionamento por mudar a possibilidade de algo errado acontecer.\relax }}{93}
-\contentsline {table}{\numberline {14}{\ignorespaces Objetivos que devem ser atingidos pelo agente que assumir um dada fun\IeC {\c c}\IeC {\~a}o\relax }}{94}
-\contentsline {table}{\numberline {15}{\ignorespaces Objetivos que devem ser atingidos pelo agente que assumir um dada fun\IeC {\c c}\IeC {\~a}o\relax }}{95}
-\contentsline {table}{\numberline {16}{\ignorespaces Objetivos que devem ser atingidos pelo agente que assumir um dada fun\IeC {\c c}\IeC {\~a}o\relax }}{96}
-\contentsline {table}{\numberline {17}{\ignorespaces Objetivos que devem ser atingidos pelo agente que assumir um dada fun\IeC {\c c}\IeC {\~a}o\relax }}{97}
-\contentsline {table}{\numberline {18}{\ignorespaces Essa tabela tem como por finalidade exemplificar como os dados atrelados ao predicado $requiresCirc(goal_n, circ_m)$,$requiresEntity(goal_n, ent_m)$ ser\IeC {\~a}o organizados nas tabelas a seguir.\relax }}{98}
-\contentsline {table}{\numberline {19}{\ignorespaces Especifica\IeC {\c c}\IeC {\~a}o do predicado $requiresCirc(circ_n,g_m)$, do predicado $instanceOfRel(circ_n)$ e do predicado $instanceOfCond(circ_n)$\relax }}{99}
-\contentsline {table}{\numberline {20}{\ignorespaces Especifica\IeC {\c c}\IeC {\~a}o do predicado $requiresCirc(goal_i,circ_j)$, do predicado $instanceOfRel(circ_n)$ e do predicado $instanceOfCond(circ_n)$\relax }}{100}
-\contentsline {table}{\numberline {21}{\ignorespaces Especifica\IeC {\c c}\IeC {\~a}o do estudo de caso atrelado ao predicado $requiresEntity(goal_i, e_j)$\relax }}{101}
-\contentsline {table}{\numberline {22}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre o \textit {MOISE+} e o modelo proposto neste estudo\relax }}{113}
-\contentsline {table}{\numberline {23}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre o \textit {MOISE+} e o modelo proposto neste estudo\relax }}{114}
-\contentsline {table}{\numberline {24}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre o \textit {DASTANI+} e o modelo proposto neste estudo\relax }}{115}
-\contentsline {table}{\numberline {25}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre o \textit {DASTANI+} e o modelo proposto neste estudo\relax }}{116}
-\contentsline {table}{\numberline {26}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o ente o modelo VS3 e o modelo proposto neste estudo\relax }}{117}
-\contentsline {table}{\numberline {27}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o ente o modelo VS3 e o modelo proposto neste estudo\relax }}{117}
-\contentsline {table}{\numberline {28}{\ignorespaces An\IeC {\'a}lise comparativa sobre a expressividade desses modelos no que tange aos objetivos deste estudo. A sigla P.E.R significa Possibilidade de Algo Errado, a sigla C.A consiste em Condi\IeC {\c c}\IeC {\~o}es Ambientes, a sigla I.AG.AR significa Intera\IeC {\c c}\IeC {\~a}o entre Agente e Artefato e a sigla D.C.A significa Descri\IeC {\c c}\IeC {\~a}o de Cen\IeC {\'a}rio de Acidente\relax }}{120}
+\contentsline {table}{\numberline {3}{\ignorespaces Os agentes que constituem uma manuten\IeC {\c c}\IeC {\~a}o\relax }}{82}
+\contentsline {table}{\numberline {4}{\ignorespaces Os pap\IeC {\'e}is relevantes para a ocorr\IeC {\^e}ncia da manuten\IeC {\c c}\IeC {\~a}o\relax }}{83}
+\contentsline {table}{\numberline {5}{\ignorespaces Rela\IeC {\c c}\IeC {\~a}o $adoptsRole(ag_n,\rho _m)$\relax }}{83}
+\contentsline {table}{\numberline {6}{\ignorespaces Defini\IeC {\c c}\IeC {\~a}o de todos os artefatos presentes na manuten\IeC {\c c}\IeC {\~a}o\relax }}{84}
+\contentsline {table}{\numberline {7}{\ignorespaces Defini\IeC {\c c}\IeC {\~a}o e descri\IeC {\c c}\IeC {\~a}o dos objetivos bem como dos respectivos pr\IeC {\'e}-requisitos\relax }}{86}
+\contentsline {table}{\numberline {8}{\ignorespaces Define as condi\IeC {\c c}\IeC {\~o}es necess\IeC {\'a}rias para que a manuten\IeC {\c c}\IeC {\~a}o tenha possibilidade de acontecer\relax }}{87}
+\contentsline {table}{\numberline {9}{\ignorespaces Descri\IeC {\c c}\IeC {\~a}o das entidades em fun\IeC {\c c}\IeC {\~a}o das rela\IeC {\c c}\IeC {\~o}es\relax }}{90}
+\contentsline {table}{\numberline {10}{\ignorespaces Define o impacto que o erro em um relacionamento gera em outro relacionamento por mudar a possibilidade de algo errado acontecer.\relax }}{93}
+\contentsline {table}{\numberline {11}{\ignorespaces Objetivos que devem ser atingidos pelo agente que assumir um dada fun\IeC {\c c}\IeC {\~a}o\relax }}{96}
+\contentsline {table}{\numberline {12}{\ignorespaces Exemplifica\IeC {\c c}\IeC {\~a}o dos dados atrelados ao predicado $requiresCirc(goal_n, circ_m)$,$requiresEntity(goal_n, ent_m)$ ser\IeC {\~a}o organizados nas tabelas a seguir.\relax }}{96}
+\contentsline {table}{\numberline {13}{\ignorespaces Especifica\IeC {\c c}\IeC {\~a}o do predicado $requiresCirc(goal_i,circ_j)$, do predicado $instanceOfRel(circ_n)$ e do predicado $instanceOfCond(circ_n)$\relax }}{99}
+\contentsline {table}{\numberline {14}{\ignorespaces Especifica\IeC {\c c}\IeC {\~a}o do estudo de caso atrelado ao predicado $requiresEntity(goal_i, e_j)$\relax }}{100}
+\contentsline {table}{\numberline {15}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre o \textit {MOISE+} e o modelo proposto neste estudo\relax }}{114}
+\contentsline {table}{\numberline {16}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre o \textit {DASTANI+} e o modelo proposto neste estudo\relax }}{115}
+\contentsline {table}{\numberline {17}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre o \textit {VS3} e o modelo proposto neste estudo\relax }}{116}
+\contentsline {table}{\numberline {18}{\ignorespaces An\IeC {\'a}lise comparativa sobre a expressividade desses modelos no que tange aos objetivos deste estudo.\relax }}{119}

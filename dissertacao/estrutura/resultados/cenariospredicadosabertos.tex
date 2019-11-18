@@ -1,4 +1,4 @@
-Esse estudo apresenta duas categorias de predicados: \textit{controle} e \textit{estrutura}. Os predicados de estrutura são aqueles, cujo usuário do modelo não possui a liberdade de definir sua estrutura interna por intermédio de outras regras lógicas ou por valores. Isso se dever ao fato de que esses vocábulos tem sua estrutura alicerçada nas concepções deste modelo sendo que são essenciais para que o modelo funcione como foi concebido para ser. Assim sendo, o modelador deve fazer uso delas, apenas com o propósito de especificar os objetos de interesse. Em termos práticos não existe dificuldade em identificar esses predicados, pois sua própria natureza não abre margem para que o modelador consiga escrever novos predicados e novas regras para determinar o seu respectivo valor. Esses predicados são:
+Esse estudo apresenta duas categorias de predicados: \textit{controle} e \textit{estrutura}. Os predicados de estrutura são aqueles, cujo usuário do modelo não possui a liberdade de definir sua estrutura interna por intermédio de outras regras lógicas ou por valores. Isso se dever ao fato de que esses vocábulos têm sua estrutura alicerçada nas concepções deste modelo sendo que são essenciais para que o modelo funcione como foi concebido. Assim sendo, o modelador deve fazer uso delas, apenas com o propósito de especificar os objetos de interesse. Em termos práticos não existe dificuldade em identificar esses predicados, pois sua própria natureza não abre margem para que o modelador consiga escrever novos predicados e novas regras para determinar o seu respectivo valor. Esses predicados são:
 
 \begin{itemize}
     \item $possEntityRel(r_l,e_i,e_k)$
@@ -25,7 +25,7 @@ Esse estudo apresenta duas categorias de predicados: \textit{controle} e \textit
 
 Para exemplificar, pode-se considerar o predicado $possEntityRel(r_l,e_i,e_k)$. Se existir uma entidade $A$, uma entidade $B$ e uma relação entre $relAB$, então esse termo é escrito desta forma: $possEntityRel(relAB,A,B)$. O valor verdade deste predicado, não pode ser modificado para a criação de algum cenário e nem pode ser determinado por outras regras. Se modelador fizer isso então estará modificando a estrutura do modelo. Ou seja, esse é um predicado de estrutura no que tange aos aspectos fundamentais e semânticos desta representação. 
 
-Por outro lado os predicados \textit{de controle} possuem um correspondente sintático e semântico no modelo, mas os seus valores devem ser forçados conforme o cenário que se deseja criar ou conforme outras regras de implicabilidade que não fazem parte da estrutura deste modelo. A não determinação dos valores destes predicados inviabilizam que o modelo seja analisado de forma procedural. Portanto, a aplicabilidade deste modelo em um dado contexto a fim de fazer uma averiguação procedural dos fatos só pode ser feita por determinar os valores Verdade para esses predicados. Faz parte deste conjunto os seguintes termos: 
+Por outro lado os predicados \textit{de controle} possuem um correspondente sintático e semântico no modelo, mas os seus valores devem ser forçados conforme o cenário que se deseja criar ou conforme outras regras de implicabilidade que não fazem parte da estrutura deste modelo. A não determinação dos valores destes predicados inviabilizam que o modelo seja analisado de forma procedural. Portanto, a aplicabilidade deste modelo em um dado contexto a fim de realizar uma averiguação procedural dos fatos só pode ser feita por determinar os valores Verdade para esses predicados. Fazem parte deste conjunto os seguintes termos: 
 
 \begin{itemize}
     \item $isPresent(X)$
@@ -58,7 +58,7 @@ Pode-se considerar o seguinte exemplo: Um agente $ag_a$ deve executar o objetivo
     \item $hasObligation(\rho_1,g_2)$
 \end{itemize}
 
-Apesar de todos os predicados denotarem uma certa condição, e de serem suficientes, para definir uma certa representação de mundo, não é possível fazer raciocínio algum. Isso, pois não se sabe quais são as ações dos agentes tão pouco quais condições e cenários se deseja representar.  
+Apesar de todos os predicados denotarem uma certa condição, e de serem suficientes, para definir uma certa representação de mundo, não é possível fazer raciocínio algum. Isso, pois não se sabem quais são as ações dos agentes, tão pouco quais condições e cenários se desejam representar.  
 
 Para isso, se faz necessário definir um cenário de mundo. Por exemplo, pode-se definir o seguinte cenário: $starts(ag_a,g_1)$, $\neg isPresent(rAB)$, $starts(ag_b,g_2)$ e $ possOfNegConseqFor(rCE) \to happensNegConseqFor(rCE)$. 
 

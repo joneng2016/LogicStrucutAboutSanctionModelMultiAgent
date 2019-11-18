@@ -3,7 +3,7 @@
 \contentsline {section}{\numberline {1.1}\MakeUppercase {Motiva\IeC {\c c}\IeC {\~a}o}}{13}
 \contentsline {section}{\numberline {1.2}\MakeUppercase {Relev\IeC {\^a}ncia}}{14}
 \contentsline {section}{\numberline {1.3}\MakeUppercase {Objetivos}}{14}
-\contentsline {subsection}{\numberline {1.3.1}Objetivos Espec\IeC {\'\i }ficos}{15}
+\contentsline {subsection}{\numberline {1.3.1}Objetivos Espec\IeC {\'\i }ficos}{14}
 \contentsline {section}{\numberline {1.4}\MakeUppercase {Estrutura do Documento}}{15}
 \contentsline {chapter}{\numberline {2}\MakeUppercase {Fundamenta\IeC {\c c}\IeC {\~a}o Te\IeC {\'o}rica}}{16}
 \contentsline {section}{\numberline {2.1}\MakeUppercase {Agentes}}{16}
@@ -31,55 +31,55 @@
 \contentsline {subsection}{\numberline {4.2.3}Diagrama de Classes}{52}
 \contentsline {subsection}{\numberline {4.2.4}Regras}{54}
 \contentsline {subsection}{\numberline {4.2.5}Diagrama de Atividades}{64}
-\contentsline {subsection}{\numberline {4.2.6}Predicados de Controle e de Estrutura}{68}
-\contentsline {section}{\numberline {4.3}\MakeUppercase {Caso Introdut\IeC {\'o}rio}}{73}
-\contentsline {subsection}{\numberline {4.3.1}Aplica\IeC {\c c}\IeC {\~a}o do Modelo}{74}
-\contentsline {subsection}{\numberline {4.3.2}Racioc\IeC {\'\i }nios}{79}
-\contentsline {chapter}{\numberline {5}\MakeUppercase {Estudo de Caso}}{82}
-\contentsline {section}{\numberline {5.1}\MakeUppercase {Introdu\IeC {\c c}\IeC {\~a}o ao Problema}}{82}
-\contentsline {subsection}{\numberline {5.1.1}Especifica\IeC {\c c}\IeC {\~a}o dos Agentes e seus Pap\IeC {\'e}is}{83}
-\contentsline {subsection}{\numberline {5.1.2}Especifica\IeC {\c c}\IeC {\~a}o das Ferramentas e Objetivos}{84}
-\contentsline {subsection}{\numberline {5.1.3}Especifica\IeC {\c c}\IeC {\~a}o das Condi\IeC {\c c}\IeC {\~o}es e Rela\IeC {\c c}\IeC {\~o}es}{88}
+\contentsline {subsection}{\numberline {4.2.6}Predicados de Controle e de Estrutura}{67}
+\contentsline {section}{\numberline {4.3}\MakeUppercase {Caso Introdut\IeC {\'o}rio}}{72}
+\contentsline {subsection}{\numberline {4.3.1}Aplica\IeC {\c c}\IeC {\~a}o do Modelo}{73}
+\contentsline {subsection}{\numberline {4.3.2}Racioc\IeC {\'\i }nios}{78}
+\contentsline {chapter}{\numberline {5}\MakeUppercase {Estudo de Caso}}{81}
+\contentsline {section}{\numberline {5.1}\MakeUppercase {Introdu\IeC {\c c}\IeC {\~a}o ao Problema}}{81}
+\contentsline {subsection}{\numberline {5.1.1}Especifica\IeC {\c c}\IeC {\~a}o dos Agentes e seus Pap\IeC {\'e}is}{82}
+\contentsline {subsection}{\numberline {5.1.2}Especifica\IeC {\c c}\IeC {\~a}o das Ferramentas e Objetivos}{83}
+\contentsline {subsection}{\numberline {5.1.3}Especifica\IeC {\c c}\IeC {\~a}o das Condi\IeC {\c c}\IeC {\~o}es e Rela\IeC {\c c}\IeC {\~o}es}{87}
 \contentsline {subsection}{\numberline {5.1.4}Rela\IeC {\c c}\IeC {\~a}o entre Objetivos e Pap\IeC {\'e}is}{93}
-\contentsline {subsection}{\numberline {5.1.5}Relacionamentos das Entidades, Rela\IeC {\c c}\IeC {\~o}es e Condi\IeC {\c c}\IeC {\~o}es com Objetivos}{97}
-\contentsline {section}{\numberline {5.2}\MakeUppercase {Racioc\IeC {\'\i }nio}}{102}
-\contentsline {subsection}{\numberline {5.2.1}Racioc\IeC {\'\i }nio - 1}{102}
-\contentsline {subsection}{\numberline {5.2.2}Racioc\IeC {\'\i }nio - 2}{104}
-\contentsline {subsection}{\numberline {5.2.3}Racioc\IeC {\'\i }nio - 3}{105}
-\contentsline {subsection}{\numberline {5.2.4}Racioc\IeC {\'\i }nio - 4}{106}
-\contentsline {subsection}{\numberline {5.2.5}Racioc\IeC {\'\i }nio - 5}{107}
-\contentsline {subsection}{\numberline {5.2.6}Racioc\IeC {\'\i }nio - 6}{110}
-\contentsline {subsection}{\numberline {5.2.7}Racioc\IeC {\'\i }nio - 7}{111}
-\contentsline {section}{\numberline {5.3}\MakeUppercase {Implementa\IeC {\c c}\IeC {\~a}o}}{111}
-\contentsline {chapter}{\numberline {6}\MakeUppercase {Discuss\IeC {\~a}o}}{112}
-\contentsline {section}{\numberline {6.1}\MakeUppercase {An\IeC {\'a}lise Comparativa}}{112}
-\contentsline {subsection}{\numberline {6.1.1}Modelo MOISE+}{112}
+\contentsline {subsection}{\numberline {5.1.5}Relacionamentos das Entidades, Rela\IeC {\c c}\IeC {\~o}es e Condi\IeC {\c c}\IeC {\~o}es com Objetivos}{96}
+\contentsline {section}{\numberline {5.2}\MakeUppercase {Racioc\IeC {\'\i }nio}}{101}
+\contentsline {subsection}{\numberline {5.2.1}Racioc\IeC {\'\i }nio - 1}{101}
+\contentsline {subsection}{\numberline {5.2.2}Racioc\IeC {\'\i }nio - 2}{103}
+\contentsline {subsection}{\numberline {5.2.3}Racioc\IeC {\'\i }nio - 3}{104}
+\contentsline {subsection}{\numberline {5.2.4}Racioc\IeC {\'\i }nio - 4}{105}
+\contentsline {subsection}{\numberline {5.2.5}Racioc\IeC {\'\i }nio - 5}{106}
+\contentsline {subsection}{\numberline {5.2.6}Racioc\IeC {\'\i }nio - 6}{109}
+\contentsline {subsection}{\numberline {5.2.7}Racioc\IeC {\'\i }nio - 7}{110}
+\contentsline {section}{\numberline {5.3}\MakeUppercase {Implementa\IeC {\c c}\IeC {\~a}o}}{110}
+\contentsline {chapter}{\numberline {6}\MakeUppercase {Discuss\IeC {\~a}o}}{111}
+\contentsline {section}{\numberline {6.1}\MakeUppercase {An\IeC {\'a}lise Comparativa}}{111}
+\contentsline {subsection}{\numberline {6.1.1}Modelo MOISE+}{111}
 \contentsline {subsection}{\numberline {6.1.2}Modelo DASTANI}{114}
-\contentsline {section}{\numberline {6.2}\MakeUppercase {Compara\IeC {\c c}\IeC {\~a}o entre VS3 e o modelo proposto neste estudo}}{116}
-\contentsline {subsection}{\numberline {6.2.1}NORMMAS}{118}
-\contentsline {subsection}{\numberline {6.2.2}Compara\IeC {\c c}\IeC {\~a}o Gen\IeC {\'e}rica entre os Modelos}{119}
-\contentsline {section}{\numberline {6.3}\MakeUppercase {Discuss\IeC {\~a}o do Modelo Conceitual}}{121}
-\contentsline {subsection}{\numberline {6.3.1}Considera\IeC {\c c}\IeC {\~o}es sobre Crit\IeC {\'e}rios Metodol\IeC {\'o}gicos ao estudo de caso}{121}
-\contentsline {subsection}{\numberline {6.3.2}Considera\IeC {\c c}\IeC {\~o}es sobre Crit\IeC {\'e}rios Metodol\IeC {\'o}gicos ao Racioc\IeC {\'\i }nios}{125}
-\contentsline {chapter}{\numberline {7}\MakeUppercase {Conclus\IeC {\~a}o}}{129}
-\contentsline {section}{\numberline {7.1}\MakeUppercase {Avalia\IeC {\c c}\IeC {\~a}o do Objetivo}}{129}
-\contentsline {subsection}{\numberline {7.1.1}Reflex\IeC {\~a}o Objetivo Geral}{129}
-\contentsline {subsection}{\numberline {7.1.2}Reflex\IeC {\~a}o Objetivos Espec\IeC {\'\i }ficos}{130}
-\contentsline {section}{\numberline {7.2}\MakeUppercase {Conclus\IeC {\~a}o Geral}}{131}
-\contentsline {section}{\numberline {7.3}\MakeUppercase {Trabalhos Futuros}}{132}
-\contentsline {chapter}{REFER\^ENCIAS}{134}
-\contentsline {chapter}{Ap\^endice{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Perguntas da Entrevista}}{138}
-\contentsline {section}{\numberline {A.1}\MakeUppercase {Perguntas Gerais}}{138}
-\contentsline {section}{\numberline {A.2}\MakeUppercase {Perguntas sobre Substitui\IeC {\c c}\IeC {\~a}o do Isolador de Pedestal}}{140}
-\contentsline {section}{\numberline {A.3}\MakeUppercase {Perguntas sobre Substitui\IeC {\c c}\IeC {\~a}o do Pingo A\IeC {\'e}reo pelo acesso a Dinst\IeC {\^a}ncia}}{142}
-\contentsline {section}{\numberline {A.4}\MakeUppercase {Perguntas sobre Substitui\IeC {\c c}\IeC {\~a}o do Pingo A\IeC {\'e}reo pelo acesso ao Potencial}}{144}
-\contentsline {section}{\numberline {A.5}\MakeUppercase {Substitui\IeC {\c c}\IeC {\~a}o do Conector - M\IeC {\'e}todo a Dist\IeC {\^a}ncia}}{145}
-\contentsline {section}{\numberline {A.6}\MakeUppercase {Substitui\IeC {\c c}\IeC {\~a}o do Conector - M\IeC {\'e}todo ao Potencial}}{146}
-\contentsline {chapter}{Ap\^endice{} B{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Programa}}{149}
-\contentsline {section}{\numberline {B.1}\MakeUppercase {Regras}}{149}
-\contentsline {section}{\numberline {B.2}\MakeUppercase {Racioc\IeC {\'\i }nio 1}}{149}
-\contentsline {section}{\numberline {B.3}\MakeUppercase {Racioc\IeC {\'\i }nio 2}}{150}
-\contentsline {section}{\numberline {B.4}\MakeUppercase {Racioc\IeC {\'\i }nio 3}}{150}
-\contentsline {section}{\numberline {B.5}\MakeUppercase {Racioc\IeC {\'\i }nio 4}}{150}
-\contentsline {section}{\numberline {B.6}\MakeUppercase {Racioc\IeC {\'\i }nio 5}}{151}
-\contentsline {section}{\numberline {B.7}\MakeUppercase {Racioc\IeC {\'\i }nio 6}}{152}
+\contentsline {section}{\numberline {6.2}\MakeUppercase {Compara\IeC {\c c}\IeC {\~a}o entre VS3 e o modelo proposto neste estudo}}{115}
+\contentsline {subsection}{\numberline {6.2.1}NORMMAS}{117}
+\contentsline {subsection}{\numberline {6.2.2}Compara\IeC {\c c}\IeC {\~a}o Gen\IeC {\'e}rica entre os Modelos}{118}
+\contentsline {section}{\numberline {6.3}\MakeUppercase {Discuss\IeC {\~a}o do Modelo Conceitual}}{120}
+\contentsline {subsection}{\numberline {6.3.1}Considera\IeC {\c c}\IeC {\~o}es sobre Crit\IeC {\'e}rios Metodol\IeC {\'o}gicos ao estudo de caso}{120}
+\contentsline {subsection}{\numberline {6.3.2}Considera\IeC {\c c}\IeC {\~o}es sobre Crit\IeC {\'e}rios Metodol\IeC {\'o}gicos ao Racioc\IeC {\'\i }nios}{124}
+\contentsline {chapter}{\numberline {7}\MakeUppercase {Conclus\IeC {\~a}o}}{128}
+\contentsline {section}{\numberline {7.1}\MakeUppercase {Avalia\IeC {\c c}\IeC {\~a}o do Objetivo}}{128}
+\contentsline {subsection}{\numberline {7.1.1}Reflex\IeC {\~a}o Objetivo Geral}{128}
+\contentsline {subsection}{\numberline {7.1.2}Reflex\IeC {\~a}o Objetivos Espec\IeC {\'\i }ficos}{129}
+\contentsline {section}{\numberline {7.2}\MakeUppercase {Conclus\IeC {\~a}o Geral}}{130}
+\contentsline {section}{\numberline {7.3}\MakeUppercase {Trabalhos Futuros}}{131}
+\contentsline {chapter}{REFER\^ENCIAS}{133}
+\contentsline {chapter}{Ap\^endice{} A{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Perguntas da Entrevista}}{137}
+\contentsline {section}{\numberline {A.1}\MakeUppercase {Perguntas Gerais}}{137}
+\contentsline {section}{\numberline {A.2}\MakeUppercase {Perguntas sobre Substitui\IeC {\c c}\IeC {\~a}o do Isolador de Pedestal}}{139}
+\contentsline {section}{\numberline {A.3}\MakeUppercase {Perguntas sobre Substitui\IeC {\c c}\IeC {\~a}o do Pingo A\IeC {\'e}reo pelo acesso a Dinst\IeC {\^a}ncia}}{141}
+\contentsline {section}{\numberline {A.4}\MakeUppercase {Perguntas sobre Substitui\IeC {\c c}\IeC {\~a}o do Pingo A\IeC {\'e}reo pelo acesso ao Potencial}}{143}
+\contentsline {section}{\numberline {A.5}\MakeUppercase {Substitui\IeC {\c c}\IeC {\~a}o do Conector - M\IeC {\'e}todo a Dist\IeC {\^a}ncia}}{144}
+\contentsline {section}{\numberline {A.6}\MakeUppercase {Substitui\IeC {\c c}\IeC {\~a}o do Conector - M\IeC {\'e}todo ao Potencial}}{145}
+\contentsline {chapter}{Ap\^endice{} B{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Programa}}{148}
+\contentsline {section}{\numberline {B.1}\MakeUppercase {Regras}}{148}
+\contentsline {section}{\numberline {B.2}\MakeUppercase {Racioc\IeC {\'\i }nio 1}}{148}
+\contentsline {section}{\numberline {B.3}\MakeUppercase {Racioc\IeC {\'\i }nio 2}}{149}
+\contentsline {section}{\numberline {B.4}\MakeUppercase {Racioc\IeC {\'\i }nio 3}}{149}
+\contentsline {section}{\numberline {B.5}\MakeUppercase {Racioc\IeC {\'\i }nio 4}}{149}
+\contentsline {section}{\numberline {B.6}\MakeUppercase {Racioc\IeC {\'\i }nio 5}}{150}
+\contentsline {section}{\numberline {B.7}\MakeUppercase {Racioc\IeC {\'\i }nio 6}}{151}

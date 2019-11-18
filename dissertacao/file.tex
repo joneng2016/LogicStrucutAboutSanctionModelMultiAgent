@@ -1,8 +1,8 @@
 \subsubsection{MOISE+}
 
-O Moise+ é usado para realizar a especificação de sistemas multiagentes. Para cumprir com essa finalidade, existe três tipos de especificação que são; Estrutural, Funcional, e Deôntica. 
+O Moise+ é usado para realizar a especificação de sistemas multiagentes. Para cumprir com essa finalidade, existe três tipos de especificação que são: Estrutural, Funcional, e Deôntica. 
 
-A especificação estrutural acontece em três níveis, individual, social e coletivo. O nível individual trata de definir os papéis $\rho$ dos agentes. Uma possível entre os papéis acontece por intermédio da hereditariedade em que se $\rho'$ é filho de $\rho$. Isso implica afirmar que $\rho'$ é uma especialização de $\rho$. Um exemplo apropriado para isso é o jogo de futebol onde existe o papel jogador dado por $\rho$ e existe o papel atacante dado por $\rho'$ \cite{mosieframework}. Em termos formais, essa relação é dada pro; 
+A especificação estrutural acontece em três níveis, individual, social e coletivo. O nível individual trata de definir os papéis $\rho$ dos agentes. Uma possível entre os papéis acontece por intermédio da hereditariedade em que se $\rho'$ é filho de $\rho$. Isso implica afirmar que $\rho'$ é uma especialização de $\rho$. Um exemplo apropriado para isso é o jogo de futebol onde existe o papel jogador dado por $\rho$ e existe o papel atacante dado por $\rho'$ \cite{mosieframework}. Em termos formais, essa relação é dada por:
 \begin{eqnarray}\nonumber
 \rho_a \sqsubset \rho_b
 \end{eqnarray}
@@ -14,7 +14,7 @@ O nível social estabelece relações de ligação dado pelo predicado $link(\rh
 	link(\rho_s,\rho_d,com) \to link(\rho_s,\rho_d,acq) 
 \end{eqnarray}
 
-O modelo também determina como se dá as relações de hereditariedade para o predicado de $link$, é dado por \cite{mosieframework}; 
+O modelo também determina como se dá as relações de hereditariedade para o predicado de $link$, é dado por \cite{mosieframework}:
 
 \begin{eqnarray}\nonumber
 	link(\rho_s,\rho_d,t) \wedge \rho_s' \sqsubset \rho_s' \to link(\rho_s',\rho_d,t) \nonumber \\
@@ -22,13 +22,13 @@ O modelo também determina como se dá as relações de hereditariedade para o p
 \end{eqnarray}
 
 
-O nível coletivo determina a existência de compatibilidade entre os papéis \cite{mosieframework}. Essa é uma relação reflexiva e transitiva de determina que se um papel $\rho_a$ possui a capacidade de realizar um determinado objetivo, então o papel $\rho_b$ também tem essa capacidade. Em termos formais, essa relação se dá da seguinte forma \cite{mosieframework}.;
+O nível coletivo determina a existência de compatibilidade entre os papéis \cite{mosieframework}. Essa é uma relação reflexiva e transitiva de determina que se um papel $\rho_a$ possui a capacidade de realizar um determinado objetivo, então o papel $\rho_b$ também tem essa capacidade. Em termos formais, essa relação se dá da seguinte forma \cite{mosieframework}:
 
 \begin{eqnarray}\nonumber
 	\rho_a \bowtie \rho_b \wedge \rho_a \neq \rho_b \wedge \rho_a \sqsubset \rho' \to \rho' \bowtie \rho_b 
 \end{eqnarray}
 
-O nível coletivo também apresenta o conceito de grupo dado por $gt$ e constituído por;
+O nível coletivo também apresenta o conceito de grupo dado por $gt$ e constituído por:
 
 \begin{eqnarray}\nonumber
 	gt = \langle R,SG,L^{intra},L^{inter},C^{intra},C^{inter},np,ng\rangle 
@@ -36,7 +36,7 @@ O nível coletivo também apresenta o conceito de grupo dado por $gt$ e constitu
 
 Em que $R$ é o conjunto dos papéis não abstratos, $SG$ são subgrupos que estão contidos neste grupo, $L^{intra}$ consiste dos $links$ intra-grupos, $L^{inter}$ dos links inter-grupos, $C^{intra}$ das relações de compatibilidade intra-grupos e $C^{inter}$ das relações de compatibilidade inter-grupos. O símbolo $np$ denota a cardinalidade mínima e máxima para uma dada função e o símbolo $ng$ realiza o mesmo para os subgrupos \cite{mosieframework}. 
 
-A Especificação Funcional tem como por finalidade descrever os objetivos a serem atingidos dentro de uma estrutura de árvore. A figura a seguir define como se dá esse tipo de especificação; 
+A Especificação Funcional tem como por finalidade descrever os objetivos a serem atingidos dentro de uma estrutura de árvore. A Figura a seguir define como se dá esse tipo de especificação: 
 
 \begin{figure}[H]
   \centering
@@ -45,14 +45,14 @@ A Especificação Funcional tem como por finalidade descrever os objetivos a ser
   \label{arvoremoise}
 \end{figure}
 
-A figura \ref{arvoremoise} define três tipos de relação de subobjetivos; $sequence$ onde todos os subobjetivos devem necessariamente ser concluídos em sequência, $choice$ onde o agente tem a possibilidade de escolher qual objetivo ele deseja seguir e $parallelism$ onde todos os objetivos devem ser concluídos, contudo sem uma sequência definida. Como é possível observar na figura, os objetivos são agrupados em conjuntos de missões $m$. A relação a seguir define isso melhor;
+A Figura \ref{arvoremoise} define três tipos de relação de subobjetivos: $sequence$ onde todos os subobjetivos devem necessariamente ser concluídos em sequência, $choice$ onde o agente tem a possibilidade de escolher qual objetivo ele deseja seguir e $parallelism$ onde todos os objetivos devem ser concluídos, contudo sem uma sequência definida. Como é possível observar na Figura, os objetivos são agrupados em conjuntos de missões $m$. A relação a seguir define isso melhor:
 
 \begin{eqnarray}\nonumber
 	m_k = \{ g_n,...,g_m\}
 \end{eqnarray}
 
 
-A Especificação Deôntica define predicados para estabelecer permissões e obrigações entre os papéis e as missões. Toda obrigação implica necessariamente em uma permissão. A relação a seguir estabelece isso; 
+A Especificação Deôntica define predicados para estabelecer permissões e obrigações entre os papéis e as missões. Toda obrigação implica necessariamente em uma permissão. A relação a seguir estabelece isso:
 
 \begin{eqnarray}\nonumber
 	obl(\rho,m,tc) \to per(\rho,m,tc) \\

@@ -1,6 +1,6 @@
 \subsection{NORMMAS}
 
-As tabelas a seguir exibem uma comparação entre o \textit{NORMMAS} e o modelo proposto neste estudo.
+A Tabela a seguir exibem uma comparação entre o \textit{NORMMAS} e o modelo proposto neste estudo.
 
 \begin{table}[H]
 \centering
@@ -14,15 +14,15 @@ As tabelas a seguir exibem uma comparação entre o \textit{NORMMAS} e o modelo 
 \\ \hline
 Finalidade
 &
-Representar agentes considerando questões atreladas a Normas, Sanções e Violações
+Representar agentes considerando questões atreladas a normas, sanções e violações
 &
-Representar cenários de Acidentes 
+Representar cenários de acidentes 
 \\ \hline
 Generalização
 &
-Trata de cenários onde se tem o interesse de representar agentes, normas, violações e sanções. 
+Trata de cenários onde se tem o interesse de representar agentes, normas, violações e sanções 
 &
-Trata de cenários específicos para acidentes onde se deseja as causas do acidente. 
+Trata de cenários específicos para acidentes onde se deseja conhecer as causas do acidente 
 \\ \hline
 Agentes
 &
@@ -34,23 +34,23 @@ Representação de Objetivos
 & 
 Não possui estrutura para representar objetivos
 &
-Possui uma estrutura simples para representar objetivos. Essa estrutura considera apenas questões de pré-requisitos. 
+Possui uma estrutura simples para representar objetivos. Essa estrutura considera apenas questões de pré-requisitos 
 \\ \hline
 Normas 
 &
-Presença de tuplas que permite expressar proibições e sanções para os mais diversos casos possíveis. 
+Presença de tuplas que permitem expressar proibições e sanções para os mais diversos casos possíveis 
 &
-Presença de regras que permite expressar violações e sanções para cenários de acidentes.
+Presença de regras que permitem expressar violações e sanções para cenários de acidentes
 \\ \hline
 Generalização
 &
-Trata de cenários onde se tem o interesse de representar agentes, normas, violações e sanções. 
+Trata de cenários onde se tem o interesse de representar agentes, normas, violações e sanções 
 &
-Trata de cenários específicos para acidentes onde se desejeva verificar as causas do acidente.
+Trata de cenários específicos para acidentes onde se deseja verificar as causas do acidente
 \\ \hline
 Estrutura da Linguagem
 & 
-Lógica de Primeira Ordem (definições dos conceitos em termos de Tuplas)
+Lógica de Primeira Ordem (definições dos conceitos em termos de tuplas)
 &
 Teoria de Conjuntos e Lógica de Predicados  
 \\ \hline
@@ -59,8 +59,8 @@ Teoria de Conjuntos e Lógica de Predicados
 
 \subsection{Comparação Genérica entre os Modelos}
 
-Tendo como base as análises feitas nas seções anteriores, é possível chegar na tabela \ref{comparemodel} que apresenta uma análise comparativa dos arcabouços no que tange a expressividade do modelo computacional proposto nesse texto. Por expressividade, se entende capacidade de expressar, representar o objeto de interesse. Para essa análise 
-foi feita a seguinte escala: nenhuma expressividade $\prec$ pouco expressivo $\prec$ expressivo $\prec$ muito expressivo $\prec$ altamente expressivo. O termo nenhuma expressividade não indica que é impossível definir a estrutura em observação dentro do modelo em voga, mas sim que o engenheiro de modelagem terá que criar uma estrutura conceitual ad hoc. Sobre o mesmo aspecto reside pouco expressivo, contudo o modelo - neste caso - possui algumas estruturas pré-definidas que diminuem o esforço da especificação. O termo expressivo deixa claro que o modelo permite especificar o objeto de interesse sem que o engenheiro tenha de criar muitos atributos para o domínio de interesse. O termo muito expressivo define que o modelo apresenta diversos conceitos específicos para representar o objeto em interesse, contudo ainda há margem para que o modelador tenha que criar um ou mais atributos. O termo altamente expressivo define o caso onde o modelo especifica o objetivo de interesse muito bem fazendo com que o modelador não precise definir nenhum critério conceitual a mais (ou terá que montar poucas definições).   
+Tendo como base as análises feitas nas seções anteriores, é possível elaborar' na Tabela \ref{comparemodel} que apresenta uma análise comparativa dos arcabouços no que tange a expressividade do modelo computacional proposto nesse texto. Por expressividade, se entende capacidade de expressar, representar o objeto de interesse. Para essa análise 
+foi feita a seguinte escala: nenhuma expressividade $\prec$ pouco expressivo $\prec$ expressivo $\prec$ muito expressivo $\prec$ altamente expressivo. O termo nenhuma expressividade não indica que é impossível definir a estrutura em observação dentro do modelo em voga, mas sim que o engenheiro de modelagem terá que criar uma estrutura conceitual \textit{ad hoc}. Sobre o mesmo aspecto reside pouco expressivo, contudo o modelo - neste caso - possui algumas estruturas pré-definidas que diminuem o esforço da especificação. O termo expressivo deixa claro que o modelo permite especificar o objeto de interesse sem que o engenheiro tenha de criar muitos atributos para o domínio de interesse. O termo muito expressivo define que o modelo apresenta diversos conceitos específicos para representar o objeto em interesse, contudo ainda há margem para que o modelador tenha que criar um ou mais atributos. O termo altamente expressivo define o caso onde o modelo especifica o objetivo de interesse muito bem fazendo com que o modelador não precise definir nenhum critério conceitual a mais (ou terá que montar poucas definições).   
 
 \begin{table}[H]
     \centering
@@ -82,11 +82,10 @@ foi feita a seguinte escala: nenhuma expressividade $\prec$ pouco expressivo $\p
         \textbf{D.C.A}     & nenhuma                & pouco                & altamente            & pouco 
     \\ \hline
     \end{tabular}
-    \caption{Análise comparativa sobre a expressividade desses modelos no que tange aos objetivos deste estudo. A sigla P.E.R significa Possibilidade de Algo Errado, a sigla C.A consiste em 
-    Condições Ambientes, a sigla I.AG.AR significa Interação entre Agente e Artefato e a sigla D.C.A significa Descrição de Cenário de Acidente}
+    \caption{Análise comparativa sobre a expressividade desses modelos no que tange aos objetivos deste estudo.}
     \label{comparemodel}
 \end{table}
 
-O critério \textbf{Agente} condiz com representação dos estados internos que um agente pode ter. O critério \textbf{SMA} condiz com presença de elementos que são necessários para especificar um \textit{Sistema Multiagente}. O critério \textbf{Artefato} condiz com elementos que correspondem a definição presente na seção \ref{artefact}. O critérios de \textbf{Norma} corresponde a regras que devem ser acatadas pelos agentes. \textbf{Violação} define o que corresponde o não cumprimento de uma dada regra. \textbf{Sanção} implica penalidade que está sobre o agente. \textbf{Risco} consiste no evento ruim que tem um potencial de ocorrer sobre o agente. \textbf{P.O.A.E} significa Possibilidade de Ocorrer algo Errado e corresponde a expressar condições onde existe potencial de acontecer algo inapropriado sobre o agente mesmo que esse realize sua função com excelência.  \textbf{Objetivos} implica alvos que devem ser atingidos pelos agentes. \textbf{C.A} consiste em condições ambientes que interagem com a atividade executada pelos agentes. \textbf{I.AG.AR} representa as interações entre agentes e artefatos. \textbf{D.C.A} - Descrição de Cenários de Acidentes, consiste na capacidade de desenvolver raciocínios a fim de representar cenários de acidentes.
+O critério \textbf{Agente} condiz com representação dos estados internos que um agente pode ter. O critério \textbf{SMA} condiz com presença de elementos que são necessários para especificar um \textit{Sistema Multiagente}. O critério \textbf{Artefato} condiz com elementos que correspondem a definição presente na Seção \ref{artefact}. O critérios de \textbf{Norma} corresponde a Regras que devem ser acatadas pelos agentes. \textbf{Violação} define o que corresponde o não cumprimento de uma dada regra. \textbf{Sanção} implica penalidade que está sobre o agente. \textbf{Risco} consiste no evento ruim que tem um potencial de ocorrer sobre o agente. \textbf{P.O.A.E} significa Possibilidade de Ocorrer algo Errado e corresponde a expressar condições onde existe potencial de acontecer algo inapropriado sobre o agente mesmo que esse realize sua função com excelência.  \textbf{Objetivos} implica alvos que devem ser atingidos pelos agentes. \textbf{C.A} consiste em Condições Ambientes que interagem com a atividade executada pelos agentes. \textbf{I.AG.AR} representa as Interações entre Agentes e Artefatos. \textbf{D.C.A} - Descrição de Cenários de Acidentes, consiste na capacidade de desenvolver raciocínios a fim de representar cenários de acidentes.
 
-As subseções anteriores em conjunto com a tabela \ref{comparemodel} permitem concluir que esse trabalho é inovador no que tange a ter um vocabulário específico para representar cenários de risco e de acidentes (tanto sobre o responsável pelo acidente bem como a vitima) de atividades manuais usando para isso, o conceito de sistema multiagente normativo. Esse vocabulário apresenta limitações as quais serão debatidas na próxima seção. 
+As subseções anteriores em conjunto com a Tabela \ref{comparemodel} permitem concluir que esse trabalho é inovador no que tange a ter um vocabulário específico para representar cenários de risco e de acidentes (tanto sobre o responsável pelo acidente bem como a vitima) de atividades manuais usando para isso, o conceito de sistema multiagente normativo. Esse vocabulário apresenta limitações as quais serão debatidas na próxima Seção. 
