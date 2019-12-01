@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.17)  18 NOV 2019 01:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.17)  1 DEC 2019 13:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -767,9 +767,6 @@ LaTeX Warning: Label `atividiagram2' multiply defined.
 
 LaTeX Warning: Label `atividiagram2' multiply defined.
 
-
-LaTeX Warning: Label `atividiagram2' multiply defined.
-
 )
 \openout1 = `dissertacao.aux'.
 
@@ -1042,18 +1039,18 @@ File: figure/ontologyv3.png Graphic file (type png)
 Package pdftex.def Info: figure/ontologyv3.png  used on input line 8.
 (pdftex.def)             Requested size: 227.62206pt x 117.60579pt.
  [32 <./figure/ontologyv3.png>]
-Overfull \hbox (43.01144pt too wide) in paragraph at lines 47--55
-[][] 
- []
+[33]
+Overfull \vbox (11.76097pt too high) has occurred while \output is active []
 
-[33] [34]
+
+[34]
 <figure/bowtie.png, id=128, 673.76718pt x 443.40656pt>
 File: figure/bowtie.png Graphic file (type png)
 <use figure/bowtie.png>
 Package pdftex.def Info: figure/bowtie.png  used on input line 66.
 (pdftex.def)             Requested size: 227.62206pt x 149.79549pt.
-) (./estrutura/analisecomparativa/genormas.tex [35 <./figure/bowtie.png>]) (./e
-strutura/analisecomparativa/estnormas.tex [36]) [37]
+ [35 <./figure/bowtie.png>]) (./estrutura/analisecomparativa/genormas.tex)
+(./estrutura/analisecomparativa/estnormas.tex [36]) [37]
 Cap\'{\i }tulo 3.
 (./estrutura/metodologia/genmet.tex) (./estrutura/metodologia/analisecampo.tex
 [38
@@ -1095,35 +1092,36 @@ Package pdftex.def Info: figure/algrule6.png  used on input line 125.
 File: figure/diag1.jpg Graphic file (type jpg)
 <use figure/diag1.jpg>
 Package pdftex.def Info: figure/diag1.jpg  used on input line 11.
-(pdftex.def)             Requested size: 500.77129pt x 331.73991pt.
+(pdftex.def)             Requested size: 682.86617pt x 452.37152pt.
 
-Overfull \hbox (45.52718pt too wide) in paragraph at lines 11--12
+Overfull \hbox (227.62206pt too wide) in paragraph at lines 11--12
  [][] 
  []
 
-<figure/diag2.jpg, id=231, 593.96906pt x 140.02313pt>
+<figure/diag2.jpg, id=231, 471.26062pt x 140.02313pt>
 File: figure/diag2.jpg Graphic file (type jpg)
 <use figure/diag2.jpg>
 Package pdftex.def Info: figure/diag2.jpg  used on input line 19.
-(pdftex.def)             Requested size: 500.77129pt x 118.05661pt.
+(pdftex.def)             Requested size: 500.77129pt x 148.79343pt.
 
 Overfull \hbox (45.52718pt too wide) in paragraph at lines 19--20
  [][] 
  []
 
-<figure/diag3.jpg, id=232, 593.96906pt x 246.1697pt>
+[65 <./figure/diag1.jpg>]
+<figure/diag3.jpg, id=235, 493.845pt x 240.9pt>
 File: figure/diag3.jpg Graphic file (type jpg)
 <use figure/diag3.jpg>
 Package pdftex.def Info: figure/diag3.jpg  used on input line 26.
-(pdftex.def)             Requested size: 500.77129pt x 207.55115pt.
+(pdftex.def)             Requested size: 500.77129pt x 244.27748pt.
 
 Overfull \hbox (45.52718pt too wide) in paragraph at lines 26--27
  [][] 
  []
 
-[65 <./figure/diag1.jpg> <./figure/diag2.jpg>] [66 <./figure/diag3.jpg>])
-(./estrutura/resultados/cenariospredicadosabertos.tex [67] [68] [69] [70]
-[71]) (./estrutura/resultados/introdutorycase.tex [72] [73] [74] [75] [76]
+[66 <./figure/diag2.jpg> <./figure/diag3.jpg>]) [67]
+(./estrutura/resultados/cenariospredicadosabertos.tex [68] [69] [70] [71])
+(./estrutura/resultados/introdutorycase.tex [72] [73] [74] [75] [76]
 Overfull \hbox (18.05742pt too wide) in paragraph at lines 138--139
 []$\OML/ztmcm/m/it/12 requiresCirc\OT1/ztmcm/m/n/12 (\OML/ztmcm/m/it/12 gNovaBo
 cal; rFerLampNova\OT1/ztmcm/m/n/12 )\OML/ztmcm/m/it/12 ; requiresCirc\OT1/ztmcm
@@ -1139,7 +1137,7 @@ fernando\OT1/ztmcm/m/n/12 )\OML/ztmcm/m/it/12 ; requiresEntity\OT1/ztmcm/m/n/12
 sEntity\OT1/ztmcm/m/n/12 (\OML/ztmcm/m/it/12 gBL; bruno\OT1/ztmcm/m/n/12 )$ 
  []
 
-[77] [78]) [79] [80]
+[77] [78] [79]) [80]
 Cap\'{\i }tulo 5.
 (./estrutura/resultados/casodeestudo.tex [81
 
@@ -1203,39 +1201,36 @@ Overfull \hbox (50.3542pt too wide) in paragraph at lines 549--549
 \OT1/ptm/m/n/12 relX-Co-lar-relX-Bas-ta-o-Gar-ra-relX-Bas-ta-oU-ni-ver-sal,
  []
 
-[97] [98]
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <9.60004> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 563.
-
-Overfull \hbox (42.50943pt too wide) in paragraph at lines 560--592
- [][] 
+[97] [98] [99]
+Overfull \hbox (1.5474pt too wide) in paragraph at lines 563--563
+[]|\OT1/ptm/m/n/12 pano,glicerina,carretilha,bastaoUniversal,corda,bastaoGarra,
+condut[]^^Pmetro,X
  []
 
-[99]) (./estrutura/resultados/raciocinios.tex [100] [101] [102] [103] [104]
-[105] [106] [107] [108] [109]) (./estrutura/resultados/validacao.tex) [110]
+
+Underfull \vbox (badness 10000) detected at line 579
+ []
+
+[100]) (./estrutura/resultados/raciocinios.tex [101] [102] [103] [104] [105]
+[106] [107] [108] [109]) (./estrutura/resultados/validacao.tex [110]) [111]
 Cap\'{\i }tulo 6.
 (./estrutura/analisecomparativa/generaldiscuss.tex)
 (./estrutura/resultados/generalanalisecomparativa.tex)
-(./estrutura/analisecomparativa/genmoise.tex
+(./estrutura/analisecomparativa/genmoise.tex [112
+
+]
+Underfull \vbox (badness 10000) detected at line 91
+ []
+
+[113] [114]) (./estrutura/analisecomparativa/gendastani.tex
 Underfull \vbox (badness 10000) detected at line 65
  []
 
-[111
-
-] [112] [113]) (./estrutura/analisecomparativa/gendastani.tex
-Underfull \vbox (badness 10000) detected at line 52
+[115]) (./estrutura/analisecomparativa/estvs3.tex [116]
+Underfull \vbox (badness 10000) detected at line 67
  []
 
-[114]) (./estrutura/analisecomparativa/estvs3.tex
-Overfull \hbox (48.90298pt too wide) in alignment at lines 6--58
- [] [] [] 
- []
-
-
-Underfull \vbox (badness 10000) detected at line 58
- []
-
-[115] [116]) (./estrutura/analisecomparativa/compnormas.tex [117] [118]
+[117]) (./estrutura/analisecomparativa/compnormas.tex [118] [119]
 LaTeX Font Info:    Calculating math sizes for size <7.20007> on input line 68.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.20007> not available
@@ -1244,55 +1239,81 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5.32808> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 68.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <4.32008> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 68.
-
-[119]) (./estrutura/analisecomparativa/constresult.tex [120] [121] [122]
-[123] [124] [125]) [126] [127]
+ [120])
+(./estrutura/analisecomparativa/constresult.tex [121] [122] [123] [124]
+[125] [126]) [127] [128]
 Cap\'{\i }tulo 7.
 (./estrutura/conclusao/genconclusao.tex)
-(./estrutura/conclusao/avaliacaodosobjetivos.tex [128
+(./estrutura/conclusao/avaliacaodosobjetivos.tex [129
 
-] [129])
-(./estrutura/conclusao/conclusaogeral.tex) [130]
-(./estrutura/conclusao/trabalhosfuturos.tex [131]) [132] (./dissertacao.bbl
-[133
+] [130])
+(./estrutura/conclusao/conclusaogeral.tex) [131]
+(./estrutura/conclusao/trabalhosfuturos.tex [132]) [133] (./dissertacao.bbl
+[134
 
 
-] [134] [135]) [136]
+] [135] [136]) [137]
 Apendice A.
-(./estrutura/apendice/entrevista.tex [137
+(./estrutura/apendice/entrevista.tex [138
 
-] [138] [139] [140] [141] [142]
-[143] [144] [145] [146]) [147]
+] [139] [140] [141] [142] [143]
+[144] [145] [146] [147]) [148]
 Apendice B.
 (./estrutura/apendice/programa.tex
-<figure/rules.png, id=497, 871.75688pt x 245.41687pt>
-File: figure/rules.png Graphic file (type png)
-<use figure/rules.png>
-Package pdftex.def Info: figure/rules.png  used on input line 5.
-(pdftex.def)             Requested size: 500.77129pt x 140.97504pt.
+Overfull \hbox (392.79655pt too wide) in paragraph at lines 5--6
+[]\OT1/ptm/m/n/12 conditionViol(AGENT,GOAL,CONDITION):- re-qui-res-Circ(GOAL,CO
+NDITION),notIsPresent(CONDITION),instanceOfCond(CONDITION),starts(AGENT,GOAL). 
 
-Overfull \hbox (45.52718pt too wide) in paragraph at lines 5--6
- [][] 
  []
 
-[148
 
- <./figure/rules.png>] [149]
-<figure/algjs.png, id=505, 401.24907pt x 401.24907pt>
+Overfull \hbox (342.81665pt too wide) in paragraph at lines 7--8
+[]\OT1/ptm/m/n/12 relationViol(AGENT,GOAL,RELATION):- re-qui-res-Circ(GOAL,RELA
+TION),notIsPresent(RELATION),instanceOfRel(RELATION),starts(AGENT,GOAL). 
+ []
+
+
+Overfull \hbox (160.14182pt too wide) in paragraph at lines 9--10
+[]\OT1/ptm/m/n/12 entityViol(AGENT,GOAL,ENTITY) :- re-qui-re-sEn-tity(GOAL,ENTI
+TY),notIsPresent(ENTITY),starts(AGENT,GOAL). 
+ []
+
+
+Overfull \hbox (3.39267pt too wide) in paragraph at lines 11--12
+\OT1/ptm/m/n/12 con-di-ti-on-Viol(AGENT,GOAL,CONDITION),hasRisk(CONDITION,RISK,
+CONSEQUENCE). 
+ []
+
+
+Overfull \hbox (209.41388pt too wide) in paragraph at lines 15--16
+[]\OT1/ptm/m/n/12 possOfNegConseqFor(OTHERRELATION) :- re-la-ti-on-Viol(AGENT,G
+OAL,RISK),affectsRels(RELATION,OTHERRELATION). 
+ []
+
+
+Overfull \hbox (920.2466pt too wide) in paragraph at lines 17--18
+\OT1/ptm/m/n/12 pos-sOf-Neg-Con-seq-For(OTHERRELATION),happensNegConseqFor(OTHE
+RRELATION),requiresCirc(GOAL,OTHERRELATION),notIsPresent(OTHERRELATION),isInsta
+nceOfRel(OTHERRELATION),hasRisk(OTHERRELATION,RISK,CONSEQUENCE),starts(AGENT,GO
+AL). 
+ []
+
+[149
+
+] [150] [151]
+<figure/algjs.png, id=511, 401.24907pt x 401.24907pt>
 File: figure/algjs.png Graphic file (type png)
 <use figure/algjs.png>
-Package pdftex.def Info: figure/algjs.png  used on input line 133.
+Package pdftex.def Info: figure/algjs.png  used on input line 149.
 (pdftex.def)             Requested size: 364.19667pt x 364.21883pt.
- [150]
-<figure/algjs2.png, id=510, 403.5075pt x 543.53062pt>
+<figure/algjs2.png, id=512, 403.5075pt x 543.53062pt>
 File: figure/algjs2.png Graphic file (type png)
 <use figure/algjs2.png>
-Package pdftex.def Info: figure/algjs2.png  used on input line 141.
+Package pdftex.def Info: figure/algjs2.png  used on input line 157.
 (pdftex.def)             Requested size: 364.19667pt x 490.58295pt.
-) [151 <./figure/algjs.png>]
-
+) [152 <./figure/algjs.png>] 
 AED: lastpage setting LastPage
-[152 <./figure/algjs2.png>]
+[153 <./figure/algjs2.png>]
 +-------------------------------------------------------------------+
 | Comentario, sugestao ou critica sobre o abnTeX? Entre em contato: |
 |                  http://abntex.codigolivre.org.br                 |
@@ -1303,10 +1324,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7759 strings out of 494903
- 115981 string characters out of 6179960
- 200478 words of memory out of 5000000
- 10635 multiletter control sequences out of 15000+600000
+ 7754 strings out of 494903
+ 115878 string characters out of 6179960
+ 199512 words of memory out of 5000000
+ 10631 multiletter control sequences out of 15000+600000
  85918 words of font info for 190 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  43i,14n,46p,2108b,441s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1320,10 +1341,10 @@ usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/times/utmri8a.pfb>
-Output written on dissertacao.pdf (152 pages, 1027132 bytes).
+Output written on dissertacao.pdf (153 pages, 967723 bytes).
 PDF statistics:
- 559 PDF objects out of 1000 (max. 8388607)
- 369 compressed objects within 4 object streams
+ 560 PDF objects out of 1000 (max. 8388607)
+ 371 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 

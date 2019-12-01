@@ -554,10 +554,8 @@ relXSela, relXColarrelXBastaoGarrarelXBastaoUniversal, relXBastaoSoquete, relXCo
 
 A Tabela \ref{entitygoals} apresenta os dados em relação ao predicado $requiresEntity(goal_i, e_j)$ e segue o mesmo padrão apresentado pelo exemplo na tabela \ref{tableexemplgroupdataone}. Contudo, tendo em vista o fato de que está implicito no conceito do predicado $requiresEntity(goal_i, e_j)$ a natureza da instância atrelada ao segundo argumento (ou seja, não há dúvida que $e_j$ é uma entidade e está contida em $Entity$), a Tabela \ref{entitygoals} não apresenta coluna \textit{Tipo de Instância}.
 
-\begin{table}[H]
-\centering
-\scalefont{0.8}
-\begin{tabular}{|l|l|}
+\begin{center}
+\begin{longtable}[H]{|p{0.8\linewidth}|l|}
 \hline
 \textbf{Entidades}                                                                                                 & \textbf{Objetivo} \\ \hline
 capacete,óculos,roupagem,luvas,botas X = \{agentes em relação aos objetivos\}                                      & g0         \\ \hline
@@ -587,8 +585,13 @@ cordaX = \{agentes em relação aos objetivos\}                                 
 chaveCatraca,bastaoUniversal,prafusobastaoSoquete,parafuso,torreX = \{agentes em relação aos objetivos\}           & g24        \\ \hline
 bastaoGarra,condutorcordaX = \{agentes em relação aos objetivos\},                                                 & g25        \\ \hline
 chaveCatraca,bastaoUniversal,prafusoX = \{agentes em relação aos objetivos\}                                       & g26        \\ \hline
-sela,colar,bastaoGarra,bastaoUniversal,bastaoSoquete,corda,carretilha,chaveCatraca,torre,condutor                  & g27        \\ \hline
-\end{tabular}
+sela, colar, bastaoGarra, bastaoUniversal, bastaoSoquete, corda, carretilha, chaveCatraca, torre, condutor		   & g27        \\ \hline
+
 \caption{Especificação do estudo de caso atrelado ao predicado $requiresEntity(goal_i, e_j)$}
 \label{entitygoals}
-\end{table}
+\end{longtable}
+\end{center}
+
+
+
+

@@ -12,8 +12,8 @@
 \contentsline {table}{\numberline {11}{\ignorespaces Objetivos que devem ser atingidos pelo agente que assumir um dada fun\IeC {\c c}\IeC {\~a}o\relax }}{96}
 \contentsline {table}{\numberline {12}{\ignorespaces Exemplifica\IeC {\c c}\IeC {\~a}o dos dados atrelados ao predicado $requiresCirc(goal_n, circ_m)$,$requiresEntity(goal_n, ent_m)$ ser\IeC {\~a}o organizados nas tabelas a seguir.\relax }}{96}
 \contentsline {table}{\numberline {13}{\ignorespaces Especifica\IeC {\c c}\IeC {\~a}o do predicado $requiresCirc(goal_i,circ_j)$, do predicado $instanceOfRel(circ_n)$ e do predicado $instanceOfCond(circ_n)$\relax }}{99}
-\contentsline {table}{\numberline {14}{\ignorespaces Especifica\IeC {\c c}\IeC {\~a}o do estudo de caso atrelado ao predicado $requiresEntity(goal_i, e_j)$\relax }}{100}
-\contentsline {table}{\numberline {15}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre o \textit {MOISE+} e o modelo proposto neste estudo\relax }}{114}
-\contentsline {table}{\numberline {16}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre o \textit {DASTANI+} e o modelo proposto neste estudo\relax }}{115}
-\contentsline {table}{\numberline {17}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre o \textit {VS3} e o modelo proposto neste estudo\relax }}{116}
-\contentsline {table}{\numberline {18}{\ignorespaces An\IeC {\'a}lise comparativa sobre a expressividade desses modelos no que tange aos objetivos deste estudo.\relax }}{119}
+\contentsline {table}{\numberline {14}{\ignorespaces Especifica\IeC {\c c}\IeC {\~a}o do estudo de caso atrelado ao predicado $requiresEntity(goal_i, e_j)$\relax }}{101}
+\contentsline {table}{\numberline {15}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre o \textit {MOISE+} e o modelo proposto neste estudo\relax }}{115}
+\contentsline {table}{\numberline {16}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre o \textit {DASTANI+} e o modelo proposto neste estudo\relax }}{116}
+\contentsline {table}{\numberline {17}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre o \textit {VS3} e o modelo proposto neste estudo\relax }}{118}
+\contentsline {table}{\numberline {18}{\ignorespaces An\IeC {\'a}lise comparativa sobre a expressividade desses modelos no que tange aos objetivos deste estudo.\relax }}{120}
