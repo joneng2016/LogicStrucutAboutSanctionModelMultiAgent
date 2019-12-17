@@ -1,0 +1,102 @@
+\changetocdepth {4}
+\babel@toc {brazil}{}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{1em}
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introdu\IeC {\c c}\IeC {\~a}o}}{12}{chapter.1}
+\contentsline {section}{\numberline {1.1}Motiva\IeC {\c c}\IeC {\~a}o}{12}{section.1.1}
+\contentsline {section}{\numberline {1.2}Relev\IeC {\^a}ncia}{12}{section.1.2}
+\contentsline {section}{\numberline {1.3}Objetivos}{13}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Objetivos Espec\IeC {\'\i }ficos}{13}{subsection.1.3.1}
+\contentsline {section}{\numberline {1.4}Estrutura do Documento}{13}{section.1.4}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{1em}
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Fundamenta\IeC {\c c}\IeC {\~a}o Te\IeC {\'o}rica}}{15}{chapter.2}
+\contentsline {section}{\numberline {2.1}Agentes}{15}{section.2.1}
+\contentsline {section}{\numberline {2.2}Artefatos}{17}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Cartago}{18}{subsection.2.2.1}
+\contentsline {section}{\numberline {2.3}Sistema Multiagente}{19}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Conceitos Gerais de uma Organiza\IeC {\c c}\IeC {\~a}o de Sistemas Multiagentes}{20}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Formaliza\IeC {\c c}\IeC {\~a}o de Conceitos Espec\IeC {\'\i }ficos para SMA}{21}{subsection.2.3.2}
+\contentsline {section}{\numberline {2.4}Normas}{24}{section.2.4}
+\contentsline {section}{\numberline {2.5}Riscos}{26}{section.2.5}
+\contentsline {section}{\numberline {2.6}L\IeC {\'o}gica Modal}{28}{section.2.6}
+\contentsline {section}{\numberline {2.7}Demais Modelos}{29}{section.2.7}
+\contentsline {subsection}{\numberline {2.7.1}Modelo V3S}{29}{subsection.2.7.1}
+\contentsline {subsection}{\numberline {2.7.2}Modelo NormMAS}{33}{subsection.2.7.2}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{1em}
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Metodologia}}{35}{chapter.3}
+\contentsline {section}{\numberline {3.1}Revis\IeC {\~a}o Explorat\IeC {\'o}ria e An\IeC {\'a}lise de Campo}{35}{section.3.1}
+\contentsline {section}{\numberline {3.2}Formaliza\IeC {\c c}\IeC {\~a}o de um Modelo Conceitual}{36}{section.3.2}
+\contentsline {section}{\numberline {3.3}Explorar os Arcabou\IeC {\c c}os Poss\IeC {\'\i }veis}{37}{section.3.3}
+\contentsline {section}{\numberline {3.4}Aplica\IeC {\c c}\IeC {\~a}o em Estudo de Caso}{38}{section.3.4}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{1em}
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Resultados}}{39}{chapter.4}
+\contentsline {section}{\numberline {4.1}Revis\IeC {\~a}o Bibliogr\IeC {\'a}fica Explorat\IeC {\'o}ria e An\IeC {\'a}lise de Campo}{39}{section.4.1}
+\contentsline {section}{\numberline {4.2}Estrutura Conceitual}{40}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}M\IeC {\'o}dulos}{40}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Predicados}{44}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Diagrama de Classes}{48}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Regras}{49}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}Diagrama de Atividades}{58}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.2.6}Predicados de Controle e de Estrutura}{62}{subsection.4.2.6}
+\contentsline {section}{\numberline {4.3}Caso Introdut\IeC {\'o}rio}{66}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Aplica\IeC {\c c}\IeC {\~a}o do Modelo}{67}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Racioc\IeC {\'\i }nios}{72}{subsection.4.3.2}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{1em}
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Estudo de Caso}}{74}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introdu\IeC {\c c}\IeC {\~a}o ao Problema}{74}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Especifica\IeC {\c c}\IeC {\~a}o dos Agentes e seus Pap\IeC {\'e}is}{75}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Especifica\IeC {\c c}\IeC {\~a}o das Ferramentas e Objetivos}{76}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Especifica\IeC {\c c}\IeC {\~a}o das Condi\IeC {\c c}\IeC {\~o}es e Rela\IeC {\c c}\IeC {\~o}es}{77}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.4}Rela\IeC {\c c}\IeC {\~a}o entre Objetivos e Pap\IeC {\'e}is}{83}{subsection.5.1.4}
+\contentsline {subsection}{\numberline {5.1.5}Relacionamentos das Entidades, Rela\IeC {\c c}\IeC {\~o}es e Condi\IeC {\c c}\IeC {\~o}es com Objetivos}{86}{subsection.5.1.5}
+\contentsline {section}{\numberline {5.2}Racioc\IeC {\'\i }nio}{90}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Racioc\IeC {\'\i }nio - 1}{90}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Racioc\IeC {\'\i }nio - 2}{92}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Racioc\IeC {\'\i }nio - 3}{93}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4}Racioc\IeC {\'\i }nio - 4}{94}{subsection.5.2.4}
+\contentsline {subsection}{\numberline {5.2.5}Racioc\IeC {\'\i }nio - 5}{95}{subsection.5.2.5}
+\contentsline {subsection}{\numberline {5.2.6}Racioc\IeC {\'\i }nio - 6}{97}{subsection.5.2.6}
+\contentsline {subsection}{\numberline {5.2.7}Racioc\IeC {\'\i }nio - 7}{98}{subsection.5.2.7}
+\contentsline {section}{\numberline {5.3}Implementa\IeC {\c c}\IeC {\~a}o}{98}{section.5.3}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{1em}
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Discuss\IeC {\~a}o}}{99}{chapter.6}
+\contentsline {section}{\numberline {6.1}An\IeC {\'a}lise Comparativa}{99}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Modelo MOISE+}{100}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Modelo DASTANI}{102}{subsection.6.1.2}
+\contentsline {section}{\numberline {6.2}Compara\IeC {\c c}\IeC {\~a}o entre VS3 e o modelo proposto neste estudo}{103}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}NORMMAS}{105}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Compara\IeC {\c c}\IeC {\~a}o Gen\IeC {\'e}rica entre os Modelos}{106}{subsection.6.2.2}
+\contentsline {section}{\numberline {6.3}Discuss\IeC {\~a}o do Modelo Conceitual}{107}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Considera\IeC {\c c}\IeC {\~o}es sobre Crit\IeC {\'e}rios Metodol\IeC {\'o}gicos ao estudo de caso}{108}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Considera\IeC {\c c}\IeC {\~o}es sobre Crit\IeC {\'e}rios Metodol\IeC {\'o}gicos ao Racioc\IeC {\'\i }nios}{111}{subsection.6.3.2}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{1em}
+\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {Conclus\IeC {\~a}o}}{114}{chapter.7}
+\contentsline {section}{\numberline {7.1}Avalia\IeC {\c c}\IeC {\~a}o do Objetivo}{114}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Reflex\IeC {\~a}o sobre Objetivo Geral}{114}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}Reflex\IeC {\~a}o sobre Objetivos Espec\IeC {\'\i }ficos}{115}{subsection.7.1.2}
+\contentsline {section}{\numberline {7.2}Conclus\IeC {\~a}o Geral}{115}{section.7.2}
+\contentsline {section}{\numberline {7.3}Trabalhos Futuros}{116}{section.7.3}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{1em}
+\contentsline {chapter}{\chapternumberline {8}\MakeTextUppercase {Perguntas da Entrevista}}{122}{chapter.8}
+\contentsline {section}{\numberline {8.1}Perguntas Gerais}{122}{section.8.1}
+\contentsline {section}{\numberline {8.2}Perguntas sobre Substitui\IeC {\c c}\IeC {\~a}o do Isolador de Pedestal}{124}{section.8.2}
+\contentsline {section}{\numberline {8.3}Perguntas sobre Substitui\IeC {\c c}\IeC {\~a}o do Pingo A\IeC {\'e}reo pelo acesso a Dinst\IeC {\^a}ncia}{125}{section.8.3}
+\contentsline {section}{\numberline {8.4}Perguntas sobre Substitui\IeC {\c c}\IeC {\~a}o do Pingo A\IeC {\'e}reo pelo acesso ao Potencial}{127}{section.8.4}
+\contentsline {section}{\numberline {8.5}Substitui\IeC {\c c}\IeC {\~a}o do Conector - M\IeC {\'e}todo a Dist\IeC {\^a}ncia}{128}{section.8.5}
+\contentsline {section}{\numberline {8.6}Substitui\IeC {\c c}\IeC {\~a}o do Conector - M\IeC {\'e}todo ao Potencial}{130}{section.8.6}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{1em}
+\contentsline {chapter}{\chapternumberline {9}\MakeTextUppercase {Programa}}{132}{chapter.9}
+\contentsline {section}{\numberline {9.1}Regras}{132}{section.9.1}
+\contentsline {section}{\numberline {9.2}Racioc\IeC {\'\i }nio 1}{132}{section.9.2}
+\contentsline {section}{\numberline {9.3}Racioc\IeC {\'\i }nio 2}{133}{section.9.3}
+\contentsline {section}{\numberline {9.4}Racioc\IeC {\'\i }nio 3}{133}{section.9.4}
+\contentsline {section}{\numberline {9.5}Racioc\IeC {\'\i }nio 4}{133}{section.9.5}
+\contentsline {section}{\numberline {9.6}Racioc\IeC {\'\i }nio 5}{134}{section.9.6}
+\contentsline {section}{\numberline {9.7}Racioc\IeC {\'\i }nio 6}{135}{section.9.7}

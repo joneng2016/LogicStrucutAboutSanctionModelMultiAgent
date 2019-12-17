@@ -1,0 +1,19 @@
+\babel@toc {brazil}{}
+\contentsline {table}{\numberline {1}{\ignorespaces Construtores da linguagem \textit {ACTIVITY-DL} \cite {v3sframework}\relax }}{30}{table.caption.16}
+\contentsline {table}{\numberline {2}{\ignorespaces As pr\IeC {\'e}-condi\IeC {\c c}\IeC {\~o}es poss\IeC {\'\i }veis para as atividades \cite {v3sframework}\relax }}{31}{table.caption.17}
+\contentsline {table}{\numberline {3}{\ignorespaces Os agentes que constituem uma manuten\IeC {\c c}\IeC {\~a}o\relax }}{75}{table.caption.25}
+\contentsline {table}{\numberline {4}{\ignorespaces Os pap\IeC {\'e}is relevantes para a ocorr\IeC {\^e}ncia da manuten\IeC {\c c}\IeC {\~a}o\relax }}{75}{table.caption.26}
+\contentsline {table}{\numberline {5}{\ignorespaces Rela\IeC {\c c}\IeC {\~a}o $adoptsRole(ag_n,\rho _m)$\relax }}{76}{table.caption.27}
+\contentsline {table}{\numberline {6}{\ignorespaces Defini\IeC {\c c}\IeC {\~a}o de todos os artefatos presentes na manuten\IeC {\c c}\IeC {\~a}o\relax }}{76}{table.caption.28}
+\contentsline {table}{\numberline {7}{\ignorespaces Defini\IeC {\c c}\IeC {\~a}o e descri\IeC {\c c}\IeC {\~a}o dos objetivos bem como dos respectivos pr\IeC {\'e}-requisitos\relax }}{77}{table.caption.29}
+\contentsline {table}{\numberline {8}{\ignorespaces Define as condi\IeC {\c c}\IeC {\~o}es necess\IeC {\'a}rias para que a manuten\IeC {\c c}\IeC {\~a}o tenha possibilidade de acontecer\relax }}{77}{table.caption.30}
+\contentsline {table}{\numberline {9}{\ignorespaces Descri\IeC {\c c}\IeC {\~a}o das entidades em fun\IeC {\c c}\IeC {\~a}o das rela\IeC {\c c}\IeC {\~o}es\relax }}{80}{table.9}
+\contentsline {table}{\numberline {10}{\ignorespaces Define o impacto que o erro em um relacionamento gera em outro relacionamento por mudar a possibilidade de algo errado acontecer.\relax }}{82}{table.10}
+\contentsline {table}{\numberline {11}{\ignorespaces Objetivos que devem ser atingidos pelo agente que assumir um dada fun\IeC {\c c}\IeC {\~a}o\relax }}{85}{table.11}
+\contentsline {table}{\numberline {12}{\ignorespaces Exemplifica\IeC {\c c}\IeC {\~a}o dos dados atrelados ao predicado $requiresCirc(goal_n, circ_m)$,$requiresEntity(goal_n, ent_m)$ ser\IeC {\~a}o organizados nas tabelas a seguir.\relax }}{86}{table.caption.31}
+\contentsline {table}{\numberline {13}{\ignorespaces Especifica\IeC {\c c}\IeC {\~a}o do predicado $requiresCirc(goal_i,circ_j)$, do predicado $instanceOfRel(circ_n)$ e do predicado $instanceOfCond(circ_n)$\relax }}{88}{table.13}
+\contentsline {table}{\numberline {14}{\ignorespaces Especifica\IeC {\c c}\IeC {\~a}o do estudo de caso atrelado ao predicado $requiresEntity(goal_i, e_j)$\relax }}{90}{table.14}
+\contentsline {table}{\numberline {15}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre o \textit {MOISE+} e o modelo proposto neste estudo\relax }}{102}{table.15}
+\contentsline {table}{\numberline {16}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre o \textit {DASTANI+} e o modelo proposto neste estudo\relax }}{103}{table.16}
+\contentsline {table}{\numberline {17}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre o \textit {VS3} e o modelo proposto neste estudo\relax }}{105}{table.17}
+\contentsline {table}{\numberline {18}{\ignorespaces An\IeC {\'a}lise comparativa sobre a expressividade desses modelos no que tange aos objetivos deste estudo.\relax }}{107}{table.caption.33}

@@ -1,0 +1,10 @@
+\changetocdepth {3}
+\babel@toc {brazil}{}
+\renewcommand *{\cftappendixname }{AP\^ENDICE \space }
+\contentsline {part}{Ap\^endices}{3}{section*.2}
+\contentsline {appendix}{\chapternumberline {A}Exemplo de ap\IeC {\^e}ndice}{4}{appendix.A}
+\contentsline {appendix}{\chapternumberline {B}Outro exemplo de ap\IeC {\^e}ndice}{5}{appendix.B}
+\cftinsert {AAA}
+\renewcommand *{\cftappendixname }{ANEXO \space }
+\contentsline {part}{Anexos}{6}{section*.3}
+\contentsline {appendix}{\chapternumberline {A}Anexo - exemplo}{7}{appendix.anexochapback.1}

@@ -1,0 +1,14 @@
+\babel@toc {brazil}{}
+\contentsline {figure}{\numberline {1}{\ignorespaces \IeC {\'A}rvore de objetivos definido pelo modelo MOISE+ \cite {moiseframework}\relax }}{23}{figure.caption.12}
+\contentsline {figure}{\numberline {2}{\ignorespaces Linguagem para descrever um programa de multiagentes normativos com a possibilidade de viola\IeC {\c c}\IeC {\~o}es e san\IeC {\c c}\IeC {\~o}es na nota\IeC {\c c}\IeC {\~a}o EBNF segundo o texto \cite {dastaniframework}. Nesta nota\IeC {\c c}\IeC {\~a}o, $<ident>$ \IeC {\'e} usado para denotar uma \textit {string} e $<int>$ inteiros. Os termos $<b-prop>$ e $<i-prop>$ s\IeC {\~a}o usados para designar dois tipos de conjuntos de proposi\IeC {\c c}\IeC {\~o}es que s\IeC {\~a}o disjuntos entre si\relax }}{25}{figure.caption.13}
+\contentsline {figure}{\numberline {3}{\ignorespaces Um programa descrito na linguagem proposta neste estudo onde um agente representa um passageiro em uma esta\IeC {\c c}\IeC {\~a}o de trem que pode entrar com ou sem um \textit {ticket} na plataforma e no trem \cite {dastaniframework}.\relax }}{26}{figure.caption.14}
+\contentsline {figure}{\numberline {4}{\ignorespaces Ontologia que descreve \textit {Domain Model} no modelo V3S \cite {v3sframework}\relax }}{30}{figure.caption.15}
+\contentsline {figure}{\numberline {5}{\ignorespaces Gr\IeC {\'a}fico de Bowtie do texto \cite {melissaproject}\relax }}{32}{figure.caption.18}
+\contentsline {figure}{\numberline {6}{\ignorespaces A estrutura geral das classes do modelo\relax }}{41}{figure.caption.19}
+\contentsline {figure}{\numberline {7}{\ignorespaces Diagrama de classes do Modelo \relax }}{48}{figure.caption.20}
+\contentsline {figure}{\numberline {8}{\ignorespaces Condi\IeC {\c c}\IeC {\~a}o para definir se um dado objetivo foi atingido ou n\IeC {\~a}o\relax }}{57}{figure.caption.21}
+\contentsline {figure}{\numberline {9}{\ignorespaces Diagrama de atividades do modelo (1)\relax }}{59}{figure.caption.22}
+\contentsline {figure}{\numberline {10}{\ignorespaces Diagrama de atividades do modelo (2)\relax }}{60}{figure.caption.23}
+\contentsline {figure}{\numberline {11}{\ignorespaces Diagrama de atividades do modelo (3)\relax }}{60}{figure.caption.24}
+\contentsline {figure}{\numberline {12}{\ignorespaces Racioc\IeC {\'\i }nio 6 parte 1\relax }}{135}{figure.caption.35}
+\contentsline {figure}{\numberline {13}{\ignorespaces Racioc\IeC {\'\i }nio 6 parte 2\relax }}{136}{figure.caption.36}
