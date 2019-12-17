@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.12.17)  1 DEC 2019 13:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.4)  17 DEC 2019 00:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **dissertacao.tex
 (./dissertacao.tex
 LaTeX2e <2017-04-15>
-Babel <3.18> and hyphenation patterns for 4 language(s) loaded.
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (./normas-utf-tex.cls (./cvs-id.def)
 Document Class: normas-utf-tex 2011/06/19 v2.0
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
@@ -723,29 +723,31 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@floatcapt=\box57
 )
 (/usr/share/texlive/texmf-dist/tex/latex/carlisle/scalefnt.sty)
-
-! LaTeX Error: File `algorithmic.sty' not found.
-
-Type X to quit or <RETURN> to proceed,
-or enter new name. (Default extension: sty)
-
-Enter file name: 
+(/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+\c@ALC@unique=\count122
+\c@ALC@line=\count123
+\c@ALC@rem=\count124
+\c@ALC@depth=\count125
+\ALC@tlm=\skip58
+\algorithmicindent=\skip59
+)
 (/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
-\LTleft=\skip58
-\LTright=\skip59
-\LTpre=\skip60
-\LTpost=\skip61
-\LTchunksize=\count122
+\LTleft=\skip60
+\LTright=\skip61
+\LTpre=\skip62
+\LTpost=\skip63
+\LTchunksize=\count126
 \LTcapwidth=\dimen135
 \LT@head=\box58
 \LT@firsthead=\box59
 \LT@foot=\box60
 \LT@lastfoot=\box61
-\LT@cols=\count123
-\LT@rows=\count124
-\c@LT@tables=\count125
-\c@LT@chunks=\count126
+\LT@cols=\count127
+\LT@rows=\count128
+\c@LT@tables=\count129
+\c@LT@chunks=\count130
 \LT@p@ftn=\toks27
 )
 (./dissertacao.aux
@@ -770,25 +772,25 @@ LaTeX Warning: Label `atividiagram2' multiply defined.
 )
 \openout1 = `dissertacao.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 50.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 52.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 50.
+(lastpage)             ! on input line 52.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: longtable package is loaded.
@@ -800,16 +802,16 @@ Package caption Info: End \AtBeginDocument code.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count127
+\scratchcounter=\count131
 \scratchdimen=\dimen136
 \scratchbox=\box62
-\nofMPsegments=\count128
-\nofMParguments=\count129
+\nofMPsegments=\count132
+\nofMParguments=\count133
 \everyMPshowfont=\toks28
-\MPscratchCnt=\count130
+\MPscratchCnt=\count134
 \MPscratchDim=\dimen137
-\MPnumerator=\count131
-\makeMPintoPDFobject=\count132
+\MPnumerator=\count135
+\makeMPintoPDFobject=\count136
 \everyMPtoPDFconversion=\toks29
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -871,57 +873,77 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 ))
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 52.
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 52
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 54.
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 54
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 52
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 54
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 52
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 54
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 52
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 54
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 52.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 54.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 52.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 54.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 52.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 54.
  [1
 
 
 Non-PDF special ignored!{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (2.28001pt too wide) in paragraph at lines 53--53
+Overfull \hbox (2.28001pt too wide) in paragraph at lines 55--55
   $[]$ 
  []
 
 [1]
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 63.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 63.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 63.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 63.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 63.
- [1] [2
+<fichacat.pdf, id=11, 597.55246pt x 845.07718pt>
+File: fichacat.pdf Graphic file (type pdf)
+<use fichacat.pdf>
+Package pdftex.def Info: fichacat.pdf  used on input line 57.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+File: fichacat.pdf Graphic file (type pdf)
+<use fichacat.pdf>
+Package pdftex.def Info: fichacat.pdf  used on input line 57.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+<fichacat.pdf, id=14, page=1, 597.55246pt x 845.07718pt>
+File: fichacat.pdf Graphic file (type pdf)
+<use fichacat.pdf, page 1>
+Package pdftex.def Info: fichacat.pdf , page1 used on input line 57.
+(pdftex.def)             Requested size: 597.551pt x 845.07512pt.
+File: fichacat.pdf Graphic file (type pdf)
+<use fichacat.pdf, page 1>
+Package pdftex.def Info: fichacat.pdf , page1 used on input line 57.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: fichacat.pdf Graphic file (type pdf)
+<use fichacat.pdf, page 1>
+Package pdftex.def Info: fichacat.pdf , page1 used on input line 57.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: fichacat.pdf Graphic file (type pdf)
+<use fichacat.pdf, page 1>
+Package pdftex.def Info: fichacat.pdf , page1 used on input line 57.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+File: fichacat.pdf Graphic file (type pdf)
+<use fichacat.pdf, page 1>
+Package pdftex.def Info: fichacat.pdf , page1 used on input line 57.
+(pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
+ [1 <./fichacat.pdf>] [2
 
 
 ] [3
@@ -1007,15 +1029,19 @@ Cap\'{\i }tulo 2.
 ] [17]) [18]
 (./estrutura/fundamentacaoteorica/artefatos.tex [19]) [20]
 (./estrutura/fundamentacaoteorica/sma.tex [21] [22] [23] [24]
-<figure/figmoise.png, id=86, 504.38437pt x 422.32782pt>
+<figure/figmoise.png, id=102, 504.38437pt x 422.32782pt>
 File: figure/figmoise.png Graphic file (type png)
 <use figure/figmoise.png>
 Package pdftex.def Info: figure/figmoise.png  used on input line 79.
 (pdftex.def)             Requested size: 364.19667pt x 304.94576pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 80.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 80.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 80.
  [25 <./figure/figmoise.png>]) (./estrutura/fundamentacaoteorica/normas.tex
-<figure/masprogram.png, id=93, 745.28438pt x 521.69907pt>
+<figure/masprogram.png, id=109, 745.28438pt x 521.69907pt>
 File: figure/masprogram.png Graphic file (type png)
 <use figure/masprogram.png>
 Package pdftex.def Info: figure/masprogram.png  used on input line 11.
@@ -1023,7 +1049,7 @@ Package pdftex.def Info: figure/masprogram.png  used on input line 11.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10.95> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 12.
  [26]
-<figure/programdastani.png, id=97, 700.86844pt x 182.93344pt>
+<figure/programdastani.png, id=113, 700.86844pt x 182.93344pt>
 File: figure/programdastani.png Graphic file (type png)
 <use figure/programdastani.png>
 Package pdftex.def Info: figure/programdastani.png  used on input line 24.
@@ -1033,7 +1059,7 @@ Package pdftex.def Info: figure/programdastani.png  used on input line 24.
 tex [30] [31])
 (./estrutura/fundamentacaoteorica/demaismodelos.tex)
 (./estrutura/analisecomparativa/genvs3.tex
-<figure/ontologyv3.png, id=117, 496.85625pt x 256.70906pt>
+<figure/ontologyv3.png, id=133, 496.85625pt x 256.70906pt>
 File: figure/ontologyv3.png Graphic file (type png)
 <use figure/ontologyv3.png>
 Package pdftex.def Info: figure/ontologyv3.png  used on input line 8.
@@ -1044,7 +1070,7 @@ Overfull \vbox (11.76097pt too high) has occurred while \output is active []
 
 
 [34]
-<figure/bowtie.png, id=128, 673.76718pt x 443.40656pt>
+<figure/bowtie.png, id=144, 673.76718pt x 443.40656pt>
 File: figure/bowtie.png Graphic file (type png)
 <use figure/bowtie.png>
 Package pdftex.def Info: figure/bowtie.png  used on input line 66.
@@ -1064,7 +1090,7 @@ Cap\'{\i }tulo 4.
 
 ])
 (./estrutura/resultados/genestconsul.tex) (./estrutura/resultados/modulos.tex
-<figure/Module.jpeg, id=155, 550.30594pt x 175.40532pt>
+<figure/Module.jpeg, id=171, 550.30594pt x 175.40532pt>
 File: figure/Module.jpeg Graphic file (type jpg)
 <use figure/Module.jpeg>
 Package pdftex.def Info: figure/Module.jpeg  used on input line 5.
@@ -1073,14 +1099,14 @@ Package pdftex.def Info: figure/Module.jpeg  used on input line 5.
 [43] [44 <./figure/Module.jpeg>] [45] [46]) [47]
 (./estrutura/resultados/predicados.tex [48] [49] [50] [51])
 (./estrutura/resultados/diagramadeclasses.tex
-<figure/Class.jpg, id=187, 537.50812pt x 409.53pt>
+<figure/Class.jpg, id=203, 537.50812pt x 409.53pt>
 File: figure/Class.jpg Graphic file (type jpg)
 <use figure/Class.jpg>
 Package pdftex.def Info: figure/Class.jpg  used on input line 5.
 (pdftex.def)             Requested size: 455.24411pt x 346.85236pt.
  [52] [53 <./figure/Class.jpg>])
 (./estrutura/resultados/regras.tex [54] [55] [56] [57] [58] [59] [60] [61]
-<figure/algrule6.png, id=220, 378.41376pt x 251.94125pt>
+<figure/algrule6.png, id=236, 378.41376pt x 251.94125pt>
 File: figure/algrule6.png Graphic file (type png)
 <use figure/algrule6.png>
 Package pdftex.def Info: figure/algrule6.png  used on input line 125.
@@ -1088,7 +1114,7 @@ Package pdftex.def Info: figure/algrule6.png  used on input line 125.
 
 [62 <./figure/algrule6.png>] [63])
 (./estrutura/resultados/diagramadeatividades.tex [64]
-<figure/diag1.jpg, id=230, 593.21625pt x 392.96812pt>
+<figure/diag1.jpg, id=246, 593.21625pt x 392.96812pt>
 File: figure/diag1.jpg Graphic file (type jpg)
 <use figure/diag1.jpg>
 Package pdftex.def Info: figure/diag1.jpg  used on input line 11.
@@ -1098,7 +1124,7 @@ Overfull \hbox (227.62206pt too wide) in paragraph at lines 11--12
  [][] 
  []
 
-<figure/diag2.jpg, id=231, 471.26062pt x 140.02313pt>
+<figure/diag2.jpg, id=247, 471.26062pt x 140.02313pt>
 File: figure/diag2.jpg Graphic file (type jpg)
 <use figure/diag2.jpg>
 Package pdftex.def Info: figure/diag2.jpg  used on input line 19.
@@ -1109,7 +1135,7 @@ Overfull \hbox (45.52718pt too wide) in paragraph at lines 19--20
  []
 
 [65 <./figure/diag1.jpg>]
-<figure/diag3.jpg, id=235, 493.845pt x 240.9pt>
+<figure/diag3.jpg, id=251, 493.845pt x 240.9pt>
 File: figure/diag3.jpg Graphic file (type jpg)
 <use figure/diag3.jpg>
 Package pdftex.def Info: figure/diag3.jpg  used on input line 26.
@@ -1301,12 +1327,12 @@ AL).
 [149
 
 ] [150] [151]
-<figure/algjs.png, id=511, 401.24907pt x 401.24907pt>
+<figure/algjs.png, id=527, 401.24907pt x 401.24907pt>
 File: figure/algjs.png Graphic file (type png)
 <use figure/algjs.png>
 Package pdftex.def Info: figure/algjs.png  used on input line 149.
 (pdftex.def)             Requested size: 364.19667pt x 364.21883pt.
-<figure/algjs2.png, id=512, 403.5075pt x 543.53062pt>
+<figure/algjs2.png, id=528, 403.5075pt x 543.53062pt>
 File: figure/algjs2.png Graphic file (type png)
 <use figure/algjs2.png>
 Package pdftex.def Info: figure/algjs2.png  used on input line 157.
@@ -1324,13 +1350,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7754 strings out of 494903
- 115878 string characters out of 6179960
- 199512 words of memory out of 5000000
- 10631 multiletter control sequences out of 15000+600000
- 85918 words of font info for 190 fonts, out of 8000000 for 9000
- 16 hyphenation exceptions out of 8191
- 43i,14n,46p,2108b,441s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 7833 strings out of 492982
+ 116904 string characters out of 6134896
+ 207541 words of memory out of 5000000
+ 10952 multiletter control sequences out of 15000+600000
+ 73394 words of font info for 162 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 43i,18n,46p,2108b,441s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/
@@ -1341,10 +1367,10 @@ usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/times/utmri8a.pfb>
-Output written on dissertacao.pdf (153 pages, 967723 bytes).
+Output written on dissertacao.pdf (153 pages, 1049001 bytes).
 PDF statistics:
- 560 PDF objects out of 1000 (max. 8388607)
- 371 compressed objects within 4 object streams
+ 576 PDF objects out of 1000 (max. 8388607)
+ 382 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
- 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 86 words of extra memory for PDF output out of 10000 (max. 10000000)
 

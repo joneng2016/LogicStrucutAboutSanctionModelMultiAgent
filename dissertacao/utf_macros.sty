@@ -1,0 +1,117 @@
+% O tamanho do parágrafo é dado por:
+\setlength{\parindent}{1.3cm}
+
+% Controle do espaçamento entre um parágrafo e outro:
+\setlength{\parskip}{0.2cm}  % tente também \onelineskip
+
+% Ajuste para alinhamento da tabela
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+
+% ajuste para que os titulos sejam em times
+\renewcommand{\ABNTEXchapterfont}{\rmfamily\bfseries}
+\renewcommand{\ABNTEXchapterfont}{\rmfamily}
+% tamanho da fonte
+\renewcommand{\ABNTEXchapterfontsize}{\Large}
+\renewcommand{\ABNTEXsectionfontsize}{\large}
+\renewcommand{\ABNTEXsubsectionfontsize}{\normalsize}
+\renewcommand{\ABNTEXsubsubsectionfontsize}{\normalsize}
+
+% ajuste na capa
+\renewcommand{\imprimircapa}
+{
+	\begin{capa}%
+		\begin{center}						
+			{\linespread{1.0}
+				\large\MakeUppercase{\imprimirinstituicao}\par
+			}
+		\end{center}		
+		\vspace{14pt}	
+		\begin{center}
+			{\linespread{1.0}
+				\large\MakeUppercase{\imprimirautor}\\
+			}
+		\end{center}
+		\vspace*{\fill}
+		\begin{center}
+			{\linespread{1.0}
+				\begingroup
+				\fontsize{18pt}{12pt}\selectfont
+				\textbf{\MakeUppercase\imprimirtitulo} \par  
+				\endgroup
+			}
+		\end{center}
+		\vspace*{\fill}
+		\vspace{12pt}
+		\begin{center}
+			\large\MakeUppercase{\imprimirtipotrabalho}%
+		\end{center}
+		\vfill
+		\begin{center}
+			\textbf{\MakeUppercase{\imprimirlocal}}\par
+			\textbf{\imprimirdata}
+		\end{center}
+	\end{capa}
+}
+
+% ajuste na folha de rosto
+\makeatletter
+\renewcommand{\folhaderostocontent}
+{
+	\begin{center}
+		{\large\MakeUppercase{\imprimirautor}}
+		\vspace*{\fill}\vspace*{\fill}
+		\begin{center}
+			%\ABNTEXchapterfont\bfseries\Large\MakeUppercase\imprimirtitulo
+			{\fontsize{18pt}{12pt}\selectfont
+			\textbf{\MakeUppercase\imprimirtitulo}}
+		\end{center}
+		\vspace*{\fill}
+		\abntex@ifnotempty{\imprimirpreambulo}{%
+			\hspace{.45\textwidth}
+			\begin{minipage}{.5\textwidth}
+				\SingleSpacing
+				\imprimirpreambulo \par
+				\bigbreak
+				\imprimirorientadorRotulo~\imprimirorientador\par
+	 		\end{minipage}%
+			\vspace*{\fill}
+		}%
+		%{\abntex@ifnotempty{\imprimirinstituicao}
+%				\vspace*{\fill}}
+	%	{\large\imprimirorientadorRotulo~\imprimirorientador\par}
+		\vspace*{\fill}
+		\begin{center}
+			\textbf{\MakeUppercase{\imprimirlocal}}\par
+			\textbf{\imprimirdata}
+		\end{center}
+		\vspace*{1cm}
+	\end{center}
+}
+\makeatother
+
+% ---
+% Configurações de aparência do PDF final
+
+% alterando o aspecto da cor azul
+\definecolor{blue}{RGB}{41,5,195}
+
+% informações do PDF
+\makeatletter
+\hypersetup{
+     	%pagebackref=true,
+		pdftitle={\@title}, 
+		pdfauthor={\@author},
+    	pdfsubject={\imprimirpreambulo},
+	    pdfcreator={LaTeX with abnTeX2},
+		pdfkeywords={abnt}{latex}{abntex}{abntex2}{trabalho acadêmico}, 
+		colorlinks=true,       		% false: boxed links; true: colored links
+    	linkcolor=blue,          	% color of internal links
+    	citecolor=blue,        		% color of links to bibliography
+    	filecolor=magenta,      		% color of file links
+		urlcolor=blue,
+		bookmarksdepth=4
+}
+\makeatother
+% --- 
