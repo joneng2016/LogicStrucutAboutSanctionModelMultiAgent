@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.4)  17 DEC 2019 00:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.4)  21 DEC 2019 01:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -952,11 +952,23 @@ Package pdftex.def Info: fichacat.pdf , page1 used on input line 57.
 ] [4
 
 
-] (./estrutura/resumo/resumo.tex) [5
+] (./estrutura/resumo/resumo.tex
+! Misplaced alignment tab character &.
+<argument> ...arte dos resultados do projeto de P&
+                                                  D de código PD-06491-0299...
+l.1 ...cia Nacional de Energia Elétrico (ANEEL).}
+                                                  
+? 
+) [5
 
 
-]
-(./estrutura/resumo/abstract.tex
+] (./estrutura/resumo/abstract.tex
+! Misplaced alignment tab character &.
+<argument> ...esents part of the results of the R&
+                                                  D project code PD-06491-02...
+l.1 ...e National Agency Electric Energy (ANEEL).}
+                                                  
+? 
 
 ! Package inputenc Error: Unicode char ​ (U+200B)
 (inputenc)                not set up for use with LaTeX.
@@ -965,7 +977,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1 ...n a maintenance activity in the area of ​
+l.4 ...n a maintenance activity in the area of ​
                                                   ​electricity transmissio...
 
 ? 
@@ -977,7 +989,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1 ... maintenance activity in the area of ​​
+l.4 ... maintenance activity in the area of ​​
                                                   electricity transmission a...
 
 ? 
@@ -1350,11 +1362,11 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7833 strings out of 492982
- 116904 string characters out of 6134896
- 207541 words of memory out of 5000000
+ 7832 strings out of 492982
+ 116898 string characters out of 6134896
+ 206399 words of memory out of 5000000
  10952 multiletter control sequences out of 15000+600000
- 73394 words of font info for 162 fonts, out of 8000000 for 9000
+ 72287 words of font info for 161 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,18n,46p,2108b,441s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
@@ -1367,7 +1379,7 @@ usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/times/utmri8a.pfb>
-Output written on dissertacao.pdf (153 pages, 1049001 bytes).
+Output written on dissertacao.pdf (153 pages, 1049347 bytes).
 PDF statistics:
  576 PDF objects out of 1000 (max. 8388607)
  382 compressed objects within 4 object streams
