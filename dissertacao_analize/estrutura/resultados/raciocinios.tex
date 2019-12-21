@@ -1,0 +1,281 @@
+\label{racs}
+
+Uma vez que o modelo foi definido e que foi implementado em um estudo de caso, é possível avaliar as conclusões possíveis em certa condição de mundo. Essa seção demonstra como esse modelo cumpre o proposto por demonstrar certos raciocínios tendo em vista o estudo de caso em análise. 
+
+\subsection{Raciocínio - 1} 
+\label{raciocinio1}
+
+O raciocínio a seguir mostra o que acontece se o $agente4$ esquecer de passar glicerina no pano, especificado pela relação $relPanoGlicerina$, designados a ele no objetivo $g1$. 
+Todos os predicados vinculados a essa situação são:
+
+\begin{enumerate}
+	\item $adoptsRole(agente4,executor2)$ 
+	\item $hasObligation(executor2,g1)$
+	\item $requiresCirc(g1,relPanoGlicerina)$
+	\item $instanceOfRel(relPanoGlicerina)$ 
+	\item $starts(agente4,g1)$
+	\item $affectsRels(relPanoGlicerina,relBastaoGarraCondutor)$
+	\item $affectsRels(relPanoGlicerina,relCordaEstropo)$  
+	\item $affectsRels(relPanoGlicerina,relChaveCatracaParafuso)$
+	\item $affectsRels(relPanoGlicerina,relParafusoConector)$ 
+	\item $affectsRels(relPanoGlicerina,relSoqueteParafuso)$ 
+	\item $affectsRels(relPanoGlicerina,relAgente4Corda)$ 
+	\item $affectsRels(relPanoGlicerina,relEstropoCorda)$	
+\end{enumerate}
+
+Com base nisso, as relações de implicabilidade resultantes são:
+
+\begin{eqnarray}\nonumber
+	requiresCirc(g1,relPanoGlicerina) \wedge \nonumber \\  
+	\neg isPresent(relPanoGlicerina) \wedge \nonumber \\   
+	instanceOfRel(relPanoGlicerina) \wedge \nonumber \\   
+	starts(agente4,g1) \to \nonumber \\
+	relationViol(agente4,g1,relPanoGlicerina) \nonumber \\  
+\end{eqnarray}
+
+\begin{eqnarray}\nonumber
+	relationViol(agente4,g1,relPanoGlicerina) \nonumber \\
+	\wedge affectsRels(relPanoGlicerina,relBastaoGarraCondutor) \nonumber \\
+    \to possOfNegConseqFor(relBastaoGarraCondutor)  	
+\end{eqnarray}
+
+\begin{eqnarray}\nonumber
+	relationViol(agente4,g1,relPanoGlicerina) \nonumber \\
+	\wedge affectsRels(relPanoGlicerina,relCordaEstropo) \nonumber \\
+    \to possOfNegConseqFor(relCordaEstropo)
+\end{eqnarray}
+
+\begin{eqnarray}\nonumber
+	relationViol(agente4,g1,relPanoGlicerina) \nonumber \\
+	\wedge affectsRels(relPanoGlicerina,relParafusoConector) \nonumber \\
+    \to possOfNegConseqFor(relParafusoConector)	 
+\end{eqnarray}
+
+\begin{eqnarray}\nonumber
+	relationViol(agente4,g1,relPanoGlicerina) \nonumber \\
+	\wedge affectsRels(relPanoGlicerina,relSoqueteParafuso) \nonumber \\
+    \to possOfNegConseqFor(relSoqueteParafuso)	 	
+\end{eqnarray}
+
+\begin{eqnarray}\nonumber
+	relationViol(agente4,g1,relPanoGlicerina) \nonumber \\
+	\wedge affectsRels(relPanoGlicerina,relAgente4Corda) \nonumber \\
+    \to possOfNegConseqFor(relAgente4Corda)	 		
+\end{eqnarray}
+
+\begin{eqnarray}\nonumber
+	relationViol(agente4,g1,relPanoGlicerina) \nonumber \\
+	\wedge affectsRels(relPanoGlicerina,relEstropoCorda) \nonumber \\
+    \to possOfNegConseqFor(relEstropoCorda)	 			 
+\end{eqnarray}
+
+
+
+\subsection{Raciocínio - 2} 
+\label{raciocinio2}
+O raciocínio a seguir mostra o que acontece se o pano não estiver presente no local da manutenção quando os eletricistas alcançarem o $g1$. A lista a seguir exibe todos os predicados necessários para averiguar essa condição de mundo. 
+
+
+\begin{enumerate}
+	\item $adoptsRole(agente2,executor1)$ 
+	\item $adoptsRole(agente3,executor1)$	 	
+	\item $adoptsRole(agente4,executor2)$	 
+	\item $hasObligation(executor1,g1)$
+	\item $hasObligation(executor2,g1)$
+	\item $starts(agente2,g1)$ 
+	\item $starts(agente3,g1)$	 	
+	\item $starts(agente4,g1)$	
+	\item $requiresEntity(g1,pano)$		
+	\item $\neg isPresent(pano)$
+\end{enumerate}
+
+\begin{eqnarray}\nonumber
+	requiresEntity(g1,pano) \wedge \nonumber \\   
+	\neg isPresent(pano) \wedge \nonumber \\ 
+	starts(agente2,g1) \to \nonumber \\ 
+    entityViol(agente2,g1,pano)  \nonumber \\
+\end{eqnarray}
+
+\begin{eqnarray}\nonumber
+	requiresEntity(g1,pano) \wedge \nonumber \\   
+	\neg isPresent(pano) \wedge \nonumber \\ 
+	starts(agente3,g1) \to \nonumber \\ 
+    entityViol(agente3,g1,pano)  \nonumber \\
+\end{eqnarray}
+
+\begin{eqnarray}\nonumber
+	requiresEntity(g1,pano) \wedge \nonumber \\   
+	\neg isPresent(pano) \wedge \nonumber \\ 
+	starts(agente4,g1) \to \nonumber \\ 
+    entityViol(agente4,g1,pano)  \nonumber \\	
+\end{eqnarray}
+
+\begin{eqnarray}
+	entityViol(agente4,g1,pano) \to stopped(g1)
+\end{eqnarray}
+
+
+
+\subsection{Raciocínio - 3} 
+\label{raciocinio3}
+
+O raciocínio a seguir mostra o que acontece se o $agente5$ tentar alcançar o objetivo $g11$ com a umidade relativa do ar superior a setenta porcento. A lista a seguir exibe todos os predicados necessários para averiguar essa condição de mundo. 
+
+\begin{enumerate}
+	\item $adoptsRole(agente5,executor3)$
+	\item $hasObligation(executor3,g11)$	
+	\item $starts(agente5,g11)$ 
+	\item $requiresCirc(g11,umidade70)$
+	\item $isIstanceOfCond(umidade70)$
+	\item $\neg isPresent(umidade70)$
+	\item $hasRisk(umidade70,eletrocutado,morte)$
+\end{enumerate}
+
+\begin{eqnarray}
+	requiresCirc(g11,umidade70) \\ \nonumber
+	\wedge \neg isPresent(umidade70) \\ \nonumber
+	\wedge instanceOfCond(umidade70) \\ \nonumber
+	\wedge starts(agente5,g11)  \to \\ \nonumber   
+	conditionViol(agente5,g11,umidade70) \nonumber \\	
+\end{eqnarray}
+
+\begin{eqnarray} \nonumber
+	conditionViol(agente5,g11,umidade70) \nonumber \\
+	 \wedge hasRisk(umidade70,eletrocutado,morte) \to \nonumber \\ 
+	negConseqFor(g11,agente5,eletrocutado,morte) \nonumber \\ 	
+\end{eqnarray}
+
+\begin{eqnarray}
+	negConseqFor(g11,agente5,eletrocutado,morte) \to stopped(g11)
+\end{eqnarray}
+
+\subsection{Raciocínio - 4} 
+\label{raciocinio4}
+O raciocínio a seguir mostra o que acontece se o $agente3$ errar a forma adequada de realizar o relacionamento $relChaveCatracaParafuso$ no objetivo $g15$. Os predicados envolvidos são:
+
+\begin{enumerate}
+	\item $adoptsRole(agente4,executor2)$
+	\item $hasObligation(executor4,g15)$	
+	\item $starts(agente4,g15)$ 
+	\item $requiresCirc(g15,relChaveCatracaParafuso)$
+	\item $isInstanceOfRel(relChaveCatracaParafuso)$	
+	\item $\neg isPresent(relChaveCatracaParafuso)$
+	\item $hasRisk(relChaveCatracaParafuso,eletrocutado,morte)$
+\end{enumerate}
+
+\begin{eqnarray}
+	requiresCirc(g15,relChaveCatracaParafuso)\wedge \nonumber \\
+	\neg isPresent(relChaveCatracaParafuso) \wedge \nonumber \\
+	instanceOfRel(relChaveCatracaParafuso) \wedge \nonumber \\
+	starts(agente4,g15) \to \nonumber \\
+	relationViol(agente4,g15,relChaveCatracaParafuso) \nonumber
+\end{eqnarray}
+
+\begin{eqnarray}\nonumber
+	relationViol(agente4,g15,relChaveCatracaParafuso) \nonumber \\ 
+	 \wedge hasRisk(relChaveCatracaParafuso,eletrocutado,morte) \nonumber \\ 
+	\to \nonumber \\ 
+	negConseqFor(g15,agente4,eletrocutado,morte)
+\end{eqnarray}
+
+\begin{eqnarray}
+		negConseqFor(g15,agente4,eletrocutado,morte) \to stopped(g15)
+\end{eqnarray}
+
+\subsection{Raciocínio - 5} 
+\label{raciocinio5}
+A finalidade dessa demonstração consiste em mostrar como um agente pode ser submetido a consequências ruins tendo em vista os erros cometidos por outros profissionais. O raciocínio 1 mostra que o fato do $agente4$ não conseguir realizar o relacionamento $relPanoGlicerina$ resulta na violação $relationViol(agente4,g1,relPanoGlicerina)$. Essa violação, por sua vez, impacta diversas outras relações, em que $possOfNegConseqFor(relParafusoConector)$ é uma delas. Assim sendo, antes do $agente4$ cometer o erro, a possibilidade da ocorrência de um evento ruim acontecer era 0, se o agente realizar a relação $relParafusoConector$ sem cometer violação alguma. Contudo, após a ocorrência do erro cometido pelo $agente4$, existe uma possibilidade de um evento ruim acontecer na relação $relParafusoConector$ mesmo que tudo seja feito de acordo com os conformes. Assim sendo, a lista de predicados e o raciocínio mostra o que acontece dado a seguinte situação: o possível evento ruim presente em $relParafusoConector$ se torna uma realidade:  
+
+\begin{enumerate}	
+	\item $requiresCirc(g19,relParafusoConector)$		
+	\item $hasObligation(executor3,g19)$
+	\item $hasObligation(executor4,g19)$
+	\item $hasObligation(executor5,g19)$		
+	\item $starts(agente5,g19)$
+	\item $starts(agente6,g19)$
+	\item $starts(agente7,g19)$									
+	\item $adoptsRole(agente5,executor3)$
+	\item $adoptsRole(agente6,executor4)$
+	\item $adoptsRole(agente7,executor5)$
+	\item $hasRisk(relParafusoConector,eletrocutado,morte)$
+	\item $possOfNegConseqFor(relParafusoConector)$
+	\item $happensNegConseqFor(relParafusoConector)$	
+\end{enumerate}
+
+
+\begin{eqnarray}\nonumber
+   possOfNegConseqFor(relParafusoConector) \nonumber \\
+    \wedge happensNegConseqFor(relParafusoConector) \nonumber \\ 
+    \wedge requiresCirc(g19,relParafusoConector) \nonumber \\  
+    \wedge instanceOfRel(relParafusoConector) \nonumber \\ 
+    \wedge hasRisk(relParafusoConector,eletrocutado,morte) \nonumber \\  
+    \wedge starts(agente5,g19) \nonumber \\ 
+    \to negConseqFor(g19,agente5,eletrocutado,morte) \\ \nonumber    
+\end{eqnarray}
+
+\begin{eqnarray}
+	negConseqFor(g19,agente5,eletrocutado,morte) \to stopped(g19)
+\end{eqnarray}
+
+\begin{eqnarray}\nonumber
+   possOfNegConseqFor(relParafusoConector) \nonumber \\
+    \wedge happensNegConseqFor(relParafusoConector) \nonumber \\ 
+    \wedge requiresCirc(g19,relParafusoConector) \nonumber \\  
+    \wedge instanceOfRel(relParafusoConector) \nonumber \\ 
+    \wedge hasRisk(relParafusoConector,eletrocutado,morte) \nonumber \\  
+    \wedge starts(agente6,g19) \nonumber \\ 
+    \to negConseqFor(g19,agente6,eletrocutado,morte) \\ \nonumber    
+\end{eqnarray}
+
+\begin{eqnarray}
+	negConseqFor(g19,agente6,eletrocutado,morte) \to stopped(g19)
+\end{eqnarray}
+
+\begin{eqnarray}\nonumber
+   possOfNegConseqFor(relParafusoConector) \nonumber \\
+    \wedge happensNegConseqFor(relParafusoConector) \nonumber \\ 
+    \wedge requiresCirc(g19,relParafusoConector) \nonumber \\  
+    \wedge instanceOfRel(relParafusoConector) \nonumber \\ 
+    \wedge hasRisk(relParafusoConector,eletrocutado,morte) \nonumber \\  
+    \wedge starts(agente7,g19) \nonumber \\ 
+    \to negConseqFor(g19,agente7,eletrocutado,morte) \\ \nonumber
+\end{eqnarray}
+
+\begin{eqnarray}
+	negConseqFor(g19,agente7,eletrocutado,morte) \to stopped(g19)
+\end{eqnarray}
+
+
+\subsection{Raciocínio - 6}
+\label{raciocinio6}
+Esse raciocínio tem a finalidade de mostrar como se dá os raciocínios para quando se faz necessário verificar se um objetivo foi atingido. O objetivo $g23$ deve ser atingido pelos agentes com as funções de $executor1$,$executor2$,$executor3$ e $executor5$. 
+
+\begin{enumerate}
+	\item $stopped(agente2,g23) \to F$	
+	\item $stopped(agente3,g23) \to F$
+	\item $stopped(agente4,g23) \to F$
+	\item $stopped(agente5,g23) \to F$
+	\item $stopped(agente7,g23) \to F$
+	\item $hasObligation(executor1,g23)$	
+	\item $hasObligation(executor2,g23)$	
+	\item $hasObligation(executor3,g23)$		
+	\item $adoptsRole(agente2,executor1)$
+	\item $adoptsRole(agente3,executor1)$
+	\item $adoptsRole(agente4,executor2)$
+	\item $adoptsRole(agente5,executor3)$
+	\item $adoptsRole(agente7,executor5)$		
+\end{enumerate}
+
+Essa situação é resolvida pelo algoritmo presente em \ref{wenStop}. A primeira etapa do algoritmo se dá por executar a função $ifNotStopped(agentArray,goal)$. Um dos argumentos, portanto, é um vetor de $Agents$. Para essa situação em específico, esse vetor é descrito da seguinte forma $ag_{array} = \{ agente2,agente3,agente4,agente5,agente7 \}$. O argumento goal é carregado com $g23$. A primera etapa da desta função reside avaliar todos os agentes (um por um) em um \textit(forEach). Nessa avaliação é feito um teste sobre o predicado $stopped(ag)$ que se retornar verdade faz com que $ifNotStopped(agentArray,goal)$ retorne falso. Contudo, para o caso em analise, verificamos que o predicado $stopped(ag_n)$ retorna falso para todos os agentes. O segundo passo consiste na avaliação da função $allAgentObligate(agentArray,goal)$ cujo propósito consite verificar se todos os agentes que são obrigados a alcançar o objetivo em análise estão presentes. Nesse estudo de caso é possível verificar que os agentes 2,3,4,5 e 7 adotaram as funções de executor 1,2,3 e estas são obrigadas a executar o objetivo $g23$. Logo, para esse problema a função $allAgentObligate(agentArray,goal)$ retorna verdade e, por consequência, a função $ifNotStopped(agentArray,goal)$ retorna que $reached(g23)$ é verdade.  
+
+
+\subsection{Raciocínio - 7}
+\label{raciocinio7}
+O raciocínio para o caso onde $agente1$ tente alcançar o objetivo $g23$.  
+
+\begin{enumerate}
+	\item $adoptsRole(agente1,supervisor)$
+	\item $hasObligation(agente1,g23) \to F$										
+\end{enumerate}
+
+Isso implica uma afirmação falsa, então esse mundo não é possível segundo o modelo implementado para este estudo de caso.

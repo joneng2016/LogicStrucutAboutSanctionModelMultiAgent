@@ -1,0 +1,89 @@
+\section{Comparação entre VS3 e o modelo proposto neste estudo}
+
+A Tabela \ref{vs3comparacao1}  apresentam uma comparação entre o \textit{VS3} e o modelo proposto neste estudo.
+
+\begin{center}
+\begin{longtable}[H]{|p{0.3\linewidth}|p{0.3\linewidth}|p{0.3\linewidth}|}
+\hline			
+\textbf{Atributos}
+& 
+\textbf{VS3}
+& 
+\textbf{Modelo deste Estudo} 
+\\ \hline
+Finalidade
+&
+Representar cenários de acidentes a fim de simulá-los com propósito de treinamento profissional 
+&
+Representar cenários de acidentes 
+\\ \hline
+Artefatos-Objetos
+&
+Representa objetos através da classe (da ontologia atrelada ao módulo \textit{Domain Model}) \textit{V3S-Object}
+&
+Representa objetos através do conjunto \textit{Artefact}
+\\ \hline
+Relações entre entidades
+&
+Representa as relações entre objetos através da classe (da ontologia atrelada ao módulo \textit{Domain Model}) \textit{V3S-Action} através de relacionamentos com a classe \textit{V3S-Object}
+&
+Representa as relações entre as entidades através do predicado $possEntityRel(r_l,e_i,e_k)$
+\\ \hline
+Riscos e Acidentes
+&
+Modelo \textit{MELISSA} (BATU E BCTU)
+&
+Uso de normas, violações, sanções e lógica possibilística aplicadas a contextos específicos por meio das regras \ref{conditionViol}, \ref{relationViol}, \ref{entityViol}, \ref{consconditionViol} e \ref{consrelationViol}
+\\ \hline 
+Agentes     	
+& 
+Uso do \textit{Framework} MASVERP 
+& 
+Não representar os processos mentais do agente 
+\\ \hline 
+Estrutura da Linguagem
+& 
+Diferentes formalismos da computação tais como: ontologias, lógica de primeira ordem, algoritmos e entre outros
+&
+Teoria de Conjuntos e Lógica de Predicados
+\\ 
+\hline
+\newpage
+\hline
+\textbf{Atributos}
+& 
+\textbf{VS3}
+& 
+\textbf{Modelo deste Estudo} 
+\\ \hline 
+Estruturas para Avaliação e Treinamento
+& 
+HERA
+&
+Não consta
+\\ \hline
+\caption{Comparação entre o \textit{VS3} e o modelo proposto neste estudo}
+\label{vs3comparacao1}
+\end{longtable}
+\end{center}
+
+A lista a seguir apresenta uma comparação entre os costrutores do \textit{ACTIVITY-DL} e a parte deste modelo conceitual focada em representar as relações entre os objetivos. Observar Tabela \ref{acticonstruct} 
+
+\begin{enumerate}
+	\item \begin{itemize}
+			\item \textit{ACTIVITY-DL:}  A $IND$ B.
+			\item \textit{Modelo:} $nextGoal(A,B)$,$nextGoal(B,A)$,$nextGoal(A,B) \to F$,$nextGoal(B,A) \to F$, $nextGoal(X,A) \wedge nextGoal(X,B) \wedge nextGoal(A,Y) \wedge nextGoal(B,Y)$, $nextGoal(X,A) \wedge nextGoal(X,B) \wedge nextGoal(A,Y) \wedge nextGoal(B,Y) \to F$   e outras situações que não podem ser expressadas nessa representação.
+		\end{itemize}
+	\item \begin{itemize}
+			\item \textit{ACTIVITY-DL:} A $SEQ$ B.
+			\item $nextGoal(A,B)$, $nextGoal(B,A)$ e outras situações que não podem ser expressadas nessa representação. 
+		\end{itemize}
+	\item \begin{itemize}
+			\item \textit{ACTIVITY-DL:} A $SEQ-ORDER$ B.
+			\item $nextGoal(A,B)$  e outras situações que não podem ser expressadas nessa representação.
+		\end{itemize}
+	\item \begin{itemize}
+			\item \textit{ACTIVITY-DL:} A $PAR-SIM$ B, A $PAR-SIM$ B, A $PAR-START$ B, A $PAR-END$ B 
+			\item $nextGoal(X,A) \wedge nextGoal(X,B) \wedge nextGoal(A,Y) \wedge nextGoal(B,Y) $ e outras situações que não podem ser expressadas nessa representação.  
+		\end{itemize}
+\end{enumerate} 

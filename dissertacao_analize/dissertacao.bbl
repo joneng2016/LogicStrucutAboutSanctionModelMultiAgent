@@ -1,0 +1,314 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{1.52 }
+
+\bibitem[Abbas et al. 2015]{organiationofmultiagentsystem}
+\abntrefinfo{Abbas et al.}{ABBAS et al.}{2015}
+{ABBAS, H.; SHAHEEN, S.; AMIN, M. H. Organization of multi-agent systems: An
+  overview.
+\textbf{International Journal of Intelligent Information Systems}, 06 2015.}
+
+\bibitem[Allen 1983]{allenalgebric}
+\abntrefinfo{Allen}{ALLEN}{1983}
+{ALLEN, J.~F. Maintaining knowledge about temporal intervals.
+\textbf{Commun. ACM}, ACM, New York, NY, USA, v.~26, n.~11, p. 832--843, nov.
+  1983.
+ISSN 0001-0782.
+Dispon{\'\i}vel em: $<$http://doi.acm.org/10.1145/182.358434$>$.}
+
+\bibitem[Ashby 1962]{selforganization}
+\abntrefinfo{Ashby}{ASHBY}{1962}
+{ASHBY, W.~R. Principles of the self-organizing system. In:  FOERSTER, H. v.;
+  ZOPF, G.~W. (Ed.). \textbf{Principles of Self-Organization: Transactions of
+  the University of Illinois Symposium}. London: Pergamon, 1962. p. 255--278.}
+
+\bibitem[Barot et al. 2013]{v3sframework}
+\abntrefinfo{Barot et al.}{BAROT et al.}{2013}
+{BAROT, C. et al. {V3S:} {A} virtual environment for risk-management training
+  based on human-activity models.
+\textbf{Presence}, v.~22, n.~1, p. 1--19, 2013.
+Dispon{\'\i}vel em:
+  $<$http://www.mitpressjournals.org/doi/abs/10.1162/PRES\_a\_00134$>$.}
+
+\bibitem[Barrett e Weld 1994]{planning}
+\abntrefinfo{Barrett e Weld}{BARRETT; WELD}{1994}
+{BARRETT, A.; WELD, D.~S. Partial-order planning: Evaluating possible
+  efficiency gains.
+\textbf{Artificial Intelligence}, v.~67, n.~1, p. 71 -- 112, 1994.
+ISSN 0004-3702.
+Dispon{\'\i}vel em:
+  $<$http://www.sciencedirect.com/science/article/pii/0004370294900124$>$.}
+
+\bibitem[Bonasso et al. 1995]{reactiveagent}
+\abntrefinfo{Bonasso et al.}{BONASSO et al.}{1995}
+{BONASSO, R. P. et al. Experiences with an architecture for intelligent,
+  reactive agents. In:  . [S.l.: s.n.], 1995. v.~9, p. 187--202.}
+
+\bibitem[Camus et al. 2012]{melissaproject}
+\abntrefinfo{Camus et al.}{CAMUS et al.}{2012}
+{CAMUS, F.; LENNE, D.; PLOT, E. Designing virtual environments for risk
+  prevention: the melissa approach.
+\textbf{International Journal on Interactive Design and Manufacturing
+  (IJIDeM)}, v.~6, n.~1, p. 55--63, Feb 2012.
+ISSN 1955-2505.
+Dispon{\'\i}vel em: $<$https://doi.org/10.1007/s12008-011-0138-4$>$.}
+
+\bibitem[Carron e Boissier 2001]{dynamicagenttemporalstruct}
+\abntrefinfo{Carron e Boissier}{CARRON; BOISSIER}{2001}
+{CARRON, T.; BOISSIER, O. Towards a temporal organizational structure language
+  for dynamic multi-agent systems.
+01 2001.}
+
+\bibitem[Castelfranchi 1995]{deonticOne}
+\abntrefinfo{Castelfranchi}{CASTELFRANCHI}{1995}
+{CASTELFRANCHI, C. Commitments: From individual intentions to groups and
+  organizations. In:  \textbf{ICMAS}. [S.l.: s.n.], 1995.}
+
+\bibitem[Castelfranchi et al. 2018]{relationwithagentprogram}
+\abntrefinfo{Castelfranchi et al.}{CASTELFRANCHI et al.}{2018}
+{CASTELFRANCHI, C. et al. Social trust: A cognitive approach.
+12 2018.}
+
+\bibitem[Chang e Meneguzzi 2016]{normas}
+\abntrefinfo{Chang e Meneguzzi}{CHANG; MENEGUZZI}{2016}
+{CHANG, S.; MENEGUZZI, F. Simulating normative behaviour in multi-agent
+  environments using monitoring artefacts. In:  DIGNUM, V. et al. (Ed.).
+  \textbf{Coordination, Organizations, Institutions, and Norms in Agent Systems
+  XI}. Cham: Springer International Publishing, 2016. p. 59--77.
+ISBN 978-3-319-42691-4.}
+
+\bibitem[Chen 1976]{entity}
+\abntrefinfo{Chen}{CHEN}{1976}
+{CHEN, P.~P. shan. The entity-relationship model: Toward a unified view of
+  data.
+\textbf{ACM Transactions on Database Systems}, v.~1, p. 9--36, 1976.}
+
+\bibitem[Dastani et al. 2009]{dastaniframework}
+\abntrefinfo{Dastani et al.}{DASTANI et al.}{2009}
+{DASTANI, M. et al. Normative multi-agent programs and their logics. In:
+  MEYER, J.-J.~C.; BROERSEN, J. (Ed.). \textbf{Knowledge Representation for
+  Agents and Multi-Agent Systems}. Berlin, Heidelberg: Springer Berlin
+  Heidelberg, 2009. p. 16--31.
+ISBN 978-3-642-05301-6.}
+
+\bibitem[Edward et al. 2008]{mavesp}
+\abntrefinfo{Edward et al.}{EDWARD et al.}{2008}
+{EDWARD, L. et al. Modelling autonomous virtual agent behaviours in a virtual
+  environment for risk.
+\textbf{IJVR}, v.~7, p. 13--22, 01 2008.}
+
+\bibitem[Esteva et al. 2002]{formalizeagent}
+\abntrefinfo{Esteva et al.}{ESTEVA et al.}{2002}
+{ESTEVA, M.; PADGET, J.; SIERRA, C. Formalizing a languages for institutions
+  and norms. In:  MEYER, J.; TAMBE, M. (Ed.). \textbf{Lecture Notes Artificial
+  Intelligence}. [S.l.]: Springer-Verlag, 2002. v.~2333, p. 348--366.}
+
+\bibitem[Exploring Organizational Designs with TAEMS: A Case Study of
+  Distributed Data Processing 1996]{taems01}
+\abntrefinfo{Exploring\ldots}{EXPLORING\ldots}{1996}
+{EXPLORING Organizational Designs with TAEMS: A Case Study of Distributed Data
+  Processing.
+09 1996.}
+
+\bibitem[Fadier et al. 2003]{safety}
+\abntrefinfo{Fadier et al.}{FADIER et al.}{2003}
+{FADIER, E.; GARZA, C. D.~L.; DIDELOT, A. Safe design and human activity:
+  construction of a theoretical framework from an analysis of a printing
+  sector.
+\textbf{Safety Science}, v.~41, n.~9, p. 759 -- 789, 2003.
+ISSN 0925-7535.
+Dispon{\'\i}vel em:
+  $<$http://www.sciencedirect.com/science/article/pii/S092575350200022X$>$.}
+
+\bibitem[Ferber e Gutknecht 1998]{roleone}
+\abntrefinfo{Ferber e Gutknecht}{FERBER; GUTKNECHT}{1998}
+{FERBER, J.; GUTKNECHT, O. A meta-model for the analysis and design of
+  organizations in multi-agent systems. In:  \textbf{Proceedings of the 3rd
+  International Conference on Multi Agent Systems}. Washington, DC, USA: IEEE
+  Computer Society, 1998.  (ICMAS '98), p. 128--.
+ISBN 0-8186-8500-X. Dispon{\'\i}vel em:
+  $<$http://dl.acm.org/citation.cfm?id=551984.852257$>$.}
+
+\bibitem[Foerster 2003]{selforganizatioenvoriment}
+\abntrefinfo{Foerster}{FOERSTER}{2003}
+{FOERSTER, H. von. On self-organizing systems and their environments.
+\textbf{Self-organizing systems}, p. 31--50, 01 2003.}
+
+\bibitem[Fox et al. 1996]{roletwo}
+\abntrefinfo{Fox et al.}{FOX et al.}{1996}
+{FOX, M.~S.; BARBUCEANU, M.; GRUNINGER, M. An organisation ontology for
+  enterprise modeling: Preliminary concepts for linking structure and
+  behaviour.
+\textbf{Computers in Industry}, v.~29, n.~1, p. 123 -- 134, 1996.
+ISSN 0166-3615.
+WET ICE '95.
+Dispon{\'\i}vel em:
+  $<$http://www.sciencedirect.com/science/article/pii/0166361595000798$>$.}
+
+\bibitem[Garson 2018]{modallogic}
+\abntrefinfo{Garson}{GARSON}{2018}
+{GARSON, J. Modal logic. In:  ZALTA, E.~N. (Ed.). \textbf{The Stanford
+  Encyclopedia of Philosophy}. Fall 2018. [S.l.]: Metaphysics Research Lab,
+  Stanford University, 2018.}
+
+\bibitem[Garvey e Lesser 1996]{TAEMS}
+\abntrefinfo{Garvey e Lesser}{GARVEY; LESSER}{1996}
+{GARVEY, A.; LESSER, V. Design-to-time scheduling and anytime algorithms.
+\textbf{SIGART Bull.}, ACM, New York, NY, USA, v.~7, n.~2, p. 16--19, abr.
+  1996.
+ISSN 0163-5719.
+Dispon{\'\i}vel em: $<$http://doi.acm.org/10.1145/242587.242591$>$.}
+
+\bibitem[Genesereth e Nilsson 1987]{logicagent}
+\abntrefinfo{Genesereth e Nilsson}{GENESERETH; NILSSON}{1987}
+{GENESERETH, M.~R.; NILSSON, N.~J. \textbf{Logical Foundations of Artificial
+  Intelligence}. San Francisco, CA, USA: Morgan Kaufmann Publishers Inc., 1987.
+ISBN 0-934613-31-1.}
+
+\bibitem[Gruber et al. 2018]{Gruber2018UsingGE}
+\abntrefinfo{Gruber et al.}{GRUBER et al.}{2018}
+{GRUBER, Y.~A. et al. Using game engines in lightning shielding: The
+  application of the rolling spheres method on virtual as-built power
+  substations. In:  . [S.l.: s.n.], 2018.}
+
+\bibitem[H{\"u}bner et al. 2002]{moiseframeworktwo}
+\abntrefinfo{H{\"u}bner et al.}{H{\"U}BNER et al.}{2002a}
+{H{\"U}BNER, J.; SICHMAN, J.; BOISSIER, O. Moise+: Towards a structural,
+  functional, and deontic model for mas organization. In:  . [S.l.: s.n.],
+  2002. p. 501--502.}
+
+\bibitem[H{\"u}bner et al. 2002]{moiseframework}
+\abntrefinfo{H{\"u}bner et al.}{H{\"U}BNER et al.}{2002b}
+{H{\"U}BNER, J.~F.; SICHMAN, J.~S.; BOISSIER, O. A model for the structural,
+  functional, and deontic specification of organizations in multiagent systems.
+  In:  BITTENCOURT, G.; RAMALHO, G.~L. (Ed.). \textbf{Advances in Artificial
+  Intelligence}. Berlin, Heidelberg: Springer Berlin Heidelberg, 2002. p.
+  118--128.
+ISBN 978-3-540-36127-5.}
+
+\bibitem[Jennings e L\'esprance 2000]{whatisagent}
+\abntrefinfo{Jennings e L\'esprance}{JENNINGS; L\'ESPRANCE}{2000}
+{JENNINGS, N. R.; L\'ESPRANCE, Y. \textbf{Intelligent Agents VI. Agent
+  Theories, Architectures, and Languages: 6th International Workshop,
+  ATAL’99, Orlando, Florida, USA, July 15-17, 1999. Proceedings}. [S.l.:
+  s.n.], 2000.
+ISBN 978-3-540-67200-5.}
+
+\bibitem[Lendaris 1964]{defintionselforganization}
+\abntrefinfo{Lendaris}{LENDARIS}{1964}
+{LENDARIS, G. On the definition of self-organizing systems.
+\textbf{Proceedings of the IEEE}, v.~52, p. 324-- 325, 04 1964.}
+
+\bibitem[Lopez e Luck 2003]{modelingnormsforautnomousagent}
+\abntrefinfo{Lopez e Luck}{LOPEZ; LUCK}{2003}
+{LOPEZ, F.; LUCK, M. Modelling norms for autonomous agents. In:  . [S.l.:
+  s.n.], 2003. p. 238 -- 245.
+ISBN 0-7695-1915-6.}
+
+\bibitem[L{\'o}pez e Luck 2004]{amodelmultiagentsystemdynamicrelationship}
+\abntrefinfo{L{\'o}pez e Luck}{L{\'O}PEZ; LUCK}{2004}
+{L{\'O}PEZ, F. L{\'o}pez~y; LUCK, M. A model of normative multi-agent systems
+  and dynamic relationships. In:  LINDEMANN, G.; MOLDT, D.; PAOLUCCI, M. (Ed.).
+  \textbf{Regulated Agent-Based Social Systems}. Berlin, Heidelberg: Springer
+  Berlin Heidelberg, 2004. p. 259--280.
+ISBN 978-3-540-25867-4.}
+
+\bibitem[Moses e Tennenholtz 1995]{formalizeagent2}
+\abntrefinfo{Moses e Tennenholtz}{MOSES; TENNENHOLTZ}{1995}
+{MOSES, Y.; TENNENHOLTZ, M. Artificial social systems.
+\textbf{Computers and Artificial Intelligence}, v.~14, 12 1995.}
+
+\bibitem[Pentland e Rueter 1994]{grammarselforganizationmodel2}
+\abntrefinfo{Pentland e Rueter}{PENTLAND; RUETER}{1994}
+{PENTLAND, B.; RUETER, H. H. Organizational routines as grammars of action.
+\textbf{Administrative Science Quarterly}, v.~39, p.~484, 09 1994.}
+
+\bibitem[Pentland 1995]{grammarselforganizationmodel}
+\abntrefinfo{Pentland}{PENTLAND}{1995}
+{PENTLAND, B.~T. Grammatical models of organizational processes.
+\textbf{Organization Science}, v.~6, n.~5, p. 541--556, 1995.}
+
+\bibitem[Prigogine e Nicolis 1985]{selforganizationdiffforce}
+\abntrefinfo{Prigogine e Nicolis}{PRIGOGINE; NICOLIS}{1985}
+{PRIGOGINE, I.; NICOLIS, G. Self-organisation in nonequilibrium systems:
+  Towards a dynamics of complexity.
+In:  \underline{\ \ \ \ \ \ \ \ }. \textbf{Bifurcation Analysis: Principles,
+  Applications and Synthesis}. Dordrecht: Springer Netherlands, 1985. p. 3--12.
+ISBN 978-94-009-6239-2.}
+
+\bibitem[Rao e Georgeff 1991]{bdi}
+\abntrefinfo{Rao e Georgeff}{RAO; GEORGEFF}{1991}
+{RAO, A.~S.; GEORGEFF, M.~P. Modeling rational agents within a
+  bdi-architecture. In:  \textbf{Proceedings of the Second International
+  Conference on Principles of Knowledge Representation and Reasoning}. San
+  Francisco, CA, USA: Morgan Kaufmann Publishers Inc., 1991.  (KR'91), p.
+  473--484.
+ISBN 1-55860-165-1. Dispon{\'\i}vel em:
+  $<$http://dl.acm.org/citation.cfm?id=3087158.3087205$>$.}
+
+\bibitem[Rasmussen 1997]{riskoldschool}
+\abntrefinfo{Rasmussen}{RASMUSSEN}{1997}
+{RASMUSSEN, J. Risk management in a dynamic society: a modelling problem.
+\textbf{Safety Science}, v.~27, n.~2, p. 183 -- 213, 1997.
+ISSN 0925-7535.
+Dispon{\'\i}vel em:
+  $<$http://www.sciencedirect.com/science/article/pii/S0925753597000520$>$.}
+
+\bibitem[Ricci et al. 2006]{programingagentartefact}
+\abntrefinfo{Ricci et al.}{RICCI et al.}{2006}
+{RICCI, A.; VIROLI, M.; OMICINI, A. Programming mas with artifacts. In:
+  BORDINI, R.~H. et al. (Ed.). \textbf{Programming Multi-Agent Systems}.
+  Berlin, Heidelberg: Springer Berlin Heidelberg, 2006. p. 206--221.
+ISBN 978-3-540-32617-5.}
+
+\bibitem[Ricci et al. 2007]{cartago}
+\abntrefinfo{Ricci et al.}{RICCI et al.}{2007}
+{RICCI, A.; VIROLI, M.; OMICINI, A. Cartago: A framework for prototyping
+  artifact-based environments in mas. In:  WEYNS, D.; PARUNAK, H. V.~D.;
+  MICHEL, F. (Ed.). \textbf{Environments for Multi-Agent Systems III}. Berlin,
+  Heidelberg: Springer Berlin Heidelberg, 2007. p. 67--86.
+ISBN 978-3-540-71103-2.}
+
+\bibitem[Rosendo et al. 2011]{programa}
+\abntrefinfo{Rosendo et al.}{ROSENDO et al.}{2011}
+{ROSENDO, M. et al. Towards the development of a 3d serious game for training
+  in power network maintenance. In:  . [S.l.: s.n.], 2011. p. 16 -- 23.}
+
+\bibitem[Russell e Norvig 2003]{artificialinteligencemodermapproach}
+\abntrefinfo{Russell e Norvig}{RUSSELL; NORVIG}{2003}
+{RUSSELL, S.~J.; NORVIG, P. \textbf{Artificial intelligence - a modern
+  approach, 2nd Edition}. Prentice Hall, 2003.  (Prentice Hall series in
+  artificial intelligence).
+ISBN 0130803022. Dispon{\'\i}vel em:
+  $<$http://www.worldcat.org/oclc/314283679$>$.}
+
+\bibitem[Samara et al. 2018]{wesaac}
+\abntrefinfo{Samara et al.}{SAMARA et al.}{2018}
+{SAMARA, J.~M. et al. Um modelo de multiagentes normativos para descrição de
+  personagens de jogos sérios. In:  \textbf{Knowledge Representation for
+  Agents and Multi-Agent Systems}. [S.l.]: XII Workshop-Escola de Sistemas de
+  Agentes, seus Ambientes e Aplicações, 2018. p. 49--60.}
+
+\bibitem[So e Durfee 1996]{taems02}
+\abntrefinfo{So e Durfee}{SO; DURFEE}{1996}
+{SO, Y.-p.; DURFEE, E. An organizational self-design model for organizational
+  change.
+03 1996.}
+
+\bibitem[Wooldridge e Jennings 1995]{layeragent}
+\abntrefinfo{Wooldridge e Jennings}{WOOLDRIDGE; JENNINGS}{1995}
+{WOOLDRIDGE, M.; JENNINGS, N.~R. Intelligent agents: theory and practice.
+\textbf{The Knowledge Engineering Review}, Cambridge University Press, v.~10,
+  n.~2, p. 115–152, 1995.}
+
+\bibitem[Wright 1969]{ontologynormative}
+\abntrefinfo{Wright}{WRIGHT}{1969}
+{WRIGHT, G.~H. von. On the logic and ontology of norms.
+In:  \underline{\ \ \ \ \ \ \ \ }. \textbf{Philosophical Logic}. Dordrecht:
+  Springer Netherlands, 1969. p. 89--107.
+ISBN 978-94-010-9614-0.}
+
+\end{thebibliography}

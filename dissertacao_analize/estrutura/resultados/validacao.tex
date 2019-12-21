@@ -1,0 +1,11 @@
+O estudo de caso especificado pelo modelo conceitual proposto nesse estudo foi implementado em Prolog. A seguir segue um exemplo de como a regra \ref{reldeonticrole} é escrita em Prolog.
+
+hasPermission(RHO,GOAL) :- hasObligation(RHO,GOAL).
+
+A seguir há um exemplo da especificação $adoptsRole(agente1,supervisor)$ implementada em Prolog.
+
+adoptsRole(agente1,supervisor).
+
+As consultas, em \textit{Prolog}, são feitas por escrever a especificação do implicador ($implicador \to implicado$). Usando o algoritmo \textit{Backtracking}, é possível encontrar todos os predicados que são verdade. Por exemplo, para avaliar o Raciocínio 3 se fazem necessárias fazer as seguintes consultas: $? - stopped(g1)$, $? - entityViol(agente4,g1,pano)$, $? - entityViol(agente3,g1,pano)$, $? - entityViol(agent2,g1,pano)$. 
+
+O apêndice \ref{program} apresenta a implementação das regras e dos raciocínios em Prolog e, no caso do algoritmo, em JavaScript.
