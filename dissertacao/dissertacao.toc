@@ -77,9 +77,10 @@
 \contentsline {section}{\numberline {A.6}\MakeUppercase {Substitui\IeC {\c c}\IeC {\~a}o do Conector - M\IeC {\'e}todo ao Potencial}}{146}
 \contentsline {chapter}{Ap\^endice{} B{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Programa}}{149}
 \contentsline {section}{\numberline {B.1}\MakeUppercase {Regras}}{149}
-\contentsline {section}{\numberline {B.2}\MakeUppercase {Racioc\IeC {\'\i }nio 1}}{149}
-\contentsline {section}{\numberline {B.3}\MakeUppercase {Racioc\IeC {\'\i }nio 2}}{150}
-\contentsline {section}{\numberline {B.4}\MakeUppercase {Racioc\IeC {\'\i }nio 3}}{150}
-\contentsline {section}{\numberline {B.5}\MakeUppercase {Racioc\IeC {\'\i }nio 4}}{151}
-\contentsline {section}{\numberline {B.6}\MakeUppercase {Racioc\IeC {\'\i }nio 5}}{151}
-\contentsline {section}{\numberline {B.7}\MakeUppercase {Racioc\IeC {\'\i }nio 6}}{152}
+\contentsline {section}{\numberline {B.2}\MakeUppercase {Racioc\IeC {\'\i }nio 1}}{150}
+\contentsline {section}{\numberline {B.3}\MakeUppercase {Racioc\IeC {\'\i }nio 2}}{151}
+\contentsline {section}{\numberline {B.4}\MakeUppercase {Racioc\IeC {\'\i }nio 3}}{151}
+\contentsline {section}{\numberline {B.5}\MakeUppercase {Racioc\IeC {\'\i }nio 4}}{152}
+\contentsline {section}{\numberline {B.6}\MakeUppercase {Racioc\IeC {\'\i }nio 5}}{152}
+\contentsline {section}{\numberline {B.7}\MakeUppercase {Racioc\IeC {\'\i }nio 6}}{153}
+\contentsline {chapter}{Ap\^endice{} C{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Autoriza\IeC {\c c}\IeC {\~a}o para Divulga\IeC {\c c}\IeC {\~a}o de Informa\IeC {\c c}\IeC {\~o}es de Empresas}}{155}

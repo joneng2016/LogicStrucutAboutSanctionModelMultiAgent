@@ -1,83 +1,170 @@
-\documentclass[openright]{normas-utf-tex} %openright = o capitulo comeca sempre em paginas impares
-
-\special{papersize=210mm,297mm}
-
-\usepackage[alf,abnt-emphasize=bf,bibjustif,recuo=0cm, abnt-etal-cite=2, abnt-etal-list=99]{abntcite} %configuracao correta das referencias bibliograficas.
+\documentclass{utfpr-pg}
+\usepackage{graphicx}
+\usepackage{cmap}
+\usepackage{blindtext}
+\usepackage[T1]{fontenc}
 
 \usepackage[brazil]{babel} % pacote portugues brasileiro
 \usepackage[utf8]{inputenc} % pacote para acentuacao direta
-\usepackage{amsmath,amsfonts,amssymb} % pacote matematico
-\usepackage{graphicx} % pacote grafico
-\usepackage{times} % fonte times
-\usepackage[final]{pdfpages} % adicao da ata
-\usepackage{float}
-\usepackage{scalefnt}
+
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsmath}
+
+\usepackage{nameref}
+\usepackage{caption}
+\usepackage{listings}
 \usepackage{algorithmic}% http://ctan.org/pkg/algorithms
 \usepackage{longtable}
+\usepackage{scalefnt}
 
-\instituicao{Universidade Tecnológica Federal do Paraná} % nome da instituicao
-\programa{Programa de Pós-graduação em Engenharia Elétrica e Informática Industrial} % nome do programa
-\area{Informática Industrial} % [Engenharia Biom\'edica] ou [Inform\'atica Industrial] ou [Telem\'atica]
+\usepackage{float}
 
-\documento{Dissertação} % [Disserta\c{c}\~ao] ou [Tese]
-\nivel{Mestrado} % [Mestrado] ou [Doutorado]
-\titulacao{Mestre} % [Mestre] ou [Doutor]
 
-\titulo{Um Modelo Conceitual para Cenários de Acidentes em Atividades de Manutenção} % titulo do trabalho em portugues
-\title{\MakeUppercase{A Conceptual Model for Maintenance Activity Accident Scenarios}} % titulo do trabalho em ingles
+\captionsetup{justification=raggedright,singlelinecheck=false,format=hang,skip=-1pt,font={footnotesize,bf},labelfont=bf}
 
-\autor{Jonathan Morris Samara} % autor do trabalho
-\cita{Morris Samara, Jonathan} % sobrenome (maiusculas), nome do autor do trabalho
 
-\palavraschave{agentes, atividades, objetivos, normas, riscos, violação, consequências, modelo conceitual} % palavras-chave do trabalho
-\keywords{agents, activities, goals, norms, risks, violation, consequences, conceptual model} % palavras-chave do trabalho em ingles
+\newlistof{lstlistoflistings}{lol}{\lstlistlistingname}
 
-\comentario{\UTFPRdocumentodata\ apresentada ao \UTFPRprogramadata\ da \ABNTinstituicaodata\ como requisito parcial para obtenção do grau de ``\UTFPRtitulacaodata\ em Ciências'' -- Área de Concentração: \UTFPRareadata.}
 
-\orientador{Cesar Augusto Tacla} 
-\local{Curitiba} % cidade
-\data{\the\year} % ano automatico
+\let\oldlstlistoflistings\lstlistoflistings
+\renewcommand{\lstlistoflistings}{%
+  \begingroup%
+  \let\oldnumberline\numberline%
+  \renewcommand{\numberline}{\lstlistingname~\oldnumberline}%
+  \oldlstlistoflistings*%
+  \endgroup}
 
-% desativa hifenizacao mantendo o texto justificado.
-% thanks to Emilio C. G. Wille
-\tolerance=1
-\emergencystretch=\maxdimen
-\hyphenpenalty=10000
-\hbadness=10000
-\sloppy
 
-%---------- Inicio do Documento ----------
+\renewcommand{\lstlistingname}{Código}
+\renewcommand{\lstlistlistingname}{Lista de Códigos}
+
+\lstset{
+  numbers=left,
+  stepnumber=2,
+  firstnumber=1,
+  numberfirstline=true
+  captionpos=b,                    % sets the caption-position to bottom
+}
+
+
+\DeclareFloatingEnvironment[
+fileext=lod,
+listname=Lista de Definições,
+name=Definição,
+placement=tbhp,
+]{definicao}
+
+
+
+\departamento{Departamento Acadêmico de Informática}
+
+%Caso TCC altere para o nome do seu curso de graduação!!!!
+\curso{Programa de Pós-graduação em Engenharia Elétrica e Informática Industrial}
+\autor{Jonathan Morris Samara}
+\titulo{Um Modelo Conceitual para Cenários de Acidentes em Atividades de Manutenção}
+
+%Caso TCC altere para "Trabalho de Conclusao de Curso"!!!!
+\tipotrabalho{Dissertação}
+\local{Curitiba}
+\data{2019}
+
+\orientador{Cesar Augusto Tacla}
+
+\preambulo{\imprimirtipotrabalho\ apresentada como requisito parcial à obtenção do grau de Mestre em Ciência da Computação, do Departamento Acadêmico de Informática, da Universidade Tecnológica Federal do Paraná.}
+
+% informações do PDF
+\makeatletter
+\hypersetup{
+	pagebackref=true,
+	pdftitle={\@title},
+	pdfauthor={\@author},
+	pdfsubject={\imprimirpreambulo},
+	pdfcreator={LaTeX with abnTeX2},
+	colorlinks=true,
+	linkcolor=black,
+	citecolor=black,
+	filecolor=black,
+	urlcolor=black
+}
+\makeatother
+
+% Controle do espaçamento entre um parágrafo e outro:
+\setlength{\parskip}{0.1cm}  % tente também \onelineskip
+
+\makeindex
+
 \begin{document}
-
-\capa % geracao automatica da capa
-\folhaderosto % geracao automatica da folha de rosto
-
-% Lembre-se de que a ficha catalografica eh impressa no verso da folha de rosto
-% Ficha catalografica
-\fichacatpum{T137}
-\fichacatautor{Morris Samara, Jonathan}
-\fichacatpgbib{\pageref{bibstart}-\pageref{bibend}}
-\fichacatpalcha{1. Sistema Multiagente. 2. Normas. 3. Sanção, Violação}
-\fichacatpdois{CDD (22. ed.) 621.3}
-\fichacatbib{Biblioteca xxxxxx}
-\fichacat
+% Retira espaço extra obsoleto entre as frases.
+\frenchspacing
 
 
-% dedicatoria
+\counterwithout{lstlisting}{chapter}
+
+
+
+\imprimircapa
+\imprimirfolhaderosto
+
+\begin{fichacatalografica}
+	\vspace*{\fill}					% Posição vertical
+	\hrule							% Linha horizontal
+	\begin{center}					% Minipage Centralizado
+	\begin{minipage}[c]{12.5cm}		% Largura
+
+	\imprimirautor
+
+	\hspace{0.5cm} \imprimirtitulo  / \imprimirautor. --
+	\imprimirlocal, \imprimirdata-
+
+	\hspace{0.5cm} \pageref{LastPage} p. : il. (algumas color.) ; 30 cm.\\
+	\hspace{0.5cm} \imprimirorientadorRotulo~\imprimirorientador\\
+	\hspace{0.5cm}
+	\parbox[t]{\textwidth}{\imprimirtipotrabalho~--~\imprimirinstituicao,
+	\imprimirdata.}\\
+
+	\hspace{0.5cm}
+		1. agentes.
+		2. atividades.
+    3. objetivos.
+    4. normas.
+    5. riscos.
+    6. violação.
+    7. consequêncas.
+    8. modelo conceitual.    
+		I. Cesar Augusto Tacla.
+		II. Universidade Tecnológica Federal do Paraná
+		IV. Título do Trabalho\\
+
+	\hspace{8.75cm} CDU 02:141:005.7\\
+
+	\end{minipage}
+	\end{center}
+	\hrule
+\end{fichacatalografica}
+\cleardoublepage
+
+% Insira aqui a folha de aprovacao!
+% \includepdf{folhadeaprovacao_final.pdf}
+
 \begin{dedicatoria}
-Dedico esse trabalho a Deus, Jeová, por ter me dado a dádiva da existência.
+  \null
+  \vfill
+  \begin{flushright}
+    Dedico esse trabalho a Deus, Jeová, por ter me dado a dádiva da existência.
 
-Dedico esse trabalho a minha esposa Franciele Saldanha de Quadros pelo seu amor e por me dar o apoio necessário para levar adiante os meus sonhos, como é o caso deste Mestrado. 
+    Dedico esse trabalho a minha esposa Franciele Saldanha de Quadros pelo seu amor e por me dar o apoio necessário para levar adiante os meus sonhos, como é o caso deste Mestrado. 
 
-Dedico, também, este trabalho a meu pai Maurice Jamil Samara, por me tornar o homem que eu sou.
+    Dedico, também, este trabalho a meu pai Maurice Jamil Samara, por me tornar o homem que eu sou.
 
-Dedico, também, este trabalho a minha mãe Roseli Escarlete Almeida de Lima, que sempre me incentivou a autossuperação.
+    Dedico, também, este trabalho a minha mãe Roseli Escarlete Almeida de Lima, que sempre me incentivou a autossuperação.
 
-Dedico, também, este trabalho ao meu irmão David Morris Samara, por toda a felicidade e alegria que ele trouxe a minha vida. 
+    Dedico, também, este trabalho ao meu irmão David Morris Samara, por toda a felicidade e alegria que ele trouxe a minha vida. 
+  \end{flushright}
+
 
 \end{dedicatoria}
 
-% agradecimentos (opcional)
 \begin{agradecimentos}
 Agradeço a Deus, Jeová, pela dádiva da existência e por ter me dado energia e força para concluir esse trabalho.  
 
@@ -101,30 +188,61 @@ Agradeço ao grupo OneReal Research Group no âmbito do projeto de P\&D PD-6491-
 
 Agradeço aos Institutos Lactec pela estrutura de ponta e pela Bolsa de Mestrado.
 
-Agradeço ao Ignácio L. Del Hoyo pelo companheirismo ao longo do Mestrado. 
+Agradeço ao Ignácio L. Del Hoyo pelo companheirismo ao longo do Mestrado.
 \end{agradecimentos}
 
-% epigrafe (opcional)
 \begin{epigrafe}
-Quando a sabedoria entrar no seu coração e o conhecimento se tornar agradável para a sua alma, o raciocínio o guardará e o discernimento o protegerá - Provérbios 2:10-11
+    \vspace*{\fill}
+	\begin{flushright}
+		\textit{``Quando a sabedoria entrar no seu coração e o conhecimento se tornar agradável para a sua alma, o raciocínio o guardará e o discernimento o protegerá - Provérbios 2:10-11 - Biblia Sagrada}
+	\end{flushright}
 \end{epigrafe}
 
-%resumo
-\begin{resumo}
-\input{estrutura/resumo/resumo.tex}
-\end{resumo}
+ \begin{resumo}
+   \refthis{ref_modeloDAINF}
+   \vspace{\onelineskip}
+    \input{estrutura/resumo/resumo.tex}
+   \noindent
+   \textbf{Palavras-chaves: agentes 1. atividades 2. objetivos 3. normas 4. riscos 5. violação 6. consequências 7. modelo conceitual 8.}
+ \end{resumo}
 
-%abstract
-\begin{abstract}
+ \begin{resumo}[Abstract]
+   \refthis[en]{ref_modeloDAINF}
+   \vspace{\onelineskip}
 \input{estrutura/resumo/abstract.tex}
-\end{abstract}
+   \noindent
+   \textbf{Key-words: agents 1. activities 2. goals 3. norms 4. risks 5. violation 6. consequences 7. conceptual model 8.}
+ \end{resumo}
 
-% listas (opcionais, mas recomenda-se a partir de 5 elementos)
-\listadefiguras % geracao automatica da lista de figuras
-\listadetabelas % geracao automatica da lista de tabelas
 
-% sumario
-\sumario % geracao automatica do sumario
+\pdfbookmark[0]{\listfigurename}{lof}
+\listoffigures*
+\cleardoublepage
+
+\pdfbookmark[0]{\listtablename}{lot}
+\listoftables*
+\cleardoublepage
+
+
+\lstlistoflistings
+
+
+
+\begin{siglas}
+    \item[UTFPR] Universidade Tecnológica Federal do Paraná
+\end{siglas}
+
+ \begin{simbolos}
+    \item[$ \Gamma $] Letra grega Gama
+ \end{simbolos}
+
+\pdfbookmark[0]{\contentsname}{toc}
+\tableofcontents*
+\cleardoublepage
+
+\textual
+  \pagestyle{simple}
+
 
 \setcounter{page}{12}
 \chapter{Introdução}
@@ -237,10 +355,5 @@ Quando a sabedoria entrar no seu coração e o conhecimento se tornar agradável
 \label{program}
 \input{estrutura/apendice/programa.tex}
 
-\chapter{Autorização para Divulgação de Informações de Empresas}
-
-A página a seguir apresenta uma Autorização para Divulgação de Informações de Empresa no que tange a práticas de manuntenção em linha viva (Sistema de Transmissão) no âmbito da Copel.
-
-\includepdf[pages=-]{autojon.pdf}
 
 \end{document}

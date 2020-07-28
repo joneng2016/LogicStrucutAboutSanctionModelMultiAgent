@@ -14,6 +14,8 @@
 \usepackage{scalefnt}
 \usepackage{algorithmic}% http://ctan.org/pkg/algorithms
 \usepackage{longtable}
+\usepackage{pdfpages}
+
 
 \instituicao{Universidade Tecnológica Federal do Paraná} % nome da instituicao
 \programa{Programa de Pós-graduação em Engenharia Elétrica e Informática Industrial} % nome do programa
@@ -22,8 +24,8 @@
 \documento{Dissertação} % [Disserta\c{c}\~ao] ou [Tese]
 \nivel{Mestrado} % [Mestrado] ou [Doutorado]
 \titulacao{Mestre} % [Mestre] ou [Doutor]
+\titulo{} % titulo do trabalho em portugues
 
-\titulo{Um Modelo Conceitual para Cenários de Acidentes em Atividades de Manutenção} % titulo do trabalho em portugues
 \title{\MakeUppercase{A Conceptual Model for Maintenance Activity Accident Scenarios}} % titulo do trabalho em ingles
 
 \autor{Jonathan Morris Samara} % autor do trabalho
@@ -52,15 +54,7 @@
 \capa % geracao automatica da capa
 \folhaderosto % geracao automatica da folha de rosto
 
-% Lembre-se de que a ficha catalografica eh impressa no verso da folha de rosto
-% Ficha catalografica
-\fichacatpum{T137}
-\fichacatautor{Morris Samara, Jonathan}
-\fichacatpgbib{\pageref{bibstart}-\pageref{bibend}}
-\fichacatpalcha{1. Sistema Multiagente. 2. Normas. 3. Sanção, Violação}
-\fichacatpdois{CDD (22. ed.) 621.3}
-\fichacatbib{Biblioteca xxxxxx}
-\fichacat
+\includepdf[pages=-]{fichacat.pdf}
 
 
 % dedicatoria
@@ -79,7 +73,7 @@ Dedico, também, este trabalho ao meu irmão David Morris Samara, por toda a fel
 
 % agradecimentos (opcional)
 \begin{agradecimentos}
-Agradeço a Deus, Jeová, pela dádiva da existência e por ter me dado energia e força para concluir esse trabalho.  
+Agradeço a Deus, Jeová, pela dádiva da existência e por ter me dado energia e força para concluir esse trabalho. 
 
 Agradeço a minha esposa Franciele Saldanha de Quadros, por fazer eu acreditar em mim mesmo. 
 
@@ -96,8 +90,6 @@ Agradeço ao Dr. Professor Sebastião Ribeiro Junior, por ter me dado a oportuni
 Agradeço Dr. Professor Klaus de Geus, por me fornecer o suporte necessário ao desenvolvimento deste trabalho.  
 
 Agradeço a Universidade Tecnológica Federal do Paraná pelo conhecimento e pela estrutura fornecida.
-
-Agradeço ao grupo OneReal Research Group no âmbito do projeto de P\&D PD-6491-0299/2013, proposto pela Copel Geração e Transmissão S.A., sob os auspícios do Programa de P\&D da Agência Nacional de Energia Elétrica (ANEEL).
 
 Agradeço aos Institutos Lactec pela estrutura de ponta e pela Bolsa de Mestrado.
 
@@ -229,6 +221,7 @@ Quando a sabedoria entrar no seu coração e o conhecimento se tornar agradável
 \label{bibend}
 
 \apendice
+
 \chapter{Perguntas da Entrevista}
 \label{pergunta}
 \input{estrutura/apendice/entrevista.tex}
@@ -237,5 +230,10 @@ Quando a sabedoria entrar no seu coração e o conhecimento se tornar agradável
 \label{program}
 \input{estrutura/apendice/programa.tex}
 
+\chapter{Autorização para Divulgação de Informações de Empresas}
+
+A página a seguir apresenta uma Autorização para Divulgação de Informações de Empresa no que tange a práticas de manuntenção em linha viva (Sistema de Transmissão) no âmbito da Copel.
+
+\includepdf[pages=-]{autojon.pdf}
 
 \end{document}

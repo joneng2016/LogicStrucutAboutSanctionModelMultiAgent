@@ -1,11 +1,18 @@
+%% This is file `modeloDAINF.tex'
+%% Author:  Fabiano Rosas, Gabriel Casella, Lucas Castro, and Aleffer Rocha
+%% E-mail:  fabianorosas@gmail.com, gbc921@gmail.com, l.castropg@gmail.com ad aleffer@alunos.utfpr.edu.br
+%% File version: 1.1
+%% License: Released under the LaTeX Project Public License v1.3c or later
+%% See:     http://www.latex-project.org/lppl.txt
+%% Last update: June 12, 2019
+%% ----------------------------------------------------------------
+
+
 \documentclass{utfpr-pg}
 \usepackage{graphicx}
 \usepackage{cmap}
 \usepackage{blindtext}
 \usepackage[T1]{fontenc}
-
-\usepackage[brazil]{babel} % pacote portugues brasileiro
-\usepackage[utf8]{inputenc} % pacote para acentuacao direta
 
 \usepackage{amssymb}
 \usepackage{amsthm}
@@ -14,11 +21,6 @@
 \usepackage{nameref}
 \usepackage{caption}
 \usepackage{listings}
-\usepackage{algorithmic}% http://ctan.org/pkg/algorithms
-\usepackage{longtable}
-\usepackage{scalefnt}
-
-\usepackage{float}
 
 
 \captionsetup{justification=raggedright,singlelinecheck=false,format=hang,skip=-1pt,font={footnotesize,bf},labelfont=bf}
@@ -60,16 +62,17 @@ placement=tbhp,
 \departamento{Departamento Acadêmico de Informática}
 
 %Caso TCC altere para o nome do seu curso de graduação!!!!
-\curso{Programa de Pós-graduação em Engenharia Elétrica e Informática Industrial}
-\autor{Jonathan Morris Samara}
-\titulo{Um Modelo Conceitual para Cenários de Acidentes em Atividades de Manutenção}
+\curso{Programa de Pós-Graduação em Ciência da Computação}
+\autor{Nome do Aluno}
+\titulo{Título do Trabalho}
 
 %Caso TCC altere para "Trabalho de Conclusao de Curso"!!!!
 \tipotrabalho{Dissertação}
-\local{Curitiba}
-\data{2019}
+\local{Ponta Grossa}
+\data{2017}
 
-\orientador{Cesar Augusto Tacla}
+\orientador{Nome do Orientador}
+\coorientador{Nome do Coorientador}
 
 \preambulo{\imprimirtipotrabalho\ apresentada como requisito parcial à obtenção do grau de Mestre em Ciência da Computação, do Departamento Acadêmico de Informática, da Universidade Tecnológica Federal do Paraná.}
 
@@ -124,15 +127,9 @@ placement=tbhp,
 	\imprimirdata.}\\
 
 	\hspace{0.5cm}
-		1. agentes.
-		2. atividades.
-    3. objetivos.
-    4. normas.
-    5. riscos.
-    6. violação.
-    7. consequêncas.
-    8. modelo conceitual.    
-		I. Cesar Augusto Tacla.
+		1. Palavra-chave1.
+		2. Palavra-chave2.
+		I. Nome Orientador.
 		II. Universidade Tecnológica Federal do Paraná
 		IV. Título do Trabalho\\
 
@@ -151,67 +148,42 @@ placement=tbhp,
   \null
   \vfill
   \begin{flushright}
-    Dedico esse trabalho a Deus, Jeová, por ter me dado a dádiva da existência.
-
-    Dedico esse trabalho a minha esposa Franciele Saldanha de Quadros pelo seu amor e por me dar o apoio necessário para levar adiante os meus sonhos, como é o caso deste Mestrado. 
-
-    Dedico, também, este trabalho a meu pai Maurice Jamil Samara, por me tornar o homem que eu sou.
-
-    Dedico, também, este trabalho a minha mãe Roseli Escarlete Almeida de Lima, que sempre me incentivou a autossuperação.
-
-    Dedico, também, este trabalho ao meu irmão David Morris Samara, por toda a felicidade e alegria que ele trouxe a minha vida. 
+    Texto da dedicatoria.
   \end{flushright}
 
 
 \end{dedicatoria}
 
 \begin{agradecimentos}
-Agradeço a Deus, Jeová, pela dádiva da existência e por ter me dado energia e força para concluir esse trabalho.  
-
-Agradeço a minha esposa Franciele Saldanha de Quadros, por fazer eu acreditar em mim mesmo. 
-
-Agradeço aos meus pais Maurice Jamil Samara e Roseli Escarlete Almeida de Lima, por ter me proporcionado a educação e cultura por meio de muito amor e carinho.
-
-Agradeço ao meu irmão David Morris Samara, por ter me dado o incentivo e apoio necessário para concluir este trabalho.
-
-Agradeço ao meu orientador Professor Dr. Cesar Augusto Tacla, por me dar a orientação, conhecimento e apoio necessário para concluir esse trabalho. 
-
-Agredeço ao Dr. Professor Gustavo Alberto Giménez Lugo, pelos conselhos e sugestões a respeito do trabalho. 
-
-Agradeço ao Dr. Professor Sebastião Ribeiro Junior, por ter me dado a oportunidade de entrar no grupo de pesquisa OneReal nos Institutos Lactec me possibilitando desenvolver esse trabalho. Eu também agradeço ao Dr. Professor Sebastião Ribeiro Junior pelas dicas valiosas a minha carreira. 
-
-Agradeço Dr. Professor Klaus de Geus, por me fornecer o suporte necessário ao desenvolvimento deste trabalho.  
-
-Agradeço a Universidade Tecnológica Federal do Paraná pelo conhecimento e pela estrutura fornecida.
-
-Agradeço ao grupo OneReal Research Group no âmbito do projeto de P\&D PD-6491-0299/2013, proposto pela Copel Geração e Transmissão S.A., sob os auspícios do Programa de P\&D da Agência Nacional de Energia Elétrica (ANEEL).
-
-Agradeço aos Institutos Lactec pela estrutura de ponta e pela Bolsa de Mestrado.
-
-Agradeço ao Ignácio L. Del Hoyo pelo companheirismo ao longo do Mestrado.
+    Agradecimento em primeiro lugar ao Google e TexStackChange por fornecer informações valiosas para a construção desse template.
 \end{agradecimentos}
 
 \begin{epigrafe}
     \vspace*{\fill}
 	\begin{flushright}
-		\textit{``Quando a sabedoria entrar no seu coração e o conhecimento se tornar agradável para a sua alma, o raciocínio o guardará e o discernimento o protegerá - Provérbios 2:10-11 - Biblia Sagrada}
+		\textit{``Portanto, quer comais quer bebais, \\
+    ou façais outra qualquer coisa, \\
+    fazei tudo para glória de Deus.'' \\
+    1 Coríntios 10.31 - Biblia Sagrada}
 	\end{flushright}
 \end{epigrafe}
 
  \begin{resumo}
    \refthis{ref_modeloDAINF}
+   \blindtext
    \vspace{\onelineskip}
-    \input{estrutura/resumo/resumo.tex}
+
    \noindent
-   \textbf{Palavras-chaves: agentes 1. atividades 2. objetivos 3. normas 4. riscos 5. violação 6. consequências 7. modelo conceitual 8.}
+   \textbf{Palavras-chaves: Palavra Chave 1. Palavra Chave 1 . Palavra Chave 3.}
  \end{resumo}
 
  \begin{resumo}[Abstract]
    \refthis[en]{ref_modeloDAINF}
+   \blindtext
    \vspace{\onelineskip}
-\input{estrutura/resumo/abstract.tex}
+
    \noindent
-   \textbf{Key-words: agents 1. activities 2. goals 3. norms 4. risks 5. violation 6. consequences 7. conceptual model 8.}
+   \textbf{Key-words: Key Word 1. Key Word 2 . Key Word 3.}
  \end{resumo}
 
 
@@ -243,117 +215,78 @@ Agradeço ao Ignácio L. Del Hoyo pelo companheirismo ao longo do Mestrado.
 \textual
   \pagestyle{simple}
 
-
-\setcounter{page}{12}
 \chapter{Introdução}
-	\input{estrutura/introducao/genintrod.tex}
-	\section{Motivação}	\label{motivation}
-		\input{estrutura/introducao/motivacao.tex}
-	\section{Relevância} \label{relevance}
-		\input{estrutura/introducao/relevancia.tex}
-	\section{Objetivos} \label{goals}
-		\input{estrutura/introducao/objetivogeral.tex}
-		\subsection{Objetivos Específicos}
-			\input{estrutura/introducao/objetivoespecifico.tex}
-	\section{Estrutura do Documento}
-		\input{estrutura/introducao/estruturadocumento.tex}
-\chapter{Fundamentação Teórica}
-\label{chap:fundteoric}
-	\input{estrutura/fundamentacaoteorica/genfunteorica.tex}
-	\section{Agentes} \label{agent}
-		\input{estrutura/fundamentacaoteorica/agentes.tex}
-	\section{Artefatos} \label{artefact}
-		\input{estrutura/fundamentacaoteorica/artefatos.tex}
-	\section{Sistema Multiagente} \label{sma}
-		\input{estrutura/fundamentacaoteorica/sma.tex}
-	\section{Normas} \label{normasdastani}
-		\input{estrutura/fundamentacaoteorica/normas.tex}
-	\section{Riscos} \label{risksec}
-		\input{estrutura/fundamentacaoteorica/riscos.tex}
-	\section{Lógica Modal} \label{logic}
-		\input{estrutura/fundamentacaoteorica/poss.tex}
-	\section{Demais Modelos}
-		\input{estrutura/fundamentacaoteorica/demaismodelos.tex}
-		\input{estrutura/analisecomparativa/genvs3.tex} 		
-		\input{estrutura/analisecomparativa/genormas.tex}		
-		\input{estrutura/analisecomparativa/estnormas.tex}
-	
-\chapter{Metodologia}
-\label{chap:metod}
-	\input{estrutura/metodologia/genmet.tex}
-    \section{Revisão Exploratória e Análise de Campo}\label{revexpanalcamp} 
-        \input{estrutura/metodologia/analisecampo.tex}  
-    \section{Formalização de um Modelo Conceitual}\label{modconceitual}
-        \input{estrutura/metodologia/conceitualizacao.tex}
-    \section{Explorar os Arcabouços Possíveis} \label{possarc} 
-        \input{estrutura/metodologia/exploracaoarcaboucopossivel.tex}                 
-    \section{Aplicação em Estudo de Caso}    
-        \input{estrutura/metodologia/realizacoesinferenca.tex}\label{inferencias}
+  \label{chapter:introducao}
+  \blindtext[3]
 
-\chapter{Resultados}
-\label{chap:resul}
-	\input{estrutura/resultados/genresult.tex}
-	\section{Revisão Bibliográfica Exploratória e Análise de Campo} \label{resrevisaoexploratoria}
-		\input{estrutura/resultados/resrevisexploratoria.tex}
-	\section{Estrutura Conceitual} \label{estconceitual}
-		\input{estrutura/resultados/genestconsul.tex}
-		\subsection{Módulos} \label{mods}			
-			\input{estrutura/resultados/modulos.tex}
-		\subsection{Predicados}\label{predic}
-			\input{estrutura/resultados/predicados.tex}
-		\subsection{Diagrama de Classes}
-			\input{estrutura/resultados/diagramadeclasses.tex}
-		\subsection{Regras} \label{regras}
-			\input{estrutura/resultados/regras.tex}
-		\subsection{Diagrama de Atividades} \label{umldiagram}
-			\input{estrutura/resultados/diagramadeatividades.tex}
-		\subsection{Predicados de Controle e de Estrutura} \label{cenarios}
-			\input{estrutura/resultados/cenariospredicadosabertos.tex}
-	\section{Caso Introdutório} \label{introdutorycase}
-			\input{estrutura/resultados/introdutorycase.tex}
+  \section{Objetivos}
 
-\chapter{Estudo de Caso} \label{casestudy}
-\label{studycase}
-	\input{estrutura/resultados/casodeestudo.tex}
-	\section{Raciocínio} \label{rac}
-		\input{estrutura/resultados/raciocinios.tex}
-	\section{Implementação} \label{validation}
-		\input{estrutura/resultados/validacao.tex}
-\chapter{Discussão}
-\label{chap:disc}
-	\input{estrutura/analisecomparativa/generaldiscuss.tex}
-	\section{Análise Comparativa}\label{analisecomparativa}
-		\input{estrutura/resultados/generalanalisecomparativa.tex}
-		\input{estrutura/analisecomparativa/genmoise.tex}	
-		\input{estrutura/analisecomparativa/gendastani.tex}
-		\input{estrutura/analisecomparativa/estvs3.tex}
-		\input{estrutura/analisecomparativa/compnormas.tex}
-	\section{Discussão do Modelo Conceitual}\label{constresult}
-		\input{estrutura/analisecomparativa/constresult.tex}
-\label{chap:anacomp}
-\chapter{Conclusão}
-\label{chap:conc}
-	\input{estrutura/conclusao/genconclusao.tex}
-	\section{Avaliação do Objetivo}
-		\input{estrutura/conclusao/avaliacaodosobjetivos.tex}
-	\section{Conclusão Geral}
-		\input{estrutura/conclusao/conclusaogeral.tex}
-	\section{Trabalhos Futuros}
-		\input{estrutura/conclusao/trabalhosfuturos.tex}
 
-\clearpage % this is need for add +1 to pageref of bibstart used in 'ficha catalografica'.
-\label{bibstart}
-\bibliography{reflatex} % geracao automatica das referencias a partir do arquivo reflatex.bib
-\label{bibend}
+\chapter{Trabalhos Relacionados}
+  \label{chaper:trabrel}
+  \blindtext[4]
 
-\apendice
-\chapter{Perguntas da Entrevista}
-\label{pergunta}
-\input{estrutura/apendice/entrevista.tex}
+\chapter{Exemplos de Utilização}
+  \label{chapter:exemplos}
+  \blindtext
 
-\chapter{Programa}
-\label{program}
-\input{estrutura/apendice/programa.tex}
+  \begin{enumerate}
+    \item \textbf{Item 1:} \blindtext
+    \item \textbf{Item 1:} \blindtext
 
+    Texto com exemplo de uma referencia \cite{Bordini:2007:PMS:1197104}.
+\end{enumerate}
+
+  \begin{figure}[h!]
+    %Sempre manter mesmo valor do captionsetup com o width do \includegraphics, para assim manter o mesmo alinhamento
+      \centering
+      \captionsetup{width=0.9\textwidth}
+      \caption{Tipos de termos do AgentSpeak no Jason}
+      \includegraphics[width=0.9\textwidth]{images/bdiGenerica.jpg}
+      \caption*{Fonte: Adaptado de \cite{Bordini:2007:PMS:1197104}}
+   	  \label{fig:typesAgent}
+    \end{figure}
+
+\blindtext
+
+\begin{figure}[h!]
+  %Sempre manter mesmo valor do captionsetup com o width do \includegraphics, para assim manter o mesmo alinhamento
+    \centering
+    \captionsetup{width=0.6\textwidth}
+    \caption{UTFPR - Campus Ponta Grossa}
+    \includegraphics[width=0.6\textwidth]{images/fachada-utfpr.jpg}
+    \caption*{Fonte: Sítio UTFPR (2010)}
+   	\label{fig:utfpr}
+\end{figure}
+
+
+
+%Maiores informacoes Apendice e Anexo - "Leia" o README!
+
+% \cftaddtitleline{toc}{chapter}{REFERÊNCIAS}{\pageref{ch:bib}}
+\renewcommand{\bibsection}{%
+	\chapter*{\bibname}
+	\bibmark
+	\ifnobibintoc\else
+	\phantomsection
+	\addcontentsline{toc}{chapter}{\hspace{-2cm}\texorpdfstring{\MakeTextUppercase{\bibname}}{\bibname}}
+	\fi
+	\prebibhook
+}
+
+\cftaddtitleline{toc}{chapter}{\nameref{ch:apendiceA}}{\pageref{ch:apendiceA}}
+\cftaddtitleline{toc}{chapter}{\nameref{ch:anexoA}}{\pageref{ch:anexoA}}
+
+
+\bibliography{ref_modeloDAINF}
+\label{ch:bib}
+
+\chapter*{APÊNDICE A - Permissão de direito autoral}
+\label{ch:apendiceA}
+  \blindtext
+
+\chapter*{ANEXO A - Protótipo}
+\label{ch:anexoA}
+  \blindtext
 
 \end{document}
