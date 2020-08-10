@@ -5,8 +5,11 @@ A Figura \ref{domainmodel} exibe a estrutura de classe desta ontologia.
 
 \begin{figure}[H]
   \centering
+    \caption{Ontologia que descreve \textit{Domain Model} no modelo V3S }
   \includegraphics[width=0.5\linewidth]{figure/ontologyv3.png} 
-  \caption{Ontologia que descreve \textit{Domain Model} no modelo V3S \cite{v3sframework}}
+  \begin{center}
+  \cite{v3sframework}
+  \end{center}
   \label{domainmodel}
 \end{figure}
 
@@ -26,6 +29,7 @@ A \textit{Activity Model} define construtores que são semanticamente equivalent
 
 \begin{table}[H]
 \centering
+\caption{Construtores da linguagem \textit{ACTIVITY-DL} \cite{v3sframework}}
 \begin{tabular}{|l|l|l|}
 \hline
 Construtor & Nome         & Relações de Allen \\ \hline
@@ -37,13 +41,16 @@ PAR-SIM    & Simultaneous & $A \{ = \} B$\\ \hline
 PAR-START  & Start        & $A \{ s,si,= \} B$\\ \hline
 PAR-END    & End          & $A \{ f,fi,= \} B$ \\ \hline
 \end{tabular}
-\caption{Construtores da linguagem \textit{ACTIVITY-DL} \cite{v3sframework}}
+\begin{center}
+autor
+\end{center}
 \label{acticonstruct}
 \end{table}
 
 As relações temporais entre as subatividades são especificadas por intermédio de construtores que são formalmente definidos no estudo \cite{allenalgebric}. Essas relações são intermediadas pelo vocábulo \textit{Pré-condição} que tem como propósito apresentar o contexto sobre qual uma atividade deve ser executada. A Tabela \ref{precondition} apresenta esses contextos.
 
 \begin{table}[H]
+\caption{As pré-condições possíveis para as atividades \cite{v3sframework}}
 \begin{tabular}{|l|l|p{0.3\linewidth}|}
 \hline
 \textbf{Categoria} & \textbf{Pré-condição} & \textbf{Descrição}                                                                                                                                                                                                                                              \\ \hline
@@ -52,7 +59,9 @@ Condições para perceber  & Regulamentar          & Descreve o estudo de mundo 
 Condições para examinar & Contextual            & Descreve o estado de mundo em que a atividade é relevante. Quando essa condição é falsa, então a atividade deve ser ignorada. Exemplo: limpar o tubo é relevante apenas se o tubo estiver sujo.                                                                 \\ \hline
 Condições para examinar & Favorável             & Descreve o estado de mundo onde a tarefa é preferencial sobre as demais. Essas condições ajudam a escolher entre várias tarefas quando existe uma alternativa para a realização de uma tarefa decomposta. Exemplo: se o parafuso estiver enferrujado, desarmar. \\ \hline
 \end{tabular}
-\caption{As pré-condições possíveis para as atividades \cite{v3sframework}}
+\begin{center}
+autor
+\end{center}
 \label{precondition}
 \end{table}
 
@@ -63,8 +72,11 @@ No que tange a questões referentes a segurança e violação, a linguagem \text
 
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.5\linewidth]{figure/bowtie.png} 
-  \caption{Gráfico de Bowtie do texto \cite{melissaproject}}
+  \caption{Gráfico de Bowtie}
+  \includegraphics[width=0.5\linewidth]{figure/bowtie.png}
+  \begin{center}
+  \cite{melissaproject}
+  \end{center} 
   \label{bowtiegraf}
 \end{figure}
 

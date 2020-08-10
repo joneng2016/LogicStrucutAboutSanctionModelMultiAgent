@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.4)  28 JUL 2020 18:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.4)  10 AUG 2020 03:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -750,7 +750,13 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \c@LT@chunks=\count130
 \LT@p@ftn=\toks27
 )
-(./dissertacao.aux
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+)) (./dissertacao.aux
 
 LaTeX Warning: Label `diamont' multiply defined.
 
@@ -772,25 +778,25 @@ LaTeX Warning: Label `atividiagram2' multiply defined.
 )
 \openout1 = `dissertacao.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 50.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
-File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 51.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 50.
+(lastpage)             ! on input line 51.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: longtable package is loaded.
@@ -872,57 +878,64 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 ))
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 52.
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 52
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 53.
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 53
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 52
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 53
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 52
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 53
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 52
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 53
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 53.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 52.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 53.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 52.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 53.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 52.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 53.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 53.
  [1
 
 
 Non-PDF special ignored!{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (2.28001pt too wide) in paragraph at lines 53--53
+Overfull \hbox (2.28001pt too wide) in paragraph at lines 54--54
   $[]$ 
  []
 
 [1]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 63.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 64.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 63.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 64.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 63.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 64.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 63.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 64.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 63.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 64.
  [1] [2
 
 
@@ -1009,26 +1022,28 @@ Cap\'{\i }tulo 2.
 ] [17]) [18]
 (./estrutura/fundamentacaoteorica/artefatos.tex [19]) [20]
 (./estrutura/fundamentacaoteorica/sma.tex [21] [22] [23] [24]
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 79.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 79.
 <figure/figmoise.png, id=86, 504.38437pt x 422.32782pt>
 File: figure/figmoise.png Graphic file (type png)
 <use figure/figmoise.png>
-Package pdftex.def Info: figure/figmoise.png  used on input line 79.
+Package pdftex.def Info: figure/figmoise.png  used on input line 80.
 (pdftex.def)             Requested size: 364.19667pt x 304.94576pt.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 80.
  [25 <./figure/figmoise.png>]) (./estrutura/fundamentacaoteorica/normas.tex
+LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10.95> not available
+(Font)              Font shape `T1/ptm/b/it' tried instead on input line 11.
 <figure/masprogram.png, id=93, 745.28438pt x 521.69907pt>
 File: figure/masprogram.png Graphic file (type png)
 <use figure/masprogram.png>
-Package pdftex.def Info: figure/masprogram.png  used on input line 11.
+Package pdftex.def Info: figure/masprogram.png  used on input line 12.
 (pdftex.def)             Requested size: 364.19667pt x 254.93425pt.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 12.
  [26]
 <figure/programdastani.png, id=97, 700.86844pt x 182.93344pt>
 File: figure/programdastani.png Graphic file (type png)
 <use figure/programdastani.png>
-Package pdftex.def Info: figure/programdastani.png  used on input line 24.
+Package pdftex.def Info: figure/programdastani.png  used on input line 28.
 (pdftex.def)             Requested size: 364.19667pt x 95.06172pt.
  [27 <./figure/masprogram.png>]) (./estrutura/fundamentacaoteorica/riscos.tex [
 28 <./figure/programdastani.png>] [29]) (./estrutura/fundamentacaoteorica/poss.
@@ -1038,18 +1053,18 @@ tex [30] [31])
 <figure/ontologyv3.png, id=117, 496.85625pt x 256.70906pt>
 File: figure/ontologyv3.png Graphic file (type png)
 <use figure/ontologyv3.png>
-Package pdftex.def Info: figure/ontologyv3.png  used on input line 8.
+Package pdftex.def Info: figure/ontologyv3.png  used on input line 9.
 (pdftex.def)             Requested size: 227.62206pt x 117.60579pt.
  [32 <./figure/ontologyv3.png>]
 [33]
-Overfull \vbox (11.76097pt too high) has occurred while \output is active []
+Overfull \vbox (39.67719pt too high) has occurred while \output is active []
 
 
 [34]
 <figure/bowtie.png, id=128, 673.76718pt x 443.40656pt>
 File: figure/bowtie.png Graphic file (type png)
 <use figure/bowtie.png>
-Package pdftex.def Info: figure/bowtie.png  used on input line 66.
+Package pdftex.def Info: figure/bowtie.png  used on input line 76.
 (pdftex.def)             Requested size: 227.62206pt x 149.79549pt.
  [35 <./figure/bowtie.png>]) (./estrutura/analisecomparativa/genormas.tex)
 (./estrutura/analisecomparativa/estnormas.tex [36]) [37]
@@ -1069,7 +1084,7 @@ Cap\'{\i }tulo 4.
 <figure/Module.jpeg, id=155, 550.30594pt x 175.40532pt>
 File: figure/Module.jpeg Graphic file (type jpg)
 <use figure/Module.jpeg>
-Package pdftex.def Info: figure/Module.jpeg  used on input line 5.
+Package pdftex.def Info: figure/Module.jpeg  used on input line 6.
 (pdftex.def)             Requested size: 455.24411pt x 145.10995pt.
 
 [43] [44 <./figure/Module.jpeg>] [45] [46]) [47]
@@ -1078,52 +1093,53 @@ Package pdftex.def Info: figure/Module.jpeg  used on input line 5.
 <figure/Class.jpg, id=187, 537.50812pt x 409.53pt>
 File: figure/Class.jpg Graphic file (type jpg)
 <use figure/Class.jpg>
-Package pdftex.def Info: figure/Class.jpg  used on input line 5.
+Package pdftex.def Info: figure/Class.jpg  used on input line 6.
 (pdftex.def)             Requested size: 455.24411pt x 346.85236pt.
  [52] [53 <./figure/Class.jpg>])
 (./estrutura/resultados/regras.tex [54] [55] [56] [57] [58] [59] [60] [61]
 <figure/algrule6.png, id=220, 378.41376pt x 251.94125pt>
 File: figure/algrule6.png Graphic file (type png)
 <use figure/algrule6.png>
-Package pdftex.def Info: figure/algrule6.png  used on input line 125.
+Package pdftex.def Info: figure/algrule6.png  used on input line 126.
 (pdftex.def)             Requested size: 273.14923pt x 181.85887pt.
 
-[62 <./figure/algrule6.png>] [63])
+[62] [63 <./figure/algrule6.png>])
 (./estrutura/resultados/diagramadeatividades.tex [64]
 <figure/diag1.jpg, id=230, 593.21625pt x 392.96812pt>
 File: figure/diag1.jpg Graphic file (type jpg)
 <use figure/diag1.jpg>
-Package pdftex.def Info: figure/diag1.jpg  used on input line 11.
+Package pdftex.def Info: figure/diag1.jpg  used on input line 12.
 (pdftex.def)             Requested size: 682.86617pt x 452.37152pt.
 
-Overfull \hbox (227.62206pt too wide) in paragraph at lines 11--12
+Overfull \hbox (227.62206pt too wide) in paragraph at lines 12--13
  [][] 
  []
 
-<figure/diag2.jpg, id=231, 471.26062pt x 140.02313pt>
+[65]
+<figure/diag2.jpg, id=234, 471.26062pt x 140.02313pt>
 File: figure/diag2.jpg Graphic file (type jpg)
 <use figure/diag2.jpg>
-Package pdftex.def Info: figure/diag2.jpg  used on input line 19.
+Package pdftex.def Info: figure/diag2.jpg  used on input line 23.
 (pdftex.def)             Requested size: 500.77129pt x 148.79343pt.
 
-Overfull \hbox (45.52718pt too wide) in paragraph at lines 19--20
+Overfull \hbox (45.52718pt too wide) in paragraph at lines 23--24
  [][] 
  []
 
-[65 <./figure/diag1.jpg>]
-<figure/diag3.jpg, id=235, 493.845pt x 240.9pt>
+[66 <./figure/diag1.jpg>]
+<figure/diag3.jpg, id=238, 493.845pt x 240.9pt>
 File: figure/diag3.jpg Graphic file (type jpg)
 <use figure/diag3.jpg>
-Package pdftex.def Info: figure/diag3.jpg  used on input line 26.
+Package pdftex.def Info: figure/diag3.jpg  used on input line 33.
 (pdftex.def)             Requested size: 500.77129pt x 244.27748pt.
 
-Overfull \hbox (45.52718pt too wide) in paragraph at lines 26--27
+Overfull \hbox (45.52718pt too wide) in paragraph at lines 33--34
  [][] 
  []
 
-[66 <./figure/diag2.jpg> <./figure/diag3.jpg>]) [67]
-(./estrutura/resultados/cenariospredicadosabertos.tex [68] [69] [70] [71])
-(./estrutura/resultados/introdutorycase.tex [72] [73] [74] [75] [76]
+[67 <./figure/diag2.jpg> <./figure/diag3.jpg>]) [68]
+(./estrutura/resultados/cenariospredicadosabertos.tex [69] [70] [71] [72])
+(./estrutura/resultados/introdutorycase.tex [73] [74] [75] [76] [77]
 Overfull \hbox (18.05742pt too wide) in paragraph at lines 138--139
 []$\OML/ztmcm/m/it/12 requiresCirc\OT1/ztmcm/m/n/12 (\OML/ztmcm/m/it/12 gNovaBo
 cal; rFerLampNova\OT1/ztmcm/m/n/12 )\OML/ztmcm/m/it/12 ; requiresCirc\OT1/ztmcm
@@ -1139,100 +1155,118 @@ fernando\OT1/ztmcm/m/n/12 )\OML/ztmcm/m/it/12 ; requiresEntity\OT1/ztmcm/m/n/12
 sEntity\OT1/ztmcm/m/n/12 (\OML/ztmcm/m/it/12 gBL; bruno\OT1/ztmcm/m/n/12 )$ 
  []
 
-[77] [78] [79]) [80]
+[78] [79] [80]) [81]
 Cap\'{\i }tulo 5.
-(./estrutura/resultados/casodeestudo.tex [81
+(./estrutura/resultados/casodeestudo.tex [82
 
 ]
-LaTeX Font Info:    Calculating math sizes for size <9.60004> on input line 37.
+LaTeX Font Info:    Calculating math sizes for size <9.60004> on input line 38.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9.60004> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 37.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.10406> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 37.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5.76007> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 37.
- [82] [83] [84] [85] [86]
-Overfull \hbox (10.42258pt too wide) in paragraph at lines 178--186
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9.60004> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 40.
+ [83] [84] [85] [86] [87]
+Overfull \vbox (24.14742pt too high) has occurred while \output is active []
+
+
+[88]
+Overfull \hbox (10.42258pt too wide) in paragraph at lines 199--208
  [][] 
  []
 
-[87]
-Overfull \hbox (31.32684pt too wide) in alignment at lines 226--247
- [] [] [] [] 
- []
-
-
-Underfull \vbox (badness 10000) detected at line 247
- []
-
-
-Overfull \hbox (31.32684pt too wide) in alignment at lines 247--267
- [] [] [] [] 
- []
-
-[88]
-Overfull \hbox (31.32684pt too wide) in alignment at lines 267--282
- [] [] [] [] 
- []
-
 [89]
-Underfull \vbox (badness 10000) detected at line 311
- []
-
-[90] [91] [92]
-Underfull \vbox (badness 10000) detected at line 410
- []
-
-[93] [94] [95] [96]
-Overfull \hbox (21.05095pt too wide) in paragraph at lines 536--536
-\OT1/ptm/m/n/12 rel-Bas-ta-oU-ni-ver-sal-Cor-da-rel-Cor-da-Es-tropo,
+Overfull \hbox (31.32684pt too wide) in alignment at lines 250--271
+ [] [] [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 539
+Overfull \hbox (31.32684pt too wide) in alignment at lines 271--291
+ [] [] [] [] 
+ []
+
+[90]
+Overfull \hbox (31.32684pt too wide) in alignment at lines 291--305
+ [] [] [] [] 
+ []
+
+[91] [92] [93] [94] [95] [96] [97] [98]
+Overfull \hbox (21.05095pt too wide) in paragraph at lines 568--568
+\T1/ptm/m/n/12 rel-Bas-ta-oU-ni-ver-sal-Cor-da-rel-Cor-da-Es-tropo,
  []
 
 
-Overfull \hbox (3.6871pt too wide) in paragraph at lines 541--541
-\OT1/ptm/m/n/12 relX-Bas-ta-o-So-que-te-rel-So-que-te-Pa-ra-fuso| 
+Overfull \hbox (3.6871pt too wide) in paragraph at lines 573--573
+\T1/ptm/m/n/12 relX-Bas-ta-o-So-que-te-rel-So-que-te-Pa-ra-fuso| 
  []
 
 
-Overfull \hbox (50.3542pt too wide) in paragraph at lines 549--549
-\OT1/ptm/m/n/12 relX-Co-lar-relX-Bas-ta-o-Gar-ra-relX-Bas-ta-oU-ni-ver-sal,
+Overfull \hbox (50.3542pt too wide) in paragraph at lines 581--581
+\T1/ptm/m/n/12 relX-Co-lar-relX-Bas-ta-o-Gar-ra-relX-Bas-ta-oU-ni-ver-sal,
  []
 
-[97] [98] [99]
-Overfull \hbox (1.5474pt too wide) in paragraph at lines 563--563
-[]|\OT1/ptm/m/n/12 pano,glicerina,carretilha,bastaoUniversal,corda,bastaoGarra,
-condut[]^^Pmetro,X
+[99] [100] [101]
+! Misplaced \noalign.
+\hline ->\noalign 
+                  {\ifnum 0=`}\fi \penalty \@M \futurelet \@let@token \LT@@h...
+l.592 \hline
+            
+? 
+! Misplaced \omit.
+\multispan ->\omit 
+                   \@multispan 
+l.593 \textbf
+             {Entidades}                                                    ...
+
+? 
+! Extra alignment tab has been changed to \cr.
+<template> \endtemplate 
+                        
+l.593 \textbf
+             {Entidades}                                                    ...
+
+? 
+
+Overfull \hbox (1.5474pt too wide) in paragraph at lines 596--596
+[]|\T1/ptm/m/n/12 pano,glicerina,carretilha,bastaoUniversal,corda,bastaoGarra,c
+ondutímetro,X
  []
 
+[102]
 
-Underfull \vbox (badness 10000) detected at line 579
- []
+! LaTeX Error: There's no line here to end.
 
-[100]) (./estrutura/resultados/raciocinios.tex [101] [102] [103] [104] [105]
-[106] [107] [108] [109]) (./estrutura/resultados/validacao.tex [110]) [111]
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.623 \\
+        
+? 
+) (./estrutura/resultados/raciocinios.tex [103] [104] [105] [106] [107]
+[108] [109] [110] [111]) (./estrutura/resultados/validacao.tex [112]) [113]
 Cap\'{\i }tulo 6.
 (./estrutura/analisecomparativa/generaldiscuss.tex)
 (./estrutura/resultados/generalanalisecomparativa.tex)
-(./estrutura/analisecomparativa/genmoise.tex [112
+(./estrutura/analisecomparativa/genmoise.tex [114
 
 ]
 Underfull \vbox (badness 10000) detected at line 91
  []
 
-[113] [114]) (./estrutura/analisecomparativa/gendastani.tex
+[115] [116]) (./estrutura/analisecomparativa/gendastani.tex
 Underfull \vbox (badness 10000) detected at line 65
  []
 
-[115]) (./estrutura/analisecomparativa/estvs3.tex [116]
+[117]) (./estrutura/analisecomparativa/estvs3.tex [118]
 Underfull \vbox (badness 10000) detected at line 67
  []
 
-[117]) (./estrutura/analisecomparativa/compnormas.tex [118] [119]
+[119]) (./estrutura/analisecomparativa/compnormas.tex [120] [121]
 LaTeX Font Info:    Calculating math sizes for size <7.20007> on input line 68.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.20007> not available
@@ -1241,76 +1275,78 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5.32808> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 68.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <4.32008> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 68.
- [120])
-(./estrutura/analisecomparativa/constresult.tex [121] [122] [123] [124]
-[125] [126]) [127] [128]
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <7.20007> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 70.
+ [122])
+(./estrutura/analisecomparativa/constresult.tex [123] [124] [125] [126]
+[127] [128]) [129] [130]
 Cap\'{\i }tulo 7.
 (./estrutura/conclusao/genconclusao.tex)
-(./estrutura/conclusao/avaliacaodosobjetivos.tex [129
+(./estrutura/conclusao/avaliacaodosobjetivos.tex [131
 
-] [130])
-(./estrutura/conclusao/conclusaogeral.tex) [131]
-(./estrutura/conclusao/trabalhosfuturos.tex [132]) [133] (./dissertacao.bbl
-[134
+] [132])
+(./estrutura/conclusao/conclusaogeral.tex) [133]
+(./estrutura/conclusao/trabalhosfuturos.tex [134]) [135] (./dissertacao.bbl
+[136
 
 
-] [135] [136]) [137]
+] [137] [138]) [139]
 Apendice A.
-(./estrutura/apendice/entrevista.tex [138
+(./estrutura/apendice/entrevista.tex [140
 
-] [139] [140] [141] [142] [143]
-[144] [145] [146] [147]) [148]
+] [141] [142] [143] [144] [145]
+[146] [147] [148] [149]) [150]
 Apendice B.
-(./estrutura/apendice/programa.tex [149
+(./estrutura/apendice/programa.tex [151
 
-] [150] [151]
-<figure/algjs.png, id=511, 401.24907pt x 401.24907pt>
+] [152] [153]
+<figure/algjs.png, id=517, 401.24907pt x 401.24907pt>
 File: figure/algjs.png Graphic file (type png)
 <use figure/algjs.png>
-Package pdftex.def Info: figure/algjs.png  used on input line 149.
+Package pdftex.def Info: figure/algjs.png  used on input line 150.
 (pdftex.def)             Requested size: 364.19667pt x 364.21883pt.
- [152]
-<figure/algjs2.png, id=515, 403.5075pt x 543.53062pt>
+ [154]
+<figure/algjs2.png, id=521, 403.5075pt x 543.53062pt>
 File: figure/algjs2.png Graphic file (type png)
 <use figure/algjs2.png>
-Package pdftex.def Info: figure/algjs2.png  used on input line 157.
+Package pdftex.def Info: figure/algjs2.png  used on input line 161.
 (pdftex.def)             Requested size: 364.19667pt x 490.58295pt.
-) [153 <./figure/algjs.png>] [154 <./figure/algjs2.png>]
+) [155 <./figure/algjs.png>] [156 <./figure/algjs2.png>]
 Apendice C.
-<autojon.pdf, id=524, 597.31157pt x 844.83629pt>
+<autojon.pdf, id=530, 597.31157pt x 844.83629pt>
 File: autojon.pdf Graphic file (type pdf)
 <use autojon.pdf>
-Package pdftex.def Info: autojon.pdf  used on input line 244.
+Package pdftex.def Info: autojon.pdf  used on input line 245.
 (pdftex.def)             Requested size: 597.3101pt x 844.83423pt.
 File: autojon.pdf Graphic file (type pdf)
 <use autojon.pdf>
-Package pdftex.def Info: autojon.pdf  used on input line 244.
+Package pdftex.def Info: autojon.pdf  used on input line 245.
 (pdftex.def)             Requested size: 597.3101pt x 844.83423pt.
-<autojon.pdf, id=527, page=1, 597.31157pt x 844.83629pt>
+<autojon.pdf, id=533, page=1, 597.31157pt x 844.83629pt>
 File: autojon.pdf Graphic file (type pdf)
 <use autojon.pdf, page 1>
-Package pdftex.def Info: autojon.pdf , page1 used on input line 244.
+Package pdftex.def Info: autojon.pdf , page1 used on input line 245.
 (pdftex.def)             Requested size: 597.3101pt x 844.83423pt.
 File: autojon.pdf Graphic file (type pdf)
 <use autojon.pdf, page 1>
-Package pdftex.def Info: autojon.pdf , page1 used on input line 244.
+Package pdftex.def Info: autojon.pdf , page1 used on input line 245.
 (pdftex.def)             Requested size: 597.81139pt x 845.54323pt.
-[155
+[157
 
 ]
 File: autojon.pdf Graphic file (type pdf)
 <use autojon.pdf, page 1>
-Package pdftex.def Info: autojon.pdf , page1 used on input line 244.
+Package pdftex.def Info: autojon.pdf , page1 used on input line 245.
 (pdftex.def)             Requested size: 597.81139pt x 845.54323pt.
 File: autojon.pdf Graphic file (type pdf)
 <use autojon.pdf, page 1>
-Package pdftex.def Info: autojon.pdf , page1 used on input line 244.
+Package pdftex.def Info: autojon.pdf , page1 used on input line 245.
 (pdftex.def)             Requested size: 597.81139pt x 845.54323pt.
 File: autojon.pdf Graphic file (type pdf)
 <use autojon.pdf, page 1>
-Package pdftex.def Info: autojon.pdf , page1 used on input line 244.
+Package pdftex.def Info: autojon.pdf , page1 used on input line 245.
 (pdftex.def)             Requested size: 597.81139pt x 845.54323pt.
- [156 <./autojon.pdf>] 
+ [158 <./autojon.pdf>] 
 AED: lastpage setting LastPage
 +-------------------------------------------------------------------+
 | Comentario, sugestao ou critica sobre o abnTeX? Entre em contato: |
@@ -1322,13 +1358,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7865 strings out of 492982
- 117341 string characters out of 6134896
- 206541 words of memory out of 5000000
- 10981 multiletter control sequences out of 15000+600000
- 85918 words of font info for 190 fonts, out of 8000000 for 9000
+ 8094 strings out of 492982
+ 119257 string characters out of 6134896
+ 206609 words of memory out of 5000000
+ 11199 multiletter control sequences out of 15000+600000
+ 111119 words of font info for 198 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,18n,46p,2108b,441s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,18n,46p,2108b,439s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/
@@ -1339,10 +1375,10 @@ usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/times/utmri8a.pfb>
-Output written on dissertacao.pdf (156 pages, 1819572 bytes).
+Output written on dissertacao.pdf (158 pages, 1774003 bytes).
 PDF statistics:
- 576 PDF objects out of 1000 (max. 8388607)
- 379 compressed objects within 4 object streams
+ 583 PDF objects out of 1000 (max. 8388607)
+ 384 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
  86 words of extra memory for PDF output out of 10000 (max. 10000000)
 

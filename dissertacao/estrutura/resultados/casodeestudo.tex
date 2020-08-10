@@ -34,6 +34,7 @@ A tabela \ref{agents} apresenta todos os agentes que fazem parte da manutenção
 \begin{table}[H]
 \scalefont{0.8}
 \centering
+\caption{Os agentes que constituem uma manutenção}
 \begin{tabular}{|l|l|}
 \hline
 \textbf{símbolo} & \textbf{significado} \\ \hline
@@ -45,15 +46,19 @@ agente5 & Um dos agentes participantes da manutenção \\ \hline
 agente6 & Um dos agentes participantes da manutenção \\ \hline
 agente7 & Um dos agentes participantes da manutenção \\ \hline
 \end{tabular}
-\caption{Os agentes que constituem uma manutenção}
 \label{agents}
+\\
+\begin{center}
+autor
+\end{center}
 \end{table}
 
- A tabela \ref{roles} apresenta todas as funções que deverão ser exercidas pelos agentes.
+A tabela \ref{roles} apresenta todas as funções que deverão ser exercidas pelos agentes.
 
 \begin{table}[H]
 \scalefont{0.8}
 \centering
+\caption{Os papéis relevantes para a ocorrência da manutenção}
 \begin{tabular}{|l|l|}
 \hline
 \textbf{papel} & \textbf{descrição} \\ \hline
@@ -64,13 +69,17 @@ executor3 & Tem como por finalidade executar certas atividades manuais vinculada
 executor4 & Tem como por finalidade executar certas atividades manuais vinculadas a manutenção \\ \hline
 executor5 & Tem como por finalidade executar certas atividades manuais vinculadas a manutenção \\ \hline
 \end{tabular}
-\caption{Os papéis relevantes para a ocorrência da manutenção}
 \label{roles}
+\\
+\begin{center}
+autor
+\end{center}
 \end{table}
 
 A tabela \ref{agentsroles} define o predicado $adoptsRole(ag_n,\rho_m)$ onde $ag_n$ é representado pela coluna agente e $\rho_m$ é representado pela coluna papel.
 
 \begin{table}[H]
+\caption{Relação $adoptsRole(ag_n,\rho_m)$}
 \scalefont{0.8}
 \centering
 \begin{tabular}{|l|l|}
@@ -84,8 +93,11 @@ agente5 & executor3 \\ \hline
 agente6 & executor4 \\ \hline
 agente7 & executor5 \\ \hline
 \end{tabular}
-\caption{Relação $adoptsRole(ag_n,\rho_m)$}
 \label{agentsroles}
+\\
+\begin{center}
+autor
+\end{center}
 \end{table}
 
 \subsection{Especificação das Ferramentas e Objetivos}
@@ -95,6 +107,7 @@ A tabela \ref{artefacts} apresenta todos artefatos que fazem parte da descriçã
 \begin{table}[H]
 \scalefont{0.8}
 \centering
+\caption{Definição de todos os artefatos presentes na manutenção}
 \begin{tabular}{|l|p{0.8\linewidth}|}
 \hline
 \textbf{Artefato} & \textbf{Descrição} \\ \hline
@@ -123,8 +136,11 @@ condutímetro & Medidor de corrente de fuga sobre o bastão universal. \\ \hline
 parafuso & Parafusos prendem o conector condutor-Isolador e também prendem o Isolador a base \\ \hline
 conector & Estrutura que tem como por finalidade manter condutor,cabeçote do isolador em conjunto. \\ \hline
 \end{tabular}
-\caption{Definição de todos os artefatos presentes na manutenção}
 \label{artefacts}
+\\
+\begin{center}
+autor
+\end{center}
 \end{table} 
 
 As etapas da atividade anteriormente posta foram analisadas em conjunto com engenheiros da área e foram estruturadas com base nos objetivos expostos na tabela \ref{g}. Essa tabela também apresenta as especificações para o predicado $nextGoal(g_i,g_j)$ onde \textit{Objetivo} representa $g_i$, \textit{Próximo} $g_j$ e \textit{Descrição} é referente a $g_i$.
@@ -132,6 +148,7 @@ As etapas da atividade anteriormente posta foram analisadas em conjunto com enge
 \begin{table}[H]
 \scalefont{0.8}
 \centering
+\caption{Definição e descrição dos objetivos bem como dos respectivos pré-requisitos}
 \begin{tabular}{|l|l|p{0.6\linewidth}|}
 \hline
 \textbf{Objetivo} & \textbf{Próximo} & \textbf{Descrição} \\ \hline
@@ -164,7 +181,10 @@ g25 & g26 & Baixar o condutor para que a mesma se sustente no novo isolador. \\ 
 g26 & g27 & Colocar os parafusos do conector que prende a barra ao novo isolador. \\ \hline
 g27 &     & Retirar Equipamentos \\ \hline
 \end{tabular}
-\caption{Definição e descrição dos objetivos bem como dos respectivos pré-requisitos}
+\\
+\begin{center}
+autor
+\end{center}
 \label{g}
 \end{table}
 
@@ -175,6 +195,7 @@ A tabela \ref{condition} apresenta $c_k$ dado pela coluna condição e pela colu
 \begin{table}[H]
 \scalefont{0.8}
 \centering
+\caption{Define as condições necessárias para que a manutenção tenha possibilidade de acontecer}
 \begin{tabular}{|l|p{0.6\linewidth}|l|l|}
 \hline
 \textbf{condição} & \textbf{descrição} & \textbf{risco} & \textbf{consequência} \\ \hline
@@ -183,8 +204,11 @@ noVento & Não deve haver vento durante os procedimentos de manutenção. & elet
 noChuva & Não deve haver chuva durante o ato da manutenção & eletrocutado & morte \\ \hline
 sol & O dia deve estar ensolarado & eletrocutado & morte \\ \hline
 \end{tabular}
-\caption{Define as condições necessárias para que a manutenção tenha possibilidade de acontecer}
 \label{condition}
+\\
+\begin{center}
+autor
+\end{center}
 \end{table}
 
 
@@ -224,8 +248,9 @@ relAgente7Capacete | Agente7 ,capacete | \nonumber \\
 
 \begin{center}
 \begin{longtable}[H]{|l|l|l|l|}
+\caption{Descrição das entidades em função das relações} \label{relationEntEnt1} \\
 \hline
-\textbf{relacionamento}                  & \textbf{entidades envolvidas}                & \textbf{risco}                & \textbf{consequência}              \\ \hline
+\textbf{relacionamento}                  & \textbf{entidades envolvidas}                & \textbf{risco}                & \textbf{consequência}              	   \\ \hline
 relXCapacete                             & X,capacete                                     & nenhum                          & nenhum                               \\ \hline
 relXOculos                               & X,oculos                                       & nenhum                          & nenhum                               \\ \hline
 relXRoupagem                             & X,roupagem                                     & nenhum                          & nenhum                               \\ \hline
@@ -277,10 +302,10 @@ relCondutivimetroCorda                   & condutímetro,corda                  
 relCondutivimetroBastaoUniversal         & condutímetro,bastaoUniversal                   & nenhum                          & nenhum                               \\ \hline
 relCondutivimetroBastaoGarra             & condutímetro,bastaoGarra                       & nenhum                          & nenhum                               \\ \hline
 relCondutivimetroSoquete                 & condutímetro,soquete                           & nenhum                          & nenhum                               \\ \hline
-\caption{Descrição das entidades em função das relações}
-\label{relationEntEnt1}
 \end{longtable}
+autor
 \end{center}
+
 
 Tendo em vista o texto presente em \ref{predic}, todos os elementos de $Relation$ bem como de $Condition$ também são elementos de $Circumstance$.
 
@@ -288,6 +313,8 @@ A Tabela \ref{relation1}  apresenta a relação $affectsRels(r_k,r_n)$ onde $r_k
 
 \begin{center}
 \begin{longtable}[H]{|l|l|}
+\caption{Define o impacto que o erro em um relacionamento gera em outro relacionamento por mudar a possibilidade de algo errado acontecer.} \label{relation1}
+\\
 \hline
 \textbf{Relacionamento-errado} 					& \textbf{Relacionamento-afetado}   			   \\ \hline
 relXCapacete                                    & relBastaoGarraCondutor                           \\ \hline
@@ -375,9 +402,8 @@ relCondutivimetroCorda                          & relSoqueteParafuso            
 relCondutivimetroCorda                          & relXCorda                                        \\ \hline
 relCondutivimetroCorda                          & relEstropoCorda                                  \\ \hline
 relCondutivimetroCorda                          & relParafusoTorre                                 \\ \hline
-\caption{Define o impacto que o erro em um relacionamento gera em outro relacionamento por mudar a possibilidade de algo errado acontecer.}
-\label{relation1}
 \end{longtable}
+autor
 \end{center}
 
 \subsection{Relação entre Objetivos e Papéis}
@@ -387,6 +413,8 @@ A tabela \ref{deontic1}  apresentam a relação $hasObligation(\rho_m,g_i)$ onde
 
 \begin{center}
 \begin{longtable}[H]{|l|l|}
+\caption{Objetivos que devem ser atingidos pelo agente que assumir um dada função} \label{deontic1}
+\\
 \hline
 \textbf{Papel} & \textbf{Objetivo} \\ \hline
 executor1 & g0 \\ \hline
@@ -489,9 +517,8 @@ executor2 & g27 \\ \hline
 executor3 & g27 \\ \hline
 executor4 & g27 \\ \hline
 executor5 & g27 \\ \hline
-\caption{Objetivos que devem ser atingidos pelo agente que assumir um dada função}
-\label{deontic1}
 \end{longtable}
+autor
 \end{center}
 
 \subsection{Relacionamentos das Entidades, Relações e Condições com Objetivos}
@@ -502,13 +529,17 @@ Por exemplo, suponha que em uma determinada situação, um objetivo g1 necessita
 
 \begin{table}[H]
 \centering
+\caption{Exemplificação dos dados atrelados ao predicado $requiresCirc(goal_n, circ_m)$,$requiresEntity(goal_n, ent_m)$}
 \scalefont{0.8}
 \begin{tabular}{|l|l|l|}
 \hline
 \textbf{Circunstância}		 	& \textbf{Tipo de Instância}	&	\textbf{Objetivo}	\\ \hline
 $circ_a$,$circ_b$,$circ_c$		& instanceOfRel 				& 	 g1         		\\ \hline
 \end{tabular}
-\caption{Exemplificação dos dados atrelados ao predicado $requiresCirc(goal_n, circ_m)$,$requiresEntity(goal_n, ent_m)$ serão organizados nas tabelas a seguir.}
+\\
+\begin{center}
+autor
+\end{center}
 \label{tableexemplgroupdataone}
 \end{table}
 
@@ -516,6 +547,7 @@ A coluna \textit{Circunstância} apresenta todas as circunstâncias atreladas ao
 
 \begin{center}
 \begin{longtable}[H]{|p{0.4\linewidth}|l|l|}
+\caption{Especificação do predicado $requiresCirc(goal_i,circ_j)$, do predicado $instanceOfRel(circ_n)$ e do predicado $instanceOfCond(circ_n)$} \label{relationsgroup1} \\
 \hline
 \textbf{Relacionamentos}																									& \textbf{Tipo de Instância}          & \textbf{Objetivo} \\ \hline
 relXcapacete relXoculos relXroupagem relXluva relXbotas                                                                                                                                                                                                                                                                    & instanceOfRel              		 & g0         \\ \hline
@@ -547,15 +579,16 @@ relChaveCatracaBastaoUniversal, relXChaveCatraca, relXBastaoUniversal, relChaveC
 relXCorda, relCordaBastaoGarra, relBastaoGarraCondutor                                                            									& instanceOfRel						 & g25        \\ \hline
 relChaveCatracaBastaoUniversal, relXChaveCatraca, relXBastaoUniversal, relChaveCatracaParafuso                     									& instanceOfRel						 & g26        \\ \hline
 relXSela, relXColarrelXBastaoGarrarelXBastaoUniversal, relXBastaoSoquete, relXCorda, relXCarretilha, relXChaveCatraca, relColarBastaoGarra, relCordaBastaoGarra, relBastaoGarraTorre, relBastaoGarraCondutor, relBastaoUniversalCarretilha, relBastaoGarraSela, relBastaoUniversalSela, relSelaColar, relTorreSela, relBastaoUniversalCorda, relBastaoGarraCorda 									& instanceOfRel						 & g27  \\ \hline
-\caption{Especificação do predicado $requiresCirc(goal_i,circ_j)$, do predicado $instanceOfRel(circ_n)$ e do predicado $instanceOfCond(circ_n)$}
-\label{relationsgroup1}
+
 \end{longtable}
+autor
 \end{center}
 
 A Tabela \ref{entitygoals} apresenta os dados em relação ao predicado $requiresEntity(goal_i, e_j)$ e segue o mesmo padrão apresentado pelo exemplo na tabela \ref{tableexemplgroupdataone}. Contudo, tendo em vista o fato de que está implicito no conceito do predicado $requiresEntity(goal_i, e_j)$ a natureza da instância atrelada ao segundo argumento (ou seja, não há dúvida que $e_j$ é uma entidade e está contida em $Entity$), a Tabela \ref{entitygoals} não apresenta coluna \textit{Tipo de Instância}.
 
 \begin{center}
 \begin{longtable}[H]{|p{0.8\linewidth}|l|}
+\caption{Especificação do estudo de caso atrelado ao predicado $requiresEntity(goal_i, e_j)$} \label{entitygoals}
 \hline
 \textbf{Entidades}                                                                                                 & \textbf{Objetivo} \\ \hline
 capacete,óculos,roupagem,luvas,botas X = \{agentes em relação aos objetivos\}                                      & g0         \\ \hline
@@ -586,10 +619,11 @@ chaveCatraca,bastaoUniversal,prafusobastaoSoquete,parafuso,torreX = \{agentes em
 bastaoGarra,condutorcordaX = \{agentes em relação aos objetivos\},                                                 & g25        \\ \hline
 chaveCatraca,bastaoUniversal,prafusoX = \{agentes em relação aos objetivos\}                                       & g26        \\ \hline
 sela, colar, bastaoGarra, bastaoUniversal, bastaoSoquete, corda, carretilha, chaveCatraca, torre, condutor		   & g27        \\ \hline
-
-\caption{Especificação do estudo de caso atrelado ao predicado $requiresEntity(goal_i, e_j)$}
-\label{entitygoals}
 \end{longtable}
+\\
+\begin{center}
+autor
+\end{center}
 \end{center}
 
 

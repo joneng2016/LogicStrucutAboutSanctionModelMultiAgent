@@ -122,8 +122,12 @@ A regra estabelecida pela Figura \ref{wenStop} define o critério para quando um
 
 \begin{figure}[H]
   \centering
+  \caption{Condição para definir se um dado objetivo foi atingido ou não} 
   \includegraphics[width=0.6\linewidth]{figure/algrule6.png} 
-  \caption{Condição para definir se um dado objetivo foi atingido ou não} \label{wenStop}  
+  \begin{center}
+  	autor
+  \end{center}
+  \label{wenStop}  
 \end{figure}
 
 Se o teste dado por $if(stopped(goaL,agent))$ é verdadeiro para pelo menos um dos agentes, então a função $ifNotStopped(agentArray,goal)$ retorna falso. Se essa situação não acontecer para todos os agentes carregados em $agentArray$, então o algoritmo determina um segundo teste, que é dado pela função $allAgenteObliged(agentArray,goal)$. Essa função verifica se todos os agentes que são obrigados a alcançar o objetivo $goal$ estão contidos em $agentArray$. No contexto desse algoritmo, se a função $allAgenteObliged(agentArray,goal)$ retorna falso, então $ifNotStopped$ também retorna falso, caso contrário $ifNotStopped$ retorna verdade. Se a função $ifNotStopped(agentArray,goal)$ retorna verdade, então o predicado $reached(goal)$ é verdade também. O algoritmo apresenta a função $isTrue$ onde o argumento é o predicado $reached(goal)$. A função $isTrue(arg)$ sempre retorna verdade e tem como por objetivo informar que o seu respectivo argumento é verdade. Isso é necessário tendo em vista a diferença do formalismo adotado pelas demais regras em relação a \ref{wenStop}.
