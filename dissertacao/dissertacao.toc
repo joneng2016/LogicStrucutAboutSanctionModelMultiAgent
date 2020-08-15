@@ -57,7 +57,7 @@
 \contentsline {subsection}{\numberline {6.1.2}Modelo DASTANI}{117}
 \contentsline {section}{\numberline {6.2}\MakeUppercase {Compara\IeC {\c c}\IeC {\~a}o entre VS3 e o modelo proposto neste estudo}}{119}
 \contentsline {subsection}{\numberline {6.2.1}NORMMAS}{120}
-\contentsline {subsection}{\numberline {6.2.2}Compara\IeC {\c c}\IeC {\~a}o Gen\IeC {\'e}rica entre os Modelos}{121}
+\contentsline {subsection}{\numberline {6.2.2}Compara\IeC {\c c}\IeC {\~a}o Gen\IeC {\'e}rica entre os Modelos}{122}
 \contentsline {section}{\numberline {6.3}\MakeUppercase {Discuss\IeC {\~a}o do Modelo Conceitual}}{123}
 \contentsline {subsection}{\numberline {6.3.1}Considera\IeC {\c c}\IeC {\~o}es sobre Crit\IeC {\'e}rios Metodol\IeC {\'o}gicos ao estudo de caso}{123}
 \contentsline {subsection}{\numberline {6.3.2}Considera\IeC {\c c}\IeC {\~o}es sobre Crit\IeC {\'e}rios Metodol\IeC {\'o}gicos ao Racioc\IeC {\'\i }nios}{127}
@@ -83,4 +83,3 @@
 \contentsline {section}{\numberline {B.5}\MakeUppercase {Racioc\IeC {\'\i }nio 4}}{154}
 \contentsline {section}{\numberline {B.6}\MakeUppercase {Racioc\IeC {\'\i }nio 5}}{154}
 \contentsline {section}{\numberline {B.7}\MakeUppercase {Racioc\IeC {\'\i }nio 6}}{155}
-\contentsline {chapter}{Ap\^endice{} C{} -$\tmspace -\thinmuskip {.1667em}$-{} \MakeUppercase {Autoriza\IeC {\c c}\IeC {\~a}o para Divulga\IeC {\c c}\IeC {\~a}o de Informa\IeC {\c c}\IeC {\~o}es de Empresas}}{157}

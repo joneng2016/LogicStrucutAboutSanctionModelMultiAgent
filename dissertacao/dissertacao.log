@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.4)  10 AUG 2020 03:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.4)  15 AUG 2020 13:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1057,14 +1057,14 @@ Package pdftex.def Info: figure/ontologyv3.png  used on input line 9.
 (pdftex.def)             Requested size: 227.62206pt x 117.60579pt.
  [32 <./figure/ontologyv3.png>]
 [33]
-Overfull \vbox (39.67719pt too high) has occurred while \output is active []
+Overfull \vbox (43.0612pt too high) has occurred while \output is active []
 
 
 [34]
 <figure/bowtie.png, id=128, 673.76718pt x 443.40656pt>
 File: figure/bowtie.png Graphic file (type png)
 <use figure/bowtie.png>
-Package pdftex.def Info: figure/bowtie.png  used on input line 76.
+Package pdftex.def Info: figure/bowtie.png  used on input line 78.
 (pdftex.def)             Requested size: 227.62206pt x 149.79549pt.
  [35 <./figure/bowtie.png>]) (./estrutura/analisecomparativa/genormas.tex)
 (./estrutura/analisecomparativa/estnormas.tex [36]) [37]
@@ -1171,7 +1171,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5.76007> not available
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <9.60004> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 40.
  [83] [84] [85] [86] [87]
-Overfull \vbox (24.14742pt too high) has occurred while \output is active []
+Overfull \vbox (27.21463pt too high) has occurred while \output is active []
 
 
 [88]
@@ -1210,76 +1210,35 @@ Overfull \hbox (50.3542pt too wide) in paragraph at lines 581--581
  []
 
 [99] [100] [101]
-! Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \penalty \@M \futurelet \@let@token \LT@@h...
-l.592 \hline
-            
-? 
-! Misplaced \omit.
-\multispan ->\omit 
-                   \@multispan 
-l.593 \textbf
-             {Entidades}                                                    ...
-
-? 
-! Extra alignment tab has been changed to \cr.
-<template> \endtemplate 
-                        
-l.593 \textbf
-             {Entidades}                                                    ...
-
-? 
-
-Overfull \hbox (1.5474pt too wide) in paragraph at lines 596--596
+Overfull \hbox (1.5474pt too wide) in paragraph at lines 595--595
 []|\T1/ptm/m/n/12 pano,glicerina,carretilha,bastaoUniversal,corda,bastaoGarra,c
 ondutímetro,X
  []
 
-[102]
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.623 \\
-        
-? 
-) (./estrutura/resultados/raciocinios.tex [103] [104] [105] [106] [107]
+[102]) (./estrutura/resultados/raciocinios.tex [103] [104] [105] [106] [107]
 [108] [109] [110] [111]) (./estrutura/resultados/validacao.tex [112]) [113]
 Cap\'{\i }tulo 6.
 (./estrutura/analisecomparativa/generaldiscuss.tex)
 (./estrutura/resultados/generalanalisecomparativa.tex)
 (./estrutura/analisecomparativa/genmoise.tex [114
 
-]
-Underfull \vbox (badness 10000) detected at line 91
- []
-
-[115] [116]) (./estrutura/analisecomparativa/gendastani.tex
-Underfull \vbox (badness 10000) detected at line 65
- []
-
-[117]) (./estrutura/analisecomparativa/estvs3.tex [118]
-Underfull \vbox (badness 10000) detected at line 67
- []
-
-[119]) (./estrutura/analisecomparativa/compnormas.tex [120] [121]
-LaTeX Font Info:    Calculating math sizes for size <7.20007> on input line 68.
+] [115] [116])
+(./estrutura/analisecomparativa/gendastani.tex [117])
+(./estrutura/analisecomparativa/estvs3.tex [118] [119])
+(./estrutura/analisecomparativa/compnormas.tex [120] [121]
+LaTeX Font Info:    Calculating math sizes for size <7.20007> on input line 75.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.20007> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 68.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 75.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5.32808> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 68.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 75.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <4.32008> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 68.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 75.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <7.20007> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 70.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 77.
  [122])
 (./estrutura/analisecomparativa/constresult.tex [123] [124] [125] [126]
-[127] [128]) [129] [130]
+[127] [128] [129]) [130]
 Cap\'{\i }tulo 7.
 (./estrutura/conclusao/genconclusao.tex)
 (./estrutura/conclusao/avaliacaodosobjetivos.tex [131
@@ -1311,43 +1270,9 @@ File: figure/algjs2.png Graphic file (type png)
 <use figure/algjs2.png>
 Package pdftex.def Info: figure/algjs2.png  used on input line 161.
 (pdftex.def)             Requested size: 364.19667pt x 490.58295pt.
-) [155 <./figure/algjs.png>] [156 <./figure/algjs2.png>]
-Apendice C.
-<autojon.pdf, id=530, 597.31157pt x 844.83629pt>
-File: autojon.pdf Graphic file (type pdf)
-<use autojon.pdf>
-Package pdftex.def Info: autojon.pdf  used on input line 245.
-(pdftex.def)             Requested size: 597.3101pt x 844.83423pt.
-File: autojon.pdf Graphic file (type pdf)
-<use autojon.pdf>
-Package pdftex.def Info: autojon.pdf  used on input line 245.
-(pdftex.def)             Requested size: 597.3101pt x 844.83423pt.
-<autojon.pdf, id=533, page=1, 597.31157pt x 844.83629pt>
-File: autojon.pdf Graphic file (type pdf)
-<use autojon.pdf, page 1>
-Package pdftex.def Info: autojon.pdf , page1 used on input line 245.
-(pdftex.def)             Requested size: 597.3101pt x 844.83423pt.
-File: autojon.pdf Graphic file (type pdf)
-<use autojon.pdf, page 1>
-Package pdftex.def Info: autojon.pdf , page1 used on input line 245.
-(pdftex.def)             Requested size: 597.81139pt x 845.54323pt.
-[157
-
-]
-File: autojon.pdf Graphic file (type pdf)
-<use autojon.pdf, page 1>
-Package pdftex.def Info: autojon.pdf , page1 used on input line 245.
-(pdftex.def)             Requested size: 597.81139pt x 845.54323pt.
-File: autojon.pdf Graphic file (type pdf)
-<use autojon.pdf, page 1>
-Package pdftex.def Info: autojon.pdf , page1 used on input line 245.
-(pdftex.def)             Requested size: 597.81139pt x 845.54323pt.
-File: autojon.pdf Graphic file (type pdf)
-<use autojon.pdf, page 1>
-Package pdftex.def Info: autojon.pdf , page1 used on input line 245.
-(pdftex.def)             Requested size: 597.81139pt x 845.54323pt.
- [158 <./autojon.pdf>] 
+) [155 <./figure/algjs.png>] 
 AED: lastpage setting LastPage
+[156 <./figure/algjs2.png>]
 +-------------------------------------------------------------------+
 | Comentario, sugestao ou critica sobre o abnTeX? Entre em contato: |
 |                  http://abntex.codigolivre.org.br                 |
@@ -1358,13 +1283,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 8094 strings out of 492982
- 119257 string characters out of 6134896
- 206609 words of memory out of 5000000
- 11199 multiletter control sequences out of 15000+600000
+ 8086 strings out of 492982
+ 119077 string characters out of 6134896
+ 206620 words of memory out of 5000000
+ 11193 multiletter control sequences out of 15000+600000
  111119 words of font info for 198 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,18n,46p,2108b,439s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,12n,46p,2108b,432s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/
@@ -1375,10 +1300,10 @@ usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/times/utmri8a.pfb>
-Output written on dissertacao.pdf (158 pages, 1774003 bytes).
+Output written on dissertacao.pdf (156 pages, 923701 bytes).
 PDF statistics:
- 583 PDF objects out of 1000 (max. 8388607)
- 384 compressed objects within 4 object streams
+ 569 PDF objects out of 1000 (max. 8388607)
+ 377 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
- 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 

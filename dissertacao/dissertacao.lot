@@ -1,6 +1,6 @@
 \babel@toc {brazil}{}
 \contentsline {table}{\numberline {1}{\ignorespaces Construtores da linguagem \textit {ACTIVITY-DL} \cite {v3sframework}\relax }}{33}
-\contentsline {table}{\numberline {2}{\ignorespaces As pr\IeC {\'e}-condi\IeC {\c c}\IeC {\~o}es poss\IeC {\'\i }veis para as atividades \cite {v3sframework}\relax }}{34}
+\contentsline {table}{\numberline {2}{\ignorespaces As pr\IeC {\'e}-condi\IeC {\c c}\IeC {\~o}es poss\IeC {\'\i }veis para as atividades\relax }}{34}
 \contentsline {table}{\numberline {3}{\ignorespaces Os agentes que constituem uma manuten\IeC {\c c}\IeC {\~a}o\relax }}{84}
 \contentsline {table}{\numberline {4}{\ignorespaces Os pap\IeC {\'e}is relevantes para a ocorr\IeC {\^e}ncia da manuten\IeC {\c c}\IeC {\~a}o\relax }}{84}
 \contentsline {table}{\numberline {5}{\ignorespaces Rela\IeC {\c c}\IeC {\~a}o $adoptsRole(ag_n,\rho _m)$\relax }}{85}
@@ -13,7 +13,8 @@
 \contentsline {table}{\numberline {12}{\ignorespaces Exemplifica\IeC {\c c}\IeC {\~a}o dos dados atrelados ao predicado $requiresCirc(goal_n, circ_m)$,$requiresEntity(goal_n, ent_m)$\relax }}{98}
 \contentsline {table}{\numberline {13}{\ignorespaces Especifica\IeC {\c c}\IeC {\~a}o do predicado $requiresCirc(goal_i,circ_j)$, do predicado $instanceOfRel(circ_n)$ e do predicado $instanceOfCond(circ_n)$\relax }}{99}
 \contentsline {table}{\numberline {14}{\ignorespaces Especifica\IeC {\c c}\IeC {\~a}o do estudo de caso atrelado ao predicado $requiresEntity(goal_i, e_j)$\relax }}{102}
-\contentsline {table}{\numberline {15}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre o \textit {MOISE+} e o modelo proposto neste estudo\relax }}{117}
-\contentsline {table}{\numberline {16}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre o \textit {DASTANI+} e o modelo proposto neste estudo\relax }}{118}
-\contentsline {table}{\numberline {17}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre o \textit {VS3} e o modelo proposto neste estudo\relax }}{120}
-\contentsline {table}{\numberline {18}{\ignorespaces An\IeC {\'a}lise comparativa sobre a expressividade desses modelos no que tange aos objetivos deste estudo.\relax }}{122}
+\contentsline {table}{\numberline {15}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre o \textit {MOISE+} e o modelo proposto neste estudo\relax }}{115}
+\contentsline {table}{\numberline {16}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre o \textit {DASTANI+} e o modelo proposto neste estudo\relax }}{117}
+\contentsline {table}{\numberline {17}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre o \textit {VS3} e o modelo proposto neste estudo\relax }}{119}
+\contentsline {table}{\numberline {18}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre o modelo \textit {NORMMAS} com o modelo proposto neste estudo.\relax }}{121}
+\contentsline {table}{\numberline {19}{\ignorespaces An\IeC {\'a}lise comparativa sobre a expressividade desses modelos no que tange aos objetivos deste estudo.\relax }}{122}
