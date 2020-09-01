@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.4)  24 AUG 2020 20:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.4)  31 AUG 2020 21:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -921,72 +921,76 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 
 
 Non-PDF special ignored!{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<ficha_catalografica.pdf, id=8, 597.55246pt x 845.07718pt>
+Overfull \hbox (2.28001pt too wide) in paragraph at lines 54--54
+  $[]$ 
+ []
+
+[1]
+<ficha_catalografica.pdf, id=11, 597.55246pt x 845.07718pt>
 File: ficha_catalografica.pdf Graphic file (type pdf)
 <use ficha_catalografica.pdf>
-Package pdftex.def Info: ficha_catalografica.pdf  used on input line 55.
+Package pdftex.def Info: ficha_catalografica.pdf  used on input line 56.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: ficha_catalografica.pdf Graphic file (type pdf)
 <use ficha_catalografica.pdf>
-Package pdftex.def Info: ficha_catalografica.pdf  used on input line 55.
+Package pdftex.def Info: ficha_catalografica.pdf  used on input line 56.
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
-<ficha_catalografica.pdf, id=11, page=1, 597.55246pt x 845.07718pt>
+<ficha_catalografica.pdf, id=14, page=1, 597.55246pt x 845.07718pt>
 File: ficha_catalografica.pdf Graphic file (type pdf)
 <use ficha_catalografica.pdf, page 1>
-Package pdftex.def Info: ficha_catalografica.pdf , page1 used on input line 55.
+Package pdftex.def Info: ficha_catalografica.pdf , page1 used on input line 56.
 
 (pdftex.def)             Requested size: 597.551pt x 845.07512pt.
 File: ficha_catalografica.pdf Graphic file (type pdf)
 <use ficha_catalografica.pdf, page 1>
-Package pdftex.def Info: ficha_catalografica.pdf , page1 used on input line 55.
+Package pdftex.def Info: ficha_catalografica.pdf , page1 used on input line 56.
 
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: ficha_catalografica.pdf Graphic file (type pdf)
 <use ficha_catalografica.pdf, page 1>
-Package pdftex.def Info: ficha_catalografica.pdf , page1 used on input line 55.
+Package pdftex.def Info: ficha_catalografica.pdf , page1 used on input line 56.
 
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: ficha_catalografica.pdf Graphic file (type pdf)
 <use ficha_catalografica.pdf, page 1>
-Package pdftex.def Info: ficha_catalografica.pdf , page1 used on input line 55.
+Package pdftex.def Info: ficha_catalografica.pdf , page1 used on input line 56.
 
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
 File: ficha_catalografica.pdf Graphic file (type pdf)
 <use ficha_catalografica.pdf, page 1>
-Package pdftex.def Info: ficha_catalografica.pdf , page1 used on input line 55.
+Package pdftex.def Info: ficha_catalografica.pdf , page1 used on input line 56.
 
 (pdftex.def)             Requested size: 597.57834pt x 845.1138pt.
-
-[1 <./ficha_catalografica.pdf>]
-<folha_de_aprovacao.pdf, id=27, 597.50786pt x 845.01837pt>
+ [1 <./ficha_catalografica.pdf>]
+<folha_de_aprovacao.pdf, id=30, 597.50786pt x 845.01837pt>
 File: folha_de_aprovacao.pdf Graphic file (type pdf)
 <use folha_de_aprovacao.pdf>
-Package pdftex.def Info: folha_de_aprovacao.pdf  used on input line 57.
+Package pdftex.def Info: folha_de_aprovacao.pdf  used on input line 58.
 (pdftex.def)             Requested size: 597.5064pt x 845.01631pt.
 File: folha_de_aprovacao.pdf Graphic file (type pdf)
 <use folha_de_aprovacao.pdf>
-Package pdftex.def Info: folha_de_aprovacao.pdf  used on input line 57.
+Package pdftex.def Info: folha_de_aprovacao.pdf  used on input line 58.
 (pdftex.def)             Requested size: 597.5064pt x 845.01631pt.
-<folha_de_aprovacao.pdf, id=30, page=1, 597.50786pt x 845.01837pt>
+<folha_de_aprovacao.pdf, id=33, page=1, 597.50786pt x 845.01837pt>
 File: folha_de_aprovacao.pdf Graphic file (type pdf)
 <use folha_de_aprovacao.pdf, page 1>
-Package pdftex.def Info: folha_de_aprovacao.pdf , page1 used on input line 57.
+Package pdftex.def Info: folha_de_aprovacao.pdf , page1 used on input line 58.
 (pdftex.def)             Requested size: 597.5064pt x 845.01631pt.
 File: folha_de_aprovacao.pdf Graphic file (type pdf)
 <use folha_de_aprovacao.pdf, page 1>
-Package pdftex.def Info: folha_de_aprovacao.pdf , page1 used on input line 57.
+Package pdftex.def Info: folha_de_aprovacao.pdf , page1 used on input line 58.
 (pdftex.def)             Requested size: 597.53374pt x 845.055pt.
 File: folha_de_aprovacao.pdf Graphic file (type pdf)
 <use folha_de_aprovacao.pdf, page 1>
-Package pdftex.def Info: folha_de_aprovacao.pdf , page1 used on input line 57.
+Package pdftex.def Info: folha_de_aprovacao.pdf , page1 used on input line 58.
 (pdftex.def)             Requested size: 597.53374pt x 845.055pt.
 File: folha_de_aprovacao.pdf Graphic file (type pdf)
 <use folha_de_aprovacao.pdf, page 1>
-Package pdftex.def Info: folha_de_aprovacao.pdf , page1 used on input line 57.
+Package pdftex.def Info: folha_de_aprovacao.pdf , page1 used on input line 58.
 (pdftex.def)             Requested size: 597.53374pt x 845.055pt.
 File: folha_de_aprovacao.pdf Graphic file (type pdf)
 <use folha_de_aprovacao.pdf, page 1>
-Package pdftex.def Info: folha_de_aprovacao.pdf , page1 used on input line 57.
+Package pdftex.def Info: folha_de_aprovacao.pdf , page1 used on input line 58.
 (pdftex.def)             Requested size: 597.53374pt x 845.055pt.
  [2 <./folha_de_aprovacao.pdf>] [3
 
@@ -994,11 +998,11 @@ Package pdftex.def Info: folha_de_aprovacao.pdf , page1 used on input line 57.
 ] [4
 
 
-] [5
-
-
 ]
-(./estrutura/resumo/resumo.tex) [6
+[5
+
+
+] (./estrutura/resumo/resumo.tex) [6
 
 
 ] (./estrutura/resumo/abstract.tex
@@ -1082,7 +1086,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 79.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 79.
-<figure/figmoise.png, id=119, 504.38437pt x 422.32782pt>
+<figure/figmoise.png, id=123, 504.38437pt x 422.32782pt>
 File: figure/figmoise.png Graphic file (type png)
 <use figure/figmoise.png>
 Package pdftex.def Info: figure/figmoise.png  used on input line 80.
@@ -1090,13 +1094,13 @@ Package pdftex.def Info: figure/figmoise.png  used on input line 80.
  [25 <./figure/figmoise.png>]) (./estrutura/fundamentacaoteorica/normas.tex
 LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10.95> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 11.
-<figure/masprogram.png, id=126, 745.28438pt x 521.69907pt>
+<figure/masprogram.png, id=129, 745.28438pt x 521.69907pt>
 File: figure/masprogram.png Graphic file (type png)
 <use figure/masprogram.png>
 Package pdftex.def Info: figure/masprogram.png  used on input line 12.
 (pdftex.def)             Requested size: 364.19667pt x 254.93425pt.
  [26]
-<figure/programdastani.png, id=130, 700.86844pt x 182.93344pt>
+<figure/programdastani.png, id=133, 700.86844pt x 182.93344pt>
 File: figure/programdastani.png Graphic file (type png)
 <use figure/programdastani.png>
 Package pdftex.def Info: figure/programdastani.png  used on input line 28.
@@ -1106,7 +1110,7 @@ Package pdftex.def Info: figure/programdastani.png  used on input line 28.
 tex [30] [31])
 (./estrutura/fundamentacaoteorica/demaismodelos.tex)
 (./estrutura/analisecomparativa/genvs3.tex
-<figure/ontologyv3.png, id=150, 496.85625pt x 256.70906pt>
+<figure/ontologyv3.png, id=153, 496.85625pt x 256.70906pt>
 File: figure/ontologyv3.png Graphic file (type png)
 <use figure/ontologyv3.png>
 Package pdftex.def Info: figure/ontologyv3.png  used on input line 9.
@@ -1117,7 +1121,7 @@ Overfull \vbox (43.0612pt too high) has occurred while \output is active []
 
 
 [34]
-<figure/bowtie.png, id=161, 673.76718pt x 443.40656pt>
+<figure/bowtie.png, id=164, 673.76718pt x 443.40656pt>
 File: figure/bowtie.png Graphic file (type png)
 <use figure/bowtie.png>
 Package pdftex.def Info: figure/bowtie.png  used on input line 78.
@@ -1137,7 +1141,7 @@ Cap\'{\i }tulo 4.
 
 ])
 (./estrutura/resultados/genestconsul.tex) (./estrutura/resultados/modulos.tex
-<figure/Module.jpeg, id=189, 550.30594pt x 175.40532pt>
+<figure/Module.jpeg, id=193, 550.30594pt x 175.40532pt>
 File: figure/Module.jpeg Graphic file (type jpg)
 <use figure/Module.jpeg>
 Package pdftex.def Info: figure/Module.jpeg  used on input line 6.
@@ -1146,14 +1150,14 @@ Package pdftex.def Info: figure/Module.jpeg  used on input line 6.
 [43] [44 <./figure/Module.jpeg>] [45] [46]) [47]
 (./estrutura/resultados/predicados.tex [48] [49] [50] [51])
 (./estrutura/resultados/diagramadeclasses.tex
-<figure/Class.jpg, id=220, 537.50812pt x 409.53pt>
+<figure/Class.jpg, id=223, 537.50812pt x 409.53pt>
 File: figure/Class.jpg Graphic file (type jpg)
 <use figure/Class.jpg>
 Package pdftex.def Info: figure/Class.jpg  used on input line 6.
 (pdftex.def)             Requested size: 455.24411pt x 346.85236pt.
  [52] [53 <./figure/Class.jpg>])
 (./estrutura/resultados/regras.tex [54] [55] [56] [57] [58] [59] [60] [61]
-<figure/algrule6.png, id=253, 378.41376pt x 251.94125pt>
+<figure/algrule6.png, id=256, 378.41376pt x 251.94125pt>
 File: figure/algrule6.png Graphic file (type png)
 <use figure/algrule6.png>
 Package pdftex.def Info: figure/algrule6.png  used on input line 126.
@@ -1161,7 +1165,7 @@ Package pdftex.def Info: figure/algrule6.png  used on input line 126.
 
 [62] [63 <./figure/algrule6.png>])
 (./estrutura/resultados/diagramadeatividades.tex [64]
-<figure/diag1.jpg, id=263, 593.21625pt x 392.96812pt>
+<figure/diag1.jpg, id=266, 593.21625pt x 392.96812pt>
 File: figure/diag1.jpg Graphic file (type jpg)
 <use figure/diag1.jpg>
 Package pdftex.def Info: figure/diag1.jpg  used on input line 12.
@@ -1172,7 +1176,7 @@ Overfull \hbox (227.62206pt too wide) in paragraph at lines 12--13
  []
 
 [65]
-<figure/diag2.jpg, id=267, 471.26062pt x 140.02313pt>
+<figure/diag2.jpg, id=270, 471.26062pt x 140.02313pt>
 File: figure/diag2.jpg Graphic file (type jpg)
 <use figure/diag2.jpg>
 Package pdftex.def Info: figure/diag2.jpg  used on input line 23.
@@ -1183,7 +1187,7 @@ Overfull \hbox (45.52718pt too wide) in paragraph at lines 23--24
  []
 
 [66 <./figure/diag1.jpg>]
-<figure/diag3.jpg, id=271, 493.845pt x 240.9pt>
+<figure/diag3.jpg, id=275, 493.845pt x 240.9pt>
 File: figure/diag3.jpg Graphic file (type jpg)
 <use figure/diag3.jpg>
 Package pdftex.def Info: figure/diag3.jpg  used on input line 33.
@@ -1315,13 +1319,13 @@ Apendice B.
 (./estrutura/apendice/programa.tex [151
 
 ] [152] [153]
-<figure/algjs.png, id=550, 401.24907pt x 401.24907pt>
+<figure/algjs.png, id=553, 401.24907pt x 401.24907pt>
 File: figure/algjs.png Graphic file (type png)
 <use figure/algjs.png>
 Package pdftex.def Info: figure/algjs.png  used on input line 150.
 (pdftex.def)             Requested size: 364.19667pt x 364.21883pt.
  [154]
-<figure/algjs2.png, id=554, 403.5075pt x 543.53062pt>
+<figure/algjs2.png, id=557, 403.5075pt x 543.53062pt>
 File: figure/algjs2.png Graphic file (type png)
 <use figure/algjs2.png>
 Package pdftex.def Info: figure/algjs2.png  used on input line 161.
@@ -1341,7 +1345,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  8073 strings out of 492982
  119236 string characters out of 6134896
- 206620 words of memory out of 5000000
+ 206622 words of memory out of 5000000
  11178 multiletter control sequences out of 15000+600000
  96321 words of font info for 170 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1356,10 +1360,10 @@ usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/times/utmri8a.pfb>
-Output written on dissertacao.pdf (156 pages, 1051806 bytes).
+Output written on dissertacao.pdf (157 pages, 1052811 bytes).
 PDF statistics:
- 602 PDF objects out of 1000 (max. 8388607)
- 396 compressed objects within 4 object streams
+ 606 PDF objects out of 1000 (max. 8388607)
+ 399 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
  106 words of extra memory for PDF output out of 10000 (max. 10000000)
 
